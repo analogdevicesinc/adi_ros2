@@ -1,0 +1,12 @@
+[submodule "src/iio_ros2"]
+	path = src/iio_ros2
+	url = https://github.com/analogdevicesinc/iio_ros2.git
+	branch = humble
+[submodule "src/imu_ros2"]
+	path = src/imu_ros2
+	url = https://github.com/analogdevicesinc/imu-ros2.git
+	branch = humble
+[submodule "src/tmcl_ros2"]
+	path = src/tmcl_ros2
+	url = https://github.com/analogdevicesinc/tmcl_ros2.git
+	branch = humble
