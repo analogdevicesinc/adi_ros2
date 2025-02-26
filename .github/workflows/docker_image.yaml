@@ -1,0 +1,105 @@
+name: Docker Image ROS2
+
+on:
+  # Trigger the action from the UI
+  workflow_dispatch:
+  push:
+    branches:
+      - "humble"
+      - "humble-develop"
+    tags:
+      - "v*.*.*"
+  pull_request:
+    branches:
+      - "humble-develop"
+
+env:
+  ROS2_DISTRO: humble
+  DOCKER_REGISTRY: docker.io
+  DOCKER_IMAGE_NAME: adi_ros2
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+  DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+jobs:
+  build_docker_image:
+    name: Build ROS2 Docker Image
+    runs-on: ${{ matrix.OS}}
+
+    strategy:
+      fail-fast: true
+      matrix:
+        OS: [ubuntu-latest]
+        arch: [amd64, arm64]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: false
+          token: ${{ env.GH_TOKEN }}
+          submodules: true
+
+      # Docker setup
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ env.DOCKERHUB_USERNAME }}
+          password: ${{ env.DOCKERHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.DOCKERHUB_USERNAME }}/${{ env.DOCKER_IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Configure Docker for multi-architecture builds
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Validate build configuration
+        # Evaluate build checks for the either the entire Dockerfile or the
+        # selected target, without executing a build.
+        uses: docker/build-push-action@v6
+        with:
+          file: ./ci/docker/Dockerfile
+          call: check
+          secrets: |
+            GIT_AUTH_TOKEN=${{ env.GH_TOKEN }}
+
+      - name: DEBUG - List metadata
+        run: |
+          echo "metadata TAGS: ${{ steps.meta.outputs.tags }}"
+          echo "metadata LABELS: ${{ steps.meta.outputs.labels }}"
+
+      - name: Docker build and push
+        uses: docker/build-push-action@v6
+        with:
+          file: ./ci/docker/Dockerfile
+          platforms: linux/${{ matrix.ARCH }}
+          context: .
+          push: ${{ github.repository_owner == 'analogdevicesinc' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          secrets: |
+            GIT_AUTH_TOKEN=${{ env.GH_TOKEN }}
+
+      - name: Update Docker Hub Description
+        if: github.repository_owner == 'analogdevicesinc'
+        uses: peter-evans/dockerhub-description@v4
+        with:
+          username: ${{ env.DOCKERHUB_USERNAME }}
+          password: ${{ env.DOCKERHUB_TOKEN }}
+          repository: ${{ env.DOCKERHUB_USERNAME }}/${{ env.DOCKER_IMAGE_NAME}}
+          readme-filepath: ./README.md
+          enable-url-completion: true
