@@ -1,53 +1,57 @@
 # Mission
 
-Briefly describe (3-5 sentences) your project's mission. The goal is to state what you are planning to work on to and help external contributors understand roughly which types of features will likely be welcome for this project.
+`adi_ros2` aims to streamline the use of [Analog Devices Inc.](http://www.analog.com/en/index.html)
+(ADI) packages within ROS2 by providing a single meta-repo for quick access to
+all ADI-supported packages for each ROS 2 release. The project includes CI
+scripts that provide methods to build system dependencies from source, which
+cannot be resolved otherwise. These scripts are centralized within a Docker
+wrapper, allowing you to build a local Docker image that can compile the ROS2
+packages provided in the repository. In addition, it generates and
+consolidates documentation, making it easier for developers to reference and
+contribute. We welcome contributions that refine these packages, improve CI
+coverage, or expand documentation to further support robotics projects built
+on ADI solutions.
 
-# Getting Started
 
-Provide brief initial access and setup instructions for first-time users of the project. Link from here to more detailed documentation.
+## Getting Started
 
-# Further information
+- The Docker image with Analog Devices packages for ROS2 is available in
+  [this repository](https://hub.docker.com/repository/docker/astanea/adi_ros2/general).
 
-List any or all of the following:
+- For detailed instructions, please refer to our
+  [Official Documentation](src/adi_ros2/doc/index.rst).
 
-- Features and use cases the software addresses.
-- Design principles used to resolve trade-offs
-- Links to further user level documentation
-- Answers to frequently asked questions (FAQ), preferably in a format that allows linking to specific questions and their answers for easier reference.
+## Getting help
 
-# Getting help
+- **Issue Tracker:** Report bugs, request features, or submit technical queries
 
-Briefly document how a user can get help with the project. This may be as simple as pointing users to the issue tracker if this is how your project answers questions. You may also point to an archived and searchable chat channel or mailing list, or an online user forum.
+- **Further Guidance:** For additional communication guidelines, refer to [COMMUNICATION](COMMUNICATION.md).
 
-# Getting involved
 
-State how to get in touch with the project. Typically this contains links to archived, searchable, and linkable communication channels.
+## Who We Are
 
-# Who we are
+- **Project Maintainers:** This project is maintained by the **adi-ros2-iio-maintainers** team.
 
-This is a good place to give credit to Trusted Committers of the project.
+- **Repository Administrators:** Administration of this repository is managed
+  by the **adi-ros2-team-admins** group.
 
-It's also a good place to include information on what being a Trusted Committer means for this project. Ideally this information is identical for all projects in the organization, so you can link from here to a central information source. This give colleagues who have little or no experience working in and contributing to InnerSource projects a direct link to company-wide information from the technological projects they use in their daily work.
+- **Committers and Contributors:** Trusted committers and contributors adhere
+  to our organizational guidelines. For comprehensive information on
+  our team structure and practices, please visit our
+  [central information page](https://hub.analog.com/home).
 
-# Contributing
 
-Document (or link to documentation on) things a first-time contributor needs to get started. Typically not all of the topics below will be covered. Focus on what differs in your project from standard setup and what previous contributors found hard to understand.
+## Contributing
 
-- Finding the source code.
-- Finding a list of issues that your project needs help with--both technical and non-technical. Typically you keep these in an issue tracker accessible to contributors.
-- Links to further documentation; for example, the architecture of the project, general coding conventions, testing conventions.
-- For technical contributions: Making changes, building the project, and testing your changes.
-- Submitting changes to the project.
+Contributions are key to our project’s success. Before submitting changes:
 
-Ideally you include information on the preferred process for changes for the project. Consider these questions:
+- Familiarize yourself with our code and testing conventions.
 
--  Should contributors first open an issue and submit a proposal, or are they welcome to submit changes right away?
--  What is important to you when reviewing contributions?
+- Consult the [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
 
-Outline design values you follow in the project. Making these explicit often helps resolve trade-offs more quickly and easily. It also helps make changes to otherwise implicit assumptions transparent.
+- Ensure your code adheres to our design values and guidelines.
 
-Over time this section may grow substantially. In that case, think about moving the information to separate files, e.g. a CONTRIBUTING.md and TESTING.md
 
-InnerSource Pattern Link:
+## License
 
-https://patterns.innersourcecommons.org/appendix/extras/readme-template
+Please [check each project](./src/) to see its specific license terms.
