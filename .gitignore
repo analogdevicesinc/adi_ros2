@@ -1,0 +1,10 @@
+.venv
+venv
+cross_reference
+docs_build/**
+docs_output/**
+_build
+build
+install
+log
+.vscode
