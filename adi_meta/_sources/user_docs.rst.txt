@@ -1,0 +1,10 @@
+Documentation
+=============
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   user_docs/*
+   Documentation/ <user_docs_documentation>
+   Documentation/How-To-Guides/ <user_docs_documentationhowtoguides>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Build Docker Image with Analog Devices ROS2 Packages &#8212; ROS2 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/app.min.css?v=9cb8e28d" />
+    <script src="../../../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script defer="" src="../../../_static/app.umd.js?v=8d0ced9f"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  
+  <meta name="repository" content="">
+  <meta name="version" content="0.0">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button value="search" class="icon"></button>
+      <span id="search-progress"></span>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../../../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root/>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Build Docker Image with Analog Devices ROS2 Packages</a><ul>
+<li><a class="reference internal" href="#why-use-a-docker-image">Why Use a Docker Image?</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#cloning-the-repository">Cloning the Repository</a></li>
+<li><a class="reference internal" href="#building-the-docker-image">Building the Docker Image</a></li>
+<li><a class="reference internal" href="#running-the-docker-container">Running the Docker Container</a></li>
+<li><a class="reference internal" href="#tips-and-best-practices">Tips and Best Practices</a><ul>
+<li><a class="reference internal" href="#environment-variables">1. Environment Variables</a></li>
+<li><a class="reference internal" href="#preserving-data">2. Preserving Data</a></li>
+<li><a class="reference internal" href="#rebuilding-after-changes">3. Rebuilding After Changes</a></li>
+<li><a class="reference internal" href="#using-the-build-artifacts-in-the-host-machine">4. Using the build artifacts in the host machine</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conclusions">Conclusions</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../../../index.html">
+      ROS2
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root/>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="../../../Packages.html">Repositories and Packages</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="./index.html#http://">adi_meta</a></li>
+<li class="toctree-l2"><a class="reference external" href="../adi_iio/index.html#http://">adi_iio</a></li>
+<li class="toctree-l2"><a class="reference external" href="../adi_imu/index.html#http://">adi_imu</a></li>
+<li class="toctree-l2"><a class="reference external" href="../adi_tmcl/index.html#http://">adi_tmcl</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="../../../Documentation.html">Documentation</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="../../../Documentation/Tutorials.html">Tutorials</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="../../../Documentation/How-To-Guides.html">How-to Guides</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Documentation/How-To-Guides/Build-Meta-Repo-Docker-Image.html">Build Docker Image with Analog Devices ROS2 Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Documentation/How-To-Guides/Build-Analog-Devices-ROS2-Documentation.html">Build Analog Devices ROS2 Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body" role="main">
+            
+  <section id="build-docker-image-with-analog-devices-ros2-packages">
+<span id="build-docker-image"></span><h1>Build Docker Image with Analog Devices ROS2 Packages<a class="headerlink" href="#build-docker-image-with-analog-devices-ros2-packages" title="Link to this heading"></a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#why-use-a-docker-image" id="id1">Why Use a Docker Image?</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
+<li><p><a class="reference internal" href="#cloning-the-repository" id="id3">Cloning the Repository</a></p></li>
+<li><p><a class="reference internal" href="#building-the-docker-image" id="id4">Building the Docker Image</a></p></li>
+<li><p><a class="reference internal" href="#running-the-docker-container" id="id5">Running the Docker Container</a></p></li>
+<li><p><a class="reference internal" href="#tips-and-best-practices" id="id6">Tips and Best Practices</a></p></li>
+<li><p><a class="reference internal" href="#conclusions" id="id7">Conclusions</a></p></li>
+</ul>
+</nav>
+<p>This guide explains how to build a Docker image containing the necessary system
+dependencies for Analog Devices ROS2 packages. By using a Docker container, you
+ensure that all library and tool versions are consistent across development and
+testing environments—especially important for packages that cannot fully resolve
+their system dependencies using the standard <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Intermediate/Rosdep.html">rosdep tool</a>.</p>
+<section id="why-use-a-docker-image">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Why Use a Docker Image?</a><a class="headerlink" href="#why-use-a-docker-image" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt><strong>Consistent Environment</strong></dt><dd><p>Docker containers provide a reproducible setup where all the necessary libraries
+and tools remain version-locked, reducing the chance of dependency conflicts or
+mismatched package versions.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Simplified Setup</strong></dt><dd><p>Instead of manually installing system dependencies for each new environment or
+developer machine, you can simply pull or build a Docker image that is
+pre-configured and ready to go.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Isolated Dependencies</strong></dt><dd><p>Using containers avoids cluttering your host OS with package installations,
+which is particularly useful when multiple projects or ROS2 distributions are
+in play.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="prerequisites">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Prerequisites</a><a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Docker installed:</strong> Ensure you have Docker installed and running on your
+system. Refer to the
+<a class="reference external" href="https://docs.docker.com/engine/install/">official installation instructions</a>.</p></li>
+<li><p><strong>ROS2 Knowledge:</strong> Familiarity with
+<a class="reference external" href="https://docs.ros.org/en/rolling/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html">building and running ROS2 packages</a>.</p></li>
+<li><p><strong>Git Submodules:</strong> Understand how to properly
+<a class="reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">clone and update submodules</a>.</p></li>
+</ul>
+</section>
+<section id="cloning-the-repository">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Cloning the Repository</a><a class="headerlink" href="#cloning-the-repository" title="Link to this heading"></a></h2>
+<p>1. <strong>Create a ROS2 Workspace:</strong> it is good practice to keep your ROS2 packages
+under a common workspace directory, for example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">ROS2_WS</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ros2_ws
+
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$ROS2_WS</span>/src
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$ROS2_WS</span>/src
+</pre></div>
+</div>
+<p>2. <strong>Clone with Submodules:</strong> Clone the repository containing the Analog Devices
+ROS2 packages. Make sure to initialize and update the submodules to get all the
+needed ADI ROS2 components:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>--branch<span class="w"> </span>humble-develop<span class="w"> </span>https://github.com/adi-innersource/adi_ros2.git
+</pre></div>
+</div>
+<p>3. <strong>Optional: Review Dependencies:</strong> The repository includes a
+<cite>ci/install_dependencies.sh</cite> script that can be run to install the system-level
+dependencies from source. This script is automatically called within the Docker
+build, but you can also run it locally for troubleshooting if needed:</p>
+</section>
+<section id="building-the-docker-image">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Building the Docker Image</a><a class="headerlink" href="#building-the-docker-image" title="Link to this heading"></a></h2>
+<p>A Docker image for your desired ROS2 distribution <cite>(e.g., humble)</cite> can be built
+using the provided scripts within the repository starting from the official
+<a class="reference external" href="https://hub.docker.com/_/ros/">Docker ROS base images</a>.</p>
+<p>1. <strong>Navigate to the Docker Build Script and run it:</strong> From the root of the cloned
+repository (adi_ros2), you can run:</p>
+<p>You can manually specify the ROS2 distribution you want to build the image for
+by changing the <cite>ROS_DISTROS</cite> variable in the script before running it.</p>
+<p>2. <strong>Verify the Image Build:</strong> The script will build the Docker image with the
+tag <cite>adi_ros2:${ROS_DISTRO}-dev</cite>. Verify that the image is successfully built
+and ready for use by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>images<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>adi_ros2
+</pre></div>
+</div>
+</section>
+<section id="running-the-docker-container">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Running the Docker Container</a><a class="headerlink" href="#running-the-docker-container" title="Link to this heading"></a></h2>
+<p>After the image is built, you can run a container and mount your local ROS2
+workspace into it. This allows you to build and test packages inside the
+container while still preserving build artifacts on your host.</p>
+<p>1. <strong>Move to Your Workspace:</strong> Ensure you are in the root of your ROS2 workspace
+<cite>(e.g., ros2_ws)</cite> so you can mount the entire workspace into the container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$ROS2_WS</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Run the Container</p></li>
+</ol>
+<p>Use the following command to start a container in <strong>interactive mode</strong> <cite>(-it)</cite> and
+<strong>remove it automatically on exit</strong> <cite>(–rm)</cite>. The <cite>-v $(pwd)/src:/overlay_ws/src</cite> argument
+mounts your <cite>adi_ros2</cite> repository into <cite>/overlay_ws</cite> inside the container.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/src/adi_ros2:/overlay_ws/src<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/install:/overlay_ws/install<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/build:/overlay_ws/build<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/log:/overlay_ws/log<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>adi_ros2:humble-dev<span class="w"> </span>/bin/bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the ROS2 Packages</p></li>
+</ol>
+<p>Once inside the container, you can install additional ROS2 dependencies if needed
+via <strong>rosdep</strong> and then build your packages:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Navigate to the overlay workspace</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$OVERLAY_WS</span>
+
+<span class="c1"># Install any missing dependencies declared in package.xml</span>
+rosdep<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>--from-path<span class="w"> </span>src<span class="w"> </span>--rosdistro<span class="w"> </span><span class="si">${</span><span class="nv">ROS_DISTRO</span><span class="si">}</span><span class="w"> </span>-y
+
+<span class="c1"># Build the ROS2 packages. Make sure to follow any extra requirements for</span>
+<span class="c1"># the specific package you are building. Some packages may require additional</span>
+<span class="c1"># steps to build successfully such as exporting the required environment variables.</span>
+colcon<span class="w"> </span>build<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--packages-up-to<span class="w"> </span>adi_meta<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>RelWithDebInfo
+</pre></div>
+</div>
+<p>You can also source your workspace to test or run nodes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>install/setup.bash
+
+<span class="c1"># Now you can run or launch you ADI ROS2 nodes, for example:</span>
+ros2<span class="w"> </span>run<span class="w"> </span>&lt;your_package&gt;<span class="w"> </span>&lt;your_node&gt;
+</pre></div>
+</div>
+</section>
+<section id="tips-and-best-practices">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Tips and Best Practices</a><a class="headerlink" href="#tips-and-best-practices" title="Link to this heading"></a></h2>
+<section id="environment-variables">
+<h3>1. Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Confirm that you are building the Docker Image for the correct ROS2
+distribution. For this verify that the ROS_DISTROS variable from the <cite>ci/docker/docker_build.sh</cite>
+script is set to the desired ROS2 distribution.</p></li>
+</ul>
+</section>
+<section id="preserving-data">
+<h3>2. Preserving Data<a class="headerlink" href="#preserving-data" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The container is ephemeral if you use –rm. All build artifacts remain in your
+host machine’s ros2_ws/build, ros2_ws/install, etc. directories because of the
+volume mount. This approach allows you to reuse these artifacts even after the
+container is stopped.</p></li>
+</ul>
+</section>
+<section id="rebuilding-after-changes">
+<h3>3. Rebuilding After Changes<a class="headerlink" href="#rebuilding-after-changes" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>If you change system-level dependencies or if the base Dockerfile updates,
+rebuild your image to keep everything in sync.</p></li>
+</ul>
+</section>
+<section id="using-the-build-artifacts-in-the-host-machine">
+<h3>4. Using the build artifacts in the host machine<a class="headerlink" href="#using-the-build-artifacts-in-the-host-machine" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>The <cite>ros2_ws</cite> directory in the host machine is mounted into the container. This
+allows you to build and test packages inside the container while preserving
+build artifacts on your host. If you want to use the build artifacts in the
+host machine, you can source the install/setup.bash file from the host machine.</p></li>
+<li><p>Make sure to to run the following command to use the build artifacts in the
+host machine:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">COLCON_CURRENT_PREFIX</span><span class="o">=</span><span class="nv">$ROS2_WS</span>/install
+</pre></div>
+</div>
+</section>
+</section>
+<section id="conclusions">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Conclusions</a><a class="headerlink" href="#conclusions" title="Link to this heading"></a></h2>
+<p>By following these steps, you can ensure that all system dependencies for Analog
+Devices ROS2 packages are correctly installed and configured. This Docker-based
+approach simplifies the development and testing process, providing a consistent
+environment for building and running ROS2 nodes.</p>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <div></div>
+    <div></div>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <div id="vertical-border"></div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

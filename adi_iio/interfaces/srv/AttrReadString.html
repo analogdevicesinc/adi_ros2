@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AttrReadString &#8212; adi_iio 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=9cb8e28d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script src="../../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script defer="" src="../../_static/app.umd.js?v=8d0ced9f"></script>
+    <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="AttrWriteString" href="AttrWriteString.html" />
+    <link rel="prev" title="AttrEnableTopic" href="AttrEnableTopic.html" />
+   
+  
+  <meta name="repository" content="">
+  <meta name="version" content="1.0">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button value="search" class="icon"></button>
+      <span id="search-progress"></span>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../../index.html">
+          <div>adi_iio</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root/>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">AttrReadString</a></li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../../index.html">
+      adi_iio
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root/>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul class="current">
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="../../generated/index.html">C++ API</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classAttrPubSub.html">Class AttrPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classBoolPubSub.html">Class BoolPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classFloat32PubSub.html">Class Float32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOAttrTopic.html">Class IIOAttrTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOBuffer.html">Class IIOBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIONode.html">Class IIONode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classInt32PubSub.html">Class Int32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classStringPubSub.html">Class StringPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classUpdateCallback.html">Class UpdateCallback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/function_adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265.html">Define ATTR_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8.html">Define ATTR_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673.html">Define ATTR_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a.html">Define BUFFER_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512.html">Define BUFFER_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e.html">Define BUFFER_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801.html">Define MAX_ATTR_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include_adi_iio.html">Directory adi_iio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_src.html">Directory src</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-1" id="toctree-collapse-1-1"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_adi_iio.cpp.html">File adi_iio.cpp</a><label for="toctree-collapse-1-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_adi_iio.cpp.html">Program Listing for File adi_iio.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-2" id="toctree-collapse-1-2"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_attr_publisher.cpp.html">File attr_publisher.cpp</a><label for="toctree-collapse-1-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_attr_publisher.cpp.html">Program Listing for File attr_publisher.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-3" id="toctree-collapse-1-3"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_attr_publisher.hpp.html">File attr_publisher.hpp</a><label for="toctree-collapse-1-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_attr_publisher.hpp.html">Program Listing for File attr_publisher.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-4" id="toctree-collapse-1-4"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_attr_topic.cpp.html">File iio_attr_topic.cpp</a><label for="toctree-collapse-1-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_attr_topic.cpp.html">Program Listing for File iio_attr_topic.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-5" id="toctree-collapse-1-5"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_attr_topic.hpp.html">File iio_attr_topic.hpp</a><label for="toctree-collapse-1-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_attr_topic.hpp.html">Program Listing for File iio_attr_topic.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-6" id="toctree-collapse-1-6"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_buffer.cpp.html">File iio_buffer.cpp</a><label for="toctree-collapse-1-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_buffer.cpp.html">Program Listing for File iio_buffer.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-7" id="toctree-collapse-1-7"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_buffer.hpp.html">File iio_buffer.hpp</a><label for="toctree-collapse-1-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_buffer.hpp.html">Program Listing for File iio_buffer.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-8" id="toctree-collapse-1-8"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_node.cpp.html">File iio_node.cpp</a><label for="toctree-collapse-1-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_node.cpp.html">Program Listing for File iio_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-9" id="toctree-collapse-1-9"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_node.hpp.html">File iio_node.hpp</a><label for="toctree-collapse-1-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_node.hpp.html">Program Listing for File iio_node.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2" checked=""/><div class="collapse"><a class="reference internal" href="../service_definitions.html">Service Definitions</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="AttrDisableTopic.html">AttrDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AttrEnableTopic.html">AttrEnableTopic</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">AttrReadString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AttrWriteString.html">AttrWriteString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferCreate.html">BufferCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferDestroy.html">BufferDestroy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferDisableTopic.html">BufferDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferEnableTopic.html">BufferEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferRead.html">BufferRead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferRefill.html">BufferRefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BufferWrite.html">BufferWrite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../../standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../standard_docs/CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../standard_docs/README.html">README</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../../user_docs.html">Documentation</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user_docs/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_docs/installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_docs/installation.html#building-the-documentation">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_docs/node_description.html">Node-Specific Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_docs/quick_start.html">Quick Start</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body" role="main">
+            
+  <section id="attrreadstring">
+<h1>AttrReadString<a class="headerlink" href="#attrreadstring" title="Link to this heading"></a></h1>
+<p>This is a ROS service definition.</p>
+<p><strong>Source</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">################################################################################</span>
+<span class="c1"># @file   AttrReadString.srv</span>
+<span class="c1"># @author Adrian-Stanea (Adrian.Stanea@analog.com)</span>
+<span class="c1">#</span>
+<span class="c1"># SPDX-License-Identifier: Apache-2.0 (see LICENSE file)</span>
+<span class="c1"># Copyright (c) 2025 Analog Devices, Inc.</span>
+<span class="c1">################################################################################</span>
+<span class="c1">#</span>
+<span class="c1"># Description:</span>
+<span class="c1">#   Reads an IIO attribute as a string.</span>
+<span class="c1">#</span>
+<span class="c1"># Request:</span>
+<span class="c1">#   attr_path (string):</span>
+<span class="c1">#       - Description: The path to the attribute to be read.</span>
+<span class="c1">#</span>
+<span class="c1"># Response:</span>
+<span class="c1">#   value (string):</span>
+<span class="c1">#       - Description: The value of the attribute.</span>
+<span class="c1">#   success (boolean):</span>
+<span class="c1">#       - Description: Indicates if the operation was successful.</span>
+<span class="c1">#   message (string):</span>
+<span class="c1">#       - Description: Provides additional information.</span>
+<span class="c1">#</span>
+<span class="c1">################################################################################</span>
+
+
+<span class="n">string</span> <span class="n">attr_path</span>
+<span class="o">---</span>
+<span class="nb">bool</span> <span class="n">success</span>
+<span class="n">string</span> <span class="n">message</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="AttrEnableTopic.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">AttrEnableTopic</a>
+    <a href="AttrWriteString.html" title="Next document (Alt+Shift+RightArrow)" class="next">AttrWriteString</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <div id="vertical-border"></div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

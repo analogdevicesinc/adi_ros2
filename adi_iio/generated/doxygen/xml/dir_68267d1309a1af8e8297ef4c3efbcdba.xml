@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="adi__iio_8cpp">adi_iio.cpp</innerfile>
+    <innerfile refid="attr__publisher_8cpp">attr_publisher.cpp</innerfile>
+    <innerfile refid="iio__attr__topic_8cpp">iio_attr_topic.cpp</innerfile>
+    <innerfile refid="iio__buffer_8cpp">iio_buffer.cpp</innerfile>
+    <innerfile refid="iio__node_8cpp">iio_node.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

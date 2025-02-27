@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classAttrPubSub" kind="class"><name>AttrPubSub</name>
+    <member refid="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" kind="function"><name>~AttrPubSub</name></member>
+    <member refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517" kind="function"><name>publish</name></member>
+  </compound>
+  <compound refid="classBoolPubSub" kind="class"><name>BoolPubSub</name>
+    <member refid="classBoolPubSub_1ac7f9d8334d68cfa2ce2308ae05451ee7" kind="variable"><name>m_nh</name></member>
+    <member refid="classBoolPubSub_1aef7be490343d0dc55c34e2489eef5e3e" kind="variable"><name>m_updateCallback</name></member>
+    <member refid="classBoolPubSub_1a624ef1c308009b2f31767ed507e7890e" kind="variable"><name>m_topic</name></member>
+    <member refid="classBoolPubSub_1ab8888cf7049c104be0d58f46bdc6eb42" kind="variable"><name>m_pub</name></member>
+    <member refid="classBoolPubSub_1a639050241eba42e8c2865c8dba513b56" kind="variable"><name>m_sub</name></member>
+    <member refid="classBoolPubSub_1a3729ba790f192f8be35efb8affdf41f3" kind="function"><name>BoolPubSub</name></member>
+    <member refid="classBoolPubSub_1adcf6e2159d071eaee84fe7908b180c4e" kind="function"><name>~BoolPubSub</name></member>
+    <member refid="classBoolPubSub_1a6b9188b8f4250368b51bb732b17dd637" kind="function"><name>publish</name></member>
+    <member refid="classBoolPubSub_1a27615dab21a347ce5c4224e2284b55cd" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classFloat32PubSub" kind="class"><name>Float32PubSub</name>
+    <member refid="classFloat32PubSub_1aa2604d1fe6964f160d6d04624cf5e0c6" kind="variable"><name>m_nh</name></member>
+    <member refid="classFloat32PubSub_1a44d13d0b95145f087e3c144fff46aca9" kind="variable"><name>m_updateCallback</name></member>
+    <member refid="classFloat32PubSub_1a9ae7edea7e227e5b69cce87a15ff3dd1" kind="variable"><name>m_topic</name></member>
+    <member refid="classFloat32PubSub_1a112f4ea05e49e9923b3a47989c438985" kind="variable"><name>m_pub</name></member>
+    <member refid="classFloat32PubSub_1a279856bdd824b870c812c458a1aebd79" kind="variable"><name>m_sub</name></member>
+    <member refid="classFloat32PubSub_1ad2742d194ed1e51e8112d24c299ec282" kind="function"><name>Float32PubSub</name></member>
+    <member refid="classFloat32PubSub_1a12d4e2e37d38348c595fa8197287e79f" kind="function"><name>~Float32PubSub</name></member>
+    <member refid="classFloat32PubSub_1a29b2863b86024b4fc5d8eb73b34e9864" kind="function"><name>publish</name></member>
+    <member refid="classFloat32PubSub_1a6962471e662eb629a1d5fcf564b4460a" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classIIOAttrTopic" kind="class"><name>IIOAttrTopic</name>
+    <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41c" kind="enum"><name>topicType_t</name></member>
+    <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41cacdb0e0ba0fcf072c909dc54b54dbcd41" kind="enumvalue"><name>TYPE_STRING</name></member>
+    <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca92c19fc3ed1eb538dd3cd5fc5d56ca67" kind="enumvalue"><name>TYPE_INT</name></member>
+    <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41caf97edf7f149d60b3aa87a66d514985ce" kind="enumvalue"><name>TYPE_DOUBLE</name></member>
+    <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca980656a42667e443b79d24eef9c0efc8" kind="enumvalue"><name>TYPE_BOOL</name></member>
+    <member refid="classIIOAttrTopic_1a74795e5ffa0bf82dc831a28d29381d35" kind="variable"><name>m_mutex</name></member>
+    <member refid="classIIOAttrTopic_1a5a065e23d398623878150edd05b8bc60" kind="variable"><name>timer_</name></member>
+    <member refid="classIIOAttrTopic_1a5ffc29fb6f3d9283a22da57dea0b6099" kind="variable"><name>m_nh</name></member>
+    <member refid="classIIOAttrTopic_1a734719af54a2a7efbd1ac695ab5fd808" kind="variable"><name>m_attrPath</name></member>
+    <member refid="classIIOAttrTopic_1af57ea91913330ec9d532657ad7cec373" kind="variable"><name>m_topicName</name></member>
+    <member refid="classIIOAttrTopic_1adb51299ff6c4fac0fa2c55a20dfc9d78" kind="variable"><name>m_topicType</name></member>
+    <member refid="classIIOAttrTopic_1a16c5be4507727d6c3cd2ce4d998a7c14" kind="variable"><name>m_pub</name></member>
+    <member refid="classIIOAttrTopic_1a0da1b8c1d163eadf9cc8b0b17a2ac0c6" kind="variable"><name>m_th</name></member>
+    <member refid="classIIOAttrTopic_1a3b839dd20d0f103d409d1d68e6a08984" kind="variable"><name>last_val</name></member>
+    <member refid="classIIOAttrTopic_1aad4a2dcd52b16c0eb0778bff09c74f64" kind="variable"><name>m_stopThread</name></member>
+    <member refid="classIIOAttrTopic_1a393d8fd35423b1cfef51dc4e329fd1c0" kind="variable"><name>m_loopRate</name></member>
+    <member refid="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" kind="function"><name>IIOAttrTopic</name></member>
+    <member refid="classIIOAttrTopic_1a86c681705a037196177e2153cd79385c" kind="function"><name>~IIOAttrTopic</name></member>
+    <member refid="classIIOAttrTopic_1a623cd04f745c48b26bf9b0267eac47f9" kind="function"><name>publishingLoop</name></member>
+    <member refid="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classIIOBuffer" kind="class"><name>IIOBuffer</name>
+    <member refid="classIIOBuffer_1aab6d6c33bb5b01606959a49e0f91f033" kind="variable"><name>m_nh</name></member>
+    <member refid="classIIOBuffer_1ab60200c27fba0c69954a0fbd407cbcd1" kind="variable"><name>m_device_path</name></member>
+    <member refid="classIIOBuffer_1aa4ccb6bca18578140b5836371fa0cc7e" kind="variable"><name>m_channels</name></member>
+    <member refid="classIIOBuffer_1a29b99551dd65176b44f220661a9180b9" kind="variable"><name>m_samples_count</name></member>
+    <member refid="classIIOBuffer_1a78a09dd2665047cc5a1c92e761266071" kind="variable"><name>m_buffer</name></member>
+    <member refid="classIIOBuffer_1afc0923c4640367674aacccf175929ccb" kind="variable"><name>m_data</name></member>
+    <member refid="classIIOBuffer_1a4b99d23e94e253d53339e849f8d13030" kind="variable"><name>m_topic_enabled</name></member>
+    <member refid="classIIOBuffer_1ae010cfcdb6b65899e30a0163757551dc" kind="variable"><name>m_topic_name</name></member>
+    <member refid="classIIOBuffer_1aec8940e4ebac01323a7925f87bf48f94" kind="variable"><name>m_pub</name></member>
+    <member refid="classIIOBuffer_1a24d228f9d56f48d3a0a200f90ddd448b" kind="variable"><name>m_th</name></member>
+    <member refid="classIIOBuffer_1a865880e3df8736a64d43bc0452173863" kind="variable"><name>m_canceled</name></member>
+    <member refid="classIIOBuffer_1a141cca5c5b934bdd683efa4910de9f1a" kind="variable"><name>m_stopThread</name></member>
+    <member refid="classIIOBuffer_1a684d9b70852b36843d6849821c8eb581" kind="variable"><name>m_mutex</name></member>
+    <member refid="classIIOBuffer_1ab0842479ceebda50fb738f6209abaef3" kind="function"><name>IIOBuffer</name></member>
+    <member refid="classIIOBuffer_1ac6904899169d8b5250f2a002e5c2facc" kind="function"><name>~IIOBuffer</name></member>
+    <member refid="classIIOBuffer_1a9d8307d9dcd482f75439791cc91c6f08" kind="function"><name>createIIOBuffer</name></member>
+    <member refid="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5" kind="function"><name>destroyIIOBuffer</name></member>
+    <member refid="classIIOBuffer_1a6808ee387552d28a81f841a3dcb90259" kind="function"><name>refill</name></member>
+    <member refid="classIIOBuffer_1aec0693771d2b6ab91cca274b18be8b87" kind="function"><name>push</name></member>
+    <member refid="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04" kind="function"><name>enableTopic</name></member>
+    <member refid="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8" kind="function"><name>disableTopic</name></member>
+    <member refid="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb" kind="function"><name>publishingLoop</name></member>
+    <member refid="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e" kind="function"><name>samples_count</name></member>
+    <member refid="classIIOBuffer_1add20c61082a5ab9ca3feac14e6708f6c" kind="function"><name>device_path</name></member>
+    <member refid="classIIOBuffer_1aa68543e42658796034375e8b081d205a" kind="function"><name>channels</name></member>
+    <member refid="classIIOBuffer_1a7419e674c74483b0f7ed30f43b7c92b6" kind="function"><name>buffer</name></member>
+    <member refid="classIIOBuffer_1ad86fc1b6b31e278964f191f3a9f43577" kind="function"><name>topic_enabled</name></member>
+    <member refid="classIIOBuffer_1ad7b952f4ad2665fb54ce4df23d6fa5b2" kind="function"><name>data</name></member>
+    <member refid="classIIOBuffer_1ae7ec0da7e71cf25817b74cbed9168ed9" kind="function"><name>set_samples_count</name></member>
+    <member refid="classIIOBuffer_1a2f9c3dc61a6d4ab72c6003f3c0ebcb21" kind="function"><name>set_device_path</name></member>
+    <member refid="classIIOBuffer_1a096172babc832053f1f3264e2a207c58" kind="function"><name>set_channels</name></member>
+  </compound>
+  <compound refid="classIIONode" kind="class"><name>IIONode</name>
+    <member refid="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" kind="variable"><name>m_initialized</name></member>
+    <member refid="classIIONode_1a431bf37c2c4d912ef18f21669513e815" kind="variable"><name>m_uri</name></member>
+    <member refid="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" kind="variable"><name>m_ctx</name></member>
+    <member refid="classIIONode_1a66e35001512376c37dc773be1779be1b" kind="variable"><name>m_attrTopicMap</name></member>
+    <member refid="classIIONode_1a81ca5f684db5251eb0d95294cc198038" kind="variable"><name>m_bufferMap</name></member>
+    <member refid="classIIONode_1a733d6076dc93324c129063c70395f4c0" kind="function"><name>IIONode</name></member>
+    <member refid="classIIONode_1a0a260138136a66c64eb2268c399b6f4d" kind="function"><name>~IIONode</name></member>
+    <member refid="classIIONode_1a15d9a0a0407689792a1c87f0ec359a47" kind="function"><name>initBuffers</name></member>
+    <member refid="classIIONode_1a3f9c635e8474656d4adbf64f68a51968" kind="function"><name>rwAttrPath</name></member>
+    <member refid="classIIONode_1a8897d0c9a1ebd552b92144fa4625773a" kind="function"><name>convertAttrPathToTopicName</name></member>
+    <member refid="classIIONode_1a2e8f4014e44c2c8ddeebb2794d270b9e" kind="function"><name>attrReadSrv</name></member>
+    <member refid="classIIONode_1a80dd3b61958fcf4c10f4e17e3ed81767" kind="function"><name>attrWriteSrv</name></member>
+    <member refid="classIIONode_1a25ba5642f6ecc1071a638145cfcdb68b" kind="function"><name>attrEnableTopicSrv</name></member>
+    <member refid="classIIONode_1aad32bd4473fc598e3c0057b8ce98fa84" kind="function"><name>attrDisableTopicSrv</name></member>
+    <member refid="classIIONode_1a9fbce46992c5b8ec24bbd2c237cda45f" kind="function"><name>buffRefillSrv</name></member>
+    <member refid="classIIONode_1a14ce6ac38818f130b612962492c6a189" kind="function"><name>buffReadSrv</name></member>
+    <member refid="classIIONode_1afed1184ff3c741b304ce0d62db4b2af5" kind="function"><name>buffWriteSrv</name></member>
+    <member refid="classIIONode_1a70d68aef62d2ec45e6572a5a1118352e" kind="function"><name>buffCreateSrv</name></member>
+    <member refid="classIIONode_1a6e73a1832c2b73153c8478939517c253" kind="function"><name>buffDestroySrv</name></member>
+    <member refid="classIIONode_1a107e9ccb484fdf900c2e81f853117218" kind="function"><name>buffEnableTopicSrv</name></member>
+    <member refid="classIIONode_1a6e554d1a16a1ae26a36d9d8572bb22b3" kind="function"><name>buffDisableTopicSrv</name></member>
+    <member refid="classIIONode_1af780b284db2534067c3f8c7a07709102" kind="function"><name>uri</name></member>
+    <member refid="classIIONode_1aba5376f655415f726270be041ea4efb9" kind="function"><name>initialized</name></member>
+    <member refid="classIIONode_1a301cc76f2facea0820db39ef3803875a" kind="function"><name>ctx</name></member>
+  </compound>
+  <compound refid="classInt32PubSub" kind="class"><name>Int32PubSub</name>
+    <member refid="classInt32PubSub_1af363350c43ca2f97ce82bdcfefb12f54" kind="variable"><name>m_nh</name></member>
+    <member refid="classInt32PubSub_1a22eefc1007bf0ea0c516247ad1a9a883" kind="variable"><name>m_updateCallback</name></member>
+    <member refid="classInt32PubSub_1ab79334b6f7e9fee622304d86aaf24c54" kind="variable"><name>m_topic</name></member>
+    <member refid="classInt32PubSub_1aad7de8d7efdf79d95ea640fb7638b277" kind="variable"><name>m_pub</name></member>
+    <member refid="classInt32PubSub_1ac963b9a44b9159b8eabcab27e610f81a" kind="variable"><name>m_sub</name></member>
+    <member refid="classInt32PubSub_1a24ba9f8516fdb33082a4be4385918703" kind="function"><name>Int32PubSub</name></member>
+    <member refid="classInt32PubSub_1a0c26cc93c4d9e88aeff0ad014c341006" kind="function"><name>~Int32PubSub</name></member>
+    <member refid="classInt32PubSub_1a9318076a1ada7379298e50a80476de24" kind="function"><name>publish</name></member>
+    <member refid="classInt32PubSub_1a4b179c28e9a6bfa83ed96bc60f0233f5" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classStringPubSub" kind="class"><name>StringPubSub</name>
+    <member refid="classStringPubSub_1a0bc189814412cfa4c296745a015c3bd0" kind="variable"><name>m_nh</name></member>
+    <member refid="classStringPubSub_1a00f5c11dd52200989de8a8df5e6c44c3" kind="variable"><name>m_updateCallback</name></member>
+    <member refid="classStringPubSub_1a90e1d3a6272706e45909756982a4f3a2" kind="variable"><name>m_topic</name></member>
+    <member refid="classStringPubSub_1acd06256aac922cacfeaf1e7a597cacd9" kind="variable"><name>m_pub</name></member>
+    <member refid="classStringPubSub_1a9606e946806e4a99c8508b5864f91b71" kind="variable"><name>m_sub</name></member>
+    <member refid="classStringPubSub_1a0efc21b790f8a07691a4c58f6a957ceb" kind="function"><name>StringPubSub</name></member>
+    <member refid="classStringPubSub_1ab5c1b5eb90ff2c5262f062e43967b61c" kind="function"><name>~StringPubSub</name></member>
+    <member refid="classStringPubSub_1ac133478da704fe769d96a07a1cf1fe81" kind="function"><name>publish</name></member>
+    <member refid="classStringPubSub_1a7191b54f21132d86ca12cfff04925b7e" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classUpdateCallback" kind="class"><name>UpdateCallback</name>
+    <member refid="classUpdateCallback_1acacdc3ba60cbced34f732aa151ca0ab5" kind="function"><name>~UpdateCallback</name></member>
+    <member refid="classUpdateCallback_1a327b1c1789bf652bd9c719b7889d76c0" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="namespacerclcpp" kind="namespace"><name>rclcpp</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="attr__publisher_8hpp" kind="file"><name>attr_publisher.hpp</name>
+    <member refid="attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265" kind="define"><name>ATTR_QOS_QUEUE_SIZE</name></member>
+    <member refid="attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8" kind="define"><name>ATTR_READ_SUFFIX</name></member>
+    <member refid="attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673" kind="define"><name>ATTR_WRITE_SUFFIX</name></member>
+  </compound>
+  <compound refid="iio__attr__topic_8hpp" kind="file"><name>iio_attr_topic.hpp</name>
+  </compound>
+  <compound refid="iio__buffer_8hpp" kind="file"><name>iio_buffer.hpp</name>
+    <member refid="iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a" kind="define"><name>BUFFER_QOS_QUEUE_SIZE</name></member>
+    <member refid="iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512" kind="define"><name>BUFFER_READ_SUFFIX</name></member>
+    <member refid="iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e" kind="define"><name>BUFFER_WRITE_SUFFIX</name></member>
+  </compound>
+  <compound refid="iio__node_8hpp" kind="file"><name>iio_node.hpp</name>
+  </compound>
+  <compound refid="adi__iio_8cpp" kind="file"><name>adi_iio.cpp</name>
+    <member refid="adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="attr__publisher_8cpp" kind="file"><name>attr_publisher.cpp</name>
+  </compound>
+  <compound refid="iio__attr__topic_8cpp" kind="file"><name>iio_attr_topic.cpp</name>
+  </compound>
+  <compound refid="iio__buffer_8cpp" kind="file"><name>iio_buffer.cpp</name>
+  </compound>
+  <compound refid="iio__node_8cpp" kind="file"><name>iio_node.cpp</name>
+    <member refid="iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801" kind="define"><name>MAX_ATTR_SIZE</name></member>
+  </compound>
+  <compound refid="dir_a2570b04362f3af10f2a97d0633c81eb" kind="dir"><name>include/adi_iio</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

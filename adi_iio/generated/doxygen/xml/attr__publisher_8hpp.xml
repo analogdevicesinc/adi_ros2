@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="attr__publisher_8hpp" kind="file" language="C++">
+    <compoundname>attr_publisher.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">std_msgs/msg/string.hpp</includes>
+    <includes local="no">std_msgs/msg/int32.hpp</includes>
+    <includes local="no">std_msgs/msg/bool.hpp</includes>
+    <includes local="no">std_msgs/msg/float32.hpp</includes>
+    <includes refid="iio__node_8hpp" local="yes">adi_iio/iio_node.hpp</includes>
+    <includedby refid="attr__publisher_8cpp" local="yes">src/attr_publisher.cpp</includedby>
+    <includedby refid="iio__attr__topic_8cpp" local="yes">src/iio_attr_topic.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adi_iio/attr_publisher.hpp</label>
+        <link refid="attr__publisher_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>adi_iio/iio_node.hpp</label>
+        <link refid="iio__node_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>adi_iio/srv/attr_disable_topic.hpp</label>
+      </node>
+      <node id="16">
+        <label>adi_iio/srv/attr_enable_topic.hpp</label>
+      </node>
+      <node id="14">
+        <label>adi_iio/srv/attr_read_string.hpp</label>
+      </node>
+      <node id="15">
+        <label>adi_iio/srv/attr_write_string.hpp</label>
+      </node>
+      <node id="18">
+        <label>adi_iio/srv/buffer_create.hpp</label>
+      </node>
+      <node id="19">
+        <label>adi_iio/srv/buffer_destroy.hpp</label>
+      </node>
+      <node id="24">
+        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
+      </node>
+      <node id="23">
+        <label>adi_iio/srv/buffer_enable_topic.hpp</label>
+      </node>
+      <node id="21">
+        <label>adi_iio/srv/buffer_read.hpp</label>
+      </node>
+      <node id="20">
+        <label>adi_iio/srv/buffer_refill.hpp</label>
+      </node>
+      <node id="22">
+        <label>adi_iio/srv/buffer_write.hpp</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="10">
+        <label>iio.h</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="7">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/msg/float32.hpp</label>
+      </node>
+      <node id="6">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="5">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classAttrPubSub" prot="public">AttrPubSub</innerclass>
+    <innerclass refid="classStringPubSub" prot="public">StringPubSub</innerclass>
+    <innerclass refid="classInt32PubSub" prot="public">Int32PubSub</innerclass>
+    <innerclass refid="classBoolPubSub" prot="public">BoolPubSub</innerclass>
+    <innerclass refid="classFloat32PubSub" prot="public">Float32PubSub</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265" prot="public" static="no">
+        <name>ATTR_QOS_QUEUE_SIZE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="28" column="9" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8" prot="public" static="no">
+        <name>ATTR_READ_SUFFIX</name>
+        <initializer>&quot;/read&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="30" column="9" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673" prot="public" static="no">
+        <name>ATTR_WRITE_SUFFIX</name>
+        <initializer>&quot;/write&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="31" column="9" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2025<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_IIO__ATTR_PUBLISHER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_IIO__ATTR_PUBLISHER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/string.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/int32.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/bool.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;std_msgs/msg/float32.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_iio/iio_node.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATTR_QOS_QUEUE_SIZE<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATTR_READ_SUFFIX<sp/>&quot;/read&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATTR_WRITE_SUFFIX<sp/>&quot;/write&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classAttrPubSub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classAttrPubSub" kindref="compound">~AttrPubSub</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish(std::string<sp/>msg)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>these<sp/>could<sp/>be<sp/>templates<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classStringPubSub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStringPubSub" kindref="compound">StringPubSub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classStringPubSub" kindref="compound">StringPubSub</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classStringPubSub" kindref="compound">~StringPubSub</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish(std::string<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::String<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>m_nh;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>m_updateCallback;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>std::string<sp/>m_topic;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::String&gt;::SharedPtr<sp/>m_pub;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::String&gt;::SharedPtr<sp/>m_sub;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classInt32PubSub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInt32PubSub" kindref="compound">Int32PubSub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classInt32PubSub" kindref="compound">Int32PubSub</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classInt32PubSub" kindref="compound">~Int32PubSub</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish(std::string<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>m_nh;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>m_updateCallback;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>std::string<sp/>m_topic;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>m_pub;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>m_sub;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classBoolPubSub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBoolPubSub" kindref="compound">BoolPubSub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="classBoolPubSub" kindref="compound">BoolPubSub</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBoolPubSub" kindref="compound">~BoolPubSub</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish(std::string<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>m_nh;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>m_updateCallback;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::string<sp/>m_topic;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr<sp/>m_pub;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr<sp/>m_sub;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classFloat32PubSub" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFloat32PubSub" kindref="compound">Float32PubSub</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="classFloat32PubSub" kindref="compound">Float32PubSub</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classFloat32PubSub" kindref="compound">~Float32PubSub</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish(std::string<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Float32<sp/>&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>m_nh;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>m_updateCallback;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>std::string<sp/>m_topic;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;std_msgs::msg::Float32&gt;::SharedPtr<sp/>m_pub;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Float32&gt;::SharedPtr<sp/>m_sub;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ADI_IIO__ATTR_PUBLISHER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_iio/attr_publisher.hpp"/>
+  </compounddef>
+</doxygen>
