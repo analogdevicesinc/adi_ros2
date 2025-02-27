@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation &#8212; adi_iio 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=9cb8e28d" />
+    <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script src="_static/documentation_options.js?v=8d563738"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script defer="" src="_static/app.umd.js?v=8d0ced9f"></script>
+    <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  
+  <meta name="repository" content="">
+  <meta name="version" content="1.0">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button value="search" class="icon"></button>
+      <span id="search-progress"></span>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="index.html">
+          <div>adi_iio</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root/>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#build-from-source">Build from Source</a><ul>
+<li><a class="reference internal" href="#workspace-setup">Workspace setup</a></li>
+<li><a class="reference internal" href="#resolving-dependencies">Resolving dependencies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#building-the-documentation">Building the Documentation</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#setting-up-the-virtual-environment">Setting Up the Virtual Environment</a></li>
+<li><a class="reference internal" href="#id2">Building the Documentation</a></li>
+<li><a class="reference internal" href="#viewing-the-documentation">Viewing the Documentation</a></li>
+<li><a class="reference internal" href="#additional-notes">Additional Notes</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="index.html">
+      adi_iio
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root/>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="generated/index.html">C++ API</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classAttrPubSub.html">Class AttrPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classBoolPubSub.html">Class BoolPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classFloat32PubSub.html">Class Float32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classIIOAttrTopic.html">Class IIOAttrTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classIIOBuffer.html">Class IIOBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classIIONode.html">Class IIONode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classInt32PubSub.html">Class Int32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classStringPubSub.html">Class StringPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classUpdateCallback.html">Class UpdateCallback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/function_adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265.html">Define ATTR_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8.html">Define ATTR_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673.html">Define ATTR_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a.html">Define BUFFER_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512.html">Define BUFFER_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e.html">Define BUFFER_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801.html">Define MAX_ATTR_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_adi_iio.html">Directory adi_iio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_src.html">Directory src</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-1" id="toctree-collapse-1-1"/><div class="collapse"><a class="reference internal" href="generated/file_src_adi_iio.cpp.html">File adi_iio.cpp</a><label for="toctree-collapse-1-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_src_adi_iio.cpp.html">Program Listing for File adi_iio.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-2" id="toctree-collapse-1-2"/><div class="collapse"><a class="reference internal" href="generated/file_src_attr_publisher.cpp.html">File attr_publisher.cpp</a><label for="toctree-collapse-1-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_src_attr_publisher.cpp.html">Program Listing for File attr_publisher.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-3" id="toctree-collapse-1-3"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_iio_attr_publisher.hpp.html">File attr_publisher.hpp</a><label for="toctree-collapse-1-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_iio_attr_publisher.hpp.html">Program Listing for File attr_publisher.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-4" id="toctree-collapse-1-4"/><div class="collapse"><a class="reference internal" href="generated/file_src_iio_attr_topic.cpp.html">File iio_attr_topic.cpp</a><label for="toctree-collapse-1-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_src_iio_attr_topic.cpp.html">Program Listing for File iio_attr_topic.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-5" id="toctree-collapse-1-5"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_iio_iio_attr_topic.hpp.html">File iio_attr_topic.hpp</a><label for="toctree-collapse-1-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_iio_iio_attr_topic.hpp.html">Program Listing for File iio_attr_topic.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-6" id="toctree-collapse-1-6"/><div class="collapse"><a class="reference internal" href="generated/file_src_iio_buffer.cpp.html">File iio_buffer.cpp</a><label for="toctree-collapse-1-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_src_iio_buffer.cpp.html">Program Listing for File iio_buffer.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-7" id="toctree-collapse-1-7"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_iio_iio_buffer.hpp.html">File iio_buffer.hpp</a><label for="toctree-collapse-1-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_iio_iio_buffer.hpp.html">Program Listing for File iio_buffer.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-8" id="toctree-collapse-1-8"/><div class="collapse"><a class="reference internal" href="generated/file_src_iio_node.cpp.html">File iio_node.cpp</a><label for="toctree-collapse-1-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_src_iio_node.cpp.html">Program Listing for File iio_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-9" id="toctree-collapse-1-9"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_iio_iio_node.hpp.html">File iio_node.hpp</a><label for="toctree-collapse-1-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_iio_iio_node.hpp.html">Program Listing for File iio_node.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="interfaces/service_definitions.html">Service Definitions</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/AttrDisableTopic.html">AttrDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/AttrEnableTopic.html">AttrEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/AttrReadString.html">AttrReadString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/AttrWriteString.html">AttrWriteString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferCreate.html">BufferCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferDestroy.html">BufferDestroy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferDisableTopic.html">BufferDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferEnableTopic.html">BufferEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferRead.html">BufferRead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferRefill.html">BufferRefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/BufferWrite.html">BufferWrite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/README.html">README</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="user_docs.html">Documentation</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_docs/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_docs/installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_docs/installation.html#building-the-documentation">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_docs/node_description.html">Node-Specific Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_docs/quick_start.html">Quick Start</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body" role="main">
+            
+  <section id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h1>
+<p>This section describes how to install the required software to run the <code class="docutils literal notranslate"><span class="pre">adi_iio</span></code>
+package.</p>
+<section id="build-from-source">
+<h2>Build from Source<a class="headerlink" href="#build-from-source" title="Link to this heading"></a></h2>
+<section id="workspace-setup">
+<h3>Workspace setup<a class="headerlink" href="#workspace-setup" title="Link to this heading"></a></h3>
+<p>If you are not using this node in an existing project, create a new folder <code class="docutils literal notranslate"><span class="pre">ros2_ws</span></code>,
+then create the <code class="docutils literal notranslate"><span class="pre">src</span></code> folder in <code class="docutils literal notranslate"><span class="pre">ros2_ws</span></code>. Go to src folder (either in
+ros2_ws or in your project), and clone the adi_iio repository:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">COLCON_WS</span><span class="o">=</span>~/ros2_ws/src
+mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$COLCON_WS</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$COLCON_WS</span>
+git<span class="w"> </span>clone<span class="w"> </span>&lt;https://github.com/your-repository-url.git&gt;
+</pre></div>
+</div>
+<p>After cloning, your directory structure should look like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2_ws/
+└──<span class="w"> </span>src/
+<span class="w">    </span>└──<span class="w"> </span>adi_imu/
+</pre></div>
+</div>
+<p>Source your main ROS2 environment as the underlay (in this example, ROS2 Humble):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.sh
+</pre></div>
+</div>
+</section>
+<section id="resolving-dependencies">
+<span id="libiio-source-build"></span><h3>Resolving dependencies<a class="headerlink" href="#resolving-dependencies" title="Link to this heading"></a></h3>
+<p>Before building the workspace, you need to resolve the package dependencies.
+From the root of your workspace, run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdep<span class="w"> </span>update
+rosdep<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>--from-path<span class="w"> </span>src<span class="w"> </span>--rosdistro<span class="w"> </span><span class="si">${</span><span class="nv">ROS_DISTRO</span><span class="si">}</span><span class="w"> </span>-y
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Optional: Build Libiio from Source</strong></p>
+<p>The <cite>adi_iio</cite> package supports an alternative method of installing the libiio dependency
+by building it from source. This is useful if you prefer to use a custom version
+of libiio instead of relying on the system-provided <code class="docutils literal notranslate"><span class="pre">libiio-dev</span></code> package via rosdep.</p>
+<p>To build libiio from source, run the provided installation script which offers two options:</p>
+<ul class="simple">
+<li><p>Set the desired libiio version (default is <code class="docutils literal notranslate"><span class="pre">libiio-v0</span></code>).</p></li>
+<li><p>Specify the staging directory for the source build (default is <code class="docutils literal notranslate"><span class="pre">$HOME/src</span></code>).</p></li>
+</ul>
+<p>For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Optional exports</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LIBIIO_VERSION</span><span class="o">=</span>libiio-v0
+<span class="nb">export</span><span class="w"> </span><span class="nv">STAGING_DIR</span><span class="o">=</span><span class="nv">$HOME</span>/src
+
+./ci/install_dependencies.sh
+</pre></div>
+</div>
+<p>After the script completes, install the remaining package dependencies while skipping the
+system’s libiio development package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>--ignore-src<span class="w"> </span>-r<span class="w"> </span>-y<span class="w"> </span>--skip-keys<span class="w"> </span>libiio-dev
+</pre></div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you already have all your dependencies, the console will return:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#All required rosdeps installed successfully</span>
+</pre></div>
+</div>
+</div>
+<p><strong>Building the workspace:</strong> you can now build your package using the command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>colcon<span class="w"> </span>build
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is recommended that 1 terminal is dedicated to building the
+package/workspace to avoid complex issues as mentioned in
+<a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a> .</p>
+</div>
+<p><strong>Verify the build status:</strong> once finished, check whether the build is successful
+by looking for error messages.</p>
+<p>If successful, you will see that colcon has created new directories:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2_ws/
+├──<span class="w"> </span>build/
+├──<span class="w"> </span>install/
+└──<span class="w"> </span>log/
+└──<span class="w"> </span>src/
+</pre></div>
+</div>
+<p>The install directory is where your workspace’s setup files are, which you can
+use to source your overlay.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before sourcing the overlay, it is very important that you open a new
+terminal, separate from the one where you built the workspace.</p>
+</div>
+<p><strong>Sourcing the overlay:</strong> in the new terminal, enter the root of your workspace
+and source your main ROS 2 environment as the underlay:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span><span class="nv">$COLCON_WS</span>
+<span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.sh
+</pre></div>
+</div>
+<p>Then source the previously built overlay:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>install/setup.sh
+</pre></div>
+</div>
+<p>Now you can run the <em>adi_iio</em> package.</p>
+</section>
+</section>
+</section>
+<section id="building-the-documentation">
+<h1>Building the Documentation<a class="headerlink" href="#building-the-documentation" title="Link to this heading"></a></h1>
+<p>This guide describes how to build the project documentation locally using
+<strong>rosdoc2</strong>. Follow the steps below to set up your environment, build the
+documentation, and view the results.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Python 3:</strong> Ensure you have Python 3 installed.</p></li>
+<li><p><strong>Virtual Environment:</strong> It is highly recommended to set up a Python virtual
+environment to avoid conflicts with other projects.</p></li>
+<li><p><strong>Dependencies:</strong> All required dependencies are listed in <code class="docutils literal notranslate"><span class="pre">doc/requirements.txt</span></code>.</p></li>
+</ul>
+</section>
+<section id="setting-up-the-virtual-environment">
+<h2>Setting Up the Virtual Environment<a class="headerlink" href="#setting-up-the-virtual-environment" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p><strong>Create the Virtual Environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</pre></div>
+</div>
+</li>
+<li><p><strong>Activate the Virtual Environment</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</pre></div>
+</div>
+</li>
+<li><p><strong>Install the Required Dependencies</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>doc/requirements.txt
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="id2">
+<h2>Building the Documentation<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>With the environment set up, build the documentation by running the following
+command from the root of the project:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdoc2<span class="w"> </span>build<span class="w"> </span>--package-path<span class="w"> </span>.
+</pre></div>
+</div>
+<p>This command generates the following directory structure:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./
+├──<span class="w"> </span>cross_references/
+├──<span class="w"> </span>docs_build/
+└──<span class="w"> </span>docs_output
+</pre></div>
+</div>
+</section>
+<section id="viewing-the-documentation">
+<h2>Viewing the Documentation<a class="headerlink" href="#viewing-the-documentation" title="Link to this heading"></a></h2>
+<p>To view the generated documentation, open the <code class="docutils literal notranslate"><span class="pre">docs_output/adi_iio/index.html</span></code>
+file in your web browser.</p>
+</section>
+<section id="additional-notes">
+<h2>Additional Notes<a class="headerlink" href="#additional-notes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Execution Directory:</strong> All commands should be executed from the project’s
+root directory.</p></li>
+<li><p><strong>Troubleshooting:</strong> For any issues during the build process, refer to the
+official <a class="reference external" href="https://github.com/ros-infrastructure/rosdoc2">rosdoc2 documentation</a>.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <div></div>
+    <div></div>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <div id="vertical-border"></div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

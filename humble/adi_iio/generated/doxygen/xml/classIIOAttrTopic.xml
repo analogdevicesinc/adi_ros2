@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classIIOAttrTopic" kind="class" language="C++" prot="public">
+    <compoundname>IIOAttrTopic</compoundname>
+    <basecompoundref refid="classUpdateCallback" prot="public" virt="non-virtual">UpdateCallback</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>topicType_t</name>
+        <qualifiedname>IIOAttrTopic::topicType_t</qualifiedname>
+        <enumvalue id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41cacdb0e0ba0fcf072c909dc54b54dbcd41" prot="public">
+          <name>TYPE_STRING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca92c19fc3ed1eb538dd3cd5fc5d56ca67" prot="public">
+          <name>TYPE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41caf97edf7f149d60b3aa87a66d514985ce" prot="public">
+          <name>TYPE_DOUBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca980656a42667e443b79d24eef9c0efc8" prot="public">
+          <name>TYPE_BOOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="40" column="3" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIIOAttrTopic_1a74795e5ffa0bf82dc831a28d29381d35" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex IIOAttrTopic::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <qualifiedname>IIOAttrTopic::m_mutex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="57" column="14" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a5a065e23d398623878150edd05b8bc60" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr IIOAttrTopic::timer_</definition>
+        <argsstring></argsstring>
+        <name>timer_</name>
+        <qualifiedname>IIOAttrTopic::timer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="58" column="32" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a5ffc29fb6f3d9283a22da57dea0b6099" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IIONode&gt; IIOAttrTopic::m_nh</definition>
+        <argsstring></argsstring>
+        <name>m_nh</name>
+        <qualifiedname>IIOAttrTopic::m_nh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="60" column="19" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a734719af54a2a7efbd1ac695ab5fd808" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IIOAttrTopic::m_attrPath</definition>
+        <argsstring></argsstring>
+        <name>m_attrPath</name>
+        <qualifiedname>IIOAttrTopic::m_attrPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="61" column="15" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1af57ea91913330ec9d532657ad7cec373" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IIOAttrTopic::m_topicName</definition>
+        <argsstring></argsstring>
+        <name>m_topicName</name>
+        <qualifiedname>IIOAttrTopic::m_topicName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="62" column="15" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1adb51299ff6c4fac0fa2c55a20dfc9d78" prot="private" static="no" mutable="no">
+        <type>topicType_t</type>
+        <definition>topicType_t IIOAttrTopic::m_topicType</definition>
+        <argsstring></argsstring>
+        <name>m_topicType</name>
+        <qualifiedname>IIOAttrTopic::m_topicType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="63" column="15" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a16c5be4507727d6c3cd2ce4d998a7c14" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classAttrPubSub" kindref="compound">AttrPubSub</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;AttrPubSub&gt; IIOAttrTopic::m_pub</definition>
+        <argsstring></argsstring>
+        <name>m_pub</name>
+        <qualifiedname>IIOAttrTopic::m_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="64" column="19" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a0da1b8c1d163eadf9cc8b0b17a2ac0c6" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread IIOAttrTopic::m_th</definition>
+        <argsstring></argsstring>
+        <name>m_th</name>
+        <qualifiedname>IIOAttrTopic::m_th</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="66" column="15" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a3b839dd20d0f103d409d1d68e6a08984" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IIOAttrTopic::last_val</definition>
+        <argsstring></argsstring>
+        <name>last_val</name>
+        <qualifiedname>IIOAttrTopic::last_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="67" column="15" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1aad4a2dcd52b16c0eb0778bff09c74f64" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IIOAttrTopic::m_stopThread</definition>
+        <argsstring></argsstring>
+        <name>m_stopThread</name>
+        <qualifiedname>IIOAttrTopic::m_stopThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="68" column="8" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIOAttrTopic_1a393d8fd35423b1cfef51dc4e329fd1c0" prot="private" static="no" mutable="no">
+        <type>rclcpp::Rate</type>
+        <definition>rclcpp::Rate IIOAttrTopic::m_loopRate</definition>
+        <argsstring></argsstring>
+        <name>m_loopRate</name>
+        <qualifiedname>IIOAttrTopic::m_loopRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="69" column="16" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IIOAttrTopic::IIOAttrTopic</definition>
+        <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, std::string topicName, std::string attrPath, topicType_t type, int loopRate)</argsstring>
+        <name>IIOAttrTopic</name>
+        <qualifiedname>IIOAttrTopic::IIOAttrTopic</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>topicName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>attrPath</declname>
+        </param>
+        <param>
+          <type>topicType_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>loopRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="48" column="3" bodyfile="src/iio_attr_topic.cpp" bodystart="21" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIOAttrTopic_1a86c681705a037196177e2153cd79385c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>IIOAttrTopic::~IIOAttrTopic</definition>
+        <argsstring>()</argsstring>
+        <name>~IIOAttrTopic</name>
+        <qualifiedname>IIOAttrTopic::~IIOAttrTopic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="51" column="11" bodyfile="src/iio_attr_topic.cpp" bodystart="49" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIOAttrTopic_1a623cd04f745c48b26bf9b0267eac47f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIOAttrTopic::publishingLoop</definition>
+        <argsstring>()</argsstring>
+        <name>publishingLoop</name>
+        <qualifiedname>IIOAttrTopic::publishingLoop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="53" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="60" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void IIOAttrTopic::update</definition>
+        <argsstring>(std::string msg) override</argsstring>
+        <name>update</name>
+        <qualifiedname>IIOAttrTopic::update</qualifiedname>
+        <reimplements refid="classUpdateCallback_1a327b1c1789bf652bd9c719b7889d76c0">update</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="54" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="75" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IIOAttrTopic</label>
+        <link refid="classIIOAttrTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UpdateCallback</label>
+        <link refid="classUpdateCallback"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IIOAttrTopic</label>
+        <link refid="classIIOAttrTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UpdateCallback</label>
+        <link refid="classUpdateCallback"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_iio/iio_attr_topic.hpp" line="37" column="1" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="38" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>IIOAttrTopic</name></member>
+      <member refid="classIIOAttrTopic_1a3b839dd20d0f103d409d1d68e6a08984" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>last_val</name></member>
+      <member refid="classIIOAttrTopic_1a734719af54a2a7efbd1ac695ab5fd808" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_attrPath</name></member>
+      <member refid="classIIOAttrTopic_1a393d8fd35423b1cfef51dc4e329fd1c0" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_loopRate</name></member>
+      <member refid="classIIOAttrTopic_1a74795e5ffa0bf82dc831a28d29381d35" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_mutex</name></member>
+      <member refid="classIIOAttrTopic_1a5ffc29fb6f3d9283a22da57dea0b6099" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_nh</name></member>
+      <member refid="classIIOAttrTopic_1a16c5be4507727d6c3cd2ce4d998a7c14" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_pub</name></member>
+      <member refid="classIIOAttrTopic_1aad4a2dcd52b16c0eb0778bff09c74f64" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_stopThread</name></member>
+      <member refid="classIIOAttrTopic_1a0da1b8c1d163eadf9cc8b0b17a2ac0c6" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_th</name></member>
+      <member refid="classIIOAttrTopic_1af57ea91913330ec9d532657ad7cec373" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_topicName</name></member>
+      <member refid="classIIOAttrTopic_1adb51299ff6c4fac0fa2c55a20dfc9d78" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_topicType</name></member>
+      <member refid="classIIOAttrTopic_1a623cd04f745c48b26bf9b0267eac47f9" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>publishingLoop</name></member>
+      <member refid="classIIOAttrTopic_1a5a065e23d398623878150edd05b8bc60" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>timer_</name></member>
+      <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41c" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>topicType_t</name></member>
+      <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca980656a42667e443b79d24eef9c0efc8" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>TYPE_BOOL</name></member>
+      <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41caf97edf7f149d60b3aa87a66d514985ce" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>TYPE_DOUBLE</name></member>
+      <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41ca92c19fc3ed1eb538dd3cd5fc5d56ca67" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>TYPE_INT</name></member>
+      <member refid="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41cacdb0e0ba0fcf072c909dc54b54dbcd41" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>TYPE_STRING</name></member>
+      <member refid="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f" prot="public" virt="virtual"><scope>IIOAttrTopic</scope><name>update</name></member>
+      <member refid="classIIOAttrTopic_1a86c681705a037196177e2153cd79385c" prot="public" virt="virtual"><scope>IIOAttrTopic</scope><name>~IIOAttrTopic</name></member>
+      <member refid="classUpdateCallback_1acacdc3ba60cbced34f732aa151ca0ab5" prot="public" virt="virtual"><scope>IIOAttrTopic</scope><name>~UpdateCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

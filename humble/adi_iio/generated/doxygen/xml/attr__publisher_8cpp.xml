@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="attr__publisher_8cpp" kind="file" language="C++">
+    <compoundname>attr_publisher.cpp</compoundname>
+    <includes refid="iio__attr__topic_8hpp" local="yes">adi_iio/iio_attr_topic.hpp</includes>
+    <includes refid="attr__publisher_8hpp" local="yes">adi_iio/attr_publisher.hpp</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>adi_iio/attr_publisher.hpp</label>
+        <link refid="attr__publisher_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>adi_iio/iio_attr_topic.hpp</label>
+        <link refid="iio__attr__topic_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>adi_iio/iio_node.hpp</label>
+        <link refid="iio__node_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/attr_publisher.cpp</label>
+        <link refid="attr__publisher_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>adi_iio/srv/attr_disable_topic.hpp</label>
+      </node>
+      <node id="19">
+        <label>adi_iio/srv/attr_enable_topic.hpp</label>
+      </node>
+      <node id="17">
+        <label>adi_iio/srv/attr_read_string.hpp</label>
+      </node>
+      <node id="18">
+        <label>adi_iio/srv/attr_write_string.hpp</label>
+      </node>
+      <node id="21">
+        <label>adi_iio/srv/buffer_create.hpp</label>
+      </node>
+      <node id="22">
+        <label>adi_iio/srv/buffer_destroy.hpp</label>
+      </node>
+      <node id="27">
+        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
+      </node>
+      <node id="26">
+        <label>adi_iio/srv/buffer_enable_topic.hpp</label>
+      </node>
+      <node id="24">
+        <label>adi_iio/srv/buffer_read.hpp</label>
+      </node>
+      <node id="23">
+        <label>adi_iio/srv/buffer_refill.hpp</label>
+      </node>
+      <node id="25">
+        <label>adi_iio/srv/buffer_write.hpp</label>
+      </node>
+      <node id="14">
+        <label>chrono</label>
+      </node>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>iio.h</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="11">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="12">
+        <label>std_msgs/msg/float32.hpp</label>
+      </node>
+      <node id="10">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/msg/string.hpp</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>thread</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>2025<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_iio/iio_attr_topic.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_iio/attr_publisher.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">StringPubSub::StringPubSub(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Created<sp/>String<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>m_topic<sp/>=<sp/>topic;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>m_nh<sp/>=<sp/>nh;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>m_updateCallback<sp/>=<sp/>up;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>m_pub<sp/>=<sp/>m_nh-&gt;create_publisher&lt;std_msgs::msg::String&gt;(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_READ_SUFFIX,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>ATTR_QOS_QUEUE_SIZE);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>m_sub<sp/>=<sp/>m_nh-&gt;create_subscription&lt;std_msgs::msg::String&gt;(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_WRITE_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE,<sp/>std::bind(&amp;StringPubSub::update,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">StringPubSub::~StringPubSub()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Deleted<sp/>String<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shared<sp/>ptr<sp/>lifetime<sp/>should<sp/>delete<sp/>this<sp/>publisher<sp/>automatically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StringPubSub::publish(std::string<sp/>msg)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Publishing<sp/>msg<sp/>%s<sp/>on<sp/>topic<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.c_str(),<sp/>m_topic.c_str());</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>message<sp/>=<sp/>std_msgs::msg::String();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>message.data<sp/>=<sp/>msg;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>m_pub-&gt;publish(message);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StringPubSub::update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::String<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>m_updateCallback-&gt;update(msg.data);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">Int32PubSub::Int32PubSub(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Created<sp/>Int32<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>m_topic<sp/>=<sp/>topic;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>m_nh<sp/>=<sp/>nh;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>m_updateCallback<sp/>=<sp/>up;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>m_pub<sp/>=</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>m_nh-&gt;create_publisher&lt;std_msgs::msg::Int32&gt;(topic<sp/>+<sp/>ATTR_READ_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>m_sub<sp/>=<sp/>m_nh-&gt;create_subscription&lt;std_msgs::msg::Int32&gt;(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_WRITE_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE,<sp/>std::bind(&amp;Int32PubSub::update,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">Int32PubSub::~Int32PubSub()</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Deleted<sp/>Int32<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shared<sp/>ptr<sp/>lifetime<sp/>should<sp/>delete<sp/>this<sp/>publisher<sp/>automatically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Int32PubSub::publish(std::string<sp/>msg)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Publishing<sp/>msg<sp/>%s<sp/>on<sp/>topic<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.c_str(),<sp/>m_topic.c_str());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>message<sp/>=<sp/>std_msgs::msg::Int32();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>int32_t<sp/>data<sp/>=<sp/>stoi(msg);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>message.data<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>m_pub-&gt;publish(message);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Int32PubSub::update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::string<sp/>strData<sp/>=<sp/>std::to_string(msg.data);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>m_updateCallback-&gt;update(strData);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">BoolPubSub::BoolPubSub(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Created<sp/>Bool<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>m_topic<sp/>=<sp/>topic;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>m_nh<sp/>=<sp/>nh;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>m_updateCallback<sp/>=<sp/>up;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>m_pub<sp/>=</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>m_nh-&gt;create_publisher&lt;std_msgs::msg::Bool&gt;(topic<sp/>+<sp/>ATTR_READ_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>m_sub<sp/>=<sp/>m_nh-&gt;create_subscription&lt;std_msgs::msg::Bool&gt;(</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_WRITE_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE,<sp/>std::bind(&amp;BoolPubSub::update,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">BoolPubSub::~BoolPubSub()</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Deleted<sp/>Bool<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shared<sp/>ptr<sp/>lifetime<sp/>should<sp/>delete<sp/>this<sp/>publisher<sp/>automatically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BoolPubSub::publish(std::string<sp/>msg)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Publishing<sp/>msg<sp/>%s<sp/>on<sp/>topic<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.c_str(),<sp/>m_topic.c_str());</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>message<sp/>=<sp/>std_msgs::msg::Bool();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>stoi(msg);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>message.data<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>m_pub-&gt;publish(message);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BoolPubSub::update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Bool<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>std::string<sp/>strData<sp/>=<sp/>std::to_string(msg.data);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>m_updateCallback-&gt;update(strData);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">Float32PubSub::Float32PubSub(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Created<sp/>Float32<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>m_topic<sp/>=<sp/>topic;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>m_nh<sp/>=<sp/>nh;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>m_updateCallback<sp/>=<sp/>up;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>m_pub<sp/>=<sp/>m_nh-&gt;create_publisher&lt;std_msgs::msg::Float32&gt;(</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_READ_SUFFIX,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>ATTR_QOS_QUEUE_SIZE);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>m_sub<sp/>=<sp/>m_nh-&gt;create_subscription&lt;std_msgs::msg::Float32&gt;(</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>topic<sp/>+<sp/>ATTR_WRITE_SUFFIX,<sp/>ATTR_QOS_QUEUE_SIZE,<sp/>std::bind(&amp;Float32PubSub::update,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>_1));</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">Float32PubSub::~Float32PubSub()</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Deleted<sp/>Float32<sp/>publisher<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>shared<sp/>ptr<sp/>lifetime<sp/>should<sp/>delete<sp/>this<sp/>publisher<sp/>automatically</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Float32PubSub::publish(std::string<sp/>msg)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;rclcpp&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Publishing<sp/>msg<sp/>%s<sp/>on<sp/>topic<sp/>%s&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.c_str(),<sp/>m_topic.c_str());</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>message<sp/>=<sp/>std_msgs::msg::Float32();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>data<sp/>=<sp/>stoi(msg);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>message.data<sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>m_pub-&gt;publish(message);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Float32PubSub::update(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Float32<sp/>&amp;<sp/>msg)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>std::string<sp/>strData<sp/>=<sp/>std::to_string(msg.data);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>m_updateCallback-&gt;update(strData);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/attr_publisher.cpp"/>
+  </compounddef>
+</doxygen>

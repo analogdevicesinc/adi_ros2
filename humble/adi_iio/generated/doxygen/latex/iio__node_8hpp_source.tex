@@ -1,0 +1,120 @@
+\doxysection{iio\+\_\+node.\+hpp}
+\hypertarget{iio__node_8hpp_source}{}\label{iio__node_8hpp_source}\index{include/adi\_iio/iio\_node.hpp@{include/adi\_iio/iio\_node.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ 2025\ Analog\ Devices,\ Inc.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ \ \ \ \ http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ ADI\_IIO\_\_IIO\_NODE\_HPP\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ADI\_IIO\_\_IIO\_NODE\_HPP\_}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <iio.h>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <rclcpp/rclcpp.hpp>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/attr\_read\_string.hpp"{}}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/attr\_write\_string.hpp"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/attr\_enable\_topic.hpp"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/attr\_disable\_topic.hpp"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_create.hpp"{}}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_destroy.hpp"{}}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_refill.hpp"{}}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_read.hpp"{}}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_write.hpp"{}}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_enable\_topic.hpp"{}}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/srv/buffer\_disable\_topic.hpp"{}}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIIOAttrTopic}{IIOAttrTopic}};}
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIIOBuffer}{IIOBuffer}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIIONode}{IIONode}}\ :\ \textcolor{keyword}{public}\ rclcpp::Node}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{classIIONode}{IIONode}}();}
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIIONode}{\string~IIONode}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ initBuffers();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{bool}\ rwAttrPath(}
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ path,\ std::string\ \&\ result,\ \textcolor{keywordtype}{bool}\ write\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ value\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00054\ \ \ std::string\ convertAttrPathToTopicName(std::string\ path);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{comment}{//\ service\ handlers}}
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{void}\ attrReadSrv(}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::AttrReadString::Request>\ request,}
+\DoxyCodeLine{00059\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::AttrReadString::Response>\ response);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{void}\ attrWriteSrv(}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::AttrWriteString::Request>\ request,}
+\DoxyCodeLine{00063\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::AttrWriteString::Response>\ response);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ attrEnableTopicSrv(}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::AttrEnableTopic::Request>\ request,}
+\DoxyCodeLine{00067\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::AttrEnableTopic::Response>\ response);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{void}\ attrDisableTopicSrv(}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::AttrDisableTopic::Request>\ request,}
+\DoxyCodeLine{00071\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::AttrDisableTopic::Response>\ response);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{keywordtype}{void}\ buffRefillSrv(}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferRefill::Request>\ request,}
+\DoxyCodeLine{00075\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferRefill::Response>\ response);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{void}\ buffReadSrv(}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferRead::Request>\ request,}
+\DoxyCodeLine{00079\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferRead::Response>\ response);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ buffWriteSrv(}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferWrite::Request>\ request,}
+\DoxyCodeLine{00083\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferWrite::Response>\ response);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \textcolor{keywordtype}{void}\ buffCreateSrv(}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferCreate::Request>\ request,}
+\DoxyCodeLine{00087\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferCreate::Response>\ response);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ buffDestroySrv(}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferDestroy::Request>\ request,}
+\DoxyCodeLine{00091\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferDestroy::Response>\ response);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordtype}{void}\ buffEnableTopicSrv(}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferEnableTopic::Request>\ request,}
+\DoxyCodeLine{00095\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferEnableTopic::Response>\ response);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keywordtype}{void}\ buffDisableTopicSrv(}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{const}\ std::shared\_ptr<adi\_iio::srv::BufferDisableTopic::Request>\ request,}
+\DoxyCodeLine{00099\ \ \ \ \ std::shared\_ptr<adi\_iio::srv::BufferDisableTopic::Response>\ response);}
+\DoxyCodeLine{00100\ \ \ \textcolor{comment}{//\ getters}}
+\DoxyCodeLine{00101\ \ \ std::string\ uri();}
+\DoxyCodeLine{00102\ \ \ \textcolor{keywordtype}{bool}\ initialized();}
+\DoxyCodeLine{00103\ \ \ iio\_context\ *\ ctx();}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00106\ \ \ \textcolor{keywordtype}{bool}\ m\_initialized;}
+\DoxyCodeLine{00107\ \ \ std::string\ m\_uri;}
+\DoxyCodeLine{00108\ \ \ iio\_context\ *\ m\_ctx;}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ std::map<std::string,\ std::shared\_ptr<IIOAttrTopic>>\ m\_attrTopicMap;}
+\DoxyCodeLine{00111\ \ \ std::map<std::string,\ std::shared\_ptr<IIOBuffer>>\ m\_bufferMap;}
+\DoxyCodeLine{00112\ \};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IIO\_\_IIO\_NODE\_HPP\_}}
+
+\end{DoxyCode}

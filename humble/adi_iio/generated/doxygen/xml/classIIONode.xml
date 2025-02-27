@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classIIONode" kind="class" language="C++" prot="public">
+    <compoundname>IIONode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IIONode::m_initialized</definition>
+        <argsstring></argsstring>
+        <name>m_initialized</name>
+        <qualifiedname>IIONode::m_initialized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="106" column="8" bodyfile="include/adi_iio/iio_node.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIONode_1a431bf37c2c4d912ef18f21669513e815" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string IIONode::m_uri</definition>
+        <argsstring></argsstring>
+        <name>m_uri</name>
+        <qualifiedname>IIONode::m_uri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="107" column="15" bodyfile="include/adi_iio/iio_node.hpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" prot="private" static="no" mutable="no">
+        <type>iio_context *</type>
+        <definition>iio_context* IIONode::m_ctx</definition>
+        <argsstring></argsstring>
+        <name>m_ctx</name>
+        <qualifiedname>IIONode::m_ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="108" column="16" bodyfile="include/adi_iio/iio_node.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIONode_1a66e35001512376c37dc773be1779be1b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classIIOAttrTopic" kindref="compound">IIOAttrTopic</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;IIOAttrTopic&gt; &gt; IIONode::m_attrTopicMap</definition>
+        <argsstring></argsstring>
+        <name>m_attrTopicMap</name>
+        <qualifiedname>IIONode::m_attrTopicMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="110" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIIONode_1a81ca5f684db5251eb0d95294cc198038" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::shared_ptr&lt;IIOBuffer&gt; &gt; IIONode::m_bufferMap</definition>
+        <argsstring></argsstring>
+        <name>m_bufferMap</name>
+        <qualifiedname>IIONode::m_bufferMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="111" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIIONode_1a733d6076dc93324c129063c70395f4c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IIONode::IIONode</definition>
+        <argsstring>()</argsstring>
+        <name>IIONode</name>
+        <qualifiedname>IIONode::IIONode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="46" column="3" bodyfile="src/iio_node.cpp" bodystart="40" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a0a260138136a66c64eb2268c399b6f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>IIONode::~IIONode</definition>
+        <argsstring>()</argsstring>
+        <name>~IIONode</name>
+        <qualifiedname>IIONode::~IIONode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="47" column="11" bodyfile="src/iio_node.cpp" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a15d9a0a0407689792a1c87f0ec359a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::initBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>initBuffers</name>
+        <qualifiedname>IIONode::initBuffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="49" column="8" bodyfile="src/iio_node.cpp" bodystart="59" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a3f9c635e8474656d4adbf64f68a51968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IIONode::rwAttrPath</definition>
+        <argsstring>(std::string path, std::string &amp;result, bool write=false, std::string value=&quot;&quot;)</argsstring>
+        <name>rwAttrPath</name>
+        <qualifiedname>IIONode::rwAttrPath</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>write</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>value</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="51" column="8" bodyfile="src/iio_node.cpp" bodystart="91" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a8897d0c9a1ebd552b92144fa4625773a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IIONode::convertAttrPathToTopicName</definition>
+        <argsstring>(std::string path)</argsstring>
+        <name>convertAttrPathToTopicName</name>
+        <qualifiedname>IIONode::convertAttrPathToTopicName</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="54" column="15" bodyfile="src/iio_node.cpp" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a2e8f4014e44c2c8ddeebb2794d270b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::attrReadSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrReadString::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrReadString::Response &gt; response)</argsstring>
+        <name>attrReadSrv</name>
+        <qualifiedname>IIONode::attrReadSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::AttrReadString::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::AttrReadString::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="57" column="8" bodyfile="src/iio_node.cpp" bodystart="252" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a80dd3b61958fcf4c10f4e17e3ed81767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::attrWriteSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Response &gt; response)</argsstring>
+        <name>attrWriteSrv</name>
+        <qualifiedname>IIONode::attrWriteSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="61" column="8" bodyfile="src/iio_node.cpp" bodystart="264" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a25ba5642f6ecc1071a638145cfcdb68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::attrEnableTopicSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Response &gt; response)</argsstring>
+        <name>attrEnableTopicSrv</name>
+        <qualifiedname>IIONode::attrEnableTopicSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="65" column="8" bodyfile="src/iio_node.cpp" bodystart="286" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1aad32bd4473fc598e3c0057b8ce98fa84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::attrDisableTopicSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Response &gt; response)</argsstring>
+        <name>attrDisableTopicSrv</name>
+        <qualifiedname>IIONode::attrDisableTopicSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="69" column="8" bodyfile="src/iio_node.cpp" bodystart="329" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a9fbce46992c5b8ec24bbd2c237cda45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffRefillSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferRefill::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferRefill::Response &gt; response)</argsstring>
+        <name>buffRefillSrv</name>
+        <qualifiedname>IIONode::buffRefillSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferRefill::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferRefill::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="73" column="8" bodyfile="src/iio_node.cpp" bodystart="350" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a14ce6ac38818f130b612962492c6a189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffReadSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferRead::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferRead::Response &gt; response)</argsstring>
+        <name>buffReadSrv</name>
+        <qualifiedname>IIONode::buffReadSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferRead::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferRead::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="77" column="8" bodyfile="src/iio_node.cpp" bodystart="368" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1afed1184ff3c741b304ce0d62db4b2af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffWriteSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferWrite::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferWrite::Response &gt; response)</argsstring>
+        <name>buffWriteSrv</name>
+        <qualifiedname>IIONode::buffWriteSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferWrite::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferWrite::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="81" column="8" bodyfile="src/iio_node.cpp" bodystart="407" bodyend="441"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a70d68aef62d2ec45e6572a5a1118352e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffCreateSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferCreate::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferCreate::Response &gt; response)</argsstring>
+        <name>buffCreateSrv</name>
+        <qualifiedname>IIONode::buffCreateSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferCreate::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferCreate::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="85" column="8" bodyfile="src/iio_node.cpp" bodystart="443" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a6e73a1832c2b73153c8478939517c253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffDestroySrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Response &gt; response)</argsstring>
+        <name>buffDestroySrv</name>
+        <qualifiedname>IIONode::buffDestroySrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="89" column="8" bodyfile="src/iio_node.cpp" bodystart="473" bodyend="492"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a107e9ccb484fdf900c2e81f853117218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffEnableTopicSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Response &gt; response)</argsstring>
+        <name>buffEnableTopicSrv</name>
+        <qualifiedname>IIONode::buffEnableTopicSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="93" column="8" bodyfile="src/iio_node.cpp" bodystart="494" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a6e554d1a16a1ae26a36d9d8572bb22b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IIONode::buffDisableTopicSrv</definition>
+        <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Response &gt; response)</argsstring>
+        <name>buffDisableTopicSrv</name>
+        <qualifiedname>IIONode::buffDisableTopicSrv</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Request &gt;</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Response &gt;</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="97" column="8" bodyfile="src/iio_node.cpp" bodystart="508" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1af780b284db2534067c3f8c7a07709102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string IIONode::uri</definition>
+        <argsstring>()</argsstring>
+        <name>uri</name>
+        <qualifiedname>IIONode::uri</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="101" column="15" bodyfile="src/iio_node.cpp" bodystart="522" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1aba5376f655415f726270be041ea4efb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IIONode::initialized</definition>
+        <argsstring>()</argsstring>
+        <name>initialized</name>
+        <qualifiedname>IIONode::initialized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="102" column="8" bodyfile="src/iio_node.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classIIONode_1a301cc76f2facea0820db39ef3803875a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>iio_context *</type>
+        <definition>iio_context * IIONode::ctx</definition>
+        <argsstring>()</argsstring>
+        <name>ctx</name>
+        <qualifiedname>IIONode::ctx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="103" column="16" bodyfile="src/iio_node.cpp" bodystart="527" bodyend="530"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IIONode</label>
+        <link refid="classIIONode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IIONode</label>
+        <link refid="classIIONode"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_iio/iio_node.hpp" line="43" column="1" bodyfile="include/adi_iio/iio_node.hpp" bodystart="44" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classIIONode_1aad32bd4473fc598e3c0057b8ce98fa84" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrDisableTopicSrv</name></member>
+      <member refid="classIIONode_1a25ba5642f6ecc1071a638145cfcdb68b" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrEnableTopicSrv</name></member>
+      <member refid="classIIONode_1a2e8f4014e44c2c8ddeebb2794d270b9e" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrReadSrv</name></member>
+      <member refid="classIIONode_1a80dd3b61958fcf4c10f4e17e3ed81767" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrWriteSrv</name></member>
+      <member refid="classIIONode_1a70d68aef62d2ec45e6572a5a1118352e" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffCreateSrv</name></member>
+      <member refid="classIIONode_1a6e73a1832c2b73153c8478939517c253" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffDestroySrv</name></member>
+      <member refid="classIIONode_1a6e554d1a16a1ae26a36d9d8572bb22b3" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffDisableTopicSrv</name></member>
+      <member refid="classIIONode_1a107e9ccb484fdf900c2e81f853117218" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffEnableTopicSrv</name></member>
+      <member refid="classIIONode_1a14ce6ac38818f130b612962492c6a189" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffReadSrv</name></member>
+      <member refid="classIIONode_1a9fbce46992c5b8ec24bbd2c237cda45f" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffRefillSrv</name></member>
+      <member refid="classIIONode_1afed1184ff3c741b304ce0d62db4b2af5" prot="public" virt="non-virtual"><scope>IIONode</scope><name>buffWriteSrv</name></member>
+      <member refid="classIIONode_1a8897d0c9a1ebd552b92144fa4625773a" prot="public" virt="non-virtual"><scope>IIONode</scope><name>convertAttrPathToTopicName</name></member>
+      <member refid="classIIONode_1a301cc76f2facea0820db39ef3803875a" prot="public" virt="non-virtual"><scope>IIONode</scope><name>ctx</name></member>
+      <member refid="classIIONode_1a733d6076dc93324c129063c70395f4c0" prot="public" virt="non-virtual"><scope>IIONode</scope><name>IIONode</name></member>
+      <member refid="classIIONode_1a15d9a0a0407689792a1c87f0ec359a47" prot="public" virt="non-virtual"><scope>IIONode</scope><name>initBuffers</name></member>
+      <member refid="classIIONode_1aba5376f655415f726270be041ea4efb9" prot="public" virt="non-virtual"><scope>IIONode</scope><name>initialized</name></member>
+      <member refid="classIIONode_1a66e35001512376c37dc773be1779be1b" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_attrTopicMap</name></member>
+      <member refid="classIIONode_1a81ca5f684db5251eb0d95294cc198038" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_bufferMap</name></member>
+      <member refid="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_ctx</name></member>
+      <member refid="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_initialized</name></member>
+      <member refid="classIIONode_1a431bf37c2c4d912ef18f21669513e815" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_uri</name></member>
+      <member refid="classIIONode_1a3f9c635e8474656d4adbf64f68a51968" prot="public" virt="non-virtual"><scope>IIONode</scope><name>rwAttrPath</name></member>
+      <member refid="classIIONode_1af780b284db2534067c3f8c7a07709102" prot="public" virt="non-virtual"><scope>IIONode</scope><name>uri</name></member>
+      <member refid="classIIONode_1a0a260138136a66c64eb2268c399b6f4d" prot="public" virt="virtual"><scope>IIONode</scope><name>~IIONode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a:
+
+Define BUFFER_QOS_QUEUE_SIZE
+============================
+
+- Defined in :ref:`file_include_adi_iio_iio_buffer.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BUFFER_QOS_QUEUE_SIZE
+   :project: adi_iio Doxygen Project

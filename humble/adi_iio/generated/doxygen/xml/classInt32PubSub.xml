@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInt32PubSub" kind="class" language="C++" prot="public">
+    <compoundname>Int32PubSub</compoundname>
+    <basecompoundref refid="classAttrPubSub" prot="public" virt="non-virtual">AttrPubSub</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInt32PubSub_1af363350c43ca2f97ce82bdcfefb12f54" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IIONode&gt; Int32PubSub::m_nh</definition>
+        <argsstring></argsstring>
+        <name>m_nh</name>
+        <qualifiedname>Int32PubSub::m_nh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="68" column="19" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInt32PubSub_1a22eefc1007bf0ea0c516247ad1a9a883" prot="private" static="no" mutable="no">
+        <type><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref> *</type>
+        <definition>UpdateCallback* Int32PubSub::m_updateCallback</definition>
+        <argsstring></argsstring>
+        <name>m_updateCallback</name>
+        <qualifiedname>Int32PubSub::m_updateCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="69" column="19" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInt32PubSub_1ab79334b6f7e9fee622304d86aaf24c54" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Int32PubSub::m_topic</definition>
+        <argsstring></argsstring>
+        <name>m_topic</name>
+        <qualifiedname>Int32PubSub::m_topic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="70" column="15" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInt32PubSub_1aad7de8d7efdf79d95ea640fb7638b277" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Int32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Int32&gt;::SharedPtr Int32PubSub::m_pub</definition>
+        <argsstring></argsstring>
+        <name>m_pub</name>
+        <qualifiedname>Int32PubSub::m_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="71" column="33" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInt32PubSub_1ac963b9a44b9159b8eabcab27e610f81a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr Int32PubSub::m_sub</definition>
+        <argsstring></argsstring>
+        <name>m_sub</name>
+        <qualifiedname>Int32PubSub::m_sub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="72" column="36" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInt32PubSub_1a24ba9f8516fdb33082a4be4385918703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Int32PubSub::Int32PubSub</definition>
+        <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, UpdateCallback *up, std::string topic)</argsstring>
+        <name>Int32PubSub</name>
+        <qualifiedname>Int32PubSub::Int32PubSub</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref> *</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>topic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="62" column="3" bodyfile="src/attr_publisher.cpp" bodystart="54" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classInt32PubSub_1a0c26cc93c4d9e88aeff0ad014c341006" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Int32PubSub::~Int32PubSub</definition>
+        <argsstring>()</argsstring>
+        <name>~Int32PubSub</name>
+        <qualifiedname>Int32PubSub::~Int32PubSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="63" column="11" bodyfile="src/attr_publisher.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classInt32PubSub_1a9318076a1ada7379298e50a80476de24" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Int32PubSub::publish</definition>
+        <argsstring>(std::string msg) override</argsstring>
+        <name>publish</name>
+        <qualifiedname>Int32PubSub::publish</qualifiedname>
+        <reimplements refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517">publish</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="64" column="8" bodyfile="src/attr_publisher.cpp" bodystart="72" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classInt32PubSub_1a4b179c28e9a6bfa83ed96bc60f0233f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Int32PubSub::update</definition>
+        <argsstring>(const std_msgs::msg::Int32 &amp;msg)</argsstring>
+        <name>update</name>
+        <qualifiedname>Int32PubSub::update</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Int32 &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="65" column="8" bodyfile="src/attr_publisher.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
+      </node>
+      <node id="1">
+        <label>Int32PubSub</label>
+        <link refid="classInt32PubSub"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
+      </node>
+      <node id="1">
+        <label>Int32PubSub</label>
+        <link refid="classInt32PubSub"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_updateCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UpdateCallback</label>
+        <link refid="classUpdateCallback"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_iio/attr_publisher.hpp" line="59" column="1" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="60" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classInt32PubSub_1a24ba9f8516fdb33082a4be4385918703" prot="public" virt="non-virtual"><scope>Int32PubSub</scope><name>Int32PubSub</name></member>
+      <member refid="classInt32PubSub_1af363350c43ca2f97ce82bdcfefb12f54" prot="private" virt="non-virtual"><scope>Int32PubSub</scope><name>m_nh</name></member>
+      <member refid="classInt32PubSub_1aad7de8d7efdf79d95ea640fb7638b277" prot="private" virt="non-virtual"><scope>Int32PubSub</scope><name>m_pub</name></member>
+      <member refid="classInt32PubSub_1ac963b9a44b9159b8eabcab27e610f81a" prot="private" virt="non-virtual"><scope>Int32PubSub</scope><name>m_sub</name></member>
+      <member refid="classInt32PubSub_1ab79334b6f7e9fee622304d86aaf24c54" prot="private" virt="non-virtual"><scope>Int32PubSub</scope><name>m_topic</name></member>
+      <member refid="classInt32PubSub_1a22eefc1007bf0ea0c516247ad1a9a883" prot="private" virt="non-virtual"><scope>Int32PubSub</scope><name>m_updateCallback</name></member>
+      <member refid="classInt32PubSub_1a9318076a1ada7379298e50a80476de24" prot="public" virt="virtual"><scope>Int32PubSub</scope><name>publish</name></member>
+      <member refid="classInt32PubSub_1a4b179c28e9a6bfa83ed96bc60f0233f5" prot="public" virt="non-virtual"><scope>Int32PubSub</scope><name>update</name></member>
+      <member refid="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" prot="public" virt="virtual"><scope>Int32PubSub</scope><name>~AttrPubSub</name></member>
+      <member refid="classInt32PubSub_1a0c26cc93c4d9e88aeff0ad014c341006" prot="public" virt="virtual"><scope>Int32PubSub</scope><name>~Int32PubSub</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

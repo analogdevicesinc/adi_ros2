@@ -1,0 +1,14 @@
+.. _exhale_define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801:
+
+Define MAX_ATTR_SIZE
+====================
+
+- Defined in :ref:`file_src_iio_node.cpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_ATTR_SIZE
+   :project: adi_iio Doxygen Project
