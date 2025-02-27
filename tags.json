@@ -1,4 +1,4 @@
 [
-    "humble",
-    ""
-  ]
+  "humble/adi_meta",
+  "humble/adi_iio"
+]
