@@ -37,6 +37,7 @@ jobs:
     - name: Build doc
       working-directory: ci
       run: |
+        export ADOC_DOC_VERSION=${{ github.ref_name }}
         ./build_doc.sh
 
     - name: Store the generated doc
@@ -48,44 +49,88 @@ jobs:
   deploy-doc:
     runs-on: ubuntu-latest
     needs: build-doc
+    # Extend the job with future ROS2 releases
     if: github.ref == 'refs/heads/humble'
 
     steps:
+    - uses: actions/checkout@v4
     - run: |
         git config --global user.name "${{ github.event.head_commit.committer.name }}"
         git config --global user.email "${{ github.event.head_commit.committer.email }}"
 
-    - uses: actions/checkout@v4
-    - name: Create gh-pages branch
-      run: >
-        git ls-remote --exit-code --heads origin refs/heads/gh-pages ||
-        (
-          git reset --hard ;
-          git clean -fdx ;
+    - name: Save the trigger branch name
+      run: |
+        branch_name=$(git rev-parse --abbrev-ref HEAD)
+        echo "branch_name=$branch_name" >> $GITHUB_ENV
+
+    - name: Prepare gh-pages branch
+      run: |
+        git reset --hard ;
+        git clean -fdx ;
+
+        gh_pages_exists=$(git ls-remote --exit-code --heads origin refs/heads/gh-pages || echo "false")
+
+        if [ "$gh_pages_exists" = "false" ]; then
+          echo "Creating gh-pages branch"
           git checkout --orphan gh-pages ;
           git reset --hard;
-          git commit -m "empty" --allow-empty ;
-          git push origin gh-pages:gh-pages
-        )
+          git commit -m "initial commit" --allow-empty
+        else
+          echo "Working on existing gh-pages branch"
+          git fetch origin gh-pages ;
+          git checkout -b gh-pages origin/gh-pages ;
+        fi
 
-    - uses: actions/checkout@v4
-      with:
-        ref: 'gh-pages'
-
-    - name: Empty gh-pages
+    - name: Overwrite existing doc
       run: |
-        git rm -r . --quiet || true
+        if [ -d "${branch_name}" ]; then
+          echo "Removing existing directory ${branch_name}"
+          git rm -r ${branch_name} --quiet || true
+        fi
 
-    - uses: actions/download-artifact@v4
+    - name: Save generated doc
+      uses: actions/download-artifact@v4
       with:
+        path: ${{ env.branch_name }}
         name: html
 
-    - name: Patch doc build
+    - name: Generate tags for the versioned directories
+      run: |
+        echo "{" > tags.json
+        find . -type d -mindepth 2 -maxdepth 2 ! -name ".*" ! -path "*/.git*" ! -path . | sort | \
+        awk -F/ '
+        BEGIN {first=1}
+        {
+            # Only second level directories
+            path = $2 "/" $3
+
+            if ($3 == "adi_meta") {
+                name = $2
+                label = "core"
+            } else {
+                name = $2 " > " $3
+                label = ""
+            }
+
+            # Skip empty entries
+            if (path != "") {
+                if (!first) printf ",\n"
+                printf "  \"%s\": [\"%s\", \"%s\"]", path, name, label
+                first=0
+            }
+        }' >> tags.json
+        echo -e "\n}" >> tags.json
+
+    - name: Generate auxiliary files
       run: |
         [ -d "_sources" ] && rm -rf _sources
         touch .nojekyll
-        # Create a redirecting index.html at the root of the gh-pages branch
-        echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=adi_meta/index.html"></head><body></body></html>' > index.html
+
+        # Link the index of the versioned directory to the adi_meta/index.html
+        printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=adi_meta/index.html"></head><body></body></html>' > ${branch_name}/index.html
+
+        # Create a redirecting index.html at the root of the gh-pages branch to the latest branch
+        printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=%s/index.html"></head><body></body></html>' "${branch_name}" > index.html
 
     - name: Commit gh-pages
       run: |
