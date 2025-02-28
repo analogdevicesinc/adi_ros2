@@ -3,7 +3,8 @@ on:
     push:
       branches:
         - humble
-        - humble-develop
+      tags:
+        - v*.*.*
     pull_request:
 
 env:
