@@ -62,9 +62,9 @@ language = 'en'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "sphinx.ext.todo",
     "adi_doctools",
     "myst_parser"
+    "sphinx.ext.todo",
 ]
 
 needs_extensions = {
@@ -83,9 +83,6 @@ source_suffix = {
 
 # The master toctree document.
 master_doc = 'index'
-
-# html_logo = ''
-# html_favicon = ''
 
 exclude_patterns = ['**/_build', '**/Thumbs.db', '**/.DS_Store',
                     "**/.work",             # act temp files
@@ -155,7 +152,10 @@ todo_emit_warnings = True
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'cosmic'
+# rosdoc2 will override the theme, but you may set one here for running Sphinx without the rosdoc2 tool.
+html_theme = 'harmonic'
+# html_logo = ''
+# html_favicon = ''
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
