@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Class IIOBuffer &#8212; adi_iio 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=9cb8e28d" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script src="../_static/documentation_options.js?v=8d563738"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script defer="" src="../_static/app.umd.js?v=8d0ced9f"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class IIONode" href="classIIONode.html" />
+    <link rel="prev" title="Class IIOAttrTopic" href="classIIOAttrTopic.html" />
+   
+  
+  <meta name="repository" content="">
+  <meta name="version" content="1.0">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button value="search" class="icon"></button>
+      <span id="search-progress"></span>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../index.html">
+          <div>adi_iio</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root/>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Class IIOBuffer</a><ul>
+<li><a class="reference internal" href="#class-documentation">Class Documentation</a><ul>
+<li><a class="reference internal" href="#_CPPv49IIOBuffer"><code class="docutils literal notranslate"><span class="pre">IIOBuffer</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer9IIOBufferENSt10shared_ptrI7IIONodeEENSt6stringE"><code class="docutils literal notranslate"><span class="pre">IIOBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBufferD0Ev"><code class="docutils literal notranslate"><span class="pre">~IIOBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer15createIIOBufferERNSt6stringE"><code class="docutils literal notranslate"><span class="pre">createIIOBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer16destroyIIOBufferEv"><code class="docutils literal notranslate"><span class="pre">destroyIIOBuffer()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer6refillERNSt6stringE"><code class="docutils literal notranslate"><span class="pre">refill()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE"><code class="docutils literal notranslate"><span class="pre">push()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringE"><code class="docutils literal notranslate"><span class="pre">enableTopic()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer12disableTopicEv"><code class="docutils literal notranslate"><span class="pre">disableTopic()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer14publishingLoopEv"><code class="docutils literal notranslate"><span class="pre">publishingLoop()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer13samples_countEv"><code class="docutils literal notranslate"><span class="pre">samples_count()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer11device_pathEv"><code class="docutils literal notranslate"><span class="pre">device_path()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer8channelsEv"><code class="docutils literal notranslate"><span class="pre">channels()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer6bufferEv"><code class="docutils literal notranslate"><span class="pre">buffer()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer13topic_enabledEv"><code class="docutils literal notranslate"><span class="pre">topic_enabled()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer4dataEv"><code class="docutils literal notranslate"><span class="pre">data()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer17set_samples_countE7int32_t"><code class="docutils literal notranslate"><span class="pre">set_samples_count()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer15set_device_pathENSt6stringE"><code class="docutils literal notranslate"><span class="pre">set_device_path()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer12set_channelsENSt6vectorINSt6stringEEE"><code class="docutils literal notranslate"><span class="pre">set_channels()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../index.html">
+      adi_iio
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root/>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul class="current">
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1" checked=""/><div class="collapse"><a class="reference internal" href="index.html">C++ API</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classAttrPubSub.html">Class AttrPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classBoolPubSub.html">Class BoolPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classFloat32PubSub.html">Class Float32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classIIOAttrTopic.html">Class IIOAttrTopic</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Class IIOBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classIIONode.html">Class IIONode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classInt32PubSub.html">Class Int32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classStringPubSub.html">Class StringPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classUpdateCallback.html">Class UpdateCallback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265.html">Define ATTR_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8.html">Define ATTR_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673.html">Define ATTR_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a.html">Define BUFFER_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512.html">Define BUFFER_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e.html">Define BUFFER_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801.html">Define MAX_ATTR_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dir_include_adi_iio.html">Directory adi_iio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dir_src.html">Directory src</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-1" id="toctree-collapse-1-1"/><div class="collapse"><a class="reference internal" href="file_src_adi_iio.cpp.html">File adi_iio.cpp</a><label for="toctree-collapse-1-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_src_adi_iio.cpp.html">Program Listing for File adi_iio.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-2" id="toctree-collapse-1-2"/><div class="collapse"><a class="reference internal" href="file_src_attr_publisher.cpp.html">File attr_publisher.cpp</a><label for="toctree-collapse-1-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_src_attr_publisher.cpp.html">Program Listing for File attr_publisher.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-3" id="toctree-collapse-1-3"/><div class="collapse"><a class="reference internal" href="file_include_adi_iio_attr_publisher.hpp.html">File attr_publisher.hpp</a><label for="toctree-collapse-1-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_iio_attr_publisher.hpp.html">Program Listing for File attr_publisher.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-4" id="toctree-collapse-1-4"/><div class="collapse"><a class="reference internal" href="file_src_iio_attr_topic.cpp.html">File iio_attr_topic.cpp</a><label for="toctree-collapse-1-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_src_iio_attr_topic.cpp.html">Program Listing for File iio_attr_topic.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-5" id="toctree-collapse-1-5"/><div class="collapse"><a class="reference internal" href="file_include_adi_iio_iio_attr_topic.hpp.html">File iio_attr_topic.hpp</a><label for="toctree-collapse-1-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_iio_iio_attr_topic.hpp.html">Program Listing for File iio_attr_topic.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-6" id="toctree-collapse-1-6"/><div class="collapse"><a class="reference internal" href="file_src_iio_buffer.cpp.html">File iio_buffer.cpp</a><label for="toctree-collapse-1-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_src_iio_buffer.cpp.html">Program Listing for File iio_buffer.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-7" id="toctree-collapse-1-7"/><div class="collapse"><a class="reference internal" href="file_include_adi_iio_iio_buffer.hpp.html">File iio_buffer.hpp</a><label for="toctree-collapse-1-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_iio_iio_buffer.hpp.html">Program Listing for File iio_buffer.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-8" id="toctree-collapse-1-8"/><div class="collapse"><a class="reference internal" href="file_src_iio_node.cpp.html">File iio_node.cpp</a><label for="toctree-collapse-1-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_src_iio_node.cpp.html">Program Listing for File iio_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-9" id="toctree-collapse-1-9"/><div class="collapse"><a class="reference internal" href="file_include_adi_iio_iio_node.hpp.html">File iio_node.hpp</a><label for="toctree-collapse-1-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_iio_iio_node.hpp.html">Program Listing for File iio_node.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="../interfaces/service_definitions.html">Service Definitions</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/AttrDisableTopic.html">AttrDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/AttrEnableTopic.html">AttrEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/AttrReadString.html">AttrReadString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/AttrWriteString.html">AttrWriteString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferCreate.html">BufferCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferDestroy.html">BufferDestroy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferDisableTopic.html">BufferDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferEnableTopic.html">BufferEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferRead.html">BufferRead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferRefill.html">BufferRefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/BufferWrite.html">BufferWrite</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/README.html">README</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_docs/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_docs/installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_docs/installation.html#building-the-documentation">Building the Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_docs/node_description.html">Node-Specific Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_docs/quick_start.html">Quick Start</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body" role="main">
+            
+  <section id="class-iiobuffer">
+<span id="exhale-class-classiiobuffer"></span><h1>Class IIOBuffer<a class="headerlink" href="#class-iiobuffer" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adi_iio_iio_buffer.hpp.html#file-include-adi-iio-iio-buffer-hpp"><span class="std std-ref">File iio_buffer.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv49IIOBuffer">
+<span id="_CPPv39IIOBuffer"></span><span id="_CPPv29IIOBuffer"></span><span id="IIOBuffer"></span><span class="target" id="classIIOBuffer"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IIOBuffer</span></span></span><a class="headerlink" href="#_CPPv49IIOBuffer" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer9IIOBufferENSt10shared_ptrI7IIONodeEENSt6stringE">
+<span id="_CPPv3N9IIOBuffer9IIOBufferENSt10shared_ptrI7IIONodeEENSt6stringE"></span><span id="_CPPv2N9IIOBuffer9IIOBufferENSt10shared_ptrI7IIONodeEENSt6stringE"></span><span id="IIOBuffer::IIOBuffer__std::shared_ptr:IIONode:.ss"></span><span class="target" id="classIIOBuffer_1ab0842479ceebda50fb738f6209abaef3"></span><span class="sig-name descname"><span class="n"><span class="pre">IIOBuffer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="classIIONode.html#_CPPv47IIONode" title="IIONode"><span class="n"><span class="pre">IIONode</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">nh</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer9IIOBufferENSt10shared_ptrI7IIONodeEENSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBufferD0Ev">
+<span id="_CPPv3N9IIOBufferD0Ev"></span><span id="_CPPv2N9IIOBufferD0Ev"></span><span id="IIOBuffer::~IIOBuffer"></span><span class="target" id="classIIOBuffer_1ac6904899169d8b5250f2a002e5c2facc"></span><span class="sig-name descname"><span class="n"><span class="pre">~IIOBuffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBufferD0Ev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer15createIIOBufferERNSt6stringE">
+<span id="_CPPv3N9IIOBuffer15createIIOBufferERNSt6stringE"></span><span id="_CPPv2N9IIOBuffer15createIIOBufferERNSt6stringE"></span><span id="IIOBuffer::createIIOBuffer__ssR"></span><span class="target" id="classIIOBuffer_1a9d8307d9dcd482f75439791cc91c6f08"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createIIOBuffer</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer15createIIOBufferERNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer16destroyIIOBufferEv">
+<span id="_CPPv3N9IIOBuffer16destroyIIOBufferEv"></span><span id="_CPPv2N9IIOBuffer16destroyIIOBufferEv"></span><span id="IIOBuffer::destroyIIOBuffer"></span><span class="target" id="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">destroyIIOBuffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer16destroyIIOBufferEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer6refillERNSt6stringE">
+<span id="_CPPv3N9IIOBuffer6refillERNSt6stringE"></span><span id="_CPPv2N9IIOBuffer6refillERNSt6stringE"></span><span id="IIOBuffer::refill__ssR"></span><span class="target" id="classIIOBuffer_1a6808ee387552d28a81f841a3dcb90259"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">refill</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">message</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer6refillERNSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE">
+<span id="_CPPv3N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE"></span><span id="_CPPv2N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE"></span><span id="IIOBuffer::push__ssR.std_msgs::msg::Int32MultiArrayR"></span><span class="target" id="classIIOBuffer_1aec0693771d2b6ab91cca274b18be8b87"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">push</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">message</span></span>, <span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32MultiArray</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer11enableTopicENSt6stringE">
+<span id="_CPPv3N9IIOBuffer11enableTopicENSt6stringE"></span><span id="_CPPv2N9IIOBuffer11enableTopicENSt6stringE"></span><span id="IIOBuffer::enableTopic__ss"></span><span class="target" id="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableTopic</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">topic_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer12disableTopicEv">
+<span id="_CPPv3N9IIOBuffer12disableTopicEv"></span><span id="_CPPv2N9IIOBuffer12disableTopicEv"></span><span id="IIOBuffer::disableTopic"></span><span class="target" id="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">disableTopic</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer12disableTopicEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer14publishingLoopEv">
+<span id="_CPPv3N9IIOBuffer14publishingLoopEv"></span><span id="_CPPv2N9IIOBuffer14publishingLoopEv"></span><span id="IIOBuffer::publishingLoop"></span><span class="target" id="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publishingLoop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer14publishingLoopEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer13samples_countEv">
+<span id="_CPPv3N9IIOBuffer13samples_countEv"></span><span id="_CPPv2N9IIOBuffer13samples_countEv"></span><span id="IIOBuffer::samples_count"></span><span class="target" id="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">samples_count</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer13samples_countEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer11device_pathEv">
+<span id="_CPPv3N9IIOBuffer11device_pathEv"></span><span id="_CPPv2N9IIOBuffer11device_pathEv"></span><span id="IIOBuffer::device_path"></span><span class="target" id="classIIOBuffer_1add20c61082a5ab9ca3feac14e6708f6c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device_path</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer11device_pathEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer8channelsEv">
+<span id="_CPPv3N9IIOBuffer8channelsEv"></span><span id="_CPPv2N9IIOBuffer8channelsEv"></span><span id="IIOBuffer::channels"></span><span class="target" id="classIIOBuffer_1aa68543e42658796034375e8b081d205a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">channels</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer8channelsEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer6bufferEv">
+<span id="_CPPv3N9IIOBuffer6bufferEv"></span><span id="_CPPv2N9IIOBuffer6bufferEv"></span><span id="IIOBuffer::buffer"></span><span class="target" id="classIIOBuffer_1a7419e674c74483b0f7ed30f43b7c92b6"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">iio_buffer</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">buffer</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer6bufferEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer13topic_enabledEv">
+<span id="_CPPv3N9IIOBuffer13topic_enabledEv"></span><span id="_CPPv2N9IIOBuffer13topic_enabledEv"></span><span id="IIOBuffer::topic_enabled"></span><span class="target" id="classIIOBuffer_1ad86fc1b6b31e278964f191f3a9f43577"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">topic_enabled</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer13topic_enabledEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer4dataEv">
+<span id="_CPPv3N9IIOBuffer4dataEv"></span><span id="_CPPv2N9IIOBuffer4dataEv"></span><span id="IIOBuffer::data"></span><span class="target" id="classIIOBuffer_1ad7b952f4ad2665fb54ce4df23d6fa5b2"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32MultiArray</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer4dataEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer17set_samples_countE7int32_t">
+<span id="_CPPv3N9IIOBuffer17set_samples_countE7int32_t"></span><span id="_CPPv2N9IIOBuffer17set_samples_countE7int32_t"></span><span id="IIOBuffer::set_samples_count__int32_t"></span><span class="target" id="classIIOBuffer_1ae7ec0da7e71cf25817b74cbed9168ed9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_samples_count</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">samples_count</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer17set_samples_countE7int32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer15set_device_pathENSt6stringE">
+<span id="_CPPv3N9IIOBuffer15set_device_pathENSt6stringE"></span><span id="_CPPv2N9IIOBuffer15set_device_pathENSt6stringE"></span><span id="IIOBuffer::set_device_path__ss"></span><span class="target" id="classIIOBuffer_1a2f9c3dc61a6d4ab72c6003f3c0ebcb21"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_device_path</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">device_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer15set_device_pathENSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer12set_channelsENSt6vectorINSt6stringEEE">
+<span id="_CPPv3N9IIOBuffer12set_channelsENSt6vectorINSt6stringEEE"></span><span id="_CPPv2N9IIOBuffer12set_channelsENSt6vectorINSt6stringEEE"></span><span id="IIOBuffer::set_channels__std::vector:ss:"></span><span class="target" id="classIIOBuffer_1a096172babc832053f1f3264e2a207c58"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">set_channels</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">channels</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer12set_channelsENSt6vectorINSt6stringEEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="classIIOAttrTopic.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Class IIOAttrTopic</a>
+    <a href="classIIONode.html" title="Next document (Alt+Shift+RightArrow)" class="next">Class IIONode</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <div id="vertical-border"></div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

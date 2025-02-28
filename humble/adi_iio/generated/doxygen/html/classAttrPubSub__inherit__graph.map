@@ -1,7 +1,0 @@
-<map id="AttrPubSub" name="AttrPubSub">
-<area shape="rect" id="node1" title=" " alt="" coords="207,5,302,32"/>
-<area shape="rect" id="node2" href="$classBoolPubSub.html" title=" " alt="" coords="5,80,104,107"/>
-<area shape="rect" id="node3" href="$classFloat32PubSub.html" title=" " alt="" coords="129,80,247,107"/>
-<area shape="rect" id="node4" href="$classInt32PubSub.html" title=" " alt="" coords="271,80,374,107"/>
-<area shape="rect" id="node5" href="$classStringPubSub.html" title=" " alt="" coords="398,80,506,107"/>
-</map>

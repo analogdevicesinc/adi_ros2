@@ -1,0 +1,100 @@
+\doxysection{IIONode Class Reference}
+\hypertarget{classIIONode}{}\label{classIIONode}\index{IIONode@{IIONode}}
+
+
+Inheritance diagram for IIONode\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classIIONode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IIONode\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classIIONode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIONode_a15d9a0a0407689792a1c87f0ec359a47}\label{classIIONode_a15d9a0a0407689792a1c87f0ec359a47} 
+void {\bfseries init\+Buffers} ()
+\item 
+\Hypertarget{classIIONode_a3f9c635e8474656d4adbf64f68a51968}\label{classIIONode_a3f9c635e8474656d4adbf64f68a51968} 
+bool {\bfseries rw\+Attr\+Path} (std\+::string path, std\+::string \&result, bool write=false, std\+::string value="{}"{})
+\item 
+\Hypertarget{classIIONode_a8897d0c9a1ebd552b92144fa4625773a}\label{classIIONode_a8897d0c9a1ebd552b92144fa4625773a} 
+std\+::string {\bfseries convert\+Attr\+Path\+To\+Topic\+Name} (std\+::string path)
+\item 
+\Hypertarget{classIIONode_a2e8f4014e44c2c8ddeebb2794d270b9e}\label{classIIONode_a2e8f4014e44c2c8ddeebb2794d270b9e} 
+void {\bfseries attr\+Read\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Read\+String\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Read\+String\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a80dd3b61958fcf4c10f4e17e3ed81767}\label{classIIONode_a80dd3b61958fcf4c10f4e17e3ed81767} 
+void {\bfseries attr\+Write\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Write\+String\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Write\+String\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a25ba5642f6ecc1071a638145cfcdb68b}\label{classIIONode_a25ba5642f6ecc1071a638145cfcdb68b} 
+void {\bfseries attr\+Enable\+Topic\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Enable\+Topic\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Enable\+Topic\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_aad32bd4473fc598e3c0057b8ce98fa84}\label{classIIONode_aad32bd4473fc598e3c0057b8ce98fa84} 
+void {\bfseries attr\+Disable\+Topic\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Disable\+Topic\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Attr\+Disable\+Topic\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a9fbce46992c5b8ec24bbd2c237cda45f}\label{classIIONode_a9fbce46992c5b8ec24bbd2c237cda45f} 
+void {\bfseries buff\+Refill\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Refill\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Refill\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a14ce6ac38818f130b612962492c6a189}\label{classIIONode_a14ce6ac38818f130b612962492c6a189} 
+void {\bfseries buff\+Read\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Read\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Read\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_afed1184ff3c741b304ce0d62db4b2af5}\label{classIIONode_afed1184ff3c741b304ce0d62db4b2af5} 
+void {\bfseries buff\+Write\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Write\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Write\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a70d68aef62d2ec45e6572a5a1118352e}\label{classIIONode_a70d68aef62d2ec45e6572a5a1118352e} 
+void {\bfseries buff\+Create\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Create\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Create\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a6e73a1832c2b73153c8478939517c253}\label{classIIONode_a6e73a1832c2b73153c8478939517c253} 
+void {\bfseries buff\+Destroy\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Destroy\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Destroy\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a107e9ccb484fdf900c2e81f853117218}\label{classIIONode_a107e9ccb484fdf900c2e81f853117218} 
+void {\bfseries buff\+Enable\+Topic\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Enable\+Topic\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Enable\+Topic\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_a6e554d1a16a1ae26a36d9d8572bb22b3}\label{classIIONode_a6e554d1a16a1ae26a36d9d8572bb22b3} 
+void {\bfseries buff\+Disable\+Topic\+Srv} (const std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Disable\+Topic\+::\+Request $>$ request, std\+::shared\+\_\+ptr$<$ adi\+\_\+iio\+::srv\+::\+Buffer\+Disable\+Topic\+::\+Response $>$ response)
+\item 
+\Hypertarget{classIIONode_af780b284db2534067c3f8c7a07709102}\label{classIIONode_af780b284db2534067c3f8c7a07709102} 
+std\+::string {\bfseries uri} ()
+\item 
+\Hypertarget{classIIONode_aba5376f655415f726270be041ea4efb9}\label{classIIONode_aba5376f655415f726270be041ea4efb9} 
+bool {\bfseries initialized} ()
+\item 
+\Hypertarget{classIIONode_a301cc76f2facea0820db39ef3803875a}\label{classIIONode_a301cc76f2facea0820db39ef3803875a} 
+iio\+\_\+context \texorpdfstring{$\ast$}{*} {\bfseries ctx} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIONode_aa03dd3262b320c8af7ae78d2da26d0c9}\label{classIIONode_aa03dd3262b320c8af7ae78d2da26d0c9} 
+bool {\bfseries m\+\_\+initialized}
+\item 
+\Hypertarget{classIIONode_a431bf37c2c4d912ef18f21669513e815}\label{classIIONode_a431bf37c2c4d912ef18f21669513e815} 
+std\+::string {\bfseries m\+\_\+uri}
+\item 
+\Hypertarget{classIIONode_af77f0d15b3e576fa23881a65eed98cbd}\label{classIIONode_af77f0d15b3e576fa23881a65eed98cbd} 
+iio\+\_\+context \texorpdfstring{$\ast$}{*} {\bfseries m\+\_\+ctx}
+\item 
+\Hypertarget{classIIONode_a66e35001512376c37dc773be1779be1b}\label{classIIONode_a66e35001512376c37dc773be1779be1b} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIOAttrTopic}{IIOAttr\+Topic}} $>$ $>$ {\bfseries m\+\_\+attr\+Topic\+Map}
+\item 
+\Hypertarget{classIIONode_a81ca5f684db5251eb0d95294cc198038}\label{classIIONode_a81ca5f684db5251eb0d95294cc198038} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIOBuffer}{IIOBuffer}} $>$ $>$ {\bfseries m\+\_\+buffer\+Map}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/iio\+\_\+node.\+hpp\item 
+src/iio\+\_\+node.\+cpp\end{DoxyCompactItemize}

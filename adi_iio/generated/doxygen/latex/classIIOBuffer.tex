@@ -1,0 +1,104 @@
+\doxysection{IIOBuffer Class Reference}
+\hypertarget{classIIOBuffer}{}\label{classIIOBuffer}\index{IIOBuffer@{IIOBuffer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOBuffer_ab0842479ceebda50fb738f6209abaef3}\label{classIIOBuffer_ab0842479ceebda50fb738f6209abaef3} 
+{\bfseries IIOBuffer} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ nh, std\+::string device\+\_\+path)
+\item 
+\Hypertarget{classIIOBuffer_a9d8307d9dcd482f75439791cc91c6f08}\label{classIIOBuffer_a9d8307d9dcd482f75439791cc91c6f08} 
+bool {\bfseries create\+IIOBuffer} (std\+::string \&message)
+\item 
+\Hypertarget{classIIOBuffer_acb0b64afa7d33513f16327728d69d7a5}\label{classIIOBuffer_acb0b64afa7d33513f16327728d69d7a5} 
+void {\bfseries destroy\+IIOBuffer} ()
+\item 
+\Hypertarget{classIIOBuffer_a6808ee387552d28a81f841a3dcb90259}\label{classIIOBuffer_a6808ee387552d28a81f841a3dcb90259} 
+bool {\bfseries refill} (std\+::string \&message)
+\item 
+\Hypertarget{classIIOBuffer_aec0693771d2b6ab91cca274b18be8b87}\label{classIIOBuffer_aec0693771d2b6ab91cca274b18be8b87} 
+bool {\bfseries push} (std\+::string \&message, std\+\_\+msgs\+::msg\+::\+Int32\+Multi\+Array \&data)
+\item 
+\Hypertarget{classIIOBuffer_a1d54975669ea90f59450f5859e57db04}\label{classIIOBuffer_a1d54975669ea90f59450f5859e57db04} 
+void {\bfseries enable\+Topic} (std\+::string topic\+\_\+name)
+\item 
+\Hypertarget{classIIOBuffer_a3634bd5cc5fc7a71d19f5ba82a768ed8}\label{classIIOBuffer_a3634bd5cc5fc7a71d19f5ba82a768ed8} 
+void {\bfseries disable\+Topic} ()
+\item 
+\Hypertarget{classIIOBuffer_a1a35fd5fdf1838cb34305f093edeecbb}\label{classIIOBuffer_a1a35fd5fdf1838cb34305f093edeecbb} 
+void {\bfseries publishing\+Loop} ()
+\item 
+\Hypertarget{classIIOBuffer_a3b8ba03f5065fe80d4ac3956a890ef3e}\label{classIIOBuffer_a3b8ba03f5065fe80d4ac3956a890ef3e} 
+int32\+\_\+t {\bfseries samples\+\_\+count} ()
+\item 
+\Hypertarget{classIIOBuffer_add20c61082a5ab9ca3feac14e6708f6c}\label{classIIOBuffer_add20c61082a5ab9ca3feac14e6708f6c} 
+std\+::string {\bfseries device\+\_\+path} ()
+\item 
+\Hypertarget{classIIOBuffer_aa68543e42658796034375e8b081d205a}\label{classIIOBuffer_aa68543e42658796034375e8b081d205a} 
+std\+::vector$<$ std\+::string $>$ {\bfseries channels} ()
+\item 
+\Hypertarget{classIIOBuffer_a7419e674c74483b0f7ed30f43b7c92b6}\label{classIIOBuffer_a7419e674c74483b0f7ed30f43b7c92b6} 
+iio\+\_\+buffer \texorpdfstring{$\ast$}{*} {\bfseries buffer} ()
+\item 
+\Hypertarget{classIIOBuffer_ad86fc1b6b31e278964f191f3a9f43577}\label{classIIOBuffer_ad86fc1b6b31e278964f191f3a9f43577} 
+bool {\bfseries topic\+\_\+enabled} ()
+\item 
+\Hypertarget{classIIOBuffer_ad7b952f4ad2665fb54ce4df23d6fa5b2}\label{classIIOBuffer_ad7b952f4ad2665fb54ce4df23d6fa5b2} 
+std\+\_\+msgs\+::msg\+::\+Int32\+Multi\+Array \& {\bfseries data} ()
+\item 
+\Hypertarget{classIIOBuffer_ae7ec0da7e71cf25817b74cbed9168ed9}\label{classIIOBuffer_ae7ec0da7e71cf25817b74cbed9168ed9} 
+void {\bfseries set\+\_\+samples\+\_\+count} (int32\+\_\+t samples\+\_\+count)
+\item 
+\Hypertarget{classIIOBuffer_a2f9c3dc61a6d4ab72c6003f3c0ebcb21}\label{classIIOBuffer_a2f9c3dc61a6d4ab72c6003f3c0ebcb21} 
+void {\bfseries set\+\_\+device\+\_\+path} (std\+::string device\+\_\+path)
+\item 
+\Hypertarget{classIIOBuffer_a096172babc832053f1f3264e2a207c58}\label{classIIOBuffer_a096172babc832053f1f3264e2a207c58} 
+void {\bfseries set\+\_\+channels} (std\+::vector$<$ std\+::string $>$ channels)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOBuffer_aab6d6c33bb5b01606959a49e0f91f033}\label{classIIOBuffer_aab6d6c33bb5b01606959a49e0f91f033} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ {\bfseries m\+\_\+nh}
+\item 
+\Hypertarget{classIIOBuffer_ab60200c27fba0c69954a0fbd407cbcd1}\label{classIIOBuffer_ab60200c27fba0c69954a0fbd407cbcd1} 
+std\+::string {\bfseries m\+\_\+device\+\_\+path}
+\item 
+\Hypertarget{classIIOBuffer_aa4ccb6bca18578140b5836371fa0cc7e}\label{classIIOBuffer_aa4ccb6bca18578140b5836371fa0cc7e} 
+std\+::vector$<$ std\+::string $>$ {\bfseries m\+\_\+channels}
+\item 
+\Hypertarget{classIIOBuffer_a29b99551dd65176b44f220661a9180b9}\label{classIIOBuffer_a29b99551dd65176b44f220661a9180b9} 
+int32\+\_\+t {\bfseries m\+\_\+samples\+\_\+count}
+\item 
+\Hypertarget{classIIOBuffer_a78a09dd2665047cc5a1c92e761266071}\label{classIIOBuffer_a78a09dd2665047cc5a1c92e761266071} 
+iio\+\_\+buffer \texorpdfstring{$\ast$}{*} {\bfseries m\+\_\+buffer}
+\item 
+\Hypertarget{classIIOBuffer_afc0923c4640367674aacccf175929ccb}\label{classIIOBuffer_afc0923c4640367674aacccf175929ccb} 
+std\+\_\+msgs\+::msg\+::\+Int32\+Multi\+Array {\bfseries m\+\_\+data}
+\item 
+\Hypertarget{classIIOBuffer_a4b99d23e94e253d53339e849f8d13030}\label{classIIOBuffer_a4b99d23e94e253d53339e849f8d13030} 
+bool {\bfseries m\+\_\+topic\+\_\+enabled}
+\item 
+\Hypertarget{classIIOBuffer_ae010cfcdb6b65899e30a0163757551dc}\label{classIIOBuffer_ae010cfcdb6b65899e30a0163757551dc} 
+std\+::string {\bfseries m\+\_\+topic\+\_\+name}
+\item 
+\Hypertarget{classIIOBuffer_aec8940e4ebac01323a7925f87bf48f94}\label{classIIOBuffer_aec8940e4ebac01323a7925f87bf48f94} 
+rclcpp\+::\+Publisher$<$ std\+\_\+msgs\+::msg\+::\+Int32\+Multi\+Array $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+pub}
+\item 
+\Hypertarget{classIIOBuffer_a24d228f9d56f48d3a0a200f90ddd448b}\label{classIIOBuffer_a24d228f9d56f48d3a0a200f90ddd448b} 
+std\+::thread {\bfseries m\+\_\+th}
+\item 
+\Hypertarget{classIIOBuffer_a865880e3df8736a64d43bc0452173863}\label{classIIOBuffer_a865880e3df8736a64d43bc0452173863} 
+bool {\bfseries m\+\_\+canceled}
+\item 
+\Hypertarget{classIIOBuffer_a141cca5c5b934bdd683efa4910de9f1a}\label{classIIOBuffer_a141cca5c5b934bdd683efa4910de9f1a} 
+bool {\bfseries m\+\_\+stop\+Thread}
+\item 
+\Hypertarget{classIIOBuffer_a684d9b70852b36843d6849821c8eb581}\label{classIIOBuffer_a684d9b70852b36843d6849821c8eb581} 
+std\+::mutex {\bfseries m\+\_\+mutex}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/iio\+\_\+buffer.\+hpp\item 
+src/iio\+\_\+buffer.\+cpp\end{DoxyCompactItemize}
