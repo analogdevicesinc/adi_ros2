@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
   <compound refid="classAttrPubSub" kind="class"><name>AttrPubSub</name>
     <member refid="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" kind="function"><name>~AttrPubSub</name></member>
     <member refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517" kind="function"><name>publish</name></member>
@@ -73,10 +73,10 @@
     <member refid="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb" kind="function"><name>publishingLoop</name></member>
     <member refid="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e" kind="function"><name>samples_count</name></member>
     <member refid="classIIOBuffer_1add20c61082a5ab9ca3feac14e6708f6c" kind="function"><name>device_path</name></member>
-    <member refid="classIIOBuffer_1aa68543e42658796034375e8b081d205a" kind="function"><name>channels</name></member>
-    <member refid="classIIOBuffer_1a7419e674c74483b0f7ed30f43b7c92b6" kind="function"><name>buffer</name></member>
+    <member refid="classIIOBuffer_1a052c45dc56d81141cdac4ee811e23ce8" kind="function"><name>channels</name></member>
+    <member refid="classIIOBuffer_1a426538d409622638c4490542bd5f4935" kind="function"><name>buffer</name></member>
     <member refid="classIIOBuffer_1ad86fc1b6b31e278964f191f3a9f43577" kind="function"><name>topic_enabled</name></member>
-    <member refid="classIIOBuffer_1ad7b952f4ad2665fb54ce4df23d6fa5b2" kind="function"><name>data</name></member>
+    <member refid="classIIOBuffer_1a209e92b5356906202f267388dd9e6893" kind="function"><name>data</name></member>
     <member refid="classIIOBuffer_1ae7ec0da7e71cf25817b74cbed9168ed9" kind="function"><name>set_samples_count</name></member>
     <member refid="classIIOBuffer_1a2f9c3dc61a6d4ab72c6003f3c0ebcb21" kind="function"><name>set_device_path</name></member>
     <member refid="classIIOBuffer_1a096172babc832053f1f3264e2a207c58" kind="function"><name>set_channels</name></member>

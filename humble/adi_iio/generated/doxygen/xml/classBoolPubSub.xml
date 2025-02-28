@@ -1,15 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classBoolPubSub" kind="class" language="C++" prot="public">
     <compoundname>BoolPubSub</compoundname>
     <basecompoundref refid="classAttrPubSub" prot="public" virt="non-virtual">AttrPubSub</basecompoundref>
-    <sectiondef kind="private-attrib">
+      <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classBoolPubSub_1ac7f9d8334d68cfa2ce2308ae05451ee7" prot="private" static="no" mutable="no">
         <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
         <definition>std::shared_ptr&lt;IIONode&gt; BoolPubSub::m_nh</definition>
         <argsstring></argsstring>
         <name>m_nh</name>
-        <qualifiedname>BoolPubSub::m_nh</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -23,7 +22,6 @@
         <definition>UpdateCallback* BoolPubSub::m_updateCallback</definition>
         <argsstring></argsstring>
         <name>m_updateCallback</name>
-        <qualifiedname>BoolPubSub::m_updateCallback</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -37,7 +35,6 @@
         <definition>std::string BoolPubSub::m_topic</definition>
         <argsstring></argsstring>
         <name>m_topic</name>
-        <qualifiedname>BoolPubSub::m_topic</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,7 +48,6 @@
         <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr BoolPubSub::m_pub</definition>
         <argsstring></argsstring>
         <name>m_pub</name>
-        <qualifiedname>BoolPubSub::m_pub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -65,7 +61,6 @@
         <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr BoolPubSub::m_sub</definition>
         <argsstring></argsstring>
         <name>m_sub</name>
-        <qualifiedname>BoolPubSub::m_sub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,14 +69,13 @@
         </inbodydescription>
         <location file="include/adi_iio/attr_publisher.hpp" line="88" column="36" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="88" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classBoolPubSub_1a3729ba790f192f8be35efb8affdf41f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>BoolPubSub::BoolPubSub</definition>
         <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, UpdateCallback *up, std::string topic)</argsstring>
         <name>BoolPubSub</name>
-        <qualifiedname>BoolPubSub::BoolPubSub</qualifiedname>
         <param>
           <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
           <declname>nh</declname>
@@ -107,7 +101,6 @@
         <definition>BoolPubSub::~BoolPubSub</definition>
         <argsstring>()</argsstring>
         <name>~BoolPubSub</name>
-        <qualifiedname>BoolPubSub::~BoolPubSub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -121,7 +114,6 @@
         <definition>void BoolPubSub::publish</definition>
         <argsstring>(std::string msg) override</argsstring>
         <name>publish</name>
-        <qualifiedname>BoolPubSub::publish</qualifiedname>
         <reimplements refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517">publish</reimplements>
         <param>
           <type>std::string</type>
@@ -140,7 +132,6 @@
         <definition>void BoolPubSub::update</definition>
         <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
         <name>update</name>
-        <qualifiedname>BoolPubSub::update</qualifiedname>
         <param>
           <type>const std_msgs::msg::Bool &amp;</type>
           <declname>msg</declname>
@@ -153,28 +144,24 @@
         </inbodydescription>
         <location file="include/adi_iio/attr_publisher.hpp" line="81" column="8" bodyfile="src/attr_publisher.cpp" bodystart="121" bodyend="125"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>AttrPubSub</label>
-        <link refid="classAttrPubSub"/>
-      </node>
       <node id="1">
         <label>BoolPubSub</label>
         <link refid="classBoolPubSub"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="2">
         <label>AttrPubSub</label>
         <link refid="classAttrPubSub"/>
       </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="1">
         <label>BoolPubSub</label>
         <link refid="classBoolPubSub"/>
@@ -187,6 +174,10 @@
       <node id="3">
         <label>UpdateCallback</label>
         <link refid="classUpdateCallback"/>
+      </node>
+      <node id="2">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
       </node>
     </collaborationgraph>
     <location file="include/adi_iio/attr_publisher.hpp" line="75" column="1" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="76" bodyend="89"/>

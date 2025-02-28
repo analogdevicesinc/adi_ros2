@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="iio__attr__topic_8hpp" kind="file" language="C++">
     <compoundname>iio_attr_topic.hpp</compoundname>
     <includes local="no">iio.h</includes>
@@ -12,6 +12,15 @@
     <includedby refid="iio__attr__topic_8cpp" local="yes">src/iio_attr_topic.cpp</includedby>
     <includedby refid="iio__node_8cpp" local="yes">src/iio_node.cpp</includedby>
     <incdepgraph>
+      <node id="2">
+        <label>iio.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
       <node id="1">
         <label>include/adi_iio/iio_attr_topic.hpp</label>
         <link refid="iio__attr__topic_8hpp"/>
@@ -28,23 +37,14 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>iio.h</label>
-      </node>
-      <node id="3">
-        <label>memory</label>
-      </node>
-      <node id="6">
-        <label>rclcpp/rclcpp.hpp</label>
+      <node id="5">
+        <label>thread</label>
       </node>
       <node id="7">
         <label>std_msgs/msg/string.hpp</label>
       </node>
-      <node id="4">
-        <label>string</label>
-      </node>
-      <node id="5">
-        <label>thread</label>
+      <node id="3">
+        <label>memory</label>
       </node>
     </incdepgraph>
     <innerclass refid="classUpdateCallback" prot="public">UpdateCallback</innerclass>
@@ -86,7 +86,7 @@
 <codeline lineno="30" refid="classUpdateCallback" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref></highlight></codeline>
 <codeline lineno="31"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classUpdateCallback" kindref="compound">~UpdateCallback</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref>()<sp/>{}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(std::string<sp/>msg)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
@@ -104,7 +104,7 @@
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classIIOAttrTopic" kindref="compound">IIOAttrTopic</ref>(</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>topicName,<sp/>std::string<sp/>attrPath,</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>topicType_t<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loopRate);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classIIOAttrTopic" kindref="compound">~IIOAttrTopic</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classIIOAttrTopic" kindref="compound">IIOAttrTopic</ref>();</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishingLoop();</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update(std::string<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>

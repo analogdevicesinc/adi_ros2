@@ -1,45 +1,33 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="attr__publisher_8cpp" kind="file" language="C++">
     <compoundname>attr_publisher.cpp</compoundname>
     <includes refid="iio__attr__topic_8hpp" local="yes">adi_iio/iio_attr_topic.hpp</includes>
     <includes refid="attr__publisher_8hpp" local="yes">adi_iio/attr_publisher.hpp</includes>
     <incdepgraph>
-      <node id="9">
-        <label>adi_iio/attr_publisher.hpp</label>
-        <link refid="attr__publisher_8hpp_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
+      <node id="27">
+        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
       </node>
-      <node id="2">
-        <label>adi_iio/iio_attr_topic.hpp</label>
-        <link refid="iio__attr__topic_8hpp_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
+      <node id="15">
+        <label>functional</label>
+      </node>
+      <node id="23">
+        <label>adi_iio/srv/buffer_refill.hpp</label>
+      </node>
+      <node id="21">
+        <label>adi_iio/srv/buffer_create.hpp</label>
+      </node>
+      <node id="3">
+        <label>iio.h</label>
+      </node>
+      <node id="22">
+        <label>adi_iio/srv/buffer_destroy.hpp</label>
+      </node>
+      <node id="24">
+        <label>adi_iio/srv/buffer_read.hpp</label>
+      </node>
+      <node id="5">
+        <label>string</label>
       </node>
       <node id="13">
         <label>adi_iio/iio_node.hpp</label>
@@ -81,6 +69,24 @@
         <childnode refid="27" relation="include">
         </childnode>
       </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="17">
+        <label>adi_iio/srv/attr_read_string.hpp</label>
+      </node>
+      <node id="18">
+        <label>adi_iio/srv/attr_write_string.hpp</label>
+      </node>
+      <node id="11">
+        <label>std_msgs/msg/bool.hpp</label>
+      </node>
+      <node id="26">
+        <label>adi_iio/srv/buffer_enable_topic.hpp</label>
+      </node>
       <node id="1">
         <label>src/attr_publisher.cpp</label>
         <link refid="attr__publisher_8cpp"/>
@@ -89,62 +95,59 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
+      <node id="9">
+        <label>adi_iio/attr_publisher.hpp</label>
+        <link refid="attr__publisher_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
       <node id="20">
         <label>adi_iio/srv/attr_disable_topic.hpp</label>
-      </node>
-      <node id="19">
-        <label>adi_iio/srv/attr_enable_topic.hpp</label>
-      </node>
-      <node id="17">
-        <label>adi_iio/srv/attr_read_string.hpp</label>
-      </node>
-      <node id="18">
-        <label>adi_iio/srv/attr_write_string.hpp</label>
-      </node>
-      <node id="21">
-        <label>adi_iio/srv/buffer_create.hpp</label>
-      </node>
-      <node id="22">
-        <label>adi_iio/srv/buffer_destroy.hpp</label>
-      </node>
-      <node id="27">
-        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
-      </node>
-      <node id="26">
-        <label>adi_iio/srv/buffer_enable_topic.hpp</label>
-      </node>
-      <node id="24">
-        <label>adi_iio/srv/buffer_read.hpp</label>
-      </node>
-      <node id="23">
-        <label>adi_iio/srv/buffer_refill.hpp</label>
       </node>
       <node id="25">
         <label>adi_iio/srv/buffer_write.hpp</label>
       </node>
-      <node id="14">
-        <label>chrono</label>
-      </node>
-      <node id="15">
-        <label>functional</label>
-      </node>
-      <node id="3">
-        <label>iio.h</label>
-      </node>
-      <node id="16">
-        <label>map</label>
-      </node>
-      <node id="4">
-        <label>memory</label>
-      </node>
-      <node id="7">
-        <label>rclcpp/rclcpp.hpp</label>
-      </node>
-      <node id="11">
-        <label>std_msgs/msg/bool.hpp</label>
+      <node id="2">
+        <label>adi_iio/iio_attr_topic.hpp</label>
+        <link refid="iio__attr__topic_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="12">
         <label>std_msgs/msg/float32.hpp</label>
+      </node>
+      <node id="14">
+        <label>chrono</label>
+      </node>
+      <node id="19">
+        <label>adi_iio/srv/attr_enable_topic.hpp</label>
+      </node>
+      <node id="6">
+        <label>thread</label>
       </node>
       <node id="10">
         <label>std_msgs/msg/int32.hpp</label>
@@ -152,11 +155,8 @@
       <node id="8">
         <label>std_msgs/msg/string.hpp</label>
       </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="6">
-        <label>thread</label>
+      <node id="4">
+        <label>memory</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -181,7 +181,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_iio/iio_attr_topic.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_iio/attr_publisher.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::placeholders::_1;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal">StringPubSub::StringPubSub(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref><sp/>*<sp/>up,<sp/>std::string<sp/>topic)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal">{</highlight></codeline>

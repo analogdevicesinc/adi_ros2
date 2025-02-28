@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boolpubsub_0',['BoolPubSub',['../classBoolPubSub.html',1,'']]]
+  ['boolpubsub_10',['BoolPubSub',['../classBoolPubSub.html',1,'']]]
 ];

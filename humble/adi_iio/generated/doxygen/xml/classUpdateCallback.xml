@@ -1,15 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classUpdateCallback" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>UpdateCallback</compoundname>
     <derivedcompoundref refid="classIIOAttrTopic" prot="public" virt="non-virtual">IIOAttrTopic</derivedcompoundref>
-    <sectiondef kind="public-func">
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classUpdateCallback_1acacdc3ba60cbced34f732aa151ca0ab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
         <definition>virtual UpdateCallback::~UpdateCallback</definition>
         <argsstring>()</argsstring>
         <name>~UpdateCallback</name>
-        <qualifiedname>UpdateCallback::~UpdateCallback</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -23,7 +22,6 @@
         <definition>virtual void UpdateCallback::update</definition>
         <argsstring>(std::string msg)=0</argsstring>
         <name>update</name>
-        <qualifiedname>UpdateCallback::update</qualifiedname>
         <reimplementedby refid="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f">update</reimplementedby>
         <param>
           <type>std::string</type>
@@ -37,7 +35,7 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_attr_topic.hpp" line="34" column="16"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

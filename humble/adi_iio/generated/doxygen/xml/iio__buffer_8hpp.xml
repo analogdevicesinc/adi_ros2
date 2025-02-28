@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="iio__buffer_8hpp" kind="file" language="C++">
     <compoundname>iio_buffer.hpp</compoundname>
     <includes local="no">iio.h</includes>
@@ -12,23 +12,29 @@
     <includedby refid="iio__buffer_8cpp" local="yes">src/iio_buffer.cpp</includedby>
     <includedby refid="iio__node_8cpp" local="yes">src/iio_node.cpp</includedby>
     <incdepgraph>
-      <node id="1">
-        <label>include/adi_iio/iio_buffer.hpp</label>
-        <link refid="iio__buffer_8hpp"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
+      <node id="22">
+        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
+      </node>
+      <node id="10">
+        <label>functional</label>
+      </node>
+      <node id="18">
+        <label>adi_iio/srv/buffer_refill.hpp</label>
+      </node>
+      <node id="16">
+        <label>adi_iio/srv/buffer_create.hpp</label>
+      </node>
+      <node id="2">
+        <label>iio.h</label>
+      </node>
+      <node id="17">
+        <label>adi_iio/srv/buffer_destroy.hpp</label>
+      </node>
+      <node id="19">
+        <label>adi_iio/srv/buffer_read.hpp</label>
+      </node>
+      <node id="4">
+        <label>string</label>
       </node>
       <node id="8">
         <label>adi_iio/iio_node.hpp</label>
@@ -70,35 +76,47 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>adi_iio/srv/attr_disable_topic.hpp</label>
+      <node id="11">
+        <label>map</label>
       </node>
-      <node id="14">
-        <label>adi_iio/srv/attr_enable_topic.hpp</label>
+      <node id="7">
+        <label>std_msgs/msg/int32_multi_array.hpp</label>
+      </node>
+      <node id="6">
+        <label>rclcpp/rclcpp.hpp</label>
       </node>
       <node id="12">
         <label>adi_iio/srv/attr_read_string.hpp</label>
       </node>
+      <node id="1">
+        <label>include/adi_iio/iio_buffer.hpp</label>
+        <link refid="iio__buffer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
       <node id="13">
         <label>adi_iio/srv/attr_write_string.hpp</label>
-      </node>
-      <node id="16">
-        <label>adi_iio/srv/buffer_create.hpp</label>
-      </node>
-      <node id="17">
-        <label>adi_iio/srv/buffer_destroy.hpp</label>
-      </node>
-      <node id="22">
-        <label>adi_iio/srv/buffer_disable_topic.hpp</label>
       </node>
       <node id="21">
         <label>adi_iio/srv/buffer_enable_topic.hpp</label>
       </node>
-      <node id="19">
-        <label>adi_iio/srv/buffer_read.hpp</label>
+      <node id="5">
+        <label>vector</label>
       </node>
-      <node id="18">
-        <label>adi_iio/srv/buffer_refill.hpp</label>
+      <node id="15">
+        <label>adi_iio/srv/attr_disable_topic.hpp</label>
       </node>
       <node id="20">
         <label>adi_iio/srv/buffer_write.hpp</label>
@@ -106,33 +124,15 @@
       <node id="9">
         <label>chrono</label>
       </node>
-      <node id="10">
-        <label>functional</label>
-      </node>
-      <node id="2">
-        <label>iio.h</label>
-      </node>
-      <node id="11">
-        <label>map</label>
+      <node id="14">
+        <label>adi_iio/srv/attr_enable_topic.hpp</label>
       </node>
       <node id="3">
         <label>memory</label>
       </node>
-      <node id="6">
-        <label>rclcpp/rclcpp.hpp</label>
-      </node>
-      <node id="7">
-        <label>std_msgs/msg/int32_multi_array.hpp</label>
-      </node>
-      <node id="4">
-        <label>string</label>
-      </node>
-      <node id="5">
-        <label>vector</label>
-      </node>
     </incdepgraph>
     <innerclass refid="classIIOBuffer" prot="public">IIOBuffer</innerclass>
-    <sectiondef kind="define">
+      <sectiondef kind="define">
       <memberdef kind="define" id="iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a" prot="public" static="no">
         <name>BUFFER_QOS_QUEUE_SIZE</name>
         <initializer>10</initializer>
@@ -166,7 +166,7 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_buffer.hpp" line="32" column="9" bodyfile="include/adi_iio/iio_buffer.hpp" bodystart="32" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -209,7 +209,7 @@
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>device_path);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classIIOBuffer" kindref="compound">~IIOBuffer</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>~<ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref>();</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>createIIOBuffer(std::string<sp/>&amp;<sp/>message);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroyIIOBuffer();</highlight></codeline>

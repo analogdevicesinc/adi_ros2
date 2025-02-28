@@ -1,15 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classIIONode" kind="class" language="C++" prot="public">
     <compoundname>IIONode</compoundname>
     <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
-    <sectiondef kind="private-attrib">
+      <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool IIONode::m_initialized</definition>
         <argsstring></argsstring>
         <name>m_initialized</name>
-        <qualifiedname>IIONode::m_initialized</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -23,7 +22,6 @@
         <definition>std::string IIONode::m_uri</definition>
         <argsstring></argsstring>
         <name>m_uri</name>
-        <qualifiedname>IIONode::m_uri</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -37,7 +35,6 @@
         <definition>iio_context* IIONode::m_ctx</definition>
         <argsstring></argsstring>
         <name>m_ctx</name>
-        <qualifiedname>IIONode::m_ctx</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -51,7 +48,6 @@
         <definition>std::map&lt;std::string, std::shared_ptr&lt;IIOAttrTopic&gt; &gt; IIONode::m_attrTopicMap</definition>
         <argsstring></argsstring>
         <name>m_attrTopicMap</name>
-        <qualifiedname>IIONode::m_attrTopicMap</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -65,7 +61,6 @@
         <definition>std::map&lt;std::string, std::shared_ptr&lt;IIOBuffer&gt; &gt; IIONode::m_bufferMap</definition>
         <argsstring></argsstring>
         <name>m_bufferMap</name>
-        <qualifiedname>IIONode::m_bufferMap</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -74,14 +69,13 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_node.hpp" line="111" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="111" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classIIONode_1a733d6076dc93324c129063c70395f4c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>IIONode::IIONode</definition>
         <argsstring>()</argsstring>
         <name>IIONode</name>
-        <qualifiedname>IIONode::IIONode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -95,7 +89,6 @@
         <definition>IIONode::~IIONode</definition>
         <argsstring>()</argsstring>
         <name>~IIONode</name>
-        <qualifiedname>IIONode::~IIONode</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -109,7 +102,6 @@
         <definition>void IIONode::initBuffers</definition>
         <argsstring>()</argsstring>
         <name>initBuffers</name>
-        <qualifiedname>IIONode::initBuffers</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -123,7 +115,6 @@
         <definition>bool IIONode::rwAttrPath</definition>
         <argsstring>(std::string path, std::string &amp;result, bool write=false, std::string value=&quot;&quot;)</argsstring>
         <name>rwAttrPath</name>
-        <qualifiedname>IIONode::rwAttrPath</qualifiedname>
         <param>
           <type>std::string</type>
           <declname>path</declname>
@@ -155,7 +146,6 @@
         <definition>std::string IIONode::convertAttrPathToTopicName</definition>
         <argsstring>(std::string path)</argsstring>
         <name>convertAttrPathToTopicName</name>
-        <qualifiedname>IIONode::convertAttrPathToTopicName</qualifiedname>
         <param>
           <type>std::string</type>
           <declname>path</declname>
@@ -173,7 +163,6 @@
         <definition>void IIONode::attrReadSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrReadString::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrReadString::Response &gt; response)</argsstring>
         <name>attrReadSrv</name>
-        <qualifiedname>IIONode::attrReadSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::AttrReadString::Request &gt;</type>
           <declname>request</declname>
@@ -195,7 +184,6 @@
         <definition>void IIONode::attrWriteSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Response &gt; response)</argsstring>
         <name>attrWriteSrv</name>
-        <qualifiedname>IIONode::attrWriteSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::AttrWriteString::Request &gt;</type>
           <declname>request</declname>
@@ -217,7 +205,6 @@
         <definition>void IIONode::attrEnableTopicSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Response &gt; response)</argsstring>
         <name>attrEnableTopicSrv</name>
-        <qualifiedname>IIONode::attrEnableTopicSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::AttrEnableTopic::Request &gt;</type>
           <declname>request</declname>
@@ -239,7 +226,6 @@
         <definition>void IIONode::attrDisableTopicSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Response &gt; response)</argsstring>
         <name>attrDisableTopicSrv</name>
-        <qualifiedname>IIONode::attrDisableTopicSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::AttrDisableTopic::Request &gt;</type>
           <declname>request</declname>
@@ -261,7 +247,6 @@
         <definition>void IIONode::buffRefillSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferRefill::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferRefill::Response &gt; response)</argsstring>
         <name>buffRefillSrv</name>
-        <qualifiedname>IIONode::buffRefillSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferRefill::Request &gt;</type>
           <declname>request</declname>
@@ -283,7 +268,6 @@
         <definition>void IIONode::buffReadSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferRead::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferRead::Response &gt; response)</argsstring>
         <name>buffReadSrv</name>
-        <qualifiedname>IIONode::buffReadSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferRead::Request &gt;</type>
           <declname>request</declname>
@@ -305,7 +289,6 @@
         <definition>void IIONode::buffWriteSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferWrite::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferWrite::Response &gt; response)</argsstring>
         <name>buffWriteSrv</name>
-        <qualifiedname>IIONode::buffWriteSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferWrite::Request &gt;</type>
           <declname>request</declname>
@@ -327,7 +310,6 @@
         <definition>void IIONode::buffCreateSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferCreate::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferCreate::Response &gt; response)</argsstring>
         <name>buffCreateSrv</name>
-        <qualifiedname>IIONode::buffCreateSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferCreate::Request &gt;</type>
           <declname>request</declname>
@@ -349,7 +331,6 @@
         <definition>void IIONode::buffDestroySrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Response &gt; response)</argsstring>
         <name>buffDestroySrv</name>
-        <qualifiedname>IIONode::buffDestroySrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferDestroy::Request &gt;</type>
           <declname>request</declname>
@@ -371,7 +352,6 @@
         <definition>void IIONode::buffEnableTopicSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Response &gt; response)</argsstring>
         <name>buffEnableTopicSrv</name>
-        <qualifiedname>IIONode::buffEnableTopicSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferEnableTopic::Request &gt;</type>
           <declname>request</declname>
@@ -393,7 +373,6 @@
         <definition>void IIONode::buffDisableTopicSrv</definition>
         <argsstring>(const std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Request &gt; request, std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Response &gt; response)</argsstring>
         <name>buffDisableTopicSrv</name>
-        <qualifiedname>IIONode::buffDisableTopicSrv</qualifiedname>
         <param>
           <type>const std::shared_ptr&lt; adi_iio::srv::BufferDisableTopic::Request &gt;</type>
           <declname>request</declname>
@@ -415,7 +394,6 @@
         <definition>std::string IIONode::uri</definition>
         <argsstring>()</argsstring>
         <name>uri</name>
-        <qualifiedname>IIONode::uri</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -429,7 +407,6 @@
         <definition>bool IIONode::initialized</definition>
         <argsstring>()</argsstring>
         <name>initialized</name>
-        <qualifiedname>IIONode::initialized</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -443,7 +420,6 @@
         <definition>iio_context * IIONode::ctx</definition>
         <argsstring>()</argsstring>
         <name>ctx</name>
-        <qualifiedname>IIONode::ctx</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -452,7 +428,7 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_node.hpp" line="103" column="16" bodyfile="src/iio_node.cpp" bodystart="527" bodyend="530"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

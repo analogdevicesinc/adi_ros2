@@ -1,13 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="classIIOAttrTopic" kind="class" language="C++" prot="public">
     <compoundname>IIOAttrTopic</compoundname>
     <basecompoundref refid="classUpdateCallback" prot="public" virt="non-virtual">UpdateCallback</basecompoundref>
-    <sectiondef kind="public-type">
+      <sectiondef kind="public-type">
       <memberdef kind="enum" id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41c" prot="public" static="no" strong="no">
         <type></type>
         <name>topicType_t</name>
-        <qualifiedname>IIOAttrTopic::topicType_t</qualifiedname>
         <enumvalue id="classIIOAttrTopic_1aeaf127c4f3150421941d9406001ac41cacdb0e0ba0fcf072c909dc54b54dbcd41" prot="public">
           <name>TYPE_STRING</name>
           <briefdescription>
@@ -44,14 +43,13 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_attr_topic.hpp" line="40" column="3" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="41" bodyend="46"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
+      </sectiondef>
+      <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classIIOAttrTopic_1a74795e5ffa0bf82dc831a28d29381d35" prot="private" static="no" mutable="no">
         <type>std::mutex</type>
         <definition>std::mutex IIOAttrTopic::m_mutex</definition>
         <argsstring></argsstring>
         <name>m_mutex</name>
-        <qualifiedname>IIOAttrTopic::m_mutex</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -65,7 +63,6 @@
         <definition>rclcpp::TimerBase::SharedPtr IIOAttrTopic::timer_</definition>
         <argsstring></argsstring>
         <name>timer_</name>
-        <qualifiedname>IIOAttrTopic::timer_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -79,7 +76,6 @@
         <definition>std::shared_ptr&lt;IIONode&gt; IIOAttrTopic::m_nh</definition>
         <argsstring></argsstring>
         <name>m_nh</name>
-        <qualifiedname>IIOAttrTopic::m_nh</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -93,7 +89,6 @@
         <definition>std::string IIOAttrTopic::m_attrPath</definition>
         <argsstring></argsstring>
         <name>m_attrPath</name>
-        <qualifiedname>IIOAttrTopic::m_attrPath</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -107,7 +102,6 @@
         <definition>std::string IIOAttrTopic::m_topicName</definition>
         <argsstring></argsstring>
         <name>m_topicName</name>
-        <qualifiedname>IIOAttrTopic::m_topicName</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -121,7 +115,6 @@
         <definition>topicType_t IIOAttrTopic::m_topicType</definition>
         <argsstring></argsstring>
         <name>m_topicType</name>
-        <qualifiedname>IIOAttrTopic::m_topicType</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -135,7 +128,6 @@
         <definition>std::unique_ptr&lt;AttrPubSub&gt; IIOAttrTopic::m_pub</definition>
         <argsstring></argsstring>
         <name>m_pub</name>
-        <qualifiedname>IIOAttrTopic::m_pub</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -149,7 +141,6 @@
         <definition>std::thread IIOAttrTopic::m_th</definition>
         <argsstring></argsstring>
         <name>m_th</name>
-        <qualifiedname>IIOAttrTopic::m_th</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -163,7 +154,6 @@
         <definition>std::string IIOAttrTopic::last_val</definition>
         <argsstring></argsstring>
         <name>last_val</name>
-        <qualifiedname>IIOAttrTopic::last_val</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -177,7 +167,6 @@
         <definition>bool IIOAttrTopic::m_stopThread</definition>
         <argsstring></argsstring>
         <name>m_stopThread</name>
-        <qualifiedname>IIOAttrTopic::m_stopThread</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -191,7 +180,6 @@
         <definition>rclcpp::Rate IIOAttrTopic::m_loopRate</definition>
         <argsstring></argsstring>
         <name>m_loopRate</name>
-        <qualifiedname>IIOAttrTopic::m_loopRate</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -200,14 +188,13 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_attr_topic.hpp" line="69" column="16" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
+      </sectiondef>
+      <sectiondef kind="public-func">
       <memberdef kind="function" id="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>IIOAttrTopic::IIOAttrTopic</definition>
         <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, std::string topicName, std::string attrPath, topicType_t type, int loopRate)</argsstring>
         <name>IIOAttrTopic</name>
-        <qualifiedname>IIOAttrTopic::IIOAttrTopic</qualifiedname>
         <param>
           <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
           <declname>nh</declname>
@@ -241,7 +228,6 @@
         <definition>IIOAttrTopic::~IIOAttrTopic</definition>
         <argsstring>()</argsstring>
         <name>~IIOAttrTopic</name>
-        <qualifiedname>IIOAttrTopic::~IIOAttrTopic</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -255,7 +241,6 @@
         <definition>void IIOAttrTopic::publishingLoop</definition>
         <argsstring>()</argsstring>
         <name>publishingLoop</name>
-        <qualifiedname>IIOAttrTopic::publishingLoop</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -269,7 +254,6 @@
         <definition>void IIOAttrTopic::update</definition>
         <argsstring>(std::string msg) override</argsstring>
         <name>update</name>
-        <qualifiedname>IIOAttrTopic::update</qualifiedname>
         <reimplements refid="classUpdateCallback_1a327b1c1789bf652bd9c719b7889d76c0">update</reimplements>
         <param>
           <type>std::string</type>
@@ -283,7 +267,7 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_attr_topic.hpp" line="54" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="75" bodyend="81"/>
       </memberdef>
-    </sectiondef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
