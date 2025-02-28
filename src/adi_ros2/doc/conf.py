@@ -38,6 +38,9 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+# Values below are populated from package.xml by rosdoc2 if not set here.
+
+repository = 'adi_ros2'
 project = 'ROS2'
 
 current_year = datetime.datetime.now().year
@@ -62,9 +65,9 @@ language = 'en'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    "adi_doctools",
-    "myst_parser"
     "sphinx.ext.todo",
+    "myst_parser",
+    "adi_doctools",
 ]
 
 needs_extensions = {
