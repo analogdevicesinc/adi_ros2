@@ -9,9 +9,6 @@ on:
       - "humble-develop"
     tags:
       - "v*.*.*"
-  pull_request:
-    branches:
-      - "humble-develop"
 
 env:
   ROS2_DISTRO: humble
