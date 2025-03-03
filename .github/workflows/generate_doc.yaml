@@ -38,6 +38,7 @@ jobs:
       working-directory: ci
       run: |
         export ADOC_DOC_VERSION=${{ github.ref_name }}
+        export DOC_REPOSITORY=adi_ros2
         ./build_doc.sh
 
     - name: Store the generated doc
