@@ -1,5 +1,14 @@
 {
-  "humble/adi_iio": ["humble > adi_iio", ""],
-  "humble/adi_meta": ["humble", "core"],
-  "humble/adi_tmcl": ["humble > adi_tmcl", ""]
+  "humble/adi_meta": [
+    "humble",
+    "core"
+  ],
+  "humble/adi_iio": [
+    "humble > adi_iio",
+    ""
+  ],
+  "humble/adi_tmcl": [
+    "humble > adi_tmcl",
+    ""
+  ]
 }
