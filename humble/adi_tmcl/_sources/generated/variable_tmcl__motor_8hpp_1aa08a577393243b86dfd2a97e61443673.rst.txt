@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673:
+
+Variable PI
+===========
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: PI
+   :project: adi_tmcl Doxygen Project

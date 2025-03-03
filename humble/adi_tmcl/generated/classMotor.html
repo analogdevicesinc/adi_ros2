@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Motor &mdash; adi_tmcl 2.0.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=664ffad9"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class SocketCAN" href="classSocketCAN.html" />
+    <link rel="prev" title="Class BldcMotor" href="classBldcMotor.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_tmcl
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structtmcl__cfg__t.html">Struct tmcl_cfg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtmcl__msg__t.html">Struct tmcl_msg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classBldcMotor.html">Class BldcMotor</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classSocketCAN.html">Class SocketCAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classStepperMotor.html">Class StepperMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmclInterpreter.html">Class TmclInterpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmclRos2.html">Class TmclRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html">Enum tmcl_additional_ratio_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc.html">Enum tmcl_bldc_comm_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1affdc98518d0da04cea6cf4e9e8cfc48e.html">Enum tmcl_cmd_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a.html">Enum tmcl_custom_cmd_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9.html">Enum tmcl_general_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2.html">Enum tmcl_hardware_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c.html">Enum tmcl_interface_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e.html">Enum tmcl_interface_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c.html">Enum tmcl_ros_topic_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__stepper__motor_8hpp_1aa0f126c89402b24ec6ed22dff8154fbb.html">Enum tmcl_stepper_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40.html">Enum tmcl_sts_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2.html">Variable additional_ratio_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f.html">Variable AUTO_START_ADDITIONAL_DELAY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3.html">Variable AUTO_START_ADDITIONAL_DELAY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73.html">Variable comm_interface_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218.html">Variable EXEC_CMD_RETRIES_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd.html">Variable EXEC_CMD_RETRIES_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15.html">Variable general_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54.html">Variable hardware_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673.html">Variable PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3.html">Variable PUB_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981.html">Variable PUB_RATE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6.html">Variable PUB_RATE_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be.html">Variable ros_topic_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1.html">Variable RX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624.html">Variable SEC_TO_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886.html">Variable TIMEOUT_MS_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4.html">Variable TIMEOUT_MS_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459.html">Variable TIMEOUT_MS_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3.html">Variable tmcl_custom_cmd_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a34af2ab557c7c6b474a095252f1f4b76.html">Variable TMCL_MSG_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231.html">Variable TMCL_MSG_VALUE_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d.html">Variable TMCM_BLDC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235.html">Variable TX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36.html">Variable TXRX_ID_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad.html">Variable TXRX_ID_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_adi_tmcl.html">Directory adi_tmcl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_socket_can_wrapper.hpp.html">File socket_can_wrapper.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_bldc_motor.hpp.html">File tmcl_bldc_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_common.hpp.html">File tmcl_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_interpreter.hpp.html">File tmcl_interpreter.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_motor.hpp.html">File tmcl_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_ros2.hpp.html">File tmcl_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_stepper_motor.hpp.html">File tmcl_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/msg/TmcInfo.html">TmcInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/msg/TmcParam.html">TmcParam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcCustomCmd.html">TmcCustomCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcGapAll.html">TmcGapAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcGgpAll.html">TmcGgpAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-tmcl-ros2">Changelog for package tmcl_ros2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">2.0.3 (2024-11-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">2.0.2 (2024-11-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">2.0.1 (2024-07-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">2.0.0 (2023-11-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">1.0.2 (2023-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">1.0.1 (2023-10-10)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">1.0.0 (2023-09-27)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#adi-tmcl">adi_tmcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#software-architecture">Software Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#build">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#bldc-motors">BLDC Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#stepper-motors">Stepper Motors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#pre-launch-one-time">Pre-Launch (One-time)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#initialize-can">Initialize CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#de-initialize-can">De-initialize CAN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#launch">Launch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#tmcl-ros2-node">tmcl_ros2_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#quick-tests">Quick Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-velocity-mode">Test Velocity Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-position-mode">Test Position Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-torque-mode">Test Torque Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#limitations">Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_tmcl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class Motor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classMotor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-motor">
+<span id="exhale-class-classmotor"></span><h1>Class Motor<a class="headerlink" href="#class-motor" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adi_tmcl_tmcl_motor.hpp.html#file-include-adi-tmcl-tmcl-motor-hpp"><span class="std std-ref">File tmcl_motor.hpp</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading"></a></h2>
+<section id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">BldcMotor</span></code> (<a class="reference internal" href="classBldcMotor.html#exhale-class-classbldcmotor"><span class="std std-ref">Class BldcMotor</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">StepperMotor</span></code> (<a class="reference internal" href="classStepperMotor.html#exhale-class-classsteppermotor"><span class="std std-ref">Class StepperMotor</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv45Motor">
+<span id="_CPPv35Motor"></span><span id="_CPPv25Motor"></span><span id="Motor"></span><span class="target" id="classMotor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Motor</span></span></span><a class="headerlink" href="#_CPPv45Motor" title="Link to this definition"></a><br /></dt>
+<dd><p>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </p>
+<p>Subclassed by <a class="reference internal" href="classBldcMotor.html#classBldcMotor"><span class="std std-ref">BldcMotor</span></a>, <a class="reference internal" href="classStepperMotor.html#classStepperMotor"><span class="std std-ref">StepperMotor</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor5MotorEN6rclcpp4Node9SharedPtrEP15TmclInterpreter7uint8_t8uint32_t">
+<span id="_CPPv3N5Motor5MotorEN6rclcpp4Node9SharedPtrEP15TmclInterpreter7uint8_t8uint32_t"></span><span id="_CPPv2N5Motor5MotorEN6rclcpp4Node9SharedPtrEP15TmclInterpreter7uint8_t8uint32_t"></span><span id="Motor::Motor__rclcpp::Node::SharedPtr.TmclInterpreterP.uint8_t.uint32_t"></span><span class="target" id="classMotor_1ac0063b6a7afa72db5b69214566ba6abf"></span><span class="sig-name descname"><span class="n"><span class="pre">Motor</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Node</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">p_node</span></span>, <a class="reference internal" href="classTmclInterpreter.html#_CPPv415TmclInterpreter" title="TmclInterpreter"><span class="n"><span class="pre">TmclInterpreter</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">p_tmcl_interpreter</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">motor_number</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">module_number</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor5MotorEN6rclcpp4Node9SharedPtrEP15TmclInterpreter7uint8_t8uint32_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5MotorD0Ev">
+<span id="_CPPv3N5MotorD0Ev"></span><span id="_CPPv2N5MotorD0Ev"></span><span id="Motor::~Motor"></span><span class="target" id="classMotor_1a3135cf1bc9a3c68e1db0214c00a2b50f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Motor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5MotorD0Ev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor14getMotorNumberEv">
+<span id="_CPPv3N5Motor14getMotorNumberEv"></span><span id="_CPPv2N5Motor14getMotorNumberEv"></span><span id="Motor::getMotorNumber"></span><span class="target" id="classMotor_1afd73d5e08cfb3c20d06d8b0b6c14b1b8"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMotorNumber</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor14getMotorNumberEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor12getMotorNameEv">
+<span id="_CPPv3N5Motor12getMotorNameEv"></span><span id="_CPPv2N5Motor12getMotorNameEv"></span><span id="Motor::getMotorName"></span><span class="target" id="classMotor_1a41a7c3c5d7b2be16844c4f8d631afd64"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMotorName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor12getMotorNameEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor4initEv">
+<span id="_CPPv3N5Motor4initEv"></span><span id="_CPPv2N5Motor4initEv"></span><span id="Motor::init"></span><span class="target" id="classMotor_1aeb1972b2fa590646832b707c54c1b74b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor4initEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor15initMotorParamsEv">
+<span id="_CPPv3N5Motor15initMotorParamsEv"></span><span id="_CPPv2N5Motor15initMotorParamsEv"></span><span id="Motor::initMotorParams"></span><span class="target" id="classMotor_1af8b4b9f6f385ffae242f2e2c89d67856"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initMotorParams</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor15initMotorParamsEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor19initPublisherParamsEv">
+<span id="_CPPv3N5Motor19initPublisherParamsEv"></span><span id="_CPPv2N5Motor19initPublisherParamsEv"></span><span id="Motor::initPublisherParams"></span><span class="target" id="classMotor_1a62b5cf264e5c6c52da28bf8b25713542"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initPublisherParams</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor19initPublisherParamsEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24cmdTrqSubscriberCallbackEKN8std_msgs3msg5Int329SharedPtrE">
+<span id="_CPPv3N5Motor24cmdTrqSubscriberCallbackEKN8std_msgs3msg5Int329SharedPtrE"></span><span id="_CPPv2N5Motor24cmdTrqSubscriberCallbackEKN8std_msgs3msg5Int329SharedPtrE"></span><span id="Motor::cmdTrqSubscriberCallback__std_msgs::msg::Int32::SharedPtrC"></span><span class="target" id="classMotor_1a7e3c8f9ce9af7b7c3f251973f31b8100"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cmdTrqSubscriberCallback</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">msg</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Motor24cmdTrqSubscriberCallbackEKN8std_msgs3msg5Int329SharedPtrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor7p_node_E">
+<span id="_CPPv3N5Motor7p_node_E"></span><span id="_CPPv2N5Motor7p_node_E"></span><span id="Motor::p_node___rclcpp::Node::SharedPtr"></span><span class="target" id="classMotor_1a247765055b71babddd51db4bd5b7a00d"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Node</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">p_node_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor7p_node_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor19p_tmcl_interpreter_E">
+<span id="_CPPv3N5Motor19p_tmcl_interpreter_E"></span><span id="_CPPv2N5Motor19p_tmcl_interpreter_E"></span><span id="Motor::p_tmcl_interpreter___TmclInterpreterP"></span><span class="target" id="classMotor_1a2df3f5a06e67456713b6298f77f230e5"></span><a class="reference internal" href="classTmclInterpreter.html#_CPPv415TmclInterpreter" title="TmclInterpreter"><span class="n"><span class="pre">TmclInterpreter</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">p_tmcl_interpreter_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor19p_tmcl_interpreter_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor10publisher_E">
+<span id="_CPPv3N5Motor10publisher_E"></span><span id="_CPPv2N5Motor10publisher_E"></span><span id="Motor::publisher___rclcpp::Publisher:adi_tmcl::msg::TmcInfo:::SharedPtr"></span><span class="target" id="classMotor_1a21bddea0d90efab775230f1d5468af42"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Publisher</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">adi_tmcl</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TmcInfo</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publisher_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor10publisher_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor16publisher_timer_E">
+<span id="_CPPv3N5Motor16publisher_timer_E"></span><span id="_CPPv2N5Motor16publisher_timer_E"></span><span id="Motor::publisher_timer___rclcpp::TimerBase::SharedPtr"></span><span class="target" id="classMotor_1a8e0edfb3e6f87007560c3f91aa74e302"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">TimerBase</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">publisher_timer_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor16publisher_timer_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21subscription_cmd_vel_E">
+<span id="_CPPv3N5Motor21subscription_cmd_vel_E"></span><span id="_CPPv2N5Motor21subscription_cmd_vel_E"></span><span id="Motor::subscription_cmd_vel___rclcpp::Subscription:geometry_msgs::msg::Twist:::SharedPtr"></span><span class="target" id="classMotor_1a9baa731ce44622d216d29be66b0bd78f"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscription</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">geometry_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Twist</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscription_cmd_vel_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21subscription_cmd_vel_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24subscription_cmd_abspos_E">
+<span id="_CPPv3N5Motor24subscription_cmd_abspos_E"></span><span id="_CPPv2N5Motor24subscription_cmd_abspos_E"></span><span id="Motor::subscription_cmd_abspos___rclcpp::Subscription:std_msgs::msg::Int32:::SharedPtr"></span><span class="target" id="classMotor_1ab137c183cf2b4ba4baa9584592ea8768"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscription</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscription_cmd_abspos_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor24subscription_cmd_abspos_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24subscription_cmd_relpos_E">
+<span id="_CPPv3N5Motor24subscription_cmd_relpos_E"></span><span id="_CPPv2N5Motor24subscription_cmd_relpos_E"></span><span id="Motor::subscription_cmd_relpos___rclcpp::Subscription:std_msgs::msg::Int32:::SharedPtr"></span><span class="target" id="classMotor_1a9285082f0368cf3ca6262c95425bb0f1"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscription</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscription_cmd_relpos_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor24subscription_cmd_relpos_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21subscription_cmd_trq_E">
+<span id="_CPPv3N5Motor21subscription_cmd_trq_E"></span><span id="_CPPv2N5Motor21subscription_cmd_trq_E"></span><span id="Motor::subscription_cmd_trq___rclcpp::Subscription:std_msgs::msg::Int32:::SharedPtr"></span><span class="target" id="classMotor_1ad6b0491053300b50bd6d911b56ebe1bc"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Subscription</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std_msgs</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Int32</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">subscription_cmd_trq_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21subscription_cmd_trq_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor22param_en_pub_tmc_info_E">
+<span id="_CPPv3N5Motor22param_en_pub_tmc_info_E"></span><span id="_CPPv2N5Motor22param_en_pub_tmc_info_E"></span><span id="Motor::param_en_pub_tmc_info___b"></span><span class="target" id="classMotor_1af8ed1941758d843438c532e9474a8a1d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_en_pub_tmc_info_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor22param_en_pub_tmc_info_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21param_tmc_info_topic_E">
+<span id="_CPPv3N5Motor21param_tmc_info_topic_E"></span><span id="_CPPv2N5Motor21param_tmc_info_topic_E"></span><span id="Motor::param_tmc_info_topic___ss"></span><span class="target" id="classMotor_1ab2dfc8c357db9c4235a2e9721bcb1880"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_tmc_info_topic_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21param_tmc_info_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24param_pub_rate_tmc_info_E">
+<span id="_CPPv3N5Motor24param_pub_rate_tmc_info_E"></span><span id="_CPPv2N5Motor24param_pub_rate_tmc_info_E"></span><span id="Motor::param_pub_rate_tmc_info___uint8_t"></span><span class="target" id="classMotor_1aed9818772c6714484435ae534e181748"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_pub_rate_tmc_info_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor24param_pub_rate_tmc_info_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21param_pub_actual_vel_E">
+<span id="_CPPv3N5Motor21param_pub_actual_vel_E"></span><span id="_CPPv2N5Motor21param_pub_actual_vel_E"></span><span id="Motor::param_pub_actual_vel___b"></span><span class="target" id="classMotor_1af2612411712a18e3df1a421f990d484d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_pub_actual_vel_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21param_pub_actual_vel_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21param_pub_actual_pos_E">
+<span id="_CPPv3N5Motor21param_pub_actual_pos_E"></span><span id="_CPPv2N5Motor21param_pub_actual_pos_E"></span><span id="Motor::param_pub_actual_pos___b"></span><span class="target" id="classMotor_1a70561c4351d75cc796b5f386fb10fba4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_pub_actual_pos_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21param_pub_actual_pos_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21param_pub_actual_trq_E">
+<span id="_CPPv3N5Motor21param_pub_actual_trq_E"></span><span id="_CPPv2N5Motor21param_pub_actual_trq_E"></span><span id="Motor::param_pub_actual_trq___b"></span><span class="target" id="classMotor_1adc816675935b7c2444204b7035d70fef"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_pub_actual_trq_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21param_pub_actual_trq_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24param_tmc_cmd_vel_topic_E">
+<span id="_CPPv3N5Motor24param_tmc_cmd_vel_topic_E"></span><span id="_CPPv2N5Motor24param_tmc_cmd_vel_topic_E"></span><span id="Motor::param_tmc_cmd_vel_topic___ss"></span><span class="target" id="classMotor_1acb256e3e11e2b4a9d076208d51bc49ef"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_tmc_cmd_vel_topic_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor24param_tmc_cmd_vel_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor27param_tmc_cmd_abspos_topic_E">
+<span id="_CPPv3N5Motor27param_tmc_cmd_abspos_topic_E"></span><span id="_CPPv2N5Motor27param_tmc_cmd_abspos_topic_E"></span><span id="Motor::param_tmc_cmd_abspos_topic___ss"></span><span class="target" id="classMotor_1a5397740875dfbde68dc143e8d0dd426b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_tmc_cmd_abspos_topic_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor27param_tmc_cmd_abspos_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor27param_tmc_cmd_relpos_topic_E">
+<span id="_CPPv3N5Motor27param_tmc_cmd_relpos_topic_E"></span><span id="_CPPv2N5Motor27param_tmc_cmd_relpos_topic_E"></span><span id="Motor::param_tmc_cmd_relpos_topic___ss"></span><span class="target" id="classMotor_1a3b7a1b7e84955e7792067564372f3d3c"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_tmc_cmd_relpos_topic_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor27param_tmc_cmd_relpos_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor24param_tmc_cmd_trq_topic_E">
+<span id="_CPPv3N5Motor24param_tmc_cmd_trq_topic_E"></span><span id="_CPPv2N5Motor24param_tmc_cmd_trq_topic_E"></span><span id="Motor::param_tmc_cmd_trq_topic___ss"></span><span class="target" id="classMotor_1aa4067f12ba5061882bb7a100d881fa94"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_tmc_cmd_trq_topic_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor24param_tmc_cmd_trq_topic_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor21param_wheel_diameter_E">
+<span id="_CPPv3N5Motor21param_wheel_diameter_E"></span><span id="_CPPv2N5Motor21param_wheel_diameter_E"></span><span id="Motor::param_wheel_diameter___double"></span><span class="target" id="classMotor_1a2a6ad6b0f1621c4a579bf4435a54fa85"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_wheel_diameter_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor21param_wheel_diameter_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor27param_additional_ratio_vel_E">
+<span id="_CPPv3N5Motor27param_additional_ratio_vel_E"></span><span id="_CPPv2N5Motor27param_additional_ratio_vel_E"></span><span id="Motor::param_additional_ratio_vel___double"></span><span class="target" id="classMotor_1a7d67554c95fb5997623e7eb28f3f44e7"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_additional_ratio_vel_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor27param_additional_ratio_vel_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor27param_additional_ratio_pos_E">
+<span id="_CPPv3N5Motor27param_additional_ratio_pos_E"></span><span id="_CPPv2N5Motor27param_additional_ratio_pos_E"></span><span id="Motor::param_additional_ratio_pos___double"></span><span class="target" id="classMotor_1a89ec4ae4d259070eb2f081ad1b36ce2e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_additional_ratio_pos_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor27param_additional_ratio_pos_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor27param_additional_ratio_trq_E">
+<span id="_CPPv3N5Motor27param_additional_ratio_trq_E"></span><span id="_CPPv2N5Motor27param_additional_ratio_trq_E"></span><span id="Motor::param_additional_ratio_trq___double"></span><span class="target" id="classMotor_1ad1307bc16c27bafbe6b8583c6cd5143a"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_additional_ratio_trq_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor27param_additional_ratio_trq_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor26param_comm_interface_name_E">
+<span id="_CPPv3N5Motor26param_comm_interface_name_E"></span><span id="_CPPv2N5Motor26param_comm_interface_name_E"></span><span id="Motor::param_comm_interface_name___ss"></span><span class="target" id="classMotor_1ad11504b9597f5eb0e025a21bd8243d5d"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">param_comm_interface_name_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor26param_comm_interface_name_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor14module_number_E">
+<span id="_CPPv3N5Motor14module_number_E"></span><span id="_CPPv2N5Motor14module_number_E"></span><span id="Motor::module_number___uint32_t"></span><span class="target" id="classMotor_1aa7644fc1d41803d10feef45bfdefc64b"></span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">module_number_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor14module_number_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Motor18tmc_info_frame_id_E">
+<span id="_CPPv3N5Motor18tmc_info_frame_id_E"></span><span id="_CPPv2N5Motor18tmc_info_frame_id_E"></span><span id="Motor::tmc_info_frame_id___ss"></span><span class="target" id="classMotor_1a2090de6607d634225ecdc56e3f1c0433"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tmc_info_frame_id_</span></span></span><a class="headerlink" href="#_CPPv4N5Motor18tmc_info_frame_id_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classBldcMotor.html" class="btn btn-neutral float-left" title="Class BldcMotor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classSocketCAN.html" class="btn btn-neutral float-right" title="Class SocketCAN" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_tmcl&gt; Contributors. License: BSD 3-Clause.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,845 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>adi_tmcl &mdash; adi_tmcl 2.0.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=664ffad9"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="C++ API" href="generated/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            adi_tmcl
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/structtmcl__cfg__t.html">Struct tmcl_cfg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/structtmcl__msg__t.html">Struct tmcl_msg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classBldcMotor.html">Class BldcMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classMotor.html">Class Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classSocketCAN.html">Class SocketCAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classStepperMotor.html">Class StepperMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmclInterpreter.html">Class TmclInterpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmclRos2.html">Class TmclRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html">Enum tmcl_additional_ratio_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc.html">Enum tmcl_bldc_comm_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__interpreter_8hpp_1affdc98518d0da04cea6cf4e9e8cfc48e.html">Enum tmcl_cmd_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a.html">Enum tmcl_custom_cmd_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9.html">Enum tmcl_general_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2.html">Enum tmcl_hardware_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c.html">Enum tmcl_interface_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e.html">Enum tmcl_interface_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c.html">Enum tmcl_ros_topic_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__stepper__motor_8hpp_1aa0f126c89402b24ec6ed22dff8154fbb.html">Enum tmcl_stepper_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40.html">Enum tmcl_sts_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2.html">Variable additional_ratio_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f.html">Variable AUTO_START_ADDITIONAL_DELAY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3.html">Variable AUTO_START_ADDITIONAL_DELAY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73.html">Variable comm_interface_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218.html">Variable EXEC_CMD_RETRIES_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd.html">Variable EXEC_CMD_RETRIES_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15.html">Variable general_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54.html">Variable hardware_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673.html">Variable PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3.html">Variable PUB_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981.html">Variable PUB_RATE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6.html">Variable PUB_RATE_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be.html">Variable ros_topic_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1.html">Variable RX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624.html">Variable SEC_TO_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886.html">Variable TIMEOUT_MS_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4.html">Variable TIMEOUT_MS_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459.html">Variable TIMEOUT_MS_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3.html">Variable tmcl_custom_cmd_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__interpreter_8hpp_1a34af2ab557c7c6b474a095252f1f4b76.html">Variable TMCL_MSG_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231.html">Variable TMCL_MSG_VALUE_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d.html">Variable TMCM_BLDC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235.html">Variable TX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36.html">Variable TXRX_ID_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad.html">Variable TXRX_ID_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_adi_tmcl.html">Directory adi_tmcl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_socket_can_wrapper.hpp.html">File socket_can_wrapper.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_bldc_motor.hpp.html">File tmcl_bldc_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_common.hpp.html">File tmcl_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_interpreter.hpp.html">File tmcl_interpreter.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_motor.hpp.html">File tmcl_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_ros2.hpp.html">File tmcl_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmcl_tmcl_stepper_motor.hpp.html">File tmcl_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interfaces/message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/msg/TmcInfo.html">TmcInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/msg/TmcParam.html">TmcParam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interfaces/service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcCustomCmd.html">TmcCustomCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcGapAll.html">TmcGapAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcGgpAll.html">TmcGgpAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/CHANGELOG.html#changelog-for-package-tmcl-ros2">Changelog for package tmcl_ros2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id1">2.0.3 (2024-11-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id2">2.0.2 (2024-11-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id3">2.0.1 (2024-07-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id4">2.0.0 (2023-11-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id5">1.0.2 (2023-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id6">1.0.1 (2023-10-10)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/CHANGELOG.html#id7">1.0.0 (2023-09-27)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#adi-tmcl">adi_tmcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#software-architecture">Software Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#build">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#bldc-motors">BLDC Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#stepper-motors">Stepper Motors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#pre-launch-one-time">Pre-Launch (One-time)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#initialize-can">Initialize CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#de-initialize-can">De-initialize CAN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#launch">Launch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#tmcl-ros2-node">tmcl_ros2_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#quick-tests">Quick Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#test-velocity-mode">Test Velocity Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#test-position-mode">Test Position Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="standard_docs/README.html#test-torque-mode">Test Torque Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#limitations">Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standard_docs/README.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">adi_tmcl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">adi_tmcl</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adi-tmcl">
+<h1>adi_tmcl<a class="headerlink" href="#adi-tmcl" title="Link to this heading"></a></h1>
+<p>The adi_tmcl ROS2 package</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interfaces/message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/msg/TmcInfo.html">TmcInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/msg/TmcParam.html">TmcParam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="interfaces/service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcCustomCmd.html">TmcCustomCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcGapAll.html">TmcGapAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interfaces/srv/TmcGgpAll.html">TmcGgpAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/CHANGELOG.html">CHANGELOG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_docs/README.html">README</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="readme">
+<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<section id="adi-tmcl">
+<h2>adi_tmcl<a class="headerlink" href="#adi-tmcl" title="Link to this heading"></a></h2>
+<p><strong>adi_tmcl</strong> (previously <em>tmcl_ros2</em>) is the official ROS2 Driver for ADI Trinamic Motor Controllers (TMC) that uses Trinamic Motion Control Language (TMCL) protocol.</p>
+</section>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Supported TMC boards: <a class="reference external" href="https://www.analog.com/en/products/tmcm-1636.html">TMCM-1636</a>, <a class="reference external" href="https://www.analog.com/en/products/tmcm-1617.html">TMCM-1617</a>, <a class="reference external" href="https://www.analog.com/en/products/tmcm-2611.html">TMCM-2611</a>, <a class="reference external" href="https://www.analog.com/en/products/tmcm-1241.html">TMCM-1241</a>, <a class="reference external" href="https://www.analog.com/en/products/tmcm-1260.html">TMCM-1260</a>, <a class="reference external" href="https://www.analog.com/en/products/tmcm-6214.html">TMCM-6214</a></p></li>
+<li><p>Supported communication interface and interface driver: CAN (SocketCAN)</p></li>
+<li><p>Supported ROS2 and OS distro: Humble (Ubuntu 22.04)</p></li>
+<li><p>Supported platform: Intel x86 64-bit (amd64)</p></li>
+<li><p>Supported setup: Single/Multiple TMC in Single/Multiple CAN channel (namespace-managed)</p></li>
+</ul>
+<blockquote>
+<div><p>:memo: <em>Note: Although officially supported TMC boards are only the abovementioned, all market-ready TMCs with YAMLs in this repository are also expected to work and can be tried and tested by the users.</em>
+<em>Contact the Developers for any  issues encountered.</em></p>
+</div></blockquote>
+</section>
+<section id="hardware">
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h2>
+<p>For the tested TMCM-1636 setup, the following are used:</p>
+<ul class="simple">
+<li><p>1 x <a class="reference external" href="https://www.analog.com/en/products/tmcm-1636.html">TMCM-1636</a></p></li>
+<li><p>1 x <a class="reference external" href="https://www.analog.com/en/products/qbl4208.html">QBL4208-61-04-013 BLDC motor</a></p></li>
+<li><p>1 x External 24V power supply</p></li>
+<li><p>1 x CAN USB Cable (w/SocketCAN support) - with 120 ohm termination resistors</p></li>
+</ul>
+<p>Also the following:</p>
+<ul class="simple">
+<li><p>PWR/GND from board to external 24V power supply</p></li>
+<li><p>5-pin Motor connector (Hall) (see <em>Note</em> below)</p></li>
+<li><p>5-pin Motor connector (Encoder) (see <em>Note</em> below)</p></li>
+<li><p>40 pin Molex connectors</p></li>
+</ul>
+<blockquote>
+<div><p>:memo: <em>Note: Check Section 4 of <a class="reference external" href="https://www.analog.com/media/en/technical-documentation/data-sheets/QBL4208-x-1k_datasheet_Rev1.40.pdf">QBL4208-x-1k Datasheet</a> for motor wiring references.</em></p>
+</div></blockquote>
+<p>The image below shows the connection diagram of the setup (with labels):
+<img alt="TMCM-1636 Connections" src="docs/images/tmcm_1636_setup.png" /></p>
+<p>The image below shows the actual setup used (for reference):
+<img alt="TMCM-1636 Actual Setup" src="docs/images/tmcm_1636_actual_setup.png" /></p>
+</section>
+<section id="software">
+<h2>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h2>
+<section id="software-architecture">
+<h3>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading"></a></h3>
+<p><img alt="Software Architecture Diagram" src="docs/images/tmcl_ros2_Software_Architecture_Diagram.png" /></p>
+</section>
+<section id="software-dependencies">
+<h3>Software Dependencies<a class="headerlink" href="#software-dependencies" title="Link to this heading"></a></h3>
+<p>Assumptions before building this package:</p>
+<ul class="simple">
+<li><p>Installed ROS2 Humble. If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html">steps</a>.</p></li>
+<li><p>Setup workspace (with workspace folder named as “ros2_ws”). If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html">steps</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="clone">
+<h2>Clone<a class="headerlink" href="#clone" title="Link to this heading"></a></h2>
+<p>In the website:</p>
+<ol class="arabic simple">
+<li><p>Make sure that the branch dropdown is set to “humble”.</p></li>
+<li><p>Click the “Clone” or “Code” button, then copy the SSH or HTTPS link (eg, “*.git”).</p></li>
+</ol>
+<p>In a terminal, do the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied<span class="w"> </span>SSH<span class="w"> </span>o<span class="w"> </span>HTTPS<span class="w"> </span>link<span class="w"> </span>here&gt;<span class="w"> </span>adi_tmcl<span class="w">  </span><span class="c1">#clones repo to &quot;adi_tmcl&quot; directory name</span>
+</pre></div>
+</div>
+</section>
+<section id="build">
+<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">########## [TERMINAL 1] ##########</span>
+<span class="c1"># Do proper exports first:</span>
+<span class="c1">## $ source /opt/ros/&lt;ROS2 Version&gt;/setup.bash</span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
+
+<span class="c1"># Resolve any dependencies</span>
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>--from-path<span class="w"> </span>src<span class="w"> </span>--rosdistro<span class="w"> </span>humble<span class="w"> </span>-y
+
+<span class="c1"># Build</span>
+$<span class="w"> </span>colcon<span class="w"> </span>build
+<span class="c1">## To clean first before building, you may run the following instead:</span>
+<span class="c1">## $ colcon build --cmake-clean-first</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>:memo: <em>Note: It is recommended that 1 terminal is dedicated to building the package/workspace to avoid complex issues as mentioned in <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a></em></p>
+</div></blockquote>
+</section>
+<section id="pre-launch-one-time-per-setup">
+<h2>Pre-Launch (One-time per setup)<a class="headerlink" href="#pre-launch-one-time-per-setup" title="Link to this heading"></a></h2>
+<p>If it’s the first time to use the set of motors for the TMC that you are using, it is required to calibrate and tune the PID settings of the motors first.</p>
+<p>Do the calibrations/tuning by downloading and using <a class="reference external" href="https://www.analog.com/en/design-center/evaluation-hardware-and-software/motor-motion-control-software/tmcl-ide.html">TMCL-IDE</a>.</p>
+<section id="bldc-motors">
+<h3>BLDC Motors<a class="headerlink" href="#bldc-motors" title="Link to this heading"></a></h3>
+<section id="calibrate-the-motors">
+<h4>Calibrate the motors<a class="headerlink" href="#calibrate-the-motors" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=MASVD_2tNuo">link</a>.</p>
+</section>
+<section id="tune-the-pi-settings-of-the-motors">
+<h4>Tune the PI settings of the motors<a class="headerlink" href="#tune-the-pi-settings-of-the-motors" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the PI tuning is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">Tuning</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=rfZAs-QdYlQ">link</a>.</p>
+<blockquote>
+<div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by doing any of the following:</em></p>
+<ul class="simple">
+<li><p><em>Clicking the “Store Parameter” under Settings of each axis</em></p></li>
+<li><p><em>Using STAP (Store Axis Parameters) command from Direct Mode</em></p></li>
+<li><p><em>Creating and uploading a TMCL Program, and enabling the “auto start mode” under SGP (Set Global Parameter) command from Direct Mode</em></p></li>
+<li><ul>
+<li><p>:memo: <em>Note: Some boards don’t have “auto start mode”, so in such a case, use the other options to store the parameters.</em></p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="stepper-motors">
+<h3>Stepper Motors<a class="headerlink" href="#stepper-motors" title="Link to this heading"></a></h3>
+<section id="id1">
+<h4>Calibrate the motors<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=l6r63Q7Yr58o">link</a>.</p>
+<p>For more information about Trinamic features on stepper motors, visit this <a class="reference external" href="https://www.analog.com/en/product-category/motor-and-motion-control.html">link</a>.</p>
+<blockquote>
+<div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by:</em></p>
+<ul class="simple">
+<li><p><em>Creating and uploading a TMCL Program, and enabling the “auto start mode” under SGP (Set Global Parameter) command from Direct Mode</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+</section>
+<section id="pre-launch-one-time">
+<h2>Pre-Launch (One-time)<a class="headerlink" href="#pre-launch-one-time" title="Link to this heading"></a></h2>
+<section id="initialize-can">
+<h3>Initialize CAN<a class="headerlink" href="#initialize-can" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>:memo: <em>Note: This script automatically brings-up CAN upon boot. Do this step only once.</em></p>
+</div></blockquote>
+<p>To proceed, first make the script executable (do this only once as this change persists even after power-off):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/adi_tmcl/scripts<span class="w"> </span><span class="c1"># or ~/ros2_ws/src/&lt;repo directory&gt;/scripts</span>
+$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>CAN_init.sh
+</pre></div>
+</div>
+<p>Execute the script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># To know more about the usage</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_init.sh<span class="w"> </span>-h
+<span class="c1"># Usage</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_init.sh<span class="w"> </span>-i<span class="w"> </span>&lt;communication<span class="w"> </span>interface<span class="w"> </span>name&gt;<span class="w"> </span>-b<span class="w"> </span>&lt;bitrate&gt;
+<span class="c1"># Example: can0 as communication interface name and 1000KBPS bitrate</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_init.sh<span class="w"> </span>-i<span class="w"> </span>can0<span class="w"> </span>-b<span class="w"> </span><span class="m">1000000</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>CAN communication interface name is the interface used between the PC and the TMC <em>(accepted values: can0 - can255)</em></p></li>
+<li><p>bitrate is the rate of communication interface <em>(accepted values: 20000, 50000, 100000, 125000, 250000, 500000, 1000000)</em></p></li>
+</ul>
+<blockquote>
+<div><p>:memo: <em>Note: The above mentioned accepted values are a range, though the user still needs to check the actual TMC’s datasheet on the applicable range.</em>
+<em>Additionally, the bitrate set here must be the same bitrate set into the the TMC as the Global Parameter “CAN bit rate”.</em></p>
+</div></blockquote>
+</section>
+<section id="de-initialize-can">
+<h3>De-initialize CAN<a class="headerlink" href="#de-initialize-can" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>:memo: <em>Note: This script disables the automatic bring-up of CAN upon boot.</em></p>
+</div></blockquote>
+<p>To proceed, first make the script executable (do this only once as this change persists even after power-off):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/adi_tmcl/scripts<span class="w"> </span><span class="c1"># or ~/ros2_ws/src/&lt;repo directory&gt;/scripts</span>
+$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>CAN_deinit.sh
+</pre></div>
+</div>
+<p>Execute the script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># To know more about the usage</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_deinit.sh<span class="w"> </span>-h
+<span class="c1"># Usage</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_deinit.sh<span class="w"> </span>-i<span class="w"> </span>&lt;communication<span class="w"> </span>interface<span class="w"> </span>name&gt;
+<span class="c1"># Example: can0 as communication interface name</span>
+$<span class="w"> </span>sudo<span class="w"> </span>./CAN_deinit.sh<span class="w"> </span>-i<span class="w"> </span>can0
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>communication interface is the interface used between the PC and the TMC <em>(accepted values: can0 - can255)</em></p></li>
+</ul>
+</section>
+</section>
+<section id="launch">
+<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">########## [TERMINAL 2] ##########</span>
+<span class="c1"># Do proper exports first:</span>
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>install/setup.bash
+
+<span class="c1"># Launch</span>
+$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmcl<span class="w"> </span>tmcm_1636.launch.py
+
+<span class="c1"># Launch with DEBUG logs</span>
+$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmcl<span class="w"> </span>tmcm_1636.launch.py<span class="w"> </span>log_level:<span class="o">=</span>DEBUG
+</pre></div>
+</div>
+<blockquote>
+<div><p>:memo: <em>Note: This should be a different terminal from the one you used when building to avoid complex issues as mentioned in <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a></em></p>
+</div></blockquote>
+</section>
+<section id="nodes">
+<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h2>
+<section id="tmcl-ros2-node">
+<h3>tmcl_ros2_node<a class="headerlink" href="#tmcl-ros2-node" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>:memo: <em>Note: For those with &lt;motor_num&gt; in the topic names, these are ideally the motor number. For example, if there are 2 motors used, there should be two published topics for tmc_info, specifically /tmc_info_0 for motor 0 and then /tmc_info_1 for motor 1.</em></p>
+</div></blockquote>
+<section id="published-topics">
+<h4>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h4>
+<p>These are the default topic names, topic names can be modified as a ROS parameter.</p>
+<ul class="simple">
+<li><p><strong>/tmc_info_&lt;motor_num&gt;</strong> (adi_tmcl/msg/TmcInfo)</p>
+<ul>
+<li><p>Data containing:</p>
+<ul>
+<li><p>(1) board voltage (V)</p></li>
+<li><p>(2) statusflag value (only for boards with StatusFlags AP, else, value is set to 0)</p></li>
+<li><p>(3) statusflag notifications (only for boards with StatusFlags AP and StatusFlags Register names). In the case of Stepper motor(s), this publishes driver error flags and extended error flags values. Else, value is set to “ “)</p></li>
+<li><p>(4) motor number</p></li>
+<li><p>(5) velocity (if <a class="reference internal" href="#parameters"><span class="xref myst">Parameter</span></a> wheel_diameter is set to 0, the unit for published velocity is rpm, else m/s)</p></li>
+<li><p>(6) position (degree angle)</p></li>
+<li><p>(7) torque (mA)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="subscribed-topics">
+<h4>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/cmd_vel_&lt;motor_num&gt;</strong> (geometry_msgs/msg/Twist)</p>
+<ul>
+<li><p>Velocity command (rpm or m/s)</p></li>
+</ul>
+</li>
+<li><p><strong>/cmd_abspos_&lt;motor_num&gt;</strong> (std_msgs/msg/Int32)</p>
+<ul>
+<li><p>Absolute position command (degree angle)</p></li>
+</ul>
+</li>
+<li><p><strong>/cmd_relpos_&lt;motor_num&gt;</strong> (std_msgs/msg/Int32)</p>
+<ul>
+<li><p>Relative position command (degree angle)</p></li>
+</ul>
+</li>
+<li><p><strong>/cmd_trq_&lt;motor_num&gt;</strong> (std_msgs/msg/Int32)</p>
+<ul>
+<li><p>Torque command (mA)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="advertised-services">
+<h4>Advertised services<a class="headerlink" href="#advertised-services" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/tmcl_custom_cmd</strong> (adi_tmcl/srv/TmcCustomCmd)</p>
+<ul>
+<li><p>Executes a custom SAP, GAP, SGP and GGP commands</p></li>
+<li><p>The output contains raw data (velocity = rpm, position = units) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+</ul>
+</li>
+<li><p><strong>/tmcl_gap_all</strong> (adi_tmcl/srv/TmcGapAll)</p>
+<ul>
+<li><p>Get all Axis Parameter values</p></li>
+</ul>
+</li>
+<li><p><strong>/tmcl_ggp_all</strong> (adi_tmcl/srv/TmcGgpAll)</p>
+<ul>
+<li><p>Get all Global Parameter values</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>If any of these parameters are not set/declared, default values will be used.</em></p></li>
+<li><p><em>To know more details about each parameter, you can execute <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">describe</span> <span class="pre">&lt;node&gt;</span> <span class="pre">&lt;parameter&gt;</span></code></em></p></li>
+</ul>
+</div></blockquote>
+<section id="communication-interface-parameters">
+<h5><em>Communication Interface Parameters</em><a class="headerlink" href="#communication-interface-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>comm_interface</strong> (int, default: 0)</p>
+<ul>
+<li><p>Interface used between the PC and the TMC (where 0 = CAN)</p></li>
+</ul>
+</li>
+<li><p><strong>comm_interface_name</strong> (string, default: can0)</p>
+<ul>
+<li><p>Name of the interface or device as detected by the PC</p></li>
+</ul>
+</li>
+<li><p><strong>comm_tx_id</strong> (int, default: 1)</p>
+<ul>
+<li><p>ID for board TX</p></li>
+</ul>
+</li>
+<li><p><strong>comm_rx_id</strong> (int, default: 2)</p>
+<ul>
+<li><p>ID for board RX</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tmc-ros-node-parameters">
+<h5><em>TMC ROS Node Parameters</em><a class="headerlink" href="#tmc-ros-node-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>comm_timeout_ms</strong> (int, default: 10)</p>
+<ul>
+<li><p>Indicates how long should the node will wait for the rx data</p></li>
+</ul>
+</li>
+<li><p><strong>comm_exec_cmd_retries</strong> (int, default: 1)</p>
+<ul>
+<li><p>Indicates how many the node will retry sending data before shutting down if no data received</p></li>
+</ul>
+</li>
+<li><p><strong>adhoc_mode</strong> (bool, default: false)</p>
+<ul>
+<li><p>This mode expects that the used module is not known. The velocity, position and torque relies on the additional_ratio_* values.</p></li>
+</ul>
+</li>
+<li><p><strong>en_motors[]</strong> (int array, default: [0])</p>
+<ul>
+<li><p>Enables/disables active motors or axes. If disabled, settings for those motors will be ignored or not set.</p></li>
+</ul>
+</li>
+<li><p><strong>auto_start_additional_delay</strong> (int, default: 0)</p>
+<ul>
+<li><p>Added delay in seconds if auto start mode is enabled. Use this if your TMCL program needs to start running after over 2 seconds.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="motor-configuration-settings">
+<h5><em>Motor Configuration Settings</em><a class="headerlink" href="#motor-configuration-settings" title="Link to this heading"></a></h5>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>The following parameters can be provided for each motor, otherwise default will be used.</em></p></li>
+<li><p><em>Resulting parameter will be prefixed by <code class="docutils literal notranslate"><span class="pre">motor&lt;motor_num&gt;.</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">motor0.en_pub_tmc_info</span></code>)</em></p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>en_pub_tmc_info</strong> (bool, default: true)</p>
+<ul>
+<li><p>Enables/disables publishing of TMC information</p></li>
+</ul>
+</li>
+<li><p><strong>pub_rate_tmc_info</strong> (int, default: 10)</p>
+<ul>
+<li><p>Publish rate (hertz) of TMC information</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_vel</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual velocity that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_trq</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual torque that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_pos</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual position that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_info_topic</strong> (string, default: /tmc_info_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>tmc_info topics that will contain chosen TMC info that will be published</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_vel_topic</strong> (string, default: /cmd_vel_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Twist topics that will be the source of target velocity to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_abspos_topic</strong> (string, default: /cmd_abspos_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Int32 topics that will be the source of target position to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_relpos_topic</strong> (string, default: /cmd_relpos_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Int32 topics that will be the source of target position to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_trq_topic</strong> (string, default: /cmd_trq_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Int32 topics that will be the source of target torque to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>wheel_diameter</strong> (double, default: 0.0)</p>
+<ul>
+<li><p>Wheel diameter that is attached on the motor shaft directly. This is to convert linear values to rpm</p></li>
+<li><p>If wheel diameter is 0.0, cmd_vel is equal to rpm</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_vel</strong> (double, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for velocity for general purposes (adhoc mode, added pulley or gear trains). Default value 1.0 means disabled</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_pos</strong> (double, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for position for general purposes (adhoc mode, added pulley or gear trains). Default value 1.0 means disabled</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_trq</strong> (double, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for torque for general purposes (adhoc mode). Default value 1.0 means disabled</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+<section id="quick-tests">
+<h2>Quick Tests<a class="headerlink" href="#quick-tests" title="Link to this heading"></a></h2>
+<section id="test-velocity-mode">
+<h3>Test Velocity Mode<a class="headerlink" href="#test-velocity-mode" title="Link to this heading"></a></h3>
+<p>To do a quick test of Velocity Mode, there is a fake velocity script that the user can run.
+Idea is, this script will send Velocity commands (as a ROS topic), then the first motor should be expected to:</p>
+<ol class="arabic simple">
+<li><p>Increase velocity every 3secs, clockwise (in m/s: 3, 6, 9)</p></li>
+<li><p>Stop for 5secs</p></li>
+<li><p>Increase velocity every 3secs, counter-clockwise (in m/s: -3, -6, -9)</p></li>
+<li><p>Stop for 5secs</p></li>
+</ol>
+<p>To proceed with the test, execute these following commands on three (3) different terminals (in sequence):</p>
+<blockquote>
+<div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1 and <a class="reference internal" href="#initialize-can"><span class="xref myst">Initialize CAN</span></a> is already done on Terminal 1.</em></p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
+<th class="head"><p>Terminal 3</p></th>
+<th class="head"><p>Terminal 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 launch adi_tmcl tmcm_1636.launch.py</p></td>
+<td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 topic echo /tmc_info_0</p></td>
+<td><p><pre>$ cd ~/ros2_ws/src/adi_tmcl/scripts <br>$ sudo chmod 777 fake_cmd_vel.sh <br>$ ./fake_cmd_vel.sh</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor the velocity of the first motor (watch out for velocity value at Terminal 3).</strong></p>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Terminals 3 and 4 are best viewed side-by-side.</em></p></li>
+<li><p><em>You may Ctrl-C the command in Terminal 2 and 3 once you’re done.</em></p></li>
+<li><p><em>The command in Terminal 4 auto-stops by itself.</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="test-position-mode">
+<h3>Test Position Mode<a class="headerlink" href="#test-position-mode" title="Link to this heading"></a></h3>
+<p>To do a quick test of Position Mode, there is a fake position script that the user can run.
+Idea is, this script will send Position commands (as a ROS topic), then the first motor should be expected to:</p>
+<ol class="arabic simple">
+<li><p>Rotate 360 degrees (clockwise) every 5 secs, 3 times</p></li>
+<li><p>Stop for 5secs</p></li>
+<li><p>Rotate 360 degrees (counter-clockwise) every 5 secs, 3 times</p></li>
+<li><p>Stop for 5secs</p></li>
+</ol>
+<p>To proceed with the test, execute these following commands on three (3) different terminals (in sequence):</p>
+<blockquote>
+<div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1 and <a class="reference internal" href="#initialize-can"><span class="xref myst">Initialize CAN</span></a> is already done on Terminal 1.</em></p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
+<th class="head"><p>Terminal 3</p></th>
+<th class="head"><p>Terminal 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 launch adi_tmcl tmcm_1636.launch.py</p></td>
+<td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 topic echo /tmc_info_0</p></td>
+<td><p><pre>$ cd ~/ros2_ws/src/adi_tmcl/scripts <br>$ sudo chmod 777 fake_cmd_pos.sh <br>$ ./fake_cmd_pos.sh</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor the position of the first motor (watch out for position value at Terminal 3).</strong></p>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Terminals 3 and 4 are best viewed side-by-side.</em></p></li>
+<li><p><em>You may Ctrl-C the command in Terminal 2 and 3 once you’re done.</em></p></li>
+<li><p><em>The command in Terminal 4 auto-stops by itself.</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="test-torque-mode">
+<h3>Test Torque Mode<a class="headerlink" href="#test-torque-mode" title="Link to this heading"></a></h3>
+<p>To do a quick test of Torque Mode, there is a fake torque script that the user can run.
+Idea is, this script will send Torque commands (as a ROS topic), then the first motor should be expected to:</p>
+<ol class="arabic simple">
+<li><p>Rotate for 5 secs, with torque = 300</p></li>
+<li><p>Stop for 5secs</p></li>
+<li><p>Rotate for 5 secs again, with torque = 300</p></li>
+</ol>
+<p>To proceed with the test, execute these following commands on three (3) different terminals (in sequence):</p>
+<blockquote>
+<div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1 and <a class="reference internal" href="#initialize-can"><span class="xref myst">Initialize CAN</span></a> is already done on Terminal 1.</em></p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
+<th class="head"><p>Terminal 3</p></th>
+<th class="head"><p>Terminal 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 launch adi_tmcl tmcm_1636.launch.py</p></td>
+<td><p><pre>$ cd ~/ros2_ws/ <br>$ source /opt/ros/humble/setup.bash <br>$ source install/setup.bash <br>$ ros2 topic echo /tmc_info_0</p></td>
+<td><p><pre>$ cd ~/ros2_ws/src/adi_tmcl/scripts <br>$ sudo chmod 777 fake_cmd_trq.sh <br>$ ./fake_cmd_trq.sh</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor the torque of the first motor (watch out for torque value at Terminal 3).</strong></p>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Terminals 3 and 4 are best viewed side-by-side.</em></p></li>
+<li><p><em>You may Ctrl-C the command in Terminal 1 and 2 once you’re done.</em></p></li>
+<li><p><em>The command in Terminal 4 auto-stops by itself.</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>No support for interfaces other than CAN yet.</p></li>
+</ol>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h2>
+<p>Please contact the <code class="docutils literal notranslate"><span class="pre">Maintainers</span></code> if you want to use this ROS Driver on Trinamic Motor Controllers without YAML files in this repository.</p>
+<p>Any other inquiries and support are also welcome.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="generated/index.html" class="btn btn-neutral float-right" title="C++ API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_tmcl&gt; Contributors. License: BSD 3-Clause.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

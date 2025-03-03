@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459:
+
+Variable TIMEOUT_MS_MIN
+=======================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TIMEOUT_MS_MIN
+   :project: adi_tmcl Doxygen Project

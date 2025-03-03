@@ -1,0 +1,56 @@
+
+.. _program_listing_file_include_adi_tmcl_tmcl_stepper_motor.hpp:
+
+Program Listing for File tmcl_stepper_motor.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmcl_tmcl_stepper_motor.hpp>` (``include/adi_tmcl/tmcl_stepper_motor.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef TMCL_STEPPER_MOTOR_HPP
+   #define TMCL_STEPPER_MOTOR_HPP
+   
+   #include "adi_tmcl/tmcl_motor.hpp"
+   
+   /*******************************************************************************/
+   /*                      Constants and Enumerations                             */
+   /*******************************************************************************/
+   
+   /* Possible values for <Stepper Mode> */
+   typedef enum
+   {
+     STEPPER_MODE_OPENLOOP = 0,
+     STEPPER_MODE_CLOSEDLOOP
+   } tmcl_stepper_mode_t;
+   
+   class StepperMotor : public Motor
+   {
+   public:
+     StepperMotor(rclcpp::Node::SharedPtr p_node, TmclInterpreter* p_tmcl_interpreter,
+       uint8_t motor_number, uint32_t module_number);
+     virtual ~StepperMotor();
+   
+   private:
+     tmcl_stepper_mode_t mode_;
+     uint32_t motor_full_step_resolution_;
+     uint16_t microstep_resolution_;
+   
+     void init() override;
+     void initPublisher() override;
+     void pubTimerCallback() override;
+     void initSubscriberParams() override;
+     void initSubscribers() override;
+     void cmdVelSubscriberCallback(const geometry_msgs::msg::Twist::SharedPtr msg) override;
+     void cmdAbsposSubscriberCallback(const std_msgs::msg::Int32::SharedPtr msg) override;
+     void cmdRelposSubscriberCallback(const std_msgs::msg::Int32::SharedPtr msg) override;
+     void cmdTrqSubscriberCallback(const std_msgs::msg::Int32::SharedPtr msg) override;
+   
+     tmcl_stepper_mode_t getStepperMode();
+   };
+   
+   
+   #endif //TMCL_STEPPER_MOTOR_HPP

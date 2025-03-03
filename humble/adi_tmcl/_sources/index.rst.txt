@@ -1,0 +1,23 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adi_tmcl
+========
+
+The adi_tmcl ROS2 package
+
+.. toctree::
+   :maxdepth: 2
+
+
+   C++ API <generated/index>
+   Message Definitions <interfaces/message_definitions>
+   Service Definitions <interfaces/service_definitions>
+
+   Standard Documents <standards>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

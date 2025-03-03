@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd:
+
+Variable EXEC_CMD_RETRIES_MAX
+=============================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: EXEC_CMD_RETRIES_MAX
+   :project: adi_tmcl Doxygen Project

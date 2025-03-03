@@ -1,0 +1,95 @@
+
+.. _file_include_adi_tmcl_tmcl_ros2.hpp:
+
+File tmcl_ros2.hpp
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmcl>` (``include/adi_tmcl``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmcl/tmcl_ros2.hpp``)
+-----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmcl_tmcl_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmcl/srv/tmc_custom_cmd.hpp``
+
+- ``adi_tmcl/srv/tmc_gap_all.hpp``
+
+- ``adi_tmcl/srv/tmc_ggp_all.hpp``
+
+- ``adi_tmcl/tmcl_bldc_motor.hpp`` (:ref:`file_include_adi_tmcl_tmcl_bldc_motor.hpp`)
+
+- ``adi_tmcl/tmcl_stepper_motor.hpp`` (:ref:`file_include_adi_tmcl_tmcl_stepper_motor.hpp`)
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classTmclRos2`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a`
+
+- :ref:`exhale_enum_tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad`
+

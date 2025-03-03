@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__stepper__motor_8hpp_1aa0f126c89402b24ec6ed22dff8154fbb:
+
+Enum tmcl_stepper_mode_t
+========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_stepper_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_stepper_mode_t
+   :project: adi_tmcl Doxygen Project

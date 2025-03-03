@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3:
+
+Variable PUB_RATE_DEFAULT
+=========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: PUB_RATE_DEFAULT
+   :project: adi_tmcl Doxygen Project

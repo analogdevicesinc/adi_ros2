@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6:
+
+Variable PUB_RATE_MIN
+=====================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: PUB_RATE_MIN
+   :project: adi_tmcl Doxygen Project

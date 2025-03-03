@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c:
+
+Enum tmcl_interface_params_lut_t
+================================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_common.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_interface_params_lut_t
+   :project: adi_tmcl Doxygen Project

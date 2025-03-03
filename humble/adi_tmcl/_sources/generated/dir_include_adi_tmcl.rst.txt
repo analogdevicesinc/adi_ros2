@@ -1,0 +1,27 @@
+.. _dir_include_adi_tmcl:
+
+
+Directory adi_tmcl
+==================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``include/adi_tmcl``
+
+
+Files
+-----
+
+- :ref:`file_include_adi_tmcl_socket_can_wrapper.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_bldc_motor.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_common.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+- :ref:`file_include_adi_tmcl_tmcl_stepper_motor.hpp`
+
+

@@ -140,6 +140,9 @@ Then source the previously built overlay:
 Now you can run the *adi_iio* package.
 
 
+.. _building_the_documentation:
+
+
 Building the Documentation
 ================================================================================
 
@@ -157,19 +160,19 @@ Prerequisites
 Setting Up the Virtual Environment
 --------------------------------------------------------------------------------
 
-1. **Create the Virtual Environment**
+#. **Create the Virtual Environment**
 
    .. code-block:: bash
 
       python3 -m venv .venv
 
-2. **Activate the Virtual Environment**
+#. **Activate the Virtual Environment**
 
    .. code-block:: bash
 
       source .venv/bin/activate
 
-3. **Install the Required Dependencies**
+#. **Install the Required Dependencies**
 
    .. code-block:: bash
 

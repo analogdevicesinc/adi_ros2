@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTmclInterpreter" kind="class" language="C++" prot="public">
+    <compoundname>TmclInterpreter</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTmclInterpreter_1aaacc788f6258a3bab996312ed7cb79fc" prot="private" static="no" mutable="no">
+        <type>tmcl_interface_t</type>
+        <definition>tmcl_interface_t TmclInterpreter::tmcl_interface_</definition>
+        <argsstring></argsstring>
+        <name>tmcl_interface_</name>
+        <qualifiedname>TmclInterpreter::tmcl_interface_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="123" column="20" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1ac5a1cc82bf920ff3edef07c3874f1e8b" prot="private" static="no" mutable="no">
+        <type><ref refid="structtmcl__cfg__t" kindref="compound">tmcl_cfg_t</ref></type>
+        <definition>tmcl_cfg_t TmclInterpreter::tmcl_cfg_</definition>
+        <argsstring></argsstring>
+        <name>tmcl_cfg_</name>
+        <qualifiedname>TmclInterpreter::tmcl_cfg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="124" column="14" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1a4f4b9ae2d353a3617a275cf4d8945ba3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::interface_enabled_</definition>
+        <argsstring></argsstring>
+        <name>interface_enabled_</name>
+        <qualifiedname>TmclInterpreter::interface_enabled_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="125" column="8" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1a71ea26bd6aa8fb71351d80d713812d8a" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TmclInterpreter::timeout_ms_</definition>
+        <argsstring></argsstring>
+        <name>timeout_ms_</name>
+        <qualifiedname>TmclInterpreter::timeout_ms_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="126" column="12" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1a47fc1258f6b2c46d034944423b038dfc" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmclInterpreter::comm_exec_cmd_retries_</definition>
+        <argsstring></argsstring>
+        <name>comm_exec_cmd_retries_</name>
+        <qualifiedname>TmclInterpreter::comm_exec_cmd_retries_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="127" column="11" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1ae50f183a0546f453522d1f538c5646e1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TmclInterpreter::ap_name_</definition>
+        <argsstring></argsstring>
+        <name>ap_name_</name>
+        <qualifiedname>TmclInterpreter::ap_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="128" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1ade8db5204768ac9a09ba6d5968987b38" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; TmclInterpreter::ap_type_</definition>
+        <argsstring></argsstring>
+        <name>ap_type_</name>
+        <qualifiedname>TmclInterpreter::ap_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="129" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1aebcd3832b6436674e84f227bf29eea58" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TmclInterpreter::gp_name_</definition>
+        <argsstring></argsstring>
+        <name>gp_name_</name>
+        <qualifiedname>TmclInterpreter::gp_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="130" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1acda938126400889fef00f81b5665a3a8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; TmclInterpreter::gp_type_</definition>
+        <argsstring></argsstring>
+        <name>gp_type_</name>
+        <qualifiedname>TmclInterpreter::gp_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="131" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1ad918f8e0ed255d9ade02f2c6f78e8d6b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmclInterpreter::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>TmclInterpreter::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="132" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1a7228f05ec03f25c850c996addbe80cab" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger TmclInterpreter::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>TmclInterpreter::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="133" column="18" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclInterpreter_1ac8f0f7183b13f4e2165478c063c6529f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::b_retries_exceeded_</definition>
+        <argsstring></argsstring>
+        <name>b_retries_exceeded_</name>
+        <qualifiedname>TmclInterpreter::b_retries_exceeded_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="134" column="8" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTmclInterpreter_1a888ad4cb5eb94a609bf472e2c338e5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmclInterpreter::TmclInterpreter</definition>
+        <argsstring>(tmcl_interface_t tmcl_interface, tmcl_cfg_t tmcl_cfg, uint16_t timeout_ms, uint8_t comm_exec_cmd_retries, const char *logger_prefix_)</argsstring>
+        <name>TmclInterpreter</name>
+        <qualifiedname>TmclInterpreter::TmclInterpreter</qualifiedname>
+        <param>
+          <type>tmcl_interface_t</type>
+          <declname>tmcl_interface</declname>
+        </param>
+        <param>
+          <type><ref refid="structtmcl__cfg__t" kindref="compound">tmcl_cfg_t</ref></type>
+          <declname>tmcl_cfg</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeout_ms</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>comm_exec_cmd_retries</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>logger_prefix_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="101" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1a5aaf9fba5947435735ccc83a46d63234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmclInterpreter::~TmclInterpreter</definition>
+        <argsstring>()</argsstring>
+        <name>~TmclInterpreter</name>
+        <qualifiedname>TmclInterpreter::~TmclInterpreter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="105" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1a02c998ca99d1c97976eb58075bc4de17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::resetInterface</definition>
+        <argsstring>()</argsstring>
+        <name>resetInterface</name>
+        <qualifiedname>TmclInterpreter::resetInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="108" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1abae29ab793c86fc556bc83c97a31d40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::executeCmd</definition>
+        <argsstring>(tmcl_cmd_t cmd, uint8_t type, uint8_t motor, int32_t *val)</argsstring>
+        <name>executeCmd</name>
+        <qualifiedname>TmclInterpreter::executeCmd</qualifiedname>
+        <param>
+          <type>tmcl_cmd_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="111" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1ac69c38bf60409fec7b90ddda2b15721f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::executeCmd</definition>
+        <argsstring>(tmcl_cmd_t cmd, const char *type, uint8_t motor, int32_t *val)</argsstring>
+        <name>executeCmd</name>
+        <qualifiedname>TmclInterpreter::executeCmd</qualifiedname>
+        <param>
+          <type>tmcl_cmd_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="112" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1ae2dc255c869d1aa58c7338331780fb81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::shutdownInterface</definition>
+        <argsstring>()</argsstring>
+        <name>shutdownInterface</name>
+        <qualifiedname>TmclInterpreter::shutdownInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="115" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1a8fe10b5b4ed05f2ad6204e54d7575be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmclInterpreter::setAp</definition>
+        <argsstring>(std::vector&lt; std::string &gt; ap_name, std::vector&lt; int64_t &gt; ap_type)</argsstring>
+        <name>setAp</name>
+        <qualifiedname>TmclInterpreter::setAp</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>ap_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int64_t &gt;</type>
+          <declname>ap_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="117" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1ae36ce118bc8d3d119260762f651da8a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmclInterpreter::setGp</definition>
+        <argsstring>(std::vector&lt; std::string &gt; gp_name, std::vector&lt; int64_t &gt; gp_type)</argsstring>
+        <name>setGp</name>
+        <qualifiedname>TmclInterpreter::setGp</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>gp_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int64_t &gt;</type>
+          <declname>gp_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="118" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclInterpreter_1a111381a6d5f7e03fbf7f481236a87a86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmclInterpreter::getRetriesExceededStatus</definition>
+        <argsstring>()</argsstring>
+        <name>getRetriesExceededStatus</name>
+        <qualifiedname>TmclInterpreter::getRetriesExceededStatus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="120" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="97" column="1" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="98" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classTmclInterpreter_1ae50f183a0546f453522d1f538c5646e1" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>ap_name_</name></member>
+      <member refid="classTmclInterpreter_1ade8db5204768ac9a09ba6d5968987b38" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>ap_type_</name></member>
+      <member refid="classTmclInterpreter_1ac8f0f7183b13f4e2165478c063c6529f" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>b_retries_exceeded_</name></member>
+      <member refid="classTmclInterpreter_1a47fc1258f6b2c46d034944423b038dfc" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>comm_exec_cmd_retries_</name></member>
+      <member refid="classTmclInterpreter_1abae29ab793c86fc556bc83c97a31d40e" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>executeCmd</name></member>
+      <member refid="classTmclInterpreter_1ac69c38bf60409fec7b90ddda2b15721f" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>executeCmd</name></member>
+      <member refid="classTmclInterpreter_1a111381a6d5f7e03fbf7f481236a87a86" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>getRetriesExceededStatus</name></member>
+      <member refid="classTmclInterpreter_1aebcd3832b6436674e84f227bf29eea58" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>gp_name_</name></member>
+      <member refid="classTmclInterpreter_1acda938126400889fef00f81b5665a3a8" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>gp_type_</name></member>
+      <member refid="classTmclInterpreter_1a4f4b9ae2d353a3617a275cf4d8945ba3" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>interface_enabled_</name></member>
+      <member refid="classTmclInterpreter_1a7228f05ec03f25c850c996addbe80cab" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>logger_</name></member>
+      <member refid="classTmclInterpreter_1ad918f8e0ed255d9ade02f2c6f78e8d6b" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>logger_prefix_</name></member>
+      <member refid="classTmclInterpreter_1a02c998ca99d1c97976eb58075bc4de17" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>resetInterface</name></member>
+      <member refid="classTmclInterpreter_1a8fe10b5b4ed05f2ad6204e54d7575be9" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>setAp</name></member>
+      <member refid="classTmclInterpreter_1ae36ce118bc8d3d119260762f651da8a8" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>setGp</name></member>
+      <member refid="classTmclInterpreter_1ae2dc255c869d1aa58c7338331780fb81" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>shutdownInterface</name></member>
+      <member refid="classTmclInterpreter_1a71ea26bd6aa8fb71351d80d713812d8a" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>timeout_ms_</name></member>
+      <member refid="classTmclInterpreter_1ac5a1cc82bf920ff3edef07c3874f1e8b" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>tmcl_cfg_</name></member>
+      <member refid="classTmclInterpreter_1aaacc788f6258a3bab996312ed7cb79fc" prot="private" virt="non-virtual"><scope>TmclInterpreter</scope><name>tmcl_interface_</name></member>
+      <member refid="classTmclInterpreter_1a888ad4cb5eb94a609bf472e2c338e5c7" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>TmclInterpreter</name></member>
+      <member refid="classTmclInterpreter_1a5aaf9fba5947435735ccc83a46d63234" prot="public" virt="non-virtual"><scope>TmclInterpreter</scope><name>~TmclInterpreter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

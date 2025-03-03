@@ -1,0 +1,550 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmcl__motor_8hpp" kind="file" language="C++">
+    <compoundname>tmcl_motor.hpp</compoundname>
+    <includes refid="tmcl__interpreter_8hpp" local="yes">adi_tmcl/tmcl_interpreter.hpp</includes>
+    <includes refid="tmcl__common_8hpp" local="yes">adi_tmcl/tmcl_common.hpp</includes>
+    <includes local="yes">std_msgs/msg/int32.hpp</includes>
+    <includes local="yes">geometry_msgs/msg/twist.hpp</includes>
+    <includes local="yes">adi_tmcl/msg/tmc_info.hpp</includes>
+    <includedby refid="tmcl__bldc__motor_8hpp" local="yes">include/adi_tmcl/tmcl_bldc_motor.hpp</includedby>
+    <includedby refid="tmcl__stepper__motor_8hpp" local="yes">include/adi_tmcl/tmcl_stepper_motor.hpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>adi_tmcl/socket_can_wrapper.hpp</label>
+        <link refid="socket__can__wrapper_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>adi_tmcl/tmcl_common.hpp</label>
+        <link refid="tmcl__common_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>adi_tmcl/tmcl_interpreter.hpp</label>
+        <link refid="tmcl__interpreter_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adi_tmcl/tmcl_motor.hpp</label>
+        <link refid="tmcl__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>adi_tmcl/msg/tmc_info.hpp</label>
+      </node>
+      <node id="4">
+        <label>chrono</label>
+      </node>
+      <node id="3">
+        <label>future</label>
+      </node>
+      <node id="9">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="8">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_tmcl/tmcl_bldc_motor.hpp</label>
+        <link refid="tmcl__bldc__motor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adi_tmcl/tmcl_motor.hpp</label>
+        <link refid="tmcl__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/adi_tmcl/tmcl_ros2.hpp</label>
+        <link refid="tmcl__ros2_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>include/adi_tmcl/tmcl_stepper_motor.hpp</label>
+        <link refid="tmcl__stepper__motor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMotor" prot="public">Motor</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tmcl_ros_topic_params_lut_t</name>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca00c1e5bcfeea71a8612170ccccce5cf6" prot="public">
+          <name>IDX_EN_PUB_TMC_INFO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65cac3e6defca728a59e93aa9f199db12a98" prot="public">
+          <name>IDX_TMC_INFO_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65caa0943c0313ec5acb9d6a24a0a524eb72" prot="public">
+          <name>IDX_PUB_RATE_TMC_INFO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca38bcb2918218bc358d675d63e8d5a9bf" prot="public">
+          <name>IDX_PUB_ACTUAL_VEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65cac6512697006f9f83343cbdbaccedb4f9" prot="public">
+          <name>IDX_PUB_ACTUAL_TRQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65cad9002dc4308413c3eb48ad07bdd73661" prot="public">
+          <name>IDX_PUB_ACTUAL_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca575d81edf5704212383b3f16aabc7371" prot="public">
+          <name>IDX_TMC_CMD_VEL_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca61932de8c3bff0a30d53f1816b67e9bb" prot="public">
+          <name>IDX_TMC_CMD_ABSPOS_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca076847023db1471a2e7c36b9fd499eaf" prot="public">
+          <name>IDX_TMC_CMD_RELPOS_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca2e0cf367e587168bc2df6e483f097122" prot="public">
+          <name>IDX_TMC_CMD_TRQ_TOPIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65ca2a2ad3be99fa29b0476dc3eb01a8e68d" prot="public">
+          <name>TMCL_ROS_TOPIC_PARAMS_LUT_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="88" column="1" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="89" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tmcl_hardware_params_lut_t</name>
+        <enumvalue id="tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2af04a047f63b975acb553a96a5c4a3fb9" prot="public">
+          <name>IDX_WHEEL_DIAMETER</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2aa3adc42abac31dea420b8c0ec74ee783" prot="public">
+          <name>TMCL_HARDWARE_PARAMS_LUT_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="119" column="1" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tmcl_additional_ratio_params_lut_t</name>
+        <enumvalue id="tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8aeafad01d4890ca52a2eb0bb9725ca0c426" prot="public">
+          <name>IDX_ADDITIONAL_RATIO_VEL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8aeacd70c8522dc77de838890ac8a52fa9a4" prot="public">
+          <name>IDX_ADDITIONAL_RATIO_POS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8aeaf688841d43221726a9cdd01668e144c2" prot="public">
+          <name>IDX_ADDITIONAL_RATIO_TRQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8aea88056495d89b5feaedaec8e6132d8361" prot="public">
+          <name>TMCL_ADDITIONAL_RATIO_PARAMS_LUT_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="132" column="1" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="133" bodyend="138"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t SEC_TO_MIN</definition>
+        <argsstring></argsstring>
+        <name>SEC_TO_MIN</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="76" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= 3.1415926535</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="77" column="13" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t ANGULAR_FULL_ROTATION</definition>
+        <argsstring></argsstring>
+        <name>ANGULAR_FULL_ROTATION</name>
+        <initializer>= 360</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="80" column="16" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PUB_RATE_MIN</definition>
+        <argsstring></argsstring>
+        <name>PUB_RATE_MIN</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="83" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PUB_RATE_MAX</definition>
+        <argsstring></argsstring>
+        <name>PUB_RATE_MAX</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="84" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PUB_RATE_DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>PUB_RATE_DEFAULT</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="85" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; ros_topic_params_</definition>
+        <argsstring></argsstring>
+        <name>ros_topic_params_</name>
+        <initializer>= {
+  &quot;en_pub_tmc_info&quot;,
+  &quot;tmc_info_topic&quot;,
+  &quot;pub_rate_tmc_info&quot;,
+  &quot;pub_actual_vel&quot;,
+  &quot;pub_actual_trq&quot;,
+  &quot;pub_actual_pos&quot;,
+  &quot;tmc_cmd_vel_topic&quot;,
+  &quot;tmc_cmd_abspos_topic&quot;,
+  &quot;tmc_cmd_relpos_topic&quot;,
+  &quot;tmc_cmd_trq_topic&quot;,
+  &quot;MAX&quot;         
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="104" column="26" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="104" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; hardware_params_</definition>
+        <argsstring></argsstring>
+        <name>hardware_params_</name>
+        <initializer>= {
+  &quot;wheel_diameter&quot;,
+  &quot;MAX&quot;         
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="126" column="26" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; additional_ratio_params_</definition>
+        <argsstring></argsstring>
+        <name>additional_ratio_params_</name>
+        <initializer>= {
+  &quot;additional_ratio_vel&quot;,
+  &quot;additional_ratio_pos&quot;,
+  &quot;additional_ratio_trq&quot;,
+  &quot;MAX&quot;         
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="141" column="26" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="141" bodyend="146"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMCL_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMCL_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/tmcl_interpreter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/tmcl_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;std_msgs/msg/int32.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry_msgs/msg/twist.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/msg/tmc_info.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMotor" kindref="compound">Motor</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classMotor" kindref="compound">Motor</ref>(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref>*<sp/>p_tmcl_interpreter,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>motor_number,<sp/>uint32_t<sp/>module_number);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMotor" kindref="compound">~Motor</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>uint8_t<sp/>getMotorNumber();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>std::string<sp/>getMotorName();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>p_node_;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref>*<sp/>p_tmcl_interpreter_;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;adi_tmcl::msg::TmcInfo&gt;::SharedPtr<sp/>publisher_;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/>publisher_timer_;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr<sp/>subscription_cmd_vel_;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>subscription_cmd_abspos_;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>subscription_cmd_relpos_;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>subscription_cmd_trq_;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_en_pub_tmc_info_;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_info_topic_;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>uint8_t<sp/>param_pub_rate_tmc_info_;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_vel_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_pos_;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_trq_;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_vel_topic_;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_abspos_topic_;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_relpos_topic_;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_trq_topic_;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_wheel_diameter_;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_additional_ratio_vel_;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_additional_ratio_pos_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_additional_ratio_trq_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>std::string<sp/>param_comm_interface_name_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>uint32_t<sp/>module_number_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>std::string<sp/>tmc_info_frame_id_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initMotorParams();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPublisherParams();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdTrqSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>uint8_t<sp/>motor_number_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPublisher();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pubTimerCallback();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSubscriberParams();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSubscribers();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdVelSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Twist::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdAbsposSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdRelposSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants<sp/>and<sp/>Enumerations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Conversion<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Derived<sp/>from<sp/>converting<sp/>linear<sp/>velocity<sp/>(ROS<sp/>velocity<sp/>unit)<sp/>to<sp/>rpm<sp/>(TMC<sp/>board<sp/>velocity<sp/>unit)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>SEC_TO_MIN<sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>PI<sp/>=<sp/>3.1415926535;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Used<sp/>for<sp/>converting<sp/>degrees<sp/>(general<sp/>position/angular<sp/>unit)<sp/>to<sp/>steps<sp/>(TMC<sp/>board<sp/>position/angular<sp/>unit)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ANGULAR_FULL_ROTATION<sp/>=<sp/>360;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>limits<sp/>and<sp/>default<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>PUB_RATE_MIN<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>PUB_RATE_MAX<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>PUB_RATE_DEFAULT<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>ROS<sp/>Topic-related<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>IDX_EN_PUB_TMC_INFO<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>IDX_TMC_INFO_TOPIC,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>IDX_PUB_RATE_TMC_INFO,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>IDX_PUB_ACTUAL_VEL,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>IDX_PUB_ACTUAL_TRQ,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>IDX_PUB_ACTUAL_POS,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>IDX_TMC_CMD_VEL_TOPIC,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>IDX_TMC_CMD_ABSPOS_TOPIC,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>IDX_TMC_CMD_RELPOS_TOPIC,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>IDX_TMC_CMD_TRQ_TOPIC,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>TMCL_ROS_TOPIC_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}tmcl_ros_topic_params_lut_t;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>General<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>ros_topic_params_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;en_pub_tmc_info&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;tmc_info_topic&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;pub_rate_tmc_info&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;pub_actual_vel&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;pub_actual_trq&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;pub_actual_pos&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;tmc_cmd_vel_topic&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;tmc_cmd_abspos_topic&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;tmc_cmd_relpos_topic&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;tmc_cmd_trq_topic&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>Hardware<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>IDX_WHEEL_DIAMETER<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>TMCL_HARDWARE_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}tmcl_hardware_params_lut_t;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>Hardware<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>hardware_params_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;wheel_diameter&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>Additional<sp/>Ratio<sp/>Params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>IDX_ADDITIONAL_RATIO_VEL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>IDX_ADDITIONAL_RATIO_POS,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>IDX_ADDITIONAL_RATIO_TRQ,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>TMCL_ADDITIONAL_RATIO_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}tmcl_additional_ratio_params_lut_t;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>Additional<sp/>Ratio<sp/>Params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>additional_ratio_params_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;additional_ratio_vel&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;additional_ratio_pos&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;additional_ratio_trq&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//TMCL_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmcl/tmcl_motor.hpp"/>
+  </compounddef>
+</doxygen>

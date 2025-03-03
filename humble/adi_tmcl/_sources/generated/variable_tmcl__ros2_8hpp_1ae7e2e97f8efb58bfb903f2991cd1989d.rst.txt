@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d:
+
+Variable TMCM_BLDC
+==================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TMCM_BLDC
+   :project: adi_tmcl Doxygen Project

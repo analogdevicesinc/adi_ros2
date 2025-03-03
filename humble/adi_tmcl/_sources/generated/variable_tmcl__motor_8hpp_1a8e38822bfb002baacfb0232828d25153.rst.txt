@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153:
+
+Variable ANGULAR_FULL_ROTATION
+==============================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ANGULAR_FULL_ROTATION
+   :project: adi_tmcl Doxygen Project

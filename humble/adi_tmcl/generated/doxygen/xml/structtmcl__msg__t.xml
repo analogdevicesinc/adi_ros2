@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtmcl__msg__t" kind="struct" language="C++" prot="public">
+    <compoundname>tmcl_msg_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtmcl__msg__t_1a16b6d8bd5e2e02e5a2d2baafd3752a5e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tmcl_msg_t::tx_id</definition>
+        <argsstring></argsstring>
+        <name>tx_id</name>
+        <qualifiedname>tmcl_msg_t::tx_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="86" column="12" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1abff856485dcde87c687d790a06562a4e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tmcl_msg_t::rx_id</definition>
+        <argsstring></argsstring>
+        <name>rx_id</name>
+        <qualifiedname>tmcl_msg_t::rx_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="87" column="12" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1add636adf4e6ecae5f0a96d5df0c4276d" prot="public" static="no" mutable="no">
+        <type>tmcl_cmd_t</type>
+        <definition>tmcl_cmd_t tmcl_msg_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <qualifiedname>tmcl_msg_t::cmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="88" column="14" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1afb2254b98cd9e33286262a01bc3e138f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tmcl_msg_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>tmcl_msg_t::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="89" column="11" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1af44c4eac18c6805cab886ea85ef6653e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tmcl_msg_t::motor</definition>
+        <argsstring></argsstring>
+        <name>motor</name>
+        <qualifiedname>tmcl_msg_t::motor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="90" column="11" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1ac874eeda54511a893a1dadd2739bed99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t tmcl_msg_t::value[TMCL_MSG_VALUE_SZ]</definition>
+        <argsstring>[TMCL_MSG_VALUE_SZ]</argsstring>
+        <name>value</name>
+        <qualifiedname>tmcl_msg_t::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="91" column="11" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__msg__t_1a486dad49f275ce7c8e1480288ec48680" prot="public" static="no" mutable="no">
+        <type>tmcl_sts_t</type>
+        <definition>tmcl_sts_t tmcl_msg_t::sts</definition>
+        <argsstring></argsstring>
+        <name>sts</name>
+        <qualifiedname>tmcl_msg_t::sts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="92" column="14" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="84" column="1" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="85" bodyend="93"/>
+    <listofallmembers>
+      <member refid="structtmcl__msg__t_1add636adf4e6ecae5f0a96d5df0c4276d" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>cmd</name></member>
+      <member refid="structtmcl__msg__t_1af44c4eac18c6805cab886ea85ef6653e" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>motor</name></member>
+      <member refid="structtmcl__msg__t_1abff856485dcde87c687d790a06562a4e" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>rx_id</name></member>
+      <member refid="structtmcl__msg__t_1a486dad49f275ce7c8e1480288ec48680" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>sts</name></member>
+      <member refid="structtmcl__msg__t_1a16b6d8bd5e2e02e5a2d2baafd3752a5e" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>tx_id</name></member>
+      <member refid="structtmcl__msg__t_1afb2254b98cd9e33286262a01bc3e138f" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>type</name></member>
+      <member refid="structtmcl__msg__t_1ac874eeda54511a893a1dadd2739bed99" prot="public" virt="non-virtual"><scope>tmcl_msg_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

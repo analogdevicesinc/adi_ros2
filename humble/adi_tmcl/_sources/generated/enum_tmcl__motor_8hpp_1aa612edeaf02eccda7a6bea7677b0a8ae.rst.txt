@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae:
+
+Enum tmcl_additional_ratio_params_lut_t
+=======================================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_additional_ratio_params_lut_t
+   :project: adi_tmcl Doxygen Project

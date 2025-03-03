@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classSocketCAN" kind="class" language="C++" prot="public">
+    <compoundname>SocketCAN</compoundname>
+    <includes refid="socket__can__wrapper_8hpp" local="no">socket_can_wrapper.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSocketCAN_1acf1965ed41fc6b749ac321635c6ab38c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SocketCAN::can_socket_</definition>
+        <argsstring></argsstring>
+        <name>can_socket_</name>
+        <qualifiedname>SocketCAN::can_socket_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="34" column="7" bodyfile="include/adi_tmcl/socket_can_wrapper.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSocketCAN_1a10e9d2b02694e1af90904b00a73e55f5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SocketCAN::interface_name_</definition>
+        <argsstring></argsstring>
+        <name>interface_name_</name>
+        <qualifiedname>SocketCAN::interface_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="35" column="15" bodyfile="include/adi_tmcl/socket_can_wrapper.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSocketCAN_1ab04580ba90ea064a2bd480edd4ac639b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SocketCAN::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>SocketCAN::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="36" column="15" bodyfile="include/adi_tmcl/socket_can_wrapper.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSocketCAN_1a90b4f0cb6731e13df1dd2b792b117214" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger SocketCAN::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>SocketCAN::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="37" column="18" bodyfile="include/adi_tmcl/socket_can_wrapper.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSocketCAN_1aa2281da7530e8c0497a3be19cf068fa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SocketCAN::SocketCAN</definition>
+        <argsstring>(const char *logger_prefix)</argsstring>
+        <name>SocketCAN</name>
+        <qualifiedname>SocketCAN::SocketCAN</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>logger_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="13" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1a214ac01290475072895a64d926fac9b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SocketCAN::~SocketCAN</definition>
+        <argsstring>()</argsstring>
+        <name>~SocketCAN</name>
+        <qualifiedname>SocketCAN::~SocketCAN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="16" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1a936881465192f394461498c6fa8cc6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SocketCAN::initialize</definition>
+        <argsstring>(const char *interface_name)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>SocketCAN::initialize</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>interface_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1a280c715dfbcf16c060022fc80ded56a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SocketCAN::deinitialize</definition>
+        <argsstring>()</argsstring>
+        <name>deinitialize</name>
+        <qualifiedname>SocketCAN::deinitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="22" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1adb720af6ee819458c6a429968d925ae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SocketCAN::framesAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>framesAvailable</name>
+        <qualifiedname>SocketCAN::framesAvailable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="25" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1a5e54cab28949b24b14613061e71f85d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SocketCAN::readFrame</definition>
+        <argsstring>(uint32_t *id, uint8_t *data, uint8_t *size)</argsstring>
+        <name>readFrame</name>
+        <qualifiedname>SocketCAN::readFrame</qualifiedname>
+        <param>
+          <type>uint32_t *</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="28" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSocketCAN_1ab9335536eaffe541d8d962151470b788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SocketCAN::writeFrame</definition>
+        <argsstring>(uint32_t id, uint8_t *data, uint8_t size)</argsstring>
+        <name>writeFrame</name>
+        <qualifiedname>SocketCAN::writeFrame</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="31" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+    </detaileddescription>
+    <location file="include/adi_tmcl/socket_can_wrapper.hpp" line="9" column="1" bodyfile="include/adi_tmcl/socket_can_wrapper.hpp" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classSocketCAN_1acf1965ed41fc6b749ac321635c6ab38c" prot="private" virt="non-virtual"><scope>SocketCAN</scope><name>can_socket_</name></member>
+      <member refid="classSocketCAN_1a280c715dfbcf16c060022fc80ded56a5" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>deinitialize</name></member>
+      <member refid="classSocketCAN_1adb720af6ee819458c6a429968d925ae8" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>framesAvailable</name></member>
+      <member refid="classSocketCAN_1a936881465192f394461498c6fa8cc6f7" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>initialize</name></member>
+      <member refid="classSocketCAN_1a10e9d2b02694e1af90904b00a73e55f5" prot="private" virt="non-virtual"><scope>SocketCAN</scope><name>interface_name_</name></member>
+      <member refid="classSocketCAN_1a90b4f0cb6731e13df1dd2b792b117214" prot="private" virt="non-virtual"><scope>SocketCAN</scope><name>logger_</name></member>
+      <member refid="classSocketCAN_1ab04580ba90ea064a2bd480edd4ac639b" prot="private" virt="non-virtual"><scope>SocketCAN</scope><name>logger_prefix_</name></member>
+      <member refid="classSocketCAN_1a5e54cab28949b24b14613061e71f85d4" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>readFrame</name></member>
+      <member refid="classSocketCAN_1aa2281da7530e8c0497a3be19cf068fa2" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>SocketCAN</name></member>
+      <member refid="classSocketCAN_1ab9335536eaffe541d8d962151470b788" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>writeFrame</name></member>
+      <member refid="classSocketCAN_1a214ac01290475072895a64d926fac9b7" prot="public" virt="non-virtual"><scope>SocketCAN</scope><name>~SocketCAN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

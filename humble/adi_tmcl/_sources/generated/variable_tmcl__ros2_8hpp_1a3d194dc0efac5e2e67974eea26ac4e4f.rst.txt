@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f:
+
+Variable AUTO_START_ADDITIONAL_DELAY_DEFAULT
+============================================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: AUTO_START_ADDITIONAL_DELAY_DEFAULT
+   :project: adi_tmcl Doxygen Project

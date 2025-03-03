@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54:
+
+Variable hardware_params_
+=========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: hardware_params_
+   :project: adi_tmcl Doxygen Project

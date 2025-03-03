@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class TmclRos2 &mdash; adi_tmcl 2.0.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=664ffad9"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Enum tmcl_additional_ratio_params_lut_t" href="enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html" />
+    <link rel="prev" title="Class TmclInterpreter" href="classTmclInterpreter.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_tmcl
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structtmcl__cfg__t.html">Struct tmcl_cfg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structtmcl__msg__t.html">Struct tmcl_msg_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classBldcMotor.html">Class BldcMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classMotor.html">Class Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classSocketCAN.html">Class SocketCAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classStepperMotor.html">Class StepperMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmclInterpreter.html">Class TmclInterpreter</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class TmclRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html">Enum tmcl_additional_ratio_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc.html">Enum tmcl_bldc_comm_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1affdc98518d0da04cea6cf4e9e8cfc48e.html">Enum tmcl_cmd_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a.html">Enum tmcl_custom_cmd_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9.html">Enum tmcl_general_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2.html">Enum tmcl_hardware_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c.html">Enum tmcl_interface_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e.html">Enum tmcl_interface_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c.html">Enum tmcl_ros_topic_params_lut_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__stepper__motor_8hpp_1aa0f126c89402b24ec6ed22dff8154fbb.html">Enum tmcl_stepper_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40.html">Enum tmcl_sts_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2.html">Variable additional_ratio_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f.html">Variable AUTO_START_ADDITIONAL_DELAY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3.html">Variable AUTO_START_ADDITIONAL_DELAY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73.html">Variable comm_interface_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218.html">Variable EXEC_CMD_RETRIES_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd.html">Variable EXEC_CMD_RETRIES_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15.html">Variable general_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54.html">Variable hardware_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673.html">Variable PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3.html">Variable PUB_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981.html">Variable PUB_RATE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6.html">Variable PUB_RATE_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be.html">Variable ros_topic_params_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1.html">Variable RX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624.html">Variable SEC_TO_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886.html">Variable TIMEOUT_MS_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4.html">Variable TIMEOUT_MS_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459.html">Variable TIMEOUT_MS_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3.html">Variable tmcl_custom_cmd_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a34af2ab557c7c6b474a095252f1f4b76.html">Variable TMCL_MSG_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231.html">Variable TMCL_MSG_VALUE_SZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d.html">Variable TMCM_BLDC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235.html">Variable TX_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36.html">Variable TXRX_ID_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad.html">Variable TXRX_ID_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_adi_tmcl.html">Directory adi_tmcl</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_socket_can_wrapper.hpp.html">File socket_can_wrapper.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_bldc_motor.hpp.html">File tmcl_bldc_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_common.hpp.html">File tmcl_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_interpreter.hpp.html">File tmcl_interpreter.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_motor.hpp.html">File tmcl_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_ros2.hpp.html">File tmcl_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmcl_tmcl_stepper_motor.hpp.html">File tmcl_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/msg/TmcInfo.html">TmcInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/msg/TmcParam.html">TmcParam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcCustomCmd.html">TmcCustomCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcGapAll.html">TmcGapAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interfaces/srv/TmcGgpAll.html">TmcGgpAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-tmcl-ros2">Changelog for package tmcl_ros2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">2.0.3 (2024-11-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">2.0.2 (2024-11-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">2.0.1 (2024-07-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">2.0.0 (2023-11-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">1.0.2 (2023-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">1.0.1 (2023-10-10)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">1.0.0 (2023-09-27)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#adi-tmcl">adi_tmcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#software-architecture">Software Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#build">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#bldc-motors">BLDC Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#stepper-motors">Stepper Motors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#pre-launch-one-time">Pre-Launch (One-time)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#initialize-can">Initialize CAN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#de-initialize-can">De-initialize CAN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#launch">Launch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#tmcl-ros2-node">tmcl_ros2_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#quick-tests">Quick Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-velocity-mode">Test Velocity Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-position-mode">Test Position Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/README.html#test-torque-mode">Test Torque Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#limitations">Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/README.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_tmcl</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class TmclRos2</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classTmclRos2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-tmclros2">
+<span id="exhale-class-classtmclros2"></span><h1>Class TmclRos2<a class="headerlink" href="#class-tmclros2" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adi_tmcl_tmcl_ros2.hpp.html#file-include-adi-tmcl-tmcl-ros2-hpp"><span class="std std-ref">File tmcl_ros2.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv48TmclRos2">
+<span id="_CPPv38TmclRos2"></span><span id="_CPPv28TmclRos2"></span><span id="TmclRos2"></span><span class="target" id="classTmclRos2"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">TmclRos2</span></span></span><a class="headerlink" href="#_CPPv48TmclRos2" title="Link to this definition"></a><br /></dt>
+<dd><p>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TmclRos28TmclRos2EN6rclcpp4Node9SharedPtrE">
+<span id="_CPPv3N8TmclRos28TmclRos2EN6rclcpp4Node9SharedPtrE"></span><span id="_CPPv2N8TmclRos28TmclRos2EN6rclcpp4Node9SharedPtrE"></span><span id="TmclRos2::TmclRos2__rclcpp::Node::SharedPtr"></span><span class="target" id="classTmclRos2_1a92c5cd9abd53ab45f3a129b7c5980375"></span><span class="sig-name descname"><span class="n"><span class="pre">TmclRos2</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Node</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">node</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TmclRos28TmclRos2EN6rclcpp4Node9SharedPtrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TmclRos2D0Ev">
+<span id="_CPPv3N8TmclRos2D0Ev"></span><span id="_CPPv2N8TmclRos2D0Ev"></span><span id="TmclRos2::~TmclRos2"></span><span class="target" id="classTmclRos2_1a834f26274c47a62618a83b6b9c14d49e"></span><span class="sig-name descname"><span class="n"><span class="pre">~TmclRos2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TmclRos2D0Ev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TmclRos24initEv">
+<span id="_CPPv3N8TmclRos24initEv"></span><span id="_CPPv2N8TmclRos24initEv"></span><span id="TmclRos2::init"></span><span class="target" id="classTmclRos2_1a1648da78b6d043e288a757db56db0f30"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TmclRos24initEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TmclRos26deInitEv">
+<span id="_CPPv3N8TmclRos26deInitEv"></span><span id="_CPPv2N8TmclRos26deInitEv"></span><span id="TmclRos2::deInit"></span><span class="target" id="classTmclRos2_1a99d5c65da881ac3f0ad9f613ca970c61"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">deInit</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TmclRos26deInitEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TmclRos224getRetriesExceededStatusEv">
+<span id="_CPPv3N8TmclRos224getRetriesExceededStatusEv"></span><span id="_CPPv2N8TmclRos224getRetriesExceededStatusEv"></span><span id="TmclRos2::getRetriesExceededStatus"></span><span class="target" id="classTmclRos2_1a734c72d70d7a1526c300b2a23da52f9d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRetriesExceededStatus</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TmclRos224getRetriesExceededStatusEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classTmclInterpreter.html" class="btn btn-neutral float-left" title="Class TmclInterpreter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html" class="btn btn-neutral float-right" title="Enum tmcl_additional_ratio_params_lut_t" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_tmcl&gt; Contributors. License: BSD 3-Clause.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

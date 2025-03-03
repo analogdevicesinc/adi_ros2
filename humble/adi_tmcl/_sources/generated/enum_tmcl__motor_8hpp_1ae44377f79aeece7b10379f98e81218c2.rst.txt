@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2:
+
+Enum tmcl_hardware_params_lut_t
+===============================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_hardware_params_lut_t
+   :project: adi_tmcl Doxygen Project

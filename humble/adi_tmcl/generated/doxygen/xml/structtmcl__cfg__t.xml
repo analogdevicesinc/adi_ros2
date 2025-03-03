@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structtmcl__cfg__t" kind="struct" language="C++" prot="public">
+    <compoundname>tmcl_cfg_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtmcl__cfg__t_1aa3c393aadb14560adc734e8fb2650358" prot="public" static="no" mutable="no">
+        <type><ref refid="classSocketCAN" kindref="compound">SocketCAN</ref> *</type>
+        <definition>SocketCAN* tmcl_cfg_t::p_socket_can</definition>
+        <argsstring></argsstring>
+        <name>p_socket_can</name>
+        <qualifiedname>tmcl_cfg_t::p_socket_can</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="45" column="13" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__cfg__t_1a0d0e37f19e4d222ad756c8fbb2c0512a" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tmcl_cfg_t::interface_name</definition>
+        <argsstring></argsstring>
+        <name>interface_name</name>
+        <qualifiedname>tmcl_cfg_t::interface_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="46" column="15" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__cfg__t_1a8dc5fba848c82e2a1d69dac563bab083" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tmcl_cfg_t::tx_id</definition>
+        <argsstring></argsstring>
+        <name>tx_id</name>
+        <qualifiedname>tmcl_cfg_t::tx_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="47" column="12" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtmcl__cfg__t_1a6a39a131ff88a91bac5bb00b57c8a52d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t tmcl_cfg_t::rx_id</definition>
+        <argsstring></argsstring>
+        <name>rx_id</name>
+        <qualifiedname>tmcl_cfg_t::rx_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="48" column="12" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>SocketCAN</label>
+        <link refid="classSocketCAN"/>
+      </node>
+      <node id="1">
+        <label>tmcl_cfg_t</label>
+        <link refid="structtmcl__cfg__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_socket_can</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_tmcl/tmcl_interpreter.hpp" line="43" column="1" bodyfile="include/adi_tmcl/tmcl_interpreter.hpp" bodystart="44" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structtmcl__cfg__t_1a0d0e37f19e4d222ad756c8fbb2c0512a" prot="public" virt="non-virtual"><scope>tmcl_cfg_t</scope><name>interface_name</name></member>
+      <member refid="structtmcl__cfg__t_1aa3c393aadb14560adc734e8fb2650358" prot="public" virt="non-virtual"><scope>tmcl_cfg_t</scope><name>p_socket_can</name></member>
+      <member refid="structtmcl__cfg__t_1a6a39a131ff88a91bac5bb00b57c8a52d" prot="public" virt="non-virtual"><scope>tmcl_cfg_t</scope><name>rx_id</name></member>
+      <member refid="structtmcl__cfg__t_1a8dc5fba848c82e2a1d69dac563bab083" prot="public" virt="non-virtual"><scope>tmcl_cfg_t</scope><name>tx_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

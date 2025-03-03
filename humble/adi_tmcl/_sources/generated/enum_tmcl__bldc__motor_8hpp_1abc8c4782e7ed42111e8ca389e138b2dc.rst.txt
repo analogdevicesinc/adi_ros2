@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc:
+
+Enum tmcl_bldc_comm_mode_t
+==========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_bldc_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_bldc_comm_mode_t
+   :project: adi_tmcl Doxygen Project
