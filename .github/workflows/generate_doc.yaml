@@ -96,7 +96,7 @@ jobs:
 
     - name: Generate tags for the versioned directories
       run: |
-        echo "{" > tags.json
+        echo "{" > tags_unsorted.json
         find . -type d -mindepth 2 -maxdepth 2 ! -name ".*" ! -path "*/.git*" ! -path . | sort | \
         awk -F/ '
         BEGIN {first=1}
@@ -118,8 +118,17 @@ jobs:
                 printf "  \"%s\": [\"%s\", \"%s\"]", path, name, label
                 first=0
             }
-        }' >> tags.json
-        echo -e "\n}" >> tags.json
+        }' >> tags_unsorted.json
+        echo -e "\n}" >> tags_unsorted.json
+
+        # Sort using the name field in the tags.json as the key
+        jq '
+          to_entries |
+          sort_by(.value[0]) |
+          from_entries
+        ' tags_unsorted.json > tags.json
+        rm tags_unsorted.json
+
 
     - name: Generate auxiliary files
       run: |
