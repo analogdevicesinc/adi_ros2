@@ -41,7 +41,7 @@ SHELL ["/bin/bash", "-c"]
 RUN source /opt/ros/${ROS_DISTRO}/setup.sh \
     && apt-get update \
     && rosdep update \
-    && rosdep  install -i --from-path src --rosdistro ${ROS_DISTRO} -y \
+    && rosdep  install -i --from-path src --rosdistro ${ROS_DISTRO} -y --skip-keys libiio-dev\
     && MAKEFLAGS="-l2" colcon build \
     --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
