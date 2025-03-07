@@ -1,0 +1,391 @@
+
+.. _program_listing_file_include_adi_imu_iio_wrapper.h:
+
+Program Listing for File iio_wrapper.h
+======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_imu_iio_wrapper.h>` (``include/adi_imu/iio_wrapper.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*******************************************************************************
+    *   @file   iio_wrapper.h
+    *   @brief  Wrapper for iio library
+    *   @author Vasile Holonec (Vasile.Holonec@analog.com)
+    *******************************************************************************
+    * Copyright 2023(c) Analog Devices, Inc.
+    *
+    * Licensed under the Apache License, Version 2.0 (the "License");
+    * you may not use this file except in compliance with the License.
+    * You may obtain a copy of the License at
+    *
+    *     http://www.apache.org/licenses/LICENSE-2.0
+    *
+    * Unless required by applicable law or agreed to in writing, software
+    * distributed under the License is distributed on an "AS IS" BASIS,
+    * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    * See the License for the specific language governing permissions and
+    * limitations under the License.
+    ******************************************************************************/
+   
+   #ifndef IIO_WRAPPER_H
+   #define IIO_WRAPPER_H
+   
+   #define IIO_CONTEXT_ERROR -1
+   
+   #include <iio.h>
+   
+   #include <string>
+   
+   #include "adis_data_access.h"
+   
+   class IIOWrapper
+   {
+   public:
+     IIOWrapper();
+   
+     ~IIOWrapper();
+   
+     int createContext(const char * context);
+   
+     bool updateBuffer(uint32_t data_selection);
+   
+     void stopBufferAcquisition();
+   
+     double getBuffLinearAccelerationX();
+   
+     double getBuffLinearAccelerationY();
+   
+     double getBuffLinearAccelerationZ();
+   
+     double getBuffAngularVelocityX();
+   
+     double getBuffAngularVelocityY();
+   
+     double getBuffAngularVelocityZ();
+   
+   #ifdef ADIS_HAS_DELTA_BURST
+     double getBuffDeltaVelocityX();
+   
+     double getBuffDeltaVelocityY();
+   
+     double getBuffDeltaVelocityZ();
+   
+     double getBuffDeltaAngleX();
+   
+     double getBuffDeltaAngleY();
+   
+     double getBuffDeltaAngleZ();
+   #endif
+   
+     double getBuffTemperature();
+   
+     void getBuffSampleTimestamp(int32_t & sec, uint32_t & nanosec);
+   
+     bool getConvertedLinearAccelerationX(double & result);
+   
+     bool getConvertedLinearAccelerationY(double & result);
+   
+     bool getConvertedLinearAccelerationZ(double & result);
+   
+     bool getConvertedAngularVelocityX(double & result);
+   
+     bool getConvertedAngularVelocityY(double & result);
+   
+     bool getConvertedAngularVelocityZ(double & result);
+   
+     bool getConvertedDeltaAngleX(double & result);
+   
+     bool getConvertedDeltaAngleY(double & result);
+   
+     bool getConvertedDeltaAngleZ(double & result);
+   
+     bool getConvertedDeltaVelocityX(double & result);
+   
+     bool getConvertedDeltaVelocityY(double & result);
+   
+     bool getConvertedDeltaVelocityZ(double & result);
+   
+     bool getConvertedTemperature(double & result);
+   
+     bool anglvel_x_calibbias(int32_t & result);
+   
+     bool update_anglvel_calibbias_x(int32_t val);
+   
+     bool anglvel_y_calibbias(int32_t & result);
+   
+     bool update_anglvel_calibbias_y(int32_t val);
+   
+     bool anglvel_z_calibbias(int32_t & result);
+   
+     bool update_anglvel_calibbias_z(int32_t val);
+   
+     bool accel_x_calibbias(int32_t & result);
+   
+     bool update_accel_calibbias_x(int32_t val);
+   
+     bool accel_y_calibbias(int32_t & result);
+   
+     bool update_accel_calibbias_y(int32_t val);
+   
+     bool accel_z_calibbias(int32_t & result);
+   
+     bool update_accel_calibbias_z(int32_t val);
+   
+   #if defined(ADIS1654X) || defined(ADIS1655X)
+     bool angvel_x_filter_low_pass_3db(uint32_t & result);
+     bool update_angvel_x_filter_low_pass_3db(uint32_t val);
+   
+     bool angvel_y_filter_low_pass_3db(uint32_t & result);
+     bool update_angvel_y_filter_low_pass_3db(uint32_t val);
+   
+     bool angvel_z_filter_low_pass_3db(uint32_t & result);
+     bool update_angvel_z_filter_low_pass_3db(uint32_t val);
+   
+     bool accel_x_filter_low_pass_3db(uint32_t & result);
+     bool update_accel_x_filter_low_pass_3db(uint32_t val);
+   
+     bool accel_y_filter_low_pass_3db(uint32_t & result);
+     bool update_accel_y_filter_low_pass_3db(uint32_t val);
+   
+     bool accel_z_filter_low_pass_3db(uint32_t & result);
+     bool update_accel_z_filter_low_pass_3db(uint32_t val);
+   
+   #else
+     bool filter_low_pass_3db_frequency(uint32_t & result);
+   
+     bool update_filter_low_pass_3db_frequency(uint32_t val);
+   #endif
+   
+   #ifdef ADIS_HAS_CALIB_SCALE
+     bool accel_x_calibscale(int32_t & result);
+     bool accel_y_calibscale(int32_t & result);
+     bool accel_z_calibscale(int32_t & result);
+     bool anglvel_x_calibscale(int32_t & result);
+     bool anglvel_y_calibscale(int32_t & result);
+     bool anglvel_z_calibscale(int32_t & result);
+   
+     bool update_accel_calibscale_x(int32_t val);
+     bool update_accel_calibscale_y(int32_t val);
+     bool update_accel_calibscale_z(int32_t val);
+     bool update_anglvel_calibscale_x(int32_t val);
+     bool update_anglvel_calibscale_y(int32_t val);
+     bool update_anglvel_calibscale_z(int32_t val);
+   
+   #endif
+   
+     bool sampling_frequency(double * result);
+   
+     bool update_sampling_frequency(double val);
+   
+     bool diag_sensor_initialization_failure(bool & result);
+   
+     bool diag_data_path_overrun(bool & result);
+   
+     bool diag_automatic_reset(bool & result);
+   
+     bool diag_flash_memory_update_error(bool & result);
+   
+     bool diag_spi_communication_error(bool & result);
+   
+     bool diag_crc_error(bool & result);
+   
+     bool diag_standby_mode(bool & result);
+   
+     bool diag_sensor_self_test_error(bool & result);
+   
+     bool diag_flash_memory_test_error(bool & result);
+   
+     bool diag_clock_error(bool & result);
+   
+     bool diag_gyroscope1_self_test_error(bool & result);
+   
+     bool diag_gyroscope2_self_test_error(bool & result);
+   
+     bool diag_acceleration_self_test_error(bool & result);
+   
+     bool diag_x_axis_gyroscope_failure(bool & result);
+   
+     bool diag_y_axis_gyroscope_failure(bool & result);
+   
+     bool diag_z_axis_gyroscope_failure(bool & result);
+   
+     bool diag_x_axis_accelerometer_failure(bool & result);
+   
+     bool diag_y_axis_accelerometer_failure(bool & result);
+   
+     bool diag_z_axis_accelerometer_failure(bool & result);
+   
+     bool diag_aduc_mcu_fault(bool & result);
+   
+     bool diag_flash_memory_write_count_exceeded_error(bool & result);
+   
+     bool gyroscope_measurement_range(std::string & result);
+   
+     bool internal_sensor_bandwidth(uint32_t & result);
+   
+     bool update_internal_sensor_bandwidth(uint32_t val);
+   
+     bool point_of_percussion_alignment(uint32_t & result);
+   
+     bool update_point_of_percussion_alignment(uint32_t val);
+   
+     bool linear_acceleration_compensation(uint32_t & result);
+   
+     bool update_linear_acceleration_compensation(uint32_t val);
+   
+     bool bias_correction_time_base_control(uint32_t & result);
+   
+     bool update_bias_correction_time_base_control(uint32_t val);
+   
+     bool x_axis_gyroscope_bias_correction_enable(uint32_t & result);
+   
+     bool update_x_axis_gyroscope_bias_correction_enable(uint32_t val);
+   
+     bool y_axis_gyroscope_bias_correction_enable(uint32_t & result);
+   
+     bool update_y_axis_gyroscope_bias_correction_enable(uint32_t val);
+   
+     bool z_axis_gyroscope_bias_correction_enable(uint32_t & result);
+   
+     bool update_z_axis_gyroscope_bias_correction_enable(uint32_t val);
+   
+     bool x_axis_accelerometer_bias_correction_enable(uint32_t & result);
+   
+     bool update_x_axis_accelerometer_bias_correction_enable(uint32_t val);
+   
+     bool y_axis_accelerometer_bias_correction_enable(uint32_t & result);
+   
+     bool update_y_axis_accelerometer_bias_correction_enable(uint32_t val);
+   
+     bool z_axis_accelerometer_bias_correction_enable(uint32_t & result);
+   
+     bool update_z_axis_accelerometer_bias_correction_enable(uint32_t val);
+   
+     bool bias_correction_update();
+   
+     bool factory_calibration_restore();
+   
+     bool sensor_self_test();
+   
+     bool flash_memory_update();
+   
+     bool flash_memory_test();
+   
+     bool software_reset();
+   
+     bool firmware_revision(std::string & result);
+   
+     bool firmware_date(std::string & result);
+   
+     bool product_id(uint32_t & result);
+   
+     bool serial_number(uint32_t & result);
+   
+     bool flash_counter(uint32_t & value);
+   
+     double get_scale_accel();
+   
+     double get_scale_anglvel();
+   
+     double get_scale_deltavelocity();
+   
+     double get_scale_deltaangl();
+   
+     double get_scale_temp();
+   
+   private:
+     void setDeltaAngleScales(enum adis_device_id dev_id);
+     void setDeltaVelocityScales(enum adis_device_id dev_id);
+     bool updateField(uint32_t reg, uint32_t val, uint32_t mask);
+   
+     bool getRawDeltaAngleXFromDebug(int32_t & result);
+   
+     bool getRawDeltaAngleYFromDebug(int32_t & result);
+   
+     bool getRawDeltaAngleZFromDebug(int32_t & result);
+   
+     bool getRawDeltaVelocityXFromDebug(int32_t & result);
+   
+     bool getRawDeltaVelocityYFromDebug(int32_t & result);
+   
+     bool getRawDeltaVelocityZFromDebug(int32_t & result);
+   
+     bool getConvertedDeltaAngleXFromDebug(double & result);
+   
+     bool getConvertedDeltaAngleYFromDebug(double & result);
+   
+     bool getConvertedDeltaAngleZFromDebug(double & result);
+   
+     bool getConvertedDeltaVelocityXFromDebug(double & result);
+   
+     bool getConvertedDeltaVelocityYFromDebug(double & result);
+   
+     bool getConvertedDeltaVelocityZFromDebug(double & result);
+   
+     static struct iio_context * m_iio_context;
+   
+     static struct iio_device * m_dev;
+   
+     static struct iio_device * m_dev_trigger;
+   
+     static struct iio_buffer * m_dev_buffer;
+   
+     static struct iio_channel * m_channel_accel_x;
+   
+     static struct iio_channel * m_channel_accel_y;
+   
+     static struct iio_channel * m_channel_accel_z;
+   
+     static struct iio_channel * m_channel_anglvel_x;
+   
+     static struct iio_channel * m_channel_anglvel_y;
+   
+     static struct iio_channel * m_channel_anglvel_z;
+   
+     static struct iio_channel * m_channel_deltaangl_x;
+   
+     static struct iio_channel * m_channel_deltaangl_y;
+   
+     static struct iio_channel * m_channel_deltaangl_z;
+   
+     static struct iio_channel * m_channel_deltavelocity_x;
+   
+     static struct iio_channel * m_channel_deltavelocity_y;
+   
+     static struct iio_channel * m_channel_deltavelocity_z;
+   
+     static struct iio_channel * m_channel_temp;
+   
+     static struct iio_channel * m_channel_timestamp;
+   
+     static double m_scale_accel_x;
+   
+     static double m_scale_accel_y;
+   
+     static double m_scale_accel_z;
+   
+     static double m_scale_anglvel_x;
+   
+     static double m_scale_anglvel_y;
+   
+     static double m_scale_anglvel_z;
+   
+     static double m_scale_deltaangl_x;
+   
+     static double m_scale_deltaangl_y;
+   
+     static double m_scale_deltaangl_z;
+   
+     static double m_scale_deltavelocity_x;
+   
+     static double m_scale_deltavelocity_y;
+   
+     static double m_scale_deltavelocity_z;
+   
+     static double m_scale_temp;
+   };
+   
+   #endif  // IIO_WRAPPER_H

@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a5af76feaa70560f735e4a7f783cf0adb:
+
+Define ADIS_PT_OF_PERC_REG_ADDR
+===============================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_PT_OF_PERC_REG_ADDR
+   :project: adi_imu Doxygen Project

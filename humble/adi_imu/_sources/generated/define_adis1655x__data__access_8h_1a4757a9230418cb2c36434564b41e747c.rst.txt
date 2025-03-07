@@ -1,0 +1,14 @@
+.. _exhale_define_adis1655x__data__access_8h_1a4757a9230418cb2c36434564b41e747c:
+
+Define ADIS_GLOB_CMD_PAGE_ID
+============================
+
+- Defined in :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GLOB_CMD_PAGE_ID
+   :project: adi_imu Doxygen Project

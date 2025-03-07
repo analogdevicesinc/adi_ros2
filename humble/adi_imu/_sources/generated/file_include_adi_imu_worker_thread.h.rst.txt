@@ -1,0 +1,55 @@
+
+.. _file_include_adi_imu_worker_thread.h:
+
+File worker_thread.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/worker_thread.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_worker_thread.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/ros_task.h`` (:ref:`file_include_adi_imu_ros_task.h`)
+
+- ``thread`` (:ref:`file_src_worker_thread.cpp`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_imu_ros2_node.cpp`
+
+- :ref:`file_src_worker_thread.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classWorkerThread`
+

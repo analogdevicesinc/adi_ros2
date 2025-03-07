@@ -1,0 +1,14 @@
+.. _exhale_define_adis1657x__data__access_8h_1ab130fcdec49a87835b96266890f18ae7:
+
+Define ADIS_FLS_MEM_UPDATE_FAIL_POS
+===================================
+
+- Defined in :ref:`file_include_adi_imu_adis1657x_adis1657x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_FLS_MEM_UPDATE_FAIL_POS
+   :project: adi_imu Doxygen Project

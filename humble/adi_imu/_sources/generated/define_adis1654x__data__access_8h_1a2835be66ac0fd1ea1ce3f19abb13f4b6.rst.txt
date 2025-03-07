@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1a2835be66ac0fd1ea1ce3f19abb13f4b6:
+
+Define ADIS_DIAG_STS_REG_WITHOUT_PAGE
+=====================================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DIAG_STS_REG_WITHOUT_PAGE
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,23 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adi_imu
+=======
+
+Publisher for ADI IMUs
+
+.. toctree::
+   :maxdepth: 2
+
+
+   C++ API <generated/index>
+   Message Definitions <interfaces/message_definitions>
+
+
+   Standard Documents <standards>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

@@ -1,0 +1,14 @@
+.. _exhale_define_adis1650x__data__access_8h_1a61ed1ff604e65466d9fb37adfdbe4a04:
+
+Define ADIS_FLASH_MEMORY_TEST
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis1650x_adis1650x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_FLASH_MEMORY_TEST
+   :project: adi_imu Doxygen Project

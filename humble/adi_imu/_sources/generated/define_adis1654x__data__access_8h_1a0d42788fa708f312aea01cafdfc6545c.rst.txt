@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1a0d42788fa708f312aea01cafdfc6545c:
+
+Define ADIS_CRC_ERROR
+=====================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_CRC_ERROR
+   :project: adi_imu Doxygen Project

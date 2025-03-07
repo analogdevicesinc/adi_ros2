@@ -1,0 +1,14 @@
+.. _exhale_define_adis__data__access_8h_1aacb2143ae4f9106bda2217285cc97fa0:
+
+Define IMU_STD_MSG_DATA
+=======================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IMU_STD_MSG_DATA
+   :project: adi_imu Doxygen Project

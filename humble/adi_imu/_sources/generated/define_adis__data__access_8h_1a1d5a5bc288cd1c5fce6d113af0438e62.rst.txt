@@ -1,0 +1,14 @@
+.. _exhale_define_adis__data__access_8h_1a1d5a5bc288cd1c5fce6d113af0438e62:
+
+Define ADIS_DELTVEL_Z_OUT_REG
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DELTVEL_Z_OUT_REG
+   :project: adi_imu Doxygen Project

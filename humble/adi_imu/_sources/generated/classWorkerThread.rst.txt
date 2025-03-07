@@ -1,0 +1,26 @@
+.. _exhale_class_classWorkerThread:
+
+Class WorkerThread
+==================
+
+- Defined in :ref:`file_include_adi_imu_worker_thread.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public std::thread``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: WorkerThread
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

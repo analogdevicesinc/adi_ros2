@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a42c62d46224ce68df7ada715c77be950:
+
+Define ADIS_GLOB_CMD_ADDR
+=========================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GLOB_CMD_ADDR
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_adis1650x__data__access_8h_1ab6bf37624d01522e9e6d73ff0186625e:
+
+Define ADIS_GYRO2_FAIL_POS
+==========================
+
+- Defined in :ref:`file_include_adi_imu_adis1650x_adis1650x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GYRO2_FAIL_POS
+   :project: adi_imu Doxygen Project

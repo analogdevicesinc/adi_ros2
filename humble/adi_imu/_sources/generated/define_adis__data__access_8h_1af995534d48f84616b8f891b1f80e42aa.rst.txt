@@ -1,0 +1,14 @@
+.. _exhale_define_adis__data__access_8h_1af995534d48f84616b8f891b1f80e42aa:
+
+Define ADIS_DELTANG_Y_OUT_REG
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DELTANG_Y_OUT_REG
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_adis1650x__data__access_8h_1a9a628803e86d5dd2ee521147498012df:
+
+Define ADIS_HAS_DELTA_BURST
+===========================
+
+- Defined in :ref:`file_include_adi_imu_adis1650x_adis1650x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_HAS_DELTA_BURST
+   :project: adi_imu Doxygen Project

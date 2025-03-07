@@ -1,0 +1,14 @@
+.. _exhale_define_adis1647x__data__access_8h_1a7de18cb23c2daf40857df9945d5a3a7c:
+
+Define ADIS_GYRO_MEAS_RANG_POS
+==============================
+
+- Defined in :ref:`file_include_adi_imu_adis1647x_adis1647x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GYRO_MEAS_RANG_POS
+   :project: adi_imu Doxygen Project

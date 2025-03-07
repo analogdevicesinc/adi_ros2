@@ -1,0 +1,86 @@
+
+.. _file_include_adi_imu_iio_wrapper.h:
+
+File iio_wrapper.h
+==================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/iio_wrapper.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_iio_wrapper.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adis_data_access.h`` (:ref:`file_include_adi_imu_adis_data_access.h`)
+
+- ``iio.h``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_imu_accelgyrotemp_data_provider.h`
+
+- :ref:`file_include_adi_imu_imu_control_parameters.h`
+
+- :ref:`file_include_adi_imu_imu_data_provider.h`
+
+- :ref:`file_include_adi_imu_imu_diag_data_provider.h`
+
+- :ref:`file_include_adi_imu_imu_full_measured_data_provider.h`
+
+- :ref:`file_include_adi_imu_imu_identification_data_provider.h`
+
+- :ref:`file_include_adi_imu_velangtemp_data_provider.h`
+
+- :ref:`file_src_iio_wrapper.cpp`
+
+- :ref:`file_test_src_accelgyrotemp_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_identification_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_subscriber_test.cpp`
+
+- :ref:`file_test_src_velangtemp_subscriber_test.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classIIOWrapper`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_iio__wrapper_8h_1ab70d8c3d394df58fe73a31949cee087d`
+

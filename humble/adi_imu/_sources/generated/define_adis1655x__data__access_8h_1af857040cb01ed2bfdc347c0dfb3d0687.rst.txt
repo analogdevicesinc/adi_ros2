@@ -1,0 +1,14 @@
+.. _exhale_define_adis1655x__data__access_8h_1af857040cb01ed2bfdc347c0dfb3d0687:
+
+Define ADIS_SENSOR_SELF_TEST_POS
+================================
+
+- Defined in :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SENSOR_SELF_TEST_POS
+   :project: adi_imu Doxygen Project

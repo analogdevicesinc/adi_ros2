@@ -1,0 +1,50 @@
+
+.. _file_src_ros_publisher_group.cpp:
+
+File ros_publisher_group.cpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/ros_publisher_group.cpp``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_ros_publisher_group.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/accelgyrotemp_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_accelgyrotemp_ros_publisher_interface.h`)
+
+- ``adi_imu/imu_control_parameters.h`` (:ref:`file_include_adi_imu_imu_control_parameters.h`)
+
+- ``adi_imu/imu_full_measured_data_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_imu_full_measured_data_ros_publisher_interface.h`)
+
+- ``adi_imu/imu_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_imu_ros_publisher_interface.h`)
+
+- ``adi_imu/ros_publisher_group.h`` (:ref:`file_include_adi_imu_ros_publisher_group.h`)
+
+- ``chrono``
+
+- ``thread`` (:ref:`file_src_worker_thread.cpp`)
+
+
+
+
+

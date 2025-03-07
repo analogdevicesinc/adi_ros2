@@ -1,0 +1,26 @@
+.. _exhale_class_classImuFullMeasuredDataProviderInterface:
+
+Class ImuFullMeasuredDataProviderInterface
+==========================================
+
+- Defined in :ref:`file_include_adi_imu_imu_full_measured_data_provider_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public ImuFullMeasuredDataProvider`` (:ref:`exhale_class_classImuFullMeasuredDataProvider`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuFullMeasuredDataProviderInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

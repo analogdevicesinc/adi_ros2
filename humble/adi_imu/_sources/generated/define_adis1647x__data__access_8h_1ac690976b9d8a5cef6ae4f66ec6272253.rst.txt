@@ -1,0 +1,14 @@
+.. _exhale_define_adis1647x__data__access_8h_1ac690976b9d8a5cef6ae4f66ec6272253:
+
+Define ADIS_FLS_MEM_ENDURANCE
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis1647x_adis1647x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_FLS_MEM_ENDURANCE
+   :project: adi_imu Doxygen Project

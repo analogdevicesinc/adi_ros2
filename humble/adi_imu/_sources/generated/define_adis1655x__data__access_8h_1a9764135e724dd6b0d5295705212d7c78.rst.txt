@@ -1,0 +1,14 @@
+.. _exhale_define_adis1655x__data__access_8h_1a9764135e724dd6b0d5295705212d7c78:
+
+Define ADIS_RANG_MDL_ADDR_WITHOUT_PAGE
+======================================
+
+- Defined in :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_RANG_MDL_ADDR_WITHOUT_PAGE
+   :project: adi_imu Doxygen Project

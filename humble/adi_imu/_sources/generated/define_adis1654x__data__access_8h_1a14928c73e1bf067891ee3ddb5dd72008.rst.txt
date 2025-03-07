@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1a14928c73e1bf067891ee3ddb5dd72008:
+
+Define ADIS_SOFTWARE_RESET_CMD_POS
+==================================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SOFTWARE_RESET_CMD_POS
+   :project: adi_imu Doxygen Project

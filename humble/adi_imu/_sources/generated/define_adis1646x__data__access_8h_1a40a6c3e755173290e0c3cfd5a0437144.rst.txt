@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a40a6c3e755173290e0c3cfd5a0437144:
+
+Define ADIS_Y_AXIS_GYRO_BIAS_CORR_EN_POS
+========================================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_Y_AXIS_GYRO_BIAS_CORR_EN_POS
+   :project: adi_imu Doxygen Project

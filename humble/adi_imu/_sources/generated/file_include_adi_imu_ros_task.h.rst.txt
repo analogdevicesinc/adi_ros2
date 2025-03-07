@@ -1,0 +1,51 @@
+
+.. _file_include_adi_imu_ros_task.h:
+
+File ros_task.h
+===============
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/ros_task.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_ros_task.h.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_imu_imu_diag_ros_publisher_interface.h`
+
+- :ref:`file_include_adi_imu_imu_identification_ros_publisher_interface.h`
+
+- :ref:`file_include_adi_imu_ros_publisher_group_interface.h`
+
+- :ref:`file_include_adi_imu_worker_thread.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classRosTask`
+

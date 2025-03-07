@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1a73a8238df11ab5183c583676e86d6fc9:
+
+Define ADIS_NULL_CNFG_PAGE_ID
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_NULL_CNFG_PAGE_ID
+   :project: adi_imu Doxygen Project

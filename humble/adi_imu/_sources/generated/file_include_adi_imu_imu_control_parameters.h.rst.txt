@@ -1,0 +1,59 @@
+
+.. _file_include_adi_imu_imu_control_parameters.h:
+
+File imu_control_parameters.h
+=============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/imu_control_parameters.h``)
+---------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_imu_control_parameters.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/iio_wrapper.h`` (:ref:`file_include_adi_imu_iio_wrapper.h`)
+
+- ``rcl_interfaces/msg/set_parameters_result.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_imu_control_parameters.cpp`
+
+- :ref:`file_src_imu_ros2_node.cpp`
+
+- :ref:`file_src_ros_publisher_group.cpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classImuControlParameters`
+

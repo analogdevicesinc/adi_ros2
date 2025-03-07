@@ -1,0 +1,14 @@
+.. _exhale_variable_iio__wrapper_8cpp_1a60e90dbaa463bf8637eb6f63512b97d1:
+
+Variable current_data_selection
+===============================
+
+- Defined in :ref:`file_src_iio_wrapper.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: current_data_selection
+   :project: adi_imu Doxygen Project

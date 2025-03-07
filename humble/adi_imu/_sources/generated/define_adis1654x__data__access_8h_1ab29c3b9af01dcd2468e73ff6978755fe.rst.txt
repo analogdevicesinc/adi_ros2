@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1ab29c3b9af01dcd2468e73ff6978755fe:
+
+Define ADIS_Y_AXIS_ACCEL_BIAS_CORR_EN
+=====================================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_Y_AXIS_ACCEL_BIAS_CORR_EN
+   :project: adi_imu Doxygen Project

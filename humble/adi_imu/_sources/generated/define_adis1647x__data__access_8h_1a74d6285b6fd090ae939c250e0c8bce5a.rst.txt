@@ -1,0 +1,14 @@
+.. _exhale_define_adis1647x__data__access_8h_1a74d6285b6fd090ae939c250e0c8bce5a:
+
+Define ADIS_STDBY_MODE
+======================
+
+- Defined in :ref:`file_include_adi_imu_adis1647x_adis1647x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_STDBY_MODE
+   :project: adi_imu Doxygen Project

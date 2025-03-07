@@ -1,0 +1,53 @@
+
+.. _file_test_src_velangtemp_subscriber_test.cpp:
+
+File velangtemp_subscriber_test.cpp
+===================================
+
+|exhale_lsh| :ref:`Parent directory <dir_test_src>` (``test/src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``test/src/velangtemp_subscriber_test.cpp``)
+--------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_test_src_velangtemp_subscriber_test.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/iio_wrapper.h`` (:ref:`file_include_adi_imu_iio_wrapper.h`)
+
+- ``adi_imu/msg/vel_ang_temp_data.hpp``
+
+- ``chrono``
+
+- ``gtest/gtest.h``
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classVelAngTempSubscriberTest`
+

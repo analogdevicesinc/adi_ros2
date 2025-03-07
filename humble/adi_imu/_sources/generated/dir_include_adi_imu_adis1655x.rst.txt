@@ -1,0 +1,21 @@
+.. _dir_include_adi_imu_adis1655x:
+
+
+Directory adis1655x
+===================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``include/adi_imu/adis1655x``
+
+
+Files
+-----
+
+- :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+

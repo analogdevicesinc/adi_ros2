@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a14b8fca2d7cfd5bb1baf0a4c23658b35:
+
+Define ADIS_MSC_CTRL_ADDR
+=========================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_MSC_CTRL_ADDR
+   :project: adi_imu Doxygen Project

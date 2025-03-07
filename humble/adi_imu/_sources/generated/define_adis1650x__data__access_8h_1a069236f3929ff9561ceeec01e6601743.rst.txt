@@ -1,0 +1,14 @@
+.. _exhale_define_adis1650x__data__access_8h_1a069236f3929ff9561ceeec01e6601743:
+
+Define ADIS_MAX_SAMP_FREQ
+=========================
+
+- Defined in :ref:`file_include_adi_imu_adis1650x_adis1650x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_MAX_SAMP_FREQ
+   :project: adi_imu Doxygen Project

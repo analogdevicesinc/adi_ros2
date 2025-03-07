@@ -1,0 +1,14 @@
+.. _exhale_define_adis1657x__data__access_8h_1aa5f772a63cffc192e44e90d5185d1dcd:
+
+Define ADIS_SNSR_INIT_FAIL_POS
+==============================
+
+- Defined in :ref:`file_include_adi_imu_adis1657x_adis1657x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SNSR_INIT_FAIL_POS
+   :project: adi_imu Doxygen Project

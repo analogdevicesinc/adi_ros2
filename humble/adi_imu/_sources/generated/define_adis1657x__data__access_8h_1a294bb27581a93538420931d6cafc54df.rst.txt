@@ -1,0 +1,14 @@
+.. _exhale_define_adis1657x__data__access_8h_1a294bb27581a93538420931d6cafc54df:
+
+Define ADIS_SPI_COMM_ERR_POS
+============================
+
+- Defined in :ref:`file_include_adi_imu_adis1657x_adis1657x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SPI_COMM_ERR_POS
+   :project: adi_imu Doxygen Project

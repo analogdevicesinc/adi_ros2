@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1a49aeef7ae805605e86704d04777f5eb6:
+
+Define ADIS_PT_OF_PERC_PAGE_ID
+==============================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_PT_OF_PERC_PAGE_ID
+   :project: adi_imu Doxygen Project

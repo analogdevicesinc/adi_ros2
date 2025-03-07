@@ -1,0 +1,14 @@
+.. _exhale_define_adis1654x__data__access_8h_1ad5866956ffd11792c984e6416a68e333:
+
+Define ADIS_GYRO_ACCEL_FAIL_REG
+===============================
+
+- Defined in :ref:`file_include_adi_imu_adis1654x_adis1654x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GYRO_ACCEL_FAIL_REG
+   :project: adi_imu Doxygen Project

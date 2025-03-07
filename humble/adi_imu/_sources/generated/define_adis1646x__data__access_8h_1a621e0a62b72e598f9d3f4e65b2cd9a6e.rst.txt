@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a621e0a62b72e598f9d3f4e65b2cd9a6e:
+
+Define ADIS_TIME_BASE_CONTROL_POS
+=================================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_TIME_BASE_CONTROL_POS
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_adis1655x__data__access_8h_1a5e9411b1861401c5dc9a55e71ebeccf2:
+
+Define ADIS_DIAG_STAT_PAGE_ID
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DIAG_STAT_PAGE_ID
+   :project: adi_imu Doxygen Project

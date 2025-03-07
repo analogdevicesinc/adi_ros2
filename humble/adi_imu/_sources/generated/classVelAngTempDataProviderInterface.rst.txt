@@ -1,0 +1,26 @@
+.. _exhale_class_classVelAngTempDataProviderInterface:
+
+Class VelAngTempDataProviderInterface
+=====================================
+
+- Defined in :ref:`file_include_adi_imu_velangtemp_data_provider_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public VelAngTempDataProvider`` (:ref:`exhale_class_classVelAngTempDataProvider`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: VelAngTempDataProviderInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

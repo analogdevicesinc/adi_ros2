@@ -1,0 +1,14 @@
+.. _exhale_define_adis1655x__data__access_8h_1a2078895656358fb28f2ac6c427946bef:
+
+Define ADIS_GYRO_Y_FAIL
+=======================
+
+- Defined in :ref:`file_include_adi_imu_adis1655x_adis1655x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_GYRO_Y_FAIL
+   :project: adi_imu Doxygen Project

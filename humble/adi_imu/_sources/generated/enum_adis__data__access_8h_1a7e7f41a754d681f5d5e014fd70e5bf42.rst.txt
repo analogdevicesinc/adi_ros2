@@ -1,0 +1,14 @@
+.. _exhale_enum_adis__data__access_8h_1a7e7f41a754d681f5d5e014fd70e5bf42:
+
+Enum adis_device_id
+===================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: adis_device_id
+   :project: adi_imu Doxygen Project

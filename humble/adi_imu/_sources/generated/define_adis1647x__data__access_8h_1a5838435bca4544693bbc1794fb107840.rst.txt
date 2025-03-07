@@ -1,0 +1,14 @@
+.. _exhale_define_adis1647x__data__access_8h_1a5838435bca4544693bbc1794fb107840:
+
+Define ADIS_BIAS_CORRECTION_UPDATE
+==================================
+
+- Defined in :ref:`file_include_adi_imu_adis1647x_adis1647x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_BIAS_CORRECTION_UPDATE
+   :project: adi_imu Doxygen Project

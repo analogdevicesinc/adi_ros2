@@ -1,0 +1,14 @@
+.. _exhale_function_iio__wrapper_8cpp_1a9fb0463243d8a11004e5f95022d5f188:
+
+Function demux_sample
+=====================
+
+- Defined in :ref:`file_src_iio_wrapper.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: demux_sample(const struct iio_channel *, void *, size_t, __attribute__((unused)) void *)
+   :project: adi_imu Doxygen Project

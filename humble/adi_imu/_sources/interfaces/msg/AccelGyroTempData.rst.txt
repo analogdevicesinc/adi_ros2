@@ -1,0 +1,8 @@
+AccelGyroTempData
+=================
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ../../../../../../../src/imu_ros2/msg/AccelGyroTempData.msg
+

@@ -1,0 +1,26 @@
+.. _exhale_class_classAccelGyroTempRosPublisherInterface:
+
+Class AccelGyroTempRosPublisherInterface
+========================================
+
+- Defined in :ref:`file_include_adi_imu_accelgyrotemp_ros_publisher_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public AccelGyroTempRosPublisher`` (:ref:`exhale_class_classAccelGyroTempRosPublisher`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: AccelGyroTempRosPublisherInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

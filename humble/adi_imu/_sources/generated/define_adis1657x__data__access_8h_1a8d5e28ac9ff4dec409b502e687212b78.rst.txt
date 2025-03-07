@@ -1,0 +1,14 @@
+.. _exhale_define_adis1657x__data__access_8h_1a8d5e28ac9ff4dec409b502e687212b78:
+
+Define ADIS_ACCEL_X_FAIL_POS
+============================
+
+- Defined in :ref:`file_include_adi_imu_adis1657x_adis1657x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_ACCEL_X_FAIL_POS
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_adis__data__access_8h_1a493949af5fb07ec429f621f893bea101:
+
+Define DELTAVEL_DELTAANG_BUFFERED_DATA
+======================================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DELTAVEL_DELTAANG_BUFFERED_DATA
+   :project: adi_imu Doxygen Project

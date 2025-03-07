@@ -1,0 +1,14 @@
+.. _exhale_define_adis1650x__data__access_8h_1a714dc7aeb55b8002ba422dc01def4e14:
+
+Define ADIS_SENS_BW
+===================
+
+- Defined in :ref:`file_include_adi_imu_adis1650x_adis1650x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SENS_BW
+   :project: adi_imu Doxygen Project

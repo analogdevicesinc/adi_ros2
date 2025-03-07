@@ -1,0 +1,14 @@
+.. _exhale_define_adis1657x__data__access_8h_1a546191746e8a4d114668f06f5ba11805:
+
+Define ADIS_DR_POL
+==================
+
+- Defined in :ref:`file_include_adi_imu_adis1657x_adis1657x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DR_POL
+   :project: adi_imu Doxygen Project

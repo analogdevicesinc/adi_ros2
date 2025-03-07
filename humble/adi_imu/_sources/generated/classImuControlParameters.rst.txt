@@ -1,0 +1,17 @@
+.. _exhale_class_classImuControlParameters:
+
+Class ImuControlParameters
+==========================
+
+- Defined in :ref:`file_include_adi_imu_imu_control_parameters.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuControlParameters
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

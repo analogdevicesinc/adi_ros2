@@ -1,0 +1,32 @@
+.. _exhale_class_classRosPublisherGroupInterface:
+
+Class RosPublisherGroupInterface
+================================
+
+- Defined in :ref:`file_include_adi_imu_ros_publisher_group_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public RosTask`` (:ref:`exhale_class_classRosTask`)
+
+
+Derived Type
+************
+
+- ``public RosPublisherGroup`` (:ref:`exhale_class_classRosPublisherGroup`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: RosPublisherGroupInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

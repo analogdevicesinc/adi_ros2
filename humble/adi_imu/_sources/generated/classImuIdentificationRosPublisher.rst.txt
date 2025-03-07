@@ -1,0 +1,26 @@
+.. _exhale_class_classImuIdentificationRosPublisher:
+
+Class ImuIdentificationRosPublisher
+===================================
+
+- Defined in :ref:`file_include_adi_imu_imu_identification_ros_publisher.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public ImuIdentificationRosPublisherInterface`` (:ref:`exhale_class_classImuIdentificationRosPublisherInterface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuIdentificationRosPublisher
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

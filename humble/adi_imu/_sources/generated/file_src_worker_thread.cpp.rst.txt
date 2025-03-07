@@ -1,0 +1,38 @@
+
+.. _file_src_worker_thread.cpp:
+
+File worker_thread.cpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/worker_thread.cpp``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_worker_thread.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/worker_thread.h`` (:ref:`file_include_adi_imu_worker_thread.h`)
+
+
+
+
+

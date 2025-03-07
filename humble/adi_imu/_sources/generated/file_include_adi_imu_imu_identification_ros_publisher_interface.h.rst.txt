@@ -1,0 +1,55 @@
+
+.. _file_include_adi_imu_imu_identification_ros_publisher_interface.h:
+
+File imu_identification_ros_publisher_interface.h
+=================================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/imu_identification_ros_publisher_interface.h``)
+-----------------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_imu_identification_ros_publisher_interface.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/ros_task.h`` (:ref:`file_include_adi_imu_ros_task.h`)
+
+- ``memory``
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_imu_imu_identification_ros_publisher.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classImuIdentificationRosPublisherInterface`
+

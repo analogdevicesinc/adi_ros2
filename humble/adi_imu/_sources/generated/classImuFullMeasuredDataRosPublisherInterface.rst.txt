@@ -1,0 +1,26 @@
+.. _exhale_class_classImuFullMeasuredDataRosPublisherInterface:
+
+Class ImuFullMeasuredDataRosPublisherInterface
+==============================================
+
+- Defined in :ref:`file_include_adi_imu_imu_full_measured_data_ros_publisher_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public ImuFullMeasuredDataRosPublisher`` (:ref:`exhale_class_classImuFullMeasuredDataRosPublisher`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuFullMeasuredDataRosPublisherInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

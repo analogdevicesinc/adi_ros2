@@ -1,0 +1,14 @@
+.. _exhale_define_adis__data__access_8h_1afdad557a4795807a90968e8dc04f4c84:
+
+Define ADIS_DELTVEL_Y_LOW_REG
+=============================
+
+- Defined in :ref:`file_include_adi_imu_adis_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_DELTVEL_Y_LOW_REG
+   :project: adi_imu Doxygen Project

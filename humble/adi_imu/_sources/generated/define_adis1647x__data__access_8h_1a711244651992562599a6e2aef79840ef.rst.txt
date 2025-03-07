@@ -1,0 +1,14 @@
+.. _exhale_define_adis1647x__data__access_8h_1a711244651992562599a6e2aef79840ef:
+
+Define ADIS_CLK_ERR_POS
+=======================
+
+- Defined in :ref:`file_include_adi_imu_adis1647x_adis1647x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_CLK_ERR_POS
+   :project: adi_imu Doxygen Project

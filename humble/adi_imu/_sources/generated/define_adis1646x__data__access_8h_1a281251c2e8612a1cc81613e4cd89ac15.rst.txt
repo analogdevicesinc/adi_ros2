@@ -1,0 +1,14 @@
+.. _exhale_define_adis1646x__data__access_8h_1a281251c2e8612a1cc81613e4cd89ac15:
+
+Define ADIS_SNSR_FAIL
+=====================
+
+- Defined in :ref:`file_include_adi_imu_adis1646x_adis1646x_data_access.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS_SNSR_FAIL
+   :project: adi_imu Doxygen Project

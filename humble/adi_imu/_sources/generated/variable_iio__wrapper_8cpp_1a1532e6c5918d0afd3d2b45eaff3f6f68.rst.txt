@@ -1,0 +1,14 @@
+.. _exhale_variable_iio__wrapper_8cpp_1a1532e6c5918d0afd3d2b45eaff3f6f68:
+
+Variable buff_read_idx
+======================
+
+- Defined in :ref:`file_src_iio_wrapper.cpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: buff_read_idx
+   :project: adi_imu Doxygen Project
