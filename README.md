@@ -28,19 +28,6 @@ on ADI solutions.
 - **Further Guidance:** For additional communication guidelines, refer to [COMMUNICATION](COMMUNICATION.md).
 
 
-## Who We Are
-
-- **Project Maintainers:** This project is maintained by the **adi-ros2-iio-maintainers** team.
-
-- **Repository Administrators:** Administration of this repository is managed
-  by the **adi-ros2-team-admins** group.
-
-- **Committers and Contributors:** Trusted committers and contributors adhere
-  to our organizational guidelines. For comprehensive information on
-  our team structure and practices, please visit our
-  [central information page](https://hub.analog.com/home).
-
-
 ## Contributing
 
 Contributions are key to our project’s success. Before submitting changes:
