@@ -13,3 +13,6 @@
 [submodule "src/adi_3dtof_adtf31xx"]
 	path = src/adi_3dtof_adtf31xx
 	url = https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git
+[submodule "src/dependencies/libaditof"]
+	path = src/dependencies/libaditof
+	url = https://github.com/analogdevicesinc/libaditof.git
