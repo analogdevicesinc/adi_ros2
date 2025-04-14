@@ -1,17 +1,33 @@
+# Docker Image Builder for ADI ROS2 Packages
+#
+# This workflow builds and publishes Docker images for ADI ROS2 packages.
+# It includes multi-architecture support (amd64, arm64) and conditional publishing.
+#
+# REQUIRED SECRETS:
+# - DOCKERHUB_USERNAME: Docker Hub username for publishing
+# - DOCKERHUB_TOKEN: Docker Hub access token
+# - GH_TOKEN: GitHub token for submodule access
+
 name: Docker Image ROS2
 
 on:
-  # Trigger the action from the UI
   workflow_dispatch:
   push:
     branches:
-      - "humble"
-      - "humble-develop"
+      - humble*
+      - jazzy*
+      - rolling*
     tags:
       - "v*.*.*"
+  pull_request:
+    branches:
+      - humble*
+      - jazzy*
+      - rolling*
 
 env:
-  ROS2_DISTRO: humble
+  DEFAULT_ROS2_DISTRO: "humble"
+  ROS2_PUBLISHING_BRANCHES: "humble,jazzy,rolling"
   DOCKER_REGISTRY: docker.io
   DOCKER_IMAGE_NAME: adi_ros2
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
@@ -31,6 +47,79 @@ jobs:
           persist-credentials: false
           token: ${{ env.GH_TOKEN }}
           submodules: true
+
+      - name: Get target branch name
+        id: get_branch_name
+        run: |
+          # For PR use GITHUB_BASE_REF which is the target branch
+          # For push use GITHUB_REF which is the source branch
+          GIT_BRANCH=${GITHUB_BASE_REF:-${GITHUB_REF#refs/heads/}}
+
+          echo "Extracted target branch name: $GIT_BRANCH"
+
+          echo "target=$GIT_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Determine target ROS2 distribution
+        id: ros2_distro
+        run: |
+          echo "Determining target ROS2 distribution based on branch name..."
+          branch_name=${{ steps.get_branch_name.outputs.target }}
+          echo "Branch name: $branch_name"
+
+          ros2_distro="${{ env.DEFAULT_ROS2_DISTRO }}"
+
+          if [[ "$branch_name" =~ ^rolling ]]; then
+            ros2_distro="rolling"
+          elif [[ "$branch_name" =~ ^humble ]]; then
+            ros2_distro="humble"
+          elif [[ "$branch_name" =~ ^jazzy ]]; then
+            ros2_distro="jazzy"
+          else
+            echo "❌ ERROR: Unsupported branch '$branch_name' ... using default value."
+          fi
+
+          echo "ROS2 distribution: $ros2_distro"
+          echo "name=$ros2_distro" >> $GITHUB_OUTPUT
+
+      - name: Check should publish Docker images
+        id: publish_check
+        run: |
+          should_publish="false"
+
+          # Only consider publishing for push events (not PRs)
+          if [ "${{ github.event_name }}" == "push" ]; then
+            # Check if this is a tag push
+            if [[ $GITHUB_REF == refs/tags/* ]]; then
+              should_publish="true"
+              echo "✅ PUBLISHING: Triggered by tag push '${GITHUB_REF#refs/tags/}'"
+            # Check if this is a branch push to an allowed branch
+            elif [[ $GITHUB_REF == refs/heads/* ]]; then
+              branch_name=${GITHUB_REF#refs/heads/}
+
+              # Check if branch is in allowed list
+              IFS=',' read -ra BRANCHES <<< "${{ env.ROS2_PUBLISHING_BRANCHES }}"
+              for branch in "${BRANCHES[@]}"; do
+                if [[ "$branch_name" =~ ^$branch ]]; then
+                  should_publish="true"
+                  echo "✅ PUBLISHING: Branch push to '$branch_name' matches allowed pattern '$branch'"
+                  break
+                fi
+              done
+
+              if [ "$should_publish" != "true" ]; then
+                echo "❌ NOT PUBLISHING: Branch '$branch_name' is not in the allowed publishing list"
+              fi
+            fi
+          else
+            echo "❌ NOT PUBLISHING: Triggered by ${{ github.event_name }}, not a push event"
+          fi
+
+          if [ "${{ github.repository_owner }}" != "analogdevicesinc" ]; then
+            should_publish="false"
+            echo "⚠️ SECURITY OVERRIDE: Not publishing because repository owner is '${{ github.repository_owner }}' (not analogdevicesinc)"
+          fi
+
+          echo "should_publish=$should_publish" >> $GITHUB_OUTPUT
 
       # Docker setup
       - name: Login to Docker Hub
@@ -59,8 +148,6 @@ jobs:
         uses: docker/setup-qemu-action@v3
 
       - name: Validate build configuration
-        # Evaluate build checks for the either the entire Dockerfile or the
-        # selected target, without executing a build.
         uses: docker/build-push-action@v6
         with:
           file: ./ci/docker/Dockerfile
@@ -74,14 +161,16 @@ jobs:
           file: ./ci/docker/Dockerfile
           platforms: linux/amd64,linux/arm64
           context: .
-          push: ${{ github.repository_owner == 'analogdevicesinc' }}
+          push: ${{ steps.publish_check.outputs.should_publish == 'true' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            ROS2_DISTRO=${{ steps.ros2_distro.outputs.name }}
           secrets: |
             GIT_AUTH_TOKEN=${{ env.GH_TOKEN }}
 
       - name: Update Docker Hub Description
-        if: github.repository_owner == 'analogdevicesinc'
+        if: steps.publish_check.outputs.should_publish == 'true'
         uses: peter-evans/dockerhub-description@v4
         with:
           username: ${{ env.DOCKERHUB_USERNAME }}
