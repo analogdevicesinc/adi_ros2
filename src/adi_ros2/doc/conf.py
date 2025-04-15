@@ -135,6 +135,11 @@ rosdoc2_settings = {
 
     ## Support markdown
     'support_markdown': True,
+
+    # Allow additional extensions. If true, at runtime rosdoc2 will check to see if
+    # non-default extensions are installed, and if so allow them. If false, only
+    # extensions loaded by default by Sphinx or rosdoc2 installs are allowed.
+    'allow_other_extensions': True,
 }
 
 # -- External docs configuration ----------------------------------------------
