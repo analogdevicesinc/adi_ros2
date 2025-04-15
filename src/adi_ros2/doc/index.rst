@@ -60,6 +60,13 @@ Use this index to find the ROS2 packages you need provided by
       Trinamic Motor Controllers (TMC) that uses Trinamic Motion Control
       Language (TMCL) protocol.
 
+  * - `adi_3dtof_adtf31xx`_
+    - ``adi_3dtof_adtf31xx``
+    - `adi_tmcl API`_
+    - The ADI 3DToF ADTF31xx is a ROS (Robot Operating System) package for working
+      with ADI’s ADTF3175D ToF sensor. This node captures the Depth and AB
+      frames from the sensor and publishes them as ROS topics.
+
 
 .. _Analog Devices Inc: https://www.analog.com
 .. _adi_ros2: ./index.html
@@ -72,3 +79,6 @@ Use this index to find the ROS2 packages you need provided by
 
 .. _tmcl_ros2: ../adi_tmcl/index.html#http://
 .. _adi_tmcl API: ../adi_tmcl/generated/index.html#http://
+
+.. _adi_3dtof_adtf31xx: ../adi_3dtof_adtf31xx/index.html#http://
+.. _adi_3dtof_adtf31xx API: ../adi_3dtof_adtf31xx/generated/index.html#http://
