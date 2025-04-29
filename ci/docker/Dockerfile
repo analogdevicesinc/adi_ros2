@@ -20,6 +20,7 @@ WORKDIR ${OVERLAY_WS}/src
 ENV DEVICE_ID=adis16505-2
 
 COPY src/ ${OVERLAY_WS}/src/
+COPY .git ${OVERLAY_WS}/.git
 
 # Copy system dependency installation scripts
 WORKDIR /usr/local/bin

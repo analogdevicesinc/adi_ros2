@@ -46,7 +46,7 @@ jobs:
           ref: ${{ github.head_ref }}
           persist-credentials: false
           token: ${{ env.GH_TOKEN }}
-          submodules: true
+          submodules: recursive
 
       - name: Get target branch name
         id: get_branch_name
@@ -151,6 +151,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           file: ./ci/docker/Dockerfile
+          context: .
           call: check
           secrets: |
             GIT_AUTH_TOKEN=${{ env.GH_TOKEN }}
