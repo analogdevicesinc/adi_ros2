@@ -61,7 +61,6 @@ Program Listing for File adis_data_access.h
      ADIS16547_2,
      ADIS16547_3,
      ADIS16550,
-     ADIS16550W,
      ADIS16575_2,
      ADIS16575_3,
      ADIS16576_2,
