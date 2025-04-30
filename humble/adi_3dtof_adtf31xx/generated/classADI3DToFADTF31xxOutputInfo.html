@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class ADI3DToFADTF31xxOutputInfo &mdash; adi_3dtof_adtf31xx 2.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=20623aea"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class RvlCodec" href="classcompressed__depth__image__transport_1_1RvlCodec.html" />
+    <link rel="prev" title="Class ADI3DToFADTF31xxFrameInfo" href="classADI3DToFADTF31xxFrameInfo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_3dtof_adtf31xx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_adtf31xx">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class ADI3DToFADTF31xxOutputInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classIInputSensor.html">Class IInputSensor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImageProcUtils.html">Class ImageProcUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFactory.html">Class InputSensorFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_camera.h.html">File adi_camera.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_image_proc_utils.h.html">File image_proc_utils.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor.h.html">File input_sensor.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_module_profile.h.html">File module_profile.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#overview">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#output-images">Output Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#parameter-tuning">Parameter Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#limitations">Limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#appendix-1">Appendix 1 :</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-run-the-node-on-a-host-machine-in-file-io-mode">Steps to run the Node on a Host machine in File-IO mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-convert-rosbag-file-to-bin-file">Steps to convert rosbag file to bin file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_3dtof_adtf31xx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class ADI3DToFADTF31xxOutputInfo</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classADI3DToFADTF31xxOutputInfo.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-adi3dtofadtf31xxoutputinfo">
+<span id="exhale-class-classadi3dtofadtf31xxoutputinfo"></span><h1>Class ADI3DToFADTF31xxOutputInfo<a class="headerlink" href="#class-adi3dtofadtf31xxoutputinfo" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adi_3dtof_adtf31xx_output_info.h.html#file-include-adi-3dtof-adtf31xx-output-info-h"><span class="std std-ref">File adi_3dtof_adtf31xx_output_info.h</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv426ADI3DToFADTF31xxOutputInfo">
+<span id="_CPPv326ADI3DToFADTF31xxOutputInfo"></span><span id="_CPPv226ADI3DToFADTF31xxOutputInfo"></span><span id="ADI3DToFADTF31xxOutputInfo"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ADI3DToFADTF31xxOutputInfo</span></span></span><a class="headerlink" href="#_CPPv426ADI3DToFADTF31xxOutputInfo" title="Link to this definition"></a><br /></dt>
+<dd><p>This is the class for adtf31xx sensor node output information. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo26ADI3DToFADTF31xxOutputInfoEii">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo26ADI3DToFADTF31xxOutputInfoEii"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo26ADI3DToFADTF31xxOutputInfoEii"></span><span id="ADI3DToFADTF31xxOutputInfo::ADI3DToFADTF31xxOutputInfo__i.i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ADI3DToFADTF31xxOutputInfo</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">image_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">image_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo26ADI3DToFADTF31xxOutputInfoEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image_width</strong> – - Image Width </p></li>
+<li><p><strong>image_height</strong> – - Image Height </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfoD0Ev">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfoD0Ev"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfoD0Ev"></span><span id="ADI3DToFADTF31xxOutputInfo::~ADI3DToFADTF31xxOutputInfo"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1ac4dd3bfb084e7c61820808b9ce164274"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~ADI3DToFADTF31xxOutputInfo</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfoD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfoaSERK26ADI3DToFADTF31xxOutputInfo">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfoaSERK26ADI3DToFADTF31xxOutputInfo"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfoaSERK26ADI3DToFADTF31xxOutputInfo"></span><span id="ADI3DToFADTF31xxOutputInfo::assign-operator__ADI3DToFADTF31xxOutputInfoCR"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a0bb78c6d29e8bd81f34f4ee8dfb1a306"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv426ADI3DToFADTF31xxOutputInfo" title="ADI3DToFADTF31xxOutputInfo"><span class="n"><span class="pre">ADI3DToFADTF31xxOutputInfo</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv426ADI3DToFADTF31xxOutputInfo" title="ADI3DToFADTF31xxOutputInfo"><span class="n"><span class="pre">ADI3DToFADTF31xxOutputInfo</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfoaSERK26ADI3DToFADTF31xxOutputInfo" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo13frame_number_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo13frame_number_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo13frame_number_E"></span><span id="ADI3DToFADTF31xxOutputInfo::frame_number___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1abba3deb20ca30157a09a7549b95b5c18"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frame_number_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo13frame_number_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo12depth_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo12depth_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo12depth_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::depth_frame___unsigned-shortP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1ab6770598393b0f329219f04a890e8662"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">depth_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo12depth_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo9ab_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo9ab_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo9ab_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::ab_frame___unsigned-shortP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a8c617669b6749243e441818c48c0d272"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ab_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo9ab_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo11conf_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo11conf_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo11conf_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::conf_frame___unsigned-shortP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1af14c0b4eb1e215df609205bcf63732bd"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">conf_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo11conf_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo23compressed_depth_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo23compressed_depth_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo23compressed_depth_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_depth_frame___unsigned-cP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1aa60cfcebc82a82178bc2cb9b2789fc41"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">compressed_depth_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo23compressed_depth_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo20compressed_ab_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo20compressed_ab_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo20compressed_ab_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_ab_frame___unsigned-cP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a57ad398308f3e9bb83c7387f6efc0f4e"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">compressed_ab_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo20compressed_ab_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo22compressed_conf_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo22compressed_conf_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo22compressed_conf_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_conf_frame___unsigned-cP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a9f978c915a2990b2110f09d93bb955c3"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">compressed_conf_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo22compressed_conf_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo28compressed_depth_frame_size_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo28compressed_depth_frame_size_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo28compressed_depth_frame_size_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_depth_frame_size___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a3b65daf750503fd9977df067a75f6b6e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compressed_depth_frame_size_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo28compressed_depth_frame_size_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo25compressed_ab_frame_size_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo25compressed_ab_frame_size_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo25compressed_ab_frame_size_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_ab_frame_size___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a8d3ce90b5131114fb71981f25992d12a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compressed_ab_frame_size_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo25compressed_ab_frame_size_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo27compressed_conf_frame_size_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo27compressed_conf_frame_size_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo27compressed_conf_frame_size_E"></span><span id="ADI3DToFADTF31xxOutputInfo::compressed_conf_frame_size___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a650a832aeac192727caca6dca0a2d4a8"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compressed_conf_frame_size_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo27compressed_conf_frame_size_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo10xyz_frame_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo10xyz_frame_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo10xyz_frame_E"></span><span id="ADI3DToFADTF31xxOutputInfo::xyz_frame___shortP"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a8bdcb3e90171bfc80c0cfc5178605f41"></span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">xyz_frame_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo10xyz_frame_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo12image_width_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo12image_width_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo12image_width_E"></span><span id="ADI3DToFADTF31xxOutputInfo::image_width___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1abe52af0177f704e138a0c7e792dfa340"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">image_width_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo12image_width_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ADI3DToFADTF31xxOutputInfo13image_height_E">
+<span id="_CPPv3N26ADI3DToFADTF31xxOutputInfo13image_height_E"></span><span id="_CPPv2N26ADI3DToFADTF31xxOutputInfo13image_height_E"></span><span id="ADI3DToFADTF31xxOutputInfo::image_height___i"></span><span class="target" id="classADI3DToFADTF31xxOutputInfo_1a66426d62d214701c0190bff25957024c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">image_height_</span></span></span><a class="headerlink" href="#_CPPv4N26ADI3DToFADTF31xxOutputInfo13image_height_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classADI3DToFADTF31xxFrameInfo.html" class="btn btn-neutral float-left" title="Class ADI3DToFADTF31xxFrameInfo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classcompressed__depth__image__transport_1_1RvlCodec.html" class="btn btn-neutral float-right" title="Class RvlCodec" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_3dtof_adtf31xx&gt; Contributors. License: BSD.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

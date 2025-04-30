@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class IInputSensor &mdash; adi_3dtof_adtf31xx 2.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=20623aea"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class ImageProcUtils" href="classImageProcUtils.html" />
+    <link rel="prev" title="Class RvlCodec" href="classcompressed__depth__image__transport_1_1RvlCodec.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_3dtof_adtf31xx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_adtf31xx">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxOutputInfo.html">Class ADI3DToFADTF31xxOutputInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class IInputSensor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImageProcUtils.html">Class ImageProcUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFactory.html">Class InputSensorFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_camera.h.html">File adi_camera.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_image_proc_utils.h.html">File image_proc_utils.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor.h.html">File input_sensor.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_module_profile.h.html">File module_profile.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#overview">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#output-images">Output Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#parameter-tuning">Parameter Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#limitations">Limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#appendix-1">Appendix 1 :</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-run-the-node-on-a-host-machine-in-file-io-mode">Steps to run the Node on a Host machine in File-IO mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-convert-rosbag-file-to-bin-file">Steps to convert rosbag file to bin file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_3dtof_adtf31xx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class IInputSensor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classIInputSensor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-iinputsensor">
+<span id="exhale-class-classiinputsensor"></span><h1>Class IInputSensor<a class="headerlink" href="#class-iinputsensor" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_input_sensor.h.html#file-include-input-sensor-h"><span class="std std-ref">File input_sensor.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading"></a></h2>
+<section id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">InputSensorADTF31XX</span></code> (<a class="reference internal" href="classInputSensorADTF31XX.html#exhale-class-classinputsensoradtf31xx"><span class="std std-ref">Class InputSensorADTF31XX</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">InputSensorFileRosbagBin</span></code> (<a class="reference internal" href="classInputSensorFileRosbagBin.html#exhale-class-classinputsensorfilerosbagbin"><span class="std std-ref">Class InputSensorFileRosbagBin</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv412IInputSensor">
+<span id="_CPPv312IInputSensor"></span><span id="_CPPv212IInputSensor"></span><span id="IInputSensor"></span><span class="target" id="classIInputSensor"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IInputSensor</span></span></span><a class="headerlink" href="#_CPPv412IInputSensor" title="Link to this definition"></a><br /></dt>
+<dd><p>This is input base class. </p>
+<p>Subclassed by <a class="reference internal" href="classInputSensorADTF31XX.html#classInputSensorADTF31XX"><span class="std std-ref">InputSensorADTF31XX</span></a>, <a class="reference internal" href="classInputSensorFileRosbagBin.html#classInputSensorFileRosbagBin"><span class="std std-ref">InputSensorFileRosbagBin</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor10openSensorENSt6stringEiiNSt6stringENSt6stringE">
+<span id="_CPPv3N12IInputSensor10openSensorENSt6stringEiiNSt6stringENSt6stringE"></span><span id="_CPPv2N12IInputSensor10openSensorENSt6stringEiiNSt6stringENSt6stringE"></span><span id="IInputSensor::openSensor__ss.i.i.ss.ss"></span><span class="target" id="classIInputSensor_1abad41c932da326bdc9ba914892080bfa"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">openSensor</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sensor_name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">input_image_width</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">input_image_height</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">config_file_name</span></span>, <span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">input_sensor_ip</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor10openSensorENSt6stringEiiNSt6stringENSt6stringE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor15configureSensorEi">
+<span id="_CPPv3N12IInputSensor15configureSensorEi"></span><span id="_CPPv2N12IInputSensor15configureSensorEi"></span><span id="IInputSensor::configureSensor__i"></span><span class="target" id="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">configureSensor</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">camera_mode</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor15configureSensorEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13getIntrinsicsEP16CameraIntrinsics">
+<span id="_CPPv3N12IInputSensor13getIntrinsicsEP16CameraIntrinsics"></span><span id="_CPPv2N12IInputSensor13getIntrinsicsEP16CameraIntrinsics"></span><span id="IInputSensor::getIntrinsics__CameraIntrinsicsP"></span><span class="target" id="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getIntrinsics</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structCameraIntrinsics.html#_CPPv416CameraIntrinsics" title="CameraIntrinsics"><span class="n"><span class="pre">CameraIntrinsics</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">camera_intrinsics</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor13getIntrinsicsEP16CameraIntrinsics" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13getExtrinsicsEP16CameraExtrinsics">
+<span id="_CPPv3N12IInputSensor13getExtrinsicsEP16CameraExtrinsics"></span><span id="_CPPv2N12IInputSensor13getExtrinsicsEP16CameraExtrinsics"></span><span id="IInputSensor::getExtrinsics__CameraExtrinsicsP"></span><span class="target" id="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getExtrinsics</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="structCameraExtrinsics.html#_CPPv416CameraExtrinsics" title="CameraExtrinsics"><span class="n"><span class="pre">CameraExtrinsics</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">camera_extrinsics</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor13getExtrinsicsEP16CameraExtrinsics" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13readNextFrameEPtPtPtPs">
+<span id="_CPPv3N12IInputSensor13readNextFrameEPtPtPtPs"></span><span id="_CPPv2N12IInputSensor13readNextFrameEPtPtPtPs"></span><span id="IInputSensor::readNextFrame__unsigned-shortP.unsigned-shortP.unsigned-shortP.shortP"></span><span class="target" id="classIInputSensor_1ab47562f089684adfab23405959af4b72"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readNextFrame</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">depth_frame</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">ab_frame</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">conf_frame</span></span>, <span class="kt"><span class="pre">short</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">xyz_frame</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor13readNextFrameEPtPtPtPs" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor17getFrameTimestampEPN6rclcpp4TimeE">
+<span id="_CPPv3N12IInputSensor17getFrameTimestampEPN6rclcpp4TimeE"></span><span id="_CPPv2N12IInputSensor17getFrameTimestampEPN6rclcpp4TimeE"></span><span id="IInputSensor::getFrameTimestamp__rclcpp::TimeP"></span><span class="target" id="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFrameTimestamp</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">timestamp</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor17getFrameTimestampEPN6rclcpp4TimeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor11closeSensorEv">
+<span id="_CPPv3N12IInputSensor11closeSensorEv"></span><span id="_CPPv2N12IInputSensor11closeSensorEv"></span><span id="IInputSensor::closeSensor"></span><span class="target" id="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">closeSensor</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor11closeSensorEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor22setConfidenceThresholdEi">
+<span id="_CPPv3N12IInputSensor22setConfidenceThresholdEi"></span><span id="_CPPv2N12IInputSensor22setConfidenceThresholdEi"></span><span id="IInputSensor::setConfidenceThreshold__i"></span><span class="target" id="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setConfidenceThreshold</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threshold</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor22setConfidenceThresholdEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor26setABinvalidationThresholdEi">
+<span id="_CPPv3N12IInputSensor26setABinvalidationThresholdEi"></span><span id="_CPPv2N12IInputSensor26setABinvalidationThresholdEi"></span><span id="IInputSensor::setABinvalidationThreshold__i"></span><span class="target" id="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setABinvalidationThreshold</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threshold</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor26setABinvalidationThresholdEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor18setJBLFFilterStateEb">
+<span id="_CPPv3N12IInputSensor18setJBLFFilterStateEb"></span><span id="_CPPv2N12IInputSensor18setJBLFFilterStateEb"></span><span id="IInputSensor::setJBLFFilterState__b"></span><span class="target" id="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setJBLFFilterState</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">jblf_filter_state</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor18setJBLFFilterStateEb" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor17setJBLFFilterSizeEi">
+<span id="_CPPv3N12IInputSensor17setJBLFFilterSizeEi"></span><span id="_CPPv2N12IInputSensor17setJBLFFilterSizeEi"></span><span id="IInputSensor::setJBLFFilterSize__i"></span><span class="target" id="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setJBLFFilterSize</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">jblf_filter_size</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor17setJBLFFilterSizeEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor27setRadialFilterMinThresholdEi">
+<span id="_CPPv3N12IInputSensor27setRadialFilterMinThresholdEi"></span><span id="_CPPv2N12IInputSensor27setRadialFilterMinThresholdEi"></span><span id="IInputSensor::setRadialFilterMinThreshold__i"></span><span class="target" id="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRadialFilterMinThreshold</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">radial_min_threshold</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor27setRadialFilterMinThresholdEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor27setRadialFilterMaxThresholdEi">
+<span id="_CPPv3N12IInputSensor27setRadialFilterMaxThresholdEi"></span><span id="_CPPv2N12IInputSensor27setRadialFilterMaxThresholdEi"></span><span id="IInputSensor::setRadialFilterMaxThreshold__i"></span><span class="target" id="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRadialFilterMaxThreshold</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">radial_max_threshold</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor27setRadialFilterMaxThresholdEi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor8isOpenedEv">
+<span id="_CPPv3N12IInputSensor8isOpenedEv"></span><span id="_CPPv2N12IInputSensor8isOpenedEv"></span><span id="IInputSensor::isOpened"></span><span class="target" id="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isOpened</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor8isOpenedEv" title="Link to this definition"></a><br /></dt>
+<dd><p>function to check whether input is opened </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true if the input sensor opened </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>false if the input sensor is not opened </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13getFrameWidthEv">
+<span id="_CPPv3N12IInputSensor13getFrameWidthEv"></span><span id="_CPPv2N12IInputSensor13getFrameWidthEv"></span><span id="IInputSensor::getFrameWidth"></span><span class="target" id="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFrameWidth</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor13getFrameWidthEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Frame Width object Only integer scaling is supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor14getFrameHeightEv">
+<span id="_CPPv3N12IInputSensor14getFrameHeightEv"></span><span id="_CPPv2N12IInputSensor14getFrameHeightEv"></span><span id="IInputSensor::getFrameHeight"></span><span class="target" id="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFrameHeight</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor14getFrameHeightEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the Frame Height object Only integer scaling is supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13setFrameWidthEi">
+<span id="_CPPv3N12IInputSensor13setFrameWidthEi"></span><span id="_CPPv2N12IInputSensor13setFrameWidthEi"></span><span id="IInputSensor::setFrameWidth__i"></span><span class="target" id="classIInputSensor_1a88051e6af2423784cb24f91005f9553c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFrameWidth</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frm_width</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor13setFrameWidthEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Frame Width object Only integer scaling is supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor14setFrameHeightEi">
+<span id="_CPPv3N12IInputSensor14setFrameHeightEi"></span><span id="_CPPv2N12IInputSensor14setFrameHeightEi"></span><span id="IInputSensor::setFrameHeight__i"></span><span class="target" id="classIInputSensor_1ad0076918a62979bda492139c82f7af87"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFrameHeight</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">frm_height</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor14setFrameHeightEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Sett the Frame Height object Only integer scaling is supported. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor18setProcessingScaleEi">
+<span id="_CPPv3N12IInputSensor18setProcessingScaleEi"></span><span id="_CPPv2N12IInputSensor18setProcessingScaleEi"></span><span id="IInputSensor::setProcessingScale__i"></span><span class="target" id="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setProcessingScale</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">scale_factor</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor18setProcessingScaleEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the Processing Scale object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>scale_factor</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor15getFrameCounterEv">
+<span id="_CPPv3N12IInputSensor15getFrameCounterEv"></span><span id="_CPPv2N12IInputSensor15getFrameCounterEv"></span><span id="IInputSensor::getFrameCounter"></span><span class="target" id="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getFrameCounter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12IInputSensor15getFrameCounterEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the current Frame count value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor17sensor_open_flag_E">
+<span id="_CPPv3N12IInputSensor17sensor_open_flag_E"></span><span id="_CPPv2N12IInputSensor17sensor_open_flag_E"></span><span id="IInputSensor::sensor_open_flag___b"></span><span class="target" id="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sensor_open_flag_</span></span></span><a class="headerlink" href="#_CPPv4N12IInputSensor17sensor_open_flag_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor12frame_width_E">
+<span id="_CPPv3N12IInputSensor12frame_width_E"></span><span id="_CPPv2N12IInputSensor12frame_width_E"></span><span id="IInputSensor::frame_width___i"></span><span class="target" id="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frame_width_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1024</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor12frame_width_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor13frame_height_E">
+<span id="_CPPv3N12IInputSensor13frame_height_E"></span><span id="_CPPv2N12IInputSensor13frame_height_E"></span><span id="IInputSensor::frame_height___i"></span><span class="target" id="classIInputSensor_1a334533c2553a877004494e3f7c28b6db"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frame_height_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1024</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor13frame_height_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor16bytes_per_pixel_E">
+<span id="_CPPv3N12IInputSensor16bytes_per_pixel_E"></span><span id="_CPPv2N12IInputSensor16bytes_per_pixel_E"></span><span id="IInputSensor::bytes_per_pixel___i"></span><span class="target" id="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bytes_per_pixel_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor16bytes_per_pixel_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor19input_scale_factor_E">
+<span id="_CPPv3N12IInputSensor19input_scale_factor_E"></span><span id="_CPPv2N12IInputSensor19input_scale_factor_E"></span><span id="IInputSensor::input_scale_factor___i"></span><span class="target" id="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">input_scale_factor_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">2</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor19input_scale_factor_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12IInputSensor14frame_counter_E">
+<span id="_CPPv3N12IInputSensor14frame_counter_E"></span><span id="_CPPv2N12IInputSensor14frame_counter_E"></span><span id="IInputSensor::frame_counter___unsigned-i"></span><span class="target" id="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">frame_counter_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12IInputSensor14frame_counter_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classcompressed__depth__image__transport_1_1RvlCodec.html" class="btn btn-neutral float-left" title="Class RvlCodec" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classImageProcUtils.html" class="btn btn-neutral float-right" title="Class ImageProcUtils" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_3dtof_adtf31xx&gt; Contributors. License: BSD.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

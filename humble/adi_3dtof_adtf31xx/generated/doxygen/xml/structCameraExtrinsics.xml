@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structCameraExtrinsics" kind="struct" language="C++" prot="public">
+    <compoundname>CameraExtrinsics</compoundname>
+    <includes refid="adi__camera_8h" local="no">adi_camera.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraExtrinsics::rotation_matrix[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>rotation_matrix</name>
+        <qualifiedname>CameraExtrinsics::rotation_matrix</qualifiedname>
+        <briefdescription>
+<para>Camera rotation parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_camera.h" line="44" column="9" bodyfile="include/adi_camera.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraExtrinsics::translation_matrix[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>translation_matrix</name>
+        <qualifiedname>CameraExtrinsics::translation_matrix</qualifiedname>
+        <briefdescription>
+<para>Camera translation matrix : [Tx,Ty,Tz]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_camera.h" line="50" column="9" bodyfile="include/adi_camera.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Extrinsic parameters of the camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_camera.h" line="38" column="1" bodyfile="include/adi_camera.h" bodystart="39" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" prot="public" virt="non-virtual"><scope>CameraExtrinsics</scope><name>rotation_matrix</name></member>
+      <member refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" prot="public" virt="non-virtual"><scope>CameraExtrinsics</scope><name>translation_matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="input__sensor_8h" kind="file" language="C++">
+    <compoundname>input_sensor.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes refid="adi__camera_8h" local="yes">adi_camera.h</includes>
+    <includedby refid="adi__3dtof__adtf31xx_8h" local="yes">include/adi_3dtof_adtf31xx.h</includedby>
+    <includedby refid="input__sensor__adtf31xx_8h" local="yes">include/input_sensor_adtf31xx.h</includedby>
+    <includedby refid="input__sensor__factory_8h" local="yes">include/input_sensor_factory.h</includedby>
+    <includedby refid="input__sensor__file__rosbagbin_8h" local="yes">include/input_sensor_file_rosbagbin.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/input_sensor.h</label>
+        <link refid="input__sensor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_3dtof_adtf31xx.h</label>
+        <link refid="adi__3dtof__adtf31xx_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/input_sensor.h</label>
+        <link refid="input__sensor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/input_sensor_adtf31xx.h</label>
+        <link refid="input__sensor__adtf31xx_8h_source"/>
+      </node>
+      <node id="4">
+        <label>include/input_sensor_factory.h</label>
+        <link refid="input__sensor__factory_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/input_sensor_file_rosbagbin.h</label>
+        <link refid="input__sensor__file__rosbagbin_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classIInputSensor" prot="public">IInputSensor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INPUT_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_camera.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classIInputSensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIInputSensor" kindref="compound">IInputSensor</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sensor_open_flag_;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_width_<sp/>=<sp/>1024;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_height_<sp/>=<sp/>1024;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bytes_per_pixel_<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_scale_factor_<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frame_counter_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openSensor(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>sensor_name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_height,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>config_file_name,<sp/>std::string<sp/>input_sensor_ip)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>configureSensor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_mode)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getIntrinsics(<ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getExtrinsics(<ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNextFrame(</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>depth_frame,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>ab_frame,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>conf_frame,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getFrameTimestamp(rclcpp::Time<sp/>*<sp/>timestamp)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeSensor()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConfidenceThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threshold)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setABinvalidationThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threshold)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setJBLFFilterState(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>jblf_filter_state)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setJBLFFilterSize(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jblf_filter_size)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRadialFilterMinThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radial_min_threshold)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRadialFilterMaxThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radial_max_threshold)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" kindref="member">isOpened</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sensor_open_flag_;<sp/>}</highlight></codeline>
+<codeline lineno="62" refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" kindref="member">getFrameWidth</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame_width_;<sp/>}</highlight></codeline>
+<codeline lineno="68" refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" kindref="member">getFrameHeight</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame_height_;<sp/>}</highlight></codeline>
+<codeline lineno="75" refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" kindref="member">setFrameWidth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frm_width)<sp/>{<sp/>frame_width_<sp/>=<sp/>frm_width;<sp/>}</highlight></codeline>
+<codeline lineno="81" refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" kindref="member">setFrameHeight</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frm_height)<sp/>{<sp/>frame_height_<sp/>=<sp/>frm_height;<sp/>}</highlight></codeline>
+<codeline lineno="88" refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" kindref="member">setProcessingScale</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale_factor)<sp/>{<sp/>input_scale_factor_<sp/>=<sp/>scale_factor;<sp/>}</highlight></codeline>
+<codeline lineno="93" refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" kindref="member">getFrameCounter</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame_counter_;<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/input_sensor.h"/>
+  </compounddef>
+</doxygen>

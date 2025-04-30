@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacecompressed__depth__image__transport" kind="namespace" language="C++">
+    <compoundname>compressed_depth_image_transport</compoundname>
+    <innerclass refid="structcompressed__depth__image__transport_1_1ConfigHeader" prot="public">compressed_depth_image_transport::ConfigHeader</innerclass>
+    <innerclass refid="classcompressed__depth__image__transport_1_1RvlCodec" prot="public">compressed_depth_image_transport::RvlCodec</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>compressionFormat</name>
+        <qualifiedname>compressed_depth_image_transport::compressionFormat</qualifiedname>
+        <enumvalue id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fabdd6eee736e40089c46baf2ade802d07" prot="public">
+          <name>UNDEFINED</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fa8139d98ccd3698b3bfb23c35c55edae2" prot="public">
+          <name>INV_DEPTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/compression_common.h" line="42" column="1" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/compression_common.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/compression_common.h" line="38" column="1"/>
+  </compounddef>
+</doxygen>

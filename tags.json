@@ -3,8 +3,8 @@
     "humble",
     "core"
   ],
-  "humble/adi_iio": [
-    "humble > adi_iio",
+  "humble/adi_3dtof_adtf31xx": [
+    "humble > adi_3dtof_adtf31xx",
     ""
   ],
   "humble/adi_imu": [
@@ -13,6 +13,10 @@
   ],
   "humble/adi_tmcl": [
     "humble > adi_tmcl",
+    ""
+  ],
+  "humble/libaditof": [
+    "humble > libaditof",
     ""
   ]
 }

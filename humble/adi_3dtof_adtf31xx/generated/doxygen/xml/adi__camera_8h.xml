@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="adi__camera_8h" kind="file" language="C++">
+    <compoundname>adi_camera.h</compoundname>
+    <includes local="no">array</includes>
+    <includedby refid="image__proc__utils_8h" local="yes">include/image_proc_utils.h</includedby>
+    <includedby refid="input__sensor_8h" local="yes">include/input_sensor.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adi_camera.h</label>
+        <link refid="adi__camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>array</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/adi_3dtof_adtf31xx.h</label>
+        <link refid="adi__3dtof__adtf31xx_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/adi_camera.h</label>
+        <link refid="adi__camera_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/input_sensor.h</label>
+        <link refid="input__sensor_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/input_sensor_adtf31xx.h</label>
+        <link refid="input__sensor__adtf31xx_8h_source"/>
+      </node>
+      <node id="6">
+        <label>include/input_sensor_factory.h</label>
+        <link refid="input__sensor__factory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/input_sensor_file_rosbagbin.h</label>
+        <link refid="input__sensor__file__rosbagbin_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCameraIntrinsics" prot="public">CameraIntrinsics</innerclass>
+    <innerclass refid="structCameraExtrinsics" prot="public">CameraExtrinsics</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight></codeline>
+<codeline lineno="15" refid="structCameraIntrinsics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23" refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[9];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[8];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structCameraExtrinsics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44" refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[9];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[3];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/adi_camera.h"/>
+  </compounddef>
+</doxygen>

@@ -1,8 +1,0 @@
-BufferCreate
-============
-This is a ROS service definition.
-
-**Source**
-
-.. literalinclude:: ../../../../../../../src/iio_ros2/srv/BufferCreate.srv
-

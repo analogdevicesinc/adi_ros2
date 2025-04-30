@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classIInputSensor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IInputSensor</compoundname>
+    <derivedcompoundref refid="classInputSensorADTF31XX" prot="public" virt="non-virtual">InputSensorADTF31XX</derivedcompoundref>
+    <derivedcompoundref refid="classInputSensorFileRosbagBin" prot="public" virt="non-virtual">InputSensorFileRosbagBin</derivedcompoundref>
+    <includes refid="input__sensor_8h" local="no">input_sensor.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool IInputSensor::sensor_open_flag_</definition>
+        <argsstring></argsstring>
+        <name>sensor_open_flag_</name>
+        <qualifiedname>IInputSensor::sensor_open_flag_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="23" column="8" bodyfile="include/input_sensor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IInputSensor::frame_width_</definition>
+        <argsstring></argsstring>
+        <name>frame_width_</name>
+        <qualifiedname>IInputSensor::frame_width_</qualifiedname>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="24" column="7" bodyfile="include/input_sensor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IInputSensor::frame_height_</definition>
+        <argsstring></argsstring>
+        <name>frame_height_</name>
+        <qualifiedname>IInputSensor::frame_height_</qualifiedname>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="25" column="7" bodyfile="include/input_sensor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IInputSensor::bytes_per_pixel_</definition>
+        <argsstring></argsstring>
+        <name>bytes_per_pixel_</name>
+        <qualifiedname>IInputSensor::bytes_per_pixel_</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="26" column="7" bodyfile="include/input_sensor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int IInputSensor::input_scale_factor_</definition>
+        <argsstring></argsstring>
+        <name>input_scale_factor_</name>
+        <qualifiedname>IInputSensor::input_scale_factor_</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="27" column="7" bodyfile="include/input_sensor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" prot="protected" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int IInputSensor::frame_counter_</definition>
+        <argsstring></argsstring>
+        <name>frame_counter_</name>
+        <qualifiedname>IInputSensor::frame_counter_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="28" column="16" bodyfile="include/input_sensor.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIInputSensor_1abad41c932da326bdc9ba914892080bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::openSensor</definition>
+        <argsstring>(std::string sensor_name, int input_image_width, int input_image_height, std::string config_file_name, std::string input_sensor_ip)=0</argsstring>
+        <name>openSensor</name>
+        <qualifiedname>IInputSensor::openSensor</qualifiedname>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ab4d33cb6b47a0d5d835bc818cd2d98ea">openSensor</reimplementedby>
+        <reimplementedby refid="classInputSensorADTF31XX_1a0300deda7de1740c6cd400cb83aca4e1">openSensor</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>sensor_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_height</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>config_file_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input_sensor_ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="31" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::configureSensor</definition>
+        <argsstring>(int camera_mode)=0</argsstring>
+        <name>configureSensor</name>
+        <qualifiedname>IInputSensor::configureSensor</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1aeebddc079979aa89e23e6c81e50ac92b">configureSensor</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ab9814707e0bb4d632fa365be5cb51a98">configureSensor</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>camera_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="34" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::getIntrinsics</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics)=0</argsstring>
+        <name>getIntrinsics</name>
+        <qualifiedname>IInputSensor::getIntrinsics</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a9c1002e22ea56a7eb22413183c1ff40f">getIntrinsics</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ad9f421d774b9e9c3b1977d83cb96ba95">getIntrinsics</reimplementedby>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="35" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::getExtrinsics</definition>
+        <argsstring>(CameraExtrinsics *camera_extrinsics)=0</argsstring>
+        <name>getExtrinsics</name>
+        <qualifiedname>IInputSensor::getExtrinsics</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a7e74cfc2af7380ad8623b98b86216d55">getExtrinsics</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a67fd4f973a146943d033c75b2802e3cb">getExtrinsics</reimplementedby>
+        <param>
+          <type><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref> *</type>
+          <declname>camera_extrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="36" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1ab47562f089684adfab23405959af4b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IInputSensor::readNextFrame</definition>
+        <argsstring>(unsigned short *depth_frame, unsigned short *ab_frame, unsigned short *conf_frame, short *xyz_frame)=0</argsstring>
+        <name>readNextFrame</name>
+        <qualifiedname>IInputSensor::readNextFrame</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1aad7eba6dd036114a3de198a8a5afd157">readNextFrame</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ac9c86b46fa82ef7cba32cfebf5e700cd">readNextFrame</reimplementedby>
+        <param>
+          <type>unsigned short *</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>ab_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>conf_frame</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="37" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool IInputSensor::getFrameTimestamp</definition>
+        <argsstring>(rclcpp::Time *timestamp)=0</argsstring>
+        <name>getFrameTimestamp</name>
+        <qualifiedname>IInputSensor::getFrameTimestamp</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a2510272b62ba82806b2ec362ae743d3f">getFrameTimestamp</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a173df469dd85d9633041084d67f62fa5">getFrameTimestamp</reimplementedby>
+        <param>
+          <type>rclcpp::Time *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::closeSensor</definition>
+        <argsstring>()=0</argsstring>
+        <name>closeSensor</name>
+        <qualifiedname>IInputSensor::closeSensor</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a872a2338d11694715267414a976cadaf">closeSensor</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ae96ea65bfa684328a878c0e727c56bcc">closeSensor</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="41" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setConfidenceThreshold</definition>
+        <argsstring>(int threshold)=0</argsstring>
+        <name>setConfidenceThreshold</name>
+        <qualifiedname>IInputSensor::setConfidenceThreshold</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a1a0486b4fae912048e5e8f50fd09101d">setConfidenceThreshold</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6">setConfidenceThreshold</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="42" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setABinvalidationThreshold</definition>
+        <argsstring>(int threshold)=0</argsstring>
+        <name>setABinvalidationThreshold</name>
+        <qualifiedname>IInputSensor::setABinvalidationThreshold</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a0a043c8de08ba13ce79a90f36543c0dd">setABinvalidationThreshold</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474">setABinvalidationThreshold</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="43" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setJBLFFilterState</definition>
+        <argsstring>(bool jblf_filter_state)=0</argsstring>
+        <name>setJBLFFilterState</name>
+        <qualifiedname>IInputSensor::setJBLFFilterState</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a8a43f88396e5a74e69bfcdcda5228d94">setJBLFFilterState</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8">setJBLFFilterState</reimplementedby>
+        <param>
+          <type>bool</type>
+          <declname>jblf_filter_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="44" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setJBLFFilterSize</definition>
+        <argsstring>(int jblf_filter_size)=0</argsstring>
+        <name>setJBLFFilterSize</name>
+        <qualifiedname>IInputSensor::setJBLFFilterSize</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a327ce4e7216a131287f1be13380d3bf2">setJBLFFilterSize</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c">setJBLFFilterSize</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>jblf_filter_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="45" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setRadialFilterMinThreshold</definition>
+        <argsstring>(int radial_min_threshold)=0</argsstring>
+        <name>setRadialFilterMinThreshold</name>
+        <qualifiedname>IInputSensor::setRadialFilterMinThreshold</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a1e6692e35f3c5f86d3da713efc2767fa">setRadialFilterMinThreshold</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734">setRadialFilterMinThreshold</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>radial_min_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="46" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IInputSensor::setRadialFilterMaxThreshold</definition>
+        <argsstring>(int radial_max_threshold)=0</argsstring>
+        <name>setRadialFilterMaxThreshold</name>
+        <qualifiedname>IInputSensor::setRadialFilterMaxThreshold</qualifiedname>
+        <reimplementedby refid="classInputSensorADTF31XX_1a56c331a32f51c7be44502c8a85dbd9df">setRadialFilterMaxThreshold</reimplementedby>
+        <reimplementedby refid="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e">setRadialFilterMaxThreshold</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>radial_max_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="47" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool IInputSensor::isOpened</definition>
+        <argsstring>()</argsstring>
+        <name>isOpened</name>
+        <qualifiedname>IInputSensor::isOpened</qualifiedname>
+        <briefdescription>
+<para>function to check whether input is opened </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the input sensor opened </para>
+</simplesect>
+<simplesect kind="return"><para>false if the input sensor is not opened </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="55" column="8" bodyfile="include/input_sensor.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IInputSensor::getFrameWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameWidth</name>
+        <qualifiedname>IInputSensor::getFrameWidth</qualifiedname>
+        <briefdescription>
+<para>Get the Frame Width object Only integer scaling is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="62" column="7" bodyfile="include/input_sensor.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IInputSensor::getFrameHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameHeight</name>
+        <qualifiedname>IInputSensor::getFrameHeight</qualifiedname>
+        <briefdescription>
+<para>Get the Frame Height object Only integer scaling is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="68" column="7" bodyfile="include/input_sensor.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IInputSensor::setFrameWidth</definition>
+        <argsstring>(int frm_width)</argsstring>
+        <name>setFrameWidth</name>
+        <qualifiedname>IInputSensor::setFrameWidth</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>frm_width</declname>
+        </param>
+        <briefdescription>
+<para>Set the Frame Width object Only integer scaling is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="75" column="8" bodyfile="include/input_sensor.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IInputSensor::setFrameHeight</definition>
+        <argsstring>(int frm_height)</argsstring>
+        <name>setFrameHeight</name>
+        <qualifiedname>IInputSensor::setFrameHeight</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>frm_height</declname>
+        </param>
+        <briefdescription>
+<para>Sett the Frame Height object Only integer scaling is supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="81" column="8" bodyfile="include/input_sensor.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void IInputSensor::setProcessingScale</definition>
+        <argsstring>(int scale_factor)</argsstring>
+        <name>setProcessingScale</name>
+        <qualifiedname>IInputSensor::setProcessingScale</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>scale_factor</declname>
+        </param>
+        <briefdescription>
+<para>Set the Processing Scale object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scale_factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="88" column="8" bodyfile="include/input_sensor.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int IInputSensor::getFrameCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameCounter</name>
+        <qualifiedname>IInputSensor::getFrameCounter</qualifiedname>
+        <briefdescription>
+<para>Get the current Frame count value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor.h" line="93" column="7" bodyfile="include/input_sensor.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is input base class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor"/>
+      </node>
+      <node id="2">
+        <label>InputSensorADTF31XX</label>
+        <link refid="classInputSensorADTF31XX"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>InputSensorFileRosbagBin</label>
+        <link refid="classInputSensorFileRosbagBin"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/input_sensor.h" line="20" column="1" bodyfile="include/input_sensor.h" bodystart="21" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>bytes_per_pixel_</name></member>
+      <member refid="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>closeSensor</name></member>
+      <member refid="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>configureSensor</name></member>
+      <member refid="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>frame_counter_</name></member>
+      <member refid="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>frame_height_</name></member>
+      <member refid="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>frame_width_</name></member>
+      <member refid="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>getExtrinsics</name></member>
+      <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>getFrameCounter</name></member>
+      <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>getFrameHeight</name></member>
+      <member refid="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>getFrameTimestamp</name></member>
+      <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>getFrameWidth</name></member>
+      <member refid="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>getIntrinsics</name></member>
+      <member refid="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>input_scale_factor_</name></member>
+      <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>isOpened</name></member>
+      <member refid="classIInputSensor_1abad41c932da326bdc9ba914892080bfa" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>openSensor</name></member>
+      <member refid="classIInputSensor_1ab47562f089684adfab23405959af4b72" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>readNextFrame</name></member>
+      <member refid="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" prot="protected" virt="non-virtual"><scope>IInputSensor</scope><name>sensor_open_flag_</name></member>
+      <member refid="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setABinvalidationThreshold</name></member>
+      <member refid="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setConfidenceThreshold</name></member>
+      <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>setFrameHeight</name></member>
+      <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>setFrameWidth</name></member>
+      <member refid="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setJBLFFilterSize</name></member>
+      <member refid="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setJBLFFilterState</name></member>
+      <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" virt="non-virtual"><scope>IInputSensor</scope><name>setProcessingScale</name></member>
+      <member refid="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setRadialFilterMaxThreshold</name></member>
+      <member refid="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4" prot="public" virt="pure-virtual"><scope>IInputSensor</scope><name>setRadialFilterMinThreshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

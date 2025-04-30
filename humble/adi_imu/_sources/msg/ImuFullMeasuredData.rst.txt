@@ -1,0 +1,8 @@
+ImuFullMeasuredData
+===================
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ImuFullMeasuredData.msg
+

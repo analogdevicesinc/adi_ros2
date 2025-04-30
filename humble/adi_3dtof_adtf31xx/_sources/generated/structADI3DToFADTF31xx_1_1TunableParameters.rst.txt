@@ -1,0 +1,23 @@
+.. _exhale_struct_structADI3DToFADTF31xx_1_1TunableParameters:
+
+Struct ADI3DToFADTF31xx::TunableParameters
+==========================================
+
+- Defined in :ref:`file_include_adi_3dtof_adtf31xx.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classADI3DToFADTF31xx`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ADI3DToFADTF31xx::TunableParameters
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

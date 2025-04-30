@@ -5,22 +5,18 @@ adi_imu
 
 Publisher for ADI IMUs
 
-* Links
 
-  * `Repository <https://github.com/analogdevicesinc/imu_ros2>`_
 
-  * `Website <https://analogdevicesinc.github.io/imu_ros2/>`_
-
-  * `Bugtracker <https://github.com/analogdevicesinc/imu_ros2/issues>`_
 .. toctree::
    :maxdepth: 2
 
+   Links <__links>
 
    C++ API <generated/index>
-   Message Definitions <interfaces/message_definitions>
+   Message Definitions <__message_definitions>
 
 
-   Standard Documents <standards>
+   Standard Documents <__standards>
 
 .. include:: __readme_include.rst
 

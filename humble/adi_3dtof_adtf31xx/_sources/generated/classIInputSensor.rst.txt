@@ -1,0 +1,27 @@
+.. _exhale_class_classIInputSensor:
+
+Class IInputSensor
+==================
+
+- Defined in :ref:`file_include_input_sensor.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public InputSensorADTF31XX`` (:ref:`exhale_class_classInputSensorADTF31XX`)
+- ``public InputSensorFileRosbagBin`` (:ref:`exhale_class_classInputSensorFileRosbagBin`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IInputSensor
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

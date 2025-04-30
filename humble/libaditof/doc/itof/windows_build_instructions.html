@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windows Build Instructions &mdash; libaditof 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="NXP Build Instructions" href="nxp_build_instructions.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            libaditof
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/libaditof">Rosindex</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/analogdevicesinc/libaditof">Website</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../__README.html#analog-devices-3d-tof-software-suite">Analog Devices 3D ToF software suite</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#supported-host-platforms">Supported Host Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#supported-embedded-platforms">Supported Embedded Platforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#sdk-documentation">SDK Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#sdk-examples">SDK Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../__README.html#directory-structure">Directory Structure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../user_docs.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../code-formatting.html">Code formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html">3D Time of Flight : doc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sdcard_burn.html">Writing the SD card image onto the SD card</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">itof/</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="linux_build_instructions.html">Linux Build Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxp_build_instructions.html">NXP Build Instructions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Windows Build Instructions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">libaditof</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../user_docs.html">Documentation</a></li>
+          <li class="breadcrumb-item"><a href="index.html">itof/</a></li>
+      <li class="breadcrumb-item active">Windows Build Instructions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/doc/itof/windows_build_instructions.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="windows-build-instructions">
+<h1>Windows Build Instructions<a class="headerlink" href="#windows-build-instructions" title="Link to this heading"></a></h1>
+<section id="building-libaditof">
+<h2>Building libaditof<a class="headerlink" href="#building-libaditof" title="Link to this heading"></a></h2>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Install MS Visual Studio 16 2019</p></li>
+<li><p>Install MS .NET Framework 4.5</p></li>
+<li><p>CMake</p></li>
+<li><p>Glog v0.6.0</p></li>
+<li><p>Libwebsockets v3.1</p></li>
+<li><p>Protocol Buffers v3.9.0</p></li>
+</ul>
+<p>Windows installer can be downloaded from: https://cmake.org/download/</p>
+<details>
+  <summary>Build and Install Dependencies manually (OPTIONAL) [Click]</summary>
+<ul class="simple">
+<li><p>Glog:</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone --branch v0.6.0 --depth 1 https://github.com/google/glog</span>
+<span class="go">cd glog</span>
+<span class="go">mkdir build_0_6_0 &amp;&amp; cd build_0_6_0</span>
+<span class="go">cmake -DWITH_GFLAGS=off -DCMAKE_INSTALL_PREFIX=./local_path/glog -G &quot;Visual Studio 16 2019&quot; ..</span>
+<span class="go">cmake --build . --target install --config Debug</span>
+<span class="go">cmake --build . --target install --config Release</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Libwebsockets (OPTIONAL, only if not using submodules):</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone --branch v3.1-stable --depth 1 https://github.com/warmcat/libwebsockets</span>
+<span class="go">cd libwebsockets</span>
+<span class="go">mkdir build_3_1 &amp;&amp; cd build_3_1</span>
+<span class="go">cmake -DLWS_WITH_SSL=OFF -DCMAKE_INSTALL_PREFIX=./local_path/websockets -G &quot;Visual Studio 16 2019&quot; ..</span>
+<span class="go">cmake --build . --target install --config Debug</span>
+<span class="go">cmake --build . --target install --config Release</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Protobuf (OPTIONAL, only if not using submodules):</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone --branch v3.9.0 --depth 1 https://github.com/protocolbuffers/protobuf</span>
+<span class="go">cd protobuf</span>
+<span class="go">mkdir build_3_9_0 &amp;&amp; cd build_3_9_0</span>
+<span class="go">cmake -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_MSVC_STATIC_RUNTIME=OFF -DCMAKE_INSTALL_PREFIX=./local_path/protobuf -G &quot;Visual Studio 16 2019&quot; ../cmake</span>
+<span class="go">cmake --build . --target install --config Debug</span>
+<span class="go">cmake --build . --target install --config Release</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If you do not use the submodules and have installed the dependencied (Glog, Protobuf, Libwebsockets) manually, make sure to add the install directories of Glog, Libwebsockets and Protobuf to the CMAKE_PREFIX_PATH directory of your system.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">CMAKE_PREFIX_PATH=&quot;C:\projects\ToF\deps\glog\build_0_6_0\local_path\glog;C:\projects\ToF\deps\protobuf\build_3_9_0\local_path\protobuf;C:\projects\ToF\deps\libwebsockets\build_3_1\local_path\websockets&quot;</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="download-and-build-libaditof">
+<h3>Download and build libaditof<a class="headerlink" href="#download-and-build-libaditof" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Follow below steps to download the SDK, generate MS Visual Studio project and build it directly from command line</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone --branch v5.0.0 https://github.com/analogdevicesinc/libaditof</span>
+<span class="go">cd libaditof</span>
+<span class="go">git submodule update --init</span>
+<span class="go">mkdir build</span>
+<span class="go">cd build</span>
+<span class="go">cmake -G &quot;Visual Studio 16 2019&quot; ..</span>
+<span class="go">cmake --build . --config Release</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="building-the-sdk-in-visual-studio-using-the-script">
+<h2>Building the SDK in Visual Studio using the script<a class="headerlink" href="#building-the-sdk-in-visual-studio-using-the-script" title="Link to this heading"></a></h2>
+<section id="pre-requisites">
+<h3>Pre-requisites<a class="headerlink" href="#pre-requisites" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
+</section>
+<section id="steps-to-build-the-sdk">
+<h3>Steps to build the SDK<a class="headerlink" href="#steps-to-build-the-sdk" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Run the script located in: ‘ToF\scripts\windows’ with the suitable configuration parameters. <br>
+The following example runs the script with generator <strong>Visual Studio 16 2019</strong> and configuration <strong>Release</strong>. The sdk will be built in folder: <strong>current_script_path\build</strong> and the dependencies will be installed in folder: <strong>current_script_path\deps\installed</strong>.
+Use parameter <em>-h</em> or <em>–help</em> for more information regarding the parameters.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span>\<span class="n">setup_project</span><span class="o">.</span><span class="n">bat</span> <span class="o">-</span><span class="n">g</span> <span class="s2">&quot;Visual Studio 16 2019&quot;</span> <span class="o">-</span><span class="n">c</span> <span class="n">Release</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Open ‘adi_tof_project.sln’ generated in <strong>current_script_path\build</strong> in MS Visual Studio.</p></li>
+<li><p>Select the configuration to match the configuration used in the script. (e.g.,<strong>Release</strong>) for build.
+<img alt="Display Image" src="../../_images/configuration_VS.PNG" /></p></li>
+<li><p>The sdk Dynamic-link library (aditof.dll) is created in: <strong>current_script_path\build\sdk\Release</strong>.</p></li>
+<li><p>Build the application.
+<img alt="Display Image" src="../../_images/build_VS.PNG" /></p></li>
+</ul>
+</section>
+</section>
+<section id="generate-doxygen-documentation">
+<h2>Generate doxygen documentation<a class="headerlink" href="#generate-doxygen-documentation" title="Link to this heading"></a></h2>
+<p>Requirements:</p>
+<ul class="simple">
+<li><p>Doxygen</p></li>
+<li><p>Graphviz</p></li>
+</ul>
+<p>In order to generate the doxygen documentation you must compile the sdk in the following way:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cmake -DCMAKE_PREFIX_PATH=&quot;C:\projects\ToF\deps\glog\build_0_6_0\local_path\glog;C:\projects\ToF\deps\protobuf\build_3_9_0\local_path\protobuf;C:\projects\ToF\deps\libwebsockets\build_3_1\local_path\websockets;C:\projects\ToF\opencv\build&quot; -G &quot;Visual Studio 16 2019&quot; -DOPENSSL_INCLUDE_DIRS=&quot;C:\OpenSSL-Win64\include&quot; -DWITH_DOC=on ..</span>
+<span class="go">cmake --build . --target doc -j 4</span>
+</pre></div>
+</div>
+<p>After compilation, the documentation can be found at this path:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">build\doc\doxygen_doc\html\index.html</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="nxp_build_instructions.html" class="btn btn-neutral float-left" title="NXP Build Instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;libaditof&gt; Contributors. License: MIT.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

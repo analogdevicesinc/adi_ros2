@@ -1,0 +1,17 @@
+.. _exhale_class_classcompressed__depth__image__transport_1_1RvlCodec:
+
+Class RvlCodec
+==============
+
+- Defined in :ref:`file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: compressed_depth_image_transport::RvlCodec
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

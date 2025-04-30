@@ -1,0 +1,10 @@
+
+Links
+=====
+
+.. toctree::
+
+   Rosindex <https://index.ros.org/p/adi_imu>
+   Repository <https://github.com/analogdevicesinc/imu_ros2>
+   Website <https://analogdevicesinc.github.io/imu_ros2/>
+   Bugtracker <https://github.com/analogdevicesinc/imu_ros2/issues>

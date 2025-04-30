@@ -1,0 +1,17 @@
+.. _exhale_struct_structCameraIntrinsics:
+
+Struct CameraIntrinsics
+=======================
+
+- Defined in :ref:`file_include_adi_camera.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: CameraIntrinsics
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

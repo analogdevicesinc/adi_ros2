@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInputSensorADTF31XX" kind="class" language="C++" prot="public">
+    <compoundname>InputSensorADTF31XX</compoundname>
+    <basecompoundref refid="classIInputSensor" prot="public" virt="non-virtual">IInputSensor</basecompoundref>
+    <includes refid="input__sensor__adtf31xx_8h" local="no">input_sensor_adtf31xx.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInputSensorADTF31XX_1ac8fdd73bdb905d47e8b5eb8cbeaa5cdf" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; aditof::Camera &gt;</type>
+        <definition>std::shared_ptr&lt;aditof::Camera&gt; InputSensorADTF31XX::camera_</definition>
+        <argsstring></argsstring>
+        <name>camera_</name>
+        <qualifiedname>InputSensorADTF31XX::camera_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="43" column="19" bodyfile="include/input_sensor_adtf31xx.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorADTF31XX_1ac078f28129c3e522d8d961d34196a12d" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref></type>
+        <definition>CameraIntrinsics InputSensorADTF31XX::camera_intrinsics_</definition>
+        <argsstring></argsstring>
+        <name>camera_intrinsics_</name>
+        <qualifiedname>InputSensorADTF31XX::camera_intrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="44" column="20" bodyfile="include/input_sensor_adtf31xx.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a0300deda7de1740c6cd400cb83aca4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::openSensor</definition>
+        <argsstring>(std::string, int input_image_width, int input_image_height, std::string config_file_name, std::string input_sensor_ip) override</argsstring>
+        <name>openSensor</name>
+        <qualifiedname>InputSensorADTF31XX::openSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1abad41c932da326bdc9ba914892080bfa">openSensor</reimplements>
+        <param>
+          <type>std::string</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_height</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>config_file_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input_sensor_ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1aeebddc079979aa89e23e6c81e50ac92b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::configureSensor</definition>
+        <argsstring>(int camera_mode) override</argsstring>
+        <name>configureSensor</name>
+        <qualifiedname>InputSensorADTF31XX::configureSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4">configureSensor</reimplements>
+        <param>
+          <type>int</type>
+          <declname>camera_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="27" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a9c1002e22ea56a7eb22413183c1ff40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::getIntrinsics</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics) override</argsstring>
+        <name>getIntrinsics</name>
+        <qualifiedname>InputSensorADTF31XX::getIntrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c">getIntrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="28" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a7e74cfc2af7380ad8623b98b86216d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::getExtrinsics</definition>
+        <argsstring>(CameraExtrinsics *camera_extrinsics) override</argsstring>
+        <name>getExtrinsics</name>
+        <qualifiedname>InputSensorADTF31XX::getExtrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33">getExtrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref> *</type>
+          <declname>camera_extrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1aad7eba6dd036114a3de198a8a5afd157" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorADTF31XX::readNextFrame</definition>
+        <argsstring>(unsigned short *depth_frame, unsigned short *ab_frame, unsigned short *conf_frame, short *xyz_frame) override</argsstring>
+        <name>readNextFrame</name>
+        <qualifiedname>InputSensorADTF31XX::readNextFrame</qualifiedname>
+        <reimplements refid="classIInputSensor_1ab47562f089684adfab23405959af4b72">readNextFrame</reimplements>
+        <param>
+          <type>unsigned short *</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>ab_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>conf_frame</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a2510272b62ba82806b2ec362ae743d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorADTF31XX::getFrameTimestamp</definition>
+        <argsstring>(rclcpp::Time *timestamp) override</argsstring>
+        <name>getFrameTimestamp</name>
+        <qualifiedname>InputSensorADTF31XX::getFrameTimestamp</qualifiedname>
+        <reimplements refid="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b">getFrameTimestamp</reimplements>
+        <param>
+          <type>rclcpp::Time *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a872a2338d11694715267414a976cadaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::closeSensor</definition>
+        <argsstring>() override</argsstring>
+        <name>closeSensor</name>
+        <qualifiedname>InputSensorADTF31XX::closeSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688">closeSensor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a0a043c8de08ba13ce79a90f36543c0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setABinvalidationThreshold</definition>
+        <argsstring>(int threshold) override</argsstring>
+        <name>setABinvalidationThreshold</name>
+        <qualifiedname>InputSensorADTF31XX::setABinvalidationThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52">setABinvalidationThreshold</reimplements>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a1a0486b4fae912048e5e8f50fd09101d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setConfidenceThreshold</definition>
+        <argsstring>(int threshold) override</argsstring>
+        <name>setConfidenceThreshold</name>
+        <qualifiedname>InputSensorADTF31XX::setConfidenceThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287">setConfidenceThreshold</reimplements>
+        <param>
+          <type>int</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a8a43f88396e5a74e69bfcdcda5228d94" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setJBLFFilterState</definition>
+        <argsstring>(bool enable_jblf_filter) override</argsstring>
+        <name>setJBLFFilterState</name>
+        <qualifiedname>InputSensorADTF31XX::setJBLFFilterState</qualifiedname>
+        <reimplements refid="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd">setJBLFFilterState</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>enable_jblf_filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a327ce4e7216a131287f1be13380d3bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setJBLFFilterSize</definition>
+        <argsstring>(int jbfl_filter_size) override</argsstring>
+        <name>setJBLFFilterSize</name>
+        <qualifiedname>InputSensorADTF31XX::setJBLFFilterSize</qualifiedname>
+        <reimplements refid="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1">setJBLFFilterSize</reimplements>
+        <param>
+          <type>int</type>
+          <declname>jbfl_filter_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a1e6692e35f3c5f86d3da713efc2767fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setRadialFilterMinThreshold</definition>
+        <argsstring>(int radial_min_threshold) override</argsstring>
+        <name>setRadialFilterMinThreshold</name>
+        <qualifiedname>InputSensorADTF31XX::setRadialFilterMinThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4">setRadialFilterMinThreshold</reimplements>
+        <param>
+          <type>int</type>
+          <declname>radial_min_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorADTF31XX_1a56c331a32f51c7be44502c8a85dbd9df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorADTF31XX::setRadialFilterMaxThreshold</definition>
+        <argsstring>(int radial_max_threshold) override</argsstring>
+        <name>setRadialFilterMaxThreshold</name>
+        <qualifiedname>InputSensorADTF31XX::setRadialFilterMaxThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77">setRadialFilterMaxThreshold</reimplements>
+        <param>
+          <type>int</type>
+          <declname>radial_max_threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_adtf31xx.h" line="40" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is input class for sensor as camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor"/>
+      </node>
+      <node id="1">
+        <label>InputSensorADTF31XX</label>
+        <link refid="classInputSensorADTF31XX"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor"/>
+      </node>
+      <node id="1">
+        <label>InputSensorADTF31XX</label>
+        <link refid="classInputSensorADTF31XX"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/input_sensor_adtf31xx.h" line="21" column="1" bodyfile="include/input_sensor_adtf31xx.h" bodystart="22" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>bytes_per_pixel_</name></member>
+      <member refid="classInputSensorADTF31XX_1ac8fdd73bdb905d47e8b5eb8cbeaa5cdf" prot="private" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>camera_</name></member>
+      <member refid="classInputSensorADTF31XX_1ac078f28129c3e522d8d961d34196a12d" prot="private" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>camera_intrinsics_</name></member>
+      <member refid="classInputSensorADTF31XX_1a872a2338d11694715267414a976cadaf" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>closeSensor</name></member>
+      <member refid="classInputSensorADTF31XX_1aeebddc079979aa89e23e6c81e50ac92b" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>configureSensor</name></member>
+      <member refid="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>frame_counter_</name></member>
+      <member refid="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>frame_height_</name></member>
+      <member refid="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>frame_width_</name></member>
+      <member refid="classInputSensorADTF31XX_1a7e74cfc2af7380ad8623b98b86216d55" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>getExtrinsics</name></member>
+      <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>getFrameCounter</name></member>
+      <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>getFrameHeight</name></member>
+      <member refid="classInputSensorADTF31XX_1a2510272b62ba82806b2ec362ae743d3f" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>getFrameTimestamp</name></member>
+      <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>getFrameWidth</name></member>
+      <member refid="classInputSensorADTF31XX_1a9c1002e22ea56a7eb22413183c1ff40f" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>getIntrinsics</name></member>
+      <member refid="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>input_scale_factor_</name></member>
+      <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>isOpened</name></member>
+      <member refid="classInputSensorADTF31XX_1a0300deda7de1740c6cd400cb83aca4e1" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>openSensor</name></member>
+      <member refid="classInputSensorADTF31XX_1aad7eba6dd036114a3de198a8a5afd157" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>readNextFrame</name></member>
+      <member refid="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" prot="protected" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>sensor_open_flag_</name></member>
+      <member refid="classInputSensorADTF31XX_1a0a043c8de08ba13ce79a90f36543c0dd" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setABinvalidationThreshold</name></member>
+      <member refid="classInputSensorADTF31XX_1a1a0486b4fae912048e5e8f50fd09101d" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setConfidenceThreshold</name></member>
+      <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>setFrameHeight</name></member>
+      <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>setFrameWidth</name></member>
+      <member refid="classInputSensorADTF31XX_1a327ce4e7216a131287f1be13380d3bf2" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setJBLFFilterSize</name></member>
+      <member refid="classInputSensorADTF31XX_1a8a43f88396e5a74e69bfcdcda5228d94" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setJBLFFilterState</name></member>
+      <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" virt="non-virtual"><scope>InputSensorADTF31XX</scope><name>setProcessingScale</name></member>
+      <member refid="classInputSensorADTF31XX_1a56c331a32f51c7be44502c8a85dbd9df" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setRadialFilterMaxThreshold</name></member>
+      <member refid="classInputSensorADTF31XX_1a1e6692e35f3c5f86d3da713efc2767fa" prot="public" virt="virtual"><scope>InputSensorADTF31XX</scope><name>setRadialFilterMinThreshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

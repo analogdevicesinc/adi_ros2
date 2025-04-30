@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enum compressionFormat &mdash; adi_3dtof_adtf31xx 2.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=20623aea"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Define CLOSE_FUNCTION_PROFILE" href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html" />
+    <link rel="prev" title="Class InputSensorFileRosbagBin" href="classInputSensorFileRosbagBin.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_3dtof_adtf31xx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_adtf31xx">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxOutputInfo.html">Class ADI3DToFADTF31xxOutputInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classIInputSensor.html">Class IInputSensor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImageProcUtils.html">Class ImageProcUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFactory.html">Class InputSensorFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#enums">Enums</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Enum compressionFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_camera.h.html">File adi_camera.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_image_proc_utils.h.html">File image_proc_utils.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor.h.html">File input_sensor.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_module_profile.h.html">File module_profile.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#overview">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#output-images">Output Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#parameter-tuning">Parameter Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#limitations">Limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#appendix-1">Appendix 1 :</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-run-the-node-on-a-host-machine-in-file-io-mode">Steps to run the Node on a Host machine in File-IO mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-convert-rosbag-file-to-bin-file">Steps to convert rosbag file to bin file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_3dtof_adtf31xx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Enum compressionFormat</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="enum-compressionformat">
+<span id="exhale-enum-compression-common-8h-1abf0e52bf009aab3e2dd271e9b817ef3f"></span><h1>Enum compressionFormat<a class="headerlink" href="#enum-compressionformat" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html#file-include-ros-perception-image-transport-plugins-compressed-depth-image-transport-compression-common-h"><span class="std std-ref">File compression_common.h</span></a></p></li>
+</ul>
+<section id="enum-documentation">
+<h2>Enum Documentation<a class="headerlink" href="#enum-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv4N32compressed_depth_image_transport17compressionFormatE">
+<span id="_CPPv3N32compressed_depth_image_transport17compressionFormatE"></span><span id="_CPPv2N32compressed_depth_image_transport17compressionFormatE"></span><span class="target" id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">compressed_depth_image_transport</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">compressionFormat</span></span></span><a class="headerlink" href="#_CPPv4N32compressed_depth_image_transport17compressionFormatE" title="Link to this definition"></a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32compressed_depth_image_transport17compressionFormat9UNDEFINEDE">
+<span id="_CPPv3N32compressed_depth_image_transport17compressionFormat9UNDEFINEDE"></span><span id="_CPPv2N32compressed_depth_image_transport17compressionFormat9UNDEFINEDE"></span><span class="target" id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fabdd6eee736e40089c46baf2ade802d07"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">UNDEFINED</span></span></span><a class="headerlink" href="#_CPPv4N32compressed_depth_image_transport17compressionFormat9UNDEFINEDE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N32compressed_depth_image_transport17compressionFormat9INV_DEPTHE">
+<span id="_CPPv3N32compressed_depth_image_transport17compressionFormat9INV_DEPTHE"></span><span id="_CPPv2N32compressed_depth_image_transport17compressionFormat9INV_DEPTHE"></span><span class="target" id="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fa8139d98ccd3698b3bfb23c35c55edae2"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">INV_DEPTH</span></span></span><a class="headerlink" href="#_CPPv4N32compressed_depth_image_transport17compressionFormat9INV_DEPTHE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classInputSensorFileRosbagBin.html" class="btn btn-neutral float-left" title="Class InputSensorFileRosbagBin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html" class="btn btn-neutral float-right" title="Define CLOSE_FUNCTION_PROFILE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_3dtof_adtf31xx&gt; Contributors. License: BSD.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

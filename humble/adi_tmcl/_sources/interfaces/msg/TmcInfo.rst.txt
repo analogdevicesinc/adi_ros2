@@ -1,8 +1,0 @@
-TmcInfo
-=======
-This is a ROS message definition.
-
-**Source**
-
-.. literalinclude:: ../../../../../../../src/tmcl_ros2/msg/TmcInfo.msg
-

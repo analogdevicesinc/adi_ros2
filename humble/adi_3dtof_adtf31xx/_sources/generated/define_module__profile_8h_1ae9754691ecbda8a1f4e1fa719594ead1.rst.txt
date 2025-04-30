@@ -1,0 +1,14 @@
+.. _exhale_define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1:
+
+Define CLOSE_FUNCTION_PROFILE
+=============================
+
+- Defined in :ref:`file_include_module_profile.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: CLOSE_FUNCTION_PROFILE
+   :project: adi_3dtof_adtf31xx Doxygen Project

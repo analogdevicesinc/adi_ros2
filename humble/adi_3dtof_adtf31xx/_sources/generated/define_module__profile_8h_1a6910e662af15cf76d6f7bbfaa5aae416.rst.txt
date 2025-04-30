@@ -1,0 +1,14 @@
+.. _exhale_define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416:
+
+Define INIT_FUNCTION_PROFILE
+============================
+
+- Defined in :ref:`file_include_module_profile.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: INIT_FUNCTION_PROFILE
+   :project: adi_3dtof_adtf31xx Doxygen Project

@@ -1,0 +1,160 @@
+
+.. _program_listing_file_include_adi_3dtof_adtf31xx_frame_info.h:
+
+Program Listing for File adi_3dtof_adtf31xx_frame_info.h
+========================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_3dtof_adtf31xx_frame_info.h>` (``include/adi_3dtof_adtf31xx_frame_info.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /******************************************************************************
+   Copyright (c), 2023 - Analog Devices Inc. All Rights Reserved.
+   This software is PROPRIETARY & CONFIDENTIAL to Analog Devices, Inc.
+   and its licensors.
+   ******************************************************************************/
+   #ifndef ADI_3DTOF_ADTF31XX_FRAME_INFO_H
+   #define ADI_3DTOF_ADTF31XX_FRAME_INFO_H
+   
+   #include <cstring>
+   #include <rclcpp/rclcpp.hpp>
+   class ADI3DToFADTF31xxFrameInfo
+   {
+   public:
+     ADI3DToFADTF31xxFrameInfo(int image_width, int image_height)
+     {
+       // Create the node.
+       depth_frame_ = nullptr;
+       ab_frame_ = nullptr;
+       xyz_frame_ = nullptr;
+       conf_frame_ = nullptr;
+       compressed_depth_frame_ = nullptr;
+       compressed_ab_frame_ = nullptr;
+       compressed_conf_frame_ = nullptr;
+   
+       image_width_ = image_width;
+       image_height_ = image_height;
+   
+       depth_frame_ = new unsigned short[image_width * image_height];
+       ab_frame_ = new unsigned short[image_width * image_height];
+       xyz_frame_ = new short[image_width * image_height * 3];
+       conf_frame_ = new unsigned short[image_width * image_height];
+   
+       // Worst case, RVL compression can take ~1.5x the input data.
+       compressed_depth_frame_ = new unsigned char[3 * image_width * image_height];
+       compressed_ab_frame_ = new unsigned char[3 * image_width * image_height];
+       compressed_conf_frame_ = new unsigned char[3 * image_width * image_height];
+       compressed_depth_frame_size_ = 0;
+       compressed_ab_frame_size_ = 0;
+       compressed_conf_frame_size_ = 0;
+       frame_timestamp_ = rclcpp::Clock{}.now();
+     }
+   
+     ~ADI3DToFADTF31xxFrameInfo()
+     {
+       if (depth_frame_ != nullptr) {
+         delete[] depth_frame_;
+       }
+       if (ab_frame_ != nullptr) {
+         delete[] ab_frame_;
+       }
+       if (xyz_frame_ != nullptr) {
+         delete[] xyz_frame_;
+       }
+       if (conf_frame_ != nullptr) {
+         delete[] conf_frame_;
+       }
+       if (compressed_depth_frame_ != nullptr) {
+         delete[] compressed_depth_frame_;
+       }
+       if (compressed_ab_frame_ != nullptr) {
+         delete[] compressed_ab_frame_;
+       }
+       if (compressed_conf_frame_ != nullptr) {
+         delete[] compressed_conf_frame_;
+       }
+     }
+   
+     unsigned short * getDepthFrame() const { return depth_frame_; }
+   
+     unsigned short * getABFrame() const { return ab_frame_; }
+   
+     short * getXYZFrame() const { return xyz_frame_; }
+   
+     unsigned short * getConfFrame() const { return conf_frame_; }
+   
+     unsigned char * getCompressedDepthFrame() const { return compressed_depth_frame_; }
+   
+     unsigned char * getCompressedABFrame() const { return compressed_ab_frame_; }
+   
+     unsigned char * getCompressedConfFrame() const { return compressed_conf_frame_; }
+   
+     rclcpp::Time * getFrameTimestampPtr() { return &frame_timestamp_; }
+   
+     rclcpp::Time getFrameTimestamp() const { return frame_timestamp_; }
+   
+     int getCompressedDepthFrameSize() const { return compressed_depth_frame_size_; }
+   
+     int getCompressedABFrameSize() const { return compressed_ab_frame_size_; }
+   
+     int getCompressedConfFrameSize() const { return compressed_conf_frame_size_; }
+   
+     void setCompressedDepthFrameSize(int compressed_depth_frame_size)
+     {
+       compressed_depth_frame_size_ = compressed_depth_frame_size;
+     }
+   
+     void setCompressedABFrameSize(int compressed_ab_frame_size)
+     {
+       compressed_ab_frame_size_ = compressed_ab_frame_size;
+     }
+   
+     void setCompressedConfFrameSize(int compressed_conf_frame_size)
+     {
+       compressed_conf_frame_size_ = compressed_conf_frame_size;
+     }
+   
+     // Assignment operator
+     ADI3DToFADTF31xxFrameInfo & operator=(const ADI3DToFADTF31xxFrameInfo & rhs)
+     {
+       image_width_ = rhs.image_width_;
+       image_height_ = rhs.image_height_;
+       memcpy(depth_frame_, rhs.depth_frame_, sizeof(depth_frame_[0]) * image_width_ * image_height_);
+       memcpy(ab_frame_, rhs.ab_frame_, sizeof(ab_frame_[0]) * image_width_ * image_height_);
+       memcpy(xyz_frame_, rhs.xyz_frame_, sizeof(xyz_frame_[0]) * image_width_ * image_height_ * 3);
+       memcpy(conf_frame_, rhs.conf_frame_, sizeof(conf_frame_[0]) * image_width_ * image_height_);
+       compressed_depth_frame_size_ = rhs.compressed_depth_frame_size_;
+       compressed_ab_frame_size_ = rhs.compressed_ab_frame_size_;
+       memcpy(
+         compressed_depth_frame_, rhs.compressed_depth_frame_,
+         sizeof(compressed_depth_frame_[0]) * compressed_depth_frame_size_);
+       memcpy(
+         compressed_ab_frame_, rhs.compressed_ab_frame_,
+         sizeof(compressed_ab_frame_[0]) * compressed_ab_frame_size_);
+       memcpy(
+         compressed_conf_frame_, rhs.compressed_conf_frame_,
+         sizeof(compressed_conf_frame_[0]) * compressed_conf_frame_size_);
+       frame_timestamp_ = rhs.frame_timestamp_;
+       return *this;
+     }
+   
+   private:
+     unsigned short * depth_frame_;
+   
+     unsigned short * ab_frame_;
+     short * xyz_frame_;
+     unsigned short * conf_frame_;
+     unsigned char * compressed_depth_frame_;
+     unsigned char * compressed_ab_frame_;
+     unsigned char * compressed_conf_frame_;
+     int compressed_depth_frame_size_;
+     int compressed_ab_frame_size_;
+     int compressed_conf_frame_size_;
+     int image_width_;
+     int image_height_;
+     rclcpp::Time frame_timestamp_;
+   };
+   
+   #endif

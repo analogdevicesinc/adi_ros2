@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classADI3DToFADTF31xx" kind="class"><name>ADI3DToFADTF31xx</name>
+    <member refid="classADI3DToFADTF31xx_1a96edc35302c0479f5d3d5e29828f25a7" kind="variable"><name>timer_</name></member>
+    <member refid="classADI3DToFADTF31xx_1aa724dbccafed3ec1c04cd593bdec40e6" kind="variable"><name>input_sensor_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a8c1313710f5e7fa931dde0b5a44293d9" kind="variable"><name>camera_link_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a5a4f1612ceb9661d31155d78547b07ce" kind="variable"><name>input_sensor_mode_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a472abd43f8d5d3caf6cfa3cfd1e50b58" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFADTF31xx_1aafca105bae5ac83d20ee74572ac87934" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a5fd569819f9c3175a4b273f59d160894" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a54854083a94a7cc20d4229c1e6483587" kind="variable"><name>enable_depth_ab_compression_</name></member>
+    <member refid="classADI3DToFADTF31xx_1aa5e2f77b070f2da14c9208db984cf56b" kind="variable"><name>enable_depth_publish_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a3966021863e2632ae0bc03391e6eafa4" kind="variable"><name>enable_ab_publish_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a94056c40505ac4026c7acce1add10817" kind="variable"><name>enable_conf_publish_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ab3a60ddf1dfcd8f583abc41c987d8bdd" kind="variable"><name>enable_xyz_publish_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ac59e58d121e22fb2804d7effb23b617b" kind="variable"><name>ab_threshold_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a1ac7ae6ea9799623d415bca13c76d7c6" kind="variable"><name>confidence_threshold_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a3d549a6312d6be78a7a572c7adb4b601" kind="variable"><name>input_file_name_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a49179e7798f28ed2080fe9e811dc45b6" kind="variable"><name>input_sensor_ip_</name></member>
+    <member refid="classADI3DToFADTF31xx_1adb46781155a3f6bb26f02e19035f878f" kind="variable"><name>encoding_type_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a048495e2e4392b531841f0c0b30ccadc" kind="variable"><name>cam_info_msg_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a660ff802585c72e0f1e7ec7836bc24c9" kind="variable"><name>depth_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ae9b0a051007be5ded280010407ac39c7" kind="variable"><name>ab_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a9081027749aecea6349d1e1214a405fb" kind="variable"><name>conf_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a9e2eb98ec755a84d0417c2d2b97f7e65" kind="variable"><name>compressed_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a171e39514b60f4ae8cc60e3462269581" kind="variable"><name>compressed_ab_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a112c69a9a6270db760fbbf4e4f7042bc" kind="variable"><name>compressed_conf_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a9d321ca3773b560caef8c4b7177b7716" kind="variable"><name>xyz_image_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1aee80f0debeb9968dc221fc8a1ff38122" kind="variable"><name>depth_info_publisher_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a8632f299e3b112efea041eb5638891d2" kind="variable"><name>depth_intrinsics_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a9388785f06566516d11c35c07ed7d318" kind="variable"><name>depth_extrinsics_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ae4457be844bc7e2bc466d4b726e28ffc" kind="variable"><name>depth_extrinsics_external_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a526905a9cbfcc80606f98ff9e9fb87fd" kind="variable"><name>image_proc_utils_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ac34493b864957aed1bf9d9cbf8986723" kind="variable"><name>process_output_thread_abort_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a760cbdfc2e9f93cc05246838f80e72ac" kind="variable"><name>read_input_thread_abort_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ac5c909587e5e72b902bee6494423b3a5" kind="variable"><name>output_thread_mtx_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a4d36f1a49c6952c3586e47c4f2aac692" kind="variable"><name>input_thread_mtx_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a0918e280b69ee72e1f2fff712a76a689" kind="variable"><name>error_in_frame_read_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a037b836a4899fb8f6a766401a1443140" kind="variable"><name>max_input_queue_length_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ad894c34faa174c8b6cd9f52396b5356b" kind="variable"><name>input_frames_queue_</name></member>
+    <member refid="classADI3DToFADTF31xx_1aad6f3675edc7a9103679c1c60d5da4b8" kind="variable"><name>max_debug_queue_length_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a1a6543f7908b9b0c24cffc5c5a80373b" kind="variable"><name>output_node_queue_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a68e3c1e2dfeb79371cd4e4a680e4a586" kind="variable"><name>enable_jblf_filter_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a38a7ce552fa74b151741f945ad84aa40" kind="variable"><name>jblf_filter_size_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a4866e747560a56bde0ffab60d174c6a9" kind="variable"><name>radial_threshold_min_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ad9eb39ae0d5ef0088eba93d9884d54d9" kind="variable"><name>radial_threshold_max_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a77ced8b8d4bcd69f5c7b022a8f6ff9d2" kind="variable"><name>curr_frame_timestamp_</name></member>
+    <member refid="classADI3DToFADTF31xx_1ab1ae76dcfd22e9f0233e2310ca5b69d8" kind="variable"><name>param_subscriber_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a4bc7198d69d62ac20fa9209fd8644b94" kind="variable"><name>callback_handle_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a2cbffbc0c5c582979206839a17dc4ec1" kind="variable"><name>tunable_params_</name></member>
+    <member refid="classADI3DToFADTF31xx_1a4e06f84b67f269a266db462af1db3177" kind="function"><name>ADI3DToFADTF31xx</name></member>
+    <member refid="classADI3DToFADTF31xx_1a572f8676a5c333a79554fa772a914723" kind="function"><name>~ADI3DToFADTF31xx</name></member>
+    <member refid="classADI3DToFADTF31xx_1a2faf6f369ea48966e2f13100673096b7" kind="function"><name>timerCallback</name></member>
+    <member refid="classADI3DToFADTF31xx_1a243cf308a3d463ec32ff826bd3dec33d" kind="function"><name>readNextFrame</name></member>
+    <member refid="classADI3DToFADTF31xx_1ae5a250e7658c3a33f89b1954d988ed5b" kind="function"><name>processOutputAbort</name></member>
+    <member refid="classADI3DToFADTF31xx_1abdb3e810e1c9b055cf59949bf7378752" kind="function"><name>adtf31xxSensorPushOutputNode</name></member>
+    <member refid="classADI3DToFADTF31xx_1a81cef3ff37cf8c94fc727f26d6c2731f" kind="function"><name>processOutput</name></member>
+    <member refid="classADI3DToFADTF31xx_1a784a9e786e29a941537ca7bb3cf28eae" kind="function"><name>readInputAbort</name></member>
+    <member refid="classADI3DToFADTF31xx_1a6366c59b5677127f6d97da7e68d38a96" kind="function"><name>adtf31xxSensorGetNextFrame</name></member>
+    <member refid="classADI3DToFADTF31xx_1ae502c816f8fed4ade2c5c75e8f3e720c" kind="function"><name>readInput</name></member>
+    <member refid="classADI3DToFADTF31xx_1ac3c0aba4574390730e7be442ce6aa621" kind="function"><name>parametersCallback</name></member>
+    <member refid="classADI3DToFADTF31xx_1a348a8a36cf6c06eb57444a5f0892fc0d" kind="function"><name>updateTunableParameters</name></member>
+    <member refid="classADI3DToFADTF31xx_1ae3b5a49c9ca7b25575cdecee51f82a91" kind="function"><name>fillAndPublishCameraInfo</name></member>
+    <member refid="classADI3DToFADTF31xx_1a757672ada0ab20333fb74a6fead879ad" kind="function"><name>publishImageAsRosMsg</name></member>
+    <member refid="classADI3DToFADTF31xx_1a0c60acc307618791fff9f0dbf46914fe" kind="function"><name>publishPointCloud</name></member>
+    <member refid="classADI3DToFADTF31xx_1ab5af5ccf41ab871f2333b7b061599597" kind="function"><name>publishImageAndCameraInfo</name></member>
+    <member refid="classADI3DToFADTF31xx_1a36f6dab1245e90ba92b4fcc94d45ccac" kind="function"><name>publishRVLCompressedImageAsRosMsg</name></member>
+  </compound>
+  <compound refid="classADI3DToFADTF31xxFrameInfo" kind="class"><name>ADI3DToFADTF31xxFrameInfo</name>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a8eb175bc78769a1702bf1670eeacef90" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a5c6530c8cab99072cb01a705c7d6cec6" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a434b0c3ed0bc8506ac2f262e7f458d20" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a230ca42bede5f4ae382fcfab85ba5728" kind="variable"><name>conf_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a0d193b3bb0469bce303a3038222007d8" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1afbd08b5a3310f4c0c234993152c1aecd" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a16159bde29e12e7e093774c00b66a39e" kind="variable"><name>compressed_conf_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a3e34f65399a48785eb7840ce964ab7f1" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a903caede5e5466d795206e2bb9416f29" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1aca7b9b704231eb733afee67fe5fae2b1" kind="variable"><name>compressed_conf_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1afd416a2bd424beccbf65d08704e5e4e2" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a81bad7c8f4a3e990ae3b33bd2f22bf89" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a17f3aa3c9c96dda387c8bab7c734352c" kind="variable"><name>frame_timestamp_</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1ae8279c5be82e30dc96a0ee9841dc550c" kind="function"><name>ADI3DToFADTF31xxFrameInfo</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a6b1988ae3f4f9d503428081d7377d06f" kind="function"><name>~ADI3DToFADTF31xxFrameInfo</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1adb147e66d9df45bf3ff9172fdee683bb" kind="function"><name>getDepthFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1aa9247d1538507270c84626d5c8517fcf" kind="function"><name>getABFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a8cd085423e0f024c760291566b10d6e7" kind="function"><name>getXYZFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a66f49bdd3461bcc36893f7b20fdf0664" kind="function"><name>getConfFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1ae0b2804ead7a30537063fd5eba77809e" kind="function"><name>getCompressedDepthFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a4fc4ea0e0451f456301d5ac3242c009f" kind="function"><name>getCompressedABFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1aa81b98918aff4ca2cde13ecec7dc0f2f" kind="function"><name>getCompressedConfFrame</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a7fc32e322d9c55b6a3b375c6806ff4d6" kind="function"><name>getFrameTimestampPtr</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a4415dad34be15abae881107efc6e08bd" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1ad6a41f39eb4cf4d485a98c10943af81a" kind="function"><name>getCompressedDepthFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1ad8369bc1735d8a6a936b74c2981f3082" kind="function"><name>getCompressedABFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1aa1e75ec47b9bf54883eeb4c2af3f4b96" kind="function"><name>getCompressedConfFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1ab46a8e5b4a9deaa8ac5f14514b591134" kind="function"><name>setCompressedDepthFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a391a3d70f1773f8ba77da00d6a56c9e1" kind="function"><name>setCompressedABFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a9bf79d0b36e38298b92d01f5953fff84" kind="function"><name>setCompressedConfFrameSize</name></member>
+    <member refid="classADI3DToFADTF31xxFrameInfo_1a56ec3a20bb4d71e973b2e65938427e30" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classADI3DToFADTF31xxOutputInfo" kind="class"><name>ADI3DToFADTF31xxOutputInfo</name>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1abba3deb20ca30157a09a7549b95b5c18" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1ab6770598393b0f329219f04a890e8662" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a8c617669b6749243e441818c48c0d272" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1af14c0b4eb1e215df609205bcf63732bd" kind="variable"><name>conf_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1aa60cfcebc82a82178bc2cb9b2789fc41" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a57ad398308f3e9bb83c7387f6efc0f4e" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a9f978c915a2990b2110f09d93bb955c3" kind="variable"><name>compressed_conf_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a3b65daf750503fd9977df067a75f6b6e" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a8d3ce90b5131114fb71981f25992d12a" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a650a832aeac192727caca6dca0a2d4a8" kind="variable"><name>compressed_conf_frame_size_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a8bdcb3e90171bfc80c0cfc5178605f41" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1abe52af0177f704e138a0c7e792dfa340" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a66426d62d214701c0190bff25957024c" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" kind="function"><name>ADI3DToFADTF31xxOutputInfo</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1ac4dd3bfb084e7c61820808b9ce164274" kind="function"><name>~ADI3DToFADTF31xxOutputInfo</name></member>
+    <member refid="classADI3DToFADTF31xxOutputInfo_1a0bb78c6d29e8bd81f34f4ee8dfb1a306" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="structCameraExtrinsics" kind="struct"><name>CameraExtrinsics</name>
+    <member refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kind="variable"><name>rotation_matrix</name></member>
+    <member refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kind="variable"><name>translation_matrix</name></member>
+  </compound>
+  <compound refid="structCameraIntrinsics" kind="struct"><name>CameraIntrinsics</name>
+    <member refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kind="variable"><name>camera_matrix</name></member>
+    <member refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kind="variable"><name>distortion_coeffs</name></member>
+  </compound>
+  <compound refid="structcompressed__depth__image__transport_1_1ConfigHeader" kind="struct"><name>compressed_depth_image_transport::ConfigHeader</name>
+    <member refid="structcompressed__depth__image__transport_1_1ConfigHeader_1a95d0058cf4d68bc6cc1d4371dccc7071" kind="variable"><name>format</name></member>
+    <member refid="structcompressed__depth__image__transport_1_1ConfigHeader_1ae3e45ec2590f1702fcaf5d965a225f34" kind="variable"><name>depthParam</name></member>
+  </compound>
+  <compound refid="classIInputSensor" kind="class"><name>IInputSensor</name>
+    <member refid="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" kind="variable"><name>sensor_open_flag_</name></member>
+    <member refid="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" kind="variable"><name>frame_width_</name></member>
+    <member refid="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" kind="variable"><name>frame_height_</name></member>
+    <member refid="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6" kind="variable"><name>bytes_per_pixel_</name></member>
+    <member refid="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" kind="variable"><name>input_scale_factor_</name></member>
+    <member refid="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" kind="variable"><name>frame_counter_</name></member>
+    <member refid="classIInputSensor_1abad41c932da326bdc9ba914892080bfa" kind="function"><name>openSensor</name></member>
+    <member refid="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4" kind="function"><name>configureSensor</name></member>
+    <member refid="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c" kind="function"><name>getIntrinsics</name></member>
+    <member refid="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33" kind="function"><name>getExtrinsics</name></member>
+    <member refid="classIInputSensor_1ab47562f089684adfab23405959af4b72" kind="function"><name>readNextFrame</name></member>
+    <member refid="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688" kind="function"><name>closeSensor</name></member>
+    <member refid="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287" kind="function"><name>setConfidenceThreshold</name></member>
+    <member refid="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52" kind="function"><name>setABinvalidationThreshold</name></member>
+    <member refid="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd" kind="function"><name>setJBLFFilterState</name></member>
+    <member refid="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1" kind="function"><name>setJBLFFilterSize</name></member>
+    <member refid="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4" kind="function"><name>setRadialFilterMinThreshold</name></member>
+    <member refid="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77" kind="function"><name>setRadialFilterMaxThreshold</name></member>
+    <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" kind="function"><name>isOpened</name></member>
+    <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" kind="function"><name>getFrameWidth</name></member>
+    <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" kind="function"><name>getFrameHeight</name></member>
+    <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" kind="function"><name>setFrameWidth</name></member>
+    <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" kind="function"><name>setFrameHeight</name></member>
+    <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" kind="function"><name>setProcessingScale</name></member>
+    <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" kind="function"><name>getFrameCounter</name></member>
+  </compound>
+  <compound refid="classImageProcUtils" kind="class"><name>ImageProcUtils</name>
+    <member refid="classImageProcUtils_1af45b43d26587ab2144de6faaca0bd9a6" kind="variable"><name>image_width_</name></member>
+    <member refid="classImageProcUtils_1ae2513e53361d31e5d82027f8b5a9bd80" kind="variable"><name>image_height_</name></member>
+    <member refid="classImageProcUtils_1a9cd85e47290b58d6acb2e60899c0557b" kind="variable"><name>range_to_3d_lut_</name></member>
+    <member refid="classImageProcUtils_1a909f8152fa0a6cfe7bdcc9875e4f6699" kind="function"><name>ImageProcUtils</name></member>
+    <member refid="classImageProcUtils_1ac1518ea5ae92d66ac7f20fe398f7f45f" kind="function"><name>ImageProcUtils</name></member>
+    <member refid="classImageProcUtils_1a8cfdf91565b8a25293e952e5b1ec7433" kind="function"><name>~ImageProcUtils</name></member>
+    <member refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kind="function"><name>generateRangeTo3DLUT</name></member>
+    <member refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" kind="function"><name>computePointCloud</name></member>
+  </compound>
+  <compound refid="classInputSensorADTF31XX" kind="class"><name>InputSensorADTF31XX</name>
+    <member refid="classInputSensorADTF31XX_1ac8fdd73bdb905d47e8b5eb8cbeaa5cdf" kind="variable"><name>camera_</name></member>
+    <member refid="classInputSensorADTF31XX_1ac078f28129c3e522d8d961d34196a12d" kind="variable"><name>camera_intrinsics_</name></member>
+    <member refid="classInputSensorADTF31XX_1a0300deda7de1740c6cd400cb83aca4e1" kind="function"><name>openSensor</name></member>
+    <member refid="classInputSensorADTF31XX_1aeebddc079979aa89e23e6c81e50ac92b" kind="function"><name>configureSensor</name></member>
+    <member refid="classInputSensorADTF31XX_1a9c1002e22ea56a7eb22413183c1ff40f" kind="function"><name>getIntrinsics</name></member>
+    <member refid="classInputSensorADTF31XX_1a7e74cfc2af7380ad8623b98b86216d55" kind="function"><name>getExtrinsics</name></member>
+    <member refid="classInputSensorADTF31XX_1aad7eba6dd036114a3de198a8a5afd157" kind="function"><name>readNextFrame</name></member>
+    <member refid="classInputSensorADTF31XX_1a2510272b62ba82806b2ec362ae743d3f" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classInputSensorADTF31XX_1a872a2338d11694715267414a976cadaf" kind="function"><name>closeSensor</name></member>
+    <member refid="classInputSensorADTF31XX_1a0a043c8de08ba13ce79a90f36543c0dd" kind="function"><name>setABinvalidationThreshold</name></member>
+    <member refid="classInputSensorADTF31XX_1a1a0486b4fae912048e5e8f50fd09101d" kind="function"><name>setConfidenceThreshold</name></member>
+    <member refid="classInputSensorADTF31XX_1a8a43f88396e5a74e69bfcdcda5228d94" kind="function"><name>setJBLFFilterState</name></member>
+    <member refid="classInputSensorADTF31XX_1a327ce4e7216a131287f1be13380d3bf2" kind="function"><name>setJBLFFilterSize</name></member>
+    <member refid="classInputSensorADTF31XX_1a1e6692e35f3c5f86d3da713efc2767fa" kind="function"><name>setRadialFilterMinThreshold</name></member>
+    <member refid="classInputSensorADTF31XX_1a56c331a32f51c7be44502c8a85dbd9df" kind="function"><name>setRadialFilterMaxThreshold</name></member>
+  </compound>
+  <compound refid="classInputSensorFactory" kind="class"><name>InputSensorFactory</name>
+    <member refid="classInputSensorFactory_1a8c27b0e5e5d46855ab37420486c1c092" kind="function"><name>getInputSensor</name></member>
+  </compound>
+  <compound refid="classInputSensorFileRosbagBin" kind="class"><name>InputSensorFileRosbagBin</name>
+    <member refid="classInputSensorFileRosbagBin_1ae4dba8e96ef77331f3fdbc3f5b23281f" kind="variable"><name>in_file_name_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1aab98a5b8d49aedc4eb72f9f395a15411" kind="variable"><name>in_file_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a32ecfa23f3a4c3c2864720f1e3f4d0c5" kind="variable"><name>input_frame_width_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a02ece3b59d1ea568575bf48942afd5bf" kind="variable"><name>input_frame_height_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ae2a8cf633b269803d0e53c5847b9cc30" kind="variable"><name>processing_scale_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a6b7e743a99159e8c14bd5d220390df15" kind="variable"><name>header_version_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ab58c89ac360d8517506eb6786547bd80" kind="variable"><name>frame_pitch_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a127fa24728aeb7b5e44f21f37c402f4b" kind="variable"><name>device_timestamp_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a8c34f431ec404d25a51d2272b91c68ac" kind="variable"><name>frame_timestamp_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a92319fe673763575e3bd0a4dac58dd40" kind="variable"><name>bytes_per_pixel_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a095de363ab0ce943a18e642f8cd80a88" kind="variable"><name>total_frames_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a04183b98ddc6cef7cbbff0bc168ddc10" kind="variable"><name>header_buffer_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a77d02d711ecf69c11521cc0dc47a16a4" kind="variable"><name>cam_info_buffer_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ab367194e6e7174db9fc66afbbdeba7e2" kind="variable"><name>camera_intrinsics_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1afa7ae98782d708bd4163e351ee1c6acc" kind="variable"><name>camera_extrinsics_</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a66fb426653b68b55682b6e1dcc69955c" kind="function"><name>InputSensorFileRosbagBin</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ab4d33cb6b47a0d5d835bc818cd2d98ea" kind="function"><name>openSensor</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ab9814707e0bb4d632fa365be5cb51a98" kind="function"><name>configureSensor</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ad9f421d774b9e9c3b1977d83cb96ba95" kind="function"><name>getIntrinsics</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a67fd4f973a146943d033c75b2802e3cb" kind="function"><name>getExtrinsics</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ac9c86b46fa82ef7cba32cfebf5e700cd" kind="function"><name>readNextFrame</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a173df469dd85d9633041084d67f62fa5" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ae96ea65bfa684328a878c0e727c56bcc" kind="function"><name>closeSensor</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474" kind="function"><name>setABinvalidationThreshold</name></member>
+    <member refid="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6" kind="function"><name>setConfidenceThreshold</name></member>
+    <member refid="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8" kind="function"><name>setJBLFFilterState</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c" kind="function"><name>setJBLFFilterSize</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734" kind="function"><name>setRadialFilterMinThreshold</name></member>
+    <member refid="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e" kind="function"><name>setRadialFilterMaxThreshold</name></member>
+  </compound>
+  <compound refid="classcompressed__depth__image__transport_1_1RvlCodec" kind="class"><name>compressed_depth_image_transport::RvlCodec</name>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aa2e8ef112a71193b43bd3702e33b5bd6" kind="variable"><name>buffer_</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1afe3e7285351838d9bbd7d43942100de6" kind="variable"><name>pBuffer_</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a756288f00fc8870587476fda38f80da8" kind="variable"><name>word_</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a069cf29d85ffbf491231f69cf087e925" kind="variable"><name>nibblesWritten_</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aafa0d4078b291e166b43761398c2c946" kind="function"><name>RvlCodec</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a7f7a682525935399a656f4444f701510" kind="function"><name>CompressRVL</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aa2bad4e6d8d2b192fcfeb9060b3a15a5" kind="function"><name>DecompressRVL</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1ae7b565ca3a8edf490d47630f20f5769d" kind="function"><name>RvlCodec</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a0760212750e5d1e12751fdf5555db837" kind="function"><name>operator=</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1ac3f2e6a39595a937943216b84233ab54" kind="function"><name>EncodeVLE</name></member>
+    <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a68fb572f33a1c55d085ab35ba7b6937b" kind="function"><name>DecodeVLE</name></member>
+  </compound>
+  <compound refid="structADI3DToFADTF31xx_1_1TunableParameters" kind="struct"><name>ADI3DToFADTF31xx::TunableParameters</name>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a28b6b093b835b63b24d958b6907498ee" kind="variable"><name>ab_threshold</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a515eb2c4b5bb6f230621ab4a829ead84" kind="variable"><name>confidence_threshold</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a7cf825035bbc5571d3263441e1538f58" kind="variable"><name>enable_depth_publish</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1aceb6e0718ab34712441941c4bf861328" kind="variable"><name>enable_ab_publish</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a0e11ef969e6cb8037e8a983d5320e8b4" kind="variable"><name>enable_conf_publish</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1ac72e38d1409aa883706623ceff5a9ce4" kind="variable"><name>enable_xyz_publish</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a0799234c7539fb4a4146a0c169156668" kind="variable"><name>enable_jblf_filter</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a7e154b4b1c44ca5ed25c315cca36f5b1" kind="variable"><name>jblf_filter_size</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a5578f7a184ef0a1c78f95097c2d99393" kind="variable"><name>radial_threshold_min</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a5b2a21346588aab7512ae97d6097fb52" kind="variable"><name>radial_threshold_max</name></member>
+    <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1aef5ba64be3c6687bd385b71ecc1b881c" kind="variable"><name>encoding_type</name></member>
+  </compound>
+  <compound refid="namespacecompressed__depth__image__transport" kind="namespace"><name>compressed_depth_image_transport</name>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f" kind="enum"><name>compressionFormat</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fabdd6eee736e40089c46baf2ade802d07" kind="enumvalue"><name>UNDEFINED</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fa8139d98ccd3698b3bfb23c35c55edae2" kind="enumvalue"><name>INV_DEPTH</name></member>
+  </compound>
+  <compound refid="namespacerclcpp" kind="namespace"><name>rclcpp</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="adi__3dtof__adtf31xx_8h" kind="file"><name>adi_3dtof_adtf31xx.h</name>
+  </compound>
+  <compound refid="adi__3dtof__adtf31xx__frame__info_8h" kind="file"><name>adi_3dtof_adtf31xx_frame_info.h</name>
+  </compound>
+  <compound refid="adi__3dtof__adtf31xx__output__info_8h" kind="file"><name>adi_3dtof_adtf31xx_output_info.h</name>
+  </compound>
+  <compound refid="adi__camera_8h" kind="file"><name>adi_camera.h</name>
+  </compound>
+  <compound refid="image__proc__utils_8h" kind="file"><name>image_proc_utils.h</name>
+  </compound>
+  <compound refid="input__sensor_8h" kind="file"><name>input_sensor.h</name>
+  </compound>
+  <compound refid="input__sensor__adtf31xx_8h" kind="file"><name>input_sensor_adtf31xx.h</name>
+  </compound>
+  <compound refid="input__sensor__factory_8h" kind="file"><name>input_sensor_factory.h</name>
+  </compound>
+  <compound refid="input__sensor__file__rosbagbin_8h" kind="file"><name>input_sensor_file_rosbagbin.h</name>
+  </compound>
+  <compound refid="module__profile_8h" kind="file"><name>module_profile.h</name>
+    <member refid="module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da" kind="define"><name>PROFILE_FUNCTION_START</name></member>
+    <member refid="module__profile_8h_1a429b699deab1043cbc596058f45199a4" kind="define"><name>PROFILE_FUNCTION_END</name></member>
+    <member refid="module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98" kind="define"><name>FLUSH_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416" kind="define"><name>INIT_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1" kind="define"><name>CLOSE_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16" kind="define"><name>PROFILE_ID_START</name></member>
+    <member refid="module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459" kind="define"><name>PROFILE_ID_END</name></member>
+    <member refid="module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2" kind="define"><name>PROFILE_ID</name></member>
+  </compound>
+  <compound refid="compression__common_8h" kind="file"><name>compression_common.h</name>
+  </compound>
+  <compound refid="rvl__codec_8h" kind="file"><name>rvl_codec.h</name>
+  </compound>
+  <compound refid="dir_4eab921792b8cc23f536bb47553d5451" kind="dir"><name>include/ros-perception/image_transport_plugins/compressed_depth_image_transport</name>
+  </compound>
+  <compound refid="dir_28e83b7d8e494d47a00b0dd64292e7fe" kind="dir"><name>include/ros-perception/image_transport_plugins</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_a6c1829d60e8505026f4bed88734a08b" kind="dir"><name>include/ros-perception</name>
+  </compound>
+</doxygenindex>

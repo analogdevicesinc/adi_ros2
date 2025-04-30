@@ -1,0 +1,17 @@
+.. _exhale_class_classADI3DToFADTF31xxFrameInfo:
+
+Class ADI3DToFADTF31xxFrameInfo
+===============================
+
+- Defined in :ref:`file_include_adi_3dtof_adtf31xx_frame_info.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFADTF31xxFrameInfo
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

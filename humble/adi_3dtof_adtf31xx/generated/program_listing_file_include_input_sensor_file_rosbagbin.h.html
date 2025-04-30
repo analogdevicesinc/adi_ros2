@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File input_sensor_file_rosbagbin.h &mdash; adi_3dtof_adtf31xx 2.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=20623aea"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="File module_profile.h" href="file_include_module_profile.h.html" />
+    <link rel="prev" title="File input_sensor_file_rosbagbin.h" href="file_include_input_sensor_file_rosbagbin.h.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_3dtof_adtf31xx
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_adtf31xx">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classADI3DToFADTF31xxOutputInfo.html">Class ADI3DToFADTF31xxOutputInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classIInputSensor.html">Class IInputSensor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImageProcUtils.html">Class ImageProcUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFactory.html">Class InputSensorFactory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#files">Files</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_camera.h.html">File adi_camera.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_image_proc_utils.h.html">File image_proc_utils.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor.h.html">File input_sensor.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_module_profile.h.html">File module_profile.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#overview">Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#output-images">Output Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#nodes">Nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#parameter-tuning">Parameter Tuning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#limitations">Limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#appendix-1">Appendix 1 :</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-run-the-node-on-a-host-machine-in-file-io-mode">Steps to run the Node on a Host machine in File-IO mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-convert-rosbag-file-to-bin-file">Steps to convert rosbag file to bin file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_3dtof_adtf31xx</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+          <li class="breadcrumb-item"><a href="file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
+      <li class="breadcrumb-item active">Program Listing for File input_sensor_file_rosbagbin.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/program_listing_file_include_input_sensor_file_rosbagbin.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-input-sensor-file-rosbagbin-h">
+<span id="program-listing-file-include-input-sensor-file-rosbagbin-h"></span><h1>Program Listing for File input_sensor_file_rosbagbin.h<a class="headerlink" href="#program-listing-for-file-input-sensor-file-rosbagbin-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_include_input_sensor_file_rosbagbin.h.html#file-include-input-sensor-file-rosbagbin-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/input_sensor_file_rosbagbin.h</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/******************************************************************************</span>
+<span class="cm">Copyright (c), 2023 - Analog Devices Inc. All Rights Reserved.</span>
+<span class="cm">This software is PROPRIETARY &amp; CONFIDENTIAL to Analog Devices, Inc.</span>
+<span class="cm">and its licensors.</span>
+<span class="cm">******************************************************************************/</span>
+
+<span class="cp">#ifndef INPUT_SENSOR_FILE_ROSBAGBIN_H</span>
+<span class="cp">#define INPUT_SENSOR_FILE_ROSBAGBIN_H</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;fstream&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;input_sensor.h&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">InputSensorFileRosbagBin</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IInputSensor</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">InputSensorFileRosbagBin</span><span class="p">()</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">input_frame_width_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span>
+<span class="w">    </span><span class="n">input_frame_height_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1024</span><span class="p">;</span>
+<span class="w">    </span><span class="n">processing_scale_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">781.291565f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">520.714905f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">781.87738f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">513.001709f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">camera_matrix</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.0693829656f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.115561306f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.000196631983f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.00011414945f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0944529548f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.269195855f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.00811018609f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_intrinsics_</span><span class="p">.</span><span class="n">distortion_coeffs</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.190516844f</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Initializing extrinsics</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">rotation_matrix</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">translation_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">translation_matrix</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">    </span><span class="n">camera_extrinsics_</span><span class="p">.</span><span class="n">translation_matrix</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">openSensor</span><span class="p">(</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">sensor_name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">input_image_width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">input_image_height</span><span class="p">,</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">config_file_name</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">input_sensor_ip</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">configureSensor</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">camera_mode</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">getIntrinsics</span><span class="p">(</span><span class="n">CameraIntrinsics</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">camera_intrinsics_data</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">getExtrinsics</span><span class="p">(</span><span class="n">CameraExtrinsics</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">camera_extrinsics_data</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">readNextFrame</span><span class="p">(</span>
+<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">out_depth_frame</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">out_ab_frame</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">out_conf_frame</span><span class="p">,</span><span class="w"> </span><span class="kt">short</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">out_xyz_frame</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getFrameTimestamp</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">timestamp</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">closeSensor</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setABinvalidationThreshold</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="cm">/*threshold*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setConfidenceThreshold</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="cm">/*threshold*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here, should be overridden in derived class.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setJBLFFilterState</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="cm">/*enable_jblf_filter*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here, should be overridden in derived class.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setJBLFFilterSize</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="cm">/*jbfl_filter_size*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here, should be overridden in derived class.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setRadialFilterMinThreshold</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="cm">/*radial_min_threshold*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here, should be overridden in derived class.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setRadialFilterMaxThreshold</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="cm">/*radial_max_threshold*/</span><span class="p">)</span><span class="w"> </span><span class="k">override</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Does nothing here, should be overridden in derived class.</span>
+<span class="w">    </span><span class="k">return</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">in_file_name_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">ifstream</span><span class="w"> </span><span class="n">in_file_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">input_frame_width_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">input_frame_height_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">processing_scale_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">header_version_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frame_pitch_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">device_timestamp_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">frame_timestamp_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">bytes_per_pixel_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">total_frames_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">header_buffer_</span><span class="p">[</span><span class="mi">36</span><span class="p">];</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">cam_info_buffer_</span><span class="p">[</span><span class="mi">400</span><span class="p">];</span>
+<span class="w">  </span><span class="n">CameraIntrinsics</span><span class="w"> </span><span class="n">camera_intrinsics_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">CameraExtrinsics</span><span class="w"> </span><span class="n">camera_extrinsics_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="file_include_input_sensor_file_rosbagbin.h.html" class="btn btn-neutral float-left" title="File input_sensor_file_rosbagbin.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="file_include_module_profile.h.html" class="btn btn-neutral float-right" title="File module_profile.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_3dtof_adtf31xx&gt; Contributors. License: BSD.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
