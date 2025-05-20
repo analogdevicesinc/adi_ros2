@@ -1,6 +1,6 @@
-.. _build_doc:
+.. _Build ROS2 Documentation:
 
-Build Analog Devices ROS2 Documentation
+Build ROS2 Documentation
 ================================================================================
 
 Overview
