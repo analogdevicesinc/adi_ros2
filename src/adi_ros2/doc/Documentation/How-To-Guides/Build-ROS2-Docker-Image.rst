@@ -1,6 +1,6 @@
-.. _build_docker_image:
+.. _Build ROS2 Docker Image:
 
-Build Docker Image with Analog Devices ROS2 Packages
+Build ROS2 Docker Image
 ================================================================================
 
 .. contents:: Table of Contents
