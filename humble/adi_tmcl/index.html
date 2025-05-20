@@ -138,21 +138,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="__CHANGELOG.html#changelog-for-package-tmcl-ros2">Changelog for package tmcl_ros2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id1">2.0.3 (2024-11-13)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id2">2.0.2 (2024-11-05)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id3">2.0.1 (2024-07-15)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id4">2.0.0 (2023-11-21)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id5">1.0.2 (2023-10-27)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id6">1.0.1 (2023-10-10)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id7">1.0.0 (2023-09-27)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__README.html">README</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="__README.html#adi-tmcl">adi_tmcl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="__README.html#background">Background</a></li>
@@ -187,6 +172,21 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="__README.html#limitations">Limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="__README.html#support">Support</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="__CHANGELOG.html#changelog-for-package-tmcl-ros2">Changelog for package tmcl_ros2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id1">2.0.3 (2024-11-13)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id2">2.0.2 (2024-11-05)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id3">2.0.1 (2024-07-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id4">2.0.0 (2023-11-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id5">1.0.2 (2023-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id6">1.0.1 (2023-10-10)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id7">1.0.0 (2023-09-27)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -247,10 +247,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
 </ul>
 </li>
 </ul>
@@ -519,7 +519,7 @@ $<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </sp
 <li><p>(2) statusflag value (only for boards with StatusFlags AP, else, value is set to 0)</p></li>
 <li><p>(3) statusflag notifications (only for boards with StatusFlags AP and StatusFlags Register names). In the case of Stepper motor(s), this publishes driver error flags and extended error flags values. Else, value is set to “ “)</p></li>
 <li><p>(4) motor number</p></li>
-<li><p>(5) velocity (if <a class="reference internal" href="#parameters"><span class="xref myst">Parameter</span></a> wheel_diameter is set to 0, the unit for published velocity is rpm, else m/s)</p></li>
+<li><p>(5) velocity (if <a class="reference external" href="http://docs.ros.org/en/latest/p/adi_iio/index.html#parameters" title="adi_iio humble"><span class="xref myst">Parameter</span></a> wheel_diameter is set to 0, the unit for published velocity is rpm, else m/s)</p></li>
 <li><p>(6) position (degree angle)</p></li>
 <li><p>(7) torque (mA)</p></li>
 </ul>

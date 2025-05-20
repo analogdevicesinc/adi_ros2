@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['velangtempdataprovider_0',['VelAngTempDataProvider',['../classVelAngTempDataProvider.html',1,'']]],
-  ['velangtempdataproviderinterface_1',['VelAngTempDataProviderInterface',['../classVelAngTempDataProviderInterface.html',1,'']]],
-  ['velangtemprospublisher_2',['VelAngTempRosPublisher',['../classVelAngTempRosPublisher.html',1,'']]],
-  ['velangtemprospublisherinterface_3',['VelAngTempRosPublisherInterface',['../classVelAngTempRosPublisherInterface.html',1,'']]],
-  ['velangtempsubscribertest_4',['VelAngTempSubscriberTest',['../classVelAngTempSubscriberTest.html',1,'']]]
+  ['float32pubsub_0',['Float32PubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classFloat32PubSub.html',1,'']]]
 ];

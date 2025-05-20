@@ -1,0 +1,14 @@
+.. _exhale_define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512:
+
+Define BUFFER_READ_SUFFIX
+=========================
+
+- Defined in :ref:`file_include_adi_iio_iio_buffer.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BUFFER_READ_SUFFIX
+   :project: adi_iio Doxygen Project

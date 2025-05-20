@@ -1,0 +1,79 @@
+\doxysection{iio\+\_\+path.\+hpp}
+\hypertarget{iio__path_8hpp_source}{}\label{iio__path_8hpp_source}\index{include/adi\_iio/iio\_path.hpp@{include/adi\_iio/iio\_path.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ 2025\ Analog\ Devices,\ Inc.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ \ \ \ \ http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ ADI\_IIO\_\_IIO\_PATH\_HPP\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ADI\_IIO\_\_IIO\_PATH\_HPP\_}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{enum}\ IIOPathType}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ CONTEXT,}
+\DoxyCodeLine{00026\ \ \ CONTEXT\_ATTR,}
+\DoxyCodeLine{00027\ \ \ DEVICE,}
+\DoxyCodeLine{00028\ \ \ DEVICE\_ATTR,}
+\DoxyCodeLine{00029\ \ \ CHANNEL,}
+\DoxyCodeLine{00030\ \ \ CHANNEL\_ATTR,}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIIOPath}{IIOPath}}}
+\DoxyCodeLine{00047\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classIIOPath}{IIOPath}}(std::string\ path,\ \textcolor{keywordtype}{char}\ delimiter\ =\ \textcolor{charliteral}{'/'});}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_aa089783a455bca56348d522880cb3484}{basePath}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9}{getContextAttrSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a628013ed289d637eb19ec39718e1fb02}{getDeviceSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098}{getDeviceAttrSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d}{getChannelSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00100\ \ \ std::pair<bool,\ std::string>\ \mbox{\hyperlink{classIIOPath_a09da667d213f45666b9274e59d2cb223}{getExtendedChannelSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ \ \ \textcolor{keyword}{static}\ std::pair<bool,\ std::string>\ \mbox{\hyperlink{classIIOPath_a09da667d213f45666b9274e59d2cb223}{getExtendedChannelSegment}}(std::string\ chn\_segment);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIIOPath_adaaa6afd58114d2a2fdfc588c271ec9d}{hasExtendedChannelFormat}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIIOPath_adaaa6afd58114d2a2fdfc588c271ec9d}{hasExtendedChannelFormat}}(std::string\ chn\_segment);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae}{getChannelAttrSegment}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00127\ \ \ std::string\ \mbox{\hyperlink{classIIOPath_a5267692c774185c148b6047d32b64879}{append}}(\textcolor{keyword}{const}\ std::string\ \&\ suffix);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00139\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670}{isValid}}(\textcolor{keyword}{const}\ IIOPathType\ type);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00147\ \ \ std::vector<std::string>\ \mbox{\hyperlink{classIIOPath_a13168489d39273e5aeac4c2071b44c34}{split}}(\textcolor{keyword}{const}\ std::string\ \&\ str);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00157\ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{classIIOPath_a995b880525f2c98fef7048f04f054d3f}{toExtendedChannelSegment}}(\textcolor{keywordtype}{bool}\ output,\ std::string\ chn\_name);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00167\ \ \ \textcolor{keyword}{static}\ std::string\ \mbox{\hyperlink{classIIOPath_a0f86b783a1d79228e0601499db6d1577}{toTopicName}}(std::string\ path);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00170\ \ \ std::string\ m\_base\_path;}
+\DoxyCodeLine{00171\ \ \ \textcolor{keywordtype}{char}\ m\_delimiter;}
+\DoxyCodeLine{00172\ \ \ std::vector<std::string>\ m\_segments;}
+\DoxyCodeLine{00173\ \};}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IIO\_\_IIO\_PATH\_HPP\_}}
+
+\end{DoxyCode}

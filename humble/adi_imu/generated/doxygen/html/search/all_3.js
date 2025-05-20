@@ -23,5 +23,6 @@ var searchData=
   ['diag_5fy_5faxis_5faccelerometer_5ffailure_20',['diag_y_axis_accelerometer_failure',['../classIIOWrapper.html#a5e040011fba86b221a028f96440ac59e',1,'IIOWrapper']]],
   ['diag_5fy_5faxis_5fgyroscope_5ffailure_21',['diag_y_axis_gyroscope_failure',['../classIIOWrapper.html#ab027802372011c7f7d9f59061017173c',1,'IIOWrapper']]],
   ['diag_5fz_5faxis_5faccelerometer_5ffailure_22',['diag_z_axis_accelerometer_failure',['../classIIOWrapper.html#adf039156a53b8bb0afebe4c48507c097',1,'IIOWrapper']]],
-  ['diag_5fz_5faxis_5fgyroscope_5ffailure_23',['diag_z_axis_gyroscope_failure',['../classIIOWrapper.html#adc4a32825bc5982131f53e227805946b',1,'IIOWrapper']]]
+  ['diag_5fz_5faxis_5fgyroscope_5ffailure_23',['diag_z_axis_gyroscope_failure',['../classIIOWrapper.html#adc4a32825bc5982131f53e227805946b',1,'IIOWrapper']]],
+  ['distortion_5fcoeffs_24',['distortion_coeffs',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html#addb98003691f1c0d46fac95fbe2fba31',1,'CameraIntrinsics']]]
 ];

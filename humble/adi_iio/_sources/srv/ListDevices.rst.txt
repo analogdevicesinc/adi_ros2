@@ -1,0 +1,8 @@
+ListDevices
+===========
+This is a ROS service definition.
+
+**Source**
+
+.. literalinclude:: ListDevices.srv
+

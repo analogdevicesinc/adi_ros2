@@ -1,0 +1,70 @@
+\doxysection{Float32\+Pub\+Sub Class Reference}
+\hypertarget{classFloat32PubSub}{}\label{classFloat32PubSub}\index{Float32PubSub@{Float32PubSub}}
+
+
+Inheritance diagram for Float32\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classFloat32PubSub__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Float32\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classFloat32PubSub__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFloat32PubSub_ad2742d194ed1e51e8112d24c299ec282}\label{classFloat32PubSub_ad2742d194ed1e51e8112d24c299ec282} 
+{\bfseries Float32\+Pub\+Sub} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ nh, \mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*}up, std\+::string topic)
+\item 
+void \mbox{\hyperlink{classFloat32PubSub_a29b2863b86024b4fc5d8eb73b34e9864}{publish}} (std\+::string msg) override
+\item 
+\Hypertarget{classFloat32PubSub_a6962471e662eb629a1d5fcf564b4460a}\label{classFloat32PubSub_a6962471e662eb629a1d5fcf564b4460a} 
+void {\bfseries update} (const std\+\_\+msgs\+::msg\+::\+Float32 \&msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFloat32PubSub_aa2604d1fe6964f160d6d04624cf5e0c6}\label{classFloat32PubSub_aa2604d1fe6964f160d6d04624cf5e0c6} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ {\bfseries m\+\_\+nh}
+\item 
+\Hypertarget{classFloat32PubSub_a44d13d0b95145f087e3c144fff46aca9}\label{classFloat32PubSub_a44d13d0b95145f087e3c144fff46aca9} 
+\mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*} {\bfseries m\+\_\+update\+Callback}
+\item 
+\Hypertarget{classFloat32PubSub_a9ae7edea7e227e5b69cce87a15ff3dd1}\label{classFloat32PubSub_a9ae7edea7e227e5b69cce87a15ff3dd1} 
+std\+::string {\bfseries m\+\_\+topic}
+\item 
+\Hypertarget{classFloat32PubSub_a112f4ea05e49e9923b3a47989c438985}\label{classFloat32PubSub_a112f4ea05e49e9923b3a47989c438985} 
+rclcpp\+::\+Publisher$<$ std\+\_\+msgs\+::msg\+::\+Float32 $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+pub}
+\item 
+\Hypertarget{classFloat32PubSub_a279856bdd824b870c812c458a1aebd79}\label{classFloat32PubSub_a279856bdd824b870c812c458a1aebd79} 
+rclcpp\+::\+Subscription$<$ std\+\_\+msgs\+::msg\+::\+Float32 $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+sub}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFloat32PubSub_a29b2863b86024b4fc5d8eb73b34e9864}\label{classFloat32PubSub_a29b2863b86024b4fc5d8eb73b34e9864} 
+\index{Float32PubSub@{Float32PubSub}!publish@{publish}}
+\index{publish@{publish}!Float32PubSub@{Float32PubSub}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void Float32\+Pub\+Sub\+::publish (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAttrPubSub}{Attr\+Pub\+Sub}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/attr\+\_\+publisher.\+hpp\item 
+src/attr\+\_\+publisher.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+
+.. _program_listing_file_include_adi_iio_iio_path.hpp:
+
+Program Listing for File iio_path.hpp
+=====================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_iio_iio_path.hpp>` (``include/adi_iio/iio_path.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   // Copyright 2025 Analog Devices, Inc.
+   //
+   // Licensed under the Apache License, Version 2.0 (the "License");
+   // you may not use this file except in compliance with the License.
+   // You may obtain a copy of the License at
+   //
+   //     http://www.apache.org/licenses/LICENSE-2.0
+   //
+   // Unless required by applicable law or agreed to in writing, software
+   // distributed under the License is distributed on an "AS IS" BASIS,
+   // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   // See the License for the specific language governing permissions and
+   // limitations under the License.
+   
+   #ifndef ADI_IIO__IIO_PATH_HPP_
+   #define ADI_IIO__IIO_PATH_HPP_
+   
+   #include <vector>
+   #include <string>
+   #include <sstream>
+   #include <utility>
+   
+   enum IIOPathType
+   {
+     CONTEXT,
+     CONTEXT_ATTR,
+     DEVICE,
+     DEVICE_ATTR,
+     CHANNEL,
+     CHANNEL_ATTR,
+   };
+   
+   class IIOPath
+   {
+   public:
+     explicit IIOPath(std::string path, char delimiter = '/');
+   
+     std::string basePath() const;
+   
+     std::string getContextAttrSegment() const;
+   
+     std::string getDeviceSegment() const;
+   
+     std::string getDeviceAttrSegment() const;
+   
+     std::string getChannelSegment() const;
+   
+     std::pair<bool, std::string> getExtendedChannelSegment() const;
+     static std::pair<bool, std::string> getExtendedChannelSegment(std::string chn_segment);
+   
+   
+     bool hasExtendedChannelFormat() const;
+     static bool hasExtendedChannelFormat(std::string chn_segment);
+   
+     std::string getChannelAttrSegment() const;
+   
+     std::string append(const std::string & suffix);
+   
+     bool isValid(const IIOPathType type);
+   
+     std::vector<std::string> split(const std::string & str);
+   
+     static std::string toExtendedChannelSegment(bool output, std::string chn_name);
+   
+     static std::string toTopicName(std::string path);
+   
+   private:
+     std::string m_base_path;
+     char m_delimiter;
+     std::vector<std::string> m_segments;
+   };
+   
+   #endif  // ADI_IIO__IIO_PATH_HPP_

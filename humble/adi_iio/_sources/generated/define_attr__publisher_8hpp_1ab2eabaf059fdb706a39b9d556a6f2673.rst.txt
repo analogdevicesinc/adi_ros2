@@ -1,0 +1,14 @@
+.. _exhale_define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673:
+
+Define ATTR_WRITE_SUFFIX
+========================
+
+- Defined in :ref:`file_include_adi_iio_attr_publisher.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ATTR_WRITE_SUFFIX
+   :project: adi_iio Doxygen Project

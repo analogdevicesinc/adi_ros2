@@ -1,0 +1,17 @@
+.. _exhale_class_classIIOPath:
+
+Class IIOPath
+=============
+
+- Defined in :ref:`file_include_adi_iio_iio_path.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: IIOPath
+   :project: adi_iio Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

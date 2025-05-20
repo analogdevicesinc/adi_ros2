@@ -1,0 +1,7 @@
+<map id="BoolPubSub" name="BoolPubSub">
+<area shape="rect" id="Node000001" title=" " alt="" coords="70,93,169,119"/>
+<area shape="rect" id="Node000002" href="$classAttrPubSub.html" title=" " alt="" coords="5,5,100,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,40,112,91,108,94,68,43"/>
+<area shape="rect" id="Node000003" href="$classUpdateCallback.html" title=" " alt="" coords="125,5,250,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,43,131,94,127,91,167,40"/>
+</map>

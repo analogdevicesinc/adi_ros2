@@ -1,0 +1,98 @@
+\doxysection{IIOAttr\+Topic Class Reference}
+\hypertarget{classIIOAttrTopic}{}\label{classIIOAttrTopic}\index{IIOAttrTopic@{IIOAttrTopic}}
+
+
+Inheritance diagram for IIOAttr\+Topic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classIIOAttrTopic__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for IIOAttr\+Topic\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classIIOAttrTopic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOAttrTopic_aeaf127c4f3150421941d9406001ac41c}\label{classIIOAttrTopic_aeaf127c4f3150421941d9406001ac41c} 
+enum {\bfseries topic\+Type\+\_\+t} \{ {\bfseries TYPE\+\_\+\+STRING}
+, {\bfseries TYPE\+\_\+\+INT}
+, {\bfseries TYPE\+\_\+\+DOUBLE}
+, {\bfseries TYPE\+\_\+\+BOOL}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOAttrTopic_abffda988db26c5588f29335847bd691d}\label{classIIOAttrTopic_abffda988db26c5588f29335847bd691d} 
+{\bfseries IIOAttr\+Topic} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ nh, std\+::string topic\+Name, std\+::string attr\+Path, topic\+Type\+\_\+t type, int loop\+Rate)
+\item 
+\Hypertarget{classIIOAttrTopic_a623cd04f745c48b26bf9b0267eac47f9}\label{classIIOAttrTopic_a623cd04f745c48b26bf9b0267eac47f9} 
+void {\bfseries publishing\+Loop} ()
+\item 
+void \mbox{\hyperlink{classIIOAttrTopic_a0c33ffe55bb3b950b52f2ddff5bb258f}{update}} (std\+::string msg) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOAttrTopic_a74795e5ffa0bf82dc831a28d29381d35}\label{classIIOAttrTopic_a74795e5ffa0bf82dc831a28d29381d35} 
+std\+::mutex {\bfseries m\+\_\+mutex}
+\item 
+\Hypertarget{classIIOAttrTopic_a5a065e23d398623878150edd05b8bc60}\label{classIIOAttrTopic_a5a065e23d398623878150edd05b8bc60} 
+rclcpp\+::\+Timer\+Base\+::\+Shared\+Ptr {\bfseries timer\+\_\+}
+\item 
+\Hypertarget{classIIOAttrTopic_a5ffc29fb6f3d9283a22da57dea0b6099}\label{classIIOAttrTopic_a5ffc29fb6f3d9283a22da57dea0b6099} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ {\bfseries m\+\_\+nh}
+\item 
+\Hypertarget{classIIOAttrTopic_a734719af54a2a7efbd1ac695ab5fd808}\label{classIIOAttrTopic_a734719af54a2a7efbd1ac695ab5fd808} 
+std\+::string {\bfseries m\+\_\+attr\+Path}
+\item 
+\Hypertarget{classIIOAttrTopic_af57ea91913330ec9d532657ad7cec373}\label{classIIOAttrTopic_af57ea91913330ec9d532657ad7cec373} 
+std\+::string {\bfseries m\+\_\+topic\+Name}
+\item 
+\Hypertarget{classIIOAttrTopic_adb51299ff6c4fac0fa2c55a20dfc9d78}\label{classIIOAttrTopic_adb51299ff6c4fac0fa2c55a20dfc9d78} 
+topic\+Type\+\_\+t {\bfseries m\+\_\+topic\+Type}
+\item 
+\Hypertarget{classIIOAttrTopic_a16c5be4507727d6c3cd2ce4d998a7c14}\label{classIIOAttrTopic_a16c5be4507727d6c3cd2ce4d998a7c14} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classAttrPubSub}{Attr\+Pub\+Sub}} $>$ {\bfseries m\+\_\+pub}
+\item 
+\Hypertarget{classIIOAttrTopic_a0da1b8c1d163eadf9cc8b0b17a2ac0c6}\label{classIIOAttrTopic_a0da1b8c1d163eadf9cc8b0b17a2ac0c6} 
+std\+::thread {\bfseries m\+\_\+th}
+\item 
+\Hypertarget{classIIOAttrTopic_a3b839dd20d0f103d409d1d68e6a08984}\label{classIIOAttrTopic_a3b839dd20d0f103d409d1d68e6a08984} 
+std\+::string {\bfseries last\+\_\+val}
+\item 
+\Hypertarget{classIIOAttrTopic_aad4a2dcd52b16c0eb0778bff09c74f64}\label{classIIOAttrTopic_aad4a2dcd52b16c0eb0778bff09c74f64} 
+bool {\bfseries m\+\_\+stop\+Thread}
+\item 
+\Hypertarget{classIIOAttrTopic_a393d8fd35423b1cfef51dc4e329fd1c0}\label{classIIOAttrTopic_a393d8fd35423b1cfef51dc4e329fd1c0} 
+rclcpp\+::\+Rate {\bfseries m\+\_\+loop\+Rate}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIIOAttrTopic_a0c33ffe55bb3b950b52f2ddff5bb258f}\label{classIIOAttrTopic_a0c33ffe55bb3b950b52f2ddff5bb258f} 
+\index{IIOAttrTopic@{IIOAttrTopic}!update@{update}}
+\index{update@{update}!IIOAttrTopic@{IIOAttrTopic}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void IIOAttr\+Topic\+::update (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classUpdateCallback}{Update\+Callback}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/iio\+\_\+attr\+\_\+topic.\+hpp\item 
+src/iio\+\_\+attr\+\_\+topic.\+cpp\end{DoxyCompactItemize}

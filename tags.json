@@ -7,6 +7,10 @@
     "humble > adi_3dtof_adtf31xx",
     ""
   ],
+  "humble/adi_iio": [
+    "humble > adi_iio",
+    ""
+  ],
   "humble/adi_imu": [
     "humble > adi_imu",
     ""

@@ -1,0 +1,26 @@
+.. _exhale_class_classUpdateCallback:
+
+Class UpdateCallback
+====================
+
+- Defined in :ref:`file_include_adi_iio_iio_attr_topic.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public IIOAttrTopic`` (:ref:`exhale_class_classIIOAttrTopic`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: UpdateCallback
+   :project: adi_iio Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -19,12 +19,13 @@ var searchData=
   ['update_5fz_5faxis_5faccelerometer_5fbias_5fcorrection_5fenable_16',['update_z_axis_accelerometer_bias_correction_enable',['../classIIOWrapper.html#ad501d5b8096992254282b710ae3593bf',1,'IIOWrapper']]],
   ['update_5fz_5faxis_5fgyroscope_5fbias_5fcorrection_5fenable_17',['update_z_axis_gyroscope_bias_correction_enable',['../classIIOWrapper.html#a70f3f6d8b2cdefb6a5a6cff54915c6e1',1,'IIOWrapper']]],
   ['updatebuffer_18',['updateBuffer',['../classIIOWrapper.html#ae179fe95e80ad6624c6782de04c854ed',1,'IIOWrapper']]],
-  ['updatedoubleparams_19',['UpdateDoubleParams',['../classImuControlParameters.html#ad9ec37d0885918285b76b0a01cc17ee8',1,'ImuControlParameters']]],
-  ['updatedoubleparamsmaptype_20',['UpdateDoubleParamsMapType',['../classImuControlParameters.html#a217a4e02692f65433945b7a285b6415e',1,'ImuControlParameters']]],
-  ['updatefield_21',['updateField',['../classIIOWrapper.html#a3b99dc4a11bfc1044779befc29c9385a',1,'IIOWrapper']]],
-  ['updateint32params_22',['UpdateInt32Params',['../classImuControlParameters.html#a82366b8096ef75c05b44ece86798ecce',1,'ImuControlParameters']]],
-  ['updateint32paramsmaptype_23',['UpdateInt32ParamsMapType',['../classImuControlParameters.html#a96d9f5b54857f9de53ab8aa9e28e1433',1,'ImuControlParameters']]],
-  ['updateparamsfromhardware_24',['updateParamsFromHardware',['../classImuControlParameters.html#aa733955c32fc2253f4b14d2db1b454a2',1,'ImuControlParameters']]],
-  ['updateuint32params_25',['UpdateUint32Params',['../classImuControlParameters.html#a08337927ac5d0390c065a8f8b64e11ce',1,'ImuControlParameters']]],
-  ['updateuint32paramsmaptype_26',['UpdateUint32ParamsMapType',['../classImuControlParameters.html#add2e53a89e0f075df4a090fb28ea59d0',1,'ImuControlParameters']]]
+  ['updatecallback_19',['UpdateCallback',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classUpdateCallback.html',1,'']]],
+  ['updatedoubleparams_20',['UpdateDoubleParams',['../classImuControlParameters.html#ad9ec37d0885918285b76b0a01cc17ee8',1,'ImuControlParameters']]],
+  ['updatedoubleparamsmaptype_21',['UpdateDoubleParamsMapType',['../classImuControlParameters.html#a217a4e02692f65433945b7a285b6415e',1,'ImuControlParameters']]],
+  ['updatefield_22',['updateField',['../classIIOWrapper.html#a3b99dc4a11bfc1044779befc29c9385a',1,'IIOWrapper']]],
+  ['updateint32params_23',['UpdateInt32Params',['../classImuControlParameters.html#a82366b8096ef75c05b44ece86798ecce',1,'ImuControlParameters']]],
+  ['updateint32paramsmaptype_24',['UpdateInt32ParamsMapType',['../classImuControlParameters.html#a96d9f5b54857f9de53ab8aa9e28e1433',1,'ImuControlParameters']]],
+  ['updateparamsfromhardware_25',['updateParamsFromHardware',['../classImuControlParameters.html#aa733955c32fc2253f4b14d2db1b454a2',1,'ImuControlParameters']]],
+  ['updateuint32params_26',['UpdateUint32Params',['../classImuControlParameters.html#a08337927ac5d0390c065a8f8b64e11ce',1,'ImuControlParameters']]],
+  ['updateuint32paramsmaptype_27',['UpdateUint32ParamsMapType',['../classImuControlParameters.html#add2e53a89e0f075df4a090fb28ea59d0',1,'ImuControlParameters']]]
 ];
