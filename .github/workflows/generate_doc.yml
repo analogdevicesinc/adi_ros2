@@ -3,6 +3,7 @@ on:
     push:
       branches:
         - humble
+        - doc-*
       tags:
         - v*.*.*
     pull_request:
