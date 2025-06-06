@@ -20,23 +20,23 @@ Python3 virtual environment to manage dependencies. Follow these steps:
 #. Navigate to the root directory of your project `(adi_ros2)`.
 #. Create a virtual environment:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        python3 -m venv .venv
+      python3 -m venv .venv
 
 #. Activate the virtual environment:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        source .venv/bin/activate
+      source .venv/bin/activate
 
 #. Install the required dependencies listed in the `requirements.txt` file under
    `adi_ros2/doc/requirements.txt`:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        cd adi_ros2/doc
-        pip install -r requirements.txt
+      cd adi_ros2/doc
+      pip install -r requirements.txt
 
 Directory Structure
 --------------------------------------------------------------------------------
@@ -64,9 +64,9 @@ The documentation is organized at two levels:
     - The overall documentation for the ROS2 meta-repository is located in the
       root directory under:
 
-        .. code-block:: bash
+      .. code-block:: bash
 
-            adi_ros2/adi_ros2/doc/
+          src/adi_ros2/doc/
 
     - Provides an overview of the repository, environment setup, and references
       for using Analog Devices ROS2 packages.
@@ -76,9 +76,9 @@ The documentation is organized at two levels:
     - Each individual package within the meta-repository contains its own
       documentation under:
 
-        .. code-block:: bash
+      .. code-block:: bash
 
-            adi_ros2/<package_name>/doc/
+          src/<package_name>/doc/
 
     - Contains detailed descriptions, installation instructions, API references,
       and usage examples.
@@ -105,9 +105,9 @@ To build the documentation, follow these steps:
   generation process. Execute the following command from the root of the
   repository:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        ./ci/build_doc.sh
+      ./ci/build_doc.sh
 
 2. Review the generated documentation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -115,12 +115,12 @@ To build the documentation, follow these steps:
 - Once the script completes successfully, the generated documentation will be
   located in the `_build` directory:
 
-    .. code-block:: text
+  .. code-block:: text
 
-        ├── _build
-        │   ├── cross_reference    # Contains cross-reference data for API documentation
-        │   ├── docs_build         # Intermediate build files
-        │   └── docs_output        # Final documentation output
+      ├── _build
+      │   ├── cross_reference    # Contains cross-reference data for API documentation
+      │   ├── docs_build         # Intermediate build files
+      │   └── docs_output        # Final documentation output
 
 3. View the documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -128,9 +128,9 @@ To build the documentation, follow these steps:
 - The main entry point for the generated documentation is the `index.html`
   file located at:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        _build/docs_output/adi_meta/index.html
+      _build/docs_output/adi_meta/index.html
 
 Open the file in a web browser to view the documentation.
 
@@ -140,10 +140,10 @@ Open the file in a web browser to view the documentation.
 - To build documentation for a specific package, navigate to the package
   directory and run the following command:
 
-    .. code-block:: bash
+  .. code-block:: bash
 
-        cd _build
-        rosdoc2 build --package-path ../adi_ros2 --debug
+      cd _build
+      rosdoc2 build --package-path ../adi_ros2 --debug
 
 - This is useful when modifying documentation for a single package.
 
