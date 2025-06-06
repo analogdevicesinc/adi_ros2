@@ -15,11 +15,11 @@ on ADI solutions.
 
 ## Getting Started
 
-- The Docker image with Analog Devices packages for ROS2 is available in
-  [this repository](https://hub.docker.com/repository/docker/astanea/adi_ros2/general).
+- For a quick start guide on pulling and running the Docker Images, naming conventions
+  and stage descriptions, please refer to the [Docker Hub Repository](https://hub.docker.com/repository/docker/astanea/adi_ros2/general).
 
 - For detailed instructions, please refer to our
-  [Official Documentation](src/adi_ros2/doc/index.rst).
+  [Official Documentation](https://analogdevicesinc.github.io/adi_ros2/humble/adi_meta/index.html#).
 
 ## Getting help
 
