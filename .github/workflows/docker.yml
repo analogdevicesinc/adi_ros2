@@ -1,0 +1,127 @@
+name: Dockerfiles
+on:
+  push:
+    branches:
+      - humble*
+      - jazzy*
+      - rolling*
+      - ci-*
+  pull_request:
+  workflow_dispatch:
+
+# Cancel in-progress runs of the same workflow
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+  DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+jobs:
+  docker-amd64:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: adi_ros2
+            tag: humble-amd64
+            target: base
+            platforms: "linux/amd64"
+          - label: adi_ros2
+            tag: humble-amd64
+            target: full
+            platforms: "linux/amd64"
+          - label: adi_ros2
+            tag: humble-amd64
+            target: desktop
+            platforms: "linux/amd64"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set current date
+        id: date
+        run: |
+          echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: Use current date
+        run: |
+          echo "Current date is ${{ steps.date.outputs.date }}"
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ env.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: ${{ startsWith(github.ref, 'refs/heads/humble') || startsWith(github.ref, 'refs/heads/rolling') || startsWith(github.ref, 'refs/heads/jazzy') }}
+          file: docker/${{ matrix.label }}/${{ matrix.tag }}.Dockerfile
+          target: ${{ matrix.target }}
+          platforms: ${{ matrix.platforms }}
+          context: .
+          tags: |
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ github.sha }}
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}-${{ steps.date.outputs.date }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  docker-arm64:
+    runs-on: ubuntu-24.04-arm
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: adi_ros2
+            tag: humble-arm64
+            target: base
+            platforms: "linux/arm64"
+          - label: adi_ros2
+            tag: humble-arm64
+            target: full
+            platforms: "linux/arm64"
+          - label: adi_ros2-l4t
+            tag: humble-l4t_r36.2.0
+            target: base
+            platforms: "linux/arm64"
+          - label: adi_ros2-l4t
+            tag: humble-l4t_r36.2.0
+            target: full
+            platforms: "linux/arm64"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set current date
+        id: date
+        run: |
+          echo "date=$(date +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+      - name: Use current date
+        run: |
+          echo "Current date is ${{ steps.date.outputs.date }}"
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ env.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: ${{ startsWith(github.ref, 'refs/heads/humble') || startsWith(github.ref, 'refs/heads/rolling') || startsWith(github.ref, 'refs/heads/jazzy') }}
+          file: docker/${{ matrix.label }}/${{ matrix.tag }}.Dockerfile
+          target: ${{ matrix.target }}
+          platforms: ${{ matrix.platforms }}
+          context: .
+          tags: |
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ github.sha }}
+            ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}-${{ steps.date.outputs.date }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

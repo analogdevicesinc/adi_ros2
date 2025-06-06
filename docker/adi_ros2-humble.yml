@@ -1,0 +1,21 @@
+repositories:
+  iio_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/iio_ros2.git
+    version: humble
+  imu_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/imu_ros2.git
+    version: humble
+  tmcl_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/tmcl_ros2.git
+    version: humble
+  adi_3dtof_adtf31xx:
+    type: git
+    url: https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git
+    version: v2.1.0
+  dependencies/libaditof:
+    type: git
+    url: https://github.com/analogdevicesinc/libaditof.git
+    version: v6.0.1

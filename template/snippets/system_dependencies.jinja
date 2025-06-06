@@ -1,0 +1,20 @@
+# Sytem dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    apt-utils \
+    bison \
+    build-essential \
+    cmake \
+    flex \
+    git \
+    libaio-dev \
+    libavahi-client-dev \
+    libcdk5-dev \
+    libserialport-dev \
+    libssl-dev \
+    libusb-1.0-0-dev \
+    libxml2-dev \
+    libzstd-dev \
+    tmux \
+    vim \
+    wget \
+  && rm -rf /var/lib/apt/lists/*

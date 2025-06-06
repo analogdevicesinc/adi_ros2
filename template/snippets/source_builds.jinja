@@ -1,0 +1,15 @@
+# Source builds
+WORKDIR /tmp
+RUN git clone \
+    --depth 1 \
+    --branch {{ libiio_tag }} \
+    https://github.com/analogdevicesinc/libiio.git \
+    libiio \
+  && cd libiio \
+  && mkdir build && cd build \
+  && cmake .. \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DWITH_SYSTEMD=on \
+  && cmake --build . --target install \
+  && rm -rf /tmp/* \
+  && rm -rf /var/lib/apt/lists/*
