@@ -21,6 +21,8 @@ adi_ros2:
         platforms: "linux/arm64"
       - target: full
         platforms: "linux/arm64"
+      - target: desktop
+        platforms: "linux/arm64"
     base_image: "ros"
     image_version: "humble-ros-base"
     libiio_tag: "libiio-v0"
@@ -32,6 +34,8 @@ adi_ros2-l4t:
       - target: base
         platforms: "linux/arm64"
       - target: full
+        platforms: "linux/arm64"
+      - target: desktop
         platforms: "linux/arm64"
     base_image: "nvcr.io/nvidia/l4t-base"
     image_version: "r36.2.0"
