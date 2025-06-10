@@ -181,3 +181,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
   && rm -rf /var/lib/apt/lists/*
 
 ENV DEBIAN_FRONTEND=
+
+###########################################
+#  Desktop image
+###########################################
+FROM full AS desktop
+
+ENV DEBIAN_FRONTEND=noninteractive
+# Install the desktop release
+RUN apt-get update && apt-get install -y \
+    ros-humble-desktop \
+  && rm -rf /var/lib/apt/lists/*
+
+ENV DEBIAN_FRONTEND=

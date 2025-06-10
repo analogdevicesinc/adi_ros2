@@ -85,6 +85,10 @@ jobs:
             tag: humble-arm64
             target: full
             platforms: "linux/arm64"
+          - label: adi_ros2
+            tag: humble-arm64
+            target: desktop
+            platforms: "linux/arm64"
           - label: adi_ros2-l4t
             tag: humble-l4t_r36.2.0
             target: base
@@ -92,6 +96,10 @@ jobs:
           - label: adi_ros2-l4t
             tag: humble-l4t_r36.2.0
             target: full
+            platforms: "linux/arm64"
+          - label: adi_ros2-l4t
+            tag: humble-l4t_r36.2.0
+            target: desktop
             platforms: "linux/arm64"
     steps:
       - uses: actions/checkout@v4
