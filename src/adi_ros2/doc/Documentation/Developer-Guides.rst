@@ -11,3 +11,4 @@ Developer Guides target developers and contributors to the ADI ROS2 repository.
     :maxdepth: 2
 
     Developer-Guides/Dockerfile-Template-Infrastructure
+    Developer-Guides/Adding-ADI-ROS2-Packages
