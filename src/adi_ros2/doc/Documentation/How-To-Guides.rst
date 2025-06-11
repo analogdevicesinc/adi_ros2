@@ -10,5 +10,5 @@ How-to Guides provide direct and modular answers to "How-to" questions.
     :titlesonly:
     :maxdepth: 2
 
-    How-To-Guides/Build-ROS2-Docker-Image
-    How-To-Guides/Build-ROS2-Documentation
+    How-To-Guides/ROS2-Docker-Image-Guide
+    How-To-Guides/ROS2-Documentation-Guide
