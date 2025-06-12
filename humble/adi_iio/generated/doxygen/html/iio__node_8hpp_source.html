@@ -239,14 +239,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordtype">bool</span> m_initialized;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  std::string m_uri;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  iio_context * m_ctx;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  std::map&lt;std::string, std::shared_ptr&lt;IIOAttrTopic&gt;&gt; m_attrTopicMap;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  std::map&lt;std::string, std::shared_ptr&lt;IIOBuffer&gt;&gt; m_bufferMap;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>};</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  int32_t m_timeout;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  iio_context * m_ctx;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  std::map&lt;std::string, std::shared_ptr&lt;IIOAttrTopic&gt;&gt; m_attrTopicMap;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  std::map&lt;std::string, std::shared_ptr&lt;IIOBuffer&gt;&gt; m_bufferMap;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
 </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#endif  </span><span class="comment">// ADI_IIO__IIO_NODE_HPP_</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#endif  </span><span class="comment">// ADI_IIO__IIO_NODE_HPP_</span></div>
 <div class="ttc" id="aclassIIOAttrTopic_html"><div class="ttname"><a href="classIIOAttrTopic.html">IIOAttrTopic</a></div><div class="ttdef"><b>Definition</b> iio_attr_topic.hpp:38</div></div>
 <div class="ttc" id="aclassIIOBuffer_html"><div class="ttname"><a href="classIIOBuffer.html">IIOBuffer</a></div><div class="ttdef"><b>Definition</b> iio_buffer.hpp:35</div></div>
 <div class="ttc" id="aclassIIONode_html"><div class="ttname"><a href="classIIONode.html">IIONode</a></div><div class="ttdef"><b>Definition</b> iio_node.hpp:49</div></div>

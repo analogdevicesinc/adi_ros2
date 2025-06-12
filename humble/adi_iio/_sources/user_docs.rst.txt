@@ -7,3 +7,4 @@ Documentation
    :glob:
 
    doc/*
+   doc/Examples/index

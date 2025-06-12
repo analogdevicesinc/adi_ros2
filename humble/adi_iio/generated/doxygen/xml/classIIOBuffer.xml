@@ -185,6 +185,20 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_buffer.hpp" line="79" column="14" bodyfile="include/adi_iio/iio_buffer.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classIIOBuffer_1abe3b500a9abfb8a39f84ce293f2d1e9a" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Rate &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Rate&gt; IIOBuffer::m_loopRate</definition>
+        <argsstring></argsstring>
+        <name>m_loopRate</name>
+        <qualifiedname>IIOBuffer::m_loopRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_buffer.hpp" line="80" column="19" bodyfile="include/adi_iio/iio_buffer.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="classIIOBuffer_1ab0842479ceebda50fb738f6209abaef3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -249,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="40" column="8" bodyfile="src/iio_buffer.cpp" bodystart="48" bodyend="150"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="40" column="8" bodyfile="src/iio_buffer.cpp" bodystart="49" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -263,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="41" column="8" bodyfile="src/iio_buffer.cpp" bodystart="36" bodyend="46"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="41" column="8" bodyfile="src/iio_buffer.cpp" bodystart="36" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a6808ee387552d28a81f841a3dcb90259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -281,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="42" column="8" bodyfile="src/iio_buffer.cpp" bodystart="152" bodyend="206"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="42" column="8" bodyfile="src/iio_buffer.cpp" bodystart="153" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1aec0693771d2b6ab91cca274b18be8b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -303,17 +317,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="43" column="8" bodyfile="src/iio_buffer.cpp" bodystart="208" bodyend="231"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="43" column="8" bodyfile="src/iio_buffer.cpp" bodystart="209" bodyend="232"/>
       </memberdef>
-      <memberdef kind="function" id="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classIIOBuffer_1a3a678ea826795e4019c9c9960a51d69c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void IIOBuffer::enableTopic</definition>
-        <argsstring>(std::string topic_name)</argsstring>
+        <argsstring>(std::string topic_name, double loopRate)</argsstring>
         <name>enableTopic</name>
         <qualifiedname>IIOBuffer::enableTopic</qualifiedname>
         <param>
           <type>std::string</type>
           <declname>topic_name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>loopRate</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -321,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="45" column="8" bodyfile="src/iio_buffer.cpp" bodystart="234" bodyend="250"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="45" column="8" bodyfile="src/iio_buffer.cpp" bodystart="235" bodyend="252"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -335,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="46" column="8" bodyfile="src/iio_buffer.cpp" bodystart="269" bodyend="279"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="46" column="8" bodyfile="src/iio_buffer.cpp" bodystart="273" bodyend="283"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -349,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="47" column="8" bodyfile="src/iio_buffer.cpp" bodystart="256" bodyend="267"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="47" column="8" bodyfile="src/iio_buffer.cpp" bodystart="258" bodyend="271"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>
@@ -494,7 +512,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/adi_iio/iio_buffer.hpp" line="34" column="1" bodyfile="include/adi_iio/iio_buffer.hpp" bodystart="35" bodyend="80"/>
+    <location file="include/adi_iio/iio_buffer.hpp" line="34" column="1" bodyfile="include/adi_iio/iio_buffer.hpp" bodystart="35" bodyend="81"/>
     <listofallmembers>
       <member refid="classIIOBuffer_1a7419e674c74483b0f7ed30f43b7c92b6" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>buffer</name></member>
       <member refid="classIIOBuffer_1aa68543e42658796034375e8b081d205a" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>channels</name></member>
@@ -503,13 +521,14 @@
       <member refid="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>destroyIIOBuffer</name></member>
       <member refid="classIIOBuffer_1add20c61082a5ab9ca3feac14e6708f6c" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>device_path</name></member>
       <member refid="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>disableTopic</name></member>
-      <member refid="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>enableTopic</name></member>
+      <member refid="classIIOBuffer_1a3a678ea826795e4019c9c9960a51d69c" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>enableTopic</name></member>
       <member refid="classIIOBuffer_1ab0842479ceebda50fb738f6209abaef3" prot="public" virt="non-virtual"><scope>IIOBuffer</scope><name>IIOBuffer</name></member>
       <member refid="classIIOBuffer_1a78a09dd2665047cc5a1c92e761266071" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_buffer</name></member>
       <member refid="classIIOBuffer_1a865880e3df8736a64d43bc0452173863" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_canceled</name></member>
       <member refid="classIIOBuffer_1aa4ccb6bca18578140b5836371fa0cc7e" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_channels</name></member>
       <member refid="classIIOBuffer_1afc0923c4640367674aacccf175929ccb" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_data</name></member>
       <member refid="classIIOBuffer_1ab60200c27fba0c69954a0fbd407cbcd1" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_device_path</name></member>
+      <member refid="classIIOBuffer_1abe3b500a9abfb8a39f84ce293f2d1e9a" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_loopRate</name></member>
       <member refid="classIIOBuffer_1a684d9b70852b36843d6849821c8eb581" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_mutex</name></member>
       <member refid="classIIOBuffer_1aab6d6c33bb5b01606959a49e0f91f033" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_nh</name></member>
       <member refid="classIIOBuffer_1aec8940e4ebac01323a7925f87bf48f94" prot="private" virt="non-virtual"><scope>IIOBuffer</scope><name>m_pub</name></member>

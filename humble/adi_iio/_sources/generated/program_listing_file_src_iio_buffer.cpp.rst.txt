@@ -54,6 +54,7 @@ Program Listing for File iio_buffer.cpp
        RCLCPP_DEBUG(rclcpp::get_logger("adi_iio_node"), "Destroyed buffer %p", (void *)m_buffer);
        iio_buffer_destroy(m_buffer);
        m_buffer = nullptr;
+       m_loopRate = nullptr;
      }
    }
    
@@ -243,10 +244,11 @@ Program Listing for File iio_buffer.cpp
    }
    
    
-   void IIOBuffer::enableTopic(std::string topic_name)
+   void IIOBuffer::enableTopic(std::string topic_name, double loopRate)
    {
      m_topic_enabled = true;
      m_stopThread = false;
+     m_loopRate = std::make_shared<rclcpp::Rate>(loopRate);
    
      if (topic_name == "") {
        m_topic_name = IIOPath::toTopicName(m_device_path);
@@ -274,7 +276,9 @@ Program Listing for File iio_buffer.cpp
          m_pub->publish(m_data);
        }
        // Sleep to maintain the loop rate
-       //std::this_thread::yield();
+       RCLCPP_DEBUG(
+         rclcpp::get_logger("adi_iio_node"), "Publishing loop %s", m_topic_name.c_str());
+       m_loopRate->sleep();
      }
    }
    

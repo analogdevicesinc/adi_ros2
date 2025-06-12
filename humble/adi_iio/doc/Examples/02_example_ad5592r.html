@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>AD5592R &#8212; adi_iio 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="AD7124-8" href="03_example_ad7124-8.html" />
+    <link rel="prev" title="adi_iio_node: service call reference" href="01_service_call_reference.html" />
+   
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">AD5592R</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites:</a></li>
+<li><a class="reference internal" href="#examples">Examples:</a><ul>
+<li><a class="reference internal" href="#configuring-ad5592r-channel-attributes-using-attrwritestring-service">Configuring AD5592R Channel Attributes using <code class="docutils literal notranslate"><span class="pre">AttrWriteString</span></code> Service</a><ul>
+<li><a class="reference internal" href="#configuring-a-single-channel-attribute-via-cli">Configuring a Single Channel Attribute via CLI</a></li>
+<li><a class="reference internal" href="#configuring-multiple-channel-attributes-via-launch-file">Configuring Multiple Channel Attributes via Launch File</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#enabling-ad5592r-channel-attribute-topics">Enabling AD5592R Channel Attribute Topics</a><ul>
+<li><a class="reference internal" href="#enabling-a-single-attribute-topic-via-cli">Enabling a Single Attribute Topic via CLI</a></li>
+<li><a class="reference internal" href="#enabling-multiple-ad5592r-attribute-topics-with-a-launch-file">Enabling Multiple AD5592R Attribute Topics with a Launch File</a></li>
+<li><a class="reference internal" href="#transforming-raw-data-to-voltage-readings">Transforming Raw Data to Voltage Readings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bringing-up-the-full-ad5592r-example-system">Bringing Up the Full AD5592R Example System</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#creating-custom-ros-2-nodes-for-iio-device-interaction">Creating Custom ROS 2 Nodes for IIO Device Interaction</a><ul>
+<li><a class="reference internal" href="#temperature-indicator-node">Temperature Indicator Node</a></li>
+<li><a class="reference internal" href="#actuator-and-state-machine-example-controlling-output-channels">Actuator and State Machine Example: Controlling Output Channels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../../index.html">
+      adi_iio
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="../../__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_iio">Rosindex</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/analogdevicesinc/iio_ros2">Repository</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://analogdevicesinc.github.io/iio_ros2/">Website</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/analogdevicesinc/iio_ros2/issues">Bugtracker</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="../../generated/index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classAttrPubSub.html">Class AttrPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classBoolPubSub.html">Class BoolPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classFloat32PubSub.html">Class Float32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOAttrTopic.html">Class IIOAttrTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOBuffer.html">Class IIOBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIONode.html">Class IIONode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOPath.html">Class IIOPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classInt32PubSub.html">Class Int32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classStringPubSub.html">Class StringPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classUpdateCallback.html">Class UpdateCallback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/enum_iio__path_8hpp_1a36bc4adc60811fcc33489bbb803ddf58.html">Enum IIOPathType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/function_adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265.html">Define ATTR_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8.html">Define ATTR_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673.html">Define ATTR_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a.html">Define BUFFER_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512.html">Define BUFFER_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e.html">Define BUFFER_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801.html">Define MAX_ATTR_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include_adi_iio.html">Directory adi_iio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_src.html">Directory src</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_adi_iio.cpp.html">File adi_iio.cpp</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_adi_iio.cpp.html">Program Listing for File adi_iio.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_attr_publisher.cpp.html">File attr_publisher.cpp</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_attr_publisher.cpp.html">Program Listing for File attr_publisher.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_attr_publisher.hpp.html">File attr_publisher.hpp</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_attr_publisher.hpp.html">Program Listing for File attr_publisher.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_attr_topic.cpp.html">File iio_attr_topic.cpp</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_attr_topic.cpp.html">Program Listing for File iio_attr_topic.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_attr_topic.hpp.html">File iio_attr_topic.hpp</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_attr_topic.hpp.html">Program Listing for File iio_attr_topic.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_buffer.cpp.html">File iio_buffer.cpp</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_buffer.cpp.html">Program Listing for File iio_buffer.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-7" id="toctree-collapse-2-7"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_buffer.hpp.html">File iio_buffer.hpp</a><label for="toctree-collapse-2-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_buffer.hpp.html">Program Listing for File iio_buffer.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-8" id="toctree-collapse-2-8"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_node.cpp.html">File iio_node.cpp</a><label for="toctree-collapse-2-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_node.cpp.html">Program Listing for File iio_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-9" id="toctree-collapse-2-9"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_node.hpp.html">File iio_node.hpp</a><label for="toctree-collapse-2-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_node.hpp.html">Program Listing for File iio_node.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-10" id="toctree-collapse-2-10"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_path.cpp.html">File iio_path.cpp</a><label for="toctree-collapse-2-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_path.cpp.html">Program Listing for File iio_path.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-11" id="toctree-collapse-2-11"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_path.hpp.html">File iio_path.hpp</a><label for="toctree-collapse-2-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_path.hpp.html">Program Listing for File iio_path.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../../__service_definitions.html">Service Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrDisableTopic.html">AttrDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrEnableTopic.html">AttrEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrReadString.html">AttrReadString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrWriteString.html">AttrWriteString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferCreate.html">BufferCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferDestroy.html">BufferDestroy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferDisableTopic.html">BufferDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferEnableTopic.html">BufferEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferRead.html">BufferRead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferRefill.html">BufferRefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferWrite.html">BufferWrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListAttributes.html">ListAttributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListChannels.html">ListChannels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListDevices.html">ListDevices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ScanContext.html">ScanContext</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__README.html">README</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5" checked=""/><div class="collapse"><a class="reference internal" href="../../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1" checked=""/><div class="collapse"><a class="reference internal" href="index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+    <nav class="breadcrumb">
+        <ol>
+          <li><a href="../../user_docs.html">Documentation</a></li>
+          <li><a href="index.html">Examples/</a></li>
+          </ol>
+    </nav>
+  </div>
+
+          <div class="body" role="main">
+            
+  <section id="ad5592r">
+<span id="example-ad5592r"></span><h1>AD5592R<a class="headerlink" href="#ad5592r" title="Link to this heading"></a></h1>
+<section id="prerequisites">
+<h2>Prerequisites:<a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4B</a> as the remote host with <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/software/kuiper-linux.html">Kuiper Linux Image</a> installed.</p></li>
+<li><p><a class="reference external" href="https://github.com/adisuciu/m2kirl/blob/main/dt/rpi-ad5592r-m2kirl.dts">AD5592R device tree</a> overlay loaded on the RPi.</p></li>
+<li><p><a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/pmd-rpi-intz.html#eb-overview">PMD-RPI-INTZ</a> for HW connections.</p></li>
+<li><p><a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad5592r-pmdz.html">EVAL-AD5592R-PMDZ</a> as the IIO device.</p></li>
+<li><p>A client running ROS2 with the <code class="docutils literal notranslate"><span class="pre">adi_iio</span></code> package installed.</p></li>
+<li><p>A network connection between the RPi and the client.</p></li>
+</ul>
+<p>The  <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-ad5592r-pmdz.html">EVAL-AD5592R-PMDZ</a> is connected to the RPi via the <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/pmd-rpi-intz.html#eb-overview">PMD-RPI-INTZ</a> board
+using the <code class="docutils literal notranslate"><span class="pre">SPI</span> <span class="pre">Pmod</span> <span class="pre">#1</span></code> connector. The <a class="reference external" href="https://github.com/adisuciu/m2kirl/blob/main/dt/rpi-ad5592r-m2kirl.dts">AD5592R device tree</a> overlay uses
+<code class="docutils literal notranslate"><span class="pre">SPI</span> <span class="pre">CS0</span></code> to communicate with the device.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> executable must be running on the client side when
+running the examples.</p>
+</div>
+</section>
+<section id="examples">
+<h2>Examples:<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<section id="configuring-ad5592r-channel-attributes-using-attrwritestring-service">
+<h3>Configuring AD5592R Channel Attributes using <code class="docutils literal notranslate"><span class="pre">AttrWriteString</span></code> Service<a class="headerlink" href="#configuring-ad5592r-channel-attributes-using-attrwritestring-service" title="Link to this heading"></a></h3>
+<section id="configuring-a-single-channel-attribute-via-cli">
+<h4>Configuring a Single Channel Attribute via CLI<a class="headerlink" href="#configuring-a-single-channel-attribute-via-cli" title="Link to this heading"></a></h4>
+<p>You can set a specific attribute of an IIO device channel by calling the
+<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrWriteString</span></code> service. For instance, to set the <code class="docutils literal notranslate"><span class="pre">scale</span></code>
+for <code class="docutils literal notranslate"><span class="pre">output_voltage0</span></code> of the <code class="docutils literal notranslate"><span class="pre">ad5592r</span></code> device, you would use the following
+command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/adi_iio_node/AttrWriteString<span class="w"> </span>adi_iio/srv/AttrWriteString<span class="w"> </span><span class="s2">&quot;{</span>
+<span class="s2">    attr_path: &#39;ad5592r/output_voltage0/scale&#39;,</span>
+<span class="s2">    value: &#39;0.6103515629&#39;</span>
+<span class="s2">}&quot;</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>In this command:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrWriteString</span></code> is the name of the service.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrWriteString</span></code> is the type of the service.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">attr_path:</span> <span class="pre">'ad5592r/output_voltage0/scale'</span></code> specifies the IIO device
+(<code class="docutils literal notranslate"><span class="pre">ad5592r</span></code>), the channel (<code class="docutils literal notranslate"><span class="pre">output_voltage0</span></code>), and the attribute
+(<code class="docutils literal notranslate"><span class="pre">scale</span></code>) to be modified.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">value:</span> <span class="pre">'0.6103515629'</span></code> is the new value for the specified attribute.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This approach is useful for quick, individual changes. For initializing a device
+with multiple settings or for more complex setups, using a launch file is more
+efficient.</p>
+</section>
+<section id="configuring-multiple-channel-attributes-via-launch-file">
+<h4>Configuring Multiple Channel Attributes via Launch File<a class="headerlink" href="#configuring-multiple-channel-attributes-via-launch-file" title="Link to this heading"></a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">ad5592r_config.launch.py</span></code> launch file demonstrates how to set the
+<code class="docutils literal notranslate"><span class="pre">scale</span></code> and <code class="docutils literal notranslate"><span class="pre">raw</span></code> attributes for various input and output voltage channels
+of the AD5592R device. This is useful for initializing the device to a known state.</p>
+<p>The launch file executes a series of <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">service</span> <span class="pre">call</span></code> commands to the
+<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrWriteString</span></code> service. For each targeted channel, it sets:
+* <code class="docutils literal notranslate"><span class="pre">&lt;channel_name&gt;/scale</span></code>: Defines the scaling factor for the channel.
+* <code class="docutils literal notranslate"><span class="pre">&lt;channel_name&gt;/raw</span></code>: Sets the raw ADC/DAC value for the channel.</p>
+<p>For output channels, both <code class="docutils literal notranslate"><span class="pre">scale</span></code> and <code class="docutils literal notranslate"><span class="pre">raw</span></code> attributes are set. For input
+channels, typically only the <code class="docutils literal notranslate"><span class="pre">scale</span></code> attribute is configured via this launch
+file.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To run this launch file, execute the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ad5592r<span class="w"> </span>ad5592r_config.launch.py
+</pre></div>
+</div>
+</div>
+<dl class="simple">
+<dt>This will configure the following channels on the <code class="docutils literal notranslate"><span class="pre">ad5592r</span></code> device:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage0</span></code>: sets scale and raw attributes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage1</span></code>: sets scale attribute.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage2</span></code>: sets scale attribute.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage2</span></code>: sets scale and raw attributes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage3</span></code>: sets scale attribute.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage3</span></code>: sets scale and raw attributes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage4</span></code>: sets scale attribute.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You can inspect the <code class="docutils literal notranslate"><span class="pre">ad5592r_config.launch.py</span></code> file to see the how the
+service calls are structured.</p>
+</section>
+</section>
+<section id="enabling-ad5592r-channel-attribute-topics">
+<h3>Enabling AD5592R Channel Attribute Topics<a class="headerlink" href="#enabling-ad5592r-channel-attribute-topics" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> can publish the values of IIO device attributes to ROS 2
+topics. This allows other nodes in the ROS 2 ecosystem to subscribe to and
+react to changes in these attribute values.</p>
+<section id="enabling-a-single-attribute-topic-via-cli">
+<h4>Enabling a Single Attribute Topic via CLI<a class="headerlink" href="#enabling-a-single-attribute-topic-via-cli" title="Link to this heading"></a></h4>
+<p>To enable publishing for a specific attribute, you can call the
+<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrEnableTopic</span></code> service. For example, to start publishing
+the <code class="docutils literal notranslate"><span class="pre">raw</span></code> value of <code class="docutils literal notranslate"><span class="pre">output_voltage0</span></code> for the <code class="docutils literal notranslate"><span class="pre">ad5592r</span></code> device, you would use:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/adi_iio_node/AttrEnableTopic<span class="w"> </span>adi_iio/srv/AttrEnableTopic<span class="w"> </span><span class="s2">&quot;{</span>
+<span class="s2">    attr_path: &#39;ad5592r/output_voltage0/raw&#39;,</span>
+<span class="s2">    loop_rate: 1</span>
+<span class="s2">}&quot;</span>
+</pre></div>
+</div>
+<p>This command instructs the <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to create a publisher for the
+specified attribute. The topic name will be automatically generated based on
+the <code class="docutils literal notranslate"><span class="pre">attr_path</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage0/raw</span></code>). The node will then
+periodically read the attribute and publish its value.</p>
+<p>This method is suitable for enabling topics one by one. For enabling multiple
+topics at once, a launch file is more convenient.</p>
+</section>
+<section id="enabling-multiple-ad5592r-attribute-topics-with-a-launch-file">
+<h4>Enabling Multiple AD5592R Attribute Topics with a Launch File<a class="headerlink" href="#enabling-multiple-ad5592r-attribute-topics-with-a-launch-file" title="Link to this heading"></a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">ad5592r_topics.launch.py</span></code> launch file provides a way to enable topic
+publishing for several raw attributes of the AD5592R device simultaneously.</p>
+<p>This launch file executes a series of <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">service</span> <span class="pre">call</span></code> commands to the
+<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrEnableTopic</span></code> service for various input and output channel
+raw attributes.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To run this launch file, execute the following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ad5592r<span class="w"> </span>ad5592r_topics.launch.py
+</pre></div>
+</div>
+<p>By default, this launch file sets the <code class="docutils literal notranslate"><span class="pre">loop_rate</span></code> for publishing to 1 Hz.
+You can change the <code class="docutils literal notranslate"><span class="pre">loop_rate</span></code> variable in the launch file.</p>
+</div>
+<dl class="simple">
+<dt>This will enable topics for the following <code class="docutils literal notranslate"><span class="pre">raw</span></code> attributes on the <code class="docutils literal notranslate"><span class="pre">ad5592r</span></code> device:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage0/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage1/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage2/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage2/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage3/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_voltage3/raw</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input_voltage4/raw</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<p>After running the launch file, you can list the available topics using
+<code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">list</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/ad5592r/input_voltage1/raw/read
+/ad5592r/input_voltage1/raw/write
+/ad5592r/input_voltage2/raw/read
+/ad5592r/input_voltage2/raw/write
+/ad5592r/input_voltage3/raw/read
+/ad5592r/input_voltage3/raw/write
+/ad5592r/input_voltage4/raw/read
+/ad5592r/input_voltage4/raw/write
+/ad5592r/output_voltage0/raw/read
+/ad5592r/output_voltage0/raw/write
+/ad5592r/output_voltage2/raw/read
+/ad5592r/output_voltage2/raw/write
+/ad5592r/output_voltage3/raw/read
+/ad5592r/output_voltage3/raw/write
+</pre></div>
+</div>
+<p>Since we are dealing with input channels, the <code class="docutils literal notranslate"><span class="pre">/read</span></code> topics can be used to
+read the current value of the attribute.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/ad5592r/input_voltage1/raw/read
+</pre></div>
+</div>
+<p>You can inspect the <code class="docutils literal notranslate"><span class="pre">ad5592r_topics.launch.py</span></code> to see how the service calls
+are made and how the <code class="docutils literal notranslate"><span class="pre">loop_rate</span></code> variable is used.</p>
+</section>
+<section id="transforming-raw-data-to-voltage-readings">
+<h4>Transforming Raw Data to Voltage Readings<a class="headerlink" href="#transforming-raw-data-to-voltage-readings" title="Link to this heading"></a></h4>
+<p>Once you have topics publishing raw attribute data, you might want to transform
+this data into more meaningful units, such as Volts. The ROS 2 ecosystem
+provides utility nodes like <code class="docutils literal notranslate"><span class="pre">topic_tools</span> <span class="pre">transform</span></code> that can subscribe to a
+topic, apply a transformation to the messages, and republish them on a new topic.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ad5592r_transforms.launch.py</span></code> launch file demonstrates this by converting
+the raw ADC readings from <code class="docutils literal notranslate"><span class="pre">input_voltage2</span></code> and <code class="docutils literal notranslate"><span class="pre">input_voltage3</span></code> into voltage values.</p>
+<dl class="simple">
+<dt>This launch file uses <code class="docutils literal notranslate"><span class="pre">topic_tools</span> <span class="pre">transform</span></code> to:</dt><dd><ol class="arabic simple">
+<li><p>Subscribe to the <code class="docutils literal notranslate"><span class="pre">/ad5592r/input_voltage&lt;X&gt;/raw/read</span></code> topics
+(where X is 2 or 3).</p></li>
+<li><p>Apply a formula: <code class="docutils literal notranslate"><span class="pre">volts</span> <span class="pre">=</span> <span class="pre">(raw_value</span> <span class="pre">*</span> <span class="pre">scale)</span> <span class="pre">/</span> <span class="pre">1000</span></code>. In this case,
+the scale is hardcoded to <code class="docutils literal notranslate"><span class="pre">0.610351562</span></code>, which is a typical scale factor
+for the AD5592R when configured for a 0-2.5V range with its internal
+reference (Vref/4096 = 2.5V/4096). The division by 1000 converts mV to V.</p></li>
+<li><p>Publish the result as a <code class="docutils literal notranslate"><span class="pre">std_msgs/Float64</span></code> message on new topics:
+<code class="docutils literal notranslate"><span class="pre">/ad5592r/input_voltage&lt;X&gt;/volts</span></code>.</p></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To use this, you would typically first enable the raw data topics using
+<code class="docutils literal notranslate"><span class="pre">ad5592r_topics.launch.py</span></code> as described previously. Then, in a new terminal,
+run the transforms launch file:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ad5592r<span class="w"> </span>ad5592r_transforms.launch.py
+</pre></div>
+</div>
+</div>
+<p>This will start the transformation nodes. You can then inspect the new topics:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/ad5592r/input_voltage2/volts
+
+<span class="c1"># Which will output something like this:</span>
+data:<span class="w"> </span><span class="m">0</span>.000610351562
+---
+data:<span class="w"> </span><span class="m">0</span>.000610351562
+---
+data:<span class="w"> </span><span class="m">0</span>.000610351562
+</pre></div>
+</div>
+<p>You can inspect the <code class="docutils literal notranslate"><span class="pre">ad5592r_transforms.launch.py</span></code> file to see the exact
+commands and transformation expressions used.</p>
+</section>
+</section>
+<section id="bringing-up-the-full-ad5592r-example-system">
+<h3>Bringing Up the Full AD5592R Example System<a class="headerlink" href="#bringing-up-the-full-ad5592r-example-system" title="Link to this heading"></a></h3>
+<p>To simplify the process of configuring the AD5592R, enabling its data topics,
+and setting up data transformations, a top-level bringup launch file is
+provided: <code class="docutils literal notranslate"><span class="pre">ad5592r_bringup.launch.py</span></code>. This file orchestrates the execution
+of the previously discussed launch files:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To launch the complete AD5592R example system, execute the
+following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>ad5592r<span class="w"> </span>ad5592r_bringup.launch.py
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The transform launch file is not included in the bringup process
+because it depends on the topics being active. If the topics are not
+available quickly enough, the transform launch file might fail. It is
+recommended to run the transform launch file separately after ensuring
+that the topics are active.</p>
+</div>
+</section>
+</section>
+<section id="creating-custom-ros-2-nodes-for-iio-device-interaction">
+<h2>Creating Custom ROS 2 Nodes for IIO Device Interaction<a class="headerlink" href="#creating-custom-ros-2-nodes-for-iio-device-interaction" title="Link to this heading"></a></h2>
+<p>Beyond using command-line tools and launch files, you can create dedicated ROS2
+nodes in Python (or C++) to implement more complex logic involving IIO devices.
+These custom nodes can act as clients to the services provided by
+<code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to read, write, or stream IIO attributes and buffer data.</p>
+<p>This approach allows for tailored applications, such as:</p>
+<ul class="simple">
+<li><p>Implementing control loops based on sensor readings.</p></li>
+<li><p>Performing advanced data processing and fusion.</p></li>
+<li><p>Integrating IIO device data with other ROS 2 capabilities (e.g., navigation,
+manipulation).</p></li>
+</ul>
+<p>The following examples demonstrates how to create a custom ROS2 node for
+different applications:</p>
+<section id="temperature-indicator-node">
+<h3>Temperature Indicator Node<a class="headerlink" href="#temperature-indicator-node" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">temperature_indicator.py</span></code> script provides an example of a ROS 2 node that
+reads the AD5592R’s internal temperature sensor attributes, calculates the
+temperature in Celsius, and publishes it on a ROS 2 topic.</p>
+<p><strong>Purpose:</strong> The <code class="docutils literal notranslate"><span class="pre">TemperatureIndicator</span></code> node demonstrates how to:</p>
+<ul class="simple">
+<li><p>Create service clients to interact with <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>.</p></li>
+<li><dl class="simple">
+<dt>Read IIO attributes (<code class="docutils literal notranslate"><span class="pre">scale</span></code>, <code class="docutils literal notranslate"><span class="pre">offset</span></code>, <code class="docutils literal notranslate"><span class="pre">raw</span></code>) for the temperature</dt><dd><p>sensor channel (<code class="docutils literal notranslate"><span class="pre">temp</span></code>) of the <code class="docutils literal notranslate"><span class="pre">ad5592r</span></code> device.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Enable topic publishing for specific IIO attributes (<code class="docutils literal notranslate"><span class="pre">raw</span></code> and</dt><dd><p><code class="docutils literal notranslate"><span class="pre">offset</span></code>) via service calls.</p>
+</dd>
+</dl>
+</li>
+<li><p>Subscribe to these newly enabled topics to get periodic updates.</p></li>
+<li><p>Perform calculations using the retrieved attribute values.</p></li>
+<li><dl class="simple">
+<dt>Publish the processed data (temperature in Celsius with running mean and</dt><dd><p>variance) on a standard <code class="docutils literal notranslate"><span class="pre">sensor_msgs/msg/Temperature</span></code> topic.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Services Showcased:</strong> This node primarily utilizes the following services
+from <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrReadString</span></code>: To read the <code class="docutils literal notranslate"><span class="pre">scale</span></code> attribute of the
+temperature sensor once at startup.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrEnableTopic</span></code>: To request <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to start
+publishing the <code class="docutils literal notranslate"><span class="pre">raw</span></code> and <code class="docutils literal notranslate"><span class="pre">offset</span></code> attributes of the temperature sensor
+to dedicated topics.</p></li>
+</ul>
+<p><strong>How to Run and Inspect:</strong></p>
+<ol class="arabic">
+<li><p><strong>Run the Node</strong>:</p>
+<blockquote>
+<div><p>You can run the node using <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">run</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>ad5592r<span class="w"> </span>temperature_indicator
+</pre></div>
+</div>
+<p>You can also pass parameters, for example, to change the update rate:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>ad5592r<span class="w"> </span>temperature_indicator<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>timer_period:<span class="o">=</span><span class="m">0</span>.5
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Inspect its Behavior</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Node List</strong>: Check if the node is running:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>node<span class="w"> </span>list
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Topic List</strong>: See the topics it interacts with:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span>list
+<span class="c1"># You should see /temperature, /ad5592r/temp/raw/read, /ad5592r/temp/offset/read, etc.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Echo Temperature Data</strong>: View the published temperature:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/temperature
+
+<span class="c1"># Should return:</span>
+<span class="c1"># header:</span>
+<span class="c1"># stamp:</span>
+<span class="c1">#    sec: 1747036204</span>
+<span class="c1">#    nanosec: 922183048</span>
+<span class="c1"># frame_id: &#39;&#39;</span>
+<span class="c1"># temperature: 26.089715531578957</span>
+<span class="c1"># variance: 0.12639853924376374</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Node Info</strong>: Get detailed information about its subscriptions, publications, and services:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/temperature_indicator
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p><strong>Communication Flow:</strong></p>
+<figure class="align-default">
+<img alt="Communication Flow" src="../../_images/ad5592r_temperature_indicator.png" />
+</figure>
+<ol class="arabic">
+<li><p><strong>Initialization</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>The node declares parameters for timer period, the <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code></dt><dd><p>service provider name, and QoS settings.</p>
+</dd>
+</dl>
+</li>
+<li><p>It creates service clients for <code class="docutils literal notranslate"><span class="pre">AttrReadString</span></code> and <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code>.</p></li>
+<li><p>It waits for these services to become available.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Attribute Reading &amp; Topic Enabling</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>It makes an asynchronous service call to <code class="docutils literal notranslate"><span class="pre">AttrReadString</span></code> to fetch</dt><dd><p>the <code class="docutils literal notranslate"><span class="pre">ad5592r/temp/scale</span></code> value.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>It makes asynchronous service calls to <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code> for</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ad5592r/temp/raw</span></code> and <code class="docutils literal notranslate"><span class="pre">ad5592r/temp/offset</span></code>. This tells
+<code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to start publishing these values.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Data Subscription</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>The node subscribes to <code class="docutils literal notranslate"><span class="pre">ad5592r/temp/raw/read</span></code> and</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ad5592r/temp/offset/read</span></code> topics (which are of type
+<code class="docutils literal notranslate"><span class="pre">std_msgs/msg/String</span></code> as enabled by <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code>).</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Periodic Processing &amp; Publishing</strong>:</p>
+<blockquote>
+<div><ul>
+<li><p>A timer periodically triggers a callback.</p></li>
+<li><p>Inside the timer callback, if <code class="docutils literal notranslate"><span class="pre">raw</span></code> and <code class="docutils literal notranslate"><span class="pre">offset</span></code> values have been
+received from the subscriptions, the node:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Computes the temperature using the formula:
+<cite>temp_degC = ((raw + offset) * scale) / 1000</cite>.</p></li>
+<li><p>Updates a running mean and variance of the temperature.</p></li>
+<li><p>Publishes a <code class="docutils literal notranslate"><span class="pre">sensor_msgs/msg/Temperature</span></code> message containing the
+current mean temperature and variance to the <code class="docutils literal notranslate"><span class="pre">/temperature</span></code> topic.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="actuator-and-state-machine-example-controlling-output-channels">
+<h3>Actuator and State Machine Example: Controlling Output Channels<a class="headerlink" href="#actuator-and-state-machine-example-controlling-output-channels" title="Link to this heading"></a></h3>
+<p>This example demonstrates a more complex interaction involving two custom ROS 2 nodes:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">actuator.py</span></code>: A node that subscribes to voltage commands on ROS 2 topics
+and translates them into raw values to control output channels of the
+AD5592R (e.g., to drive an LED).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">state_machine.py</span></code>: A node that generates various voltage signal patterns
+and publishes them to the topics the <code class="docutils literal notranslate"><span class="pre">actuator.py</span></code> node listens to.</p></li>
+</ol>
+<p>Together, these nodes showcase how one can create a system where high-level
+commands (generated by the state machine) are translated into low-level hardware
+control (by the actuator) via the <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>.</p>
+<p><strong>1. Actuator Node</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">actuator.py</span></code> script acts as an interface to control specific output
+channels of the AD5592R.</p>
+<p><strong>Purpose:</strong> The <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> node demonstrates how to:</p>
+<ul class="simple">
+<li><p>Declare parameters for IIO attribute paths (e.g., for anode and cathode raw
+and scale attributes) and topic names.</p></li>
+<li><p>Create service clients for <code class="docutils literal notranslate"><span class="pre">AttrReadString</span></code>, <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">AttrDisableTopic</span></code>.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">AttrReadString</span></code> to fetch the <code class="docutils literal notranslate"><span class="pre">scale</span></code> values for the configured output
+channels. This is crucial for converting desired voltage levels into raw DAC values.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code> to instruct <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to create
+<code class="docutils literal notranslate"><span class="pre">&lt;attr_path&gt;/write</span></code> topics. This allows the <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> to send raw values
+to the AD5592R by publishing to these specific topics.</p></li>
+<li><p>Subscribe to user-defined topics (e.g., <code class="docutils literal notranslate"><span class="pre">/anode</span></code>, <code class="docutils literal notranslate"><span class="pre">/cathode</span></code>) that carry
+desired voltage levels (as <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/Float64</span></code>).</p></li>
+<li><p>In the subscription callback, convert the received voltage (e.g., 0-2.5V) into
+a raw integer value (e.g., 0-4095) using the previously read <code class="docutils literal notranslate"><span class="pre">scale</span></code>.</p></li>
+<li><p>Publish the calculated raw value as a <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/String</span></code> to the
+corresponding <code class="docutils literal notranslate"><span class="pre">.../raw/write</span></code> topic (e.g., <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage2/raw/write</span></code>).</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">AttrDisableTopic</span></code> during node shutdown to clean up the topics enabled
+in <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>.</p></li>
+</ul>
+<p><strong>Services &amp; Topics Utilized by Actuator:</strong></p>
+<ul>
+<li><p><strong>Service Clients:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrReadString</span></code>: To get <code class="docutils literal notranslate"><span class="pre">scale</span></code> values for
+<code class="docutils literal notranslate"><span class="pre">output_voltageX/scale</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrEnableTopic</span></code>: To enable <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to expose
+<code class="docutils literal notranslate"><span class="pre">output_voltageX/raw/write</span></code> topics.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio/srv/AttrDisableTopic</span></code>: To disable the topics upon shutdown.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Subscribers:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>topics like <code class="docutils literal notranslate"><span class="pre">/anode</span></code> and <code class="docutils literal notranslate"><span class="pre">/cathode</span></code> (configurable via parameters,
+type <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/Float64</span></code>) for receiving voltage commands.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Publishers:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>To topics like <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage2/raw/write</span></code> and
+<code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage3/raw/write</span></code> (configurable via parameters,
+type <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/String</span></code>) to send raw values to <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>2. State Machine Node</strong></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">state_machine.py</span></code> script generates time-varying voltage signals.</p>
+<p><strong>Purpose:</strong> The <code class="docutils literal notranslate"><span class="pre">StateMachine</span></code> node demonstrates how to:</p>
+<ul class="simple">
+<li><p>Define a sequence of states (e.g., “ANODE_RISING”, “ANODE_FALLING”,
+“CATHODE_RISING”, “CATHODE_FALLING”).</p></li>
+<li><p>Generate a signal (e.g., a linear ramp from 0V to 2.5V).</p></li>
+<li><p>In each state, publish this signal to a specific topic (<code class="docutils literal notranslate"><span class="pre">/anode</span></code> or
+<code class="docutils literal notranslate"><span class="pre">/cathode</span></code>, configurable via parameters).</p></li>
+</ul>
+<p><strong>Topics Utilized by StateMachine:</strong></p>
+<ul class="simple">
+<li><p><strong>Publishers:</strong> To topics like <code class="docutils literal notranslate"><span class="pre">/anode</span></code> and <code class="docutils literal notranslate"><span class="pre">/cathode</span></code> (configurable
+via parameters, type <code class="docutils literal notranslate"><span class="pre">std_msgs/msg/Float64</span></code>) to send generated voltage signals.</p></li>
+</ul>
+<p><strong>How to Run and Inspect:</strong></p>
+<ol class="arabic">
+<li><p><strong>Run the Nodes</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open two separate terminals.</p></li>
+<li><p>In the first terminal, run the Actuator node. You might want to specify
+which AD5592R channels are connected to your “anode” and “cathode” if they
+differ from the defaults (<code class="docutils literal notranslate"><span class="pre">output_voltage2</span></code> and <code class="docutils literal notranslate"><span class="pre">output_voltage3</span></code> respectively).</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>ad5592r<span class="w"> </span>actuator
+
+<span class="c1"># Example with custom channels:</span>
+ros2<span class="w"> </span>run<span class="w"> </span>ad5592r<span class="w"> </span>actuator<span class="w"> </span>--ros-args<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>anode_raw:<span class="o">=</span><span class="s2">&quot;ad5592r/output_voltage0/raw&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>anode_scale:<span class="o">=</span><span class="s2">&quot;ad5592r/output_voltage0/scale&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>cathode_raw:<span class="o">=</span><span class="s2">&quot;ad5592r/output_voltage2/raw&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>cathode_scale:<span class="o">=</span><span class="s2">&quot;ad5592r/output_voltage2/scale&quot;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>With the <code class="docutils literal notranslate"><span class="pre">actuator</span></code> node running, you can publish data to one of
+the topics which will be converted to a raw value and sent to the
+channel. For example:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/cathode<span class="w"> </span>std_msgs/msg/Float64<span class="w"> </span><span class="s2">&quot;data: 2.5&quot;</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/anode<span class="w"> </span>std_msgs/msg/Float64<span class="w"> </span><span class="s2">&quot;data: 0&quot;</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>In the second terminal, run the StateMachine node. You can adjust the
+<cite>state_period</cite> to control how long one full cycle of all states takes.</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>ad5592r<span class="w"> </span>state_machine<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>state_period:<span class="o">=</span><span class="m">4</span>.0
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Inspect its Behavior</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Node List</strong>:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>node<span class="w"> </span>list
+<span class="c1"># You should see /actuator and /state</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Topic List &amp; Echo</strong>: Observe the topics used for communication.</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>topic<span class="w"> </span>list
+<span class="c1"># You should see /anode, /cathode, /ad5592r/output_voltageX/raw/write, etc.</span>
+
+ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/anode
+<span class="c1"># See the voltage commands from the StateMachine</span>
+
+ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/ad5592r/output_voltage2/raw/write<span class="w"> </span><span class="c1"># Or your configured anode raw write topic</span>
+<span class="c1"># See the raw string values sent by the Actuator to adi_iio_node</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Node Info</strong>:</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/actuator
+ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/state
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>Hardware Observation</strong>: If you have an LED or oscilloscope connected
+to the AD5592R output channels being controlled, you should see its
+behavior change according to the patterns generated by the <code class="docutils literal notranslate"><span class="pre">StateMachine</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p><strong>Combined Operation &amp; Communication Flow:</strong></p>
+<figure class="align-default">
+<img alt="Communication Flow for Actuator and State Machine" src="../../_images/ad5592r_topic_commands.png" />
+</figure>
+<ol class="arabic">
+<li><p><strong>Initialization:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> node starts, reads the <code class="docutils literal notranslate"><span class="pre">scale</span></code> for its configured output
+channels (e.g., <code class="docutils literal notranslate"><span class="pre">output_voltage2</span></code> and <code class="docutils literal notranslate"><span class="pre">output_voltage3</span></code>) from
+<code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> using <code class="docutils literal notranslate"><span class="pre">AttrReadString</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> then requests <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> (via <code class="docutils literal notranslate"><span class="pre">AttrEnableTopic</span></code>)
+to allow writing to the <code class="docutils literal notranslate"><span class="pre">raw</span></code> attributes of these channels by publishing
+to topics like <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage2/raw/write</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> subscribes to <code class="docutils literal notranslate"><span class="pre">/anode</span></code> and <code class="docutils literal notranslate"><span class="pre">/cathode</span></code> topics for
+voltage commands.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">StateMachine</span></code> node starts and prepares to publish to <code class="docutils literal notranslate"><span class="pre">/anode</span></code>
+and <code class="docutils literal notranslate"><span class="pre">/cathode</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Voltage Command Reception &amp; Actuation (Actuator):</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Actuator</span></code> receives the voltage value on its <code class="docutils literal notranslate"><span class="pre">/anode</span></code> subscription.</p></li>
+<li><p>It converts this voltage to a raw DAC value.</p></li>
+<li><p>It publishes this raw value as a string to <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage2/raw/write</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Hardware Update (adi_iio_node):</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> receives the string on <code class="docutils literal notranslate"><span class="pre">/ad5592r/output_voltage2/raw/write</span></code>,
+and writes it to the actual IIO device’s <code class="docutils literal notranslate"><span class="pre">raw</span></code> attribute for <code class="docutils literal notranslate"><span class="pre">output_voltage2</span></code>.
+If an LED is connected to this channel, its brightness would change.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+<p>This example illustrates a decoupled system where one node is responsible for
+high-level behavior generation and another for low-level hardware interfacing,
+communicating via standard ROS 2 topics and services.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="01_service_call_reference.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a>
+    <a href="03_example_ad7124-8.html" title="Next document (Alt+Shift+RightArrow)" class="next">AD7124-8</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

@@ -32,6 +32,20 @@
         </inbodydescription>
         <location file="include/adi_iio/iio_node.hpp" line="157" column="15" bodyfile="include/adi_iio/iio_node.hpp" bodystart="157" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classIIONode_1af8fde21e83b35b4e2aaf53308410030e" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t IIONode::m_timeout</definition>
+        <argsstring></argsstring>
+        <name>m_timeout</name>
+        <qualifiedname>IIONode::m_timeout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_node.hpp" line="158" column="11" bodyfile="include/adi_iio/iio_node.hpp" bodystart="158" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" prot="private" static="no" mutable="no">
         <type>iio_context *</type>
         <definition>iio_context* IIONode::m_ctx</definition>
@@ -44,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="158" column="16" bodyfile="include/adi_iio/iio_node.hpp" bodystart="158" bodyend="-1"/>
+        <location file="include/adi_iio/iio_node.hpp" line="159" column="16" bodyfile="include/adi_iio/iio_node.hpp" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classIIONode_1a66e35001512376c37dc773be1779be1b" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classIIOAttrTopic" kindref="compound">IIOAttrTopic</ref> &gt; &gt;</type>
@@ -58,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="160" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="160" bodyend="-1"/>
+        <location file="include/adi_iio/iio_node.hpp" line="161" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classIIONode_1a81ca5f684db5251eb0d95294cc198038" prot="private" static="no" mutable="no">
         <type>std::map&lt; std::string, std::shared_ptr&lt; <ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref> &gt; &gt;</type>
@@ -72,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="161" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="161" bodyend="-1"/>
+        <location file="include/adi_iio/iio_node.hpp" line="162" column="12" bodyfile="include/adi_iio/iio_node.hpp" bodystart="162" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -88,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="51" column="3" bodyfile="src/iio_node.cpp" bodystart="25" bodyend="45"/>
+        <location file="include/adi_iio/iio_node.hpp" line="51" column="3" bodyfile="src/iio_node.cpp" bodystart="25" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a0a260138136a66c64eb2268c399b6f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -102,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="52" column="11" bodyfile="src/iio_node.cpp" bodystart="78" bodyend="80"/>
+        <location file="include/adi_iio/iio_node.hpp" line="52" column="11" bodyfile="src/iio_node.cpp" bodystart="85" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a15d9a0a0407689792a1c87f0ec359a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -116,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="54" column="8" bodyfile="src/iio_node.cpp" bodystart="47" bodyend="76"/>
+        <location file="include/adi_iio/iio_node.hpp" line="54" column="8" bodyfile="src/iio_node.cpp" bodystart="54" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a3f9c635e8474656d4adbf64f68a51968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -148,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="56" column="8" bodyfile="src/iio_node.cpp" bodystart="87" bodyend="242"/>
+        <location file="include/adi_iio/iio_node.hpp" line="56" column="8" bodyfile="src/iio_node.cpp" bodystart="94" bodyend="249"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a2e8f4014e44c2c8ddeebb2794d270b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -170,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="61" column="8" bodyfile="src/iio_node.cpp" bodystart="244" bodyend="254"/>
+        <location file="include/adi_iio/iio_node.hpp" line="61" column="8" bodyfile="src/iio_node.cpp" bodystart="251" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a80dd3b61958fcf4c10f4e17e3ed81767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -192,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="65" column="8" bodyfile="src/iio_node.cpp" bodystart="256" bodyend="266"/>
+        <location file="include/adi_iio/iio_node.hpp" line="65" column="8" bodyfile="src/iio_node.cpp" bodystart="263" bodyend="273"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a25ba5642f6ecc1071a638145cfcdb68b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="69" column="8" bodyfile="src/iio_node.cpp" bodystart="268" bodyend="302"/>
+        <location file="include/adi_iio/iio_node.hpp" line="69" column="8" bodyfile="src/iio_node.cpp" bodystart="275" bodyend="309"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1aad32bd4473fc598e3c0057b8ce98fa84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -236,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="73" column="8" bodyfile="src/iio_node.cpp" bodystart="304" bodyend="325"/>
+        <location file="include/adi_iio/iio_node.hpp" line="73" column="8" bodyfile="src/iio_node.cpp" bodystart="311" bodyend="332"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a9fbce46992c5b8ec24bbd2c237cda45f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -258,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="77" column="8" bodyfile="src/iio_node.cpp" bodystart="327" bodyend="362"/>
+        <location file="include/adi_iio/iio_node.hpp" line="77" column="8" bodyfile="src/iio_node.cpp" bodystart="334" bodyend="369"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a14ce6ac38818f130b612962492c6a189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -280,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="81" column="8" bodyfile="src/iio_node.cpp" bodystart="364" bodyend="412"/>
+        <location file="include/adi_iio/iio_node.hpp" line="81" column="8" bodyfile="src/iio_node.cpp" bodystart="371" bodyend="419"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1afed1184ff3c741b304ce0d62db4b2af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -302,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="85" column="8" bodyfile="src/iio_node.cpp" bodystart="414" bodyend="460"/>
+        <location file="include/adi_iio/iio_node.hpp" line="85" column="8" bodyfile="src/iio_node.cpp" bodystart="421" bodyend="467"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a70d68aef62d2ec45e6572a5a1118352e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -324,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="89" column="8" bodyfile="src/iio_node.cpp" bodystart="462" bodyend="505"/>
+        <location file="include/adi_iio/iio_node.hpp" line="89" column="8" bodyfile="src/iio_node.cpp" bodystart="469" bodyend="512"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a6e73a1832c2b73153c8478939517c253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -346,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="93" column="8" bodyfile="src/iio_node.cpp" bodystart="507" bodyend="535"/>
+        <location file="include/adi_iio/iio_node.hpp" line="93" column="8" bodyfile="src/iio_node.cpp" bodystart="514" bodyend="542"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a107e9ccb484fdf900c2e81f853117218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -368,7 +382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="97" column="8" bodyfile="src/iio_node.cpp" bodystart="537" bodyend="562"/>
+        <location file="include/adi_iio/iio_node.hpp" line="97" column="8" bodyfile="src/iio_node.cpp" bodystart="544" bodyend="569"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a6e554d1a16a1ae26a36d9d8572bb22b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -390,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="101" column="8" bodyfile="src/iio_node.cpp" bodystart="564" bodyend="589"/>
+        <location file="include/adi_iio/iio_node.hpp" line="101" column="8" bodyfile="src/iio_node.cpp" bodystart="571" bodyend="596"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1aeeaf85bb9910cf6136312b053dd0cbdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -412,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="105" column="8" bodyfile="src/iio_node.cpp" bodystart="591" bodyend="619"/>
+        <location file="include/adi_iio/iio_node.hpp" line="105" column="8" bodyfile="src/iio_node.cpp" bodystart="598" bodyend="626"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a41180804d9c608a561100547404d2ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -434,7 +448,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="109" column="8" bodyfile="src/iio_node.cpp" bodystart="621" bodyend="656"/>
+        <location file="include/adi_iio/iio_node.hpp" line="109" column="8" bodyfile="src/iio_node.cpp" bodystart="628" bodyend="663"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1af4603ed67d5f52cad32d29f565d48d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -456,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="113" column="8" bodyfile="src/iio_node.cpp" bodystart="658" bodyend="741"/>
+        <location file="include/adi_iio/iio_node.hpp" line="113" column="8" bodyfile="src/iio_node.cpp" bodystart="665" bodyend="748"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1ace14a3b747fecf5b3f75394524be137a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -478,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="117" column="8" bodyfile="src/iio_node.cpp" bodystart="743" bodyend="827"/>
+        <location file="include/adi_iio/iio_node.hpp" line="117" column="8" bodyfile="src/iio_node.cpp" bodystart="750" bodyend="834"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1af780b284db2534067c3f8c7a07709102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -492,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="123" column="15" bodyfile="src/iio_node.cpp" bodystart="851" bodyend="854"/>
+        <location file="include/adi_iio/iio_node.hpp" line="123" column="15" bodyfile="src/iio_node.cpp" bodystart="858" bodyend="861"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1aba5376f655415f726270be041ea4efb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -506,7 +520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="124" column="8" bodyfile="src/iio_node.cpp" bodystart="82" bodyend="85"/>
+        <location file="include/adi_iio/iio_node.hpp" line="124" column="8" bodyfile="src/iio_node.cpp" bodystart="89" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a301cc76f2facea0820db39ef3803875a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>iio_context *</type>
@@ -520,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="125" column="16" bodyfile="src/iio_node.cpp" bodystart="856" bodyend="859"/>
+        <location file="include/adi_iio/iio_node.hpp" line="125" column="16" bodyfile="src/iio_node.cpp" bodystart="863" bodyend="866"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -540,7 +554,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="128" column="15" bodyfile="src/iio_node.cpp" bodystart="829" bodyend="838"/>
+        <location file="include/adi_iio/iio_node.hpp" line="128" column="15" bodyfile="src/iio_node.cpp" bodystart="836" bodyend="845"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a834996ce9063d29559bf31ca98a3ee73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; iio_channel * &gt;</type>
@@ -558,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_node.hpp" line="129" column="15" bodyfile="src/iio_node.cpp" bodystart="840" bodyend="849"/>
+        <location file="include/adi_iio/iio_node.hpp" line="129" column="15" bodyfile="src/iio_node.cpp" bodystart="847" bodyend="856"/>
       </memberdef>
       <memberdef kind="function" id="classIIONode_1a1b15b9dd484f7ae795fc6881e300a5b8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -668,7 +682,7 @@
         <label>rclcpp::Node</label>
       </node>
     </collaborationgraph>
-    <location file="include/adi_iio/iio_node.hpp" line="48" column="1" bodyfile="include/adi_iio/iio_node.hpp" bodystart="49" bodyend="162"/>
+    <location file="include/adi_iio/iio_node.hpp" line="48" column="1" bodyfile="include/adi_iio/iio_node.hpp" bodystart="49" bodyend="163"/>
     <listofallmembers>
       <member refid="classIIONode_1aad32bd4473fc598e3c0057b8ce98fa84" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrDisableTopicSrv</name></member>
       <member refid="classIIONode_1a25ba5642f6ecc1071a638145cfcdb68b" prot="public" virt="non-virtual"><scope>IIONode</scope><name>attrEnableTopicSrv</name></member>
@@ -694,6 +708,7 @@
       <member refid="classIIONode_1a81ca5f684db5251eb0d95294cc198038" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_bufferMap</name></member>
       <member refid="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_ctx</name></member>
       <member refid="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_initialized</name></member>
+      <member refid="classIIONode_1af8fde21e83b35b4e2aaf53308410030e" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_timeout</name></member>
       <member refid="classIIONode_1a431bf37c2c4d912ef18f21669513e815" prot="private" virt="non-virtual"><scope>IIONode</scope><name>m_uri</name></member>
       <member refid="classIIONode_1a3f9c635e8474656d4adbf64f68a51968" prot="public" virt="non-virtual"><scope>IIONode</scope><name>rwAttrPath</name></member>
       <member refid="classIIONode_1ace14a3b747fecf5b3f75394524be137a" prot="public" virt="non-virtual"><scope>IIONode</scope><name>scanContextSrv</name></member>

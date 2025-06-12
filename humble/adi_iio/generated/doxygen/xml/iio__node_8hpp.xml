@@ -332,13 +332,14 @@
 <codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_initialized;</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/>std::string<sp/>m_uri;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/>iio_context<sp/>*<sp/>m_ctx;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;IIOAttrTopic&gt;&gt;<sp/>m_attrTopicMap;</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;IIOBuffer&gt;&gt;<sp/>m_bufferMap;</highlight></codeline>
-<codeline lineno="162"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ADI_IIO__IIO_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>int32_t<sp/>m_timeout;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>iio_context<sp/>*<sp/>m_ctx;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;IIOAttrTopic&gt;&gt;<sp/>m_attrTopicMap;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>std::shared_ptr&lt;IIOBuffer&gt;&gt;<sp/>m_bufferMap;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ADI_IIO__IIO_NODE_HPP_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/adi_iio/iio_node.hpp"/>
   </compounddef>

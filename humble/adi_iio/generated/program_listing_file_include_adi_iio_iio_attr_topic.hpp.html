@@ -211,16 +211,24 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="../doc/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1"/><div class="collapse"><a class="reference internal" href="../doc/Examples/index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -300,7 +308,7 @@ Content on this topic
 
 <span class="w">  </span><span class="n">IIOAttrTopic</span><span class="p">(</span>
 <span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">IIONode</span><span class="o">&gt;</span><span class="w"> </span><span class="n">nh</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">topicName</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">attrPath</span><span class="p">,</span>
-<span class="w">    </span><span class="n">topicType_t</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">loopRate</span><span class="p">);</span>
+<span class="w">    </span><span class="n">topicType_t</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">loopRate</span><span class="p">);</span>
 <span class="w">  </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">IIOAttrTopic</span><span class="p">();</span>
 
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">publishingLoop</span><span class="p">();</span>

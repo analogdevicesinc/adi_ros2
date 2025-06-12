@@ -211,16 +211,24 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="../doc/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1"/><div class="collapse"><a class="reference internal" href="../doc/Examples/index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -295,7 +303,7 @@ Content on this topic
 <span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">refill</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">message</span><span class="p">);</span>
 <span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">push</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Int32MultiArray</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">data</span><span class="p">);</span>
 
-<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">enableTopic</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">topic_name</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">enableTopic</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">topic_name</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">loopRate</span><span class="p">);</span>
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">disableTopic</span><span class="p">();</span>
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">publishingLoop</span><span class="p">();</span>
 
@@ -330,6 +338,7 @@ Content on this topic
 <span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">m_canceled</span><span class="p">;</span>
 <span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">m_stopThread</span><span class="p">;</span>
 <span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="w"> </span><span class="n">m_mutex</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Rate</span><span class="o">&gt;</span><span class="w"> </span><span class="n">m_loopRate</span><span class="p">;</span>
 <span class="p">};</span>
 
 <span class="cp">#endif  </span><span class="c1">// ADI_IIO__IIO_BUFFER_HPP_</span>

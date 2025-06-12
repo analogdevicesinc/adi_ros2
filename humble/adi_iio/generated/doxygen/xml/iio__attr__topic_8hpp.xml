@@ -103,7 +103,7 @@
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classIIOAttrTopic" kindref="compound">IIOAttrTopic</ref>(</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>topicName,<sp/>std::string<sp/>attrPath,</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>topicType_t<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loopRate);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>topicType_t<sp/>type,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loopRate);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classIIOAttrTopic" kindref="compound">~IIOAttrTopic</ref>();</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishingLoop();</highlight></codeline>

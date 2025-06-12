@@ -202,10 +202,10 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classIIOAttrTopic_1ad7c9ace5d008f42c9ec54f3ae9575aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>IIOAttrTopic::IIOAttrTopic</definition>
-        <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, std::string topicName, std::string attrPath, topicType_t type, int loopRate)</argsstring>
+        <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, std::string topicName, std::string attrPath, topicType_t type, double loopRate)</argsstring>
         <name>IIOAttrTopic</name>
         <qualifiedname>IIOAttrTopic::IIOAttrTopic</qualifiedname>
         <param>
@@ -225,7 +225,7 @@
           <declname>type</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>double</type>
           <declname>loopRate</declname>
         </param>
         <briefdescription>
@@ -314,7 +314,7 @@
     </collaborationgraph>
     <location file="include/adi_iio/iio_attr_topic.hpp" line="37" column="1" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="38" bodyend="70"/>
     <listofallmembers>
-      <member refid="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>IIOAttrTopic</name></member>
+      <member refid="classIIOAttrTopic_1ad7c9ace5d008f42c9ec54f3ae9575aac" prot="public" virt="non-virtual"><scope>IIOAttrTopic</scope><name>IIOAttrTopic</name></member>
       <member refid="classIIOAttrTopic_1a3b839dd20d0f103d409d1d68e6a08984" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>last_val</name></member>
       <member refid="classIIOAttrTopic_1a734719af54a2a7efbd1ac695ab5fd808" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_attrPath</name></member>
       <member refid="classIIOAttrTopic_1a393d8fd35423b1cfef51dc4e329fd1c0" prot="private" virt="non-virtual"><scope>IIOAttrTopic</scope><name>m_loopRate</name></member>

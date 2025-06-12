@@ -211,16 +211,24 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="../doc/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1"/><div class="collapse"><a class="reference internal" href="../doc/Examples/index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -280,7 +288,9 @@ Content on this topic
 <span class="p">{</span>
 <span class="w">  </span><span class="n">m_initialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
 <span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">declare_parameter</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;uri&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;local:&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">declare_parameter</span><span class="o">&lt;</span><span class="kt">int32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;timeout&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
 <span class="w">  </span><span class="n">m_uri</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_parameter</span><span class="p">(</span><span class="s">&quot;uri&quot;</span><span class="p">).</span><span class="n">as_string</span><span class="p">();</span>
+<span class="w">  </span><span class="n">m_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">get_parameter</span><span class="p">(</span><span class="s">&quot;timeout&quot;</span><span class="p">).</span><span class="n">as_int</span><span class="p">();</span>
 
 <span class="w">  </span><span class="n">m_ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">iio_create_context_from_uri</span><span class="p">(</span><span class="n">m_uri</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 
@@ -295,6 +305,11 @@ Content on this topic
 <span class="w">      </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">&quot;adi_iio_node&quot;</span><span class="p">),</span>
 <span class="w">      </span><span class="s">&quot;cannot create context from uri %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">m_uri</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 <span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">RCLCPP_INFO</span><span class="p">(</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">&quot;adi_iio_node&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="s">&quot;setting timeout to %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">m_timeout</span><span class="p">);</span>
+<span class="w">  </span><span class="n">iio_context_set_timeout</span><span class="p">(</span><span class="n">m_ctx</span><span class="p">,</span><span class="w"> </span><span class="n">m_timeout</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span><span class="w"> </span><span class="n">IIONode</span><span class="o">::</span><span class="n">initBuffers</span><span class="p">()</span>
@@ -524,8 +539,8 @@ Content on this topic
 <span class="p">{</span>
 <span class="w">  </span><span class="n">RCLCPP_INFO</span><span class="p">(</span>
 <span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">&quot;adi_iio_node&quot;</span><span class="p">),</span>
-<span class="w">    </span><span class="s">&quot;Service request /AttrEnableTopic %s with type %s with loop_rate %d Hz&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">attr_path</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">attr_path</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">loop_rate</span><span class="p">);</span>
+<span class="w">    </span><span class="s">&quot;Service request /AttrEnableTopic %s with type %d with loop_rate %f Hz&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">attr_path</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">loop_rate</span><span class="p">);</span>
 
 <span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">message</span><span class="p">;</span>
 <span class="w">  </span><span class="n">response</span><span class="o">-&gt;</span><span class="n">success</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rwAttrPath</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">attr_path</span><span class="p">,</span><span class="w"> </span><span class="n">message</span><span class="p">);</span>
@@ -805,7 +820,7 @@ Content on this topic
 <span class="w">  </span><span class="p">}</span>
 
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">m_bufferMap</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="n">path</span><span class="p">.</span><span class="n">getDeviceSegment</span><span class="p">())</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">m_bufferMap</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">m_bufferMap</span><span class="p">[</span><span class="n">path</span><span class="p">.</span><span class="n">getDeviceSegment</span><span class="p">()]</span><span class="o">-&gt;</span><span class="n">enableTopic</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">topic_name</span><span class="p">);</span>
+<span class="w">    </span><span class="n">m_bufferMap</span><span class="p">[</span><span class="n">path</span><span class="p">.</span><span class="n">getDeviceSegment</span><span class="p">()]</span><span class="o">-&gt;</span><span class="n">enableTopic</span><span class="p">(</span><span class="n">request</span><span class="o">-&gt;</span><span class="n">topic_name</span><span class="p">,</span><span class="w"> </span><span class="n">request</span><span class="o">-&gt;</span><span class="n">loop_rate</span><span class="p">);</span>
 <span class="w">    </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Success&quot;</span><span class="p">;</span>
 <span class="w">    </span><span class="n">setSuccessResponse</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">msg</span><span class="p">);</span>
 <span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>

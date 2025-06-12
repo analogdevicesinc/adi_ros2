@@ -94,9 +94,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>refill</b> (std::stri
 <tr class="memitem:aec0693771d2b6ab91cca274b18be8b87" id="r_aec0693771d2b6ab91cca274b18be8b87"><td class="memItemLeft" align="right" valign="top"><a id="aec0693771d2b6ab91cca274b18be8b87" name="aec0693771d2b6ab91cca274b18be8b87"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> (std::string &amp;message, std_msgs::msg::Int32MultiArray &amp;data)</td></tr>
 <tr class="separator:aec0693771d2b6ab91cca274b18be8b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d54975669ea90f59450f5859e57db04" id="r_a1d54975669ea90f59450f5859e57db04"><td class="memItemLeft" align="right" valign="top"><a id="a1d54975669ea90f59450f5859e57db04" name="a1d54975669ea90f59450f5859e57db04"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableTopic</b> (std::string topic_name)</td></tr>
-<tr class="separator:a1d54975669ea90f59450f5859e57db04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a678ea826795e4019c9c9960a51d69c" id="r_a3a678ea826795e4019c9c9960a51d69c"><td class="memItemLeft" align="right" valign="top"><a id="a3a678ea826795e4019c9c9960a51d69c" name="a3a678ea826795e4019c9c9960a51d69c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableTopic</b> (std::string topic_name, double loopRate)</td></tr>
+<tr class="separator:a3a678ea826795e4019c9c9960a51d69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3634bd5cc5fc7a71d19f5ba82a768ed8" id="r_a3634bd5cc5fc7a71d19f5ba82a768ed8"><td class="memItemLeft" align="right" valign="top"><a id="a3634bd5cc5fc7a71d19f5ba82a768ed8" name="a3634bd5cc5fc7a71d19f5ba82a768ed8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>disableTopic</b> ()</td></tr>
 <tr class="separator:a3634bd5cc5fc7a71d19f5ba82a768ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +172,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_stopThread</b></td>
 <tr class="memitem:a684d9b70852b36843d6849821c8eb581" id="r_a684d9b70852b36843d6849821c8eb581"><td class="memItemLeft" align="right" valign="top"><a id="a684d9b70852b36843d6849821c8eb581" name="a684d9b70852b36843d6849821c8eb581"></a>
 std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
 <tr class="separator:a684d9b70852b36843d6849821c8eb581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3b500a9abfb8a39f84ce293f2d1e9a" id="r_abe3b500a9abfb8a39f84ce293f2d1e9a"><td class="memItemLeft" align="right" valign="top"><a id="abe3b500a9abfb8a39f84ce293f2d1e9a" name="abe3b500a9abfb8a39f84ce293f2d1e9a"></a>
+std::shared_ptr&lt; rclcpp::Rate &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_loopRate</b></td></tr>
+<tr class="separator:abe3b500a9abfb8a39f84ce293f2d1e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/adi_iio/<a class="el" href="iio__buffer_8hpp_source.html">iio_buffer.hpp</a></li>

@@ -217,7 +217,7 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal">IIOAttrTopic::IIOAttrTopic(</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>topicName,<sp/>std::string<sp/>attrPath,</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/>topicType_t<sp/>type,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loopRate)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>topicType_t<sp/>type,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loopRate)</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">:<sp/>m_loopRate(loopRate)</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;adi_iio_node&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Created<sp/>IIOAttrTopic&quot;</highlight><highlight class="normal">);</highlight></codeline>

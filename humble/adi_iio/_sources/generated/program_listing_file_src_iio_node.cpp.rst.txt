@@ -39,7 +39,9 @@ Program Listing for File iio_node.cpp
    {
      m_initialized = false;
      this->declare_parameter<std::string>("uri", "local:");
+     this->declare_parameter<int32_t>("timeout", 0);
      m_uri = this->get_parameter("uri").as_string();
+     m_timeout = this->get_parameter("timeout").as_int();
    
      m_ctx = iio_create_context_from_uri(m_uri.c_str());
    
@@ -54,6 +56,11 @@ Program Listing for File iio_node.cpp
          rclcpp::get_logger("adi_iio_node"),
          "cannot create context from uri %s", m_uri.c_str());
      }
+   
+     RCLCPP_INFO(
+       rclcpp::get_logger("adi_iio_node"),
+       "setting timeout to %d", m_timeout);
+     iio_context_set_timeout(m_ctx, m_timeout);
    }
    
    void IIONode::initBuffers()
@@ -283,8 +290,8 @@ Program Listing for File iio_node.cpp
    {
      RCLCPP_INFO(
        rclcpp::get_logger("adi_iio_node"),
-       "Service request /AttrEnableTopic %s with type %s with loop_rate %d Hz",
-       request->attr_path.c_str(), request->attr_path.c_str(), request->loop_rate);
+       "Service request /AttrEnableTopic %s with type %d with loop_rate %f Hz",
+       request->attr_path.c_str(), request->type, request->loop_rate);
    
      std::string message;
      response->success = rwAttrPath(request->attr_path, message);
@@ -564,7 +571,7 @@ Program Listing for File iio_node.cpp
      }
    
      if (m_bufferMap.find(path.getDeviceSegment()) != m_bufferMap.end()) {
-       m_bufferMap[path.getDeviceSegment()]->enableTopic(request->topic_name);
+       m_bufferMap[path.getDeviceSegment()]->enableTopic(request->topic_name, request->loop_rate);
        msg = "Success";
        setSuccessResponse(response, msg);
      } else {

@@ -238,7 +238,7 @@
 <codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>refill(std::string<sp/>&amp;<sp/>message);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>push(std::string<sp/>&amp;<sp/>message,<sp/>std_msgs::msg::Int32MultiArray<sp/>&amp;<sp/>data);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enableTopic(std::string<sp/>topic_name);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>enableTopic(std::string<sp/>topic_name,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loopRate);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableTopic();</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishingLoop();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
@@ -273,9 +273,10 @@
 <codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_canceled;</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>m_stopThread;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/>std::mutex<sp/>m_mutex;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ADI_IIO__IIO_BUFFER_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::Rate&gt;<sp/>m_loopRate;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>ADI_IIO__IIO_BUFFER_HPP_</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/adi_iio/iio_buffer.hpp"/>
   </compounddef>

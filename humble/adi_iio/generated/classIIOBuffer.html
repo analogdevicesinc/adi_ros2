@@ -95,7 +95,7 @@
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer16destroyIIOBufferEv"><code class="docutils literal notranslate"><span class="pre">destroyIIOBuffer()</span></code></a></li>
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer6refillERNSt6stringE"><code class="docutils literal notranslate"><span class="pre">refill()</span></code></a></li>
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer4pushERNSt6stringERN8std_msgs3msg15Int32MultiArrayE"><code class="docutils literal notranslate"><span class="pre">push()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringE"><code class="docutils literal notranslate"><span class="pre">enableTopic()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringEd"><code class="docutils literal notranslate"><span class="pre">enableTopic()</span></code></a></li>
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer12disableTopicEv"><code class="docutils literal notranslate"><span class="pre">disableTopic()</span></code></a></li>
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer14publishingLoopEv"><code class="docutils literal notranslate"><span class="pre">publishingLoop()</span></code></a></li>
 <li><a class="reference internal" href="#_CPPv4N9IIOBuffer13samples_countEv"><code class="docutils literal notranslate"><span class="pre">samples_count()</span></code></a></li>
@@ -237,16 +237,24 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="../doc/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1"/><div class="collapse"><a class="reference internal" href="../doc/Examples/index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -316,8 +324,8 @@ Content on this topic
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer11enableTopicENSt6stringE">
-<span id="_CPPv3N9IIOBuffer11enableTopicENSt6stringE"></span><span id="_CPPv2N9IIOBuffer11enableTopicENSt6stringE"></span><span id="IIOBuffer::enableTopic__ss"></span><span class="target" id="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableTopic</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">topic_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringE" title="Link to this definition"></a><br /></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N9IIOBuffer11enableTopicENSt6stringEd">
+<span id="_CPPv3N9IIOBuffer11enableTopicENSt6stringEd"></span><span id="_CPPv2N9IIOBuffer11enableTopicENSt6stringEd"></span><span id="IIOBuffer::enableTopic__ss.double"></span><span class="target" id="classIIOBuffer_1a3a678ea826795e4019c9c9960a51d69c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">enableTopic</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">topic_name</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">loopRate</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9IIOBuffer11enableTopicENSt6stringEd" title="Link to this definition"></a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">

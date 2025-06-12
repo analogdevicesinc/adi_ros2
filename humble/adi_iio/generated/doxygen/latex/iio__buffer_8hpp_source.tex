@@ -46,7 +46,7 @@
 \DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{bool}\ refill(std::string\ \&\ message);}
 \DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{bool}\ push(std::string\ \&\ message,\ std\_msgs::msg::Int32MultiArray\ \&\ data);}
 \DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{void}\ enableTopic(std::string\ topic\_name);}
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordtype}{void}\ enableTopic(std::string\ topic\_name,\ \textcolor{keywordtype}{double}\ loopRate);}
 \DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{void}\ disableTopic();}
 \DoxyCodeLine{00047\ \ \ \textcolor{keywordtype}{void}\ publishingLoop();}
 \DoxyCodeLine{00048\ }
@@ -81,8 +81,9 @@
 \DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{bool}\ m\_canceled;}
 \DoxyCodeLine{00078\ \ \ \textcolor{keywordtype}{bool}\ m\_stopThread;}
 \DoxyCodeLine{00079\ \ \ std::mutex\ m\_mutex;}
-\DoxyCodeLine{00080\ \};}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IIO\_\_IIO\_BUFFER\_HPP\_}}
+\DoxyCodeLine{00080\ \ \ std::shared\_ptr<rclcpp::Rate>\ m\_loopRate;}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IIO\_\_IIO\_BUFFER\_HPP\_}}
 
 \end{DoxyCode}

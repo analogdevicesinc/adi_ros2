@@ -43,7 +43,7 @@
     <member refid="classIIOAttrTopic_1a3b839dd20d0f103d409d1d68e6a08984" kind="variable"><name>last_val</name></member>
     <member refid="classIIOAttrTopic_1aad4a2dcd52b16c0eb0778bff09c74f64" kind="variable"><name>m_stopThread</name></member>
     <member refid="classIIOAttrTopic_1a393d8fd35423b1cfef51dc4e329fd1c0" kind="variable"><name>m_loopRate</name></member>
-    <member refid="classIIOAttrTopic_1abffda988db26c5588f29335847bd691d" kind="function"><name>IIOAttrTopic</name></member>
+    <member refid="classIIOAttrTopic_1ad7c9ace5d008f42c9ec54f3ae9575aac" kind="function"><name>IIOAttrTopic</name></member>
     <member refid="classIIOAttrTopic_1a86c681705a037196177e2153cd79385c" kind="function"><name>~IIOAttrTopic</name></member>
     <member refid="classIIOAttrTopic_1a623cd04f745c48b26bf9b0267eac47f9" kind="function"><name>publishingLoop</name></member>
     <member refid="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f" kind="function"><name>update</name></member>
@@ -62,13 +62,14 @@
     <member refid="classIIOBuffer_1a865880e3df8736a64d43bc0452173863" kind="variable"><name>m_canceled</name></member>
     <member refid="classIIOBuffer_1a141cca5c5b934bdd683efa4910de9f1a" kind="variable"><name>m_stopThread</name></member>
     <member refid="classIIOBuffer_1a684d9b70852b36843d6849821c8eb581" kind="variable"><name>m_mutex</name></member>
+    <member refid="classIIOBuffer_1abe3b500a9abfb8a39f84ce293f2d1e9a" kind="variable"><name>m_loopRate</name></member>
     <member refid="classIIOBuffer_1ab0842479ceebda50fb738f6209abaef3" kind="function"><name>IIOBuffer</name></member>
     <member refid="classIIOBuffer_1ac6904899169d8b5250f2a002e5c2facc" kind="function"><name>~IIOBuffer</name></member>
     <member refid="classIIOBuffer_1a7cd3d17f37c0f77f9f3c0f24aeba768d" kind="function"><name>createIIOBuffer</name></member>
     <member refid="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5" kind="function"><name>destroyIIOBuffer</name></member>
     <member refid="classIIOBuffer_1a6808ee387552d28a81f841a3dcb90259" kind="function"><name>refill</name></member>
     <member refid="classIIOBuffer_1aec0693771d2b6ab91cca274b18be8b87" kind="function"><name>push</name></member>
-    <member refid="classIIOBuffer_1a1d54975669ea90f59450f5859e57db04" kind="function"><name>enableTopic</name></member>
+    <member refid="classIIOBuffer_1a3a678ea826795e4019c9c9960a51d69c" kind="function"><name>enableTopic</name></member>
     <member refid="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8" kind="function"><name>disableTopic</name></member>
     <member refid="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb" kind="function"><name>publishingLoop</name></member>
     <member refid="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e" kind="function"><name>samples_count</name></member>
@@ -84,6 +85,7 @@
   <compound refid="classIIONode" kind="class"><name>IIONode</name>
     <member refid="classIIONode_1aa03dd3262b320c8af7ae78d2da26d0c9" kind="variable"><name>m_initialized</name></member>
     <member refid="classIIONode_1a431bf37c2c4d912ef18f21669513e815" kind="variable"><name>m_uri</name></member>
+    <member refid="classIIONode_1af8fde21e83b35b4e2aaf53308410030e" kind="variable"><name>m_timeout</name></member>
     <member refid="classIIONode_1af77f0d15b3e576fa23881a65eed98cbd" kind="variable"><name>m_ctx</name></member>
     <member refid="classIIONode_1a66e35001512376c37dc773be1779be1b" kind="variable"><name>m_attrTopicMap</name></member>
     <member refid="classIIONode_1a81ca5f684db5251eb0d95294cc198038" kind="variable"><name>m_bufferMap</name></member>

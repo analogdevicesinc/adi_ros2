@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HWMON &#8212; adi_iio 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="AD7124-8" href="03_example_ad7124-8.html" />
+   
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">HWMON</a><ul>
+<li><a class="reference internal" href="#example-dell-precision-5530-py">Example: <code class="docutils literal notranslate"><span class="pre">dell_precision_5530.py</span></code></a><ul>
+<li><a class="reference internal" href="#usage">Usage:</a></li>
+<li><a class="reference internal" href="#service-clients">Service Clients:</a></li>
+<li><a class="reference internal" href="#topics">Topics:</a><ul>
+<li><a class="reference internal" href="#subscriptions-raw-data-from-adi-iio-node">Subscriptions (raw data from <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>):</a></li>
+<li><a class="reference internal" href="#publications-processed-data">Publications (processed data):</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../../index.html">
+      adi_iio
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="../../__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_iio">Rosindex</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/analogdevicesinc/iio_ros2">Repository</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://analogdevicesinc.github.io/iio_ros2/">Website</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://github.com/analogdevicesinc/iio_ros2/issues">Bugtracker</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="../../generated/index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classAttrPubSub.html">Class AttrPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classBoolPubSub.html">Class BoolPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classFloat32PubSub.html">Class Float32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOAttrTopic.html">Class IIOAttrTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOBuffer.html">Class IIOBuffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIONode.html">Class IIONode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classIIOPath.html">Class IIOPath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classInt32PubSub.html">Class Int32PubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classStringPubSub.html">Class StringPubSub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/classUpdateCallback.html">Class UpdateCallback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/enum_iio__path_8hpp_1a36bc4adc60811fcc33489bbb803ddf58.html">Enum IIOPathType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/function_adi__iio_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627.html">Function main</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1a7b4954fb15fbeef2a254059b795c1265.html">Define ATTR_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8.html">Define ATTR_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_attr__publisher_8hpp_1ab2eabaf059fdb706a39b9d556a6f2673.html">Define ATTR_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1abfb646af0833b57e5d4671a09ec6ef9a.html">Define BUFFER_QOS_QUEUE_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1afbcfa431fb935c877dc92d38f8e08512.html">Define BUFFER_READ_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__buffer_8hpp_1a244dd8a25a17997c1a5bdc386718391e.html">Define BUFFER_WRITE_SUFFIX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/define_iio__node_8cpp_1add3ee6b15dad00454d47cf548f9e9801.html">Define MAX_ATTR_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_include_adi_iio.html">Directory adi_iio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/dir_src.html">Directory src</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_adi_iio.cpp.html">File adi_iio.cpp</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_adi_iio.cpp.html">Program Listing for File adi_iio.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_attr_publisher.cpp.html">File attr_publisher.cpp</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_attr_publisher.cpp.html">Program Listing for File attr_publisher.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_attr_publisher.hpp.html">File attr_publisher.hpp</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_attr_publisher.hpp.html">Program Listing for File attr_publisher.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_attr_topic.cpp.html">File iio_attr_topic.cpp</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_attr_topic.cpp.html">Program Listing for File iio_attr_topic.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_attr_topic.hpp.html">File iio_attr_topic.hpp</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_attr_topic.hpp.html">Program Listing for File iio_attr_topic.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_buffer.cpp.html">File iio_buffer.cpp</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_buffer.cpp.html">Program Listing for File iio_buffer.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-7" id="toctree-collapse-2-7"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_buffer.hpp.html">File iio_buffer.hpp</a><label for="toctree-collapse-2-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_buffer.hpp.html">Program Listing for File iio_buffer.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-8" id="toctree-collapse-2-8"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_node.cpp.html">File iio_node.cpp</a><label for="toctree-collapse-2-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_node.cpp.html">Program Listing for File iio_node.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-9" id="toctree-collapse-2-9"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_node.hpp.html">File iio_node.hpp</a><label for="toctree-collapse-2-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_node.hpp.html">Program Listing for File iio_node.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-10" id="toctree-collapse-2-10"/><div class="collapse"><a class="reference internal" href="../../generated/file_src_iio_path.cpp.html">File iio_path.cpp</a><label for="toctree-collapse-2-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_src_iio_path.cpp.html">Program Listing for File iio_path.cpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-11" id="toctree-collapse-2-11"/><div class="collapse"><a class="reference internal" href="../../generated/file_include_adi_iio_iio_path.hpp.html">File iio_path.hpp</a><label for="toctree-collapse-2-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/program_listing_file_include_adi_iio_iio_path.hpp.html">Program Listing for File iio_path.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../../__service_definitions.html">Service Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrDisableTopic.html">AttrDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrEnableTopic.html">AttrEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrReadString.html">AttrReadString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/AttrWriteString.html">AttrWriteString</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferCreate.html">BufferCreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferDestroy.html">BufferDestroy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferDisableTopic.html">BufferDisableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferEnableTopic.html">BufferEnableTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferRead.html">BufferRead</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferRefill.html">BufferRefill</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/BufferWrite.html">BufferWrite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListAttributes.html">ListAttributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListChannels.html">ListChannels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ListDevices.html">ListDevices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../srv/ScanContext.html">ScanContext</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__CONTRIBUTING.html">CONTRIBUTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../__README.html">README</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5" checked=""/><div class="collapse"><a class="reference internal" href="../../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1" checked=""/><div class="collapse"><a class="reference internal" href="index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">HWMON</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+    <nav class="breadcrumb">
+        <ol>
+          <li><a href="../../user_docs.html">Documentation</a></li>
+          <li><a href="index.html">Examples/</a></li>
+          </ol>
+    </nav>
+  </div>
+
+          <div class="body" role="main">
+            
+  <section id="hwmon">
+<span id="example-hwmon"></span><h1>HWMON<a class="headerlink" href="#hwmon" title="Link to this heading"></a></h1>
+<p>Prerequisites:</p>
+<ul class="simple">
+<li><p>A client running ROS2 with the <code class="docutils literal notranslate"><span class="pre">adi_iio</span></code> package installed.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This example demonstrates interaction with HWMON (Hardware Monitoring) devices.
+Please note that it is tailored for specific hardware
+(<a class="reference external" href="https://www.dell.com/support/product-details/ro-ro/product/precision-15-5530-2-in-1-laptop/drivers">Dell Precision 5530 2 in 1</a>) and is intended to serve as a reference for
+understanding how to interact with HWMON devices in general. The example
+was tested with Ubuntu 22.04 and ROS2 Humble.</p>
+</div>
+<section id="example-dell-precision-5530-py">
+<h2>Example: <code class="docutils literal notranslate"><span class="pre">dell_precision_5530.py</span></code><a class="headerlink" href="#example-dell-precision-5530-py" title="Link to this heading"></a></h2>
+<section id="usage">
+<h3>Usage:<a class="headerlink" href="#usage" title="Link to this heading"></a></h3>
+<p>To run the example, execute the following command in your terminal:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>hwmon<span class="w"> </span>dell_precision_5530.launch.py
+</pre></div>
+</div>
+<p>When you execute the command, the ROS2 launch system will start the
+<code class="docutils literal notranslate"><span class="pre">adi_iio</span></code> node and the <code class="docutils literal notranslate"><span class="pre">dell_precision_5530</span></code> node example.</p>
+<ol class="arabic simple">
+<li><p><strong>adi_iio_node</strong>:</p>
+<ul class="simple">
+<li><p><strong>Package</strong>: <code class="docutils literal notranslate"><span class="pre">adi_iio</span></code></p></li>
+<li><p><strong>Executable</strong>: <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code></p></li>
+<li><p><strong>Purpose</strong>: Acts as a bridge to the Linux Industrial I/O (IIO)
+subsystem, enabling communication with connected hardware sensors.</p></li>
+<li><p><strong>Key Parameters</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">uri:</span> <span class="pre">&quot;local:&quot;</span></code>: Configures the node to use the local IIO context,
+meaning it will interface with IIO devices on the machine running the launch file.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>dell_precision_5530_node</strong>:</p>
+<ul class="simple">
+<li><p><strong>Package</strong>: <code class="docutils literal notranslate"><span class="pre">hwmon</span></code></p></li>
+<li><p><strong>Executable</strong>: <code class="docutils literal notranslate"><span class="pre">dell_precision_5530</span></code></p></li>
+<li><p><strong>Purpose</strong>: Specifically designed to read and publish hardware
+monitoring (HWMON) data (like CPU temperatures, fan speeds, battery
+status) from a Dell Precision 5530 laptop. It relies on the
+<code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to access these hardware attributes.</p></li>
+<li><p><strong>Key Parameters</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">loop_rate:</span> <span class="pre">1</span></code>: Sets the main operational loop frequency.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="service-clients">
+<h3>Service Clients:<a class="headerlink" href="#service-clients" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">HWMon</span></code> node uses two ROS 2 service clients on the <code class="docutils literal notranslate"><span class="pre">/adi_iio_node</span></code>
+provider:</p>
+<ul>
+<li><p><strong>AttrEnableTopic</strong> (<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrEnableTopic</span></code>)</p>
+<p>This service tells the <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code> to begin sampling a given IIO attribute
+and publishing it on a ROS 2 topic.</p>
+</li>
+<li><p><strong>AttrDisableTopic</strong> (<code class="docutils literal notranslate"><span class="pre">/adi_iio_node/AttrDisableTopic</span></code>)</p>
+<p>This service stops sampling and tears down the ROS 2 topic created earlier.</p>
+</li>
+</ul>
+</section>
+<section id="topics">
+<h3>Topics:<a class="headerlink" href="#topics" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">HWMon</span></code> node both subscribes to raw IIO‐driven topics and republishes
+processed values:</p>
+<section id="subscriptions-raw-data-from-adi-iio-node">
+<h4>Subscriptions (raw data from <code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>):<a class="headerlink" href="#subscriptions-raw-data-from-adi-iio-node" title="Link to this heading"></a></h4>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/BAT0/curr1/input/read
+std_msgs/String
+└─<span class="w"> </span>Battery<span class="w"> </span>current<span class="w"> </span><span class="k">in</span><span class="w"> </span>milliamps<span class="w"> </span><span class="o">(</span>mA<span class="o">)</span>.
+<span class="w">    </span>Transformed<span class="w"> </span>by<span class="w"> </span><span class="sb">`</span>update_bat0_current<span class="sb">`</span>:
+<span class="w">    </span><span class="nv">μA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>float<span class="o">(</span>msg.data<span class="o">)</span><span class="w"> </span>*<span class="w"> </span><span class="m">1000</span>.0
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/BAT0/in0/input/read
+std_msgs/String
+└─<span class="w"> </span>Battery<span class="w"> </span>voltage<span class="w"> </span><span class="k">in</span><span class="w"> </span>millivolts<span class="w"> </span><span class="o">(</span>mV<span class="o">)</span>.
+<span class="w">    </span>Transformed<span class="w"> </span>by<span class="w"> </span><span class="sb">`</span>update_bat0_voltage<span class="sb">`</span>:
+<span class="w">    </span><span class="nv">V</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>float<span class="o">(</span>msg.data<span class="o">)</span><span class="w"> </span>/<span class="w"> </span><span class="m">1000</span>.0
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/coretemp/temp2/input/read<span class="w"> </span>…<span class="w"> </span>/coretemp/temp5/input/read
+std_msgs/String
+└─<span class="w"> </span>CPU<span class="w"> </span>core<span class="w"> </span>temperature<span class="w"> </span>sensor<span class="w"> </span>readings<span class="w"> </span><span class="k">in</span><span class="w"> </span>millivolts.
+<span class="w">    </span>Transformed<span class="w"> </span>by<span class="w"> </span><span class="sb">`</span>update_coretemp_core*<span class="sb">`</span>:
+<span class="w">    </span><span class="nv">V</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>float<span class="o">(</span>msg.data<span class="o">)</span><span class="w"> </span>/<span class="w"> </span><span class="m">1000</span>.0
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/dell_smm/fan1/input/read
+std_msgs/String
+└─<span class="w"> </span>CPU<span class="w"> </span>fan<span class="w"> </span>speed<span class="w"> </span><span class="k">in</span><span class="w"> </span>RPM<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>string.
+<span class="w">    </span>Transformed<span class="w"> </span>by<span class="w"> </span><span class="sb">`</span>update_cpu_fan<span class="sb">`</span>:
+<span class="w">    </span><span class="nv">rpm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>int<span class="o">(</span>msg.data<span class="o">)</span>
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/dell_smm/fan2/input/read
+std_msgs/String
+└─<span class="w"> </span>GPU<span class="w"> </span>fan<span class="w"> </span>speed<span class="w"> </span><span class="k">in</span><span class="w"> </span>RPM<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>string.
+<span class="w">    </span>Transformed<span class="w"> </span>by<span class="w"> </span><span class="sb">`</span>update_gpu_fan<span class="sb">`</span>:
+<span class="w">    </span><span class="nv">rpm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>int<span class="o">(</span>msg.data<span class="o">)</span>
+</pre></div>
+</div>
+</section>
+<section id="publications-processed-data">
+<h4>Publications (processed data):<a class="headerlink" href="#publications-processed-data" title="Link to this heading"></a></h4>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/BAT0/uA
+std_msgs/Float64
+└─<span class="w"> </span>Battery<span class="w"> </span>current<span class="w"> </span><span class="k">in</span><span class="w"> </span>microamps<span class="w"> </span><span class="o">(</span>after<span class="w"> </span>conversion<span class="o">)</span>.
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/BAT0/V
+std_msgs/Float64
+└─<span class="w"> </span>Battery<span class="w"> </span>voltage<span class="w"> </span><span class="k">in</span><span class="w"> </span>volts<span class="w"> </span><span class="o">(</span>after<span class="w"> </span>conversion<span class="o">)</span>.
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/coretemp/core0<span class="w"> </span>…<span class="w"> </span>/coretemp/core3
+std_msgs/Float64
+└─<span class="w"> </span>Core<span class="w"> </span>temperatures<span class="w"> </span>expressed<span class="w"> </span>as<span class="w"> </span>voltages<span class="w"> </span><span class="o">(</span>V<span class="o">)</span>.
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/fan/cpu
+std_msgs/Int32
+└─<span class="w"> </span>CPU<span class="w"> </span>fan<span class="w"> </span>speed<span class="w"> </span><span class="k">in</span><span class="w"> </span>RPM.
+</pre></div>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>/fan/gpu
+std_msgs/Int32
+└─<span class="w"> </span>GPU<span class="w"> </span>fan<span class="w"> </span>speed<span class="w"> </span><span class="k">in</span><span class="w"> </span>RPM.
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="03_example_ad7124-8.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">AD7124-8</a>
+    <div></div>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

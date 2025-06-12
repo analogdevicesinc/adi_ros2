@@ -211,16 +211,24 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../__CONTRIBUTING.html">CONTRIBUTING</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../user_docs.html">Documentation</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="../doc/FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5-1" id="toctree-collapse-5-1"/><div class="collapse"><a class="reference internal" href="../doc/Examples/index.html">Examples/</a><label for="toctree-collapse-5-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/00_introduction.html">Examples Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/01_service_call_reference.html"><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code>: service call reference</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/02_example_ad5592r.html">AD5592R</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/03_example_ad7124-8.html">AD7124-8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../doc/Examples/04_example_hwmon.html">HWMON</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -295,6 +303,7 @@ Content on this topic
 <span class="w">    </span><span class="n">RCLCPP_DEBUG</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">&quot;adi_iio_node&quot;</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Destroyed buffer %p&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">m_buffer</span><span class="p">);</span>
 <span class="w">    </span><span class="n">iio_buffer_destroy</span><span class="p">(</span><span class="n">m_buffer</span><span class="p">);</span>
 <span class="w">    </span><span class="n">m_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
+<span class="w">    </span><span class="n">m_loopRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
@@ -484,10 +493,11 @@ Content on this topic
 <span class="p">}</span>
 
 
-<span class="kt">void</span><span class="w"> </span><span class="n">IIOBuffer</span><span class="o">::</span><span class="n">enableTopic</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">topic_name</span><span class="p">)</span>
+<span class="kt">void</span><span class="w"> </span><span class="n">IIOBuffer</span><span class="o">::</span><span class="n">enableTopic</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">topic_name</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">loopRate</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="w">  </span><span class="n">m_topic_enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
 <span class="w">  </span><span class="n">m_stopThread</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">  </span><span class="n">m_loopRate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Rate</span><span class="o">&gt;</span><span class="p">(</span><span class="n">loopRate</span><span class="p">);</span>
 
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">topic_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">m_topic_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">IIOPath</span><span class="o">::</span><span class="n">toTopicName</span><span class="p">(</span><span class="n">m_device_path</span><span class="p">);</span>
@@ -515,7 +525,9 @@ Content on this topic
 <span class="w">      </span><span class="n">m_pub</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">m_data</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="c1">// Sleep to maintain the loop rate</span>
-<span class="w">    </span><span class="c1">//std::this_thread::yield();</span>
+<span class="w">    </span><span class="n">RCLCPP_DEBUG</span><span class="p">(</span>
+<span class="w">      </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">get_logger</span><span class="p">(</span><span class="s">&quot;adi_iio_node&quot;</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Publishing loop %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">m_topic_name</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="w">    </span><span class="n">m_loopRate</span><span class="o">-&gt;</span><span class="n">sleep</span><span class="p">();</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 

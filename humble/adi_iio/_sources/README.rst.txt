@@ -31,6 +31,11 @@ detailed documentation into several sections:
 * For information on **prerequisites, repository setup, and building the package**,
   refer to the `Installation`_ section.
 
+* The :ref:`Examples Introduction` provides an overview of the available
+  examples. Start with the :ref:`Service Call Reference` to use the ROS2
+  services. You can also reference the standalone nodes and launch files for
+  specific hardware interaction.
+
 * For information on **parameters and services**, refer to the `Node Description`_ section.
 
 * For building this documentation, refer to `Building the Project Documentation Locally`_.
@@ -237,11 +242,15 @@ Services use the ``iio_path`` parameter to uniquely identify Industrial I/O
 (IIO) devices, channels, and attributes following the IIO context hierarchy.
 The ``/`` character is used to separate different levels of the hierarchy.
 
+.. _Context Path:
+
 Context Path
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Description:** an empty string is used to represent an IIO context.
 - **Format:** ``""`` (empty string.)
+
+.. _Context Attribute Path:
 
 Context Attribute Path (``attr_path``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -250,6 +259,8 @@ Context Attribute Path (``attr_path``)
 - **Format:** ``<context-attribute>``
 - **Example:** ``uri``, ``hw_vendor``, ``hw_serial``, etc.
 
+.. _Device Path:
+
 Device Path (``device_path``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -257,12 +268,16 @@ Device Path (``device_path``)
 - **Format:** ``<device-name>``
 - **Example:** ``ad9361-phy``, ``ad5592r``, etc.
 
+.. _Device Attribute Path:
+
 Device Attribute Path (``attr_path``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Description:** this path represents an attribute of a device.
 - **Format:** ``<device-name>/<device-attribute>``
 - **Example:** ``xadc/sampling_frequency``, etc.
+
+.. _Channel Path:
 
 Channel Path (``channel_path``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -278,6 +293,8 @@ Channel Path (``channel_path``)
   channels of the same device. When the prefix is not used (e.g:
   ``ad5592r/voltage0``) but the device has both input and output channels, the
   input channel has priority.
+
+.. _Channel Attribute Path:
 
 Channel Attribute Path (``attr_path``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -334,17 +351,30 @@ along with its string interpretation.
 Buffers
 --------------------------------------------------------------------------------
 
-A buffer represents continuous data capture from a device. The following operations
-can be performed with IIO buffers:
+A buffer represents continuous data capture from a device. Operations that can
+be performed on buffers involve acquiring data from the device (``read``) and
+sending data to the device (``write``).
 
-- **Create buffer**: The device starts capturing data.
-- **Refill buffer**: Data is transported from the device to the client via an
-  ``Int32MultiArray`` in a service response.
-- **Enable buffer topic**: The node initiates a continuous capture and publishes
-  acquired data on the associated topic.
-- **Destroy buffer**: The device stops capturing data.
-- **Read buffer**: A convenience operation that bundles buffer creation and
-  refill into one service call.
+The following operations can be performed with IIO buffers:
+
+- **Create buffer**: Initializes a buffer for a specific device. For input
+  devices, it starts hardware data acquisition on the selected channels.
+- **Destroy buffer**: Stops buffer operations on a device and releases
+  associated resources.
+- **Refill buffer**: Data is transported from the hardware device to the client
+  via an ``Int32MultiArray`` in a service response.
+- **Read buffer**: A convenience operation that bundles destroy, input buffer
+  creation and refill into one service call. The operation ensures that the
+  buffer contains the latest samples captured from the device, rather than
+  potentially stale data from previous operations.
+- **Buffer Write**: A convenience operation that combines buffer destruction,
+  output buffer creation and data transmission in a single service call. It
+  pushes sample data from the node to the hardware device. In cyclic mode, the
+  samples repeat in a loop.
+- **Enable buffer topic**: The node initiates a continuous capture and
+  publishes acquired data on the associated topic.
+- **Disable buffer topic**: The node stops the continuous transfer of data to
+  the buffer topic.
 
 When creating a buffer, a channels array is required as a parameter for the
 service request. For example:
@@ -357,7 +387,7 @@ such that the dimensions represent the number of samples and the number of chann
 For instance, a request that acquires data from channels ``{"voltage0", "voltage1"}``
 would yield a buffer arranged as follows:
 
-.. code-block::
+.. code-block:: shell
 
     {voltage0_sample0, voltage1_sample0, voltage0_sample1, voltage1_sample1, voltage0_sample2, voltage1_sample2, ... }
 
@@ -375,8 +405,10 @@ Parameters
 
 The node accepts the following parameters:
 
-* ``uri``: The URI of the LibIIO context where the device is connected to (e.g.: ``ip:192.168.2.1``)
-
+* ``uri``: The URI of the LibIIO context where the device is connected to
+  (e.g.: ``ip:192.168.2.1``).
+* ``timeout``: A positive integer representing the time in milliseconds after
+  which a timeout occurs. A value of 0 means no timeout.
 
 .. _services:
 
@@ -655,7 +687,23 @@ Launch
 --------------------------------------------------------------------------------
 
 To launch the node, you can use the provided launch file ``adi_iio_bringup.launch.py``.
-This launch file uses the the ``uri`` parameter defined in the ``config/adi_iio.yaml`` file.
+You can start the node using the following command:
+
+.. code-block:: shell
+
+    ros2 launch adi_iio adi_iio_bringup.launch.py
+
+
+.. tip::
+
+  This launch file uses the the ``uri`` parameter defined in the
+  ``config/adi_iio.yaml`` file. Your can either modify the file or pass the
+  parameter directly in the command line when starting the node:
+
+  .. code-block:: shell
+
+    ros2 run adi_iio adi_iio_node --ros-args -p uri:="<your_uri>" --log-level debug
+
 
 The project also contains a small python script to visualize the waveform using
 matplotlib plots. The ``topic`` parameter is used to subscribe to the topic
@@ -663,8 +711,11 @@ where the waveform is published and plot the waveforms.
 
 .. code-block:: bash
 
-    ros2 launch adi_iio adi_iio_bringup.launch.py
-    python3 visualize_iio_waveform.py --topic /m2k_adc
+    python3 visualize_iio_waveform.py --topic /<your_topic_name>
+
+
+.. note:: You can refer to the :ref:`demo_ad7124_8_visualize_waveform` to see
+    the script in action.
 
 
 .. _Building the Project Documentation Locally:

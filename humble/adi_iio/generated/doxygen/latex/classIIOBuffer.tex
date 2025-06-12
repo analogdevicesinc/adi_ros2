@@ -18,8 +18,8 @@ bool {\bfseries refill} (std\+::string \&message)
 \Hypertarget{classIIOBuffer_aec0693771d2b6ab91cca274b18be8b87}\label{classIIOBuffer_aec0693771d2b6ab91cca274b18be8b87} 
 bool {\bfseries push} (std\+::string \&message, std\+\_\+msgs\+::msg\+::\+Int32\+Multi\+Array \&data)
 \item 
-\Hypertarget{classIIOBuffer_a1d54975669ea90f59450f5859e57db04}\label{classIIOBuffer_a1d54975669ea90f59450f5859e57db04} 
-void {\bfseries enable\+Topic} (std\+::string topic\+\_\+name)
+\Hypertarget{classIIOBuffer_a3a678ea826795e4019c9c9960a51d69c}\label{classIIOBuffer_a3a678ea826795e4019c9c9960a51d69c} 
+void {\bfseries enable\+Topic} (std\+::string topic\+\_\+name, double loop\+Rate)
 \item 
 \Hypertarget{classIIOBuffer_a3634bd5cc5fc7a71d19f5ba82a768ed8}\label{classIIOBuffer_a3634bd5cc5fc7a71d19f5ba82a768ed8} 
 void {\bfseries disable\+Topic} ()
@@ -95,6 +95,9 @@ bool {\bfseries m\+\_\+stop\+Thread}
 \item 
 \Hypertarget{classIIOBuffer_a684d9b70852b36843d6849821c8eb581}\label{classIIOBuffer_a684d9b70852b36843d6849821c8eb581} 
 std\+::mutex {\bfseries m\+\_\+mutex}
+\item 
+\Hypertarget{classIIOBuffer_abe3b500a9abfb8a39f84ce293f2d1e9a}\label{classIIOBuffer_abe3b500a9abfb8a39f84ce293f2d1e9a} 
+std\+::shared\+\_\+ptr$<$ rclcpp\+::\+Rate $>$ {\bfseries m\+\_\+loop\+Rate}
 \end{DoxyCompactItemize}
 
 
