@@ -83,6 +83,16 @@
         <nav>
           <ul>
 <li><a class="reference internal" href="#">Analog Devices ROS2</a></li>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#supported-platforms">Supported Platforms</a><ul>
+<li><a class="reference internal" href="#host-platforms">Host Platforms</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#docker-image-variants">Docker Image Variants</a><ul>
+<li><a class="reference internal" href="#supported-ros2-distributions">Supported ROS2 Distributions:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li><a class="reference internal" href="#repositories-and-packages">Repositories and Packages</a></li>
 </ul>
 
@@ -113,8 +123,13 @@ Content on this topic
   <body><ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="Documentation.html">Documentation</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-1" id="toctree-collapse-1-1"/><div class="collapse"><a class="reference internal" href="Documentation/How-To-Guides.html">How-to Guides</a><label for="toctree-collapse-1-1"><div class="icon"></div></label></div><ul>
-<li class="toctree-l3"><a class="reference internal" href="Documentation/How-To-Guides/Build-Meta-Repo-Docker-Image.html">Build Docker Image with Analog Devices ROS2 Packages</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Documentation/How-To-Guides/Build-Analog-Devices-ROS2-Documentation.html">Build Analog Devices ROS2 Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Documentation/How-To-Guides/ROS2-Docker-Image-Guide.html">ROS2 Docker Image Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Documentation/How-To-Guides/ROS2-Documentation-Guide.html">ROS2 Documentation Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-2" id="toctree-collapse-1-2"/><div class="collapse"><a class="reference internal" href="Documentation/Developer-Guides.html">Developer Guides</a><label for="toctree-collapse-1-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="Documentation/Developer-Guides/Dockerfile-Template-Infrastructure.html">Dockerfile Template Infrastructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Documentation/Developer-Guides/Adding-ADI-ROS2-Packages.html">Adding ADI ROS2 Packages</a></li>
 </ul>
 </li>
 </ul>
@@ -134,23 +149,196 @@ Content on this topic
           <div class="body" role="main">
             
   <section id="analog-devices-ros2">
-<h1>Analog Devices ROS2<a class="headerlink" href="#analog-devices-ros2" title="Link to this heading"></a></h1>
+<h1><a class="toc-backref" href="#id5" role="doc-backlink">Analog Devices ROS2</a><a class="headerlink" href="#analog-devices-ros2" title="Link to this heading"></a></h1>
 <p>Welcome to <a class="reference external" href="https://www.analog.com">Analog Devices Inc</a> ROS2 documentation!</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Documentation.html">Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Documentation/How-To-Guides.html">How-to Guides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Documentation/Developer-Guides.html">Developer Guides</a></li>
 </ul>
 </li>
 </ul>
 </div>
+<nav class="contents" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#analog-devices-ros2" id="id5">Analog Devices ROS2</a></p></li>
+<li><p><a class="reference internal" href="#overview" id="id6">Overview</a></p></li>
+<li><p><a class="reference internal" href="#supported-platforms" id="id7">Supported Platforms</a></p></li>
+<li><p><a class="reference internal" href="#docker-image-variants" id="id8">Docker Image Variants</a></p></li>
+<li><p><a class="reference internal" href="#getting-started" id="id9">Getting Started</a></p></li>
+<li><p><a class="reference internal" href="#repositories-and-packages" id="id10">Repositories and Packages</a></p></li>
+</ul>
+</nav>
+</section>
+<section id="overview">
+<span id="id1"></span><h1><a class="toc-backref" href="#id6" role="doc-backlink">Overview</a><a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<p>The Analog Devices Robotics SDK provides a collection of ROS2 packages and 3rd
+party tools for robotics applications.
+The <a class="reference external" href="https://github.com/analogdevicesinc/adi_ros2">adi_ros2 Github Repository</a> aggregates various ADI ROS2 packages into
+pre-configured Docker images, offering a ready-to-use environment for diverse
+hardware platforms.</p>
+</section>
+<section id="supported-platforms">
+<span id="id2"></span><h1><a class="toc-backref" href="#id7" role="doc-backlink">Supported Platforms</a><a class="headerlink" href="#supported-platforms" title="Link to this heading"></a></h1>
+<p>The Analog Devices Robotics SDK Docker images are available for multiple platforms
+and architectures to support diverse hardware deployments:</p>
+<section id="host-platforms">
+<span id="id3"></span><h2>Host Platforms<a class="headerlink" href="#host-platforms" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23.8%" />
+<col style="width: 28.6%" />
+<col style="width: 47.6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Platform</p></th>
+<th class="head"><p>Docker Repository</p></th>
+<th class="head"><p>Use Cases</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>x86_64</strong> (<code class="docutils literal notranslate"><span class="pre">amd64</span></code>)</p></td>
+<td><p><a class="reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2/general">astanea/adi_ros2</a></p></td>
+<td><p>Development workstations, servers, edge computing devices, etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>ARM64</strong> (<code class="docutils literal notranslate"><span class="pre">arm64</span></code>)</p></td>
+<td><p><a class="reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2/general">astanea/adi_ros2</a></p></td>
+<td><p>ARM-based servers, development boards (Raspberry Pi 4+), etc.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Jetson</strong> (<code class="docutils literal notranslate"><span class="pre">arm64</span></code>)</p></td>
+<td><p><a class="reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2-l4t/general">astanea/adi_ros2-l4t</a></p></td>
+<td><p>The image targets NVIDIA’s official L4T base image for Jetson platforms.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="docker-image-variants">
+<h1><a class="toc-backref" href="#id8" role="doc-backlink">Docker Image Variants</a><a class="headerlink" href="#docker-image-variants" title="Link to this heading"></a></h1>
+<p>The Analog Devices SDK provides three Docker image variants that incrementally
+add more packages to address different user requirements:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 85.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Variant</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>base</strong></p></td>
+<td><p>Includes a basic ROS2 installation plus all Analog Devices ROS2 packages
+and their dependencies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>full</strong></p></td>
+<td><p>Builds upon the base stage by adding popular 3rd party tools such as
+Navigation2, SLAM Toolbox, and CANopen for advanced robotics applications.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>desktop</strong></p></td>
+<td><p>Extends the full stage with essential ROS desktop packages, providing
+development and visualization tools like RViz, rqt, and other GUI applications.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>While the SDK is containerized and should work on any Docker-compatible host,
+hardware-specific features (IMU, IIO devices, motor controllers) require
+appropriate driver support on the host system.</p>
+</div>
+<section id="supported-ros2-distributions">
+<h2>Supported ROS2 Distributions:<a class="headerlink" href="#supported-ros2-distributions" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html">ROS2 Humble Hawksbill</a> (Ubuntu 22.04 LTS base)</p></li>
+</ul>
+</section>
+</section>
+<section id="getting-started">
+<span id="id4"></span><h1><a class="toc-backref" href="#id9" role="doc-backlink">Getting Started</a><a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For a quick start, it is recommended to use one of the pre-build Docker images.
+These images contain pre-built ROS2 packages installed in an overlay at
+<code class="docutils literal notranslate"><span class="pre">/opt/ros/adi_ros2</span></code> which is automatically sourced when the container starts.</p>
+<p>For a complete list of available tags and image variants, visit one of the
+<strong>Docker repositories</strong> listed in the <a class="reference internal" href="#host-platforms">Host Platforms</a> section.</p>
+</div>
+<ol class="arabic simple">
+<li><p><strong>Pull the Docker Image</strong></p></li>
+</ol>
+<blockquote>
+<div><p>To get started, you can pull the latest version of your desired image from
+Docker Hub. For example:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span>pull<span class="w"> </span>astanea/adi_ros2:humble-amd64-desktop
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Run the Docker Container</strong></p></li>
+</ol>
+<blockquote>
+<div><p>To run the container:</p>
+<ul>
+<li><p>(<cite>Optional`</cite>) Allow external applications to connect to the host’s display
+(for GUI applications):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>xhost<span class="w"> </span>+
+</pre></div>
+</div>
+</li>
+<li><p>Run the Docker container with the necessary options:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>-it<span class="w"> </span>--rm<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>--net<span class="o">=</span>host<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>--ipc<span class="o">=</span>host<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>--privileged<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>--env<span class="o">=</span><span class="s2">&quot;DISPLAY&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>astanea/adi_ros2:humble-amd64-desktop
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Arguments explained:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-it</span></code>: Run the container in interactive mode with a TTY.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--rm</span></code>: Automatically remove the container when it exits.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--net=host</span></code>: Use the host’s network stack.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--ipc=host</span></code>: Share the host’s IPC namespace, useful for inter-process
+communication.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--privileged</span></code>: Grant extended privileges to the container for hardware
+access.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Run Examples</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Once inside the container, you can run examples from any of the ADI ROS2 packages.
+Each package in the <a class="reference internal" href="#repositories-and-packages">Repositories and Packages</a> section below contains
+documentation with ROS2 command snippets and usage examples to get you started.</p>
+</div></blockquote>
 </section>
 <section id="repositories-and-packages">
-<span id="repositories"></span><h1>Repositories and Packages<a class="headerlink" href="#repositories-and-packages" title="Link to this heading"></a></h1>
+<span id="repositories"></span><h1><a class="toc-backref" href="#id10" role="doc-backlink">Repositories and Packages</a><a class="headerlink" href="#repositories-and-packages" title="Link to this heading"></a></h1>
 <p>Use this index to find the ROS2 packages you need provided by
 <a class="reference external" href="https://www.analog.com">Analog Devices Inc</a> as well as examples on how to use them.</p>
-<div class="table-wrapper docutils container">
+<div class="table-wrapper colwidths-given docutils container">
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 15.0%" />
+<col style="width: 15.0%" />
+<col style="width: 20.0%" />
+<col style="width: 50.0%" />
+</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Repository Docs</p></th>
 <th class="head"><p>Package Name</p></th>

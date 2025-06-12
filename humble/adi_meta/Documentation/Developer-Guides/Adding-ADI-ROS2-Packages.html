@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Adding ADI ROS2 Packages &#8212; ROS2 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=c218d0f6" />
+    <script defer="" src="../../_static/app.umd.js?v=8984ea49"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Dockerfile Template Infrastructure" href="Dockerfile-Template-Infrastructure.html" />
+   
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com"></a>
+        <div class="vertical-divider"></div>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <a id="logo" href="../../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div>
+          <div class="localtoc-header"></div>
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Adding ADI ROS2 Packages</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#overview-of-the-dual-system">Overview of the Dual System</a><ul>
+<li><a class="reference internal" href="#documentation-pipeline-vs-docker-builds">Documentation Pipeline vs Docker Builds</a></li>
+<li><a class="reference internal" href="#template-system-integration">Template System Integration</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adding-a-new-package">Adding a New Package</a><ul>
+<li><a class="reference internal" href="#step-1-add-as-git-submodule-documentation-pipeline">Step 1: Add as Git Submodule (Documentation Pipeline)</a></li>
+<li><a class="reference internal" href="#step-2-add-to-vcs-import-lists-docker-builds">Step 2: Add to VCS Import Lists (Docker Builds)</a></li>
+<li><a class="reference internal" href="#step-3-update-template-system-optional">Step 3: Update Template System (Optional)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#update-dockerfiles">Update Dockerfiles</a></li>
+<li><a class="reference internal" href="#push-changes-and-ci-validation">Push Changes and CI Validation</a></li>
+<li><a class="reference internal" href="#final-checklist">Final Checklist</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../../index.html">
+      ROS2
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul class="current">
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1" checked=""/><div class="collapse"><a class="reference internal" href="../../Documentation.html">Documentation</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-1" id="toctree-collapse-1-1"/><div class="collapse"><a class="reference internal" href="../How-To-Guides.html">How-to Guides</a><label for="toctree-collapse-1-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="../How-To-Guides/ROS2-Docker-Image-Guide.html">ROS2 Docker Image Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../How-To-Guides/ROS2-Documentation-Guide.html">ROS2 Documentation Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1-2" id="toctree-collapse-1-2" checked=""/><div class="collapse"><a class="reference internal" href="../Developer-Guides.html">Developer Guides</a><label for="toctree-collapse-1-2"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Dockerfile-Template-Infrastructure.html">Dockerfile Template Infrastructure</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adding ADI ROS2 Packages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+    <nav class="breadcrumb">
+        <ol>
+          <li><a href="../../Documentation.html">Documentation</a></li>
+          <li><a href="../Developer-Guides.html">Developer Guides</a></li>
+          </ol>
+    </nav>
+  </div>
+
+          <div class="body" role="main">
+            
+  <section id="adding-adi-ros2-packages">
+<span id="id1"></span><h1>Adding ADI ROS2 Packages<a class="headerlink" href="#adding-adi-ros2-packages" title="Link to this heading"></a></h1>
+<nav class="contents local" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#introduction" id="id2">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#overview-of-the-dual-system" id="id3">Overview of the Dual System</a></p>
+<ul>
+<li><p><a class="reference internal" href="#documentation-pipeline-vs-docker-builds" id="id4">Documentation Pipeline vs Docker Builds</a></p></li>
+<li><p><a class="reference internal" href="#template-system-integration" id="id5">Template System Integration</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#adding-a-new-package" id="id6">Adding a New Package</a></p>
+<ul>
+<li><p><a class="reference internal" href="#step-1-add-as-git-submodule-documentation-pipeline" id="id7">Step 1: Add as Git Submodule (Documentation Pipeline)</a></p></li>
+<li><p><a class="reference internal" href="#step-2-add-to-vcs-import-lists-docker-builds" id="id8">Step 2: Add to VCS Import Lists (Docker Builds)</a></p></li>
+<li><p><a class="reference internal" href="#step-3-update-template-system-optional" id="id9">Step 3: Update Template System (Optional)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#update-dockerfiles" id="id10">Update Dockerfiles</a></p></li>
+<li><p><a class="reference internal" href="#push-changes-and-ci-validation" id="id11">Push Changes and CI Validation</a></p></li>
+<li><p><a class="reference internal" href="#final-checklist" id="id12">Final Checklist</a></p></li>
+</ul>
+</nav>
+<section id="introduction">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<p>This guide outlines the dual process for adding a new Analog Devices ROS 2 package
+to this meta-repository. The repository uses two parallel approaches for package
+management:</p>
+<ol class="arabic simple">
+<li><p><strong>Git Submodules</strong>: For documentation pipeline integration and development workflow</p></li>
+<li><p><strong>VCS Import Lists</strong>: For Docker image builds and distribution</p></li>
+</ol>
+<p>Both approaches serve different purposes and both must be updated when adding new packages.</p>
+</section>
+<section id="overview-of-the-dual-system">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Overview of the Dual System</a><a class="headerlink" href="#overview-of-the-dual-system" title="Link to this heading"></a></h2>
+<section id="documentation-pipeline-vs-docker-builds">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Documentation Pipeline vs Docker Builds</a><a class="headerlink" href="#documentation-pipeline-vs-docker-builds" title="Link to this heading"></a></h3>
+<p><strong>Git Submodules</strong> are used for:</p>
+<ul class="simple">
+<li><p>Documentation generation with <code class="docutils literal notranslate"><span class="pre">rosdoc2</span></code> and <code class="docutils literal notranslate"><span class="pre">adi_doctools</span></code></p></li>
+<li><p>Developer workspace setup for local development</p></li>
+<li><p>Cross-referencing between packages in documentation</p></li>
+</ul>
+<p><strong>VCS Import Lists</strong> (like <code class="docutils literal notranslate"><span class="pre">adi_ros2-humble.yml</span></code>) are used for:</p>
+<ul class="simple">
+<li><p>Docker container builds where specific package versions are needed</p></li>
+<li><p>Reproducible builds independent of submodule states</p></li>
+<li><p>Template-driven conditional building based on platform/architecture</p></li>
+</ul>
+</section>
+<section id="template-system-integration">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Template System Integration</a><a class="headerlink" href="#template-system-integration" title="Link to this heading"></a></h3>
+<p>The repository uses a Jinja2-based template system (<code class="docutils literal notranslate"><span class="pre">scripts/templates.yml</span></code>) that allows:</p>
+<ul class="simple">
+<li><p>Conditional building based on platform (e.g., <code class="docutils literal notranslate"><span class="pre">humble-amd64</span></code> vs <code class="docutils literal notranslate"><span class="pre">humble-l4t_r36.2.0</span></code>)</p></li>
+<li><p>Version-controlled dependencies (e.g., <code class="docutils literal notranslate"><span class="pre">libiio_tag:</span> <span class="pre">&quot;libiio-v0&quot;</span></code>)</p></li>
+<li><p>Architecture-specific package inclusion/exclusion</p></li>
+<li><p>Multi-target Docker builds (<code class="docutils literal notranslate"><span class="pre">base</span></code>, <code class="docutils literal notranslate"><span class="pre">full</span></code>, <code class="docutils literal notranslate"><span class="pre">desktop</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="adding-a-new-package">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Adding a New Package</a><a class="headerlink" href="#adding-a-new-package" title="Link to this heading"></a></h2>
+<section id="step-1-add-as-git-submodule-documentation-pipeline">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Step 1: Add as Git Submodule (Documentation Pipeline)</a><a class="headerlink" href="#step-1-add-as-git-submodule-documentation-pipeline" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p><strong>Navigate to the src directory of the `adi_ros2` workspace:</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/adi_ros2/src<span class="w"> </span><span class="c1"># Or your equivalent adi_ros2 workspace</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Add the submodule:</strong>
+Replace <cite>&lt;repository_url&gt;</cite> with the URL of the new package’s Git repository
+and <cite>&lt;path_to_submodule&gt;</cite> with the desired location within the <cite>src/</cite>
+directory (e.g., <cite>src/new_adi_package</cite>).</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>&lt;repository_url&gt;<span class="w"> </span>&lt;path_to_submodule&gt;
+
+<span class="c1"># Example</span>
+git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>https://github.com/analogdevicesinc/iio_ros2.git<span class="w"> </span>src/iio_ros2
+</pre></div>
+</div>
+</li>
+<li><p><strong>Initialize and update the submodule:</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive<span class="w"> </span>&lt;path_to_submodule&gt;
+
+<span class="c1"># Example</span>
+git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive<span class="w"> </span>src/iio_ros2
+</pre></div>
+</div>
+</li>
+<li><p><strong>Commit the submodule addition:</strong></p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.gitmodules<span class="w"> </span>&lt;path_to_submodule&gt;
+git<span class="w"> </span>commit<span class="w"> </span>--signoff<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add &lt;new_package_name&gt; as a submodule&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can build locally the documentation with the new package using the
+<code class="docutils literal notranslate"><span class="pre">./ci/build_doc.sh</span></code> script. Alternatively you can download the artifacts
+generated when you commit changes to the repository.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Submodules are primarily for documentation generation and development workflows.
+For Docker builds, you must also update the VCS import lists (Step 2).</p>
+</div>
+</section>
+<section id="step-2-add-to-vcs-import-lists-docker-builds">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Step 2: Add to VCS Import Lists (Docker Builds)</a><a class="headerlink" href="#step-2-add-to-vcs-import-lists-docker-builds" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p><strong>Update the VCS import file for your target ROS distribution:</strong></p>
+<p>Edit <code class="docutils literal notranslate"><span class="pre">docker/adi_ros2-&lt;ros_distro&gt;.yml</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">docker/adi_ros2-humble.yml</span></code>):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># docker/adi_ros2-humble.yml</span>
+<span class="nt">repositories</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># ...existing packages...</span>
+
+<span class="w">  </span><span class="nt">new_package_name</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git</span>
+<span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/analogdevicesinc/new_package_name.git</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span><span class="w">  </span><span class="c1"># or specific branch/tag</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The VCS import system is separate from git submodules and allows specifying
+exact versions/branches for reproducible Docker builds.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the new package builds with standard <code class="docutils literal notranslate"><span class="pre">rosdep</span></code> and <code class="docutils literal notranslate"><span class="pre">colcon</span></code>, then
+these are all the changes required.</p>
+</div>
+</li>
+</ol>
+</section>
+<section id="step-3-update-template-system-optional">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">Step 3: Update Template System (Optional)</a><a class="headerlink" href="#step-3-update-template-system-optional" title="Link to this heading"></a></h3>
+<ol class="arabic">
+<li><p><strong>Review scripts/templates.yml for version control:</strong> define the branch/tag
+for the dependencies of the new package that need to be installed from sources.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># scripts/templates.yml</span>
+<span class="nt">adi_ros2</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">humble-amd64</span>
+<span class="w">    </span><span class="nt">ros_distro</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">humble</span>
+<span class="w">    </span><span class="nt">arch</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">amd64</span>
+<span class="w">    </span><span class="nt">targets</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">base</span>
+<span class="w">        </span><span class="nt">platforms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;linux/amd64&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">full</span>
+<span class="w">        </span><span class="nt">platforms</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;linux/amd64&quot;</span>
+<span class="w">    </span><span class="c1"># Version variables for source builds</span>
+<span class="w">    </span><span class="nt">libiio_tag</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;libiio-v0&quot;</span>
+<span class="w">    </span><span class="nt">new_dependency_source</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;v1.0.0&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Update Jinja2 templates:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">template/snippets/source_builds.jinja</span></code> - extend with build instructions
+for additional dependencies that need to be built from sources.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">template/snippets/system_dependencies.jinja</span></code> - for additional system
+dependencies that need to be installed on the target system.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="update-dockerfiles">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Update Dockerfiles</a><a class="headerlink" href="#update-dockerfiles" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p><strong>Test template generation:</strong>
+Use the provided script to regenerate Dockerfiles and verify your changes:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>scripts/
+python<span class="w"> </span>generate.py<span class="w">  </span><span class="c1"># Regenerates Dockerfiles from templates</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Save the changes made to the Dockerfiles to a commit. Re-run the <code class="docutils literal notranslate"><span class="pre">generate.py</span></code>
+and save the <code class="docutils literal notranslate"><span class="pre">docker/README.md</span></code> file in a separate commit to
+reference the versioned Dockerfiles in the repository.</p>
+</div>
+</li>
+<li><p><strong>For platform-specific builds:</strong>
+If the new package requires different handling across platforms (amd64 vs
+arm64 vs L4T), ensure the template logic handles these differences
+correctly.</p></li>
+</ol>
+</section>
+<section id="push-changes-and-ci-validation">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Push Changes and CI Validation</a><a class="headerlink" href="#push-changes-and-ci-validation" title="Link to this heading"></a></h2>
+<p>Once everything is verified locally:</p>
+<ol class="arabic simple">
+<li><p><strong>Commit and push all changes:</strong></p></li>
+<li><p><strong>Verify CI/CD pipeline:</strong>
+Check that GitHub Actions workflows complete successfully, particularly:</p>
+<ul class="simple">
+<li><p>Documentation generation workflow</p></li>
+<li><p>Docker image builds (if configured)</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="final-checklist">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Final Checklist</a><a class="headerlink" href="#final-checklist" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>[ ] <strong>Submodule Integration</strong></p>
+<ul>
+<li><p>[ ] Submodule added and initialized correctly</p></li>
+<li><p>[ ] <code class="docutils literal notranslate"><span class="pre">.gitmodules</span></code> file updated and committed</p></li>
+<li><p>[ ] Submodule points to correct branch/commit</p></li>
+</ul>
+</li>
+<li><p>[ ] <strong>VCS Import Integration</strong></p>
+<ul>
+<li><p>[ ] Package added to appropriate VCS import file (<code class="docutils literal notranslate"><span class="pre">docker/adi_ros2-&lt;ros_distro&gt;.yml</span></code>)</p></li>
+<li><p>[ ] Correct repository URL and version specified</p></li>
+<li><p>[ ] Platform-specific VCS files updated if needed</p></li>
+<li><p>[ ] Local test with the <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clone</span></code> command within the <code class="docutils literal notranslate"><span class="pre">docker/</span></code> directory
+to ensure the package is cloned correctly</p></li>
+</ul>
+</li>
+<li><p>[ ] <strong>Template System</strong></p>
+<ul>
+<li><p>[ ] Version variables added to <code class="docutils literal notranslate"><span class="pre">scripts/templates.yml</span></code> if needed</p></li>
+<li><p>[ ] Conditional logic updated in Jinja2 templates if required</p></li>
+<li><p>[ ] Template generation tested (<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">scripts/generate.py</span></code>) and committed</p></li>
+</ul>
+</li>
+<li><p>[ ] <strong>Build Testing</strong></p>
+<ul>
+<li><p>[ ] Docker local build is successful with the <code class="docutils literal notranslate"><span class="pre">scripts/build.py</span></code> script for
+a relevant target platform</p></li>
+</ul>
+</li>
+<li><p>[ ] <strong>Repository Updates</strong></p>
+<ul>
+<li><p>[ ] All changes committed with proper sign-off</p></li>
+<li><p>[ ] Changes pushed to feature branch</p></li>
+<li><p>[ ] Pull request created with comprehensive description</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="Dockerfile-Template-Infrastructure.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Dockerfile Template Infrastructure</a>
+    <div></div>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>
