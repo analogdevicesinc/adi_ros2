@@ -17,7 +17,12 @@ Files
 -----
 
 - :ref:`file_test_src_accelgyrotemp_subscriber_test.cpp`
-- :ref:`file_test_src_imu_diag_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1646X_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1647X_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1650X_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1654X_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1655X_subscriber_test.cpp`
+- :ref:`file_test_src_imu_diag_adis1657X_subscriber_test.cpp`
 - :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
 - :ref:`file_test_src_imu_identification_subscriber_test.cpp`
 - :ref:`file_test_src_imu_subscriber_test.cpp`

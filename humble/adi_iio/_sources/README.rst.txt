@@ -38,6 +38,11 @@ detailed documentation into several sections:
 
 * For information on **parameters and services**, refer to the `Node Description`_ section.
 
+* **System Tests:** The package includes comprehensive system tests located in the
+  ``test/`` directory. These tests are integrated with ``colcon test`` and require
+  specific hardware (Analog Devices IIO devices) to execute. Refer to the test
+  directory's README for detailed setup instructions and execution guidelines.
+
 * For building this documentation, refer to `Building the Project Documentation Locally`_.
 
 
@@ -64,30 +69,14 @@ License
 
 This project is licensed under the `Apache License, Version 2.0`_.
 
-
-.. Chanelog
-.. --------------------------------------------------------------------------------
-
-.. Refer to our `CHANELOG`_ for version history and release notes.
+The product makes use of third party and open source software. The licenses and
+notices for this software are listed at: `iio_ros2 - Third Party and Open Source Software`_.
 
 
-.. _software_architecture:
+CHANGELOG
+--------------------------------------------------------------------------------
 
-Software Architecture
-================================================================================
-
-.. TODO: add software architecture diagram - 2/3 figures:
-
-..  Target mush have libiio installed
-.. Optional:  if target supports ROS2 we can run the node locally and the network is used for topic/srv communication with Host
-
-
-.. 1. Host with libiio and ROS2 - Target running only libiio
-..        * Node running on host and data sent via network backed
-
-.. 2. Host with libiio and ROS2 - Target running libiio and ROS2
-..        * adi_iio node running on target (data sent via ROS topics)
-..        * adi_iio node running on host (data sent via network backed)
+Refer to our `CHANGELOG`_ for version history and release notes.
 
 
 .. _Installation:
@@ -112,7 +101,6 @@ Before installing the ``adi_iio`` package, ensure you have the following:
   version of it from source using the provided installation script
   (see `(Optional) Build libiio from sources`_).
 
-.. TODO: list setup: flash sd card with kuiper linux, drivers, host, etc.
 
 Build from Source
 --------------------------------------------------------------------------------
@@ -785,6 +773,7 @@ file in your web browser.
 .. _COMMUNICATION: https://github.com/analogdevicesinc/iio_ros2/blob/humble/COMMUNICATION.md
 .. _CONTRIBUTING: https://github.com/analogdevicesinc/iio_ros2/blob/humble/CONTRIBUTING.md
 .. _Apache License, Version 2.0: https://github.com/analogdevicesinc/iio_ros2/blob/humble/LICENSE
-.. _CHANELOG: https://github.com/analogdevicesinc/iio_ros2/blob/humble/CHANGELOG.md
+.. _iio_ros2 - Third Party and Open Source Software: https://download.analog.com/iio_ros2/versions.html
+.. _CHANGELOG: https://github.com/analogdevicesinc/iio_ros2/blob/humble/CHANGELOG.rst
 
 .. _ROS2 Humble Installation Guide: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html

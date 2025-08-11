@@ -1,0 +1,8 @@
+ImuDiagDataADIS1650X
+====================
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ImuDiagDataADIS1650X.msg
+

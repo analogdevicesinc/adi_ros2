@@ -30,7 +30,19 @@ Includes
 --------
 
 
-- ``adi_imu/msg/imu_diag_data.hpp``
+- ``adi_imu/adis_register_map.h`` (:ref:`file_include_adi_imu_adis_register_map.h`)
+
+- ``adi_imu/msg/imu_diag_data_adis1646_x.hpp``
+
+- ``adi_imu/msg/imu_diag_data_adis1647_x.hpp``
+
+- ``adi_imu/msg/imu_diag_data_adis1650_x.hpp``
+
+- ``adi_imu/msg/imu_diag_data_adis1654_x.hpp``
+
+- ``adi_imu/msg/imu_diag_data_adis1655_x.hpp``
+
+- ``adi_imu/msg/imu_diag_data_adis1657_x.hpp``
 
 
 
@@ -45,9 +57,16 @@ Included By
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
 Classes
 -------
 
 
-- :ref:`exhale_class_classImuDiagDataProviderInterface`
+- :ref:`exhale_class_classadi__imu_1_1ImuDiagDataProviderInterface`
 

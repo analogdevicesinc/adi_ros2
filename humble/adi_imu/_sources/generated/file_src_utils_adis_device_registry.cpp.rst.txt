@@ -1,0 +1,49 @@
+
+.. _file_src_utils_adis_device_registry.cpp:
+
+File adis_device_registry.cpp
+=============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src_utils>` (``src/utils``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/utils/adis_device_registry.cpp``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_utils_adis_device_registry.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/utils/adis_device_registry.h`` (:ref:`file_include_adi_imu_utils_adis_device_registry.h`)
+
+- ``algorithm``
+
+- ``iostream``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+

@@ -1,0 +1,26 @@
+.. _exhale_class_classadi__imu_1_1ImuDiagDataProviderInterface:
+
+Class ImuDiagDataProviderInterface
+==================================
+
+- Defined in :ref:`file_include_adi_imu_imu_diag_data_provider_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public adi_imu::ImuDiagDataProvider`` (:ref:`exhale_class_classadi__imu_1_1ImuDiagDataProvider`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::ImuDiagDataProviderInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

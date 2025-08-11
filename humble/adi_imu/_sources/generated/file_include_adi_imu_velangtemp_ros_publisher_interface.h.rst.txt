@@ -42,12 +42,21 @@ Included By
 
 - :ref:`file_include_adi_imu_velangtemp_ros_publisher.h`
 
+- :ref:`file_src_ros_publisher_group.cpp`
 
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
 
 
 Classes
 -------
 
 
-- :ref:`exhale_class_classVelAngTempRosPublisherInterface`
+- :ref:`exhale_class_classadi__imu_1_1VelAngTempRosPublisherInterface`
 

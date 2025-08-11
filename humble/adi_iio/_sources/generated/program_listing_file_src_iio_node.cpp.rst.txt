@@ -123,7 +123,7 @@ Program Listing for File iio_node.cpp
        if (val) {
          ret = true;
          result = val;
-         RCLCPP_INFO(
+         RCLCPP_DEBUG(
            rclcpp::get_logger("adi_iio_node"),
            "read context attribute \"%s\" with value \"%s\"",
            iio_path.getContextAttrSegment().c_str(), val);
@@ -150,8 +150,12 @@ Program Listing for File iio_node.cpp
    
        if (write) {
          ret1 = iio_device_attr_write(dev, iio_path.getDeviceAttrSegment().c_str(), value.c_str());
+         if (ret1 <= 0) {
+           ret1 = iio_device_debug_attr_write(
+             dev, iio_path.getDeviceAttrSegment().c_str(), value.c_str());
+         }
          if (ret1 > 0) {
-           RCLCPP_INFO(
+           RCLCPP_DEBUG(
              rclcpp::get_logger("adi_iio_node"),
              "wrote device attribute \"%s\" from device \"%s\" with value \"%s\"",
              iio_path.getDeviceAttrSegment().c_str(), iio_path.getDeviceSegment().c_str(),
@@ -170,10 +174,16 @@ Program Listing for File iio_node.cpp
    
        ret1 = iio_device_attr_read(
          dev, iio_path.getDeviceAttrSegment().c_str(), attr_val, MAX_ATTR_SIZE);
+       if (ret1 <= 0) {
+         ret1 = iio_device_debug_attr_read(
+           dev, iio_path.getDeviceAttrSegment().c_str(), attr_val, MAX_ATTR_SIZE
+         );
+       }
+   
        if (ret1 > 0) {
          result = attr_val;
          ret = true;
-         RCLCPP_INFO(
+         RCLCPP_DEBUG(
            rclcpp::get_logger("adi_iio_node"),
            "read device attribute \"%s\" from device \"%s\" with value \"%s\"",
            iio_path.getDeviceAttrSegment().c_str(), iio_path.getDeviceSegment().c_str(), attr_val);
@@ -215,7 +225,7 @@ Program Listing for File iio_node.cpp
        if (write) {
          ret1 = iio_channel_attr_write(ch, iio_path.getChannelAttrSegment().c_str(), value.c_str());
          if (ret1 > 0) {
-           RCLCPP_INFO(
+           RCLCPP_DEBUG(
              rclcpp::get_logger("adi_iio_node"),
              "wrote channel attribute \"%s\" from channel \"%s\" device \"%s\" with value \"%s\"",
              iio_path.getChannelAttrSegment().c_str(),
@@ -226,9 +236,14 @@ Program Listing for File iio_node.cpp
            RCLCPP_WARN(
              rclcpp::get_logger(
                "adi_iio_node"),
-             "could not write attribute \"%s\" from channel \"%s\" device \"%s\" with value \"%s\"- errno %d - %s",
-             iio_path.getChannelAttrSegment().c_str(), iio_path.getChannelSegment().c_str(),
-             iio_path.getDeviceSegment().c_str(), value.c_str(), ret1, result.c_str());
+             "could not write attribute \"%s\" from channel \"%s\" device \"%s\" "
+             "with value \"%s\"- errno %d - %s",
+             iio_path.getChannelAttrSegment().c_str(),
+             iio_path.getChannelSegment().c_str(),
+             iio_path.getDeviceSegment().c_str(),
+             value.c_str(),
+             ret1,
+             result.c_str());
            return ret;
          }
        }
@@ -238,7 +253,7 @@ Program Listing for File iio_node.cpp
        if (ret1 > 0) {
          result = attr_val;
          ret = true;
-         RCLCPP_INFO(
+         RCLCPP_DEBUG(
            rclcpp::get_logger("adi_iio_node"),
            "read channel attribute \"%s\" from channel \"%s\" device \"%s\" with value \"%s\"",
            iio_path.getChannelAttrSegment().c_str(), iio_path.getChannelSegment().c_str(),
@@ -297,7 +312,7 @@ Program Listing for File iio_node.cpp
      response->success = rwAttrPath(request->attr_path, message);
      response->message = message;
    
-     std::string local_topic_name = request->topic_name;
+     std::string local_topic_name = IIOPath::toTopicName(request->topic_name);
      if (local_topic_name == "") {
        local_topic_name = IIOPath::toTopicName(request->attr_path);
      }
@@ -331,7 +346,7 @@ Program Listing for File iio_node.cpp
      std::string message;
    
      std::string local_topic_name = request->topic_name;
-     local_topic_name = IIOPath::toTopicName(request->topic_name); // for compatibility with enable
+     local_topic_name = IIOPath::toTopicName(request->topic_name);  // for compatibility with enable
    
      if (m_attrTopicMap.find(local_topic_name) != m_attrTopicMap.end()) {
        m_attrTopicMap.erase(local_topic_name);
@@ -611,7 +626,7 @@ Program Listing for File iio_node.cpp
      const std::shared_ptr<adi_iio::srv::ListDevices::Request> request,
      std::shared_ptr<adi_iio::srv::ListDevices::Response> response)
    {
-     (void)request; // unused
+     (void)request;  // unused
      RCLCPP_INFO(rclcpp::get_logger("adi_iio_node"), "Service request /ListDevices");
      std::string msg;
    
@@ -763,7 +778,7 @@ Program Listing for File iio_node.cpp
      const std::shared_ptr<adi_iio::srv::ScanContext::Request> request,
      std::shared_ptr<adi_iio::srv::ScanContext::Response> response)
    {
-     (void)request; // unused
+     (void)request;  // unused
      RCLCPP_INFO(rclcpp::get_logger("adi_iio_node"), "Service request /ScanContext");
      std::string msg{"Found: "};
      std::vector<std::string> devices;

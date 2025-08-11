@@ -3,15 +3,20 @@
 Class ImuDiagSubscriberTest
 ===========================
 
-- Defined in :ref:`file_test_src_imu_diag_subscriber_test.cpp`
+- Defined in :ref:`file_test_src_imu_diag_adis1646X_subscriber_test.cpp`
 
 
 Inheritance Relationships
 -------------------------
 
-Base Type
-*********
+Base Types
+**********
 
+- ``public testing::Test``
+- ``public testing::Test``
+- ``public testing::Test``
+- ``public testing::Test``
+- ``public testing::Test``
 - ``public testing::Test``
 
 

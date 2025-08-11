@@ -1,0 +1,17 @@
+.. _exhale_class_classadi__imu_1_1ADISDeviceRegistry:
+
+Class ADISDeviceRegistry
+========================
+
+- Defined in :ref:`file_include_adi_imu_utils_adis_device_registry.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::ADISDeviceRegistry
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

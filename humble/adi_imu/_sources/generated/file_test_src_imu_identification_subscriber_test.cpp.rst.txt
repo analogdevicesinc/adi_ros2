@@ -30,6 +30,10 @@ Includes
 --------
 
 
+- ``adi_imu/adis_device_factory.h`` (:ref:`file_include_adi_imu_adis_device_factory.h`)
+
+- ``adi_imu/adis_register_map.h`` (:ref:`file_include_adi_imu_adis_register_map.h`)
+
 - ``adi_imu/iio_wrapper.h`` (:ref:`file_include_adi_imu_iio_wrapper.h`)
 
 - ``adi_imu/msg/imu_identification_data.hpp``

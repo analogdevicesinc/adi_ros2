@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['translation_5fmatrix_0',['translation_matrix',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraExtrinsics.html#ad3517a1a3ba8ed9ceeca1d63d54d9900',1,'CameraExtrinsics']]]
+  ['no_5fof_5fsamp_0',['no_of_samp',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1IIOWrapper.html#af9f2991ff449ed6d9a202a549431311d',1,'adi_imu::IIOWrapper']]]
 ];

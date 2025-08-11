@@ -40,14 +40,23 @@ Included By
 -----------
 
 
+- :ref:`file_src_imu_ros2_node.cpp`
+
 - :ref:`file_src_velangtemp_data_provider.cpp`
 
 
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
 
 
 Classes
 -------
 
 
-- :ref:`exhale_class_classVelAngTempDataProvider`
+- :ref:`exhale_class_classadi__imu_1_1VelAngTempDataProvider`
 

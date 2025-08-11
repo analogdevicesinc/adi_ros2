@@ -1,0 +1,32 @@
+.. _exhale_class_classadi__imu_1_1ImuDiagRosPublisherInterface:
+
+Class ImuDiagRosPublisherInterface
+==================================
+
+- Defined in :ref:`file_include_adi_imu_imu_diag_ros_publisher_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public adi_imu::RosTask`` (:ref:`exhale_class_classadi__imu_1_1RosTask`)
+
+
+Derived Type
+************
+
+- ``public adi_imu::ImuDiagRosPublisher< DiagMsgType >`` (:ref:`exhale_class_classadi__imu_1_1ImuDiagRosPublisher`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::ImuDiagRosPublisherInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

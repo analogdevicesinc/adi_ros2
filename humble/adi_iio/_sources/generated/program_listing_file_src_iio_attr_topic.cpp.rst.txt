@@ -50,6 +50,12 @@ Program Listing for File iio_attr_topic.cpp
        case TYPE_INT:
          m_pub = std::make_unique<Int32PubSub>(m_nh, this, m_topicName);
          break;
+       case TYPE_DOUBLE:
+         m_pub = std::make_unique<Float32PubSub>(m_nh, this, m_topicName);
+         break;
+       case TYPE_BOOL:
+         m_pub = std::make_unique<BoolPubSub>(m_nh, this, m_topicName);
+         break;
        default:
          m_pub = std::make_unique<StringPubSub>(m_nh, this, m_topicName);
          break;

@@ -1,0 +1,59 @@
+
+.. _file_src_adis_device_factory.cpp:
+
+File adis_device_factory.cpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_src>` (``src``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``src/adis_device_factory.cpp``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_src_adis_device_factory.cpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/adis1646x_register_map.h`` (:ref:`file_include_adi_imu_adis1646x_register_map.h`)
+
+- ``adi_imu/adis1647x_register_map.h`` (:ref:`file_include_adi_imu_adis1647x_register_map.h`)
+
+- ``adi_imu/adis1650x_register_map.h`` (:ref:`file_include_adi_imu_adis1650x_register_map.h`)
+
+- ``adi_imu/adis1654x_register_map.h`` (:ref:`file_include_adi_imu_adis1654x_register_map.h`)
+
+- ``adi_imu/adis1655x_register_map.h`` (:ref:`file_include_adi_imu_adis1655x_register_map.h`)
+
+- ``adi_imu/adis1657x_register_map.h`` (:ref:`file_include_adi_imu_adis1657x_register_map.h`)
+
+- ``adi_imu/adis_device_factory.h`` (:ref:`file_include_adi_imu_adis_device_factory.h`)
+
+- ``adi_imu/utils/adis_device_registry.h`` (:ref:`file_include_adi_imu_utils_adis_device_registry.h`)
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+

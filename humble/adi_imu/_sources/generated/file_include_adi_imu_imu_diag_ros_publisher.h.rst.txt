@@ -30,11 +30,15 @@ Includes
 --------
 
 
-- ``imu_diag_data_provider_interface.h`` (:ref:`file_include_adi_imu_imu_diag_data_provider_interface.h`)
+- ``adi_imu/imu_diag_data_provider_interface.h`` (:ref:`file_include_adi_imu_imu_diag_data_provider_interface.h`)
 
-- ``imu_diag_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_imu_diag_ros_publisher_interface.h`)
+- ``adi_imu/imu_diag_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_imu_diag_ros_publisher_interface.h`)
+
+- ``memory``
 
 - ``rclcpp/rclcpp.hpp``
+
+- ``string``
 
 
 
@@ -42,16 +46,23 @@ Included By
 -----------
 
 
-- :ref:`file_src_imu_diag_ros_publisher.cpp`
+- :ref:`file_include_adi_imu_imu_diag_ros_publisher_factory.h`
 
 - :ref:`file_src_imu_ros2_node.cpp`
 
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
 Classes
 -------
 
 
-- :ref:`exhale_class_classImuDiagRosPublisher`
+- :ref:`exhale_class_classadi__imu_1_1ImuDiagRosPublisher`
 

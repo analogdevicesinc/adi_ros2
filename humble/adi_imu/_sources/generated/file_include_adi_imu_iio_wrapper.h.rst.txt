@@ -30,11 +30,15 @@ Includes
 --------
 
 
-- ``adis_data_access.h`` (:ref:`file_include_adi_imu_adis_data_access.h`)
+- ``adi_imu/adis_register_map.h`` (:ref:`file_include_adi_imu_adis_register_map.h`)
 
 - ``iio.h``
 
+- ``memory``
+
 - ``string``
+
+- ``vector``
 
 
 
@@ -60,6 +64,18 @@ Included By
 
 - :ref:`file_test_src_accelgyrotemp_subscriber_test.cpp`
 
+- :ref:`file_test_src_imu_diag_adis1646X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1647X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1650X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1654X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1655X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1657X_subscriber_test.cpp`
+
 - :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
 
 - :ref:`file_test_src_imu_identification_subscriber_test.cpp`
@@ -71,11 +87,18 @@ Included By
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
 Classes
 -------
 
 
-- :ref:`exhale_class_classIIOWrapper`
+- :ref:`exhale_class_classadi__imu_1_1IIOWrapper`
 
 
 Defines

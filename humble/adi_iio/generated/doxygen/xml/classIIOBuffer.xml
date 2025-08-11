@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="37" column="3" bodyfile="src/iio_buffer.cpp" bodystart="18" bodyend="24"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="37" column="3" bodyfile="src/iio_buffer.cpp" bodystart="18" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1ac6904899169d8b5250f2a002e5c2facc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -235,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="38" column="3" bodyfile="src/iio_buffer.cpp" bodystart="26" bodyend="34"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="38" column="3" bodyfile="src/iio_buffer.cpp" bodystart="27" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a7cd3d17f37c0f77f9f3c0f24aeba768d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -263,7 +263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="40" column="8" bodyfile="src/iio_buffer.cpp" bodystart="49" bodyend="151"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="40" column="8" bodyfile="src/iio_buffer.cpp" bodystart="50" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1acb0b64afa7d33513f16327728d69d7a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="41" column="8" bodyfile="src/iio_buffer.cpp" bodystart="36" bodyend="47"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="41" column="8" bodyfile="src/iio_buffer.cpp" bodystart="37" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a6808ee387552d28a81f841a3dcb90259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -295,7 +295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="42" column="8" bodyfile="src/iio_buffer.cpp" bodystart="153" bodyend="207"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="42" column="8" bodyfile="src/iio_buffer.cpp" bodystart="154" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1aec0693771d2b6ab91cca274b18be8b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -317,7 +317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="43" column="8" bodyfile="src/iio_buffer.cpp" bodystart="209" bodyend="232"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="43" column="8" bodyfile="src/iio_buffer.cpp" bodystart="210" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a3a678ea826795e4019c9c9960a51d69c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -339,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="45" column="8" bodyfile="src/iio_buffer.cpp" bodystart="235" bodyend="252"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="45" column="8" bodyfile="src/iio_buffer.cpp" bodystart="254" bodyend="271"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a3634bd5cc5fc7a71d19f5ba82a768ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="46" column="8" bodyfile="src/iio_buffer.cpp" bodystart="273" bodyend="283"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="46" column="8" bodyfile="src/iio_buffer.cpp" bodystart="292" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a1a35fd5fdf1838cb34305f093edeecbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_buffer.hpp" line="47" column="8" bodyfile="src/iio_buffer.cpp" bodystart="258" bodyend="271"/>
+        <location file="include/adi_iio/iio_buffer.hpp" line="47" column="8" bodyfile="src/iio_buffer.cpp" bodystart="277" bodyend="290"/>
       </memberdef>
       <memberdef kind="function" id="classIIOBuffer_1a3b8ba03f5065fe80d4ac3956a890ef3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int32_t</type>

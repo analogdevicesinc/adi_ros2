@@ -1,0 +1,28 @@
+.. _exhale_class_classadi__imu_1_1RosTask:
+
+Class RosTask
+=============
+
+- Defined in :ref:`file_include_adi_imu_ros_task.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public adi_imu::ImuDiagRosPublisherInterface`` (:ref:`exhale_class_classadi__imu_1_1ImuDiagRosPublisherInterface`)
+- ``public adi_imu::ImuIdentificationRosPublisherInterface`` (:ref:`exhale_class_classadi__imu_1_1ImuIdentificationRosPublisherInterface`)
+- ``public adi_imu::RosPublisherGroupInterface`` (:ref:`exhale_class_classadi__imu_1_1RosPublisherGroupInterface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::RosTask
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

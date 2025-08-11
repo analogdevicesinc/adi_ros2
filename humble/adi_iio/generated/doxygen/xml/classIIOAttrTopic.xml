@@ -234,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_attr_topic.hpp" line="48" column="3" bodyfile="src/iio_attr_topic.cpp" bodystart="21" bodyend="47"/>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="48" column="3" bodyfile="src/iio_attr_topic.cpp" bodystart="21" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classIIOAttrTopic_1a86c681705a037196177e2153cd79385c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -248,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_attr_topic.hpp" line="51" column="11" bodyfile="src/iio_attr_topic.cpp" bodystart="49" bodyend="58"/>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="51" column="11" bodyfile="src/iio_attr_topic.cpp" bodystart="55" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classIIOAttrTopic_1a623cd04f745c48b26bf9b0267eac47f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -262,7 +262,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_attr_topic.hpp" line="53" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="60" bodyend="73"/>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="53" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="66" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_attr_topic.hpp" line="54" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="75" bodyend="81"/>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="54" column="8" bodyfile="src/iio_attr_topic.cpp" bodystart="81" bodyend="87"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

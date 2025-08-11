@@ -1,0 +1,26 @@
+.. _exhale_class_classadi__imu_1_1VelAngTempRosPublisherInterface:
+
+Class VelAngTempRosPublisherInterface
+=====================================
+
+- Defined in :ref:`file_include_adi_imu_velangtemp_ros_publisher_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public adi_imu::VelAngTempRosPublisher`` (:ref:`exhale_class_classadi__imu_1_1VelAngTempRosPublisher`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::VelAngTempRosPublisherInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

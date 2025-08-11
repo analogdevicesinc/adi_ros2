@@ -6,6 +6,6 @@ var searchData=
   ['compressed_5fdepth_5fimage_5ftransport_3',['compressed_depth_image_transport',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'']]],
   ['computepointcloud_4',['computePointCloud',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classImageProcUtils.html#a8871d35fb9555129c55c762e560e5346',1,'ImageProcUtils']]],
   ['configheader_5',['ConfigHeader',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'compressed_depth_image_transport']]],
-  ['createcontext_6',['createContext',['../classIIOWrapper.html#aa56bb91153c46ef51c3d3d53a68cc423',1,'IIOWrapper']]],
-  ['current_5fdata_5fselection_7',['current_data_selection',['../iio__wrapper_8cpp.html#a60e90dbaa463bf8637eb6f63512b97d1',1,'iio_wrapper.cpp']]]
+  ['createcontext_6',['createContext',['../classadi__imu_1_1IIOWrapper.html#ad1cd18a7c632c7f6f93be1d99b98222d',1,'adi_imu::IIOWrapper']]],
+  ['current_5fdata_5fselection_7',['current_data_selection',['../classadi__imu_1_1IIOWrapper.html#af8d30b2dc40951a575a610abd9b42a28',1,'adi_imu::IIOWrapper']]]
 ];

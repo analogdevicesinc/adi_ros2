@@ -179,20 +179,23 @@
 <codeline lineno="128"><highlight class="normal">std::string<sp/><ref refid="classIIOPath_1a0f86b783a1d79228e0601499db6d1577" kindref="member">IIOPath::toTopicName</ref>(std::string<sp/>path)</highlight></codeline>
 <codeline lineno="129"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/>std::replace(path.begin(),<sp/>path.end(),<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal">std::vector&lt;std::string&gt;<sp/><ref refid="classIIOPath_1a13168489d39273e5aeac4c2071b44c34" kindref="member">IIOPath::split</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>str)</highlight></codeline>
-<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>segments;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/>std::stringstream<sp/>ss(str);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/>std::string<sp/>segment;</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(std::getline(ss,<sp/>segment,<sp/>m_delimiter))<sp/>{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>segments.push_back(segment);</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>segments;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.empty()<sp/>&amp;&amp;<sp/>path.front()<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>path<sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>+<sp/>path;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>path;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">std::vector&lt;std::string&gt;<sp/><ref refid="classIIOPath_1a13168489d39273e5aeac4c2071b44c34" kindref="member">IIOPath::split</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>str)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>segments;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>std::stringstream<sp/>ss(str);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>std::string<sp/>segment;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(std::getline(ss,<sp/>segment,<sp/>m_delimiter))<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>segments.push_back(segment);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>segments;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="src/iio_path.cpp"/>
   </compounddef>

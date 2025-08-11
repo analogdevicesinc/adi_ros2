@@ -33,6 +33,7 @@ Program Listing for File iio_buffer.cpp
      this->m_device_path = device_path;
      m_canceled = false;
      this->m_buffer = nullptr;
+     this->m_topic_enabled = false;
    }
    
    IIOBuffer::~IIOBuffer()
@@ -155,7 +156,7 @@ Program Listing for File iio_buffer.cpp
      m_data.layout.dim[1].stride = m_channels.size();
    
    
-     RCLCPP_DEBUG(
+     RCLCPP_INFO(
        rclcpp::get_logger("adi_iio_node"), "Created buffer %p, direction: %s, cyclic: %s",
        (void *)m_buffer, direction ? "output" : "input", cyclic ? "true" : "false");
      message = "Success";
@@ -201,7 +202,7 @@ Program Listing for File iio_buffer.cpp
          }
    
          uint8_t * base_ptr = reinterpret_cast<uint8_t *>(iio_buffer_first(m_buffer, ch));
-         size_t step = iio_buffer_step(m_buffer); // Should be in bytes
+         size_t step = iio_buffer_step(m_buffer);  // Should be in bytes
          uint8_t * sample = base_ptr + (step * i);
    
          int32_t val = 0;
@@ -222,6 +223,8 @@ Program Listing for File iio_buffer.cpp
    {
      std::lock_guard<std::mutex> lock(m_mutex);
      iio_device * dev = iio_context_find_device(m_nh->ctx(), m_device_path.c_str());
+     iio_channel * ch = nullptr;
+   
      if (!m_buffer) {
        message = "Buffer not created";
        return false;
@@ -230,11 +233,27 @@ Program Listing for File iio_buffer.cpp
      // get data from multiarray and add it to a memory "arena"
      for (int i = 0; i < m_samples_count; i++) {
        for (size_t j = 0; j < m_channels.size(); j++) {
-         iio_channel * ch = iio_device_find_channel(dev, m_channels[j].c_str(), true);
-         void * sample = reinterpret_cast<int32_t *>(iio_buffer_first(m_buffer, ch)) +
-           iio_buffer_step(m_buffer) * i;
+         auto channel = m_channels[j];
+   
+         if (IIOPath::hasExtendedChannelFormat(channel)) {
+           auto [is_output, chn_name] = IIOPath::getExtendedChannelSegment(channel);
+           ch = iio_device_find_channel(dev, chn_name.c_str(), is_output);
+           if (!is_output) {
+             RCLCPP_ERROR(
+               rclcpp::get_logger("adi_iio_node"),
+               "Push only works for input channels");
+             return false;
+           }
+         } else {
+           ch = iio_device_find_channel(dev, channel.c_str(), true);
+         }
+   
+         uint8_t * base_ptr = reinterpret_cast<uint8_t *>(iio_buffer_first(m_buffer, ch));
+         size_t step = iio_buffer_step(m_buffer) * i;
+         uint8_t * sample = base_ptr + step;
+   
          int32_t val = data.data[i * m_channels.size() + j];
-         iio_channel_convert(ch, sample, &val);
+         iio_channel_convert_inverse(ch, sample, &val);
        }
      }
    

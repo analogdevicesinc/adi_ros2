@@ -1,0 +1,87 @@
+
+.. _file_include_adi_imu_utils_adis_register_definitions.h:
+
+File adis_register_definitions.h
+================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu_utils>` (``include/adi_imu/utils``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/utils/adis_register_definitions.h``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_utils_adis_register_definitions.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdint``
+
+- ``string``
+
+- ``unordered_map``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_imu_adis_device_factory.h`
+
+- :ref:`file_include_adi_imu_adis_register_map.h`
+
+- :ref:`file_include_adi_imu_utils_adis_device_registry.h`
+
+- :ref:`file_src_adis_register_map.cpp`
+
+- :ref:`file_src_iio_wrapper.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_adis__register__definitions_8h_1a90eb23ef06b4280c01e9457e425d6a6b`
+
+- :ref:`exhale_enum_adis__register__definitions_8h_1a8d28c4144db6f93d2f3d16279eef451d`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_adis__register__definitions_8h_1a0089f9ce1367c2acbd46240019edbbb9`
+
+- :ref:`exhale_variable_adis__register__definitions_8h_1a7dfad2cb7a05467d966f48540258aba7`
+
+- :ref:`exhale_variable_adis__register__definitions_8h_1a291aa3bb0dd14bf85622f92f79d48ad8`
+
+- :ref:`exhale_variable_adis__register__definitions_8h_1afb966bab1ee8af0c5ffc0bd7d8ba3897`
+
+- :ref:`exhale_variable_adis__register__definitions_8h_1a1fcb3437a6649659b15cec0920c264d1`
+

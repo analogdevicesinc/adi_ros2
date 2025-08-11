@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['y_5faxis_5faccelerometer_5fbias_5fcorrection_5fenable_0',['y_axis_accelerometer_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classIIOWrapper.html#a9f393e7caf03730f7ddcd003c2556dfe',1,'IIOWrapper']]],
-  ['y_5faxis_5fgyroscope_5fbias_5fcorrection_5fenable_1',['y_axis_gyroscope_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classIIOWrapper.html#a73fd94d29e90e9b46a5c47453e5a76a7',1,'IIOWrapper']]]
+  ['x_5faxis_5faccelerometer_5fbias_5fcorrection_5fenable_0',['x_axis_accelerometer_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1IIOWrapper.html#aa3e97962189ec360b41dad7ecb85b98c',1,'adi_imu::IIOWrapper']]],
+  ['x_5faxis_5fgyroscope_5fbias_5fcorrection_5fenable_1',['x_axis_gyroscope_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1IIOWrapper.html#a2dbda34c91a4bc5e66e4c3c1c6fa3f4b',1,'adi_imu::IIOWrapper']]]
 ];

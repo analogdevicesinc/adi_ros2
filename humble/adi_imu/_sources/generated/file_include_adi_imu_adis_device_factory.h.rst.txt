@@ -1,0 +1,90 @@
+
+.. _file_include_adi_imu_adis_device_factory.h:
+
+File adis_device_factory.h
+==========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu>` (``include/adi_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/adis_device_factory.h``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_adis_device_factory.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/adis_register_map.h`` (:ref:`file_include_adi_imu_adis_register_map.h`)
+
+- ``adi_imu/utils/adis_register_definitions.h`` (:ref:`file_include_adi_imu_utils_adis_register_definitions.h`)
+
+- ``memory``
+
+- ``string``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_adis_device_factory.cpp`
+
+- :ref:`file_src_imu_ros2_node.cpp`
+
+- :ref:`file_test_src_accelgyrotemp_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1646X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1647X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1650X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1654X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1655X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_diag_adis1657X_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_identification_subscriber_test.cpp`
+
+- :ref:`file_test_src_imu_subscriber_test.cpp`
+
+- :ref:`file_test_src_velangtemp_subscriber_test.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classadi__imu_1_1ADISDeviceFactory`
+

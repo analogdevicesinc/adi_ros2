@@ -1,0 +1,14 @@
+.. _exhale_enum_adis__register__definitions_8h_1a90eb23ef06b4280c01e9457e425d6a6b:
+
+Enum adis_device_id
+===================
+
+- Defined in :ref:`file_include_adi_imu_utils_adis_register_definitions.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: adi_imu::adis_device_id
+   :project: adi_imu Doxygen Project

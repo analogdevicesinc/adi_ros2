@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_path.hpp" line="147" column="15" bodyfile="src/iio_path.cpp" bodystart="134" bodyend="144"/>
+        <location file="include/adi_iio/iio_path.hpp" line="147" column="15" bodyfile="src/iio_path.cpp" bodystart="137" bodyend="147"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -440,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_iio/iio_path.hpp" line="167" column="22" bodyfile="src/iio_path.cpp" bodystart="128" bodyend="132"/>
+        <location file="include/adi_iio/iio_path.hpp" line="167" column="22" bodyfile="src/iio_path.cpp" bodystart="128" bodyend="135"/>
       </memberdef>
     </sectiondef>
     <briefdescription>

@@ -40,6 +40,8 @@ Includes
 
 - ``adi_imu/ros_publisher_group.h`` (:ref:`file_include_adi_imu_ros_publisher_group.h`)
 
+- ``adi_imu/velangtemp_ros_publisher_interface.h`` (:ref:`file_include_adi_imu_velangtemp_ros_publisher_interface.h`)
+
 - ``chrono``
 
 - ``thread`` (:ref:`file_src_worker_thread.cpp`)
@@ -47,4 +49,11 @@ Includes
 
 
 
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
 

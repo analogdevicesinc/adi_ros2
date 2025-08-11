@@ -34,6 +34,10 @@ Includes
 
 - ``adi_imu/accelgyrotemp_ros_publisher.h`` (:ref:`file_include_adi_imu_accelgyrotemp_ros_publisher.h`)
 
+- ``adi_imu/adis_device_factory.h`` (:ref:`file_include_adi_imu_adis_device_factory.h`)
+
+- ``adi_imu/adis_register_map.h`` (:ref:`file_include_adi_imu_adis_register_map.h`)
+
 - ``adi_imu/imu_control_parameters.h`` (:ref:`file_include_adi_imu_imu_control_parameters.h`)
 
 - ``adi_imu/imu_data_provider.h`` (:ref:`file_include_adi_imu_imu_data_provider.h`)
@@ -41,6 +45,8 @@ Includes
 - ``adi_imu/imu_diag_data_provider.h`` (:ref:`file_include_adi_imu_imu_diag_data_provider.h`)
 
 - ``adi_imu/imu_diag_ros_publisher.h`` (:ref:`file_include_adi_imu_imu_diag_ros_publisher.h`)
+
+- ``adi_imu/imu_diag_ros_publisher_factory.h`` (:ref:`file_include_adi_imu_imu_diag_ros_publisher_factory.h`)
 
 - ``adi_imu/imu_full_measured_data_provider.h`` (:ref:`file_include_adi_imu_imu_full_measured_data_provider.h`)
 
@@ -55,6 +61,10 @@ Includes
 - ``adi_imu/ros_publisher_group.h`` (:ref:`file_include_adi_imu_ros_publisher_group.h`)
 
 - ``adi_imu/ros_publisher_group_interface.h`` (:ref:`file_include_adi_imu_ros_publisher_group_interface.h`)
+
+- ``adi_imu/velangtemp_data_provider.h`` (:ref:`file_include_adi_imu_velangtemp_data_provider.h`)
+
+- ``adi_imu/velangtemp_ros_publisher.h`` (:ref:`file_include_adi_imu_velangtemp_ros_publisher.h`)
 
 - ``adi_imu/worker_thread.h`` (:ref:`file_include_adi_imu_worker_thread.h`)
 

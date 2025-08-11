@@ -1,0 +1,17 @@
+.. _exhale_class_classadi__imu_1_1IIOWrapper:
+
+Class IIOWrapper
+================
+
+- Defined in :ref:`file_include_adi_imu_iio_wrapper.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::IIOWrapper
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -15,12 +15,7 @@ Directory adi_imu
 Subdirectories
 --------------
 
-- :ref:`dir_include_adi_imu_adis1646x`
-- :ref:`dir_include_adi_imu_adis1647x`
-- :ref:`dir_include_adi_imu_adis1650x`
-- :ref:`dir_include_adi_imu_adis1654x`
-- :ref:`dir_include_adi_imu_adis1655x`
-- :ref:`dir_include_adi_imu_adis1657x`
+- :ref:`dir_include_adi_imu_utils`
 
 
 Files
@@ -30,7 +25,14 @@ Files
 - :ref:`file_include_adi_imu_accelgyrotemp_data_provider_interface.h`
 - :ref:`file_include_adi_imu_accelgyrotemp_ros_publisher.h`
 - :ref:`file_include_adi_imu_accelgyrotemp_ros_publisher_interface.h`
-- :ref:`file_include_adi_imu_adis_data_access.h`
+- :ref:`file_include_adi_imu_adis1646x_register_map.h`
+- :ref:`file_include_adi_imu_adis1647x_register_map.h`
+- :ref:`file_include_adi_imu_adis1650x_register_map.h`
+- :ref:`file_include_adi_imu_adis1654x_register_map.h`
+- :ref:`file_include_adi_imu_adis1655x_register_map.h`
+- :ref:`file_include_adi_imu_adis1657x_register_map.h`
+- :ref:`file_include_adi_imu_adis_device_factory.h`
+- :ref:`file_include_adi_imu_adis_register_map.h`
 - :ref:`file_include_adi_imu_iio_wrapper.h`
 - :ref:`file_include_adi_imu_imu_control_parameters.h`
 - :ref:`file_include_adi_imu_imu_data_provider.h`
@@ -38,6 +40,7 @@ Files
 - :ref:`file_include_adi_imu_imu_diag_data_provider.h`
 - :ref:`file_include_adi_imu_imu_diag_data_provider_interface.h`
 - :ref:`file_include_adi_imu_imu_diag_ros_publisher.h`
+- :ref:`file_include_adi_imu_imu_diag_ros_publisher_factory.h`
 - :ref:`file_include_adi_imu_imu_diag_ros_publisher_interface.h`
 - :ref:`file_include_adi_imu_imu_full_measured_data_provider.h`
 - :ref:`file_include_adi_imu_imu_full_measured_data_provider_interface.h`

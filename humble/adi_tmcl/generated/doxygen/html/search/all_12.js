@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['x_5faxis_5faccelerometer_5fbias_5fcorrection_5fenable_0',['x_axis_accelerometer_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classIIOWrapper.html#a62287c7a5dfdd731494ed7ba1780663d',1,'IIOWrapper']]],
-  ['x_5faxis_5fgyroscope_5fbias_5fcorrection_5fenable_1',['x_axis_gyroscope_bias_correction_enable',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classIIOWrapper.html#ab0d834e0075c408c546991934ac4ac7a',1,'IIOWrapper']]]
+  ['workerthread_0',['workerthread',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1WorkerThread.html',1,'adi_imu::WorkerThread'],['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1WorkerThread.html#a037ff54439a1503153235a642af66a52',1,'adi_imu::WorkerThread::WorkerThread()']]]
 ];
