@@ -209,7 +209,7 @@ Use this index to find the ROS2 packages you need provided by
 
   * - `adi_3dtof_adtf31xx`_
     - ``adi_3dtof_adtf31xx``
-    - `adi_tmcl API`_
+    - `adi_3dtof_adtf31xx API`_
     - The ADI 3DToF ADTF31xx is a ROS (Robot Operating System) package for working
       with ADI’s ADTF3175D ToF sensor. This node captures the Depth and AB
       frames from the sensor and publishes them as ROS topics.
