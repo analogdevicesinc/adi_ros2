@@ -16,6 +16,10 @@ pushd "$BASE_PATH"/_build >/dev/null || exit
 
 # Generate docs for each submodule
 for submodule in $(git submodule | awk '{ print $2 }' | xargs); do
+    if [[ "$submodule" == *dependencies* ]]; then
+        echo "Skipping dependency submodule: $submodule"
+        continue
+    fi
     echo "Submodule: $submodule"
     rosdoc2 build --package-path "$submodule" --debug
 done
