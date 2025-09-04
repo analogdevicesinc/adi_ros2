@@ -1,387 +1,452 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>README &mdash; adi_3dtof_adtf31xx 2.1.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="The ADI 3DToF ADTF31xx is a ROS (Robot Operating System) package for working with ADI’s EVAL-ADTF3175D-NXZ ToF sensor. This node captures the Depth and AB frames from the sensor and publishes them as ROS topics. The node uses ADI ToF SDK APIs to capture frames from the sensor. The node publishes Depth and AB Images at different resolutions." name="description" />
+
+    <title>README &#8212; adi_3dtof_adtf31xx 2.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=37266688" />
+    <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script async="async" src="_static/app.umd.js?v=8f62bab2"></script>
+    <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head><body>
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
 
   
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=20623aea"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
-</head>
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        
+        <a id="logo" href="index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
 
-          
-          
-          <a href="index.html" class="icon icon-home">
-            adi_3dtof_adtf31xx
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">README</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#hardware">Hardware</a></li>
+<li><a class="reference internal" href="#operation-modes">Operation Modes</a></li>
+<li><a class="reference internal" href="#camera-sensor-mode">Camera Sensor Mode</a><ul>
+<li><a class="reference internal" href="#updating-the-package">Updating the package</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-io-mode">File-IO Mode</a><ul>
+<li><a class="reference internal" href="#building-the-package-for-file-io">Building the package for file-io</a></li>
+<li><a class="reference internal" href="#running-the-node-in-file-io">Running the node in file-io</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#network-mode">Network Mode</a><ul>
+<li><a class="reference internal" href="#building-the-package">Building the package</a></li>
+<li><a class="reference internal" href="#running-the-node-in-network-mode">Running the node in network mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parameters">Parameters</a><ul>
+<li><a class="reference internal" href="#camera-modes">Camera Modes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#topics">Topics</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a></li>
+<li><a class="reference internal" href="#parameter-tuning">Parameter Tuning</a></li>
+<li><a class="reference internal" href="#appendix">Appendix</a><ul>
+<li><a class="reference internal" href="#updating-date-and-time">Updating Date and Time</a></li>
+<li><a class="reference internal" href="#build-flags">Build Flags</a></li>
+<li><a class="reference internal" href="#upgrading-the-firmware">Upgrading the firmware</a></li>
+<li><a class="reference internal" href="#creating-bin-files-for-file-io">Creating Bin files for File-IO</a><ul>
+<li><a class="reference internal" href="#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+<li><a class="reference internal" href="#why-is-this-required">Why is this required?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="index.html">
+      adi_3dtof_adtf31xx
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="__links.html">Links</a><ul>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_adtf31xx">Rosindex</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#namespaces">Namespaces</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="generated/index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFADTF31xxOutputInfo.html">Class ADI3DToFADTF31xxOutputInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classIInputSensor.html">Class IInputSensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classImageProcUtils.html">Class ImageProcUtils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classInputSensorFactory.html">Class InputSensorFactory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_adtf31xx.h.html">Program Listing for File adi_3dtof_adtf31xx.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#classes-and-structs">Classes and Structs</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/structADI3DToFADTF31xx_1_1TunableParameters.html">Struct ADI3DToFADTF31xx::TunableParameters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/structCameraExtrinsics.html">Struct CameraExtrinsics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/structCameraIntrinsics.html">Struct CameraIntrinsics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/structcompressed__depth__image__transport_1_1ConfigHeader.html">Struct ConfigHeader</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classADI3DToFADTF31xx.html">Class ADI3DToFADTF31xx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classADI3DToFADTF31xxFrameInfo.html">Class ADI3DToFADTF31xxFrameInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classADI3DToFADTF31xxOutputInfo.html">Class ADI3DToFADTF31xxOutputInfo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classcompressed__depth__image__transport_1_1RvlCodec.html">Class RvlCodec</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classIInputSensor.html">Class IInputSensor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classImageProcUtils.html">Class ImageProcUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classInputSensorADTF31XX.html">Class InputSensorADTF31XX</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classInputSensorFactory.html">Class InputSensorFactory</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classInputSensorFileRosbagBin.html">Class InputSensorFileRosbagBin</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_adtf31xx_frame_info.h.html">Program Listing for File adi_3dtof_adtf31xx_frame_info.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#enums">Enums</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_adtf31xx_output_info.h.html">Program Listing for File adi_3dtof_adtf31xx_output_info.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#defines">Defines</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_camera.h.html">File adi_camera.h</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_camera.h.html">Program Listing for File adi_camera.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#directories">Directories</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_ros-perception.html">Directory ros-perception</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">Program Listing for File compression_common.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#files">Files</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx.h.html">File adi_3dtof_adtf31xx.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx_frame_info.h.html">File adi_3dtof_adtf31xx_frame_info.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_3dtof_adtf31xx_output_info.h.html">File adi_3dtof_adtf31xx_output_info.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_camera.h.html">File adi_camera.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_image_proc_utils.h.html">File image_proc_utils.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_input_sensor.h.html">File input_sensor.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_module_profile.h.html">File module_profile.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6"/><div class="collapse"><a class="reference internal" href="generated/file_include_image_proc_utils.h.html">File image_proc_utils.h</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_image_proc_utils.h.html">Program Listing for File image_proc_utils.h</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-7" id="toctree-collapse-2-7"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor.h.html">File input_sensor.h</a><label for="toctree-collapse-2-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor.h.html">Program Listing for File input_sensor.h</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-8" id="toctree-collapse-2-8"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a><label for="toctree-collapse-2-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_adtf31xx.h.html">Program Listing for File input_sensor_adtf31xx.h</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#overview">Overview</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#output-images">Output Images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#nodes">Nodes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#parameter-tuning">Parameter Tuning</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#limitations">Limitations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#support">Support</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-9" id="toctree-collapse-2-9"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a><label for="toctree-collapse-2-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_factory.h.html">Program Listing for File input_sensor_factory.h</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#appendix-1">Appendix 1 :</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#steps-to-run-the-node-on-a-host-machine-in-file-io-mode">Steps to run the Node on a Host machine in File-IO mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#steps-to-convert-rosbag-file-to-bin-file">Steps to convert rosbag file to bin file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">Steps to use adi_3dtof_adtf31xx_read_rosbag_node:</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-10" id="toctree-collapse-2-10"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a><label for="toctree-collapse-2-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_file_rosbagbin.h.html">Program Listing for File input_sensor_file_rosbagbin.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-11" id="toctree-collapse-2-11"/><div class="collapse"><a class="reference internal" href="generated/file_include_module_profile.h.html">File module_profile.h</a><label for="toctree-collapse-2-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_module_profile.h.html">Program Listing for File module_profile.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-12" id="toctree-collapse-2-12"/><div class="collapse"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a><label for="toctree-collapse-2-12"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">Program Listing for File rvl_codec.h</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
+</body>
+</html>
 
+</div>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">adi_3dtof_adtf31xx</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">README</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/__readme_include.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb empty"><ol></ol></nav>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+          <div class="body" role="main">
+            
   <section id="readme">
-<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
 <h1 style="text-align: center;"> Analog Devices 3DToF ADTF31xx</h1>
 <section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
-<p>The <strong>ADI 3DToF ADTF31xx</strong> is a ROS (Robot Operating System) package for working with ADI’s ADTF3175D ToF sensor. This node captures the Depth and AB frames from the sensor and publishes them as ROS topics. The node uses <a class="reference external" href="https://github.com/analogdevicesinc/ToF/"><em>ADI ToF SDK</em></a> APIs to capture frames from the sensor. The node publishes Depth and AB Images at 512x512 (16 bits per image) resolution and Camera Info &#64; 30FPS.</p>
-<p><img alt="arch_diagram" src="docs/images/architecture_diagram.png" /></p>
-<p><a class="reference external" href="https://docs.ros.org/en/humble/index.html"><img alt="Humble" src="https://img.shields.io/badge/-humble-green?style=plastic&amp;logo=ros" /></a> <a class="reference external" href="https://releases.ubuntu.com/focal/"><img alt="Ubuntu 22.04" src="https://img.shields.io/badge/-UBUNTU%2020.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <a class="reference external" href="https://releases.ubuntu.com/jammy/"><img alt="Ubuntu 24.04" src="https://img.shields.io/badge/-UBUNTU%2022.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <a class="reference internal" href="#LICENSE.txt"><span class="xref myst"><img alt="License" src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" /></span></a> <img alt="ARM64" src="https://img.shields.io/badge/arm64-blue?style=plastic&amp;logo=arm&amp;logoColor=white" /> <img alt="x86_64" src="https://img.shields.io/badge/x86__64-blue?style=plastic&amp;logo=intel&amp;logoColor=white" /></p>
+<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h2>
+<p>The <strong>ADI 3DToF ADTF31xx</strong> is a ROS (Robot Operating System) package for working with ADI’s EVAL-ADTF3175D-NXZ ToF sensor. This node captures the Depth and AB frames from the sensor and publishes them as ROS topics. The node uses <a class="icon link reference external" href="https://github.com/analogdevicesinc/ToF/" target="_blank"><em>ADI ToF SDK</em></a> APIs to capture frames from the sensor. The node publishes Depth and AB Images at different resolutions.</p>
+<p><a class="icon link reference external" href="https://docs.ros.org/en/humble/index.html" target="_blank"><img alt="Humble" src="https://img.shields.io/badge/-humble-green?style=plastic&amp;logo=ros" /></a> <a class="icon link reference external" href="https://releases.ubuntu.com/focal/" target="_blank"><img alt="Ubuntu 22.04" src="https://img.shields.io/badge/-UBUNTU%2020.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <a class="icon link reference external" href="https://releases.ubuntu.com/jammy/" target="_blank"><img alt="Ubuntu 24.04" src="https://img.shields.io/badge/-UBUNTU%2022.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <a class="reference download internal" download="" href="_downloads/9879d6db96fd29134fc802214163b95a/LICENSE"><span class="xref download myst"><img alt="License" src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" /></span></a> <img alt="ARM64" src="https://img.shields.io/badge/arm64-blue?style=plastic&amp;logo=arm&amp;logoColor=white" /> <img alt="x86_64" src="https://img.shields.io/badge/x86__64-blue?style=plastic&amp;logo=intel&amp;logoColor=white" /></p>
+</section>
 <section id="hardware">
-<h3>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h3>
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADTF3175.html#eb-overview">EVAL-ADTF3175D-NXZ Module</a></p></li>
-<li><p>USB type-c to type-A cable - with 5gbps data speed support</p></li>
+<li><p><a class="icon link reference external" href="https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADTF3175.html#eb-overview" target="_blank">EVAL-ADTF3175D-NXZ Module</a></p></li>
+<li><p>USB Type-C to Type-A cable - with 5gbps data speed support</p></li>
 <li><p>Host laptop with intel i5 of higher cpu running Ubuntu-22.04LTS</p></li>
 </ul>
-<p>:memo: <em>Note</em>: Refer the <a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz">EVAL-ADTF3175D-NXZ User Guide</a> to ensure the Eval module has adequate power supply during operation.</p>
-<p>The image below shows the connection diagram of the setup (with labels):</p>
-<div style="text-align:center"><img src="./docs/images/connection_diagram.png" alt="Connection Diagram"/></div>
 <blockquote>
-<div><p>:memo:
-<strong>ADSD3500 Firmware :</strong>
-Make sure the sensor is flashed with the compatible FW. The minimum version is listed below:
-<strong>CR/DV series : 5.2.5.0</strong>
-<strong>AM series : 5.2.5.0</strong>
-Follow the below instructions to read the FW version</p>
-<ol class="arabic">
-<li><p>Login to the EVAL-ADTF3175D-NXZ module using ssh. On the Host machine open the “Terminal” and run the following command to ssh to the device.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
-<span class="w">    </span>Username:<span class="w"> </span>analog
-<span class="w">    </span>Password:<span class="w"> </span>analog
-</pre></div>
-</div>
-</li>
-<li><p>Run the follwing commands</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/Workspace/Tools/ctrl_app
-<span class="w">    </span>$<span class="w"> </span>./ctrl_app
-</pre></div>
-</div>
-<p>The output would look like below,
-<strong>V4L2 custom control interface app version: 1.0.1</strong>
-<strong>59 31</strong>
-<strong><span style="color:red"><strong>05 02 05 00</strong></span> 61 35 39 61 66 61 64 36 64 36 63   38 65 37 66 62 31 35 33 61 32 64 62 38 63 64 38 38 34 30 33 35 39 66 31 37 31 39 35 61</strong>
-<strong>59 31</strong>
-The first four bytes in the third line represents the FW version. For example for the output above, the version is <strong>5.2.5.0</strong>. If the firware version is older than this please upgrade the FW using the following instructions</p>
-</li>
-<li><p>Install ADI ToF SDK release <a class="reference external" href="https://github.com/analogdevicesinc/ToF/releases/tag/v6.0.0">v4.2.0</a></p></li>
-<li><p>After installing goto the inastallation folder and run the following commands to download the image</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nb">cd</span><span class="w"> </span>~/Analog<span class="se">\ </span>Devices/ToF_Evaluation_Ubuntu_ADTF3175D-Relx.x.x/image.
-<span class="w">   </span>chmod<span class="w"> </span>+x<span class="w"> </span>get_image.sh<span class="w"> </span>and<span class="w"> </span>./get_image.sh.
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Latest image will be downloaded at ./image path as NXP-Img-Relx.x.x-ADTF3175D-.zip. Extract this folder using unzip NXP-Img-Relx.x.x-ADTF3175D-.zip command.</p></li>
-<li><p>This folder contains the NXP image and ADSD3500 firmware(Fw_Update_x.x.x.bin).</p></li>
-</ul>
-</li>
-<li><p>Run the following command to copy the Fimware to the NXP device</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">  </span>$<span class="w"> </span>scp<span class="w"> </span>Fw_Update_5.2.5.bin<span class="w"> </span>analog@10.43.0.1:/home/analog/Workspace
-<span class="w">     </span>Username:<span class="w"> </span>analog
-<span class="w">     </span>Password:<span class="w"> </span>analog
-</pre></div>
-</div>
-</li>
-<li><p>Now login to the device and run the Firmware upgrade command.
-<strong>:warning: <span style="color:red"> Do not interrupt/abort while the upgrade is in progress.Doing this may corrupt the module.</strong></span></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
-<span class="w">      </span>Username:<span class="w"> </span>analog
-<span class="w">      </span>Password:<span class="w"> </span>analog
-<span class="w">   </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Workspace/ToF/build/examples/data_collect/
-<span class="w">   </span>$<span class="w"> </span>./data_collect<span class="w"> </span>--fw<span class="w"> </span>~/Workspace/Fw_Update_x.x.x.bin<span class="w"> </span>config/config_default.json
-</pre></div>
-</div>
-</li>
-</ol>
-<ul class="simple">
-<li><p>Reboot the board after the successful operation.</p></li>
-</ul>
+<div><p>[!note]
+Refer the <a class="icon link reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz" target="_blank">EVAL-ADTF3175D-NXZ User Guide</a> to ensure the Eval module has adequate power supply during operation.</p>
 </div></blockquote>
-<p>For details refer to <a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz-upgrade-firmware">EVAL-ADTF3175D-NXZ NVM upgrade guide</a></p>
-</section>
-<section id="software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz">
-<h3>Software Setup and Running the ROS node on the EVAL-ADTF3175D-NXZ:<a class="headerlink" href="#software-setup-and-running-the-ros-node-on-the-eval-adtf3175d-nxz" title="Link to this heading"></a></h3>
-<section id="image-preparation">
-<h4>Image Preparation<a class="headerlink" href="#image-preparation" title="Link to this heading"></a></h4>
-<ol class="arabic">
-<li><p>Download and install the latest version of <em>ADI 3DToF ADTF31xx</em> from the Release pages.</p></li>
-<li><p>After installing the software, go to the installation folder(~/Analog Devices/ADI3DToFADTF31xx-Relx.x.x) and run the get_image.sh script. This script will download the custom Ubuntu 20.04 image for the EVAL-ADTF3175D-NXZ.</p></li>
-<li><p>Flash the <code class="docutils literal notranslate"><span class="pre">.img</span></code> file to the SD card, follow steps in this link<a class="reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adsd3100-nxz/flashing_image_instructions">EVAL-ADTF3175D-NXZ Users Guide</a> to flash the .img file to SD card.
-<em>Note</em>: This image contains the necessary software and code to start using the ROS2 node. The source code for the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx</span></code> can be found in <code class="docutils literal notranslate"><span class="pre">/home/analog/ros2_ws/src/</span></code></p></li>
-<li><p>Follow the instructions below to run the <em>adi_3dtof_adtf31xx</em> application on the EVAL-ADTF3175D-NXZ module.</p></li>
-<li><p>Connect the EVAL-ADTF3175D-NXZ module to the PC using the USB3.0 cable and wait for the network to come up. By default, the device ip is set to <strong>10.43.0.1</strong>. Refer to <a class="reference external" href="https://wiki.analog.com/eval-adtf3175d-nxz-startup#software_download">EVAL-ADTF3175D-NXZ Startup Guide</a> for details.</p></li>
-<li><p>Login to the EVAL-ADTF3175D-NXZ module using ssh. On the Host machine open the “Terminal” and run the following command to ssh to the device.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
-<span class="w">  </span>Username:<span class="w"> </span>analog
-<span class="w">  </span>Password:<span class="w"> </span>analog
-</pre></div>
-</div>
-<p><em>Note</em>: If you do not have a Linux Host machine, then install Windows Subsystem for Linux(WSL) and Ubuntu 20.04 on Windows.
-Refer to this <a class="reference external" href="https://learn.microsoft.com/en-us/windows/wsl/install">link</a> for instructions.</p>
 <blockquote>
-<div><p>:memo:</p>
+<div><p>[!important]
+The EVAL-ADTF3175D-NXZ Sensor module must have a firmware version of at least <strong>5.2.5.0</strong>. Refer to <a class="icon link reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz-upgrade-firmware" target="_blank">user guide</a> on firmware upgrade, or see <a class="reference internal" href="#upgrading-the-firmware"><span class="xref myst">upgrading the firmware</span></a>.</p>
+</div></blockquote>
+<p><img alt="Connection Diagram" src="_images/connection_diagram.png" /></p>
+</section>
+<section id="operation-modes">
+<h2>Operation Modes<a class="headerlink" href="#operation-modes" title="Link to this heading"></a></h2>
+<p>This package has three different operation modes. Refer to the following intra-links to setup the package accordingly.</p>
 <ol class="arabic simple">
-<li><p><strong>Setting Date/Time:</strong>
-Make sure the Date/Time is set properly before compiling and running the application. Connecting to a WiFi network would make sure the Date/Time is set properly. The custom Ubuntu 20.04 image is configured to connect to a network with following SSID and Password by default.
-<code class="docutils literal notranslate">&#160;&#160;&#160;&#160; <span class="pre">SSID</span> <span class="pre">:</span> <span class="pre">ADI</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">Password:</span> <span class="pre">analog123</span>&#160;&#160;&#160;&#160; </code>
-You can either setup a network with the above properties or configure the Device to connect to any available network.
-Alternatively, the Host machine can be setup as a local NTP server and the devices can be configured to update Date/Time using the Host machine.
-Refer to below links for setting and configuring NTP on Ubuntu machines.</p></li>
-</ol>
-<ul class="simple">
-<li><p>https://ubuntuforums.org/showthread.php?t=862620</p></li>
-<li><p>https://timetoolsltd.com/ntp/how-to-install-and-configure-ntp-on-linux/</p></li>
-</ul>
-<ol class="arabic" start="2">
-<li><p>The ROS2 Humble and dependent packages are already installed in the EVAL-ADTF3175D-NXZ image and the source code for the <em>adi_3dtof_adtf31xx</em> is present in <code class="docutils literal notranslate"><span class="pre">/home/analog/ros2_ws/src/</span></code> folder. The package is also pre-built, hence there is no need to build the package. If the source files need an update, refer to <a class="reference internal" href="#steps-to-run-adi_3dtof_adtf31xx_node-node"><span class="xref myst">Appendix 1</span></a> to see how to build the package.</p></li>
-<li><p>Ensure rmw settings are updated in the device to support muti-sensor usecases</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#Update the default rmw xml profile file to the settings file present inside &quot;rmw_config&quot; foler</span>
-$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">FASTRTPS_DEFAULT_PROFILES_FILE</span><span class="o">=</span><span class="w"> </span>~/ros2_ws/src/adi_3dtof_adtf31xx/rmw_config/rmw_settings.xml
-<span class="c1">#Next restart ROS daemon for the profile changes to take effect</span>
-$<span class="w"> </span>ros2<span class="w"> </span>daemon<span class="w"> </span>stop
-</pre></div>
-</div>
-</li>
-</ol>
-<ul>
-<li><p>The above mentioned steps for rmw settings setup can also be completed by running the “setup_rmw_settings.sh” script present inside the “rmw_config” folder.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/adi_3dtof_adtf31xx/rmw_config
-$<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>setup_rmw_settings.sh
-$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>setup_rmw_settings.sh
-</pre></div>
-</div>
-</li>
-</ul>
-<p>Note: <code class="docutils literal notranslate"><span class="pre">/home/analog/ros2_ws/</span></code> is set up as the ros2 workspace and this workspace is already sourced in the <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code></p>
-</div></blockquote>
-</li>
+<li><p><a class="reference internal" href="#camera-sensor-mode"><span class="xref myst">Camera Sensor Mode</span></a></p></li>
+<li><p><a class="reference internal" href="#file-io-mode"><span class="xref myst">File-IO Mode</span></a></p></li>
+<li><p><a class="reference internal" href="#network-mode"><span class="xref myst">Network Mode</span></a></p></li>
 </ol>
 </section>
-<section id="running-the-ros-node">
-<h4>Running the ROS Node:<a class="headerlink" href="#running-the-ros-node" title="Link to this heading"></a></h4>
-<ol class="arabic">
-<li><p>On the Device:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/install/setup.bash
-$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
-$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py
+<section id="camera-sensor-mode">
+<h2>Camera Sensor Mode<a class="headerlink" href="#camera-sensor-mode" title="Link to this heading"></a></h2>
+<p>The package is built on the sensor module and directly interfaces with the image sensor. The adi_3dtof_nxp_ubuntu_20_04_relx.x.x.img provided for the EVAL-ADTF3175D-NXZ sensor already contains this ROS package and is pre-built. In order to use this package, first we need to connect the sensor to the PC, and then SSH into it:</p>
+<ol class="arabic simple">
+<li><p>SSH into the Sensor</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssh<span class="w"> </span>analog@10.43.0.1
+<span class="w">   </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Source ROS Humble</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/install/setup.bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Source the workspace</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Launch the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx</span></code> package.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py<span class="w"> </span>arg_input_sensor_mode:<span class="o">=</span><span class="m">0</span>
 </pre></div>
 </div>
 <blockquote>
-<div><p>:memo: <em>Note:</em>
-The demo may not work if WSL is used as the Host machine</p>
+<div><p>[!note]
+The operation mode is determined by the launch parameter <code class="docutils literal notranslate"><span class="pre">arg_input_sensor_mode:=0</span></code>. This can be modified in the launch file. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
 </div></blockquote>
-<p>At this stage, the <em>adi_3dtof_adtf31xx_node</em> will be launched and start publishing the topics <code class="docutils literal notranslate"><span class="pre">/cam1/depth_image,</span> <span class="pre">/cam1/ab_image</span> <span class="pre">and</span> <span class="pre">/cam1/camera_info</span></code>.</p>
-<p>To see the depth and AB images on the Host machine, simply open the RVIZ2 and add <code class="docutils literal notranslate"><span class="pre">/cam1/depth_image</span></code> and <code class="docutils literal notranslate"><span class="pre">/cam1/ab_image</span></code> topics to visualize the images</p>
-</li>
-<li><p>The Node supports sending the Depth and AB images as compressed streams using RVL compression. To publish the compressed images set the <code class="docutils literal notranslate"><span class="pre">arg_enable_depth_ab_compression</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">1</span></code> in the launch file.
-The topic names for the compressed Depth and AB images are <code class="docutils literal notranslate"><span class="pre">/cam1/depth_image/compressedDepth</span></code> and <code class="docutils literal notranslate"><span class="pre">/cam1/ab_image/compressedDepth</span></code> respectively.</p>
-<p>The users can run the <em>adi_3dtof_adtf31xx_compressed_image_subscriber_node</em>  on the Host to machine to visualize the synchronized depth and ab images in RVIZ.</p>
-<p>Refer to the <a class="reference internal" href="#steps-to-run-the-node-on-a-host-machine-in-file-io-mode"><span class="xref myst">Appendix 1</span></a> for instructions on how to build the node on a Host machine.</p>
-<p>To run the node run the following command</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_compressed_host_launch.py
+<section id="updating-the-package">
+<h3>Updating the package<a class="headerlink" href="#updating-the-package" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>[!warning]
+The time and date may be incorrect on the sensor and this can cause issues in updating the package. To update the time and date, refer to <a class="reference internal" href="#updating-date-and-time"><span class="xref myst">updating date and time</span></a>.</p>
+</div></blockquote>
+<p>In order to update and rebuild package to the latest version, run the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/adi_3dtof_adtf31xx
+git<span class="w"> </span>pull
+<span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+<span class="nb">export</span><span class="w"> </span><span class="nv">MAKEFLAGS</span><span class="o">=</span><span class="s2">&quot;-j1&quot;</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--executor<span class="w"> </span>sequential<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DNXP<span class="o">=</span><span class="m">1</span><span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_adtf31xx
 </pre></div>
 </div>
-<p>This launch file will run the Host node which decompresses the incoming images, computes the Point-cloud and publish the raw images. The launch file also invokes <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx_raw.rviz</span></code> for visualization.</p>
-</li>
-<li><p>When running the ROS node on the host, the Node Supports <code class="docutils literal notranslate"><span class="pre">Network</span> <span class="pre">mode</span></code>. where ToF module is connected to host and host requests frames from ToF module via network. For the host’s ros node build instructions, Refer to the section titled “Steps to run the adi_3dtof_adtf31xx_node node” under <a class="reference internal" href="#steps-to-run-the-node-on-a-host-machine-in-file-io-mode"><span class="xref myst">Appendix 1</span></a> and follow steps 1 through 6 to build the node on host. now <strong>update <em>arg_input_sensor_mode</em> parameter in adi_3dtof_adtf31xx.launch file to 3</strong>. and launch the node.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py
-</pre></div>
-</div>
-</li>
+</section>
+</section>
+<section id="file-io-mode">
+<h2>File-IO Mode<a class="headerlink" href="#file-io-mode" title="Link to this heading"></a></h2>
+<p>In this camera mode, the package is built on the Host PC in order to evaluate the properties of the package by running a pre-recorded bin file which contains the outputs from the sensor module.</p>
+<section id="building-the-package-for-file-io">
+<h3>Building the package for file-io<a class="headerlink" href="#building-the-package-for-file-io" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>On your PC, create a workspace</p></li>
 </ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/ros2_ws/src
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Clone the repository</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
+<span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the workspace</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>--ignore-src<span class="w"> </span>-r<span class="w"> </span>-y
+colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DSENSOR_CONNECTED<span class="o">=</span>False
+</pre></div>
+</div>
+</section>
+<section id="running-the-node-in-file-io">
+<h3>Running the node in file-io<a class="headerlink" href="#running-the-node-in-file-io" title="Link to this heading"></a></h3>
+<p>In order to run the package in file-io, it needs input files provided in the release image. Follow the steps below to use existing bin files, or follow <a class="reference internal" href="#creating-bin-files-for-file-io"><span class="xref myst">these steps</span></a> to create your own bin files.</p>
+<ol class="arabic simple">
+<li><p>Go to the installation directory of the ADI 3DToF ADTF31xx application <code class="docutils literal notranslate"><span class="pre">~/Analog</span> <span class="pre">Devices/ADI3DToFADTF31xx-Rel2.1.0</span></code></p></li>
+<li><p>Run the <code class="docutils literal notranslate"><span class="pre">get_videos.sh</span></code> script which will download the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_input_video_files.zip</span></code> file in the current directory.</p></li>
+<li><p>Unzip it and copy the directory to <code class="docutils literal notranslate"><span class="pre">~/ros2_ws/src/adi_3dtof_input_video_files</span></code>.</p></li>
+<li><p>Update the input file argument <code class="docutils literal notranslate"><span class="pre">arg_in_file_name</span></code> in the launch file <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx_launch.py</span></code> as per the above file path.</p></li>
+<li><p>Run the following commands:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Source the workspace</span>
+<span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+
+<span class="c1"># Launch the package</span>
+ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py<span class="w"> </span>arg_input_sensor_mode:<span class="o">=</span><span class="m">2</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!note]
+The <code class="docutils literal notranslate"><span class="pre">arg_input_sensor_mode:=2</span></code> sets the node to operate in file-io mode. This can be set in the launch file. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
+</div></blockquote>
 </section>
 </section>
-<section id="output-images">
-<h3>Output Images<a class="headerlink" href="#output-images" title="Link to this heading"></a></h3>
-<p>Sample output images are shown below:</p>
-<p><code class="docutils literal notranslate"><span class="pre">/cam1/depth_image</span></code></p>
-<p><img alt="depth_image" src="docs/images/depth_image.png" /></p>
-<p><code class="docutils literal notranslate"><span class="pre">/cam1/ab_image</span></code></p>
-<p><img alt="ab_image" src="docs/images/ir_image.png" /></p>
+<section id="network-mode">
+<h2>Network Mode<a class="headerlink" href="#network-mode" title="Link to this heading"></a></h2>
+<p>The sensor can be operated in network mode where depth and AB (Active Brightness) images are fetched over the local area network. The simplest way to use this is to connect the sensor directly to the PC so that a network interface via USB is created with a default IP address of <code class="docutils literal notranslate"><span class="pre">10.43.0.1</span></code>. In order to use the network mode, follow the following steps:</p>
+<section id="building-the-package">
+<h3>Building the package<a class="headerlink" href="#building-the-package" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx</span></code> depends on <a class="icon link reference external" href="https://github.com/analogdevicesinc/libaditof" target="_blank">libaditof</a> in order to communicate with the sensor. So we will need to build this in the same workspace as <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx</span></code>.</p>
+<ol class="arabic simple">
+<li><p>On your PC, create the workspace and clone the required repositories.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/ros2_ws/src
+<span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/libaditof.git<span class="w"> </span>-v<span class="w"> </span>v6.0.1
+
+<span class="c1"># Initialize the submodules for libaditof</span>
+<span class="nb">cd</span><span class="w"> </span>libaditof
+git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
+
+<span class="c1"># Return to root of workspace folder</span>
+<span class="nb">cd</span><span class="w"> </span>../..
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install dependencies</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>--ignore-src<span class="w"> </span>-r<span class="w"> </span>-y
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the packages</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_adtf31xx
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</pre></div>
+</div>
 </section>
-<section id="nodes">
-<h3>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h3>
-<section id="adi-3dtof-adtf31xx-node">
-<h4>adi_3dtof_adtf31xx_node<a class="headerlink" href="#adi-3dtof-adtf31xx-node" title="Link to this heading"></a></h4>
-<section id="published-topics">
-<h5>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h5>
-<p>These are the default topic names, topic names can be modified as a ROS parameter.</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Topic</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>/depth_image</strong></p></td>
-<td><p>16-bit Depth image of size 512X512</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>/ab_image</strong></p></td>
-<td><p>16-bit AB image of size 512X512</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>/camera_info</strong></p></td>
-<td><p>Camera info</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>/depth_image/compressedDepth</strong></p></td>
-<td><p>512X512 16-bit Depth image from sensor node compressed with RVL compression</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>/ab_image/compressedDepth</strong></p></td>
-<td><p>512X512 16-bit AB image from sensor node compressed with RVL compression</p></td>
-</tr>
-</tbody>
-</table>
+<section id="running-the-node-in-network-mode">
+<h3>Running the node in network mode<a class="headerlink" href="#running-the-node-in-network-mode" title="Link to this heading"></a></h3>
+<p>To run the node in network mode, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py<span class="w"> </span>arg_input_sensor_mode:<span class="o">=</span><span class="m">3</span><span class="w"> </span>arg_input_sensor_ip:<span class="o">=</span><span class="m">10</span>.43.0.1
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!note]
+The <code class="docutils literal notranslate"><span class="pre">arg_input_sensor_mode:=3</span></code> sets the node to operate in network mode. This value can be adjusted in the launch file. <code class="docutils literal notranslate"><span class="pre">arg_input_sensor_ip</span></code> must be set to the IP of the sensor. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
+</div></blockquote>
+</section>
 </section>
 <section id="parameters">
-<h5>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h5>
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter</p></th>
@@ -391,56 +456,72 @@ The topic names for the compressed Depth and AB images are <code class="docutils
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>param_camera_link</strong></p></td>
-<td><p>String</p></td>
-<td><p>“adi_camera_link”</p></td>
-<td><p>Name of camera Link</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>param_input_sensor_mode</strong></p></td>
+<tr class="row-even"><td><p><strong>arg_input_sensor_mode</strong></p></td>
 <td><p>int</p></td>
 <td><p>0</p></td>
-<td><p>Input mode, <code class="docutils literal notranslate"><span class="pre">0:Real</span> <span class="pre">Time</span> <span class="pre">Sensor</span></code>, <code class="docutils literal notranslate"><span class="pre">2:Rosbag</span> <span class="pre">bin</span></code>, <code class="docutils literal notranslate"><span class="pre">3:Network</span> <span class="pre">Mode</span></code></p></td>
+<td><p>Input mode, <code class="docutils literal notranslate"><span class="pre">0:Real</span> <span class="pre">Time</span> <span class="pre">Sensor</span></code>, <code class="docutils literal notranslate"><span class="pre">2:FIle-io</span></code>, <code class="docutils literal notranslate"><span class="pre">3:Network</span> <span class="pre">Mode</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><strong>param_input_file_name</strong></p></td>
+<tr class="row-odd"><td><p><strong>arg_in_file_name</strong></p></td>
 <td><p>String</p></td>
 <td><p>“no name”</p></td>
 <td><p>Input filename : Applicable only if the input mode is 2</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>param_ab_threshold</strong></p></td>
+<tr class="row-even"><td><p><strong>arg_ab_threshold</strong></p></td>
 <td><p>int</p></td>
 <td><p>10</p></td>
 <td><p>abThreshold for the sensor</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>param_confidence_threshold</strong></p></td>
+<tr class="row-odd"><td><p><strong>arg_confidence_threshold</strong></p></td>
 <td><p>int</p></td>
 <td><p>10</p></td>
 <td><p>confidenceThreshold for the sensor</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>param_enable_depth_ab_compression</strong></p></td>
-<td><p>int</p></td>
-<td><p>0</p></td>
+<tr class="row-even"><td><p><strong>arg_enable_depth_ab_compression</strong></p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
 <td><p>Enables RVL compression for the depth images</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>param_config_file_name_of_tof_sdk</strong></p></td>
+<tr class="row-odd"><td><p><strong>arg_config_file_name_of_tof_sdk</strong></p></td>
 <td><p>String</p></td>
 <td><p>“config/config_adsd3500_adsd3100.json”</p></td>
 <td><p>Configuration file name for ToF SDK</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>param_camera_mode</strong></p></td>
+<tr class="row-even"><td><p><strong>arg_camera_mode</strong></p></td>
 <td><p>int</p></td>
 <td><p>3</p></td>
 <td><p>Camera Mode</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>param_encoding_type</strong></p></td>
+<tr class="row-odd"><td><p><strong>arg_encoding_type</strong></p></td>
 <td><p>String</p></td>
 <td><p>mono16</p></td>
 <td><p>Sets encoding String. Use only <code class="docutils literal notranslate"><span class="pre">mono16</span></code> or <code class="docutils literal notranslate"><span class="pre">16UC1</span></code></p></td>
 </tr>
+<tr class="row-even"><td><p><strong>arg_enable_depth_publish</strong></p></td>
+<td><p>bool</p></td>
+<td><p>True</p></td>
+<td><p>Enable publishing of depth images</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_enable_ab_publish</strong></p></td>
+<td><p>bool</p></td>
+<td><p>True</p></td>
+<td><p>Enable publishing of AB images</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_enable_conf_publish</strong></p></td>
+<td><p>bool</p></td>
+<td><p>True</p></td>
+<td><p>Enable publishing of confidence images</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_enable_point_cloud_publish</strong></p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Enable publishing of point cloud data</p></td>
+</tr>
 </tbody>
 </table>
-</section>
+</div>
 <section id="camera-modes">
-<h5>Camera Modes<a class="headerlink" href="#camera-modes" title="Link to this heading"></a></h5>
+<h3>Camera Modes<a class="headerlink" href="#camera-modes" title="Link to this heading"></a></h3>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Imager Type</p></th>
@@ -449,7 +530,7 @@ The topic names for the compressed Depth and AB images are <code class="docutils
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.analog.com/en/products/adsd3100.html">ADSD3100</a></p></td>
+<tr class="row-even"><td><p><a class="icon link reference external" href="https://www.analog.com/en/products/adsd3100.html" target="_blank">ADSD3100</a></p></td>
 <td><p>sr-native</p></td>
 <td><p>0</p></td>
 </tr>
@@ -473,7 +554,7 @@ The topic names for the compressed Depth and AB images are <code class="docutils
 <td><p>lr-mixed</p></td>
 <td><p>6</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.analog.com/en/products/adsd3030.html">ADSD3030</a></p></td>
+<tr class="row-even"><td><p><a class="icon link reference external" href="https://www.analog.com/en/products/adsd3030.html" target="_blank">ADSD3030</a></p></td>
 <td><p>sr-native</p></td>
 <td><p>0</p></td>
 </tr>
@@ -499,182 +580,68 @@ The topic names for the compressed Depth and AB images are <code class="docutils
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 </section>
-<section id="adi-3dtof-adtf31xx-compressed-image-subscriber-node">
-<h4>adi_3dtof_adtf31xx_compressed_image_subscriber_node<a class="headerlink" href="#adi-3dtof-adtf31xx-compressed-image-subscriber-node" title="Link to this heading"></a></h4>
-<section id="subscribed-topics">
-<h5>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h5>
+<section id="topics">
+<h2>Topics<a class="headerlink" href="#topics" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>Topic Name</p></th>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>/depth_image</strong></p></td>
-<td><p>16-bit Depth image of size 512x512</p></td>
+<td><p>16-bit Depth image of size</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>/ab_image</strong></p></td>
-<td><p>16-bit AB image of size 512x512</p></td>
+<td><p>16-bit AB image</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>/camera_info</strong></p></td>
+<tr class="row-even"><td><p><strong>/conf_image</strong></p></td>
+<td><p>16-bit Confidence image</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/camera_info</strong></p></td>
 <td><p>Camera info</p></td>
 </tr>
-</tbody>
-</table>
-</section>
-<section id="id1">
-<h5>Published topics<a class="headerlink" href="#id1" title="Link to this heading"></a></h5>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Topic Name</p></th>
-<th class="head"><p>Description</p></th>
+<tr class="row-even"><td><p><strong>/depth_image/compressedDepth</strong></p></td>
+<td><p>16-bit Depth image from sensor node compressed with RVL compression</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>/raw_depth_image</strong></p></td>
-<td><p>16-bit Depth image of size 512x512</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>/raw_ab_image</strong></p></td>
-<td><p>16-bit AB image of size 512x512</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>/point_cloud</strong></p></td>
-<td><p>16-bit point cloud of size 512x512x3</p></td>
+<tr class="row-odd"><td><p><strong>/ab_image/compressedDepth</strong></p></td>
+<td><p>16-bit AB image from sensor node compressed with RVL compression</p></td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
-<section id="id2">
-<h5>Parameters<a class="headerlink" href="#id2" title="Link to this heading"></a></h5>
-<ul class="simple">
-<li><p><strong>param_camera_prefix</strong> (String, default: “no name”)</p>
-<ul>
-<li><p>ROS Topic prefix name to subscribe</p></li>
-</ul>
-</li>
-</ul>
-</section>
-</section>
-<section id="adi-3dtof-adtf31xx-read-rosbag-node">
-<h4>adi_3dtof_adtf31xx_read_rosbag_node<a class="headerlink" href="#adi-3dtof-adtf31xx-read-rosbag-node" title="Link to this heading"></a></h4>
-<section id="id3">
-<h5>Parameters<a class="headerlink" href="#id3" title="Link to this heading"></a></h5>
-<ul class="simple">
-<li><p><strong>param_input_file_name</strong> (String, default: “no name”)</p>
-<ul>
-<li><p>Input file name</p></li>
-</ul>
-</li>
-<li><p><strong>param_camera_prefixes</strong> (Vector of strings, default: null)</p>
-<ul>
-<li><p>Vector of strings to indicate camera prefixes.</p></li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<div><p>:memo: <em>Notes:</em></p>
-<ul class="simple">
-<li><p><em>If any of these parameters are not set/declared, default values will be used.</em></p></li>
-<li><p><em>Enabling file input may slow down the speed of publishing.</em></p></li>
-</ul>
-</div></blockquote>
-</section>
-</section>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
+<p>Sample output images are shown below:</p>
+<p><code class="docutils literal notranslate"><span class="pre">/cam1/depth_image</span></code></p>
+<p><img alt="depth_image" src="_images/depth_image.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">/cam1/ab_image</span></code></p>
+<p><img alt="ab_image" src="_images/ir_image.png" /></p>
 </section>
 <section id="parameter-tuning">
-<h3>Parameter Tuning<a class="headerlink" href="#parameter-tuning" title="Link to this heading"></a></h3>
-<p>Some parameters of <em>adi_3dtof_adtf31xx</em> ROS node can be modifed during run time. The Perspective file is present in <code class="docutils literal notranslate"><span class="pre">rqt_config/</span></code> folder.</p>
-<div style="text-align:center"><img src="./docs/images/dynamic_reconfigure.png" alt="Dynamic Reconfigure"/></div>
-The GUI can be started by running the following command.
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w">  </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_rqt_launch.py
+<h2>Parameter Tuning<a class="headerlink" href="#parameter-tuning" title="Link to this heading"></a></h2>
+<p>Some parameters of <em>adi_3dtof_adtf31xx</em> ROS node can be modified during run time. The Perspective file is present in <code class="docutils literal notranslate"><span class="pre">rqt_config/</span></code> folder.</p>
+<p><img alt="Dynamic Reconfigure" src="_images/dynamic_reconfigure.png" /></p>
+<p>The GUI can be started by running the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_rqt_launch.py
 </pre></div>
 </div>
-<p>Make sure the <em>adi_3dtof_adtf31xx</em> is already running before executing this command.</p>
+<p>Make sure the <em>adi_3dtof_adtf31xx node</em> is already running before executing this command.</p>
 </section>
-<section id="limitations">
-<h3>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h3>
-<ul class="simple">
-<li><p>Read Rosbags Node does not support <code class="docutils literal notranslate"><span class="pre">conf_image</span></code> (Confidence Images) topic.</p></li>
-</ul>
+<section id="appendix">
+<h2>Appendix<a class="headerlink" href="#appendix" title="Link to this heading"></a></h2>
+<section id="updating-date-and-time">
+<h3>Updating Date and Time<a class="headerlink" href="#updating-date-and-time" title="Link to this heading"></a></h3>
+<p>The customized ubuntu image loaded into the sensor will automatically connect to any WiFi hotspot with the SSID as <code class="docutils literal notranslate"><span class="pre">ADI</span></code> and password set as <code class="docutils literal notranslate"><span class="pre">analog123</span></code>. This network connection will automatically sync the system time using the available internet connection.</p>
 </section>
-<section id="support">
-<h3>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h3>
-<p>Please contact the <code class="docutils literal notranslate"><span class="pre">Maintainers</span></code> if you want to evaluate the algorithm for your own setup/configuration.
-Any other inquiries are also welcome.</p>
-</section>
-</section>
-<section id="appendix-1">
-<h2>Appendix 1 :<a class="headerlink" href="#appendix-1" title="Link to this heading"></a></h2>
-<section id="steps-to-run-the-node-on-a-host-machine-in-file-io-mode">
-<h3>Steps to run the Node on a Host machine in File-IO mode<a class="headerlink" href="#steps-to-run-the-node-on-a-host-machine-in-file-io-mode" title="Link to this heading"></a></h3>
-<p>The Node can be run on a Host machine without the need for the actual 3D ToF sensor. This mode is supported for users who would want to test some algorithms on the recorded video files. In this mode the <em>adi_3dtof_adtf31xx_node</em> will read the video file and publish the frames as ROS topics. Follow the below instructions to build and run the node in File-IO mode.</p>
-<p><em>Note:</em> It is assumed that the correct version of ROS is installed and configured properly, if not please install the ROS from <a class="reference external" href="https://docs.ros.org/en/humble/Installation.html">here</a></p>
-<section id="requirement-on-file-io-input-video-files">
-<h4>Requirement on file-io input video files<a class="headerlink" href="#requirement-on-file-io-input-video-files" title="Link to this heading"></a></h4>
-<p>To run the <em>adi_3dtof_adtf31xx_node</em> in file-io mode, the video files should be given as input.
-Please follow the below instructions to set up the input video files.</p>
-<ol class="arabic simple">
-<li><p>Go to the installation directory of the <em>ADI 3DToF ADTF31xx</em> appliation (~/Analog Devices/ADI3DToFADTF31xx-Relx.x.x)</p></li>
-<li><p>Run the <em>get_videos.sh</em> script which will download the <em>adi_3dtof_input_video_files.zip</em> file in the current directory.</p></li>
-<li><p>Unzip it and copy the directory as <em>~/ros2_ws/src/adi_3dtof_input_video_files</em>.</p></li>
-<li><p>Update the input file argument <em>arg_in_file_name</em> in the launch file <em>adi_3dtof_adtf31xx_launch.py</em> as per the above file path.</p></li>
-</ol>
-</section>
-<section id="steps-to-run-adi-3dtof-adtf31xx-node-node">
-<h4>Steps to run <em>adi_3dtof_adtf31xx_node</em> node<a class="headerlink" href="#steps-to-run-adi-3dtof-adtf31xx-node-node" title="Link to this heading"></a></h4>
-<ol class="arabic">
-<li><p>Clone the repo and checkout the correct release branch/
-tag into ros2 workspace directory</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/install/setup.bash
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
-$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
-</pre></div>
-</div>
-</li>
-<li><p>Install dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/
-$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>-y<span class="w"> </span>--ignore-src
-</pre></div>
-</div>
-</li>
-<li><p>Clone aditof SDK</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
-$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/libaditof.git<span class="w"> </span>-b<span class="w"> </span>v6.0.1
-</pre></div>
-</div>
-</li>
-<li><p>Update submodules of aditof SDK</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/libaditof
-$<span class="w"> </span>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
-</pre></div>
-</div>
-</li>
-<li><p>Build the package</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
-$<span class="w"> </span>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_adtf31xx
-$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>install/setup.bash
-</pre></div>
-</div>
-</li>
-<li><p>Link runtime libraries</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>~/ros2_ws/install/lib:<span class="nv">$LD_LIBRARY_PATH</span>
-</pre></div>
-</div>
-</li>
-<li><p>To run the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx_node</span></code> in File-IO mode, we need to make some changes in the launch file. Change the following parameters in launch file.
-<code class="docutils literal notranslate"><span class="pre">arg_input_sensor_mode</span></code> to be set to <code class="docutils literal notranslate"><span class="pre">2</span></code>
-<code class="docutils literal notranslate"><span class="pre">arg_in_file_name</span></code> to be set to the input file name</p></li>
-<li><p>After updating the launch file, run the roslaunch with the updated launch file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_adtf31xx<span class="w"> </span>adi_3dtof_adtf31xx_launch.py
-</pre></div>
-</div>
-</li>
-</ol>
-<p>At this stage, the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx_node</span></code> will be launched and start publishing the topics <code class="docutils literal notranslate"><span class="pre">/cam1/depth_image,</span> <span class="pre">/cam1/ab_image</span> <span class="pre">and</span> <span class="pre">/cam1/camera_info</span></code>.</p>
-<p>To see the depth and AB images open an other Terminal and open the RVIZ and add <code class="docutils literal notranslate"><span class="pre">/cam1/depth_image</span></code> and <code class="docutils literal notranslate"><span class="pre">/cam1/ab_image</span></code> topics to visualize the images</p>
 <section id="build-flags">
-<h5>Build Flags<a class="headerlink" href="#build-flags" title="Link to this heading"></a></h5>
+<h3>Build Flags<a class="headerlink" href="#build-flags" title="Link to this heading"></a></h3>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Flag Name</p></th>
@@ -701,12 +668,68 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>i
 </tr>
 </tbody>
 </table>
+</div>
 </section>
+<section id="upgrading-the-firmware">
+<h3>Upgrading the firmware<a class="headerlink" href="#upgrading-the-firmware" title="Link to this heading"></a></h3>
+<p>To check the existing firmware version, log into the sensore device via SSH.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+<p>Run command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Workspace/Tool/ctrl_app
+./ctrl_app
+</pre></div>
+</div>
+<p>Your output would look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">V4L2</span> <span class="n">custom</span> <span class="n">control</span> <span class="n">interface</span> <span class="n">app</span> <span class="n">version</span><span class="p">:</span> <span class="mf">1.0.1</span>
+<span class="mi">59</span> <span class="mi">31</span>
+<span class="mi">05</span> <span class="mi">02</span> <span class="mi">05</span> <span class="mi">00</span> <span class="mi">61</span> <span class="mi">35</span> <span class="mi">39</span> <span class="mi">61</span> <span class="mi">66</span> <span class="mi">61</span> <span class="mi">64</span> <span class="mi">36</span> <span class="mi">64</span> <span class="mi">36</span> <span class="mi">63</span> <span class="mi">38</span> <span class="mi">65</span> <span class="mi">37</span> <span class="mi">66</span> <span class="mi">62</span> <span class="mi">31</span> <span class="mi">35</span> <span class="mi">33</span> <span class="mi">61</span> <span class="mi">32</span> <span class="mi">64</span> <span class="mi">62</span> <span class="mi">38</span> <span class="mi">63</span> <span class="mi">64</span> <span class="mi">38</span> <span class="mi">38</span> <span class="mi">34</span> <span class="mi">30</span> <span class="mi">33</span> <span class="mi">35</span> <span class="mi">39</span> <span class="mi">66</span> <span class="mi">31</span> <span class="mi">37</span> <span class="mi">31</span> <span class="mi">39</span> <span class="mi">35</span> <span class="mi">61</span>
+<span class="mi">59</span> <span class="mi">31</span>
+</pre></div>
+</div>
+<p>The first four values in the third line represents the version number, in this case, 5.2.5.0. If it is lower than this value, follow these steps below to update.</p>
+<ol class="arabic">
+<li><p>On your PC, install ADI ToF SDK release <a class="icon link reference external" href="https://github.com/analogdevicesinc/ToF/releases/tag/v6.0.1" target="_blank">v6.0.1</a></p></li>
+<li><p>After installing goto the installation folder and run the following commands to download the image</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Analog<span class="se">\ </span>Devices/ToF_Evaluation_Ubuntu_ADTF3175D-Relx.x.x/image.
+chmod<span class="w"> </span>+x<span class="w"> </span>get_image.sh<span class="w"> </span>and<span class="w"> </span>./get_image.sh.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Latest image will be downloaded at ./image path as NXP-Img-Relx.x.x-ADTF3175D-.zip. Extract this folder using unzip NXP-Img-Relx.x.x-ADTF3175D-.zip command.</p></li>
+<li><p>This folder contains the NXP image and ADSD3500 firmware(Fw_Update_x.x.x.bin).</p></li>
+</ul>
+</li>
+<li><p>Run the following command to copy the Firmware to the NXP device</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>scp<span class="w"> </span>Fw_Update_5.2.5.bin<span class="w"> </span>analog@10.43.0.1:/home/analog/Workspace
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+</li>
+<li><p>Now login to the device and run the Firmware upgrade command.</p></li>
+</ol>
+<blockquote>
+<div><p>[!warning]
+Do NOT reboot the board or interrupt the process as this may corrupt the module</p>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Workspace/ToF/build/examples/data_collect/
+$<span class="w"> </span>./data_collect<span class="w"> </span>--fw<span class="w"> </span>~/Workspace/Fw_Update_x.x.x.bin<span class="w"> </span>config/config_default.json
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Reboot the board after the successful operation.</p></li>
+</ul>
 </section>
-</section>
-<section id="steps-to-convert-rosbag-file-to-bin-file">
-<h3>Steps to convert rosbag file to bin file<a class="headerlink" href="#steps-to-convert-rosbag-file-to-bin-file" title="Link to this heading"></a></h3>
-<p><a class="reference external" href="https://github.com/ros2/rosbag2">rosbag2</a>, a utility provided by ROS, is used to record topics. The data is collected in bag format, and the adi_3dtof_adtf31xx_read_rosbag_node node converts it to bin file format.
+<section id="creating-bin-files-for-file-io">
+<h3>Creating Bin files for File-IO<a class="headerlink" href="#creating-bin-files-for-file-io" title="Link to this heading"></a></h3>
+<p><a class="icon link reference external" href="https://github.com/ros2/rosbag2" target="_blank">rosbag2</a>, a utility provided by ROS, is used to record topics. The data is collected in bag format, and the adi_3dtof_adtf31xx_read_rosbag_node node converts it to bin file format.
 The format of bin file as given below.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">start</span> <span class="n">of</span> <span class="nb">bin</span> <span class="n">file</span>
 
@@ -735,13 +758,12 @@ The format of bin file as given below.</p>
 <span class="n">end</span> <span class="n">of</span> <span class="nb">bin</span> <span class="n">file</span>
 </pre></div>
 </div>
-</section>
 <section id="steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node">
-<h3>Steps to use adi_3dtof_adtf31xx_read_rosbag_node:<a class="headerlink" href="#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node" title="Link to this heading"></a></h3>
+<h4>Steps to use adi_3dtof_adtf31xx_read_rosbag_node:<a class="headerlink" href="#steps-to-use-adi-3dtof-adtf31xx-read-rosbag-node" title="Link to this heading"></a></h4>
 <p>Change below parameters in <code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx_read_rosbag_launch.py</span></code> file</p>
 <ol class="arabic">
 <li><p>arg_in_file_name : The rosbag2 file name</p></li>
-<li><p>arg_camera_prefixes : Camera prefix, more than one camera prefixes can be passed. For example if the recoreded topic names are /cam1/depth_image and /cam2/depth_image, arg_camera_prefixes can be set to “[cam1,cam2]”</p></li>
+<li><p>arg_camera_prefixes : Camera prefix, more than one camera prefixes can be passed. For example if the recorded topic names are /cam1/depth_image and /cam2/depth_image, arg_camera_prefixes can be set to “[cam1,cam2]”</p></li>
 <li><p>Run the below command to launch adi_3dtof_adtf31xx_read_rosbag_node node</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ros2 launch adi_3dtof_adtf31xx adi_3dtof_adtf31xx_read_rosbag_launch.py
 </pre></div>
@@ -750,42 +772,36 @@ The format of bin file as given below.</p>
 <li><p>The output files will have names in following manner: <strong>input_file_name_camera_name_out.bin</strong>
 Ex: if input file name is <code class="docutils literal notranslate"><span class="pre">4cameras.bag</span></code> and camera prefix is <code class="docutils literal notranslate"><span class="pre">cam5</span></code> then output is <code class="docutils literal notranslate"><span class="pre">4cameras_cam5_out.bin</span></code></p></li>
 </ol>
-<section id="why-this-is-required">
-<h4>Why this is required?<a class="headerlink" href="#why-this-is-required" title="Link to this heading"></a></h4>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Our first question is, &quot;Why is it necessary to convert collected bag files to binary format before performing file IO?&quot; Why can&#39;t we use FileIO directly while subscribing to ros topics that rosbags publishes? The reason for this is that rosbags may store images in a disorganized order rather than in a sequential manner. For this reason, in order to produce the output, the FileIO code must queue up the publishing rosbag images and synchronize the depth and AB images. The FileIO process becomes slower as a result.
-</pre></div>
-</div>
+</section>
+<section id="why-is-this-required">
+<h4>Why is this required?<a class="headerlink" href="#why-is-this-required" title="Link to this heading"></a></h4>
+<p>The reason for this is that rosbags may store images in a disorganized order rather than in a sequential manner. For this reason, in order to produce the output, the FileIO code must queue up the publishing rosbag images and synchronize the depth and AB images. The FileIO process becomes slower as a result.</p>
 </section>
 </section>
 </section>
 </section>
 
 
-           </div>
           </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright The &lt;adi_3dtof_adtf31xx&gt; Contributors. License: BSD.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              <div class="related">
+                &nbsp;
+    <div></div>
+    <div></div>
+              </div>
+          
         </div>
       </div>
-    </section>
   </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
 
-</body>
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
 </html>

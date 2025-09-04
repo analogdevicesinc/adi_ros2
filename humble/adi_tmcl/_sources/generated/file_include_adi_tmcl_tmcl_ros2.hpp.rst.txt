@@ -69,11 +69,15 @@ Variables
 
 - :ref:`exhale_variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3`
 
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1a842cf777e97091c4ce5055cadbb1e4c0`
+
 - :ref:`exhale_variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218`
 
 - :ref:`exhale_variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd`
 
 - :ref:`exhale_variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15`
+
+- :ref:`exhale_variable_tmcl__ros2_8hpp_1abb05ed9acd64ebfe299c38f3e01c7822`
 
 - :ref:`exhale_variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1`
 

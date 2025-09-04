@@ -88,6 +88,20 @@
         </inbodydescription>
         <location file="include/adi_tmcl/tmcl_ros2.hpp" line="33" column="11" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="33" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classTmclRos2_1ab667bf76fbe113cb1e8ef2fd67b2ae6c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmclRos2::bit_width_</definition>
+        <argsstring></argsstring>
+        <name>bit_width_</name>
+        <qualifiedname>TmclRos2::bit_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="34" column="11" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1a4884164cf2f3fcbc950650020bd7b04d" prot="private" static="no" mutable="no">
         <type>std::vector&lt; int64_t &gt;</type>
         <definition>std::vector&lt;int64_t&gt; TmclRos2::param_ap_type_</definition>
@@ -100,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="34" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="34" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="35" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1afd1529d562ac0e1d0aa354a518bd0624" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -114,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="35" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="35" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="36" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1a112561faa1b122c000bc4ab4baf1ec63" prot="private" static="no" mutable="no">
         <type>std::vector&lt; int64_t &gt;</type>
@@ -128,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="36" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="36" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="37" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1ae02afe86538534ea30b2f241fc502398" prot="private" static="no" mutable="no">
         <type>std::vector&lt; std::string &gt;</type>
@@ -142,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="37" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="37" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="38" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1aa1626019f994cd244524d06b9fd91f86" prot="private" static="no" mutable="no">
         <type>rclcpp::Service&lt; adi_tmcl::srv::TmcCustomCmd &gt;::SharedPtr</type>
@@ -156,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="39" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="39" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="40" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1ad1147231a41028169fcd476792f8053c" prot="private" static="no" mutable="no">
         <type>rclcpp::Service&lt; adi_tmcl::srv::TmcGapAll &gt;::SharedPtr</type>
@@ -170,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="40" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="40" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="41" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1ab76720e6260565363a714f0c113a8ddd" prot="private" static="no" mutable="no">
         <type>rclcpp::Service&lt; adi_tmcl::srv::TmcGgpAll &gt;::SharedPtr</type>
@@ -184,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="41" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="41" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="42" column="31" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1a1facd7cc66331ea11d2ceaf671cac964" prot="private" static="no" mutable="no">
         <type>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr</type>
@@ -198,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="42" column="69" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="42" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="43" column="69" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1a88302f1b5ee003299d4d0639bdc713a0" prot="private" static="no" mutable="no">
         <type>uint32_t</type>
@@ -212,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="44" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="44" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="45" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1a6e759a29fee0fc92079da3f76a742a5e" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
@@ -226,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="45" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="45" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="46" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1adb184f568f3f37cd6dbb79cb412e36a0" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
@@ -240,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="46" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="46" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="47" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classTmclRos2_1ad5e128c08ce0c2d0a5f757d90ccff6f8" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -254,7 +268,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="47" column="8" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="47" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="48" column="8" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmclRos2_1a272837383f0eecf69fbe25c9f2d72b27" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TmclRos2::compare_val_</definition>
+        <argsstring></argsstring>
+        <name>compare_val_</name>
+        <qualifiedname>TmclRos2::compare_val_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="49" column="12" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -346,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="49" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="51" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1ad90b60f723d6c368233ed8bd8379b6b1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -360,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="50" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="52" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1ad85b83d22652590f2c6f04f5f249981f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -374,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="51" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="53" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1a7101c9dd82718aa1ed5a29a9282486d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -388,7 +416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="52" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="54" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1a6f33b625b593c17b0acf920d5d6788d1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -402,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="53" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="55" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1a312de944f0acffa8ec77efcd31522ced" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -424,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="54" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="56" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1acdf7bce516ec25875ecc76ca4087c633" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -446,7 +474,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="56" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="58" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1a87b5d52e7d6e2a7198dcbff56925440d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -468,7 +496,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="58" column="8"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="60" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classTmclRos2_1aa58ed92d117c573e03de36ff833ec6b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>rcl_interfaces::msg::SetParametersResult</type>
@@ -486,7 +514,47 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="60" column="44"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="62" column="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclRos2_1a796dcc440c8736bdbc3671b3aa05ec97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t TmclRos2::checkApTypeMax</definition>
+        <argsstring>()</argsstring>
+        <name>checkApTypeMax</name>
+        <qualifiedname>TmclRos2::checkApTypeMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="64" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmclRos2_1abff60f6e9ad3bceba714b93c4fcce312" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmclRos2::motorValParser</definition>
+        <argsstring>(uint8_t *type, uint8_t *motor, uint16_t req_instruct_type)</argsstring>
+        <name>motorValParser</name>
+        <qualifiedname>TmclRos2::motorValParser</qualifiedname>
+        <param>
+          <type>uint8_t *</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>req_instruct_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="65" column="8"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -494,9 +562,12 @@
     <detaileddescription>
 <para>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
     </detaileddescription>
-    <location file="include/adi_tmcl/tmcl_ros2.hpp" line="15" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="16" bodyend="63"/>
+    <location file="include/adi_tmcl/tmcl_ros2.hpp" line="15" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="16" bodyend="69"/>
     <listofallmembers>
       <member refid="classTmclRos2_1ad5e128c08ce0c2d0a5f757d90ccff6f8" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>b_allow_en_motors_change_</name></member>
+      <member refid="classTmclRos2_1ab667bf76fbe113cb1e8ef2fd67b2ae6c" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>bit_width_</name></member>
+      <member refid="classTmclRos2_1a796dcc440c8736bdbc3671b3aa05ec97" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>checkApTypeMax</name></member>
+      <member refid="classTmclRos2_1a272837383f0eecf69fbe25c9f2d72b27" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>compare_val_</name></member>
       <member refid="classTmclRos2_1a7101c9dd82718aa1ed5a29a9282486d7" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>createMotor</name></member>
       <member refid="classTmclRos2_1a99d5c65da881ac3f0ad9f613ca970c61" prot="public" virt="non-virtual"><scope>TmclRos2</scope><name>deInit</name></member>
       <member refid="classTmclRos2_1a6e759a29fee0fc92079da3f76a742a5e" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>fw_major_</name></member>
@@ -508,6 +579,7 @@
       <member refid="classTmclRos2_1ad90b60f723d6c368233ed8bd8379b6b1" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>initGeneralParams</name></member>
       <member refid="classTmclRos2_1a6f33b625b593c17b0acf920d5d6788d1" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>initServiceServer</name></member>
       <member refid="classTmclRos2_1a88302f1b5ee003299d4d0639bdc713a0" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>module_number_</name></member>
+      <member refid="classTmclRos2_1abff60f6e9ad3bceba714b93c4fcce312" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>motorValParser</name></member>
       <member refid="classTmclRos2_1ace4a6a2ac4998caf02dbf67fdcdd7fa0" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>p_motor_</name></member>
       <member refid="classTmclRos2_1a809ee612780c817a135812e224d45c23" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>p_node_</name></member>
       <member refid="classTmclRos2_1a1facd7cc66331ea11d2ceaf671cac964" prot="private" virt="non-virtual"><scope>TmclRos2</scope><name>p_param_callback_handle_</name></member>

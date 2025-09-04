@@ -136,6 +136,7 @@
     <member refid="classTmclRos2_1a7af4fdf2d8ded3eda650ef51614cda84" kind="variable"><name>param_adhoc_mode_</name></member>
     <member refid="classTmclRos2_1a0f3a95df9bf2a9151f959a4030f82269" kind="variable"><name>param_en_motors_</name></member>
     <member refid="classTmclRos2_1ae55e17e3d116405c74116a4f170044e5" kind="variable"><name>param_auto_start_additional_delay_</name></member>
+    <member refid="classTmclRos2_1ab667bf76fbe113cb1e8ef2fd67b2ae6c" kind="variable"><name>bit_width_</name></member>
     <member refid="classTmclRos2_1a4884164cf2f3fcbc950650020bd7b04d" kind="variable"><name>param_ap_type_</name></member>
     <member refid="classTmclRos2_1afd1529d562ac0e1d0aa354a518bd0624" kind="variable"><name>param_ap_name_</name></member>
     <member refid="classTmclRos2_1a112561faa1b122c000bc4ab4baf1ec63" kind="variable"><name>param_gp_type_</name></member>
@@ -148,6 +149,7 @@
     <member refid="classTmclRos2_1a6e759a29fee0fc92079da3f76a742a5e" kind="variable"><name>fw_major_</name></member>
     <member refid="classTmclRos2_1adb184f568f3f37cd6dbb79cb412e36a0" kind="variable"><name>fw_minor_</name></member>
     <member refid="classTmclRos2_1ad5e128c08ce0c2d0a5f757d90ccff6f8" kind="variable"><name>b_allow_en_motors_change_</name></member>
+    <member refid="classTmclRos2_1a272837383f0eecf69fbe25c9f2d72b27" kind="variable"><name>compare_val_</name></member>
     <member refid="classTmclRos2_1a92c5cd9abd53ab45f3a129b7c5980375" kind="function"><name>TmclRos2</name></member>
     <member refid="classTmclRos2_1a834f26274c47a62618a83b6b9c14d49e" kind="function"><name>~TmclRos2</name></member>
     <member refid="classTmclRos2_1a1648da78b6d043e288a757db56db0f30" kind="function"><name>init</name></member>
@@ -162,6 +164,8 @@
     <member refid="classTmclRos2_1acdf7bce516ec25875ecc76ca4087c633" kind="function"><name>tmclGapAllCallback</name></member>
     <member refid="classTmclRos2_1a87b5d52e7d6e2a7198dcbff56925440d" kind="function"><name>tmclGgpAllCallback</name></member>
     <member refid="classTmclRos2_1aa58ed92d117c573e03de36ff833ec6b0" kind="function"><name>parametersCallback</name></member>
+    <member refid="classTmclRos2_1a796dcc440c8736bdbc3671b3aa05ec97" kind="function"><name>checkApTypeMax</name></member>
+    <member refid="classTmclRos2_1abff60f6e9ad3bceba714b93c4fcce312" kind="function"><name>motorValParser</name></member>
   </compound>
   <compound refid="socket__can__wrapper_8hpp" kind="file"><name>socket_can_wrapper.hpp</name>
   </compound>
@@ -250,6 +254,7 @@
     <member refid="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9a913a02ee2f042a079dd7b1ad1d4926fb" kind="enumvalue"><name>IDX_AXIS_PARAMETERS_NAME</name></member>
     <member refid="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9ad7a9096e081f2f7b47f0209ca8ce560f" kind="enumvalue"><name>IDX_GLOBAL_PARAMETERS_TYPE</name></member>
     <member refid="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9ad7029b93e1f4475368c381288ac7895c" kind="enumvalue"><name>IDX_GLOBAL_PARAMETERS_NAME</name></member>
+    <member refid="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9ac8a390d9a9dfe3cb60abe2ee2f3acfa5" kind="enumvalue"><name>IDX_AP_INDEX_BIT_WIDTH</name></member>
     <member refid="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9a3c1e2772279c700ae455540b35c17187" kind="enumvalue"><name>TMCL_GENERAL_PARAMS_LUT_MAX</name></member>
     <member refid="tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a" kind="enum"><name>tmcl_custom_cmd_lut_t</name></member>
     <member refid="tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76aaf2209d74c1e71571ddbd8a996a76b40c" kind="enumvalue"><name>IDX_SAP</name></member>
@@ -268,6 +273,8 @@
     <member refid="tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218" kind="variable"><name>EXEC_CMD_RETRIES_DEFAULT</name></member>
     <member refid="tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3" kind="variable"><name>AUTO_START_ADDITIONAL_DELAY_MAX</name></member>
     <member refid="tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f" kind="variable"><name>AUTO_START_ADDITIONAL_DELAY_DEFAULT</name></member>
+    <member refid="tmcl__ros2_8hpp_1a842cf777e97091c4ce5055cadbb1e4c0" kind="variable"><name>DEFAULT_BIT_WIDTH</name></member>
+    <member refid="tmcl__ros2_8hpp_1abb05ed9acd64ebfe299c38f3e01c7822" kind="variable"><name>MAX_BIT_WIDTH</name></member>
     <member refid="tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15" kind="variable"><name>general_params_</name></member>
     <member refid="tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3" kind="variable"><name>tmcl_custom_cmd_</name></member>
   </compound>

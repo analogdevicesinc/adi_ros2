@@ -2,7 +2,7 @@
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.8" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[adi_tmcl]]></value></option>
-  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[2.0.3]]></value></option>
+  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[2.1.0]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["The adi_tmcl ROS2 package"]]></value></option>
   <option  id='PROJECT_LOGO' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/docs_build/adi_tmcl/adi_tmcl-public-cc-api/doxygen_output]]></value></option>
@@ -303,8 +303,8 @@
   <option  id='SKIP_FUNCTION_MACROS' default='yes' type='bool'><value>YES</value></option>
   <option  id='TAGFILES' default='no' type='stringlist'>
     <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag=http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html]]></value>
-    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_imu/adi_imu.tag=http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html]]></value>
     <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_iio/adi_iio.tag=http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_imu/adi_imu.tag=http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html]]></value>
   </option>
   <option  id='GENERATE_TAGFILE' default='no' type='string'><value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/docs_build/adi_tmcl/adi_tmcl-public-cc-api/doxygen_output/adi_tmcl.tag]]></value></option>
   <option  id='ALLEXTERNALS' default='yes' type='bool'><value>NO</value></option>

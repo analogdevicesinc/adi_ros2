@@ -151,6 +151,13 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9ac8a390d9a9dfe3cb60abe2ee2f3acfa5" prot="public">
+          <name>IDX_AP_INDEX_BIT_WIDTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9a3c1e2772279c700ae455540b35c17187" prot="public">
           <name>TMCL_GENERAL_PARAMS_LUT_MAX</name>
           <briefdescription>
@@ -164,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="87" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="88" bodyend="97"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="97" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="98" bodyend="108"/>
       </memberdef>
       <memberdef kind="enum" id="tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a" prot="public" static="no" strong="no">
         <type></type>
@@ -204,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="112" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="113" bodyend="118"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="125" column="1" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="126" bodyend="131"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="var">
@@ -220,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="70" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="70" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="76" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -234,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="73" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="73" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="79" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -248,7 +255,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="74" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="74" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="80" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -262,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="75" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="75" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="81" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -276,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="76" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="76" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="82" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459" prot="public" static="no" mutable="no">
         <type>const uint16_t</type>
@@ -290,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="77" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="77" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="83" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4" prot="public" static="no" mutable="no">
         <type>const uint16_t</type>
@@ -304,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="78" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="78" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="84" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886" prot="public" static="no" mutable="no">
         <type>const uint16_t</type>
@@ -318,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="79" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="79" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="85" column="16" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -332,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="80" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="80" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="86" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -346,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="81" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="81" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="87" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -360,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="83" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="83" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="89" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -374,7 +381,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="84" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="84" bodyend="-1"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="90" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__ros2_8hpp_1a842cf777e97091c4ce5055cadbb1e4c0" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t DEFAULT_BIT_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_BIT_WIDTH</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="93" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmcl__ros2_8hpp_1abb05ed9acd64ebfe299c38f3e01c7822" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MAX_BIT_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>MAX_BIT_WIDTH</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="94" column="15" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -389,7 +424,9 @@
   &quot;AP_name&quot;,
   &quot;GP_type&quot;,
   &quot;GP_name&quot;,
+  &quot;ap_index_bit_width&quot;,
   &quot;MAX&quot;         
+  
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -397,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="100" column="26" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="100" bodyend="109"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="111" column="26" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="111" bodyend="122"/>
       </memberdef>
       <memberdef kind="variable" id="tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3" prot="public" static="yes" mutable="no">
         <type>const std::vector&lt; std::string &gt;</type>
@@ -416,7 +453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="121" column="26" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="121" bodyend="126"/>
+        <location file="include/adi_tmcl/tmcl_ros2.hpp" line="134" column="26" bodyfile="include/adi_tmcl/tmcl_ros2.hpp" bodystart="134" bodyend="139"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -453,102 +490,115 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_adhoc_mode_;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_en_motors_;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/>uint8_t<sp/>param_auto_start_additional_delay_;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_ap_type_;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param_ap_name_;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_gp_type_;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param_gp_name_;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcCustomCmd&gt;::SharedPtr<sp/>tmcl_custom_cmd_service_server_;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcGapAll&gt;::SharedPtr<sp/>tmcl_gap_service_server_;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcGgpAll&gt;::SharedPtr<sp/>tmcl_ggp_service_server_;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr<sp/>p_param_callback_handle_;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/>uint32_t<sp/>module_number_;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/>uint16_t<sp/>fw_major_;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/>uint16_t<sp/>fw_minor_;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_allow_en_motors_change_;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initCommInterfaceParams();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initGeneralParams();</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initAxisAndGlobalParameters();</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createMotor();</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initServiceServer();</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclCustomCmdCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcCustomCmd::Request&gt;<sp/>req,</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcCustomCmd::Response&gt;<sp/>res);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclGapAllCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGapAll::Request&gt;<sp/>req,</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGapAll::Response&gt;<sp/>res);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclGgpAllCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGgpAll::Request&gt;<sp/>req,</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGgpAll::Response&gt;<sp/>res);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/>rcl_interfaces::msg::SetParametersResult<sp/>parametersCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;rclcpp::Parameter&gt;<sp/>\</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>&amp;parameters);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants<sp/>and<sp/>Enumerations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>uint8_t<sp/>bit_width_;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_ap_type_;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param_ap_name_;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_gp_type_;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param_gp_name_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcCustomCmd&gt;::SharedPtr<sp/>tmcl_custom_cmd_service_server_;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcGapAll&gt;::SharedPtr<sp/>tmcl_gap_service_server_;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmcl::srv::TmcGgpAll&gt;::SharedPtr<sp/>tmcl_ggp_service_server_;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr<sp/>p_param_callback_handle_;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>uint32_t<sp/>module_number_;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>uint16_t<sp/>fw_major_;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>uint16_t<sp/>fw_minor_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_allow_en_motors_change_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>uint16_t<sp/>compare_val_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initCommInterfaceParams();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initGeneralParams();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initAxisAndGlobalParameters();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createMotor();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initServiceServer();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclCustomCmdCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcCustomCmd::Request&gt;<sp/>req,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcCustomCmd::Response&gt;<sp/>res);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclGapAllCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGapAll::Request&gt;<sp/>req,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGapAll::Response&gt;<sp/>res);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tmclGgpAllCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGgpAll::Request&gt;<sp/>req,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;adi_tmcl::srv::TmcGgpAll::Response&gt;<sp/>res);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>rcl_interfaces::msg::SetParametersResult<sp/>parametersCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;rclcpp::Parameter&gt;<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>&amp;parameters);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>uint16_t<sp/>checkApTypeMax();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>motorValParser(uint8_t<sp/>*<sp/>type,<sp/>uint8_t<sp/>*<sp/>motor,<sp/>uint16_t<sp/>req_instruct_type);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Possible<sp/>values<sp/>for<sp/>&lt;Module<sp/>Type&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TMCM_BLDC<sp/>=<sp/>6;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>limits<sp/>and<sp/>default<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TXRX_ID_MIN<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TXRX_ID_MAX<sp/>=<sp/>255;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TX_ID_DEFAULT<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>RX_ID_DEFAULT<sp/>=<sp/>2;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_MIN<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_MAX<sp/>=<sp/>5000;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_DEFAULT<sp/>=<sp/>10;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>EXEC_CMD_RETRIES_MAX<sp/>=<sp/>3;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>EXEC_CMD_RETRIES_DEFAULT<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>AUTO_START_ADDITIONAL_DELAY_MAX<sp/>=<sp/>60;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>AUTO_START_ADDITIONAL_DELAY_DEFAULT<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>General<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/>IDX_ADHOC_MODE<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/>IDX_EN_MOTORS,</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/>IDX_AUTO_START_ADDITIONAL_DELAY,</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/>IDX_AXIS_PARAMETERS_TYPE,</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/>IDX_AXIS_PARAMETERS_NAME,</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/>IDX_GLOBAL_PARAMETERS_TYPE,</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/>IDX_GLOBAL_PARAMETERS_NAME,</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/>TMCL_GENERAL_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal">}tmcl_general_params_lut_t;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>General<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>general_params_<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;adhoc_mode&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;en_motors&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;auto_start_additional_delay&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;AP_type&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;AP_name&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GP_type&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GP_name&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>Custom<sp/>Service<sp/>Server<sp/>Commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/>IDX_SAP<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/>IDX_GAP,</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/>IDX_SGP,</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/>IDX_GGP</highlight></codeline>
-<codeline lineno="118"><highlight class="normal">}tmcl_custom_cmd_lut_t;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Custom<sp/>Service<sp/>Server<sp/>Commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>tmcl_custom_cmd_<sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;SAP&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GAP&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;SGP&quot;</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GGP&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TMCL_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants<sp/>and<sp/>Enumerations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Possible<sp/>values<sp/>for<sp/>&lt;Module<sp/>Type&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TMCM_BLDC<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>limits<sp/>and<sp/>default<sp/>values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TXRX_ID_MIN<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TXRX_ID_MAX<sp/>=<sp/>255;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TX_ID_DEFAULT<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>RX_ID_DEFAULT<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_MIN<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_MAX<sp/>=<sp/>5000;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>TIMEOUT_MS_DEFAULT<sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>EXEC_CMD_RETRIES_MAX<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>EXEC_CMD_RETRIES_DEFAULT<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>AUTO_START_ADDITIONAL_DELAY_MAX<sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>AUTO_START_ADDITIONAL_DELAY_DEFAULT<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Limits<sp/>for<sp/>AP<sp/>Index<sp/>Bit<sp/>Width<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>DEFAULT_BIT_WIDTH<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>MAX_BIT_WIDTH<sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>General<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>IDX_ADHOC_MODE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>IDX_EN_MOTORS,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>IDX_AUTO_START_ADDITIONAL_DELAY,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>IDX_AXIS_PARAMETERS_TYPE,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>IDX_AXIS_PARAMETERS_NAME,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>IDX_GLOBAL_PARAMETERS_TYPE,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>IDX_GLOBAL_PARAMETERS_NAME,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>IDX_AP_INDEX_BIT_WIDTH,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>TMCL_GENERAL_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}tmcl_general_params_lut_t;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>General<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>general_params_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;adhoc_mode&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;en_motors&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;auto_start_additional_delay&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;AP_type&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;AP_name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GP_type&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GP_name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;ap_index_bit_width&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>Custom<sp/>Service<sp/>Server<sp/>Commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>IDX_SAP<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>IDX_GAP,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>IDX_SGP,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>IDX_GGP</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}tmcl_custom_cmd_lut_t;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Custom<sp/>Service<sp/>Server<sp/>Commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>tmcl_custom_cmd_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;SAP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GAP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;SGP&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;GGP&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TMCL_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/adi_tmcl/tmcl_ros2.hpp"/>
   </compounddef>

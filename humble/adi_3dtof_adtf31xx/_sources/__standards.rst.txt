@@ -5,6 +5,6 @@ Standard Documents
    :maxdepth: 1
 
    __README
-   __PACKAGE
    __LICENSE
+   __PACKAGE
 
