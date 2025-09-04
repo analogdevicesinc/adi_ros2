@@ -18,9 +18,5 @@
   "humble/adi_tmcl": [
     "humble > adi_tmcl",
     ""
-  ],
-  "humble/libaditof": [
-    "humble > libaditof",
-    ""
   ]
 }
