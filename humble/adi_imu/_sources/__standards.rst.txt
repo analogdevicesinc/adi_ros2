@@ -8,4 +8,5 @@ Standard Documents
    __CONTRIBUTING
    __PACKAGE
    __README
+   __CHANGELOG
 
