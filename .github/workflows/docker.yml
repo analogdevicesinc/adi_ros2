@@ -68,8 +68,6 @@ jobs:
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ github.sha }}
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}-${{ steps.date.outputs.date }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
   docker-arm64:
     runs-on: ubuntu-24.04-arm
@@ -131,5 +129,4 @@ jobs:
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ github.sha }}
             ${{ env.DOCKERHUB_USERNAME }}/${{ matrix.label }}:${{ matrix.tag }}-${{ matrix.target }}-${{ steps.date.outputs.date }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+
