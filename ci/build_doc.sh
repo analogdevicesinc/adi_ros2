@@ -20,8 +20,19 @@ for submodule in $(git submodule | awk '{ print $2 }' | xargs); do
         echo "Skipping dependency submodule: $submodule"
         continue
     fi
+
     echo "Submodule: $submodule"
-    rosdoc2 build --package-path "$submodule" --debug
+    if [[ "$submodule" == *adi_tmc_coe_ros2* ]]; then
+        # Get all directories in the submodule
+        for package_dir in "$submodule"/*/; do
+            if [ -d "$package_dir" ] && [ -f "$package_dir/package.xml" ]; then
+                echo "Generating docs for package: $package_dir"
+                rosdoc2 build --package-path "$package_dir"
+            fi
+        done
+    else
+        rosdoc2 build --package-path "$submodule"
+    fi
 done
 
 # Generate docs fo the meta package which links to the submodules
