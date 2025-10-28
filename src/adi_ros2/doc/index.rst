@@ -200,12 +200,26 @@ Use this index to find the ROS2 packages you need provided by
       factory-calibrated gyroscopes and accelerometers, ensuring accurate
       motion data for robotics applications.
 
+  * - `adrd2121_imu_ros2`_
+    - ``adrd2121_imu``
+    - `adrd2121_imu API`_
+    - An implementation of the prior ROS1 package (adrd2121_imu_ros) adapted
+      for ROS2. This is a ROS2 driver for EVAL-ADRD2121-EBZ, a hardware and
+      software platform for allowing high-speed asynchronous sampling of
+      iSensor IMU data such as from ADIS16470 and ADIS16500
+
   * - `tmcl_ros2`_
     - ``adi_tmcl``
     - `adi_tmcl API`_
     - adi_tmcl (previously tmcl_ros2) is the official ROS2 Driver for ADI
       Trinamic Motor Controllers (TMC) that uses Trinamic Motion Control
       Language (TMCL) protocol.
+
+  * - `adi_tmc_coe_ros2`_
+    - ``adi_tmc_coe`` ``adi_tmc_coe_core`` ``adi_tmc_coe_interfaces``
+    - `adi_tmc_coe`_ `adi_tmc_coe_core API`_ `adi_tmc_coe_interfaces`_
+    - Official ROS2 Metapackage driver for Trinamic Motor Controller (TMC)
+      boards with CoE (CANopen-over-etherCAT) interface.
 
   * - `adi_3dtof_adtf31xx`_
     - ``adi_3dtof_adtf31xx``
@@ -214,13 +228,35 @@ Use this index to find the ROS2 packages you need provided by
       with ADI’s ADTF3175D ToF sensor. This node captures the Depth and AB
       frames from the sensor and publishes them as ROS topics.
 
+  * - `adi_3dtof_floor_detector`_
+    - ``adi_3dtof_floor_detector``
+    - `adi_3dtof_floor_detector API`_
+    - The ADI 3DToF Floor Detector is a ROS (Robot Operating System) package for
+      the Floor Detection application. The term "Floor Detection" refers to
+      determining where the floor is in the given image. It is an image
+      segmentation problem in which a given image is divided into floor and
+      non-floor pixels. Floor Detection is an essential component of real-world
+      applications such as Robot Navigation, Autonomous Driving,
+      Augmented reality (AR) applications, and 'Obstacles Detection and Avoidance'
+      for robots and people with inadequate vision.
+
+  * - `adi_3dtof_safety_bubble_detector`_
+    - ``adi_3dtof_safety_bubble_detector``
+    - `adi_3dtof_safety_bubble_detector API`_
+    - The ADI 3DToF Safety Bubble Detector is a ROS(Robot Operating System)
+      package for the Safety Bubble Detection application. The Safety Bubble
+      Detectors are the basic building block of any AGV/AMR. The safety zone is
+      a virtual area around an AGV/AMR. The Safety Bubble Detectors are used to
+      detect the presence of any object inside this zone and prevent the
+      AGV/AMR from colliding with the object.
+
 
 .. _Analog Devices Inc: https://www.analog.com
 .. _ROS2 Humble Hawksbill: https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html
 
 .. _Docker Hub Repository: https://hub.docker.com/repository/docker/astanea/adi_ros2/general
-.. _astanea/adi_ros2: https://hub.docker.com/repository/docker/astanea/adi_ros2/general
-.. _astanea/adi_ros2-l4t: https://hub.docker.com/repository/docker/astanea/adi_ros2-l4t/general
+.. _astanea/adi_ros2: https://hub.docker.com/r/astanea/adi_ros2
+.. _astanea/adi_ros2-l4t: https://hub.docker.com/r/astanea/adi_ros2-l4t
 .. _adi_ros2 Github Repository: https://github.com/analogdevicesinc/adi_ros2
 
 .. _adi_ros2: ./index.html
@@ -231,8 +267,22 @@ Use this index to find the ROS2 packages you need provided by
 .. _imu_ros2: ../adi_imu/index.html#http://
 .. _adi_imu API: ../adi_imu/generated/index.html#http://
 
+.. _adrd2121_imu_ros2: ../adrd2121_imu/index.html#http://
+.. _adrd2121_imu API: ../adrd2121_imu/generated/index.html#http://
+
 .. _tmcl_ros2: ../adi_tmcl/index.html#http://
 .. _adi_tmcl API: ../adi_tmcl/generated/index.html#http://
 
+.. _adi_tmc_coe_ros2: ../adi_tmc_coe_core/index.html#http://
+.. _adi_tmc_coe: ../adi_tmc_coe/index.html#http://
+.. _adi_tmc_coe_core API: ../adi_tmc_coe_core/generated/index.html#http://
+.. _adi_tmc_coe_interfaces: ../adi_tmc_coe_interfaces/index.html#http://
+
 .. _adi_3dtof_adtf31xx: ../adi_3dtof_adtf31xx/index.html#http://
 .. _adi_3dtof_adtf31xx API: ../adi_3dtof_adtf31xx/generated/index.html#http://
+
+.. _adi_3dtof_floor_detector: ../adi_3dtof_floor_detector/index.html#http://
+.. _adi_3dtof_floor_detector API: ../adi_3dtof_floor_detector/generated/index.html#http://
+
+.. _adi_3dtof_safety_bubble_detector: ../adi_3dtof_safety_bubble_detector/index.html#http://
+.. _adi_3dtof_safety_bubble_detector API: ../adi_3dtof_safety_bubble_detector/generated/index.html#http://
