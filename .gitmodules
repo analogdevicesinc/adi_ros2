@@ -16,3 +16,19 @@
 [submodule "src/dependencies/libaditof"]
 	path = src/dependencies/libaditof
 	url = https://github.com/analogdevicesinc/libaditof.git
+[submodule "src/adrd2121_imu_ros2"]
+	path = src/adrd2121_imu_ros2
+	url = https://github.com/analogdevicesinc/adrd2121_imu_ros2
+	branch = humble
+[submodule "src/adi_tmc_coe_ros2"]
+	path = src/adi_tmc_coe_ros2
+	url = https://github.com/analogdevicesinc/adi_tmc_coe_ros2.git
+	branch = humble
+[submodule "src/algorithms/adi_3dtof_safety_bubble_detector"]
+	path = src/algorithms/adi_3dtof_safety_bubble_detector
+	url = https://github.com/analogdevicesinc/adi_3dtof_safety_bubble_detector.git
+	branch = humble-devel
+[submodule "src/algorithms/adi_3dtof_floor_detector"]
+	path = src/algorithms/adi_3dtof_floor_detector
+	url = https://github.com/analogdevicesinc/adi_3dtof_floor_detector.git
+	branch = humble-devel
