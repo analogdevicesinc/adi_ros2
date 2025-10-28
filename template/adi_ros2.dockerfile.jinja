@@ -36,6 +36,10 @@ RUN . /opt/ros/{{ ros_distro }}/setup.sh \
   && make build-system \
       EXECUTOR=sequential \
       OVERLAY=${OVERLAY} \
+      CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Release" \
+{%- if arch == 'arm64' %}
+      SKIP_PACKAGES="adi_3dtof_safety_bubble_detector adi_3dtof_floor_detector" \
+{%- endif %}
   && make clean-build \
   && rm -rf /var/lib/apt/lists/*
 
