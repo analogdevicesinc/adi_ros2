@@ -69,6 +69,7 @@ RUN . /opt/ros/humble/setup.sh \
   && make build-system \
       EXECUTOR=sequential \
       OVERLAY=${OVERLAY} \
+      CMAKE_ARGS="-DCMAKE_BUILD_TYPE=Release" \
   && make clean-build \
   && rm -rf /var/lib/apt/lists/*
 
@@ -90,6 +91,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends\
     ros-humble-nav2-bringup \
     ros-humble-slam-toolbox \
     ros-humble-canopen \
+    ros-humble-imu-tools \
   && rm -rf /var/lib/apt/lists/*
 
 ENV DEBIAN_FRONTEND=
