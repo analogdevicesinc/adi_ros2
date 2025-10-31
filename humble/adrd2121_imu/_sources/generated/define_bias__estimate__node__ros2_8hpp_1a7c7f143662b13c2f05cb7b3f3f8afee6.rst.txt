@@ -1,0 +1,14 @@
+.. _exhale_define_bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6:
+
+Define TRIGGER_WAIT_TIME
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TRIGGER_WAIT_TIME
+   :project: adrd2121_imu Doxygen Project

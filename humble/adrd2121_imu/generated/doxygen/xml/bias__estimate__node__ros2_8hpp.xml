@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="bias__estimate__node__ros2_8hpp" kind="file" language="C++">
+    <compoundname>bias_estimate_node_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes refid="imu__state__checker__ros2_8hpp" local="yes">imu_state_checker_ros2.hpp</includes>
+    <includes refid="adrd2121__imu__ros2__common_8hpp" local="yes">adrd2121_imu_ros2_common.hpp</includes>
+    <includes local="yes">adrd2121_imu/srv/bias_estimate_cmd.hpp</includes>
+    <includes local="yes">adrd2121_imu/srv/imu_glob_cmd.hpp</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/bias_estimate_node_ros2.hpp</label>
+        <link refid="bias__estimate__node__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>imu_state_checker_ros2.hpp</label>
+        <link refid="imu__state__checker__ros2_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>adrd2121_imu/msg/adi_imu.hpp</label>
+      </node>
+      <node id="10">
+        <label>adrd2121_imu/msg/imu_state.hpp</label>
+      </node>
+      <node id="14">
+        <label>adrd2121_imu/srv/bias_estimate_cmd.hpp</label>
+      </node>
+      <node id="15">
+        <label>adrd2121_imu/srv/imu_glob_cmd.hpp</label>
+      </node>
+      <node id="16">
+        <label>chrono</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>deque</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="8">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>sys/time.h</label>
+      </node>
+      <node id="13">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classBiasEstimateRos2" prot="public">BiasEstimateRos2</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167" prot="public" static="no">
+        <name>MAX_WAIT_SERVICE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="23" column="9" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6" prot="public" static="no">
+        <name>TRIGGER_WAIT_TIME</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="24" column="9" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void biasGracefulShutdownHandler</definition>
+        <argsstring>(int signal)</argsstring>
+        <name>biasGracefulShutdownHandler</name>
+        <param>
+          <type>int</type>
+          <declname>signal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="32" column="6" declfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shutdown</definition>
+        <argsstring>(void)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="33" column="6" declfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" declline="33" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BIAS_ESTIMATE_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIAS_ESTIMATE_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//ROS2<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>ROS2<sp/>Driver<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_state_checker_ros2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu_ros2_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/srv/bias_estimate_cmd.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/srv/imu_glob_cmd.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//CONSTANTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_WAIT_SERVICE<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIGGER_WAIT_TIME<sp/>40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//NAMESPACE<sp/>DEFINITIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_2;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//Shutdown<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>biasGracefulShutdownHandler(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>signal);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shutdown(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classBiasEstimateRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBiasEstimateRos2" kindref="compound">BiasEstimateRos2</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" kindref="member">BiasEstimateRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="44" refid="classBiasEstimateRos2_1a87bb0226995ab1f7b70dcad190cdbb73" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBiasEstimateRos2_1a87bb0226995ab1f7b70dcad190cdbb73" kindref="member">~BiasEstimateRos2</ref>();</highlight></codeline>
+<codeline lineno="49" refid="classBiasEstimateRos2_1a1cbf71cf08b76a04801be3cea4b38e1a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBiasEstimateRos2_1a1cbf71cf08b76a04801be3cea4b38e1a" kindref="member">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classBiasEstimateRos2_1a4725eb593bbe5d244c432c75ee0ab749" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBiasEstimateRos2_1a4725eb593bbe5d244c432c75ee0ab749" kindref="member">biasEstimateCB</ref>(adrd2121_imu::srv::BiasEstimateCmd::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>adrd2121_imu::srv::BiasEstimateCmd::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="classBiasEstimateRos2_1a4898f17227bce92fdb3742398fca4dd2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classBiasEstimateRos2_1a4898f17227bce92fdb3742398fca4dd2" kindref="member">checkStandStillDuration</ref>(rclcpp::Time<sp/>standstill_start,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;duration_secs);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>node_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adrd2121_imu::srv::BiasEstimateCmd&gt;::SharedPtr<sp/>bias_estimate_service_;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>rclcpp::Client&lt;adrd2121_imu::srv::ImuGlobCmd&gt;::SharedPtr<sp/>trigger_imu_glob_cmd_;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>rclcpp::CallbackGroup::SharedPtr<sp/>callback_group_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref>*<sp/>p_state_checker_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//BIAS_ESTIMATE_ROS2</highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp"/>
+  </compounddef>
+</doxygen>

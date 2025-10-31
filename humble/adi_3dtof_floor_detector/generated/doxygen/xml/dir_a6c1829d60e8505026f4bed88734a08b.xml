@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a6c1829d60e8505026f4bed88734a08b" kind="dir">
+    <compoundname>include/ros-perception</compoundname>
+    <innerdir refid="dir_28e83b7d8e494d47a00b0dd64292e7fe">include/ros-perception/image_transport_plugins</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ros-perception/"/>
+  </compounddef>
+</doxygen>

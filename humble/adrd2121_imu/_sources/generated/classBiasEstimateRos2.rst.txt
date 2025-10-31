@@ -1,0 +1,17 @@
+.. _exhale_class_classBiasEstimateRos2:
+
+Class BiasEstimateRos2
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: BiasEstimateRos2
+   :project: adrd2121_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

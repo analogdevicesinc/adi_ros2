@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct____tADIImage" kind="struct" language="C++" prot="public">
+    <compoundname>__tADIImage</compoundname>
+    <includes refid="image__proc__utils_8h" local="no">image_proc_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____tADIImage_1a67bea6e75c18c4e3d3cc382af34c5eae" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* __tADIImage::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>__tADIImage::data</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="37" column="9" bodyfile="include/image_proc_utils.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImage_1a0905aa29bbc3bd3ce72a5e249ea3f75f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImage::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>__tADIImage::width</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="38" column="7" bodyfile="include/image_proc_utils.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImage_1afc8227df6e0fa9d91e1bd8c4081095b8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImage::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>__tADIImage::height</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="39" column="7" bodyfile="include/image_proc_utils.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImage_1a802186eadeb2b7fe795d8022251a63b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImage::bpp</definition>
+        <argsstring></argsstring>
+        <name>bpp</name>
+        <qualifiedname>__tADIImage::bpp</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="40" column="7" bodyfile="include/image_proc_utils.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImage_1acfb7eba55b3959c535875dcbc4bb8c01" prot="public" static="no" mutable="no">
+        <type><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref> *</type>
+        <definition>ADIImageROI* __tADIImage::roi</definition>
+        <argsstring></argsstring>
+        <name>roi</name>
+        <qualifiedname>__tADIImage::roi</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="41" column="16" bodyfile="include/image_proc_utils.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure to hold image info. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>__tADIImage</label>
+        <link refid="struct____tADIImage"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>roi</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>__tADIImageROI</label>
+        <link refid="struct____tADIImageROI"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/image_proc_utils.h" line="35" column="1" bodyfile="include/image_proc_utils.h" bodystart="36" bodyend="42"/>
+    <listofallmembers>
+      <member refid="struct____tADIImage_1a802186eadeb2b7fe795d8022251a63b1" prot="public" virt="non-virtual"><scope>__tADIImage</scope><name>bpp</name></member>
+      <member refid="struct____tADIImage_1a67bea6e75c18c4e3d3cc382af34c5eae" prot="public" virt="non-virtual"><scope>__tADIImage</scope><name>data</name></member>
+      <member refid="struct____tADIImage_1afc8227df6e0fa9d91e1bd8c4081095b8" prot="public" virt="non-virtual"><scope>__tADIImage</scope><name>height</name></member>
+      <member refid="struct____tADIImage_1acfb7eba55b3959c535875dcbc4bb8c01" prot="public" virt="non-virtual"><scope>__tADIImage</scope><name>roi</name></member>
+      <member refid="struct____tADIImage_1a0905aa29bbc3bd3ce72a5e249ea3f75f" prot="public" virt="non-virtual"><scope>__tADIImage</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

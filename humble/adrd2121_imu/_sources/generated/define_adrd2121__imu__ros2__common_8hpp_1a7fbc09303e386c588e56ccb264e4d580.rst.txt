@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580:
+
+Define RECOVERY
+===============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RECOVERY
+   :project: adrd2121_imu Doxygen Project

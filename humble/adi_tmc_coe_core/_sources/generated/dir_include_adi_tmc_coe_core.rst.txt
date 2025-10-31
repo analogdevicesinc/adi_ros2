@@ -1,0 +1,26 @@
+.. _dir_include_adi_tmc_coe_core:
+
+
+Directory adi_tmc_coe_core
+==========================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``include/adi_tmc_coe_core``
+
+
+Files
+-----
+
+- :ref:`file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp`
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp`
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp`
+
+

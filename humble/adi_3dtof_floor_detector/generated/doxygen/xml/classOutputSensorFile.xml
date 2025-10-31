@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classOutputSensorFile" kind="class" language="C++" prot="public">
+    <compoundname>OutputSensorFile</compoundname>
+    <basecompoundref refid="classOOutputSensor" prot="public" virt="non-virtual">OOutputSensor</basecompoundref>
+    <includes refid="output__sensor__file_8h" local="no">output_sensor_file.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classOutputSensorFile_1aa4f6c06505b82ebfe1dd5a17a322b6ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OutputSensorFile::csv_enabled_</definition>
+        <argsstring></argsstring>
+        <name>csv_enabled_</name>
+        <qualifiedname>OutputSensorFile::csv_enabled_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="26" column="8" bodyfile="include/output_sensor_file.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOutputSensorFile_1aa4cd4e07a725ab1b2e39a916ca32dd23" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool OutputSensorFile::video_enabled_</definition>
+        <argsstring></argsstring>
+        <name>video_enabled_</name>
+        <qualifiedname>OutputSensorFile::video_enabled_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="27" column="8" bodyfile="include/output_sensor_file.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOutputSensorFile_1a2e74346a3d07c6ecc6aa488544224758" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream OutputSensorFile::output_csv_file_</definition>
+        <argsstring></argsstring>
+        <name>output_csv_file_</name>
+        <qualifiedname>OutputSensorFile::output_csv_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="28" column="17" bodyfile="include/output_sensor_file.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOutputSensorFile_1a47ec81ed3ed2fa1f46a14896c35099ce" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OutputSensorFile::output_csv_file_name_</definition>
+        <argsstring></argsstring>
+        <name>output_csv_file_name_</name>
+        <qualifiedname>OutputSensorFile::output_csv_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="29" column="15" bodyfile="include/output_sensor_file.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOutputSensorFile_1afa7df88c88479e41323eb000cbf1ac4f" prot="private" static="no" mutable="no">
+        <type>cv::VideoWriter *</type>
+        <definition>cv::VideoWriter* OutputSensorFile::output_video_writer_</definition>
+        <argsstring></argsstring>
+        <name>output_video_writer_</name>
+        <qualifiedname>OutputSensorFile::output_video_writer_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="30" column="20" bodyfile="include/output_sensor_file.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classOutputSensorFile_1ac42ba228361139027418123f3c76bfcd" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string OutputSensorFile::output_video_file_name_</definition>
+        <argsstring></argsstring>
+        <name>output_video_file_name_</name>
+        <qualifiedname>OutputSensorFile::output_video_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="31" column="15" bodyfile="include/output_sensor_file.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOutputSensorFile_1aa7ccae7a12679d7bb46df6e7500327be" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::open</definition>
+        <argsstring>(std::string input_file_name, int image_width, int image_height, OutputFlag output_flag)</argsstring>
+        <name>open</name>
+        <qualifiedname>OutputSensorFile::open</qualifiedname>
+        <reimplements refid="classOOutputSensor_1a7147da44b9883ddab35177147370a814">open</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>input_file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>OutputFlag</type>
+          <declname>output_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="19" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1abaced217cdb659524fd297c0bc4a2024" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::write</definition>
+        <argsstring>(int frame_number, const cv::Mat &amp;m_out_visualization_image, bool floor_detection_status, int ransac_iterations, int noise_count, float ransac_time_out)</argsstring>
+        <name>write</name>
+        <qualifiedname>OutputSensorFile::write</qualifiedname>
+        <reimplements refid="classOOutputSensor_1a66a9dd7cbe5f53c1b4ccbe4d4e266c3c">write</reimplements>
+        <param>
+          <type>int</type>
+          <declname>frame_number</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>m_out_visualization_image</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>floor_detection_status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ransac_iterations</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>noise_count</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ransac_time_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="20" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1aee6a2f09c050a443822329044fd8809f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>OutputSensorFile::close</qualifiedname>
+        <reimplements refid="classOOutputSensor_1ad9403fbf58e60445cba30c9ae2782ee9">close</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="23" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classOutputSensorFile_1a108ab8f53a798801dfd2a55ab49c7eac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::openOutputCsvFile</definition>
+        <argsstring>(const std::string &amp;input_file_name)</argsstring>
+        <name>openOutputCsvFile</name>
+        <qualifiedname>OutputSensorFile::openOutputCsvFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input_file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1a524d09b9d97e1df1435a645298db6d51" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::openOutputVideoFile</definition>
+        <argsstring>(const std::string &amp;input_file_name, int image_width, int image_height)</argsstring>
+        <name>openOutputVideoFile</name>
+        <qualifiedname>OutputSensorFile::openOutputVideoFile</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input_file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1ae9945e39a6fcbd091bcf091a93748f04" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::writeOutputCsvFile</definition>
+        <argsstring>(int frame_number, bool floor_detection_status, int ransac_iterations, int noise_count, float ransac_time_ms_out)</argsstring>
+        <name>writeOutputCsvFile</name>
+        <qualifiedname>OutputSensorFile::writeOutputCsvFile</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>frame_number</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>floor_detection_status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ransac_iterations</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>noise_count</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ransac_time_ms_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1ac2ab2e483aac2118844ed7f6d7f8836e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::writeOutputVideoFile</definition>
+        <argsstring>(const cv::Mat &amp;image)</argsstring>
+        <name>writeOutputVideoFile</name>
+        <qualifiedname>OutputSensorFile::writeOutputVideoFile</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1aaa7f0121521658e85459954d0769772e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::closeOutputCsvFile</definition>
+        <argsstring>()</argsstring>
+        <name>closeOutputCsvFile</name>
+        <qualifiedname>OutputSensorFile::closeOutputCsvFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="39" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classOutputSensorFile_1a5e881d94edc3b96185778065427da6c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void OutputSensorFile::closeOutputVideoFile</definition>
+        <argsstring>()</argsstring>
+        <name>closeOutputVideoFile</name>
+        <qualifiedname>OutputSensorFile::closeOutputVideoFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor_file.h" line="40" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class is for output sensor file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>OOutputSensor</label>
+        <link refid="classOOutputSensor"/>
+      </node>
+      <node id="1">
+        <label>OutputSensorFile</label>
+        <link refid="classOutputSensorFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>OOutputSensor</label>
+        <link refid="classOOutputSensor"/>
+      </node>
+      <node id="1">
+        <label>OutputSensorFile</label>
+        <link refid="classOutputSensorFile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/output_sensor_file.h" line="16" column="1" bodyfile="include/output_sensor_file.h" bodystart="17" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classOutputSensorFile_1aee6a2f09c050a443822329044fd8809f" prot="public" virt="virtual"><scope>OutputSensorFile</scope><name>close</name></member>
+      <member refid="classOutputSensorFile_1aaa7f0121521658e85459954d0769772e" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>closeOutputCsvFile</name></member>
+      <member refid="classOutputSensorFile_1a5e881d94edc3b96185778065427da6c1" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>closeOutputVideoFile</name></member>
+      <member refid="classOutputSensorFile_1aa4f6c06505b82ebfe1dd5a17a322b6ab" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>csv_enabled_</name></member>
+      <member refid="classOutputSensorFile_1aa7ccae7a12679d7bb46df6e7500327be" prot="public" virt="virtual"><scope>OutputSensorFile</scope><name>open</name></member>
+      <member refid="classOutputSensorFile_1a108ab8f53a798801dfd2a55ab49c7eac" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>openOutputCsvFile</name></member>
+      <member refid="classOutputSensorFile_1a524d09b9d97e1df1435a645298db6d51" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>openOutputVideoFile</name></member>
+      <member refid="classOutputSensorFile_1a2e74346a3d07c6ecc6aa488544224758" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>output_csv_file_</name></member>
+      <member refid="classOutputSensorFile_1a47ec81ed3ed2fa1f46a14896c35099ce" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>output_csv_file_name_</name></member>
+      <member refid="classOutputSensorFile_1ac42ba228361139027418123f3c76bfcd" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>output_video_file_name_</name></member>
+      <member refid="classOutputSensorFile_1afa7df88c88479e41323eb000cbf1ac4f" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>output_video_writer_</name></member>
+      <member refid="classOutputSensorFile_1aa4cd4e07a725ab1b2e39a916ca32dd23" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>video_enabled_</name></member>
+      <member refid="classOutputSensorFile_1abaced217cdb659524fd297c0bc4a2024" prot="public" virt="virtual"><scope>OutputSensorFile</scope><name>write</name></member>
+      <member refid="classOutputSensorFile_1ae9945e39a6fcbd091bcf091a93748f04" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>writeOutputCsvFile</name></member>
+      <member refid="classOutputSensorFile_1ac2ab2e483aac2118844ed7f6d7f8836e" prot="private" virt="non-virtual"><scope>OutputSensorFile</scope><name>writeOutputVideoFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

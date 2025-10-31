@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3:
+
+Enum mode_of_operation_t
+========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: mode_of_operation_t
+   :project: adi_tmc_coe_core Doxygen Project

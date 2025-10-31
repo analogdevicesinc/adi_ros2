@@ -1,0 +1,14 @@
+.. _exhale_function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5:
+
+Function crc32_block
+====================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: crc32_block(uint32_t, const uint16_t *, int)
+   :project: adrd2121_imu Doxygen Project

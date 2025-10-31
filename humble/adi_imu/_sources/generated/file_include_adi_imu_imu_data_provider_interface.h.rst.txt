@@ -32,6 +32,8 @@ Includes
 
 - ``sensor_msgs/msg/imu.hpp``
 
+- ``string``
+
 
 
 Included By

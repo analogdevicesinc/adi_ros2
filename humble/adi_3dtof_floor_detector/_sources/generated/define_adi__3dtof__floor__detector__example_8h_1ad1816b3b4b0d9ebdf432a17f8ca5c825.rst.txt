@@ -1,0 +1,14 @@
+.. _exhale_define_adi__3dtof__floor__detector__example_8h_1ad1816b3b4b0d9ebdf432a17f8ca5c825:
+
+Define MAX_QUEUE_SIZE_FOR_TIME_SYNC
+===================================
+
+- Defined in :ref:`file_include_adi_3dtof_floor_detector_example.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_QUEUE_SIZE_FOR_TIME_SYNC
+   :project: adi_3dtof_floor_detector Doxygen Project

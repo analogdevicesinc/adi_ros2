@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="input__sensor__adtf31xx_8h" kind="file" language="C++">
+    <compoundname>input_sensor_adtf31xx.h</compoundname>
+    <includes local="no">aditof/camera.h</includes>
+    <includes local="no">aditof/frame.h</includes>
+    <includes local="no">aditof/system.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="input__sensor_8h" local="yes">input_sensor.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>input_sensor.h</label>
+        <link refid="input__sensor_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/input_sensor_adtf31xx.h</label>
+        <link refid="input__sensor__adtf31xx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>aditof/camera.h</label>
+      </node>
+      <node id="3">
+        <label>aditof/frame.h</label>
+      </node>
+      <node id="4">
+        <label>aditof/system.h</label>
+      </node>
+      <node id="9">
+        <label>array</label>
+      </node>
+      <node id="7">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classInputSensorADTF31XX" prot="public">InputSensorADTF31XX</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INPUT_SENSOR_ADTF31XX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_SENSOR_ADTF31XX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;aditof/camera.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;aditof/frame.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;aditof/system.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_sensor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInputSensorADTF31XX" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">InputSensorADTF31XX</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openSensor(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/></highlight><highlight class="comment">/*sensor_name*/</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_height,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>config_file_name,<sp/>std::string<sp/>input_sensor_ip);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>configureSensor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_mode);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getIntrinsics(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getExtrinsics(<ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNextFrame(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>depth_frame,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>ab_frame);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getFrameTimestamp(rclcpp::Time<sp/>*<sp/>timestamp);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeSensor();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setABinvalidationThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threshold);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConfidenceThreshold(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threshold);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;aditof::Camera&gt;<sp/>camera_;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>camera_intrinsics_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/input_sensor_adtf31xx.h"/>
+  </compounddef>
+</doxygen>

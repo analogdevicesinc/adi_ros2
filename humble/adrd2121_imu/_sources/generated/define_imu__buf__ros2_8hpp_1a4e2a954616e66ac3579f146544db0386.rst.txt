@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386:
+
+Define BURST_COUNT_MIN
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BURST_COUNT_MIN
+   :project: adrd2121_imu Doxygen Project

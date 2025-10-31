@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b:
+
+Variable GRAVITY_MAX
+====================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: GRAVITY_MAX
+   :project: adrd2121_imu Doxygen Project

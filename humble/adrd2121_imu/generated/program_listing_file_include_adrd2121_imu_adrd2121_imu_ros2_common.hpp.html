@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File adrd2121_imu_ros2_common.hpp &mdash; adrd2121_imu 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="File adrd2121_imu_ros2_node.hpp" href="file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.html" />
+    <link rel="prev" title="File adrd2121_imu_ros2_common.hpp" href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adrd2121_imu
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adrd2121_imu">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classAdiImuBufRos2.html">Class AdiImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classAdiImuRos2.html">Class AdiImuRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classBiasEstimateRos2.html">Class BiasEstimateRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImuBufRos2.html">Class ImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImuStateCheckerRos2.html">Class ImuStateCheckerRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c.html">Enum buf_dio_pin_e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613.html">Enum e_imu_state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091.html">Enum msg_type_e</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f.html">Function biasGracefulShutdownHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4.html">Function BUFDIOtoString</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5.html">Function crc32_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd.html">Function current_timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__node_8hpp_1a9f65322fa10662aeacdf0c3dc14a7d11.html">Function gracefulShutdownHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b.html">Function print_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__node_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8.html">Variable crc32_tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49.html">Variable GRAVITY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b.html">Variable GRAVITY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf.html">Variable IMU_ACCL_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57.html">Variable IMU_ACCL_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33.html">Variable IMU_GYRO_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15.html">Variable IMU_GYRO_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626.html">Variable TIME_BASE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1.html">Variable TIME_BASE_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8.html">Define ADIS16470</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1.html">Define ADIS16495</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a27a50acf70ee47d1923c803b1d0e5ade.html">Define ADIS16500</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970.html">Define API_CALL_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba.html">Define BIT_HIGH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152.html">Define BIT_LOW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737.html">Define BURST_COUNT_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386.html">Define BURST_COUNT_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57.html">Define DATA_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963.html">Define DATA_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c.html">Define DEC_RATE_CONST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726.html">Define DEFAULT_BAUD_RATE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2.html">Define MAX_CLEAR_RETRY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde.html">Define MAX_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167.html">Define MAX_WAIT_SERVICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20.html">Define MIN_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8.html">Define MODE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a8df6275beb940e0f6fb78021240a6582.html">Define PROD_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4.html">Define RADIAN_CONSTANT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580.html">Define RECOVERY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299.html">Define RESET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9.html">Define STREAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f.html">Define THROW_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374.html">Define TIME_BASE_CTRL_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6.html">Define TRIGGER_WAIT_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f.html">Define TWICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3.html">Define WAIT_LIMIT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_imu__state__checker__ros2_8hpp_1ad94c26128974472337480354af787839.html">Typedef e_imu_state</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_adrd2121_imu.html">Directory adrd2121_imu</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#files">Files</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adi_imu_buf_ros2.hpp.html">File adi_imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adi_imu_ros2.hpp.html">File adi_imu_ros2.hpp</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html">File adrd2121_imu_ros2_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.html">File adrd2121_imu_ros2_node.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_bias_estimate_node_ros2.hpp.html">File bias_estimate_node_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_imu_buf_ros2.hpp.html">File imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_imu_state_checker_ros2.hpp.html">File imu_state_checker_ros2.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../msg/AdiImu.html">AdiImu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../msg/ImuState.html">ImuState</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../srv/BiasEstimateCmd.html">BiasEstimateCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/BufStatus.html">BufStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/ImuGlobCmd.html">ImuGlobCmd</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#adrd2121-imu">adrd2121_imu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#background">Background</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-architecture">Software Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#software-setup">Software Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#clone-this-repository">Clone this repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#hardware-setup">Hardware Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#access-to-device">Access to device</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#launch">Launch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#default-launch">Default launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#change-log-level-for-nodes">Change log level for nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#delayed-execution-of-bias-estimate-node">Delayed execution of bias_estimate_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#adrd2121-imu-node">adrd2121_imu_node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#bias-estimate-node-ros2">bias_estimate_node_ros2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adrd2121_imu</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+          <li class="breadcrumb-item"><a href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html">File adrd2121_imu_ros2_common.hpp</a></li>
+      <li class="breadcrumb-item active">Program Listing for File adrd2121_imu_ros2_common.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/program_listing_file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-adrd2121-imu-ros2-common-hpp">
+<span id="program-listing-file-include-adrd2121-imu-adrd2121-imu-ros2-common-hpp"></span><h1>Program Listing for File adrd2121_imu_ros2_common.hpp<a class="headerlink" href="#program-listing-for-file-adrd2121-imu-ros2-common-hpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html#file-include-adrd2121-imu-adrd2121-imu-ros2-common-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/adrd2121_imu/adrd2121_imu_ros2_common.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm"> * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.</span>
+<span class="cm"> * This software is proprietary to Analog Devices, Inc. and its licensors.</span>
+<span class="cm">*/</span>
+
+<span class="cp">#ifndef ADRD2121_IMU_ROS2_COMMON_H</span>
+<span class="cp">#define ADRD2121_IMU_ROS2_COMMON_H</span>
+
+<span class="c1">//CPP Headers</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;sys/time.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+
+<span class="c1">//PARAMETER CONSTANTS</span>
+<span class="cp">#define TWICE 2</span>
+<span class="cp">#define ADIS16470 16470</span>
+<span class="cp">#define ADIS16495 16495</span>
+<span class="cp">#define ADIS16500 16500</span>
+<span class="cp">#define BIT_HIGH 1</span>
+<span class="cp">#define BIT_LOW 0</span>
+<span class="cp">#define RESET 0</span>
+<span class="cp">#define STREAM 1</span>
+<span class="cp">#define RECOVERY 2</span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">crc32_tab</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="mh">0x00000000</span><span class="p">,</span><span class="w"> </span><span class="mh">0x77073096</span><span class="p">,</span><span class="w"> </span><span class="mh">0xee0e612c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x990951ba</span><span class="p">,</span><span class="w"> </span><span class="mh">0x076dc419</span><span class="p">,</span><span class="w"> </span><span class="mh">0x706af48f</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xe963a535</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9e6495a3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0edb8832</span><span class="p">,</span><span class="w"> </span><span class="mh">0x79dcb8a4</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe0d5e91e</span><span class="p">,</span><span class="w"> </span><span class="mh">0x97d2d988</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x09b64c2b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7eb17cbd</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe7b82d07</span><span class="p">,</span><span class="w"> </span><span class="mh">0x90bf1d91</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1db71064</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6ab020f2</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xf3b97148</span><span class="p">,</span><span class="w"> </span><span class="mh">0x84be41de</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1adad47d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6ddde4eb</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf4d4b551</span><span class="p">,</span><span class="w"> </span><span class="mh">0x83d385c7</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x136c9856</span><span class="p">,</span><span class="w"> </span><span class="mh">0x646ba8c0</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfd62f97a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8a65c9ec</span><span class="p">,</span><span class="w"> </span><span class="mh">0x14015c4f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x63066cd9</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xfa0f3d63</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8d080df5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3b6e20c8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4c69105e</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd56041e4</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa2677172</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x3c03e4d1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4b04d447</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd20d85fd</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa50ab56b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x35b5a8fa</span><span class="p">,</span><span class="w"> </span><span class="mh">0x42b2986c</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xdbbbc9d6</span><span class="p">,</span><span class="w"> </span><span class="mh">0xacbcf940</span><span class="p">,</span><span class="w"> </span><span class="mh">0x32d86ce3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x45df5c75</span><span class="p">,</span><span class="w"> </span><span class="mh">0xdcd60dcf</span><span class="p">,</span><span class="w"> </span><span class="mh">0xabd13d59</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x26d930ac</span><span class="p">,</span><span class="w"> </span><span class="mh">0x51de003a</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc8d75180</span><span class="p">,</span><span class="w"> </span><span class="mh">0xbfd06116</span><span class="p">,</span><span class="w"> </span><span class="mh">0x21b4f4b5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x56b3c423</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xcfba9599</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb8bda50f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2802b89e</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5f058808</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc60cd9b2</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb10be924</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x2f6f7c87</span><span class="p">,</span><span class="w"> </span><span class="mh">0x58684c11</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc1611dab</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb6662d3d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x76dc4190</span><span class="p">,</span><span class="w"> </span><span class="mh">0x01db7106</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x98d220bc</span><span class="p">,</span><span class="w"> </span><span class="mh">0xefd5102a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x71b18589</span><span class="p">,</span><span class="w"> </span><span class="mh">0x06b6b51f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9fbfe4a5</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe8b8d433</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x7807c9a2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0f00f934</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9609a88e</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe10e9818</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7f6a0dbb</span><span class="p">,</span><span class="w"> </span><span class="mh">0x086d3d2d</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x91646c97</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe6635c01</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6b6b51f4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1c6c6162</span><span class="p">,</span><span class="w"> </span><span class="mh">0x856530d8</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf262004e</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x6c0695ed</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1b01a57b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8208f4c1</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf50fc457</span><span class="p">,</span><span class="w"> </span><span class="mh">0x65b0d9c6</span><span class="p">,</span><span class="w"> </span><span class="mh">0x12b7e950</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x8bbeb8ea</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfcb9887c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x62dd1ddf</span><span class="p">,</span><span class="w"> </span><span class="mh">0x15da2d49</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8cd37cf3</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfbd44c65</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x4db26158</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3ab551ce</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa3bc0074</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd4bb30e2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4adfa541</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3dd895d7</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xa4d1c46d</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd3d6f4fb</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4369e96a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x346ed9fc</span><span class="p">,</span><span class="w"> </span><span class="mh">0xad678846</span><span class="p">,</span><span class="w"> </span><span class="mh">0xda60b8d0</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x44042d73</span><span class="p">,</span><span class="w"> </span><span class="mh">0x33031de5</span><span class="p">,</span><span class="w"> </span><span class="mh">0xaa0a4c5f</span><span class="p">,</span><span class="w"> </span><span class="mh">0xdd0d7cc9</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5005713c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x270241aa</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xbe0b1010</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc90c2086</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5768b525</span><span class="p">,</span><span class="w"> </span><span class="mh">0x206f85b3</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb966d409</span><span class="p">,</span><span class="w"> </span><span class="mh">0xce61e49f</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x5edef90e</span><span class="p">,</span><span class="w"> </span><span class="mh">0x29d9c998</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb0d09822</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc7d7a8b4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x59b33d17</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2eb40d81</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xb7bd5c3b</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc0ba6cad</span><span class="p">,</span><span class="w"> </span><span class="mh">0xedb88320</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9abfb3b6</span><span class="p">,</span><span class="w"> </span><span class="mh">0x03b6e20c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x74b1d29a</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xead54739</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9dd277af</span><span class="p">,</span><span class="w"> </span><span class="mh">0x04db2615</span><span class="p">,</span><span class="w"> </span><span class="mh">0x73dc1683</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe3630b12</span><span class="p">,</span><span class="w"> </span><span class="mh">0x94643b84</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x0d6d6a3e</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7a6a5aa8</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe40ecf0b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9309ff9d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0a00ae27</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7d079eb1</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xf00f9344</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8708a3d2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1e01f268</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6906c2fe</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf762575d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x806567cb</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x196c3671</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6e6b06e7</span><span class="p">,</span><span class="w"> </span><span class="mh">0xfed41b76</span><span class="p">,</span><span class="w"> </span><span class="mh">0x89d32be0</span><span class="p">,</span><span class="w"> </span><span class="mh">0x10da7a5a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x67dd4acc</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xf9b9df6f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8ebeeff9</span><span class="p">,</span><span class="w"> </span><span class="mh">0x17b7be43</span><span class="p">,</span><span class="w"> </span><span class="mh">0x60b08ed5</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd6d6a3e8</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa1d1937e</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x38d8c2c4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4fdff252</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd1bb67f1</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa6bc5767</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3fb506dd</span><span class="p">,</span><span class="w"> </span><span class="mh">0x48b2364b</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xd80d2bda</span><span class="p">,</span><span class="w"> </span><span class="mh">0xaf0a1b4c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x36034af6</span><span class="p">,</span><span class="w"> </span><span class="mh">0x41047a60</span><span class="p">,</span><span class="w"> </span><span class="mh">0xdf60efc3</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa867df55</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x316e8eef</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4669be79</span><span class="p">,</span><span class="w"> </span><span class="mh">0xcb61b38c</span><span class="p">,</span><span class="w"> </span><span class="mh">0xbc66831a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x256fd2a0</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5268e236</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xcc0c7795</span><span class="p">,</span><span class="w"> </span><span class="mh">0xbb0b4703</span><span class="p">,</span><span class="w"> </span><span class="mh">0x220216b9</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5505262f</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc5ba3bbe</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb2bd0b28</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x2bb45a92</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5cb36a04</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc2d7ffa7</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb5d0cf31</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2cd99e8b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5bdeae1d</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x9b64c2b0</span><span class="p">,</span><span class="w"> </span><span class="mh">0xec63f226</span><span class="p">,</span><span class="w"> </span><span class="mh">0x756aa39c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x026d930a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x9c0906a9</span><span class="p">,</span><span class="w"> </span><span class="mh">0xeb0e363f</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x72076785</span><span class="p">,</span><span class="w"> </span><span class="mh">0x05005713</span><span class="p">,</span><span class="w"> </span><span class="mh">0x95bf4a82</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe2b87a14</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7bb12bae</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0cb61b38</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x92d28e9b</span><span class="p">,</span><span class="w"> </span><span class="mh">0xe5d5be0d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x7cdcefb7</span><span class="p">,</span><span class="w"> </span><span class="mh">0x0bdbdf21</span><span class="p">,</span><span class="w"> </span><span class="mh">0x86d3d2d4</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf1d4e242</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x68ddb3f8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x1fda836e</span><span class="p">,</span><span class="w"> </span><span class="mh">0x81be16cd</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf6b9265b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x6fb077e1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x18b74777</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x88085ae6</span><span class="p">,</span><span class="w"> </span><span class="mh">0xff0f6a70</span><span class="p">,</span><span class="w"> </span><span class="mh">0x66063bca</span><span class="p">,</span><span class="w"> </span><span class="mh">0x11010b5c</span><span class="p">,</span><span class="w"> </span><span class="mh">0x8f659eff</span><span class="p">,</span><span class="w"> </span><span class="mh">0xf862ae69</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x616bffd3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x166ccf45</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa00ae278</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd70dd2ee</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4e048354</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3903b3c2</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xa7672661</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd06016f7</span><span class="p">,</span><span class="w"> </span><span class="mh">0x4969474d</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3e6e77db</span><span class="p">,</span><span class="w"> </span><span class="mh">0xaed16a4a</span><span class="p">,</span><span class="w"> </span><span class="mh">0xd9d65adc</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x40df0b66</span><span class="p">,</span><span class="w"> </span><span class="mh">0x37d83bf0</span><span class="p">,</span><span class="w"> </span><span class="mh">0xa9bcae53</span><span class="p">,</span><span class="w"> </span><span class="mh">0xdebb9ec5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x47b2cf7f</span><span class="p">,</span><span class="w"> </span><span class="mh">0x30b5ffe9</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xbdbdf21c</span><span class="p">,</span><span class="w"> </span><span class="mh">0xcabac28a</span><span class="p">,</span><span class="w"> </span><span class="mh">0x53b39330</span><span class="p">,</span><span class="w"> </span><span class="mh">0x24b4a3a6</span><span class="p">,</span><span class="w"> </span><span class="mh">0xbad03605</span><span class="p">,</span><span class="w"> </span><span class="mh">0xcdd70693</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0x54de5729</span><span class="p">,</span><span class="w"> </span><span class="mh">0x23d967bf</span><span class="p">,</span><span class="w"> </span><span class="mh">0xb3667a2e</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc4614ab8</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5d681b02</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2a6f2b94</span><span class="p">,</span>
+<span class="w">    </span><span class="mh">0xb40bbe37</span><span class="p">,</span><span class="w"> </span><span class="mh">0xc30c8ea1</span><span class="p">,</span><span class="w"> </span><span class="mh">0x5a05df1b</span><span class="p">,</span><span class="w"> </span><span class="mh">0x2d02ef8d</span>
+<span class="p">};</span>
+
+<span class="k">enum</span><span class="w"> </span><span class="nc">msg_type_e</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">SENSOR_MSGS_IMU</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="n">ADI_IMU_MSG</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">};</span>
+
+<span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">current_timestamp</span><span class="p">();</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">print_time</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">debug_msg</span><span class="p">);</span>
+
+<span class="kt">uint32_t</span><span class="w"> </span><span class="nf">crc32_block</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">crc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<span class="cp">#endif </span><span class="c1">//ADRD2121_IMU_ROS2_COMMON_H</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html" class="btn btn-neutral float-left" title="File adrd2121_imu_ros2_common.hpp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.html" class="btn btn-neutral float-right" title="File adrd2121_imu_ros2_node.hpp" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adrd2121_imu&gt; Contributors. License: BSD-3.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

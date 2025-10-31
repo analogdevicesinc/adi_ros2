@@ -1,0 +1,1120 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>README &mdash; adrd2121_imu 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            adrd2121_imu
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adrd2121_imu">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/namespace_std.html">Namespace std</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/classAdiImuBufRos2.html">Class AdiImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classAdiImuRos2.html">Class AdiImuRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classBiasEstimateRos2.html">Class BiasEstimateRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classImuBufRos2.html">Class ImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classImuStateCheckerRos2.html">Class ImuStateCheckerRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c.html">Enum buf_dio_pin_e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613.html">Enum e_imu_state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091.html">Enum msg_type_e</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f.html">Function biasGracefulShutdownHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4.html">Function BUFDIOtoString</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5.html">Function crc32_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd.html">Function current_timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_adrd2121__imu__ros2__node_8hpp_1a9f65322fa10662aeacdf0c3dc14a7d11.html">Function gracefulShutdownHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b.html">Function print_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_adrd2121__imu__ros2__node_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/function_bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8.html">Variable crc32_tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49.html">Variable GRAVITY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b.html">Variable GRAVITY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf.html">Variable IMU_ACCL_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57.html">Variable IMU_ACCL_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33.html">Variable IMU_GYRO_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15.html">Variable IMU_GYRO_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626.html">Variable TIME_BASE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1.html">Variable TIME_BASE_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8.html">Define ADIS16470</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1.html">Define ADIS16495</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1a27a50acf70ee47d1923c803b1d0e5ade.html">Define ADIS16500</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970.html">Define API_CALL_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba.html">Define BIT_HIGH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152.html">Define BIT_LOW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737.html">Define BURST_COUNT_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386.html">Define BURST_COUNT_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57.html">Define DATA_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963.html">Define DATA_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c.html">Define DEC_RATE_CONST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726.html">Define DEFAULT_BAUD_RATE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2.html">Define MAX_CLEAR_RETRY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde.html">Define MAX_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167.html">Define MAX_WAIT_SERVICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20.html">Define MIN_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8.html">Define MODE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adi__imu__ros2_8hpp_1a8df6275beb940e0f6fb78021240a6582.html">Define PROD_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4.html">Define RADIAN_CONSTANT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580.html">Define RECOVERY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299.html">Define RESET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9.html">Define STREAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f.html">Define THROW_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374.html">Define TIME_BASE_CTRL_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6.html">Define TRIGGER_WAIT_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f.html">Define TWICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3.html">Define WAIT_LIMIT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/typedef_imu__state__checker__ros2_8hpp_1ad94c26128974472337480354af787839.html">Typedef e_imu_state</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_adrd2121_imu.html">Directory adrd2121_imu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_adi_imu_buf_ros2.hpp.html">File adi_imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_adi_imu_ros2.hpp.html">File adi_imu_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html">File adrd2121_imu_ros2_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.html">File adrd2121_imu_ros2_node.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_bias_estimate_node_ros2.hpp.html">File bias_estimate_node_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_imu_buf_ros2.hpp.html">File imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adrd2121_imu_imu_state_checker_ros2.hpp.html">File imu_state_checker_ros2.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="__message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="msg/AdiImu.html">AdiImu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="msg/ImuState.html">ImuState</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="__service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="srv/BiasEstimateCmd.html">BiasEstimateCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/BufStatus.html">BufStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/ImuGlobCmd.html">ImuGlobCmd</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#adrd2121-imu">adrd2121_imu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#background">Background</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#software-architecture">Software Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#software-setup">Software Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#clone-this-repository">Clone this repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#hardware-setup">Hardware Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#access-to-device">Access to device</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#launch">Launch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#default-launch">Default launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#change-log-level-for-nodes">Change log level for nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#delayed-execution-of-bias-estimate-node">Delayed execution of bias_estimate_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#adrd2121-imu-node">adrd2121_imu_node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#bias-estimate-node-ros2">bias_estimate_node_ros2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">adrd2121_imu</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">README</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/__readme_include.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="readme">
+<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<section id="adrd2121-imu">
+<h2>adrd2121_imu<a class="headerlink" href="#adrd2121-imu" title="Link to this heading"></a></h2>
+</section>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>This ROS2 package is an implementation of the prior ROS1 driver, now adapted for ROS2.</p></li>
+<li><p>The ADRD2121 is a hardware and software solution designed to buffer IMU data. (For more info, see: <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/eval-adrd2121-ebz.html">EVAL-ADRD2121-EBZ Evaluation board</a>)</p></li>
+<li><p>A C-based library is used as a dependency: <a class="reference external" href="https://github.com/analogdevicesinc/adi-imu-driver/tree/compact_imu">adi_imu_driver Github</a></p></li>
+<li><p>Supported IMUs are: <a class="reference external" href="https://www.analog.com/en/products/adis16470.html">ADIS16470</a>, <a class="reference external" href="https://www.analog.com/en/products/adis16500.html">ADIS16500</a></p></li>
+<li><p>Enable user to recover board either automatically or manually through functions and services.</p></li>
+<li><p>Supported communication interface for <strong>Host &lt;-&gt; ADRD2121</strong> are: USB.</p></li>
+<li><p>Supported platform/s are: x86</p></li>
+<li><p>Supported ROS2 Distro: Humble</p></li>
+</ul>
+<section id="software-architecture">
+<h3>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading"></a></h3>
+<p><img alt="Software Architecture Diagram" src="docs/images/adrd2121_imu_ros2_Software_Architecture_Diagram.jpg" /></p>
+</section>
+</section>
+<section id="software-setup">
+<h2>Software Setup<a class="headerlink" href="#software-setup" title="Link to this heading"></a></h2>
+<section id="clone-this-repository">
+<h3>Clone this repository<a class="headerlink" href="#clone-this-repository" title="Link to this heading"></a></h3>
+<p>Clone this package and its submodules into your workspace:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+git<span class="w"> </span>clone<span class="w"> </span>&lt;copied<span class="w"> </span>SSH<span class="w"> </span>or<span class="w"> </span>HTTPS<span class="w"> </span>link<span class="w"> </span>here&gt;<span class="w"> </span>adrd2121_imu
+</pre></div>
+</div>
+</section>
+<section id="install-dependencies">
+<h3>Install Dependencies<a class="headerlink" href="#install-dependencies" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>List of dependencies:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/analogdevicesinc/adi-imu-driver/tree/compact_imu">adi_imu_driver Github</a></p></li>
+</ul>
+</div></blockquote>
+<p><strong>IMPORTANT</strong>: Dependencies will automatically be cloned and installed during <em>build</em>. <strong>Proceed to <a class="reference internal" href="#build"><span class="xref myst">Build</span></a></strong>.</p>
+</section>
+<section id="build">
+<h3>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h3>
+<p>If not familiar with building a ROS2 package, you may visit <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html#build-a-package">here.</a></p>
+<p>Here is how to activate TIMING_DEBUG when building the package:</p>
+<p><em>Build at ~/ros2_ws</em></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">####### [TERMINAL 1] #######</span>
+<span class="c1"># Make sure that ROS2 environment variables are properly sourced</span>
+<span class="c1">## $ source/opt/ros/&lt;ROS2 version&gt;/setup.bash</span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
+
+<span class="c1"># Resolve any dependencies</span>
+<span class="nv">$cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>--from-path<span class="w"> </span>src<span class="w"> </span>--rosdistro<span class="w"> </span>humble<span class="w"> </span>-y
+
+<span class="c1"># Build</span>
+$<span class="w"> </span>colcon<span class="w"> </span>build
+
+<span class="c1">## To clean first before building, you may run the following instead:</span>
+<span class="c1">## $ colcon build --cmake-clean-first</span>
+
+<span class="c1">## To enable the Timing Debug mode, you may run this:</span>
+<span class="c1">## $ colcon build --cmake-args -DADRD2121_IMU_TIMING_DEBUG=ON</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><em><strong>Note</strong></em>: Building will automatically add a <em>dependencies</em> subdirectory and should be ignored by git.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong><em>Note</em></strong>: Sourcing should also be done in another terminal as launching should not be done in the same terminal where the package has been built, as discussed here in <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>IMPORTANT</strong></p>
+<ul class="simple">
+<li><p>When changing workspaces (commit_ws &lt;-&gt; test_ws), also make sure that a new terminal is used, as there will be times that the package from one workspace will be the one to be built even after changing workspaces.</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="hardware-setup">
+<h2>Hardware Setup<a class="headerlink" href="#hardware-setup" title="Link to this heading"></a></h2>
+<section id="access-to-device">
+<h3>Access to device<a class="headerlink" href="#access-to-device" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>When the device is connected to the Host PC, it will be listed like <code class="docutils literal notranslate"><span class="pre">/dev/ttyACM0</span></code> where number can change depending on how many ACM devices are connected.</p></li>
+<li><p>To access the device, listed below are two ways to so.
+<strong>IMPORTANT</strong>: This is required before <a class="reference internal" href="#launch"><span class="xref myst">Launch</span></a>, else launch will fail.</p></li>
+</ul>
+<section id="temporary-access">
+<h4>Temporary Access<a class="headerlink" href="#temporary-access" title="Link to this heading"></a></h4>
+<p>This method would be required every time the device was connected to the Host PC.</p>
+<p>Step 1. Before connecting run the following command in the terminal <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">-w</span></code></p>
+<p>Sample Result:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="w"> </span><span class="m">1343</span>.478484<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>new<span class="w"> </span>full-speed<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">9</span><span class="w"> </span>using<span class="w"> </span>xhci_hcd
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628368<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>New<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>found,<span class="w"> </span><span class="nv">idVendor</span><span class="o">=</span><span class="m">0483</span>,<span class="w"> </span><span class="nv">idProduct</span><span class="o">=</span><span class="m">5740</span>,<span class="w"> </span><span class="nv">bcdDevice</span><span class="o">=</span><span class="w"> </span><span class="m">2</span>.00
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628372<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>New<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>strings:<span class="w"> </span><span class="nv">Mfr</span><span class="o">=</span><span class="m">1</span>,<span class="w"> </span><span class="nv">Product</span><span class="o">=</span><span class="m">2</span>,<span class="w"> </span><span class="nv">SerialNumber</span><span class="o">=</span><span class="m">3</span>
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628374<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>Product:<span class="w"> </span>STM32<span class="w"> </span>Virtual<span class="w"> </span>ComPort
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628376<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>Manufacturer:<span class="w"> </span>STMicroelectronics
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628377<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>SerialNumber:<span class="w"> </span>3984356B3037
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.650144<span class="o">]</span><span class="w"> </span>cdc_acm<span class="w"> </span><span class="m">1</span>-5:1.0:<span class="w"> </span>ttyACM0:<span class="w"> </span>USB<span class="w"> </span>ACM<span class="w"> </span>device
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.655026<span class="o">]</span><span class="w"> </span>usbcore:<span class="w"> </span>registered<span class="w"> </span>new<span class="w"> </span>interface<span class="w"> </span>driver<span class="w"> </span>cdc_acm
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.655028<span class="o">]</span><span class="w"> </span>cdc_acm:<span class="w"> </span>USB<span class="w"> </span>Abstract<span class="w"> </span>Control<span class="w"> </span>Model<span class="w"> </span>driver<span class="w"> </span><span class="k">for</span><span class="w"> </span>USB<span class="w"> </span>modems<span class="w"> </span>and<span class="w"> </span>ISDN<span class="w"> </span>adapters
+</pre></div>
+</div>
+<p>In this result, the device was listed as <code class="docutils literal notranslate"><span class="pre">/dev/ttyACM0</span></code>.</p>
+<p>Step 2. Change the permission of the device such that the owner, group, and others have rw access to it.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>/dev/ttyACM0
+</pre></div>
+</div>
+<p>Step 3. Check if successful:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/dev/ttyACM0
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>dialout<span class="w"> </span><span class="m">166</span>,<span class="w"> </span><span class="m">0</span><span class="w"> </span>Feb<span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">11</span>:37<span class="w"> </span>/dev/ttyACM0
+</pre></div>
+</div>
+</section>
+<section id="permanent-access-via-custom-udev-rules">
+<h4>Permanent Access (via custom udev rules)<a class="headerlink" href="#permanent-access-via-custom-udev-rules" title="Link to this heading"></a></h4>
+<p>This method would only be required on initial setup, but may vary on each device (e.g. if you have more than 1 ADRD2121 + IMU device, you need to create a udev rule for each one).</p>
+<p>Step 1. Before connecting run the following command in the terminal <code class="docutils literal notranslate"><span class="pre">dmesg</span> <span class="pre">-w</span></code></p>
+<p>Sample Result:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="w"> </span><span class="m">1343</span>.478484<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>new<span class="w"> </span>full-speed<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>number<span class="w"> </span><span class="m">9</span><span class="w"> </span>using<span class="w"> </span>xhci_hcd
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628368<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>New<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>found,<span class="w"> </span><span class="nv">idVendor</span><span class="o">=</span><span class="m">0483</span>,<span class="w"> </span><span class="nv">idProduct</span><span class="o">=</span><span class="m">5740</span>,<span class="w"> </span><span class="nv">bcdDevice</span><span class="o">=</span><span class="w"> </span><span class="m">2</span>.00
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628372<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>New<span class="w"> </span>USB<span class="w"> </span>device<span class="w"> </span>strings:<span class="w"> </span><span class="nv">Mfr</span><span class="o">=</span><span class="m">1</span>,<span class="w"> </span><span class="nv">Product</span><span class="o">=</span><span class="m">2</span>,<span class="w"> </span><span class="nv">SerialNumber</span><span class="o">=</span><span class="m">3</span>
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628374<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>Product:<span class="w"> </span>STM32<span class="w"> </span>Virtual<span class="w"> </span>ComPort
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628376<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>Manufacturer:<span class="w"> </span>STMicroelectronics
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.628377<span class="o">]</span><span class="w"> </span>usb<span class="w"> </span><span class="m">1</span>-5:<span class="w"> </span>SerialNumber:<span class="w"> </span>3984356B3037
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.650144<span class="o">]</span><span class="w"> </span>cdc_acm<span class="w"> </span><span class="m">1</span>-5:1.0:<span class="w"> </span>ttyACM0:<span class="w"> </span>USB<span class="w"> </span>ACM<span class="w"> </span>device
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.655026<span class="o">]</span><span class="w"> </span>usbcore:<span class="w"> </span>registered<span class="w"> </span>new<span class="w"> </span>interface<span class="w"> </span>driver<span class="w"> </span>cdc_acm
+<span class="o">[</span><span class="w"> </span><span class="m">1343</span>.655028<span class="o">]</span><span class="w"> </span>cdc_acm:<span class="w"> </span>USB<span class="w"> </span>Abstract<span class="w"> </span>Control<span class="w"> </span>Model<span class="w"> </span>driver<span class="w"> </span><span class="k">for</span><span class="w"> </span>USB<span class="w"> </span>modems<span class="w"> </span>and<span class="w"> </span>ISDN<span class="w"> </span>adapters
+</pre></div>
+</div>
+<p>In this result, the device <code class="docutils literal notranslate"><span class="pre">subsystem=tty,</span> <span class="pre">idProduct=5740,</span> <span class="pre">idVendor=0483,</span> <span class="pre">and</span> <span class="pre">SerialNumber:</span> <span class="pre">3984356B3037</span></code>.</p>
+<p><strong>Note</strong>: The idProduct and idVendor of the device will be the same and only the SerialNumber will change.</p>
+<p>In case, the SerialNumber did not appear in Step 1, try the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1"># $ sudo lsusb -d &lt;idVendor:idProduct&gt; -v | grep iSerial</span>
+$<span class="w"> </span>sudo<span class="w"> </span>lsusb<span class="w"> </span>-d<span class="w"> </span><span class="m">0483</span>:5740<span class="w"> </span>-v<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>iSerial
+<span class="w">  </span>iSerial<span class="w">                 </span><span class="m">3</span><span class="w"> </span>3984356B3037
+</pre></div>
+</div>
+<p>Step 2. Install the following packages.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>usbutils
+$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>udev
+</pre></div>
+</div>
+<p>Step 3. Create the udev rule file:</p>
+<p>File Name: <code class="docutils literal notranslate"><span class="pre">99-adrd2121.rules</span></code></p>
+<ul class="simple">
+<li><p><em>99</em> is the order of the rule, the lower number will be read first.</p></li>
+<li><p><em>adrd2121</em> can be changed depending on your preference.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">99-adrd2121.rules</span></code> file content:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">SUBSYSTEM</span><span class="o">==</span><span class="s2">&quot;tty&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idVendor<span class="o">}==</span><span class="s2">&quot;0483&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>idProduct<span class="o">}==</span><span class="s2">&quot;5740&quot;</span>,<span class="w"> </span>ATTRS<span class="o">{</span>serial<span class="o">}==</span><span class="s2">&quot;3984356B3037&quot;</span>,<span class="w"> </span><span class="nv">SYMLINK</span><span class="o">+=</span><span class="s2">&quot;adrd2121&quot;</span>,<span class="w"> </span><span class="nv">MODE</span><span class="o">=</span><span class="s2">&quot;0666&quot;</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>IMPORTANT</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">SYMLINK+=&quot;adrd2121&quot;</span></code> will create a symbolink link <code class="docutils literal notranslate"><span class="pre">/dev/adrd2121</span></code> for the specific device that matches the SUBSYSTEM, idVendor, idProduct, and serial number.</p></li>
+<li><p>This would mean that you can also access the device via the device name <code class="docutils literal notranslate"><span class="pre">/dev/ttyACM0</span></code> (depending on the logs in Step 1) or <code class="docutils literal notranslate"><span class="pre">/dev/adrd2121</span></code>.</p></li>
+<li><p>Adding the <code class="docutils literal notranslate"><span class="pre">SYMLINK+=&quot;adrd2121&quot;</span></code> resolves any problem to changing devices names.</p></li>
+</ul>
+</div></blockquote>
+<p>Step 4. Copy <code class="docutils literal notranslate"><span class="pre">99-adrd2121.rules</span></code> to /etc/udev/rules.d</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>cp<span class="w"> </span><span class="m">99</span>-adrd2121.rules<span class="w"> </span>/etc/udev/rules.d
+</pre></div>
+</div>
+<p>Step 5. Restart USB device Manager</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>sudo<span class="w"> </span>udevadm<span class="w"> </span>control<span class="w"> </span>--reload-rules<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>udevadm<span class="w"> </span>trigger
+<span class="c1"># Wait at least 5 seconds for restart to finish</span>
+</pre></div>
+</div>
+<p>Step 6. Check if successful:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/dev/ttyACM0
+crw-rw-rw-<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">166</span>,<span class="w"> </span><span class="m">0</span><span class="w"> </span>Feb<span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">11</span>:39<span class="w"> </span>/dev/ttyACM0
+$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/dev/adrd2121
+lrwxrwxrwx<span class="w"> </span><span class="m">1</span><span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span><span class="m">7</span><span class="w"> </span>Feb<span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">11</span>:38<span class="w"> </span>/dev/adrd2121<span class="w"> </span>-&gt;<span class="w"> </span>ttyACM0
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="launch">
+<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h2>
+<p>This section will discuss how to use the launch files, and Launch files will run <em>adrd2121_imu_node</em> and (optionally) <em>bias_estimate_node_ros2</em> in sequence depending on the <code class="docutils literal notranslate"><span class="pre">TimerAction</span></code> delay.</p>
+<p>The included launch files will run the following nodes:</p>
+<ul class="simple">
+<li><p>For <strong>ADIS16470</strong></p>
+<ul>
+<li><p><a class="reference internal" href="#adrd2121_imu_node"><span class="xref myst">adrd2121_imu_node</span></a></p></li>
+<li><p><a class="reference internal" href="#bias_estimate_node_ros2"><span class="xref myst">bias_estimate_node</span></a></p></li>
+</ul>
+</li>
+<li><p>For <strong>ADIS16500</strong></p>
+<ul>
+<li><p><a class="reference internal" href="#adrd2121_imu_node"><span class="xref myst">adrd2121_imu_node</span></a></p></li>
+</ul>
+</li>
+</ul>
+<section id="default-launch">
+<h3>Default launch<a class="headerlink" href="#default-launch" title="Link to this heading"></a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1">###### [TERMINAL 2] ######</span>
+<span class="c1">#Properly sourcing the overlay</span>
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>install/setup.bash
+
+<span class="c1"># Launch</span>
+<span class="c1">## $ ros2 launch adrd2121_imu &lt;imu_product&gt;.launch.py</span>
+<span class="c1">## Example for launching ADIS16470</span>
+$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adrd2121_imu<span class="w"> </span>adis16470.launch.py
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>IMPORTANT</strong></p>
+<ul class="simple">
+<li><p>Make sure that a separate terminal is used other than the terminal used to build the package, as mentioned <a class="reference external" href="https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">here</a>.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="change-log-level-for-nodes">
+<h3>Change log level for nodes<a class="headerlink" href="#change-log-level-for-nodes" title="Link to this heading"></a></h3>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="c1">## If the user wants to enable debug logs, launch the package with the following command:</span>
+$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adrd2121_imu<span class="w"> </span>adis16470.launch.py<span class="w"> </span>log_level:<span class="o">=</span>DEBUG
+
+<span class="c1">## Other available log levels are as follows: INFO (default), WARN, ERROR</span>
+</pre></div>
+</div>
+</section>
+<section id="delayed-execution-of-bias-estimate-node">
+<h3>Delayed execution of bias_estimate_node<a class="headerlink" href="#delayed-execution-of-bias-estimate-node" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Another thing to take note is the delayed launching of the <strong>bias_estimate</strong> node, shown below:</p></li>
+</ul>
+<p><strong><em><a class="reference internal" href="#launch/adis16470.launch.py"><span class="xref myst">adis16470.launch.py</span></a></em></strong></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>...
+OnProcessStart<span class="o">(</span>
+<span class="w">                </span><span class="nv">target_action</span><span class="o">=</span>main_node_run,
+<span class="w">                </span><span class="nv">on_start</span><span class="o">=[</span>
+<span class="w">                    </span>TimerAction<span class="o">(</span>
+<span class="w">                        </span><span class="nv">period</span><span class="o">=</span><span class="m">5</span>.0,
+<span class="w">                        </span><span class="nv">actions</span><span class="o">=[</span>bias_node_run<span class="o">]</span>
+<span class="w">                    </span><span class="o">)</span>
+<span class="w">                </span><span class="o">]</span>
+<span class="w">            </span><span class="o">)</span>
+...
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>This implementation launches the main node <em>(adrd2121_imu_node)</em> first, then in the background starts a timer <em>(period)</em>, running in <em><strong>seconds</strong></em>. <strong>Once the timer finishes, only then the action <em>(bias_node_run)</em> will be executed.</strong></p></li>
+<li><p>The user is freely to change the period value if so desired. This clause was added in order to avoid sync issues with bias_estimate node going to timeout after not detecting the /imu/data_raw topic.</p></li>
+</ul>
+</section>
+</section>
+<section id="nodes">
+<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h2>
+<section id="adrd2121-imu-node">
+<h3>adrd2121_imu_node<a class="headerlink" href="#adrd2121-imu-node" title="Link to this heading"></a></h3>
+<section id="operation-modes">
+<h4>Operation modes<a class="headerlink" href="#operation-modes" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>The user will be able to configure what mode to run through the <em><strong>mode_of_operation</strong></em> parameter.</p></li>
+</ul>
+</section>
+<section id="board-recovery">
+<h4>Board recovery<a class="headerlink" href="#board-recovery" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>To set the board recovery during initialization, set the parameter <strong>enable_init_recover</strong> to true.</p></li>
+<li><p>If enabled, the node will automatically check the status of the board and recover to working state if applicable.</p></li>
+</ul>
+</section>
+<section id="published-topics">
+<h4>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/imu/data_raw</strong> (default:<code class="docutils literal notranslate"><span class="pre">sensor_msgs/Imu</span></code> <strong>or</strong> custom msg:<code class="docutils literal notranslate"><span class="pre">adrd2121_imu/AdiImu</span></code>)</p>
+<ul>
+<li><p>Raw IMU data containing angular velocity (x,y,z) and linear_acceleration (x,y,z)</p></li>
+<li><p>See <a class="reference download internal" download="" href="_downloads/ce883cbc48916fb44f4b8d1f2f607a89/AdiImu.msg"><span class="xref download myst">AdiImu.msg</span></a> for more info on custom message.</p></li>
+<li><p>Msg type is set in adi_imu_driver_node Parameters.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="advertised-services">
+<h4>Advertised services<a class="headerlink" href="#advertised-services" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/trigger_imu_glob_cmd</strong> (adrd2121_imu/ImuGlobCmd)</p>
+<ul>
+<li><p>Write 1 to specified BIT in GLOB_CMD IMU Register;</p></li>
+<li><p>See custom service message: <a class="reference download internal" download="" href="_downloads/21431b012d143bb1d3f4ac9a0b6eda33/ImuGlobCmd.srv"><span class="xref download myst">srv/ImuGlobCmd.srv</span></a></p></li>
+<li><p><strong>NOT SUPPORTED</strong> in <strong>ADIS16500</strong></p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>NOTE:</p>
+<ol class="arabic simple">
+<li><p>Only the Bias Correction Update (Bit 0) is supported for now;</p></li>
+<li><p>DO NOT directly call this service as it will affect the IMU’s performance;</p>
+<ul class="simple">
+<li><p>For Bias Correction Update, IMU needs to be standstill for at least 40s or else,
+the IMU data would gain offset. See /bias_estimate service instead.</p></li>
+</ul>
+</li>
+</ol>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>/factory_reset</strong> (std_srvs/Trigger)</p>
+<ul>
+<li><p>This will revert the ADRD2121 back to its factory configuration</p></li>
+</ul>
+</li>
+<li><p><strong>/clear_fault</strong> (std_srvs/Trigger)</p>
+<ul>
+<li><p>This should remove all the FAULT status in the ADRD2121</p></li>
+</ul>
+</li>
+<li><p><strong>/flash_update</strong> (std_srvs/Trigger)</p>
+<ul>
+<li><p>This will save the current configuration of the Buffer Board to the flash memory, which will be loaded in the next boot-up.</p></li>
+</ul>
+</li>
+<li><p><strong>/get_buffer_status</strong> (adrd2121_imu/BufStatus)</p>
+<ul>
+<li><p>This is meant for acquiring the current status of the Buffer Board.</p></li>
+<li><p>Status codes and their implications can be found in the ADRD2121 Github’s register definitions (see STATUS).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="parameters">
+<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p><strong>IMPORTANT</strong>:</p>
+<ul class="simple">
+<li><p>If any of these parameters are not set, the default values will be used. See <a class="reference internal" href="#/config"><span class="xref myst">config/[IMU_name].yaml</span></a> on how these parameters are set.</p></li>
+<li><p>There will be times that some parameters will not be declared if it will not be used in the whole runtime i.e. <em>if update_imu_accl_bias is false, imu_accl_bias will not be declared</em>.</p></li>
+<li><p>Changing the value of a parameter during runtime (via <code class="docutils literal notranslate"><span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">set</span></code>) is not possible as parameters are set to <em><strong>read-only</strong></em>.</p></li>
+</ul>
+</div></blockquote>
+<section id="ros-specific-parameters">
+<h5>ROS Specific Parameters<a class="headerlink" href="#ros-specific-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>topic_name</strong> (string, default: imu/data_raw)</p>
+<ul>
+<li><p>IMU topic name</p></li>
+</ul>
+</li>
+<li><p><strong>frame_name</strong> (string, default: imu)</p>
+<ul>
+<li><p>IMU frame name</p></li>
+</ul>
+</li>
+<li><p><strong>msg_type</strong> (int, default: 1)</p>
+<ul>
+<li><p>Message type of topic</p>
+<ul>
+<li><p>“1” : sensor_msgs/Imu</p></li>
+<li><p>“2” : adrd2121_imu/AdiImu</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>mode_of_operation</strong> (int, default: 0)</p>
+<ul>
+<li><p>This is used to check what operation mode the node will run in.</p>
+<ul>
+<li><p>“1” : <em><strong>STREAM</strong></em> - this will enable all functions related to data streaming.</p>
+<ul>
+<li><p>Services available: <strong>trigger_imu_glob_cmd</strong> and <strong>get_buffer_status</strong></p></li>
+</ul>
+</li>
+<li><p>“2” : <em><strong>RECOVERY</strong></em> - data streaming is disabled here. This is meant for clearing error codes.</p>
+<ul>
+<li><p>Services available: <strong>factory_reset</strong>, <strong>clear_fault</strong>, <strong>flash_update</strong>, and <strong>get_buffer_status</strong></p></li>
+<li><p>This will skip any initializations for both IMU and the Buffer Board, but UART communication must be established.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="communication-interface-parameters">
+<h5>Communication Interface Parameters<a class="headerlink" href="#communication-interface-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>usb_dev</strong> (string, default: /dev/ttyACM0)</p>
+<ul>
+<li><p>Device name</p></li>
+</ul>
+</li>
+<li><p><strong>usb_baud</strong> (int, default: 921600)</p>
+<ul>
+<li><p>USB Baud Rate</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="adrd2121-parameters">
+<h5>ADRD2121 Parameters<a class="headerlink" href="#adrd2121-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>buf_burst_count</strong> (int, default: 1)</p>
+<ul>
+<li><p>Burst Count is a parameter that allows multiple transactions in a single syscall</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_burst</strong> (bool, default: true)</p>
+<ul>
+<li><p>Enables IMU burst data capture for buffer entries (IMU &lt;-&gt; ADRD2121)</p></li>
+<li><p>See BUF_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_overflow</strong> (int, default: 0)</p>
+<ul>
+<li><p>Buffer overflow behavior;</p>
+<ul>
+<li><p>“0” : Stop Sampling</p></li>
+<li><p>“1” : Replace Oldest Data</p></li>
+</ul>
+</li>
+<li><p>See BUF_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>enable_buf_pps</strong> (bool, default: false)</p>
+<ul>
+<li><p>Trigger PPS_ENABLE</p></li>
+<li><p>See USER_CMD Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_data_rdy_sel</strong> (int, default: 1)</p>
+<ul>
+<li><p>Select which IMU DIO output pin is treated as data ready</p>
+<ul>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4</p></li>
+</ul>
+</li>
+<li><p>See DIO_INPUT_CONFIG Register</p></li>
+<li><p>For <strong>ADIS16470</strong> and <strong>ADIS16500</strong>, only BUF_DIO1 is possible.</p></li>
+</ul>
+</li>
+<li><p><strong>buf_data_rdy_pol</strong> (int, default: 1)</p>
+<ul>
+<li><p>Data ready trigger polarity</p>
+<ul>
+<li><p>“0” : triggers on falling edge</p></li>
+<li><p>“1” : triggers on rising edge</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>buf_pps_sel</strong> (int, default: 0)</p>
+<ul>
+<li><p>Select which host processor DIO output pin acts as a Pulse Per Second (PPS) input</p>
+<ul>
+<li><p>“0” : Disabled</p></li>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4</p></li>
+</ul>
+</li>
+<li><p>See DIO_INPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_pps_pol</strong> (int, default: 1)</p>
+<ul>
+<li><p>PPS trigger polarity</p>
+<ul>
+<li><p>“0” : triggers on falling edge</p></li>
+<li><p>“1” : triggers on rising edge</p></li>
+</ul>
+</li>
+<li><p>See DIO_INPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_pps_freq</strong>(int, default: 0)</p>
+<ul>
+<li><p>Possible values: [0-3], where PPS Input Frequency is (10 ^ (buf_pps_freq) Hz).</p></li>
+<li><p>See DIO_INPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_pin_pass</strong> (int, default: 0)</p>
+<ul>
+<li><p>Select which pins are directly connected from the host processor to the IMU using an ADG1611 analog switch</p>
+<ul>
+<li><p>“0” : Disabled</p></li>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4</p></li>
+</ul>
+</li>
+<li><p>See DIO_OUTPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_watermark_int</strong> (int, default: 0)</p>
+<ul>
+<li><p>Select which pins are driven with the buffer watermark interrupt signal from the ADRD2121 firmware</p>
+<ul>
+<li><p>“0” : Disabled</p></li>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4</p></li>
+</ul>
+</li>
+<li><p>See DIO_OUTPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_overflow_int</strong> (int, default: 0)</p>
+<ul>
+<li><p>Select which pins are driven with the buffer overflow interrupt signal from the ADRD2121 firmware</p>
+<ul>
+<li><p>“0” : Disabled</p></li>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4</p></li>
+</ul>
+</li>
+<li><p>See DIO_OUTPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>buf_error_int</strong> (int, default: 0)</p>
+<ul>
+<li><p>Select which pins are driven with the error interrupt signal from the ADRD2121 firmware</p>
+<ul>
+<li><p>“0” : Disabled</p></li>
+<li><p>“1” : BUF_DIO1</p></li>
+<li><p>“2” : BUF_DIO2</p></li>
+<li><p>“4” : BUF_DIO3</p></li>
+<li><p>“8” : BUF_DIO4imu_accl_bias</p></li>
+</ul>
+</li>
+<li><p>See DIO_OUTPUT_CONFIG Register</p></li>
+</ul>
+</li>
+<li><p><strong>enable_init_recovery</strong> (bool, default: false)</p>
+<ul>
+<li><p>This is a boolean that is checked whether to call the recovery process automatically or not.</p></li>
+<li><p>If enabled, it will start the recovery process. If recovery is unsuccessful, it will proceed to <strong>CONFIG</strong> mode</p></li>
+</ul>
+</li>
+<li><p><strong>clear_buffer_timeout</strong> (int, default: 500)</p>
+<ul>
+<li><p>Clearing/Flushing Serial Port timeout in milliseconds.</p></li>
+<li><p>This timeout is used when flushing serial port’s input after stopping the capture of data</p></li>
+<li><p>Range: 500-3000 ms</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="imu-parameters">
+<h5>IMU Parameters<a class="headerlink" href="#imu-parameters" title="Link to this heading"></a></h5>
+<ul class="simple">
+<li><p><strong>imu_prod_id</strong> (int, default: 16470)</p>
+<ul>
+<li><p>IMU Product ID (16470, 16500)</p></li>
+</ul>
+</li>
+<li><p><strong>gravity</strong> (double, default: 1.0)</p>
+<ul>
+<li><p>Gravity constant; if 1.0 accelerometer output is normalized to g</p></li>
+</ul>
+</li>
+<li><p><strong>imu_data_format</strong> (int, default: 1)</p>
+<ul>
+<li><p>IMU Data Format (for Burst Read or non-Burst Read)</p>
+<ul>
+<li><p>“0” : 16-bit</p></li>
+<li><p>“1” : 32-bit</p></li>
+</ul>
+</li>
+<li><p>For <strong>ADIS16470</strong>: for Burst Read, data format is fixed to 16-bit;</p></li>
+<li><p>For <strong>ADIS16500</strong>: either Burst Read or non-Burst Read, data format can be 16- or 32-bit</p></li>
+</ul>
+</li>
+<li><p><strong>gravity</strong> (double, default: 1.0)</p>
+<ul>
+<li><p>Gravity constant; if 1.0 accelerometer output is normalized to g</p></li>
+</ul>
+</li>
+<li><p><strong>imu_data_rate</strong> (int, default: 100)</p>
+<ul>
+<li><p>IMU Data Rate in Hz</p></li>
+</ul>
+</li>
+<li><p><strong>imu_data_rdy_line</strong> (int, default: 0)</p>
+<ul>
+<li><p>IMU Data ready line selection</p>
+<ul>
+<li><p>“0” : IMU_DIO1</p></li>
+<li><p>“1” : IMU_DIO2</p></li>
+<li><p>“2” : IMU_DIO3</p></li>
+<li><p>“3” : IMU_DIO4</p></li>
+</ul>
+</li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (Data ready line is fixed)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_data_rdy_pol</strong> (int, default: 1)</p>
+<ul>
+<li><p>IMU Data ready polarity</p>
+<ul>
+<li><p>“0” : IMU_NEG_POLARITY</p></li>
+<li><p>“1” : IMU_POS_POLARITY</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>enable_imu_sync_clk</strong> (bool, default: false)</p>
+<ul>
+<li><p>IMU Sync clock input enable</p></li>
+</ul>
+</li>
+<li><p><strong>imu_sync_clk_mode</strong> (int, default: 0)</p>
+<ul>
+<li><p>IMU Sync clock mode</p></li>
+<li><p>For <strong>ADIS16470</strong> or <strong>ADIS16500</strong></p>
+<ul>
+<li><p>“0” : IMU_INTERNAL_CLOCK</p></li>
+<li><p>“1” : IMU_DIRECT_SYNC</p></li>
+<li><p>“2” : IMU_SCALED_SYNC</p></li>
+<li><p>“3” : IMU_OUTPUT_SYNC</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>imu_sync_clk_mode</em> is true</p></li>
+</ul>
+</li>
+<li><p><strong>imu_sync_clk_line</strong> (int, default: 0)</p>
+<ul>
+<li><p>IMU Sync clock input line selection</p>
+<ul>
+<li><p>“0” : IMU_DIO1</p></li>
+<li><p>“1” : IMU_DIO2</p></li>
+<li><p>“2” : IMU_DIO3</p></li>
+<li><p>“3” : IMU_DIO4</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>imu_sync_clk_mode</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (SYNC line is fixed)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_sync_clk_pol</strong> (int, default: 1)</p>
+<ul>
+<li><p>IMU Sync clock input polarity</p>
+<ul>
+<li><p>“0” : IMU_NEG_POLARITY</p></li>
+<li><p>“1” : IMU_POS_POLARITY</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>imu_sync_clk_mode</em> is true</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_lin_g_comp</strong> (bool, default: true)</p>
+<ul>
+<li><p>Linear g compensation for gyroscopes</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_pp_align</strong> (bool, default: true)</p>
+<ul>
+<li><p>Point of percussion alignment</p></li>
+</ul>
+</li>
+<li><p><strong>update_imu_bias_corr</strong> (bool, default: false)</p>
+<ul>
+<li><p>Trigger Bias Correction Update in IMU GLOB_CMD register</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_time_base_control</strong> (int, default: 10)</p>
+<ul>
+<li><p>Time Base Control (TBC)</p>
+<ul>
+<li><p>For <strong>ADIS16470</strong>, range: 0 to 12</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_accl_z_bias_null</strong> (int, default: 0)</p>
+<ul>
+<li><p>Z-axis acceleration bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_accl_y_bias_null</strong> (int, default: 0)</p>
+<ul>
+<li><p>Y-axis acceleration bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_accl_x_bias_null</strong> (int, default: 0)</p>
+<ul>
+<li><p>X-axis acceleration bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_gyro_z_bias_null</strong> (int, default: 1)</p>
+<ul>
+<li><p>Z-axis gyroscope bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_gyro_y_bias_null</strong> (int, default: 1)</p>
+<ul>
+<li><p>Y-axis gyroscope bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>enable_imu_gyro_x_bias_null</strong> (int, default: 1)</p>
+<ul>
+<li><p>X-axis gyroscope bias correction enable (“0” : disable, “1” : enable)</p></li>
+<li><p>Used only if <em>update_imu_bias_corr</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>update_imu_accl_bias</strong> (bool, default: false)</p>
+<ul>
+<li><p>Set Accelerometer bias</p></li>
+<li><p>Values based on <em>imu_accl_bias</em></p></li>
+</ul>
+</li>
+<li><p><strong>imu_accl_bias[3]</strong> (int, default: [0,0,0])</p>
+<ul>
+<li><p>Accelerometer bias values</p>
+<ul>
+<li><p>[Accl Bias X, Accl Bias Y, Accl Bias Z] where each input is 32-bit</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>update_imu_accl_bias</em> is true</p></li>
+</ul>
+</li>
+<li><p><strong>update_imu_gyro_bias</strong> (bool, default: false)</p>
+<ul>
+<li><p>Set Gyroscope bias</p></li>
+<li><p>Values based on <em>imu_gyro_bias</em></p></li>
+</ul>
+</li>
+<li><p><strong>imu_gyro_bias[3]</strong> (int, default: [0,0,0])</p>
+<ul>
+<li><p>Gyroscope bias values</p>
+<ul>
+<li><p>[Gyro Bias X, Gyro Bias Y, Gyro Bias Z] where each input is 32-bit</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>update_imu_gyro_bias</em> is true</p></li>
+</ul>
+</li>
+<li><p><strong>update_imu_accl_scale</strong> (bool, default: false)</p>
+<ul>
+<li><p>Set Accelerometer scale</p></li>
+<li><p>Values based on <em>imu_accl_scale</em></p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_accl_scale[3]</strong> (int, default: [0,0,0])</p>
+<ul>
+<li><p>Accelerometer scale values</p>
+<ul>
+<li><p>[Accl Scale X, Accl Scale Y, Accl Scale Z] where each input is 16-bit</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>update_imu_accl_scale</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>update_imu_gyro_scale</strong> (bool, default: false)</p>
+<ul>
+<li><p>Set Gyroscope scale</p></li>
+<li><p>Values based on <em>imu_gyro_scale</em></p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_gyro_scale[3]</strong> (int, default: [0,0,0])</p>
+<ul>
+<li><p>Gyroscope scale values</p>
+<ul>
+<li><p>[Gyro Scale X, Gyro Scale Y, Gyro Scale Z] where each input is 16-bit</p></li>
+</ul>
+</li>
+<li><p>Used only if <em>update_imu_gyro_scale</em> is true</p></li>
+<li><p><strong>UNUSED</strong> in: <strong>ADIS16470</strong> and <strong>ADIS16500</strong> (Not supported by IMU)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="bias-estimate-node-ros2">
+<h3>bias_estimate_node_ros2<a class="headerlink" href="#bias-estimate-node-ros2" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>This Node has implements a standstill checker and makes sure that the IMU is standstill for at least 40s before triggering the Bias Correction Update (bit 0 of GLOB_CMD) via the /trigger_imu_glob_cmd.</p></li>
+<li><p><strong>NOTE</strong>: For multiple instances of IMU, this should be under the same &lt;<em>group</em>&gt; of the adrd2121_imu_node.</p></li>
+<li><p><strong>NOT SUPPORTED</strong> in <strong>ADIS16500</strong> because <strong>/trigger_imu_glob_cmd</strong> will not be advertised.</p></li>
+</ul>
+<section id="id1">
+<h4>Published topics<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/imu_state</strong> (<code class="docutils literal notranslate"><span class="pre">adrd2121_imu/ImuState</span></code>)</p>
+<ul>
+<li><p>Contains the state of the IMU (<em>MOVING</em> or <em>STANDSTILL</em>) based on the standstill checker</p></li>
+<li><p>See <a class="reference download internal" download="" href="_downloads/c4c574b03c9466065969634022bc5f37/ImuState.msg"><span class="xref download myst">msg/ImuState.msg</span></a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="subscribed-topics">
+<h4>Subscribed Topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/imu/data_raw</strong> (default:<code class="docutils literal notranslate"><span class="pre">sensor_msgs/Imu</span></code> <strong>or</strong> custom msg:<code class="docutils literal notranslate"><span class="pre">adrd2121_imu/AdiImu</span></code>)</p>
+<ul>
+<li><p>Raw IMU data containing angular velocity (x,y,z) and linear_acceleration (x,y,z)</p></li>
+<li><p><strong>NOTE</strong>: This topic should not be remapped (i.e. <code class="docutils literal notranslate"><span class="pre">&lt;remap</span> <span class="pre">from=&quot;/imu/data_raw&quot;</span> <span class="pre">to=&quot;/adis16470/data_raw&quot;/&gt;</span></code>), instead, be changed in the param <em>imu_topic_name</em>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h4>Advertised Services<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>/bias_estimate</strong> (adrd2121_imu/BiasEstimateCmd)</p>
+<ul>
+<li><p>Will call the trigger_glob_cmd service and trigger the Bias Correction update</p></li>
+<li><p>See custom service message: <a class="reference download internal" download="" href="_downloads/8286fecf80158a6e10ca689308a1e966/BiasEstimateCmd.srv"><span class="xref download myst">srv/BiasEstimateCmd.srv</span></a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id3">
+<h4>Parameters<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>gyro_std_thresh</strong> (double, default: 0.02)</p>
+<ul>
+<li><p>The threshold for standard deviation of gyroscope magnitude;</p></li>
+<li><p>This determines whther IMU is <em>MOVING</em> or <em>STANDSTILL</em></p></li>
+<li><p>The lower the value, the more sensitive (i.e. slight IMU movement may be considered as MOVING already)</p></li>
+</ul>
+</li>
+<li><p><strong>accl_std_thresh</strong> (double, default: 0.08)</p>
+<ul>
+<li><p>The threshold for standard deviation of accelerometer magnitude;</p></li>
+<li><p>This determines whther IMU is <em>MOVING</em> or <em>STANDSTILL</em></p></li>
+<li><p>The lower the value, the more sensitive (i.e. slight IMU movement may be considered as MOVING already)</p></li>
+</ul>
+</li>
+<li><p><strong>imu_topic_name</strong> (string, default: /imu/data_raw)</p>
+<ul>
+<li><p>In case the subscribed topic has a different name, this parameter must be updated;</p></li>
+<li><p>The Node checks the message type of the specified topic (<code class="docutils literal notranslate"><span class="pre">sensor_msgs/Imu</span></code> <strong>or</strong> <code class="docutils literal notranslate"><span class="pre">adrd2121_imu/AdiImu</span></code>).</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adrd2121_imu&gt; Contributors. License: BSD-3.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6:
+
+Variable INTERPOLATION_TIME_INDEX_MIN
+=====================================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: INTERPOLATION_TIME_INDEX_MIN
+   :project: adi_tmc_coe_core Doxygen Project

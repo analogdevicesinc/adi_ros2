@@ -1,0 +1,14 @@
+.. _exhale_define_bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167:
+
+Define MAX_WAIT_SERVICE
+=======================
+
+- Defined in :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_WAIT_SERVICE
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,296 @@
+
+.. _program_listing_file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp:
+
+Program Listing for File tmc_coe_interpreter.hpp
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp>` (``include/adi_tmc_coe_core/tmc_coe_interpreter.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef TMC_COE_INTERPRETER_HPP
+   #define TMC_COE_INTERPRETER_HPP
+   
+   #include <stdio.h>
+   #include <string>
+   #include <vector>
+   #include <thread>
+   #include "rclcpp/rclcpp.hpp"
+   
+   // SOEM header/s
+   #include "osal.h"
+   
+   /* Enums */
+   /* Network Management States */
+   typedef enum
+   {
+     NONE = 0,
+     INIT = 1,
+     PRE_OP = 2,
+     SAFE_OP = 4,
+     OPERATIONAL = 8,
+     SAFE_OP_ERROR = 20,
+     SAFE_OP_ERROR_ACK = 20
+   } nmt_state_t;
+   
+   
+   /*
+     15  14  13  12  11 | 10 | 9   | 8 | 7  | 6  5  4  | 3  | 2  | 1  | 0
+     nu                 | r  | oms | h | fr | oms      | eo | qs | ev | so
+   
+     where
+       9 - Change set point
+       6 - Absolute (0) / Relative (1)
+       4 - New set point
+   */
+   
+   /* Controlword Bit position */
+   typedef enum
+   {
+     CW_SO_BIT                     = 0, // Bit 0
+     CW_EV_BIT                     = 1, // Bit 1
+     CW_QS_BIT                     = 2, // Bit 2
+     CW_EO_BIT                     = 3, // Bit 3
+     CW_OMS_NEW_SET_POINT_BIT      = 4, // Bit 4
+     CW_OMS_CHANGE_IMMEDIATELY_BIT = 5, // Bit 5
+     CW_OMS_ABSOLUTE_RELATIVE_BIT  = 6, // Bit 6
+     CW_FR_BIT                     = 7, // Bit 7
+     CW_H_BIT                      = 8, // Bit 8
+     CW_OMS_CHANGE_SET_POINT_BIT   = 9  // Bit 9
+   } controlword_pos_t;
+   
+   // New Set Point Values
+   const uint8_t CW_NEW_SET_POINT_START    = 1;
+   const uint8_t CW_NEW_SET_POINT_STOP     = 0;
+   
+   // Absolute / Relative Values
+   const uint8_t CW_NEW_POSITION_ABSOLUTE  = 0;
+   const uint8_t CW_NEW_POSITION_RELATIVE  = 1;
+   
+   /* Controlword command coding */
+   /*
+     Controlword Command            | Bit mask                | Controlword command val (control_word_val_t)
+     -------------------------------|-------------------------|------------------------------
+     Shutdown,                      | 0bxxxx xxxx 1xxx x111   | 0bxxxx xxxx 0xxx x110 = 6d
+     Switch on                      | 0bxxxx xxxx 1xxx 1111   | 0bxxxx xxxx 0xxx 0111 = 7d
+     Switch on & enable operation,  | 0bxxxx xxxx 1xxx 1111   | 0bxxxx xxxx 0xxx 1111 = 15d
+     Disable voltage                | 0bxxxx xxxx 1xxx xx1x   | 0bxxxx xxxx 0xxx xx0x = 0d
+     Quick stop,                    | 0bxxxx xxxx 1xxx x11x   | 0bxxxx xxxx 0xxx x01x = 2d
+     Disable operation,             | 0bxxxx xxxx 1xxx 1111   | 0bxxxx xxxx 0xxx 0111 = 7d
+     Enable operation,              | 0bxxxx xxxx 1xxx 1111   | 0bxxxx xxxx 0xxx 1111 = 15d
+     Fault reset,                   | 0bxxxx xxxx 1xxx xxxx   | 0bxxxx xxxx 1xxx xxxx = 128d
+   */
+   
+   /* Control Word State Commands */
+   typedef enum
+   {
+     SHUTDOWN = 6,
+     SWITCH_ON = 7,
+     SWITCH_ON_ENABLE_OPERATION = 15,
+     DISABLE_VOLTAGE = 0,
+     QUICK_STOP = 2,
+     DISABLE_OPERATION = 7,
+     ENABLE_OPERATION = 15,
+     FAULT_RESET = 128,
+   } control_word_val_t;
+   
+   
+   /*
+     15  | 14  | 13  12 | 11  | 10 | 9  | 8  | 7 | 6   | 5  | 4  | 3 | 2  | 1  | 0
+     dir | mot | oms    | ila | tr | rm | ms | w | sod | qs | ve | f | oe | so | rtso
+   
+     where
+       15 - Direction of rotation
+       14 - Motor Activity
+       12 - Set point acknowledged (0: processed, 1: in process)
+   */
+   
+   /* Statusword Bit position */
+   typedef enum
+   {
+     RTSO_BIT = 0,
+     SO_BIT,
+     OE_BIT,
+     F_BIT,
+     VE_BIT,
+     QS_BIT,
+     SOD_BIT,
+     SPA_BIT = 12,
+   } statusword_pos_t;
+   
+   /* State Coding */
+   
+   /* Statusword State Coding */
+   /*
+     fsa_state_t               | status_state_mask_      | status_word_val_t
+     --------------------------|-------------------------|------------------------------
+     Not ready to switch on,   | 0bxxxx xxxx x1xx 1111   | 0bxxxx xxxx x0xx 0000 = 0d
+     Switch on disable,        | 0bxxxx xxxx x1xx 1111   | 0bxxxx xxxx x1xx 0000 = 64d
+     Ready to switch on,       | 0bxxxx xxxx x11x 1111   | 0bxxxx xxxx x01x 0001 = 33d
+     Switched on,              | 0bxxxx xxxx x11x 1111   | 0bxxxx xxxx x01x 0011 = 35d
+     Operation enabled,        | 0bxxxx xxxx x11x 1111   | 0bxxxx xxxx x01x 0111 = 39d
+     Quick stop active,        | 0bxxxx xxxx x11x 1111   | 0bxxxx xxxx x00x 0111 = 7d
+     Fault reaction active,    | 0bxxxx xxxx x11x 1111   | 0bxxxx xxxx x0xx 1111 = 15d
+     Fault,                    | 0bxxxx xxxx x1xx 1111   | 0bxxxx xxxx x0xx 1000 = 8d
+     Set Point Ack,            | 0bxxx1 xxxx xxxx xxxx   | 0bxxx1 xxxx xxxx xxxx = 4096d
+   */
+   
+   /* Finite State Automation States */
+   typedef enum
+   {
+     UNKNOWN = -1,
+     NOT_READY_TO_SWITCH_ON = 0,
+     SWITCH_ON_DISABLE,
+     READY_TO_SWITCH_ON,
+     SWITCHED_ON,
+     OPERATION_ENABLED,
+     QUICK_STOP_ACTIVE,
+     FAULT_REACTION_ACTIVE,
+     FAULT,
+     SET_POINT_ACK_IN_PROCESS,
+   } fsa_state_t;
+   
+   // Statusword State bitmask
+   const std::vector<int> status_state_mask_ = {
+     (1 << SOD_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),                //NOT_READY_TO_SWITCH_ON
+     (1 << SOD_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),                //SWITCH_ON_DISABLE
+     (1 << SOD_BIT) | (1 << QS_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),//READY_TO_SWITCH_ON
+     (1 << SOD_BIT) | (1 << QS_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),//SWITCHED_ON
+     (1 << SOD_BIT) | (1 << QS_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),//OPERATION_ENABLED
+     (1 << SOD_BIT) | (1 << QS_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),//QUICK_STOP_ACTIVE
+     (1 << SOD_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),                //FAULT_REACTION_ACTIVE
+     (1 << SOD_BIT) | (1 << F_BIT) | (1 << OE_BIT) | (1 << SO_BIT) | (1 << RTSO_BIT),                //FAULT
+     (1 << SPA_BIT)                                                                                  //SET_POINT_ACK_IN_PROCESS
+   };
+   
+   /* Status Word Coding Values */
+   typedef enum
+   {
+     NOT_READY_TO_SWITCH_ON_VAL = 0,
+     SWITCH_ON_DISABLE_VAL = 64,
+     READY_TO_SWITCH_ON_VAL = 33,
+     SWITCHED_ON_VAL = 35,
+     OPERATION_ENABLED_VAL = 39,
+     QUICK_STOP_ACTIVE_VAL = 7,
+     FAULT_REACTION_ACTIVE_VAL = 15,
+     FAULT_VAL = 8,
+     SET_POINT_ACK_IN_PROCESS_VAL = 4096,
+   } status_word_val_t;
+   
+   const std::vector<int> state_coding_val_ = {NOT_READY_TO_SWITCH_ON_VAL,
+     SWITCH_ON_DISABLE_VAL,
+     READY_TO_SWITCH_ON_VAL,
+     SWITCHED_ON_VAL,
+     OPERATION_ENABLED_VAL,
+     QUICK_STOP_ACTIVE_VAL,
+     FAULT_REACTION_ACTIVE_VAL,
+     FAULT_VAL,
+     SET_POINT_ACK_IN_PROCESS_VAL};
+   
+   /* Constants */
+   const uint32_t IOMAP_SIZE = 4096;
+   
+   // Standard PLC cycle time
+   const uint16_t PROCESS_DATA_DELAY = 1000;
+   
+   // Based on SOEM's simple_test script
+   const uint16_t ERROR_CHECK_DELAY = 10000;
+   
+   // 2counts of outputPDO workcount + 1count of inputPDO workcount
+   const uint8_t TOTAL_WORK_COUNTER_PER_SLAVE = 3;
+   
+   const int8_t CONTROL_WORD_FAIL = -1;
+   const int8_t CONTROL_WORD_SUCCESS = 0;
+   const int8_t CONTROL_WORD_TIMEOUT = -2;
+   
+   /* Output PDOs (Sync Manager 2) - Read/Write access */
+   typedef struct PACKED
+   {
+     int8_t modes_of_operation;
+     uint16_t control_word;
+     int32_t target_position;
+     int32_t target_velocity;
+     int16_t target_torque;
+   } output_pdo_t;
+   
+   /* Input PDOs (Sync Manager 3) - Read only access*/
+   typedef struct PACKED
+   {
+     int8_t modes_of_operation_display;
+     uint16_t status_word;
+     int32_t position_demand_value;
+     int32_t position_actual_value;
+     int32_t velocity_demand_value;
+     int32_t velocity_actual_value;
+     int16_t torque_demand_value;
+     int16_t torque_actual_value;
+   } input_pdo_t;
+   
+   class TmcCoeInterpreter
+   {
+   private:
+     std::thread processdata_thread_;
+     std::thread error_check_thread_;
+     bool b_exit_threads_;
+     bool b_cycle_finished_;
+     bool b_start_cycle_count_;
+     bool b_interface_unresponsive_;
+     uint8_t cycle_counter_;
+     uint8_t SDO_PDO_retries_;
+     double interface_timeout_;
+     std::string logger_prefix_;
+     rclcpp::Logger logger_;
+     char IOmap[IOMAP_SIZE];
+     int work_count_;
+     std::vector<std::vector<std::string>> all_obj_name_;
+     std::vector<std::vector<std::string>> all_index_;
+     std::vector<std::vector<std::string>> all_sub_index_;
+     std::vector<std::vector<std::string>> all_datatype_;
+   
+     template<typename T>
+     std::string readSDO(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number);
+   
+     std::string readSDO(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number);
+   
+     template<typename T>
+     std::string writeSDO(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number,
+       T value);
+   
+     void processData();
+     void errorCheck();
+   
+   public:
+     std::vector<input_pdo_t *> input_pdo_;
+     std::vector<output_pdo_t *> output_pdo_;
+   
+     TmcCoeInterpreter(uint8_t SDO_PDO_retries, double interface_timeout, std::string logger_prefix);
+     ~TmcCoeInterpreter();
+     uint8_t initInterface(std::string ifname);
+     bool initDictionary(uint8_t slave_number, std::vector<std::string> all_obj_name,
+       std::vector<std::string> all_index, std::vector<std::string> all_sub_index,
+       std::vector<std::string> all_datatype);
+     bool safeOperationalState(uint8_t slave_number);
+     bool operationalState(uint8_t slave_number, bool b_init);
+     std::string getSlaveName(uint8_t slave_number);
+     nmt_state_t changeNMTState(uint8_t slave_number, nmt_state_t state);
+     fsa_state_t changeCiA402State(uint8_t slave_number, fsa_state_t state);
+     bool isStatusWordState(uint8_t slave_number, fsa_state_t state);
+     fsa_state_t checkStatusWordState(uint8_t slave_number);
+     int8_t setControlWord(uint8_t slave_number, fsa_state_t response_SW,
+       control_word_val_t requested_CW);
+     void stopInterface();
+     uint8_t getCycleCounter();
+     void startCycleCounter();
+     void stopCycleCounter();
+     bool isCycleFinished();
+     void createProcessDataThread();
+     void createErrorCheckThread();
+   
+     bool readSDO(uint8_t slave_number, std::string object_name, std::string * value);
+     bool writeSDO(uint8_t slave_number, std::string object_name, std::string * value);
+   };
+   
+   #endif // TMC_COE_INTERPRETER_HPP

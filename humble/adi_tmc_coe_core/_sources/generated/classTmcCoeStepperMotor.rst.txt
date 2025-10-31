@@ -1,0 +1,26 @@
+.. _exhale_class_classTmcCoeStepperMotor:
+
+Class TmcCoeStepperMotor
+========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public TmcCoeMotor`` (:ref:`exhale_class_classTmcCoeMotor`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TmcCoeStepperMotor
+   :project: adi_tmc_coe_core Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

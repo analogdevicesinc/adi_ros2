@@ -1,0 +1,21 @@
+.. _dir_include_ros-perception_image_transport_plugins:
+
+
+Directory image_transport_plugins
+=================================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_include_ros-perception>` (``include/ros-perception``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+*Directory path:* ``include/ros-perception/image_transport_plugins``
+
+Subdirectories
+--------------
+
+- :ref:`dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport`
+
+
+

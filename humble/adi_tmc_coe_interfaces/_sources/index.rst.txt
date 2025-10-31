@@ -1,0 +1,26 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adi_tmc_coe_interfaces
+======================
+
+Custom interfaces for adi_tmc_coe
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Links <__links>
+
+
+   Message Definitions <__message_definitions>
+   Service Definitions <__service_definitions>
+
+   Standard Documents <__standards>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmc__coe__motor_8hpp" kind="file" language="C++">
+    <compoundname>tmc_coe_motor.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">geometry_msgs/msg/twist.hpp</includes>
+    <includes local="yes">std_msgs/msg/int32.hpp</includes>
+    <includes refid="tmc__coe__interpreter_8hpp" local="yes">adi_tmc_coe_core/tmc_coe_interpreter.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp</includes>
+    <includedby refid="tmc__coe__bldc__motor_8hpp" local="yes">include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp</includedby>
+    <includedby refid="tmc__coe__ros2_8hpp" local="yes">include/adi_tmc_coe_core/tmc_coe_ros2.hpp</includedby>
+    <includedby refid="tmc__coe__stepper__motor_8hpp" local="yes">include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>adi_tmc_coe_core/tmc_coe_interpreter.hpp</label>
+        <link refid="tmc__coe__interpreter_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adi_tmc_coe_core/tmc_coe_motor.hpp</label>
+        <link refid="tmc__coe__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="11">
+        <label>osal.h</label>
+      </node>
+      <node id="3">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="5">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="7">
+        <label>stdio.h</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>thread</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp</label>
+        <link refid="tmc__coe__bldc__motor_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/adi_tmc_coe_core/tmc_coe_motor.hpp</label>
+        <link refid="tmc__coe__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/adi_tmc_coe_core/tmc_coe_ros2.hpp</label>
+        <link refid="tmc__coe__ros2_8hpp_source"/>
+      </node>
+      <node id="4">
+        <label>include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp</label>
+        <link refid="tmc__coe__stepper__motor_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classTmcCoeMotor" prot="public">TmcCoeMotor</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e" prot="public" static="no">
+        <name>_USE_MATH_DEFINES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2024-2025 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp" line="9" column="9" bodyfile="include/adi_tmc_coe_core/tmc_coe_motor.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mode_of_operation_t</name>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3aed16f8c50f886fd03400c434d3e7cd3c" prot="public">
+          <name>MODE_OF_OPERATION_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3a65b81b202ee862ba98b57fffbb2a8f7e" prot="public">
+          <name>PROFILE_POSITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3a4959046f00cff4506556d87aab8b9bdc" prot="public">
+          <name>PROFILE_VELOCITY</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3af8344e43e7258fd675f019535f5691b7" prot="public">
+          <name>HOMING_MODE</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3ae5b673f0e05fe33104c5e18bc913fbd8" prot="public">
+          <name>CYCLIC_SYNC_POS</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3a819705dd6d87684d7247a07cc3d130d8" prot="public">
+          <name>CYCLIC_SYNC_VEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3ad6fe4f313990cea644b060b45f19e33d" prot="public">
+          <name>CYCLIC_SYNC_TRQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp" line="21" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_motor.hpp" bodystart="22" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= M_PI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp" line="33" column="14" bodyfile="include/adi_tmc_coe_core/tmc_coe_motor.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t SECS_TO_MIN</definition>
+        <argsstring></argsstring>
+        <name>SECS_TO_MIN</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp" line="34" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_motor.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t ANGULAR_FULL_ROTATION</definition>
+        <argsstring></argsstring>
+        <name>ANGULAR_FULL_ROTATION</name>
+        <initializer>= 360</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp" line="35" column="16" bodyfile="include/adi_tmc_coe_core/tmc_coe_motor.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMC_COE_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMC_COE_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_USE_MATH_DEFINES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry_msgs/msg/twist.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;std_msgs/msg/int32.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_core/tmc_coe_interpreter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Custom<sp/>msg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Available<sp/>Modes<sp/>of<sp/>Operation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>MODE_OF_OPERATION_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>PROFILE_POSITION,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>PROFILE_VELOCITY<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>HOMING_MODE<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>CYCLIC_SYNC_POS<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>CYCLIC_SYNC_VEL,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>CYCLIC_SYNC_TRQ</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}<sp/>mode_of_operation_t;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Conversion<sp/>constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>PI<sp/>=<sp/>M_PI;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>SECS_TO_MIN<sp/>=<sp/>60;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ANGULAR_FULL_ROTATION<sp/>=<sp/>360;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classTmcCoeMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmcCoeMotor" kindref="compound">TmcCoeMotor</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeMotor" kindref="compound">TmcCoeMotor</ref>(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref><sp/>*<sp/>p_tmc_coe_interpreter,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>slave_number,<sp/>uint8_t<sp/>motor_number,<sp/>std::string<sp/>device_name);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTmcCoeMotor" kindref="compound">~TmcCoeMotor</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>p_node_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref><sp/>*<sp/>p_tmc_coe_interpreter_;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>uint8_t<sp/>slave_number_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>uint8_t<sp/>motor_number_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>std::string<sp/>device_name_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;adi_tmc_coe_interfaces::msg::TmcCoeInfo&gt;::SharedPtr<sp/>tmc_coe_info_pub_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/>tmc_coe_info_pub_timer_;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr<sp/>cmd_vel_sub_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>cmd_abspos_sub_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>cmd_relpos_sub_;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr<sp/>cmd_trq_sub_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_en_pub_tmc_info_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_vel_;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_pos_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>param_pub_actual_trq_;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_info_topic_;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_vel_topic_;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_abspos_topic_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_relpos_topic_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>std::string<sp/>param_tmc_cmd_trq_topic_;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_wheel_diameter_;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_add_ratio_vel_;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_add_ratio_pos_;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_add_ratio_trq_;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>std::string<sp/>tmc_coe_info_frame_id_;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param_pub_rate_tmc_coe_info_;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPublisher();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSubscriber();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishTmcCoeInfo();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdVelCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Twist::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdAbsPosCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdRelPosCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdTrqCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg);<sp/></highlight><highlight class="comment">//<sp/>Not<sp/>yet<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>rclcpp::CallbackGroup::SharedPtr<sp/>pub_callback_group_;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>rclcpp::CallbackGroup::SharedPtr<sp/>sub_callback_group_;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::string<sp/>logger_prefix_;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>rclcpp::Logger<sp/>logger_;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initMotorParams();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//TMC_COE_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmc_coe_core/tmc_coe_motor.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="imu__buf__ros2_8hpp" kind="file" language="C++">
+    <compoundname>imu_buf_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">std_srvs/srv/trigger.hpp</includes>
+    <includes local="yes">adi_imu_driver.h</includes>
+    <includes local="yes">imu_spi_buffer.h</includes>
+    <includes refid="adrd2121__imu__ros2__common_8hpp" local="yes">adrd2121_imu_ros2_common.hpp</includes>
+    <includes local="yes">sensor_msgs/msg/imu.hpp</includes>
+    <includes local="yes">adrd2121_imu/msg/adi_imu.hpp</includes>
+    <includes local="yes">adrd2121_imu/srv/buf_status.hpp</includes>
+    <includes local="yes">adrd2121_imu/srv/imu_glob_cmd.hpp</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">string</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">sys/ioctl.h</includes>
+    <includedby refid="adi__imu__buf__ros2_8hpp" local="yes">include/adrd2121_imu/adi_imu_buf_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/imu_buf_ros2.hpp</label>
+        <link refid="imu__buf__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>adi_imu_driver.h</label>
+      </node>
+      <node id="11">
+        <label>adrd2121_imu/msg/adi_imu.hpp</label>
+      </node>
+      <node id="12">
+        <label>adrd2121_imu/srv/buf_status.hpp</label>
+      </node>
+      <node id="13">
+        <label>adrd2121_imu/srv/imu_glob_cmd.hpp</label>
+      </node>
+      <node id="15">
+        <label>chrono</label>
+      </node>
+      <node id="5">
+        <label>imu_spi_buffer.h</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="10">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+      <node id="3">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="16">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="8">
+        <label>sys/time.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adrd2121_imu/adi_imu_buf_ros2.hpp</label>
+        <link refid="adi__imu__buf__ros2_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</label>
+        <link refid="adrd2121__imu__ros2__node_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/imu_buf_ros2.hpp</label>
+        <link refid="imu__buf__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImuBufRos2" prot="public">ImuBufRos2</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726" prot="public" static="no">
+        <name>DEFAULT_BAUD_RATE</name>
+        <initializer>921600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="41" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f" prot="public" static="no">
+        <name>THROW_LIMIT</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="42" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a" prot="public" static="no">
+        <name>BUFFER_LIMIT</name>
+        <initializer>65536</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="43" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4" prot="public" static="no">
+        <name>RADIAN_CONSTANT</name>
+        <initializer>180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="44" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2" prot="public" static="no">
+        <name>MAX_CLEAR_RETRY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="45" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970" prot="public" static="no">
+        <name>API_CALL_DELAY</name>
+        <initializer>2000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="46" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde" prot="public" static="no">
+        <name>MAX_CLEAR_TIMEOUT</name>
+        <initializer>3001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="47" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20" prot="public" static="no">
+        <name>MIN_CLEAR_TIMEOUT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="48" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386" prot="public" static="no">
+        <name>BURST_COUNT_MIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="49" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737" prot="public" static="no">
+        <name>BURST_COUNT_MAX</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="50" column="9" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>buf_dio_pin_e</name>
+        <enumvalue id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9ca7db993f25ece95cad200d70fd6239e92" prot="public">
+          <name>BUF_NONE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9ca8142ca1aeb2b4765cc417432a771a014" prot="public">
+          <name>BUF_DIO1</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9ca8b831ceadc1e9f8050b5395faf58aa26" prot="public">
+          <name>BUF_DIO2</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9ca482c8f20e132fa85ee904f271a76ff76" prot="public">
+          <name>BUF_DIO3</name>
+          <initializer>=4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9ca1ce5865d40f7b07986ceeb363b9623ba" prot="public">
+          <name>BUF_DIO4</name>
+          <initializer>=8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="54" column="1" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="55" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * BUFDIOtoString</definition>
+        <argsstring>(int dio)</argsstring>
+        <name>BUFDIOtoString</name>
+        <param>
+          <type>int</type>
+          <declname>dio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="38" column="13" declfile="include/adrd2121_imu/imu_buf_ros2.hpp" declline="38" declcolumn="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//ROS2<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;std_srvs/srv/trigger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>C<sp/>Driver<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_imu_driver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_spi_buffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu_ros2_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//Msg<sp/>types<sp/>for<sp/>Publisher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sensor_msgs/msg/imu.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/msg/adi_imu.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//Srv<sp/>types<sp/>for<sp/>Services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/srv/buf_status.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/srv/imu_glob_cmd.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/ioctl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_2;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>BUFDIOtoString(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dio);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//CONSTANTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_BAUD_RATE<sp/>921600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THROW_LIMIT<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_LIMIT<sp/>65536</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RADIAN_CONSTANT<sp/>180</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_CLEAR_RETRY<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>API_CALL_DELAY<sp/>2000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_CLEAR_TIMEOUT<sp/>3001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN_CLEAR_TIMEOUT<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BURST_COUNT_MIN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BURST_COUNT_MAX<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>buf_dio_pin_e</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>BUF_NONE=0,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>BUF_DIO1=1,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>BUF_DIO2=2,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>BUF_DIO3=4,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>BUF_DIO4=8,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classImuBufRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="73" refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" kindref="member">ImuBufRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node,<sp/>adi_imu_Device_t*<sp/>p_device);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classImuBufRos2_1a7bda7f519d3ec3b7bb4e7bde9f01434b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuBufRos2_1a7bda7f519d3ec3b7bb4e7bde9f01434b" kindref="member">~ImuBufRos2</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classImuBufRos2_1a159102b439b45f5742764356f3f7c987" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a159102b439b45f5742764356f3f7c987" kindref="member">loadParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classImuBufRos2_1a54ba0fd51aacd835b38d20ce021aabc6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a54ba0fd51aacd835b38d20ce021aabc6" kindref="member">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="classImuBufRos2_1ad442c78a2377295fe195b942160dd3ee" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ad442c78a2377295fe195b942160dd3ee" kindref="member">config</ref>(msg_type_e<sp/>msg_type);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classImuBufRos2_1a168c9a7dc441bd79094bcf2f3faf249a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a168c9a7dc441bd79094bcf2f3faf249a" kindref="member">dataReadAndPub</ref>(std::string<sp/>frame_name,<sp/>msg_type_e<sp/>msg_type);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classImuBufRos2_1a79eeaf4e261dbb692a17f42dc836ea51" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a79eeaf4e261dbb692a17f42dc836ea51" kindref="member">validateData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classImuBufRos2_1a4407d3530939dd793a374bf0727b75d6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a4407d3530939dd793a374bf0727b75d6" kindref="member">startBufferRead</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classImuBufRos2_1ae78c3c804c440871b4031c3f4ad91df3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ae78c3c804c440871b4031c3f4ad91df3" kindref="member">stopBufferRead</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classImuBufRos2_1ad36d5197ddc6001e9bae8945b145a234" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ad36d5197ddc6001e9bae8945b145a234" kindref="member">getBufferStatus</ref>(uint16_t<sp/>*<sp/>status);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classImuBufRos2_1a00f5b46bf67183a841b9d43a48bcebae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a00f5b46bf67183a841b9d43a48bcebae" kindref="member">factoryReset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classImuBufRos2_1a7c9f04cc3bee0bc8f4c11473a8e2deff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a7c9f04cc3bee0bc8f4c11473a8e2deff" kindref="member">clearFault</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classImuBufRos2_1a04e7bd3d61a80dc7d2d5e47c4ca5057b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a04e7bd3d61a80dc7d2d5e47c4ca5057b" kindref="member">flashUpdate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classImuBufRos2_1a34e72b4bb4a344271f60b3983cdf6016" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a34e72b4bb4a344271f60b3983cdf6016" kindref="member">recoverBoard</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classImuBufRos2_1a20e624b5984a9ed9929f04a8dae472b3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a20e624b5984a9ed9929f04a8dae472b3" kindref="member">initServiceServers</ref>(uint8_t<sp/>mode_of_operation);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classImuBufRos2_1a8940e34ebe8683bf78db202e86cd2b51" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classImuBufRos2_1a8940e34ebe8683bf78db202e86cd2b51" kindref="member">getStatusDescription</ref>(uint16_t<sp/>status);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="classImuBufRos2_1ad1100bd3baab34229b177c47211a0238" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ad1100bd3baab34229b177c47211a0238" kindref="member">factoryResetCB</ref>(std_srvs::srv::Trigger::Request::SharedPtr<sp/>req,<sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>std_srvs::srv::Trigger::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="classImuBufRos2_1abb5bc1d1235daeaa24a7e3e5b0b4cf58" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1abb5bc1d1235daeaa24a7e3e5b0b4cf58" kindref="member">clearFaultCB</ref>(std_srvs::srv::Trigger::Request::SharedPtr<sp/>req,<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>std_srvs::srv::Trigger::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classImuBufRos2_1ab3744776feb120b041ebf707984b39e3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ab3744776feb120b041ebf707984b39e3" kindref="member">flashUpdateCB</ref>(std_srvs::srv::Trigger::Request::SharedPtr<sp/>req,<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>std_srvs::srv::Trigger::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="187" refid="classImuBufRos2_1ac5f37979ac0eda7abe2fdf057d317fde" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ac5f37979ac0eda7abe2fdf057d317fde" kindref="member">getBufferStatusCB</ref>(adrd2121_imu::srv::BufStatus::Request::SharedPtr<sp/>req,<sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>adrd2121_imu::srv::BufStatus::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classImuBufRos2_1ad5154ca614a247503f7b0a595c8ce726" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1ad5154ca614a247503f7b0a595c8ce726" kindref="member">setModeofOperation</ref>(uint8_t<sp/>mode_of_operation);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="classImuBufRos2_1a4a2fc7770b5ec8f79131a560768e0f14" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuBufRos2_1a4a2fc7770b5ec8f79131a560768e0f14" kindref="member">detect</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr<sp/>imu_pub_std_;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;adrd2121_imu::msg::AdiImu&gt;::SharedPtr<sp/>imu_pub_adi_;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>std::string<sp/>topic_name_;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>node_;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>std::string<sp/>usb_dev_;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>usb_baud_;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_burst_;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_overflow_;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_buf_pps_;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_data_rdy_sel_;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_data_rdy_pol_;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_pps_pol_;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_pps_sel_;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_pps_freq_;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_pin_pass_;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_watermark_int_;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_overflow_int_;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_error_int_;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>uint32_t<sp/>prev_data_count_;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>uint32_t<sp/>imu_data_count_;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>uint64_t<sp/>start_data_count_;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>uint64_t<sp/>driver_data_count_;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>uint32_t<sp/>rollover_count_;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>uint32_t<sp/>drop_count_;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>Data<sp/>Array<sp/>and<sp/>Counters<sp/>for<sp/>Buffer<sp/>Burst</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/>uint16_t<sp/>buf_len_;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>uint16_t<sp/>burst_raw_[MAX_BUF_LEN_BYTES*10];</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>imubuf_BurstOutput_t<sp/>buf_burst_out_;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>uint32_t<sp/>utc_time_;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>uint32_t<sp/>utc_time_us_;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>adi_imu_BurstOutput_t<sp/>burst_out_;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>uint16_t<sp/>cur_buf_count_;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_first_read_;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>adi_imu_Device_t<sp/>*<sp/>p_device_;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/>msg_type_e<sp/>msg_type_;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_burst_count_;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_enable_init_recovery_;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>uint8_t<sp/>mode_of_operation_;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clear_buffer_timeout_;<sp/></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr<sp/>p_factoryReset;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr<sp/>p_clearFault;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr<sp/>p_flashUpdate;</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adrd2121_imu::srv::BufStatus&gt;::SharedPtr<sp/>p_getBufferStatus;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/imu_buf_ros2.hpp"/>
+  </compounddef>
+</doxygen>

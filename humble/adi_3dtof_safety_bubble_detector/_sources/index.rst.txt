@@ -1,0 +1,32 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adi_3dtof_safety_bubble_detector
+================================
+
+The Package to create safety bubble around the camera setup
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Links <__links>
+
+   C++ API <generated/index>
+
+
+
+   Standard Documents <__standards>
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 2
+
+   Documentation <user_docs>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

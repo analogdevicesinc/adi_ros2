@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters" kind="struct" language="C++" prot="private">
+    <compoundname>ADI3DToFSafetyBubbleDetector::TunableParameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7336d6d6f52b25c25a6eeb8be3bb65d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetector::TunableParameters::ab_threshold</definition>
+        <argsstring></argsstring>
+        <name>ab_threshold</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::ab_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="707" column="9" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="707" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a4465ef9f122f8c1cc3ac9da3670a2155" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetector::TunableParameters::confidence_threshold</definition>
+        <argsstring></argsstring>
+        <name>confidence_threshold</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::confidence_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="708" column="9" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a29dfd485a86a4f04649eef4a40d57576" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ADI3DToFSafetyBubbleDetector::TunableParameters::safety_bubble_radius_in_mtr</definition>
+        <argsstring></argsstring>
+        <name>safety_bubble_radius_in_mtr</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::safety_bubble_radius_in_mtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="709" column="12" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7c198e380ac4d89dfad938af79d92899" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetector::TunableParameters::shape_of_safety_bubble</definition>
+        <argsstring></argsstring>
+        <name>shape_of_safety_bubble</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::shape_of_safety_bubble</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="710" column="9" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1aec9ec28e18dcc7e8ff003cc6b439a3bc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetector::TunableParameters::safety_bubble_detection_sensitivity</definition>
+        <argsstring></argsstring>
+        <name>safety_bubble_detection_sensitivity</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::safety_bubble_detection_sensitivity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="711" column="9" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1ad403cb51c6fc39df3fd2822b569e9f14" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFSafetyBubbleDetector::TunableParameters::enable_ransac_floor_detection</definition>
+        <argsstring></argsstring>
+        <name>enable_ransac_floor_detection</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::enable_ransac_floor_detection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="712" column="10" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a93f4fc42ece9cd07df067cfc62106b0d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFSafetyBubbleDetector::TunableParameters::enable_floor_paint</definition>
+        <argsstring></argsstring>
+        <name>enable_floor_paint</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::enable_floor_paint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="713" column="10" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1af881b3f4efb4d18b9c98beed358b6347" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFSafetyBubbleDetector::TunableParameters::enable_safety_bubble_zone_visualization</definition>
+        <argsstring></argsstring>
+        <name>enable_safety_bubble_zone_visualization</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetector::TunableParameters::enable_safety_bubble_zone_visualization</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="714" column="10" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="705" column="3" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="706" bodyend="715"/>
+    <listofallmembers>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7336d6d6f52b25c25a6eeb8be3bb65d3" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>ab_threshold</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a4465ef9f122f8c1cc3ac9da3670a2155" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>confidence_threshold</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a93f4fc42ece9cd07df067cfc62106b0d" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>enable_floor_paint</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1ad403cb51c6fc39df3fd2822b569e9f14" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>enable_ransac_floor_detection</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1af881b3f4efb4d18b9c98beed358b6347" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>enable_safety_bubble_zone_visualization</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1aec9ec28e18dcc7e8ff003cc6b439a3bc" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>safety_bubble_detection_sensitivity</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a29dfd485a86a4f04649eef4a40d57576" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>safety_bubble_radius_in_mtr</name></member>
+      <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7c198e380ac4d89dfad938af79d92899" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetector::TunableParameters</scope><name>shape_of_safety_bubble</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

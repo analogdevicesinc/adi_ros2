@@ -1,0 +1,14 @@
+.. _exhale_enum_adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091:
+
+Enum msg_type_e
+===============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: msg_type_e
+   :project: adrd2121_imu Doxygen Project

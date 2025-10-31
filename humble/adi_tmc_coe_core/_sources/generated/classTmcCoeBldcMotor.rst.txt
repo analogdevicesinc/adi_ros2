@@ -1,0 +1,26 @@
+.. _exhale_class_classTmcCoeBldcMotor:
+
+Class TmcCoeBldcMotor
+=====================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public TmcCoeMotor`` (:ref:`exhale_class_classTmcCoeMotor`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TmcCoeBldcMotor
+   :project: adi_tmc_coe_core Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

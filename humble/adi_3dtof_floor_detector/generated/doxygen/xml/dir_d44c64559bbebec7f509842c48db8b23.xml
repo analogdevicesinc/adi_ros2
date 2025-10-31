@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_a6c1829d60e8505026f4bed88734a08b">include/ros-perception</innerdir>
+    <innerfile refid="adi__3dtof__floor__detector__example_8h">adi_3dtof_floor_detector_example.h</innerfile>
+    <innerfile refid="adi__3dtof__floor__detector__node_8h">adi_3dtof_floor_detector_node.h</innerfile>
+    <innerfile refid="adi__3dtof__floor__detector__output__info_8h">adi_3dtof_floor_detector_output_info.h</innerfile>
+    <innerfile refid="adi__camera_8h">adi_camera.h</innerfile>
+    <innerfile refid="adi__sensor__frame__info_8h">adi_sensor_frame_info.h</innerfile>
+    <innerfile refid="adtf31xx__sensor__frame__info_8h">adtf31xx_sensor_frame_info.h</innerfile>
+    <innerfile refid="image__proc__utils_8h">image_proc_utils.h</innerfile>
+    <innerfile refid="input__sensor_8h">input_sensor.h</innerfile>
+    <innerfile refid="input__sensor__adtf31xx_8h">input_sensor_adtf31xx.h</innerfile>
+    <innerfile refid="input__sensor__factory_8h">input_sensor_factory.h</innerfile>
+    <innerfile refid="input__sensor__file__rosbagbin_8h">input_sensor_file_rosbagbin.h</innerfile>
+    <innerfile refid="input__sensor__ros__topics_8h">input_sensor_ros_topics.h</innerfile>
+    <innerfile refid="module__profile_8h">module_profile.h</innerfile>
+    <innerfile refid="output__sensor_8h">output_sensor.h</innerfile>
+    <innerfile refid="output__sensor__factory_8h">output_sensor_factory.h</innerfile>
+    <innerfile refid="output__sensor__file_8h">output_sensor_file.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

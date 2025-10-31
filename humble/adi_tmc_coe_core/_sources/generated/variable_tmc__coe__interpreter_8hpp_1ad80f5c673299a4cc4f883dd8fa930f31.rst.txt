@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31:
+
+Variable IOMAP_SIZE
+===================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IOMAP_SIZE
+   :project: adi_tmc_coe_core Doxygen Project

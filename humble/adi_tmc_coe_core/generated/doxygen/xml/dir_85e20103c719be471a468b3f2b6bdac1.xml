@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_85e20103c719be471a468b3f2b6bdac1" kind="dir">
+    <compoundname>include/adi_tmc_coe_core</compoundname>
+    <innerfile refid="adi__ethercat__grant_8hpp">adi_ethercat_grant.hpp</innerfile>
+    <innerfile refid="tmc__coe__bldc__motor_8hpp">tmc_coe_bldc_motor.hpp</innerfile>
+    <innerfile refid="tmc__coe__interpreter_8hpp">tmc_coe_interpreter.hpp</innerfile>
+    <innerfile refid="tmc__coe__motor_8hpp">tmc_coe_motor.hpp</innerfile>
+    <innerfile refid="tmc__coe__ros2_8hpp">tmc_coe_ros2.hpp</innerfile>
+    <innerfile refid="tmc__coe__stepper__motor_8hpp">tmc_coe_stepper_motor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmc_coe_core/"/>
+  </compounddef>
+</doxygen>

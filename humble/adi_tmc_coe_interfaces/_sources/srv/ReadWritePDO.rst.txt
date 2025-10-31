@@ -1,0 +1,8 @@
+ReadWritePDO
+============
+This is a ROS service definition.
+
+**Source**
+
+.. literalinclude:: ReadWritePDO.srv
+

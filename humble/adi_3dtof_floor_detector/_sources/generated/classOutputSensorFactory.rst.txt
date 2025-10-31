@@ -1,0 +1,17 @@
+.. _exhale_class_classOutputSensorFactory:
+
+Class OutputSensorFactory
+=========================
+
+- Defined in :ref:`file_include_output_sensor_factory.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: OutputSensorFactory
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

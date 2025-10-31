@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="The ADI 3DToF Floor Detector is a ROS (Robot Operating System) package for the Floor Detection application. The term “Floor Detection” refers to determining where the floor is in the given image. It is an image segmentation problem in which a given image is divided into floor and non-floor pixels. Floor Detection is an essential component of real-world applications such as Robot Navigation, Autonomous Driving, Augmented reality (AR) applications, and ‘Obstacles Detection and Avoidance’ for robots and people with inadequate vision. Here is the sample output of ADI 3DToF Floor Detector. From the left, AB image &amp; Depth image and Floor marked depth image can be seen below." name="description" />
+
+    <title>Overview &#8212; adi_3dtof_floor_detector 2.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=31a9e0ba" />
+    <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script async="async" src="_static/app.umd.js?v=3a4867e9"></script>
+    <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+    <meta name="page_source_suffix" content=".md">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        
+        <a id="logo" href="index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Overview</a></li>
+<li><a class="reference internal" href="#hardware">Hardware</a></li>
+<li><a class="reference internal" href="#adi-3dtof-floor-detector-node">adi_3dtof_floor_detector_node</a><ul>
+<li><a class="reference internal" href="#operation-modes">Operation Modes</a></li>
+<li><a class="reference internal" href="#camera-sensor-mode">Camera Sensor Mode</a><ul>
+<li><a class="reference internal" href="#updating-the-package">Updating the package</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#file-io-mode">File-IO Mode</a><ul>
+<li><a class="reference internal" href="#building-the-package-for-file-io">Building the package for file-io</a></li>
+<li><a class="reference internal" href="#running-the-node-in-file-io">Running the node in file-io</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#network-mode">Network Mode</a><ul>
+<li><a class="reference internal" href="#building-the-package">Building the package</a></li>
+<li><a class="reference internal" href="#running-the-node-in-network-mode">Running the node in network mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
+<li><a class="reference internal" href="#camera-modes">Camera Modes</a></li>
+<li><a class="reference internal" href="#published-topics">Published topics</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adi-3dtof-floor-detector-example-node">adi_3dtof_floor_detector_example_node</a><ul>
+<li><a class="reference internal" href="#id1">Parameters</a></li>
+<li><a class="reference internal" href="#subscribed-topics">Subscribed topics</a></li>
+<li><a class="reference internal" href="#id2">Published topics</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#appendix">Appendix</a><ul>
+<li><a class="reference internal" href="#updating-date-and-time">Updating Date and Time</a></li>
+<li><a class="reference internal" href="#build-flag">Build Flag</a></li>
+<li><a class="reference internal" href="#upgrading-the-firmware">Upgrading the firmware</a></li>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="index.html">
+      adi_3dtof_floor_detector
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_3dtof_floor_detector">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="generated/index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_compressed_depth_image_transport.html">Namespace compressed_depth_image_transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_rclcpp.html">Namespace rclcpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/namespace_std__chrono_literals.html">Namespace std::chrono_literals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/structADI3DToFFloorDetector_1_1DynamicReconfigureParameters.html">Struct ADI3DToFFloorDetector::DynamicReconfigureParameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFFloorDetector.html">Class ADI3DToFFloorDetector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFFloorDetectorExample.html">Class ADI3DToFFloorDetectorExample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADI3DToFFloorDetectorOutputInfo.html">Class ADI3DToFFloorDetectorOutputInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADISensorFrameInfo.html">Class ADISensorFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classADTF31xxSensorFrameInfo.html">Class ADTF31xxSensorFrameInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classInputSensorRosTopic.html">Class InputSensorRosTopic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classOOutputSensor.html">Class OOutputSensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classOutputSensorFactory.html">Class OutputSensorFactory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classOutputSensorFile.html">Class OutputSensorFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f.html">Enum compressionFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_output__sensor_8h_1a46f7c277684d20859bec33db540acbc8.html">Enum OutputFlag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1.html">Define CLOSE_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98.html">Define FLUSH_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416.html">Define INIT_FUNCTION_PROFILE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_adi__3dtof__floor__detector__example_8h_1ad1816b3b4b0d9ebdf432a17f8ca5c825.html">Define MAX_QUEUE_SIZE_FOR_TIME_SYNC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a429b699deab1043cbc596058f45199a4.html">Define PROFILE_FUNCTION_END</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da.html">Define PROFILE_FUNCTION_START</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2.html">Define PROFILE_ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459.html">Define PROFILE_ID_END</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16.html">Define PROFILE_ID_START</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_image__proc__utils_8h_1a3099edd83970d62c2832b51423462420.html">Define QFORMAT_FOR_POINTCLOUD_LUT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3.html">Define QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception.html">Directory ros-perception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins.html">Directory image_transport_plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_ros-perception_image_transport_plugins_compressed_depth_image_transport.html">Directory compressed_depth_image_transport</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_floor_detector_example.h.html">File adi_3dtof_floor_detector_example.h</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_floor_detector_example.h.html">Program Listing for File adi_3dtof_floor_detector_example.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_floor_detector_node.h.html">File adi_3dtof_floor_detector_node.h</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_floor_detector_node.h.html">Program Listing for File adi_3dtof_floor_detector_node.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_3dtof_floor_detector_output_info.h.html">File adi_3dtof_floor_detector_output_info.h</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_3dtof_floor_detector_output_info.h.html">Program Listing for File adi_3dtof_floor_detector_output_info.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_camera.h.html">File adi_camera.h</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_camera.h.html">Program Listing for File adi_camera.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_sensor_frame_info.h.html">File adi_sensor_frame_info.h</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_sensor_frame_info.h.html">Program Listing for File adi_sensor_frame_info.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6"/><div class="collapse"><a class="reference internal" href="generated/file_include_adtf31xx_sensor_frame_info.h.html">File adtf31xx_sensor_frame_info.h</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adtf31xx_sensor_frame_info.h.html">Program Listing for File adtf31xx_sensor_frame_info.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-7" id="toctree-collapse-2-7"/><div class="collapse"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">File compression_common.h</a><label for="toctree-collapse-2-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h.html">Program Listing for File compression_common.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-8" id="toctree-collapse-2-8"/><div class="collapse"><a class="reference internal" href="generated/file_include_image_proc_utils.h.html">File image_proc_utils.h</a><label for="toctree-collapse-2-8"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_image_proc_utils.h.html">Program Listing for File image_proc_utils.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-9" id="toctree-collapse-2-9"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor.h.html">File input_sensor.h</a><label for="toctree-collapse-2-9"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor.h.html">Program Listing for File input_sensor.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-10" id="toctree-collapse-2-10"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_adtf31xx.h.html">File input_sensor_adtf31xx.h</a><label for="toctree-collapse-2-10"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_adtf31xx.h.html">Program Listing for File input_sensor_adtf31xx.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-11" id="toctree-collapse-2-11"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_factory.h.html">File input_sensor_factory.h</a><label for="toctree-collapse-2-11"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_factory.h.html">Program Listing for File input_sensor_factory.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-12" id="toctree-collapse-2-12"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_file_rosbagbin.h.html">File input_sensor_file_rosbagbin.h</a><label for="toctree-collapse-2-12"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_file_rosbagbin.h.html">Program Listing for File input_sensor_file_rosbagbin.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-13" id="toctree-collapse-2-13"/><div class="collapse"><a class="reference internal" href="generated/file_include_input_sensor_ros_topics.h.html">File input_sensor_ros_topics.h</a><label for="toctree-collapse-2-13"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_input_sensor_ros_topics.h.html">Program Listing for File input_sensor_ros_topics.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-14" id="toctree-collapse-2-14"/><div class="collapse"><a class="reference internal" href="generated/file_include_module_profile.h.html">File module_profile.h</a><label for="toctree-collapse-2-14"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_module_profile.h.html">Program Listing for File module_profile.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-15" id="toctree-collapse-2-15"/><div class="collapse"><a class="reference internal" href="generated/file_include_output_sensor.h.html">File output_sensor.h</a><label for="toctree-collapse-2-15"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_output_sensor.h.html">Program Listing for File output_sensor.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-16" id="toctree-collapse-2-16"/><div class="collapse"><a class="reference internal" href="generated/file_include_output_sensor_factory.h.html">File output_sensor_factory.h</a><label for="toctree-collapse-2-16"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_output_sensor_factory.h.html">Program Listing for File output_sensor_factory.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-17" id="toctree-collapse-2-17"/><div class="collapse"><a class="reference internal" href="generated/file_include_output_sensor_file.h.html">File output_sensor_file.h</a><label for="toctree-collapse-2-17"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_output_sensor_file.h.html">Program Listing for File output_sensor_file.h</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-18" id="toctree-collapse-2-18"/><div class="collapse"><a class="reference internal" href="generated/file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">File rvl_codec.h</a><label for="toctree-collapse-2-18"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h.html">Program Listing for File rvl_codec.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+</body>
+</html>
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb empty"><ol></ol></nav>
+</div>
+          <div class="body" role="main">
+            
+  <h1 style="text-align: center;" > Analog Devices 3DToF Floor Detector</h1>
+<section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<p>The <strong>ADI 3DToF Floor Detector</strong> is a ROS (Robot Operating System) package for the Floor Detection application. The term “Floor Detection” refers to determining where the floor is in the given image. It is an image segmentation problem in which a given image is divided into floor and non-floor pixels. Floor Detection is an essential component of real-world applications such as Robot Navigation, Autonomous Driving, Augmented reality (AR) applications, and ‘Obstacles Detection and Avoidance’ for robots and people with inadequate vision.
+Here is the sample output of <strong>ADI 3DToF Floor Detector</strong>. From the left, AB image &amp; Depth image and Floor marked depth image can be seen below.</p>
+<p><img alt="Floor Detection Diagram" src="_images/floor_detection.png" /></p>
+<p>The <strong>ADI 3DToF Floor Detector</strong> is developed as a ROS application running on the ADI’s <em>EVAL-ADTF3175D-NXZ</em> Time-of-Flight platform. The node uses <a class="icon link reference external" href="https://github.com/analogdevicesinc/ToF/" target="_blank"><em>ADI ToF SDK</em></a> APIs to capture the frames from the sensor. The algorithm runs on the captured depth image and the outputs are published as ROS topics. The node publishes the Camera Info, Floor Mask Image along with Depth &amp; AB Images.</p>
+<p><a class="icon link reference external" href="https://docs.ros.org/en/humble/index.html" target="_blank"><img alt="Humble" src="https://img.shields.io/badge/-humble-green?style=plastic&amp;logo=ros" /></a> <a class="icon link reference external" href="https://releases.ubuntu.com/jammy/" target="_blank"><img alt="Ubuntu 22.04" src="https://img.shields.io/badge/-UBUNTU%2022.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <a class="icon link reference external" href="https://releases.ubuntu.com/focal/" target="_blank"><img alt="Ubuntu 20.04" src="https://img.shields.io/badge/-UBUNTU%2020.04-orange?style=plastic&amp;logo=ubuntu&amp;logoColor=white" /></a> <img alt="ARM64" src="https://img.shields.io/badge/arm64-blue?style=plastic&amp;logo=arm&amp;logoColor=white" /> <img alt="x86_64" src="https://img.shields.io/badge/x86__64-blue?style=plastic&amp;logo=intel&amp;logoColor=white" /> <a class="reference internal" href="#./LICENSE.txt"><span class="xref myst"><img alt="License" src="https://img.shields.io/badge/License-BSD_3--Clause-blue.svg" /></span></a></p>
+</section>
+<section id="hardware">
+<h1>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="icon link reference external" href="https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/EVAL-ADTF3175.html#eb-overview" target="_blank">EVAL-ADTF3175D-NXZ Module</a></p></li>
+<li><p>USB type-C to type-A cable - with 5gbps data speed support</p></li>
+<li><p>Host laptop with intel i5 or higher cpu running Ubuntu-20.04LTS or with Ubuntu-22.04</p></li>
+</ul>
+<blockquote>
+<div><p>[!note]
+Refer the <a class="icon link reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz" target="_blank">EVAL-ADTF3175D-NXZ User Guide</a> to ensure the Eval module has the adequate power supply during the operation.</p>
+</div></blockquote>
+<blockquote>
+<div><p>[!important]
+The EVAL-ADTF3175D-NXZ Sensor module must have a firmware version of at least <strong>5.2.5.0</strong>. Refer to <a class="icon link reference external" href="https://wiki.analog.com/resources/eval/user-guides/eval-adtf3175d-nxz-upgrade-firmware" target="_blank">user guide</a> on firmware upgrade, or see <a class="reference internal" href="#upgrading-the-firmware"><span class="xref myst">upgrading the firmware</span></a>.</p>
+</div></blockquote>
+<p><img alt="Connection Diagram" src="_images/connection_diagram.png" /></p>
+</section>
+<section id="adi-3dtof-floor-detector-node">
+<h1>adi_3dtof_floor_detector_node<a class="headerlink" href="#adi-3dtof-floor-detector-node" title="Link to this heading"></a></h1>
+<section id="operation-modes">
+<h2>Operation Modes<a class="headerlink" href="#operation-modes" title="Link to this heading"></a></h2>
+<p>This package has three different operation modes. Refer to the following intra-links to setup the package accordingly.</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#camera-sensor-mode"><span class="xref myst">Camera Sensor Mode</span></a></p></li>
+<li><p><a class="reference internal" href="#file-io-mode"><span class="xref myst">File-IO Mode</span></a></p></li>
+<li><p><a class="reference internal" href="#network-mode"><span class="xref myst">Network Mode</span></a></p></li>
+</ol>
+</section>
+<section id="camera-sensor-mode">
+<h2>Camera Sensor Mode<a class="headerlink" href="#camera-sensor-mode" title="Link to this heading"></a></h2>
+<p>The package is built on the sensor module and directly interfaces with the image sensor. The adi_3dtof_nxp_ubuntu_20_04_relx.x.x.img provided for the EVAL-ADTF5175D-NXZ sensor already contains this ROS package and is pre-built. In order to use this package, first we need to connect the sensor to the PC, and then SSH into it:</p>
+<ol class="arabic simple">
+<li><p>SSH into the Sensor</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
+$<span class="w"> </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Source ROS Humble</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/install/setup.bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Source the workspace</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/ros2_ws/devel/setup.bash
+$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>~/ros2_ws/install/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Launch the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_floor_detector</span></code> package.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_floor_detector<span class="w"> </span>adi_3dtof_floor_detector_launch.py<span class="w"> </span>arg_input_mode:<span class="o">=</span><span class="m">0</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!note]
+The operation mode is determined by the launch parameter <code class="docutils literal notranslate"><span class="pre">arg_input_mode:=0</span></code>. This can be modified in the launch file. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
+</div></blockquote>
+<section id="updating-the-package">
+<h3>Updating the package<a class="headerlink" href="#updating-the-package" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>[!warning]
+The time and date may be incorrect on the sensor and this can cause issues in updating the package. To update the time and date, refer to <a class="reference internal" href="#updating-date-and-time"><span class="xref myst">updating date and time</span></a>.</p>
+</div></blockquote>
+<p>In order to update and rebuild package to the latest version, run the following commands:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/adi_3dtof_floor_detector
+git<span class="w"> </span>pull
+<span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+<span class="nb">export</span><span class="w"> </span><span class="nv">MAKEFLAGS</span><span class="o">=</span><span class="s2">&quot;-j1&quot;</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--executor<span class="w"> </span>sequential<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DNXP<span class="o">=</span><span class="m">1</span><span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_floor_detector
+</pre></div>
+</div>
+</section>
+</section>
+<section id="file-io-mode">
+<h2>File-IO Mode<a class="headerlink" href="#file-io-mode" title="Link to this heading"></a></h2>
+<p>In this camera mode, the package is built on the Host PC in order to evaluate the properties of the package by running a pre-recorded bin file which contains the outputs from the sensor module.</p>
+<section id="building-the-package-for-file-io">
+<h3>Building the package for file-io<a class="headerlink" href="#building-the-package-for-file-io" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>On your PC, create a workspace</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/ros2_ws/src
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Clone the repository</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_floor_detector.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
+<span class="nb">cd</span><span class="w"> </span>..
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the workspace</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>--ignore-src<span class="w"> </span>-r<span class="w"> </span>-y
+$<span class="w"> </span>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>-DSENSOR_CONNECTED<span class="o">=</span>False
+</pre></div>
+</div>
+</section>
+<section id="running-the-node-in-file-io">
+<h3>Running the node in file-io<a class="headerlink" href="#running-the-node-in-file-io" title="Link to this heading"></a></h3>
+<p>In order to run the package in file-io, it needs input files provided in the release image. Follow the steps below to use existing bin files, or follow <strong>Creating Bin files for File-IO</strong> section in <a class="icon link reference external" href="https://github.com/analogdevicesinc/adi_3dtof_adtf31xx" target="_blank">adi_3dtof_adtf31xx</a> readme to create your own bin files.</p>
+<ol class="arabic simple">
+<li><p>Go to the installation directory of the ADI 3DToF ADTF31xx application <code class="docutils literal notranslate"><span class="pre">~/Analog</span> <span class="pre">Devices/ADI3DToFFloorDetector-Rel2.1.0</span></code></p></li>
+<li><p>Run the <code class="docutils literal notranslate"><span class="pre">get_videos.sh</span></code> script which will download the <code class="docutils literal notranslate"><span class="pre">adi_3dtof_input_video_files.zip</span></code> file in the current directory.</p></li>
+<li><p>Unzip it and copy the directory to <code class="docutils literal notranslate"><span class="pre">~/ros2_ws/src/adi_3dtof_input_video_files</span></code>.</p></li>
+<li><p>Update the input file argument <code class="docutils literal notranslate"><span class="pre">arg_input_file_name</span></code> in the launch file <code class="docutils literal notranslate"><span class="pre">adi_3dtof_floor_detector.launch</span></code> as per the above file path.</p></li>
+<li><p>Run the following commands:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Source the workspace</span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+
+<span class="c1"># Launch the package</span>
+$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_floor_detector<span class="w"> </span>adi_3dtof_floor_detector_launch.py<span class="w"> </span>arg_input_mode:<span class="o">=</span><span class="m">2</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!note]
+The <code class="docutils literal notranslate"><span class="pre">arg_input_mode:=2</span></code> sets the node to operate in file-io mode. This can be set in the launch file. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="network-mode">
+<h2>Network Mode<a class="headerlink" href="#network-mode" title="Link to this heading"></a></h2>
+<p>The sensor can be operated in network mode where depth and AB (Active Brightness) images are fetched over the local area network. The simplest way to use this is to connect the sensor directly to the PC so that a network interface via USB is created with a default IP address of <code class="docutils literal notranslate"><span class="pre">10.43.0.1</span></code>. In order to use the network mode, follow the following steps:</p>
+<section id="building-the-package">
+<h3>Building the package<a class="headerlink" href="#building-the-package" title="Link to this heading"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">adi_3dtof_floor_detector</span></code> depends on <a class="icon link reference external" href="https://github.com/analogdevicesinc/libaditof" target="_blank">libaditof</a> in order to communicate with the sensor. So we will need to build this in the same workspace as <code class="docutils literal notranslate"><span class="pre">adi_3dtof_floor_detector</span></code>.</p>
+<ol class="arabic simple">
+<li><p>On your PC, create the workspace and clone the required repositories.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/ros2_ws/src
+<span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_floor_detector.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/libaditof.git<span class="w"> </span>-v<span class="w"> </span>v6.0.1
+
+<span class="c1"># Initialize the submodules for libaditof</span>
+<span class="nb">cd</span><span class="w"> </span>libaditof
+git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
+
+<span class="c1"># Return to root of workspace folder</span>
+<span class="nb">cd</span><span class="w"> </span>../..
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install dependencies</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>--ignore-src<span class="w"> </span>-r<span class="w"> </span>-y
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the packages</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_floor_detector
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</pre></div>
+</div>
+</section>
+<section id="running-the-node-in-network-mode">
+<h3>Running the node in network mode<a class="headerlink" href="#running-the-node-in-network-mode" title="Link to this heading"></a></h3>
+<p>To run the node in network mode, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_floor_detector<span class="w"> </span>adi_3dtof_floor_detector_launch.py<span class="w"> </span>arg_input_mode:<span class="o">=</span><span class="m">3</span><span class="w"> </span>arg_input_sensor_ip:<span class="o">=</span><span class="m">10</span>.43.0.1
+</pre></div>
+</div>
+<blockquote>
+<div><p>[!note]
+The <code class="docutils literal notranslate"><span class="pre">arg_input_mode:=3</span></code> sets the node to operate in network mode. This value can be adjusted in the launch file. <code class="docutils literal notranslate"><span class="pre">arg_input_sensor_ip</span></code> must be set to the IP of the sensor. Refer to the <a class="reference internal" href="#parameters"><span class="xref myst">parameter</span></a> table to see what other parameters can be passed.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>arg_input_mode</strong></p></td>
+<td><p>int</p></td>
+<td><p>0</p></td>
+<td><p>Input mode, <em>0: Real Time Sensor, 2: Rosbag bin, 3: Network Mode</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_output_mode</strong></p></td>
+<td><p>int</p></td>
+<td><p>0</p></td>
+<td><p>Output mode, <em>0: No output files written, 1: avi and csv output files are written</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_input_file_name</strong></p></td>
+<td><p>String</p></td>
+<td><p>“no name”</p></td>
+<td><p>Input filename: Applicable only if the input mode is 2 or 3. If input mode is 2, this parameter represents input file name. If input mode is 3, this parameter represents the prefix of ROS topics.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_camera_mode</strong></p></td>
+<td><p>int</p></td>
+<td><p>3</p></td>
+<td><p>Frame Type: <em>1 - For LR-Native Mode, 3 - For LR-QNative Mode</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_ab_threshold</strong></p></td>
+<td><p>int</p></td>
+<td><p>10</p></td>
+<td><p>The abThreshold-based filter for the sensor</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_confidence_threshold</strong></p></td>
+<td><p>int</p></td>
+<td><p>10</p></td>
+<td><p>The confidenceThreshold-based filter for the sensor</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_config_file_name_of_tof_sdk</strong></p></td>
+<td><p>String</p></td>
+<td><p>“config/config_crosby_old_modes.json”</p></td>
+<td><p>Configuration file name of ToF SDK: <em>“config_adsd3500_adsd3100.json” - For ADSD3100 Devices, “config_adsd3500_adsd3030.json” - For ADSD3030 Devices</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_enable_ransac_floor_detection</strong></p></td>
+<td><p>int</p></td>
+<td><p>1</p></td>
+<td><p>Enable option for RANSAC floor detection, <em>0: disable, 1: enable</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_enable_fallback_floor_detection</strong></p></td>
+<td><p>int</p></td>
+<td><p>1</p></td>
+<td><p>Enable option for fallback floor detection when RANSAC fails, <em>0: disable, 1: enable</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_ransac_distance_threshold_mtr</strong></p></td>
+<td><p>float</p></td>
+<td><p>0.025f</p></td>
+<td><p>The allowed distance offset from the RANSAC floor plane, default value is 2.5 cm</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_ransac_max_iterations</strong></p></td>
+<td><p>int</p></td>
+<td><p>10</p></td>
+<td><p>The maximum iterations that RANSAC is allowed to run</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_discard_distance_threshold_mtr</strong></p></td>
+<td><p>float</p></td>
+<td><p>1.5f</p></td>
+<td><p>The points with depth value lesser than the given threshold are considered, default value is 1.5 m</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>arg_fallback_floor_height_offset_mtr</strong></p></td>
+<td><p>float</p></td>
+<td><p>0.1f</p></td>
+<td><p>The floor height offset for the fallback (3D Yw-based) floor detection, default value is 10 cm</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_enable_compression_op_image_topics</strong></p></td>
+<td><p>int</p></td>
+<td><p>0</p></td>
+<td><p>The enable option to publish compressed output images (Depth, AB, Floor Mask), <em>0: disable, 1: enable</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="camera-modes">
+<h2>Camera Modes<a class="headerlink" href="#camera-modes" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Imager Type</p></th>
+<th class="head"><p>Mode Name</p></th>
+<th class="head"><p>Mode Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="icon link reference external" href="https://www.analog.com/en/products/adsd3100.html" target="_blank">ADSD3100</a></p></td>
+<td><p>sr-native</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>lr-native</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>sr-qnative</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>lr-qnative</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>sr-mixed</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>lr-mixed</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="icon link reference external" href="https://www.analog.com/en/products/adsd3030.html" target="_blank">ADSD3030</a></p></td>
+<td><p>sr-native</p></td>
+<td><p>0</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>lr-native</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>lr-qnative</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>sr-mixed</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p>lr-mixed</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other modes</p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="published-topics">
+<h2>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>/cam1/depth_image</strong></p></td>
+<td><p>16-bit Depth image</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/ab_image</strong></p></td>
+<td><p>16-bit AB image</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/camera_info</strong></p></td>
+<td><p>Camera info</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/floor_mask</strong></p></td>
+<td><p>8-bit Floor Mask image</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/depth_image/compressedDepth</strong></p></td>
+<td><p>16-bit Depth image compressed with RVL compression technique (if enabled)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/ab_image/compressedDepth</strong></p></td>
+<td><p>16-bit AB image compressed with RVL compression technique (if enabled)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/compressed_floor_mask</strong></p></td>
+<td><p>8-bit Floor Mask image compressed with custom compression technique (if enabled)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
+<p>The below image shows subscribed AB, Depth and Floor mask output images in RVIZ.</p>
+<p><img alt="RVIZ Output Diagram 1" src="_images/rviz_output_1.png" /></p>
+</section>
+</section>
+<section id="adi-3dtof-floor-detector-example-node">
+<h1>adi_3dtof_floor_detector_example_node<a class="headerlink" href="#adi-3dtof-floor-detector-example-node" title="Link to this heading"></a></h1>
+<p>The package also provides a ROS2 node <em>adi_3dtof_floor_detector_example_node</em> which can be used to understand how to use the output from the ADI Floor Detector algorithm. The <em>adi_3dtof_floor_detector_example_node</em> subscribes to the output topics of <em>adi_3dtof_floor_detector_node</em> from the device and generates the output images. The output image topics of <em>adi_3dtof_floor_detector_node</em> can be either compressed or uncompressed.</p>
+<ol class="arabic simple">
+<li><p>Clone the repo and checkout the correct release branch/tag into catkin workspace/src directory</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/analogdevicesinc/adi_3dtof_floor_detector.git<span class="w"> </span>-b<span class="w"> </span>v2.1.0
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Install dependencies:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/
+$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>-y<span class="w"> </span>--ignore-src
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Build the package</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install<span class="w"> </span>--cmake-args<span class="w"> </span>-DCMAKE_BUILD_TYPE<span class="o">=</span>Release<span class="w"> </span>--packages-up-to<span class="w"> </span>adi_3dtof_floor_detector
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>This node can be run in 2 ways using the following command in a new terminal.</p></li>
+</ol>
+<blockquote>
+<div><p>[!note]
+Make sure that the ADI 3DToF Floor Detector node is already running on a device before running this node.</p>
+</div></blockquote>
+<p>Using RVIZ,</p>
+<p>In adi_3dtof_floor_detector_example_rviz_launch.py file change the parameter
+param name=<code class="docutils literal notranslate"><span class="pre">image_transport</span></code> to <code class="docutils literal notranslate"><span class="pre">raw</span></code>  for raw image.
+param name=<code class="docutils literal notranslate"><span class="pre">image_transport</span></code> to <code class="docutils literal notranslate"><span class="pre">compressedDepth</span></code>  for compressed images.
+then run the below command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_floor_detector<span class="w"> </span>adi_3dtof_floor_detector_example_rviz_launch.py
+</pre></div>
+</div>
+<p>At this stage, the <em>adi_3dtof_floor_detector_example_node</em> will be launched and start publishing the output topics <code class="docutils literal notranslate"><span class="pre">floor_marked_depth_image,</span> <span class="pre">floor_removed_depth_image</span></code>. The RVIZ will also be launched and outputs are shown as below.</p>
+<p><img alt="RVIZ Output Diagram 2" src="_images/rviz_output_2.png" /></p>
+<p>Using RQT,</p>
+<p>In adi_3dtof_floor_detector_example_rqt_launch.py file change the parameter
+param name=<code class="docutils literal notranslate"><span class="pre">image_transport</span></code> to <code class="docutils literal notranslate"><span class="pre">raw</span></code>  for raw image.
+param name=<code class="docutils literal notranslate"><span class="pre">image_transport</span></code> to <code class="docutils literal notranslate"><span class="pre">compressedDepth</span></code>  for compressed images.
+then run the below command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_3dtof_floor_detector<span class="w"> </span>adi_3dtof_floor_detector_example_rqt_launch.py
+</pre></div>
+</div>
+<p>At this stage, the <em>adi_3dtof_floor_detector_example_node</em> will be launched and start publishing the output topics <code class="docutils literal notranslate"><span class="pre">floor_marked_depth_image,</span> <span class="pre">floor_removed_depth_image</span></code>. The RQT will also be launched and outputs are shown as below.</p>
+<p><img alt="RQT Output Diagram" src="_images/rqt_output.png" /></p>
+<p>Here, the displayed parameters can be changed in run-time. This will help in fine-tuning and evaluating the algorithm.</p>
+<ol class="arabic simple" start="7">
+<li><p>Optionally, you can enable floor removed point cloud output by changing the parameter in the adi_3dtof_floor_detector_example_rviz_launch.py file as shown below.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&lt;arg<span class="w"> </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;arg_enable_pointcloud_output&quot;</span><span class="w"> </span><span class="nv">default</span><span class="o">=</span><span class="s2">&quot;1&quot;</span><span class="w"> </span>/&gt;
+</pre></div>
+</div>
+<p>To visualize the point cloud output, add the <code class="docutils literal notranslate"><span class="pre">floor_removed_point</span> <span class="pre">cloud</span></code> in the RVIZ. If the point cloud output is enabled when the outputs of the <em>adi_3dtof_floor_detector_node</em> are not compressed then the process might slow down. For the best usage, recommended option is to enable compression on outputs of <em>adi_3dtof_floor_detector_node</em> when the point cloud output is required.</p>
+<section id="id1">
+<h2>Parameters<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>arg_rostopic_cam_prefix</strong></p></td>
+<td><p>String</p></td>
+<td><p>cam1</p></td>
+<td><p>ROS Topic prefix name to subscribe</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>arg_enable_pointcloud_output</strong></p></td>
+<td><p>int</p></td>
+<td><p>0</p></td>
+<td><p>The enable option for the floor removed point cloud output</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>compression_parameter</strong></p></td>
+<td><p>String</p></td>
+<td><p>raw</p></td>
+<td><p>In this node, image transport subscribers are utilized. The <code class="docutils literal notranslate"><span class="pre">image_transport</span></code> parameter indicates the type of publisher topic to subscribe to. Options: “raw” - raw images, “compressedDepth” - compressed 16-bit images.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="subscribed-topics">
+<h2>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>/cam1/depth_image</strong></p></td>
+<td><p>16-bit Depth image</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/ab_image</strong></p></td>
+<td><p>16-bit AB image</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/camera_info</strong></p></td>
+<td><p>Camera info</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/floor_mask</strong></p></td>
+<td><p>8-bit Floor Mask image</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/depth_image/compressedDepth</strong></p></td>
+<td><p>16-bit Depth image compressed with RVL compression technique</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/cam1/ab_image/compressedDepth</strong></p></td>
+<td><p>16-bit AB image compressed with RVL compression technique</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/cam1/compressed_floor_mask</strong></p></td>
+<td><p>8-bit Floor Mask image compressed with custom compression technique</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id2">
+<h2>Published topics<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Topic</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>/floor_marked_depth_image</strong></p></td>
+<td><p>16-bit Depth image</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>/floor_removed_depth_image</strong></p></td>
+<td><p>16-bit AB image</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>/floor_removed_point_cloud</strong></p></td>
+<td><p>The floor removed point cloud (if enabled)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="appendix">
+<h1>Appendix<a class="headerlink" href="#appendix" title="Link to this heading"></a></h1>
+<section id="updating-date-and-time">
+<h2>Updating Date and Time<a class="headerlink" href="#updating-date-and-time" title="Link to this heading"></a></h2>
+<p>The customized ubuntu image loaded into the sensor will automatically connect to any WiFi hotspot with the SSID as <code class="docutils literal notranslate"><span class="pre">ADI</span></code> and password set as <code class="docutils literal notranslate"><span class="pre">analog123</span></code>. This network connection will automatically sync the system time using the available internet connection.</p>
+</section>
+<section id="build-flag">
+<h2>Build Flag<a class="headerlink" href="#build-flag" title="Link to this heading"></a></h2>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Flag</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>SENSOR_CONNECTED</strong></p></td>
+<td><p>Boolean</p></td>
+<td><p>TRUE</p></td>
+<td><p>Set to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> if a sensor is connected, otherwise set to <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> for File-IO mode.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="upgrading-the-firmware">
+<h2>Upgrading the firmware<a class="headerlink" href="#upgrading-the-firmware" title="Link to this heading"></a></h2>
+<p>To check the existing firmware version, log into the sensore device via SSH.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+<p>Run command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Workspace/Tool/ctrl_app
+./ctrl_app
+</pre></div>
+</div>
+<p>Your output would look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">V4L2</span> <span class="n">custom</span> <span class="n">control</span> <span class="n">interface</span> <span class="n">app</span> <span class="n">version</span><span class="p">:</span> <span class="mf">1.0.1</span>
+<span class="mi">59</span> <span class="mi">31</span>
+<span class="mi">05</span> <span class="mi">02</span> <span class="mi">05</span> <span class="mi">00</span> <span class="mi">61</span> <span class="mi">35</span> <span class="mi">39</span> <span class="mi">61</span> <span class="mi">66</span> <span class="mi">61</span> <span class="mi">64</span> <span class="mi">36</span> <span class="mi">64</span> <span class="mi">36</span> <span class="mi">63</span> <span class="mi">38</span> <span class="mi">65</span> <span class="mi">37</span> <span class="mi">66</span> <span class="mi">62</span> <span class="mi">31</span> <span class="mi">35</span> <span class="mi">33</span> <span class="mi">61</span> <span class="mi">32</span> <span class="mi">64</span> <span class="mi">62</span> <span class="mi">38</span> <span class="mi">63</span> <span class="mi">64</span> <span class="mi">38</span> <span class="mi">38</span> <span class="mi">34</span> <span class="mi">30</span> <span class="mi">33</span> <span class="mi">35</span> <span class="mi">39</span> <span class="mi">66</span> <span class="mi">31</span> <span class="mi">37</span> <span class="mi">31</span> <span class="mi">39</span> <span class="mi">35</span> <span class="mi">61</span>
+<span class="mi">59</span> <span class="mi">31</span>
+</pre></div>
+</div>
+<p>The first four values in the third line represents the version number, in this case, 5.2.5.0. If it is lower than this value, follow these steps below to update.</p>
+<ol class="arabic">
+<li><p>On your PC, install ADI ToF SDK release <a class="icon link reference external" href="https://github.com/analogdevicesinc/ToF/releases/tag/v6.0.1" target="_blank">v6.0.1</a></p></li>
+<li><p>After installing goto the installation folder and run the following commands to download the image</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>~/Analog<span class="se">\ </span>Devices/ToF_Evaluation_Ubuntu_ADTF3175D-Relx.x.x/image.
+chmod<span class="w"> </span>+x<span class="w"> </span>get_image.sh<span class="w"> </span>and<span class="w"> </span>./get_image.sh.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Latest image will be downloaded at ./image path as NXP-Img-Relx.x.x-ADTF3175D-.zip. Extract this folder using unzip NXP-Img-Relx.x.x-ADTF3175D-.zip command.</p></li>
+<li><p>This folder contains the NXP image and ADSD3500 firmware(Fw_Update_x.x.x.bin).</p></li>
+</ul>
+</li>
+<li><p>Run the following command to copy the Firmware to the NXP device</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>scp<span class="w"> </span>Fw_Update_5.2.5.bin<span class="w"> </span>analog@10.43.0.1:/home/analog/Workspace
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+</pre></div>
+</div>
+</li>
+<li><p>Now login to the device and run the Firmware upgrade command.</p></li>
+</ol>
+<blockquote>
+<div><p>[!warning]
+Do NOT reboot the board or interrupt the process as this may corrupt the module</p>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ssh<span class="w"> </span>analog@10.43.0.1
+<span class="w">   </span>Username:<span class="w"> </span>analog
+<span class="w">   </span>Password:<span class="w"> </span>analog
+$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>Workspace/ToF/build/examples/data_collect/
+$<span class="w"> </span>./data_collect<span class="w"> </span>--fw<span class="w"> </span>~/Workspace/Fw_Update_x.x.x.bin<span class="w"> </span>config/config_default.json
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Reboot the board after the successful operation.</p></li>
+</ul>
+</section>
+<section id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Compression on the point cloud is not supported.</p></li>
+<li><p>The <em>adi_3dtof_floor_detector_node</em> can only subscribe to uncompressed ROS image topics.</p></li>
+</ol>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h2>
+<p>Please contact the <code class="docutils literal notranslate"><span class="pre">Maintainers</span></code> if you want to evaluate the algorithm for your own setup/configuration.</p>
+<p>Any other inquiries are also welcome.</p>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <div></div>
+    <div></div>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2025, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

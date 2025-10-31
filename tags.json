@@ -7,6 +7,14 @@
     "humble > adi_3dtof_adtf31xx",
     ""
   ],
+  "humble/adi_3dtof_floor_detector": [
+    "humble > adi_3dtof_floor_detector",
+    ""
+  ],
+  "humble/adi_3dtof_safety_bubble_detector": [
+    "humble > adi_3dtof_safety_bubble_detector",
+    ""
+  ],
   "humble/adi_iio": [
     "humble > adi_iio",
     ""
@@ -15,8 +23,24 @@
     "humble > adi_imu",
     ""
   ],
+  "humble/adi_tmc_coe": [
+    "humble > adi_tmc_coe",
+    ""
+  ],
+  "humble/adi_tmc_coe_core": [
+    "humble > adi_tmc_coe_core",
+    ""
+  ],
+  "humble/adi_tmc_coe_interfaces": [
+    "humble > adi_tmc_coe_interfaces",
+    ""
+  ],
   "humble/adi_tmcl": [
     "humble > adi_tmcl",
+    ""
+  ],
+  "humble/adrd2121_imu": [
+    "humble > adrd2121_imu",
     ""
   ]
 }

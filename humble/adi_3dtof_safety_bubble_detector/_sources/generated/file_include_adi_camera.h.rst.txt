@@ -1,0 +1,46 @@
+
+.. _file_include_adi_camera.h:
+
+File adi_camera.h
+=================
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_camera.h``)
+-------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_camera.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``array``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_image_proc_utils.h`
+
+- :ref:`file_include_input_sensor.h`
+
+
+

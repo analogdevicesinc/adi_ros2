@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Function BUFDIOtoString &mdash; adrd2121_imu 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Function crc32_block" href="function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5.html" />
+    <link rel="prev" title="Function biasGracefulShutdownHandler" href="function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adrd2121_imu
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adrd2121_imu">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_std.html">Namespace std</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classAdiImuBufRos2.html">Class AdiImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classAdiImuRos2.html">Class AdiImuRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classBiasEstimateRos2.html">Class BiasEstimateRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImuBufRos2.html">Class ImuBufRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classImuStateCheckerRos2.html">Class ImuStateCheckerRos2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c.html">Enum buf_dio_pin_e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613.html">Enum e_imu_state</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091.html">Enum msg_type_e</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f.html">Function biasGracefulShutdownHandler</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Function BUFDIOtoString</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5.html">Function crc32_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd.html">Function current_timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__node_8hpp_1a9f65322fa10662aeacdf0c3dc14a7d11.html">Function gracefulShutdownHandler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b.html">Function print_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_adrd2121__imu__ros2__node_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9.html">Function shutdown(void)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8.html">Variable crc32_tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49.html">Variable GRAVITY_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b.html">Variable GRAVITY_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf.html">Variable IMU_ACCL_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57.html">Variable IMU_ACCL_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33.html">Variable IMU_GYRO_BIAS_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15.html">Variable IMU_GYRO_SCALE_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626.html">Variable TIME_BASE_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1.html">Variable TIME_BASE_MIN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8.html">Define ADIS16470</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1.html">Define ADIS16495</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a27a50acf70ee47d1923c803b1d0e5ade.html">Define ADIS16500</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970.html">Define API_CALL_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba.html">Define BIT_HIGH</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152.html">Define BIT_LOW</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a.html">Define BUFFER_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737.html">Define BURST_COUNT_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386.html">Define BURST_COUNT_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57.html">Define DATA_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963.html">Define DATA_RATE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c.html">Define DEC_RATE_CONST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726.html">Define DEFAULT_BAUD_RATE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2.html">Define MAX_CLEAR_RETRY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde.html">Define MAX_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167.html">Define MAX_WAIT_SERVICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20.html">Define MIN_CLEAR_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8.html">Define MODE_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a8df6275beb940e0f6fb78021240a6582.html">Define PROD_ID_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4.html">Define RADIAN_CONSTANT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580.html">Define RECOVERY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299.html">Define RESET</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9.html">Define STREAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f.html">Define THROW_LIMIT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374.html">Define TIME_BASE_CTRL_DEFAULT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6.html">Define TRIGGER_WAIT_TIME</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f.html">Define TWICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="define_imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3.html">Define WAIT_LIMIT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_imu__state__checker__ros2_8hpp_1ad94c26128974472337480354af787839.html">Typedef e_imu_state</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_adrd2121_imu.html">Directory adrd2121_imu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adi_imu_buf_ros2.hpp.html">File adi_imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adi_imu_ros2.hpp.html">File adi_imu_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.html">File adrd2121_imu_ros2_common.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.html">File adrd2121_imu_ros2_node.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_bias_estimate_node_ros2.hpp.html">File bias_estimate_node_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_imu_buf_ros2.hpp.html">File imu_buf_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adrd2121_imu_imu_state_checker_ros2.hpp.html">File imu_state_checker_ros2.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__message_definitions.html">Message Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../msg/AdiImu.html">AdiImu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../msg/ImuState.html">ImuState</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__service_definitions.html">Service Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../srv/BiasEstimateCmd.html">BiasEstimateCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/BufStatus.html">BufStatus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/ImuGlobCmd.html">ImuGlobCmd</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#adrd2121-imu">adrd2121_imu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#background">Background</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-architecture">Software Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#software-setup">Software Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#clone-this-repository">Clone this repository</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#install-dependencies">Install Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#hardware-setup">Hardware Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#access-to-device">Access to device</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#launch">Launch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#default-launch">Default launch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#change-log-level-for-nodes">Change log level for nodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#delayed-execution-of-bias-estimate-node">Delayed execution of bias_estimate_node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#adrd2121-imu-node">adrd2121_imu_node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#bias-estimate-node-ros2">bias_estimate_node_ros2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adrd2121_imu</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Function BUFDIOtoString</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/function_imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="function-bufdiotostring">
+<span id="exhale-function-imu-buf-ros2-8hpp-1a5410155f3e0de8650fc06ec12f7b08e4"></span><h1>Function BUFDIOtoString<a class="headerlink" href="#function-bufdiotostring" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adrd2121_imu_imu_buf_ros2.hpp.html#file-include-adrd2121-imu-imu-buf-ros2-hpp"><span class="std std-ref">File imu_buf_ros2.hpp</span></a></p></li>
+</ul>
+<section id="function-documentation">
+<h2>Function Documentation<a class="headerlink" href="#function-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414BUFDIOtoStringi">
+<span id="_CPPv314BUFDIOtoStringi"></span><span id="_CPPv214BUFDIOtoStringi"></span><span id="BUFDIOtoString__i"></span><span class="target" id="imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">BUFDIOtoString</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dio</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414BUFDIOtoStringi" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f.html" class="btn btn-neutral float-left" title="Function biasGracefulShutdownHandler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5.html" class="btn btn-neutral float-right" title="Function crc32_block" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adrd2121_imu&gt; Contributors. License: BSD-3.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

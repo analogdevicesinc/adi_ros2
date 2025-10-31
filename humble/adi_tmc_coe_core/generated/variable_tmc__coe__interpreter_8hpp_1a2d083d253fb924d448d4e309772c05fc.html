@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variable CW_NEW_SET_POINT_STOP &mdash; adi_tmc_coe_core 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Variable ERROR_CHECK_DELAY" href="variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html" />
+    <link rel="prev" title="Variable CW_NEW_SET_POINT_START" href="variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            adi_tmc_coe_core
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmc_coe_core">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structPACKED.html">Struct PACKED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmcCoeBldcMotor.html">Class TmcCoeBldcMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmcCoeInterpreter.html">Class TmcCoeInterpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmcCoeMotor.html">Class TmcCoeMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmcCoeROS2.html">Class TmcCoeROS2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classTmcCoeStepperMotor.html">Class TmcCoeStepperMotor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__bldc__motor_8hpp_1a1816d86b864c1905cff927194c63785d.html">Enum bldc_comm_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595.html">Enum control_word_val_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec.html">Enum controlword_pos_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb.html">Enum fsa_state_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3.html">Enum mode_of_operation_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15.html">Enum nmt_state_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a.html">Enum status_word_val_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385.html">Enum statusword_pos_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad.html">Enum stepper_comm_mode_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#variables">Variables</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e.html">Variable cap_string_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de.html">Variable CONTROL_WORD_FAIL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840.html">Variable CONTROL_WORD_SUCCESS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72.html">Variable CONTROL_WORD_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17.html">Variable CW_NEW_POSITION_ABSOLUTE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a.html">Variable CW_NEW_POSITION_RELATIVE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html">Variable CW_NEW_SET_POINT_START</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Variable CW_NEW_SET_POINT_STOP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html">Variable ERROR_CHECK_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_adi__ethercat__grant_8hpp_1a41d43d48bf3eefa06ba41d1496dc135d.html">Variable executable_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7.html">Variable INTERPOLATION_TIME_INDEX_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6.html">Variable INTERPOLATION_TIME_INDEX_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31.html">Variable IOMAP_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52.html">Variable MOTOR_TYPE_BLDC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93.html">Variable MOTOR_TYPE_STEPPER_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846.html">Variable MOTOR_TYPE_STEPPER_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f.html">Variable PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1.html">Variable PROCESS_DATA_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe.html">Variable SECS_TO_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2.html">Variable state_coding_val_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682.html">Variable status_state_mask_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018.html">Variable TOTAL_WORK_COUNTER_PER_SLAVE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e.html">Define _USE_MATH_DEFINES</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536.html">Typedef input_pdo_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="typedef_tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460.html">Typedef output_pdo_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_adi_tmc_coe_core.html">Directory adi_tmc_coe_core</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.html">File adi_ethercat_grant.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp.html">File tmc_coe_bldc_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html">File tmc_coe_interpreter.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.html">File tmc_coe_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.html">File tmc_coe_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.html">File tmc_coe_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-architecture">Software Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#build">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#bldc-motors">BLDC Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#stepper-motors">Stepper Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#pre-launch-one-time">Pre-Launch (One-time)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#config-launch-file">Config/Launch File</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#launch">Launch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#tmc-coe-ros2-node">tmc_coe_ros2_node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#ethercat-grant">ethercat_grant</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#quick-tests">Quick Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#test-velocity-mode">Test Velocity Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../__README.html#test-position-mode">Test Position Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../__README.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../__CHANGELOG.html#changelog-for-package-adi-tmc-coe-core">Changelog for package adi_tmc_coe_core</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../__CHANGELOG.html#id1">1.0.0 (2025-03-06)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">adi_tmc_coe_core</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Variable CW_NEW_SET_POINT_STOP</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="variable-cw-new-set-point-stop">
+<span id="exhale-variable-tmc-coe-interpreter-8hpp-1a2d083d253fb924d448d4e309772c05fc"></span><h1>Variable CW_NEW_SET_POINT_STOP<a class="headerlink" href="#variable-cw-new-set-point-stop" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html#file-include-adi-tmc-coe-core-tmc-coe-interpreter-hpp"><span class="std std-ref">File tmc_coe_interpreter.hpp</span></a></p></li>
+</ul>
+<section id="variable-documentation">
+<h2>Variable Documentation<a class="headerlink" href="#variable-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv421CW_NEW_SET_POINT_STOP">
+<span id="_CPPv321CW_NEW_SET_POINT_STOP"></span><span id="_CPPv221CW_NEW_SET_POINT_STOP"></span><span id="CW_NEW_SET_POINT_STOP__uint8_tC"></span><span class="target" id="tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">CW_NEW_SET_POINT_STOP</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv421CW_NEW_SET_POINT_STOP" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html" class="btn btn-neutral float-left" title="Variable CW_NEW_SET_POINT_START" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html" class="btn btn-neutral float-right" title="Variable ERROR_CHECK_DELAY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_tmc_coe_core&gt; Contributors. License: BSD-3-Clause.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

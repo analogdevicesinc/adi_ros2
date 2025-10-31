@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTmcCoeROS2" kind="class" language="C++" prot="public">
+    <compoundname>TmcCoeROS2</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTmcCoeROS2_1a56e1609347ae5afa9b98191fce84677c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr TmcCoeROS2::p_node_</definition>
+        <argsstring></argsstring>
+        <name>p_node_</name>
+        <qualifiedname>TmcCoeROS2::p_node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="29" column="27" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a3dea96509dfedffa03434bc108f78444" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="classTmcCoeMotor" kindref="compound">TmcCoeMotor</ref> * &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;TmcCoeMotor *&gt; &gt; TmcCoeROS2::p_motor_</definition>
+        <argsstring></argsstring>
+        <name>p_motor_</name>
+        <qualifiedname>TmcCoeROS2::p_motor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="30" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1ae81bf58d5b79bc93b36e5bed942a8ca5" prot="private" static="no" mutable="no">
+        <type><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref> *</type>
+        <definition>TmcCoeInterpreter* TmcCoeROS2::p_tmc_coe_interpreter_</definition>
+        <argsstring></argsstring>
+        <name>p_tmc_coe_interpreter_</name>
+        <qualifiedname>TmcCoeROS2::p_tmc_coe_interpreter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="31" column="22" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a43caf07f06ef5dd12e8f0398a67f14de" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeROS2::total_slaves_</definition>
+        <argsstring></argsstring>
+        <name>total_slaves_</name>
+        <qualifiedname>TmcCoeROS2::total_slaves_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="32" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a39ff37ca2371042e7a89ba2acef8f66e" prot="private" static="no" mutable="no">
+        <type>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr</type>
+        <definition>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr TmcCoeROS2::p_param_callback_handle_</definition>
+        <argsstring></argsstring>
+        <name>p_param_callback_handle_</name>
+        <qualifiedname>TmcCoeROS2::p_param_callback_handle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="33" column="69" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1af86ac7f90ec72f94d50a9249a9cd2657" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; TmcCoeROS2::param_en_slave_</definition>
+        <argsstring></argsstring>
+        <name>param_en_slave_</name>
+        <qualifiedname>TmcCoeROS2::param_en_slave_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="34" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a03f4cb0bbd920301d7d4ce0df566d1c7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; TmcCoeROS2::param_adhoc_mode_</definition>
+        <argsstring></argsstring>
+        <name>param_adhoc_mode_</name>
+        <qualifiedname>TmcCoeROS2::param_adhoc_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="35" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1aaf51ecd5eb2ce1ffbc4e0555d2d3e01c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmcCoeROS2::param_interface_name_</definition>
+        <argsstring></argsstring>
+        <name>param_interface_name_</name>
+        <qualifiedname>TmcCoeROS2::param_interface_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="36" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a2aa8b4eaaaa153fd5e19cbd33147d748" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeROS2::param_SDO_PDO_retries_</definition>
+        <argsstring></argsstring>
+        <name>param_SDO_PDO_retries_</name>
+        <qualifiedname>TmcCoeROS2::param_SDO_PDO_retries_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="37" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1ad53adda72209b19e9af42141bdd93db5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TmcCoeROS2::param_interface_timeout_</definition>
+        <argsstring></argsstring>
+        <name>param_interface_timeout_</name>
+        <qualifiedname>TmcCoeROS2::param_interface_timeout_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="38" column="10" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a6e8de971be223812fcf8619963bb155b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; TmcCoeROS2::slave_name_str_</definition>
+        <argsstring></argsstring>
+        <name>slave_name_str_</name>
+        <qualifiedname>TmcCoeROS2::slave_name_str_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="39" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a494baeae8bff57e25f43541bc73f0dd5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; TmcCoeROS2::total_motor_per_slave_</definition>
+        <argsstring></argsstring>
+        <name>total_motor_per_slave_</name>
+        <qualifiedname>TmcCoeROS2::total_motor_per_slave_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="40" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1ac2f643dda471f66e1f204081cbca8f20" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmcCoeROS2::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>TmcCoeROS2::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="41" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a3c3c5311c365f49002efa8568a426e33" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger TmcCoeROS2::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>TmcCoeROS2::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="42" column="18" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1abb4708c95b2cf6ba1b6e1ca141ccf6e1" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ReadWriteSDO &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWriteSDO&gt;::SharedPtr TmcCoeROS2::read_sdo_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>read_sdo_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::read_sdo_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="44" column="31" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a20f3aee4af2e8109e28b11169f7455d0" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ReadWriteSDO &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWriteSDO&gt;::SharedPtr TmcCoeROS2::write_sdo_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>write_sdo_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::write_sdo_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="45" column="31" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a4cf676564427b8b6830511918f8d2963" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ReadWritePDO &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWritePDO&gt;::SharedPtr TmcCoeROS2::read_pdo_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>read_pdo_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::read_pdo_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="46" column="31" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1ac77202ad1e3b2539670ee54a77216bcf" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ReadWritePDO &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWritePDO&gt;::SharedPtr TmcCoeROS2::write_pdo_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>write_pdo_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::write_pdo_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="47" column="31" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a80a89ffa6adcd673e1dc045f16829ddd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ChangeNMTState &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ChangeNMTState&gt;::SharedPtr TmcCoeROS2::change_nmt_state_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>change_nmt_state_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::change_nmt_state_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="49" column="5" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a35c3c3452f2f2f2df59bada79b7827f3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::ChangeCia402State &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ChangeCia402State&gt;::SharedPtr TmcCoeROS2::change_cia402_state_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>change_cia402_state_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::change_cia402_state_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="51" column="5" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a5279c10ff4355fad98f5275d14ffe79c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adi_tmc_coe_interfaces::srv::CyclicSyncMode &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::CyclicSyncMode&gt;::SharedPtr TmcCoeROS2::cyclic_sync_mode_service_srv_</definition>
+        <argsstring></argsstring>
+        <name>cyclic_sync_mode_service_srv_</name>
+        <qualifiedname>TmcCoeROS2::cyclic_sync_mode_service_srv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="53" column="5" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeROS2_1a557e69f3a3bc6d46d250484b61fb4603" prot="private" static="no" mutable="no">
+        <type>rclcpp::CallbackGroup::SharedPtr</type>
+        <definition>rclcpp::CallbackGroup::SharedPtr TmcCoeROS2::srv_callback_group_</definition>
+        <argsstring></argsstring>
+        <name>srv_callback_group_</name>
+        <qualifiedname>TmcCoeROS2::srv_callback_group_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="54" column="36" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTmcCoeROS2_1aff7c5e19e40d505bd760afc0ecf3c95b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::createMotor</definition>
+        <argsstring>(int slave_number)</argsstring>
+        <name>createMotor</name>
+        <qualifiedname>TmcCoeROS2::createMotor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>slave_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="56" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a5d10b730fadd90669d45360d949f13e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeROS2::initService</definition>
+        <argsstring>()</argsstring>
+        <name>initService</name>
+        <qualifiedname>TmcCoeROS2::initService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a22dfd4a5e6e0e63999946def69c60a47" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeROS2::initTmcParams</definition>
+        <argsstring>()</argsstring>
+        <name>initTmcParams</name>
+        <qualifiedname>TmcCoeROS2::initTmcParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a273cac19ae3e14e6a7b4124a6f60a08a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeROS2::initInterfaceParams</definition>
+        <argsstring>()</argsstring>
+        <name>initInterfaceParams</name>
+        <qualifiedname>TmcCoeROS2::initInterfaceParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="59" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a5668ca0229131f9f5381763aab19b595" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::initAutogenParams</definition>
+        <argsstring>()</argsstring>
+        <name>initAutogenParams</name>
+        <qualifiedname>TmcCoeROS2::initAutogenParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a17f9c9c9765e93606acbe7003ec8284a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>rcl_interfaces::msg::SetParametersResult</type>
+        <definition>rcl_interfaces::msg::SetParametersResult TmcCoeROS2::parametersCallback</definition>
+        <argsstring>(const std::vector&lt; rclcpp::Parameter &gt; &amp;parameters)</argsstring>
+        <name>parametersCallback</name>
+        <qualifiedname>TmcCoeROS2::parametersCallback</qualifiedname>
+        <param>
+          <type>const std::vector&lt; rclcpp::Parameter &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="61" column="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a7a5041b6ae4369be73ddab88840f49d4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::readSDOCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr res)</argsstring>
+        <name>readSDOCallback</name>
+        <qualifiedname>TmcCoeROS2::readSDOCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a9c1f29c97a4513bb9c83cb53432de2eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::writeSDOCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr res)</argsstring>
+        <name>writeSDOCallback</name>
+        <qualifiedname>TmcCoeROS2::writeSDOCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="65" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a0d05aa9e195da26bdbb2175a36bf4109" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::readPDOCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr res)</argsstring>
+        <name>readPDOCallback</name>
+        <qualifiedname>TmcCoeROS2::readPDOCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a70317f60f29a3c65dad9cab72f38eae4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::writePDOCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr res)</argsstring>
+        <name>writePDOCallback</name>
+        <qualifiedname>TmcCoeROS2::writePDOCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a5061eedf20b0dd64a9e9e3944690b378" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::changeNMTCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ChangeNMTState::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ChangeNMTState::Response::SharedPtr res)</argsstring>
+        <name>changeNMTCallback</name>
+        <qualifiedname>TmcCoeROS2::changeNMTCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ChangeNMTState::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ChangeNMTState::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="71" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a57b2b21a4d9da6f8d670cc00275ecafc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::changeCiA402Callback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::ChangeCia402State::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::ChangeCia402State::Response::SharedPtr res)</argsstring>
+        <name>changeCiA402Callback</name>
+        <qualifiedname>TmcCoeROS2::changeCiA402Callback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ChangeCia402State::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::ChangeCia402State::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1af2305bac887bde71f6b4c61e2dc2b5fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::cyclicSyncModeCallback</definition>
+        <argsstring>(adi_tmc_coe_interfaces::srv::CyclicSyncMode::Request::SharedPtr req, adi_tmc_coe_interfaces::srv::CyclicSyncMode::Response::SharedPtr res)</argsstring>
+        <name>cyclicSyncModeCallback</name>
+        <qualifiedname>TmcCoeROS2::cyclicSyncModeCallback</qualifiedname>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::CyclicSyncMode::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adi_tmc_coe_interfaces::srv::CyclicSyncMode::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="75" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTmcCoeROS2_1adb0b4d68a7926256e5a35eab90956273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeROS2::TmcCoeROS2</definition>
+        <argsstring>(rclcpp::Node::SharedPtr p_node)</argsstring>
+        <name>TmcCoeROS2</name>
+        <qualifiedname>TmcCoeROS2::TmcCoeROS2</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>p_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="79" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1acdf40e2098882bfa49a587fadd5db885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeROS2::~TmcCoeROS2</definition>
+        <argsstring>()</argsstring>
+        <name>~TmcCoeROS2</name>
+        <qualifiedname>TmcCoeROS2::~TmcCoeROS2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="80" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1acc85a25bad3c04dea4d3840bd2e4ab6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <qualifiedname>TmcCoeROS2::initialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="81" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a353a614ad954ffd42d874593ff600c73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeROS2::deInitialize</definition>
+        <argsstring>()</argsstring>
+        <name>deInitialize</name>
+        <qualifiedname>TmcCoeROS2::deInitialize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="82" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a7d55c5e39f1eb80dcfa2e5cd8a49092f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::enableDeviceMotors</definition>
+        <argsstring>()</argsstring>
+        <name>enableDeviceMotors</name>
+        <qualifiedname>TmcCoeROS2::enableDeviceMotors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="83" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeROS2_1a73d7d8260449fa67db11548a8dae9315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeROS2::isInterfaceUnresponsive</definition>
+        <argsstring>()</argsstring>
+        <name>isInterfaceUnresponsive</name>
+        <qualifiedname>TmcCoeROS2::isInterfaceUnresponsive</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="84" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="26" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="27" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classTmcCoeROS2_1a35c3c3452f2f2f2df59bada79b7827f3" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>change_cia402_state_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1a80a89ffa6adcd673e1dc045f16829ddd" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>change_nmt_state_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1a57b2b21a4d9da6f8d670cc00275ecafc" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>changeCiA402Callback</name></member>
+      <member refid="classTmcCoeROS2_1a5061eedf20b0dd64a9e9e3944690b378" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>changeNMTCallback</name></member>
+      <member refid="classTmcCoeROS2_1aff7c5e19e40d505bd760afc0ecf3c95b" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>createMotor</name></member>
+      <member refid="classTmcCoeROS2_1a5279c10ff4355fad98f5275d14ffe79c" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>cyclic_sync_mode_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1af2305bac887bde71f6b4c61e2dc2b5fc" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>cyclicSyncModeCallback</name></member>
+      <member refid="classTmcCoeROS2_1a353a614ad954ffd42d874593ff600c73" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>deInitialize</name></member>
+      <member refid="classTmcCoeROS2_1a7d55c5e39f1eb80dcfa2e5cd8a49092f" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>enableDeviceMotors</name></member>
+      <member refid="classTmcCoeROS2_1a5668ca0229131f9f5381763aab19b595" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>initAutogenParams</name></member>
+      <member refid="classTmcCoeROS2_1acc85a25bad3c04dea4d3840bd2e4ab6b" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>initialize</name></member>
+      <member refid="classTmcCoeROS2_1a273cac19ae3e14e6a7b4124a6f60a08a" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>initInterfaceParams</name></member>
+      <member refid="classTmcCoeROS2_1a5d10b730fadd90669d45360d949f13e0" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>initService</name></member>
+      <member refid="classTmcCoeROS2_1a22dfd4a5e6e0e63999946def69c60a47" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>initTmcParams</name></member>
+      <member refid="classTmcCoeROS2_1a73d7d8260449fa67db11548a8dae9315" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>isInterfaceUnresponsive</name></member>
+      <member refid="classTmcCoeROS2_1a3c3c5311c365f49002efa8568a426e33" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>logger_</name></member>
+      <member refid="classTmcCoeROS2_1ac2f643dda471f66e1f204081cbca8f20" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>logger_prefix_</name></member>
+      <member refid="classTmcCoeROS2_1a3dea96509dfedffa03434bc108f78444" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>p_motor_</name></member>
+      <member refid="classTmcCoeROS2_1a56e1609347ae5afa9b98191fce84677c" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>p_node_</name></member>
+      <member refid="classTmcCoeROS2_1a39ff37ca2371042e7a89ba2acef8f66e" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>p_param_callback_handle_</name></member>
+      <member refid="classTmcCoeROS2_1ae81bf58d5b79bc93b36e5bed942a8ca5" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>p_tmc_coe_interpreter_</name></member>
+      <member refid="classTmcCoeROS2_1a03f4cb0bbd920301d7d4ce0df566d1c7" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>param_adhoc_mode_</name></member>
+      <member refid="classTmcCoeROS2_1af86ac7f90ec72f94d50a9249a9cd2657" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>param_en_slave_</name></member>
+      <member refid="classTmcCoeROS2_1aaf51ecd5eb2ce1ffbc4e0555d2d3e01c" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>param_interface_name_</name></member>
+      <member refid="classTmcCoeROS2_1ad53adda72209b19e9af42141bdd93db5" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>param_interface_timeout_</name></member>
+      <member refid="classTmcCoeROS2_1a2aa8b4eaaaa153fd5e19cbd33147d748" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>param_SDO_PDO_retries_</name></member>
+      <member refid="classTmcCoeROS2_1a17f9c9c9765e93606acbe7003ec8284a" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>parametersCallback</name></member>
+      <member refid="classTmcCoeROS2_1a4cf676564427b8b6830511918f8d2963" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>read_pdo_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1abb4708c95b2cf6ba1b6e1ca141ccf6e1" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>read_sdo_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1a0d05aa9e195da26bdbb2175a36bf4109" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>readPDOCallback</name></member>
+      <member refid="classTmcCoeROS2_1a7a5041b6ae4369be73ddab88840f49d4" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>readSDOCallback</name></member>
+      <member refid="classTmcCoeROS2_1a6e8de971be223812fcf8619963bb155b" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>slave_name_str_</name></member>
+      <member refid="classTmcCoeROS2_1a557e69f3a3bc6d46d250484b61fb4603" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>srv_callback_group_</name></member>
+      <member refid="classTmcCoeROS2_1adb0b4d68a7926256e5a35eab90956273" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>TmcCoeROS2</name></member>
+      <member refid="classTmcCoeROS2_1a494baeae8bff57e25f43541bc73f0dd5" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>total_motor_per_slave_</name></member>
+      <member refid="classTmcCoeROS2_1a43caf07f06ef5dd12e8f0398a67f14de" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>total_slaves_</name></member>
+      <member refid="classTmcCoeROS2_1ac77202ad1e3b2539670ee54a77216bcf" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>write_pdo_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1a20f3aee4af2e8109e28b11169f7455d0" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>write_sdo_service_srv_</name></member>
+      <member refid="classTmcCoeROS2_1a70317f60f29a3c65dad9cab72f38eae4" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>writePDOCallback</name></member>
+      <member refid="classTmcCoeROS2_1a9c1f29c97a4513bb9c83cb53432de2eb" prot="private" virt="non-virtual"><scope>TmcCoeROS2</scope><name>writeSDOCallback</name></member>
+      <member refid="classTmcCoeROS2_1acdf40e2098882bfa49a587fadd5db885" prot="public" virt="non-virtual"><scope>TmcCoeROS2</scope><name>~TmcCoeROS2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

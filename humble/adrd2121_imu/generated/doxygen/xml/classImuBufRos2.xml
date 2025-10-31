@@ -1,0 +1,1362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classImuBufRos2" kind="class" language="C++" prot="public">
+    <compoundname>ImuBufRos2</compoundname>
+    <includes refid="imu__buf__ros2_8hpp" local="no">imu_buf_ros2.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classImuBufRos2_1a37f211607a32c39230ecb7d0f6629270" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Imu &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr ImuBufRos2::imu_pub_std_</definition>
+        <argsstring></argsstring>
+        <name>imu_pub_std_</name>
+        <qualifiedname>ImuBufRos2::imu_pub_std_</qualifiedname>
+        <briefdescription>
+<para>Publisher for topic using sensor_msgs as interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="205" column="33" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ae18f0a4dd0c7b1a7814cb580fe8ad123" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; adrd2121_imu::msg::AdiImu &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;adrd2121_imu::msg::AdiImu&gt;::SharedPtr ImuBufRos2::imu_pub_adi_</definition>
+        <argsstring></argsstring>
+        <name>imu_pub_adi_</name>
+        <qualifiedname>ImuBufRos2::imu_pub_adi_</qualifiedname>
+        <briefdescription>
+<para>Publisher for topic using ADI custom msg as interface. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="208" column="33" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ae5f6e7e13199823002907c302159f7d0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ImuBufRos2::topic_name_</definition>
+        <argsstring></argsstring>
+        <name>topic_name_</name>
+        <qualifiedname>ImuBufRos2::topic_name_</qualifiedname>
+        <briefdescription>
+<para>Name of Topic Publisher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="211" column="15" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1af5c50d8b01d4a122d8ef39971aa76c4c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr ImuBufRos2::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>ImuBufRos2::node_</qualifiedname>
+        <briefdescription>
+<para>Local node meant to catch node from main function to be used for ROS2 APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="214" column="27" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a4d72164ef679adfc10e189e46ab9dc60" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ImuBufRos2::usb_dev_</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_</name>
+        <qualifiedname>ImuBufRos2::usb_dev_</qualifiedname>
+        <briefdescription>
+<para>Name of USB device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="217" column="15" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a4205bc5c0aa4f1a894b5e97aaec2ae41" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::usb_baud_</definition>
+        <argsstring></argsstring>
+        <name>usb_baud_</name>
+        <qualifiedname>ImuBufRos2::usb_baud_</qualifiedname>
+        <briefdescription>
+<para>USB Baud Rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="220" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ac167be7978c86e11b1b9180a25f48439" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::b_imu_burst_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_burst_</name>
+        <qualifiedname>ImuBufRos2::b_imu_burst_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable IMU Burst Read. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="223" column="8" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a427e768ae957da59609f99b66b208a1e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_overflow_</definition>
+        <argsstring></argsstring>
+        <name>buf_overflow_</name>
+        <qualifiedname>ImuBufRos2::buf_overflow_</qualifiedname>
+        <briefdescription>
+<para>Buffer overflow behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="226" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a1a29b684912ab2c7aaac6ab516c8ff20" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::b_buf_pps_</definition>
+        <argsstring></argsstring>
+        <name>b_buf_pps_</name>
+        <qualifiedname>ImuBufRos2::b_buf_pps_</qualifiedname>
+        <briefdescription>
+<para>Boolean to trigger PPS_ENABLE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="229" column="8" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ae6a9943aafe68d39d032bff52b910436" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_data_rdy_sel_</definition>
+        <argsstring></argsstring>
+        <name>buf_data_rdy_sel_</name>
+        <qualifiedname>ImuBufRos2::buf_data_rdy_sel_</qualifiedname>
+        <briefdescription>
+<para>IMU DIO output pin is treated as data ready. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="232" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a57c127cd52a2f24b0a627ea51995ac0e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_data_rdy_pol_</definition>
+        <argsstring></argsstring>
+        <name>buf_data_rdy_pol_</name>
+        <qualifiedname>ImuBufRos2::buf_data_rdy_pol_</qualifiedname>
+        <briefdescription>
+<para>Data ready trigger polarity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="235" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a7291efdb8dc412ea850b2e3e7f67a75e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_pps_pol_</definition>
+        <argsstring></argsstring>
+        <name>buf_pps_pol_</name>
+        <qualifiedname>ImuBufRos2::buf_pps_pol_</qualifiedname>
+        <briefdescription>
+<para>PPS trigger polarity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="238" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a211af9f21cd6aa34ddce180317b6a64b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_pps_sel_</definition>
+        <argsstring></argsstring>
+        <name>buf_pps_sel_</name>
+        <qualifiedname>ImuBufRos2::buf_pps_sel_</qualifiedname>
+        <briefdescription>
+<para>Host processor DIO output pin acts as a Pulse Per Second (PPS) Input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="241" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1add1074d9ff764d5cbf52fcdd0b632d81" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_pps_freq_</definition>
+        <argsstring></argsstring>
+        <name>buf_pps_freq_</name>
+        <qualifiedname>ImuBufRos2::buf_pps_freq_</qualifiedname>
+        <briefdescription>
+<para>PPS Input Frequency is (10 ^ (buf_pps_freq) Hz) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="244" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a4dd94d7eff45cfb0b03e9ff1247eb36b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_pin_pass_</definition>
+        <argsstring></argsstring>
+        <name>buf_pin_pass_</name>
+        <qualifiedname>ImuBufRos2::buf_pin_pass_</qualifiedname>
+        <briefdescription>
+<para>Pins which are directly connected from the host processor to the IMU using an ADG1611. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="247" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a328936764640e8c43b881fcd07137c52" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_watermark_int_</definition>
+        <argsstring></argsstring>
+        <name>buf_watermark_int_</name>
+        <qualifiedname>ImuBufRos2::buf_watermark_int_</qualifiedname>
+        <briefdescription>
+<para>Pin for the buffer watermark interrupt signal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="250" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a99395b1c1d42c25e7af4f56684465efa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_overflow_int_</definition>
+        <argsstring></argsstring>
+        <name>buf_overflow_int_</name>
+        <qualifiedname>ImuBufRos2::buf_overflow_int_</qualifiedname>
+        <briefdescription>
+<para>Pin for the buffer overflow interrupt signal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="253" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aa2b21b74533a577c8c5894aa772b4e21" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_error_int_</definition>
+        <argsstring></argsstring>
+        <name>buf_error_int_</name>
+        <qualifiedname>ImuBufRos2::buf_error_int_</qualifiedname>
+        <briefdescription>
+<para>Pin for the error interrupt signal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="256" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a66fe5afeed44b598cf958d9bad980afe" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::prev_data_count_</definition>
+        <argsstring></argsstring>
+        <name>prev_data_count_</name>
+        <qualifiedname>ImuBufRos2::prev_data_count_</qualifiedname>
+        <briefdescription>
+<para>Counter for Previous Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="259" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a649b6991581f559f9ee5a26a9d8a2b40" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::imu_data_count_</definition>
+        <argsstring></argsstring>
+        <name>imu_data_count_</name>
+        <qualifiedname>ImuBufRos2::imu_data_count_</qualifiedname>
+        <briefdescription>
+<para>Counter for IMU Data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="262" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a6e23c17c97756c5f30490bd6da1ac3d9" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t ImuBufRos2::start_data_count_</definition>
+        <argsstring></argsstring>
+        <name>start_data_count_</name>
+        <qualifiedname>ImuBufRos2::start_data_count_</qualifiedname>
+        <briefdescription>
+<para>Counter for initial data count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="265" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aa3895985205a6022d5a62809237dce56" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t ImuBufRos2::driver_data_count_</definition>
+        <argsstring></argsstring>
+        <name>driver_data_count_</name>
+        <qualifiedname>ImuBufRos2::driver_data_count_</qualifiedname>
+        <briefdescription>
+<para>Counter for data received from Buffer Board. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="268" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aca4e842c51fd0ccda9c5e24a310a19ab" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::rollover_count_</definition>
+        <argsstring></argsstring>
+        <name>rollover_count_</name>
+        <qualifiedname>ImuBufRos2::rollover_count_</qualifiedname>
+        <briefdescription>
+<para>Rollover Counter (in excess of 65536) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="271" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1acca6d333f19f41adbaa40367fb0bc58f" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::drop_count_</definition>
+        <argsstring></argsstring>
+        <name>drop_count_</name>
+        <qualifiedname>ImuBufRos2::drop_count_</qualifiedname>
+        <briefdescription>
+<para>Counter of dropped data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="274" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a9929db511867e1ed18127171f140e696" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ImuBufRos2::buf_len_</definition>
+        <argsstring></argsstring>
+        <name>buf_len_</name>
+        <qualifiedname>ImuBufRos2::buf_len_</qualifiedname>
+        <briefdescription>
+<para>Buffer Length. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="278" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ac498858990f12e2721eb8865f5e811ba" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ImuBufRos2::burst_raw_[MAX_BUF_LEN_BYTES *10]</definition>
+        <argsstring>[MAX_BUF_LEN_BYTES *10]</argsstring>
+        <name>burst_raw_</name>
+        <qualifiedname>ImuBufRos2::burst_raw_</qualifiedname>
+        <briefdescription>
+<para>Raw data from ADRD2121. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="281" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aa355fff6877741d72203e122e939e002" prot="private" static="no" mutable="no">
+        <type>imubuf_BurstOutput_t</type>
+        <definition>imubuf_BurstOutput_t ImuBufRos2::buf_burst_out_</definition>
+        <argsstring></argsstring>
+        <name>buf_burst_out_</name>
+        <qualifiedname>ImuBufRos2::buf_burst_out_</qualifiedname>
+        <briefdescription>
+<para>Struct for scaled data from ADRD2121. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="284" column="24" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a2429c0db78792db23182c81208c1d772" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::utc_time_</definition>
+        <argsstring></argsstring>
+        <name>utc_time_</name>
+        <qualifiedname>ImuBufRos2::utc_time_</qualifiedname>
+        <briefdescription>
+<para>Time stamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="287" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aba776f51aec45c65ddf9230a71f75724" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t ImuBufRos2::utc_time_us_</definition>
+        <argsstring></argsstring>
+        <name>utc_time_us_</name>
+        <qualifiedname>ImuBufRos2::utc_time_us_</qualifiedname>
+        <briefdescription>
+<para>Time stamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="289" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a888568c406928f25348ad1b3093a2521" prot="private" static="no" mutable="no">
+        <type>adi_imu_BurstOutput_t</type>
+        <definition>adi_imu_BurstOutput_t ImuBufRos2::burst_out_</definition>
+        <argsstring></argsstring>
+        <name>burst_out_</name>
+        <qualifiedname>ImuBufRos2::burst_out_</qualifiedname>
+        <briefdescription>
+<para>Struct for scaled IMU data from buf_burst_out_. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="292" column="25" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1af1e39fc9b08e2f2f1ee8baaccb2391cf" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ImuBufRos2::cur_buf_count_</definition>
+        <argsstring></argsstring>
+        <name>cur_buf_count_</name>
+        <qualifiedname>ImuBufRos2::cur_buf_count_</qualifiedname>
+        <briefdescription>
+<para>Current buffer count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="295" column="12" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1acc3e776f6e1846c56df476a10b877a7d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::b_first_read_</definition>
+        <argsstring></argsstring>
+        <name>b_first_read_</name>
+        <qualifiedname>ImuBufRos2::b_first_read_</qualifiedname>
+        <briefdescription>
+<para>Boolean for first reading Needed when initializing before reading buffer data_raw. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="299" column="8" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1ac20de47e62b254a693ef6f89b29b41a4" prot="private" static="no" mutable="no">
+        <type>adi_imu_Device_t *</type>
+        <definition>adi_imu_Device_t* ImuBufRos2::p_device_</definition>
+        <argsstring></argsstring>
+        <name>p_device_</name>
+        <qualifiedname>ImuBufRos2::p_device_</qualifiedname>
+        <briefdescription>
+<para>POinter to main device struct. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="302" column="21" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a82babb3aa2ecc15572c44cae662eea32" prot="private" static="no" mutable="no">
+        <type>msg_type_e</type>
+        <definition>msg_type_e ImuBufRos2::msg_type_</definition>
+        <argsstring></argsstring>
+        <name>msg_type_</name>
+        <qualifiedname>ImuBufRos2::msg_type_</qualifiedname>
+        <briefdescription>
+<para>ROS Message type of imu_pub_[msg]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="305" column="14" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a33d1f361ac9c1a91d9beb78e3bc59cb5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::buf_burst_count_</definition>
+        <argsstring></argsstring>
+        <name>buf_burst_count_</name>
+        <qualifiedname>ImuBufRos2::buf_burst_count_</qualifiedname>
+        <briefdescription>
+<para>Buffer burst count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="308" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1acb3c5895a72a6a1ce667e64217e5f05d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::b_enable_init_recovery_</definition>
+        <argsstring></argsstring>
+        <name>b_enable_init_recovery_</name>
+        <qualifiedname>ImuBufRos2::b_enable_init_recovery_</qualifiedname>
+        <briefdescription>
+<para>For enabling/disabling automatic recovery operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="311" column="8" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1aa7eb64a23065a84520c579027bcd9513" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ImuBufRos2::mode_of_operation_</definition>
+        <argsstring></argsstring>
+        <name>mode_of_operation_</name>
+        <qualifiedname>ImuBufRos2::mode_of_operation_</qualifiedname>
+        <briefdescription>
+<para>Determine what operation mode will the node be running in. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="314" column="11" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a140ab521677460bc0cd9fa02dac4a330" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuBufRos2::clear_buffer_timeout_</definition>
+        <argsstring></argsstring>
+        <name>clear_buffer_timeout_</name>
+        <qualifiedname>ImuBufRos2::clear_buffer_timeout_</qualifiedname>
+        <briefdescription>
+<para>Timeout for clearing the USB buffer, in milliseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="317" column="7" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a0a424ba0da95ac9e651286d50c4590d7" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; std_srvs::srv::Trigger &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr ImuBufRos2::p_factoryReset</definition>
+        <argsstring></argsstring>
+        <name>p_factoryReset</name>
+        <qualifiedname>ImuBufRos2::p_factoryReset</qualifiedname>
+        <briefdescription>
+<para>Service Server for /factory_reset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="320" column="31" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a89d0a823de79ad97205d8dd98fce1fff" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; std_srvs::srv::Trigger &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr ImuBufRos2::p_clearFault</definition>
+        <argsstring></argsstring>
+        <name>p_clearFault</name>
+        <qualifiedname>ImuBufRos2::p_clearFault</qualifiedname>
+        <briefdescription>
+<para>Service Server for /clear_fault. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="323" column="31" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1a985908525e3441b834cb195090254e0c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; std_srvs::srv::Trigger &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;std_srvs::srv::Trigger&gt;::SharedPtr ImuBufRos2::p_flashUpdate</definition>
+        <argsstring></argsstring>
+        <name>p_flashUpdate</name>
+        <qualifiedname>ImuBufRos2::p_flashUpdate</qualifiedname>
+        <briefdescription>
+<para>Service Server for /flash_update. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="326" column="31" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuBufRos2_1adc0965c8f7bea9cd23c6ba4937a85133" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adrd2121_imu::srv::BufStatus &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adrd2121_imu::srv::BufStatus&gt;::SharedPtr ImuBufRos2::p_getBufferStatus</definition>
+        <argsstring></argsstring>
+        <name>p_getBufferStatus</name>
+        <qualifiedname>ImuBufRos2::p_getBufferStatus</qualifiedname>
+        <briefdescription>
+<para>Service Server for /check_status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="329" column="31" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="329" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImuBufRos2::ImuBufRos2</definition>
+        <argsstring>(const rclcpp::Node::SharedPtr &amp;node, adi_imu_Device_t *p_device)</argsstring>
+        <name>ImuBufRos2</name>
+        <qualifiedname>ImuBufRos2::ImuBufRos2</qualifiedname>
+        <param>
+          <type>const rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>adi_imu_Device_t *</type>
+          <declname>p_device</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref> Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to ROS2 node(adrd2121_imu_node) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to adi_imu_device_t <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="73" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a7bda7f519d3ec3b7bb4e7bde9f01434b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImuBufRos2::~ImuBufRos2</definition>
+        <argsstring>()</argsstring>
+        <name>~ImuBufRos2</name>
+        <qualifiedname>ImuBufRos2::~ImuBufRos2</qualifiedname>
+        <briefdescription>
+<para><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref> Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="76" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a159102b439b45f5742764356f3f7c987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuBufRos2::loadParams</definition>
+        <argsstring>(void)</argsstring>
+        <name>loadParams</name>
+        <qualifiedname>ImuBufRos2::loadParams</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Loads Parameters for ADRD2121. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="79" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a54ba0fd51aacd835b38d20ce021aabc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <qualifiedname>ImuBufRos2::init</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the ADRD2121. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="84" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ad442c78a2377295fe195b942160dd3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::config</definition>
+        <argsstring>(msg_type_e msg_type)</argsstring>
+        <name>config</name>
+        <qualifiedname>ImuBufRos2::config</qualifiedname>
+        <param>
+          <type>msg_type_e</type>
+          <declname>msg_type</declname>
+        </param>
+        <briefdescription>
+<para>Configures the ADRD2121 based on parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determine the msg_type the topic will be published on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="89" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a168c9a7dc441bd79094bcf2f3faf249a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::dataReadAndPub</definition>
+        <argsstring>(std::string frame_name, msg_type_e msg_type)</argsstring>
+        <name>dataReadAndPub</name>
+        <qualifiedname>ImuBufRos2::dataReadAndPub</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>frame_name</declname>
+        </param>
+        <param>
+          <type>msg_type_e</type>
+          <declname>msg_type</declname>
+        </param>
+        <briefdescription>
+<para>An all-in-one function for reading the burst_data from the IMU, handle the data, and publish it to a topic. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">frame_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ROS Frame of data to be published </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determine the msg_type the topic will be published on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="96" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a79eeaf4e261dbb692a17f42dc836ea51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::validateData</definition>
+        <argsstring>(void)</argsstring>
+        <name>validateData</name>
+        <qualifiedname>ImuBufRos2::validateData</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Validate data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a4407d3530939dd793a374bf0727b75d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::startBufferRead</definition>
+        <argsstring>(void)</argsstring>
+        <name>startBufferRead</name>
+        <qualifiedname>ImuBufRos2::startBufferRead</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Starts capture of ADRD2121 Data Performs an initial read and discards it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="107" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ae78c3c804c440871b4031c3f4ad91df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::stopBufferRead</definition>
+        <argsstring>(void)</argsstring>
+        <name>stopBufferRead</name>
+        <qualifiedname>ImuBufRos2::stopBufferRead</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Stops capture of ADRD2121 Data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="112" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ad36d5197ddc6001e9bae8945b145a234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ImuBufRos2::getBufferStatus</definition>
+        <argsstring>(uint16_t *status)</argsstring>
+        <name>getBufferStatus</name>
+        <qualifiedname>ImuBufRos2::getBufferStatus</qualifiedname>
+        <param>
+          <type>uint16_t *</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Checks status of ADRD2121. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to holder of status <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="117" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a00f5b46bf67183a841b9d43a48bcebae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::factoryReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>factoryReset</name>
+        <qualifiedname>ImuBufRos2::factoryReset</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reverts the ADRD2121 to its factory settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="122" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a7c9f04cc3bee0bc8f4c11473a8e2deff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::clearFault</definition>
+        <argsstring>(void)</argsstring>
+        <name>clearFault</name>
+        <qualifiedname>ImuBufRos2::clearFault</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clears FAULT status in Buffer Board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="127" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a04e7bd3d61a80dc7d2d5e47c4ca5057b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::flashUpdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>flashUpdate</name>
+        <qualifiedname>ImuBufRos2::flashUpdate</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Saves current board configuration in flash memory, to be loaded in next bootup. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="132" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a34e72b4bb4a344271f60b3983cdf6016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::recoverBoard</definition>
+        <argsstring>(void)</argsstring>
+        <name>recoverBoard</name>
+        <qualifiedname>ImuBufRos2::recoverBoard</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Executes recovery operation to clear status back to 0000. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Will only be called if enable_init_recovery is TRUE <simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="137" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a20e624b5984a9ed9929f04a8dae472b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuBufRos2::initServiceServers</definition>
+        <argsstring>(uint8_t mode_of_operation)</argsstring>
+        <name>initServiceServers</name>
+        <qualifiedname>ImuBufRos2::initServiceServers</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode_of_operation</declname>
+        </param>
+        <briefdescription>
+<para>Initializes service servers based on operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode_of_operation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Determine if operation is STREAM or RECOVERY</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="144" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a8940e34ebe8683bf78db202e86cd2b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ImuBufRos2::getStatusDescription</definition>
+        <argsstring>(uint16_t status)</argsstring>
+        <name>getStatusDescription</name>
+        <qualifiedname>ImuBufRos2::getStatusDescription</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /bias_estimate is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status to be evaluated </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String of current status of Buffer Board. <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="152" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ad1100bd3baab34229b177c47211a0238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::factoryResetCB</definition>
+        <argsstring>(std_srvs::srv::Trigger::Request::SharedPtr req, std_srvs::srv::Trigger::Response::SharedPtr res)</argsstring>
+        <name>factoryResetCB</name>
+        <qualifiedname>ImuBufRos2::factoryResetCB</qualifiedname>
+        <param>
+          <type>std_srvs::srv::Trigger::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std_srvs::srv::Trigger::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /factory_reset is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="160" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1abb5bc1d1235daeaa24a7e3e5b0b4cf58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::clearFaultCB</definition>
+        <argsstring>(std_srvs::srv::Trigger::Request::SharedPtr req, std_srvs::srv::Trigger::Response::SharedPtr res)</argsstring>
+        <name>clearFaultCB</name>
+        <qualifiedname>ImuBufRos2::clearFaultCB</qualifiedname>
+        <param>
+          <type>std_srvs::srv::Trigger::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std_srvs::srv::Trigger::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /clear_fault is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="169" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ab3744776feb120b041ebf707984b39e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::flashUpdateCB</definition>
+        <argsstring>(std_srvs::srv::Trigger::Request::SharedPtr req, std_srvs::srv::Trigger::Response::SharedPtr res)</argsstring>
+        <name>flashUpdateCB</name>
+        <qualifiedname>ImuBufRos2::flashUpdateCB</qualifiedname>
+        <param>
+          <type>std_srvs::srv::Trigger::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>std_srvs::srv::Trigger::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /flash_update is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="178" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ac5f37979ac0eda7abe2fdf057d317fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::getBufferStatusCB</definition>
+        <argsstring>(adrd2121_imu::srv::BufStatus::Request::SharedPtr req, adrd2121_imu::srv::BufStatus::Response::SharedPtr res)</argsstring>
+        <name>getBufferStatusCB</name>
+        <qualifiedname>ImuBufRos2::getBufferStatusCB</qualifiedname>
+        <param>
+          <type>adrd2121_imu::srv::BufStatus::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adrd2121_imu::srv::BufStatus::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /check_status is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="187" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1ad5154ca614a247503f7b0a595c8ce726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuBufRos2::setModeofOperation</definition>
+        <argsstring>(uint8_t mode_of_operation)</argsstring>
+        <name>setModeofOperation</name>
+        <qualifiedname>ImuBufRos2::setModeofOperation</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode_of_operation</declname>
+        </param>
+        <briefdescription>
+<para>Initializes service servers based on operation mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">mode_of_operation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Acquire value from param in <ref refid="classAdiImuBufRos2" kindref="compound">AdiImuBufRos2</ref></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Return if function call is successful </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="195" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuBufRos2_1a4a2fc7770b5ec8f79131a560768e0f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuBufRos2::detect</definition>
+        <argsstring>(void)</argsstring>
+        <name>detect</name>
+        <qualifiedname>ImuBufRos2::detect</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Checks if ADRD2121 device can be detected. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Return bool if device is found <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="200" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for ADRD2121. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/imu_buf_ros2.hpp" line="66" column="1" bodyfile="include/adrd2121_imu/imu_buf_ros2.hpp" bodystart="67" bodyend="330"/>
+    <listofallmembers>
+      <member refid="classImuBufRos2_1a1a29b684912ab2c7aaac6ab516c8ff20" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>b_buf_pps_</name></member>
+      <member refid="classImuBufRos2_1acb3c5895a72a6a1ce667e64217e5f05d" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>b_enable_init_recovery_</name></member>
+      <member refid="classImuBufRos2_1acc3e776f6e1846c56df476a10b877a7d" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>b_first_read_</name></member>
+      <member refid="classImuBufRos2_1ac167be7978c86e11b1b9180a25f48439" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>b_imu_burst_</name></member>
+      <member refid="classImuBufRos2_1a33d1f361ac9c1a91d9beb78e3bc59cb5" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_burst_count_</name></member>
+      <member refid="classImuBufRos2_1aa355fff6877741d72203e122e939e002" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_burst_out_</name></member>
+      <member refid="classImuBufRos2_1a57c127cd52a2f24b0a627ea51995ac0e" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_data_rdy_pol_</name></member>
+      <member refid="classImuBufRos2_1ae6a9943aafe68d39d032bff52b910436" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_data_rdy_sel_</name></member>
+      <member refid="classImuBufRos2_1aa2b21b74533a577c8c5894aa772b4e21" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_error_int_</name></member>
+      <member refid="classImuBufRos2_1a9929db511867e1ed18127171f140e696" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_len_</name></member>
+      <member refid="classImuBufRos2_1a427e768ae957da59609f99b66b208a1e" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_overflow_</name></member>
+      <member refid="classImuBufRos2_1a99395b1c1d42c25e7af4f56684465efa" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_overflow_int_</name></member>
+      <member refid="classImuBufRos2_1a4dd94d7eff45cfb0b03e9ff1247eb36b" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_pin_pass_</name></member>
+      <member refid="classImuBufRos2_1add1074d9ff764d5cbf52fcdd0b632d81" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_pps_freq_</name></member>
+      <member refid="classImuBufRos2_1a7291efdb8dc412ea850b2e3e7f67a75e" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_pps_pol_</name></member>
+      <member refid="classImuBufRos2_1a211af9f21cd6aa34ddce180317b6a64b" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_pps_sel_</name></member>
+      <member refid="classImuBufRos2_1a328936764640e8c43b881fcd07137c52" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>buf_watermark_int_</name></member>
+      <member refid="classImuBufRos2_1a888568c406928f25348ad1b3093a2521" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>burst_out_</name></member>
+      <member refid="classImuBufRos2_1ac498858990f12e2721eb8865f5e811ba" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>burst_raw_</name></member>
+      <member refid="classImuBufRos2_1a140ab521677460bc0cd9fa02dac4a330" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>clear_buffer_timeout_</name></member>
+      <member refid="classImuBufRos2_1a7c9f04cc3bee0bc8f4c11473a8e2deff" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>clearFault</name></member>
+      <member refid="classImuBufRos2_1abb5bc1d1235daeaa24a7e3e5b0b4cf58" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>clearFaultCB</name></member>
+      <member refid="classImuBufRos2_1ad442c78a2377295fe195b942160dd3ee" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>config</name></member>
+      <member refid="classImuBufRos2_1af1e39fc9b08e2f2f1ee8baaccb2391cf" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>cur_buf_count_</name></member>
+      <member refid="classImuBufRos2_1a168c9a7dc441bd79094bcf2f3faf249a" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>dataReadAndPub</name></member>
+      <member refid="classImuBufRos2_1a4a2fc7770b5ec8f79131a560768e0f14" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>detect</name></member>
+      <member refid="classImuBufRos2_1aa3895985205a6022d5a62809237dce56" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>driver_data_count_</name></member>
+      <member refid="classImuBufRos2_1acca6d333f19f41adbaa40367fb0bc58f" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>drop_count_</name></member>
+      <member refid="classImuBufRos2_1a00f5b46bf67183a841b9d43a48bcebae" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>factoryReset</name></member>
+      <member refid="classImuBufRos2_1ad1100bd3baab34229b177c47211a0238" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>factoryResetCB</name></member>
+      <member refid="classImuBufRos2_1a04e7bd3d61a80dc7d2d5e47c4ca5057b" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>flashUpdate</name></member>
+      <member refid="classImuBufRos2_1ab3744776feb120b041ebf707984b39e3" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>flashUpdateCB</name></member>
+      <member refid="classImuBufRos2_1ad36d5197ddc6001e9bae8945b145a234" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>getBufferStatus</name></member>
+      <member refid="classImuBufRos2_1ac5f37979ac0eda7abe2fdf057d317fde" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>getBufferStatusCB</name></member>
+      <member refid="classImuBufRos2_1a8940e34ebe8683bf78db202e86cd2b51" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>getStatusDescription</name></member>
+      <member refid="classImuBufRos2_1a649b6991581f559f9ee5a26a9d8a2b40" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>imu_data_count_</name></member>
+      <member refid="classImuBufRos2_1ae18f0a4dd0c7b1a7814cb580fe8ad123" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>imu_pub_adi_</name></member>
+      <member refid="classImuBufRos2_1a37f211607a32c39230ecb7d0f6629270" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>imu_pub_std_</name></member>
+      <member refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>ImuBufRos2</name></member>
+      <member refid="classImuBufRos2_1a54ba0fd51aacd835b38d20ce021aabc6" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>init</name></member>
+      <member refid="classImuBufRos2_1a20e624b5984a9ed9929f04a8dae472b3" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>initServiceServers</name></member>
+      <member refid="classImuBufRos2_1a159102b439b45f5742764356f3f7c987" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>loadParams</name></member>
+      <member refid="classImuBufRos2_1aa7eb64a23065a84520c579027bcd9513" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>mode_of_operation_</name></member>
+      <member refid="classImuBufRos2_1a82babb3aa2ecc15572c44cae662eea32" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>msg_type_</name></member>
+      <member refid="classImuBufRos2_1af5c50d8b01d4a122d8ef39971aa76c4c" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>node_</name></member>
+      <member refid="classImuBufRos2_1a89d0a823de79ad97205d8dd98fce1fff" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>p_clearFault</name></member>
+      <member refid="classImuBufRos2_1ac20de47e62b254a693ef6f89b29b41a4" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>p_device_</name></member>
+      <member refid="classImuBufRos2_1a0a424ba0da95ac9e651286d50c4590d7" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>p_factoryReset</name></member>
+      <member refid="classImuBufRos2_1a985908525e3441b834cb195090254e0c" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>p_flashUpdate</name></member>
+      <member refid="classImuBufRos2_1adc0965c8f7bea9cd23c6ba4937a85133" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>p_getBufferStatus</name></member>
+      <member refid="classImuBufRos2_1a66fe5afeed44b598cf958d9bad980afe" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>prev_data_count_</name></member>
+      <member refid="classImuBufRos2_1a34e72b4bb4a344271f60b3983cdf6016" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>recoverBoard</name></member>
+      <member refid="classImuBufRos2_1aca4e842c51fd0ccda9c5e24a310a19ab" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>rollover_count_</name></member>
+      <member refid="classImuBufRos2_1ad5154ca614a247503f7b0a595c8ce726" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>setModeofOperation</name></member>
+      <member refid="classImuBufRos2_1a6e23c17c97756c5f30490bd6da1ac3d9" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>start_data_count_</name></member>
+      <member refid="classImuBufRos2_1a4407d3530939dd793a374bf0727b75d6" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>startBufferRead</name></member>
+      <member refid="classImuBufRos2_1ae78c3c804c440871b4031c3f4ad91df3" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>stopBufferRead</name></member>
+      <member refid="classImuBufRos2_1ae5f6e7e13199823002907c302159f7d0" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>topic_name_</name></member>
+      <member refid="classImuBufRos2_1a4205bc5c0aa4f1a894b5e97aaec2ae41" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>usb_baud_</name></member>
+      <member refid="classImuBufRos2_1a4d72164ef679adfc10e189e46ab9dc60" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>usb_dev_</name></member>
+      <member refid="classImuBufRos2_1a2429c0db78792db23182c81208c1d772" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>utc_time_</name></member>
+      <member refid="classImuBufRos2_1aba776f51aec45c65ddf9230a71f75724" prot="private" virt="non-virtual"><scope>ImuBufRos2</scope><name>utc_time_us_</name></member>
+      <member refid="classImuBufRos2_1a79eeaf4e261dbb692a17f42dc836ea51" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>validateData</name></member>
+      <member refid="classImuBufRos2_1a7bda7f519d3ec3b7bb4e7bde9f01434b" prot="public" virt="non-virtual"><scope>ImuBufRos2</scope><name>~ImuBufRos2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

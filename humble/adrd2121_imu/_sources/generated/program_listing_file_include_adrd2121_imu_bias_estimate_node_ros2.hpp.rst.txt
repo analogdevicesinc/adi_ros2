@@ -1,0 +1,69 @@
+
+.. _program_listing_file_include_adrd2121_imu_bias_estimate_node_ros2.hpp:
+
+Program Listing for File bias_estimate_node_ros2.hpp
+====================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_bias_estimate_node_ros2.hpp>` (``include/adrd2121_imu/bias_estimate_node_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef BIAS_ESTIMATE_ROS2
+   #define BIAS_ESTIMATE_ROS2
+   
+   //ROS2 Header
+   #include "rclcpp/rclcpp.hpp"
+   
+   //IMU ROS2 Driver Headers
+   #include "imu_state_checker_ros2.hpp"
+   #include "adrd2121_imu_ros2_common.hpp"
+   #include "adrd2121_imu/srv/bias_estimate_cmd.hpp"
+   #include "adrd2121_imu/srv/imu_glob_cmd.hpp"
+   
+   //CPP Headers
+   #include <chrono>
+   #include <iostream>
+   
+   //CONSTANTS
+   #define MAX_WAIT_SERVICE 5
+   #define TRIGGER_WAIT_TIME 40
+   
+   //NAMESPACE DEFINITIONS
+   using namespace std;
+   using std::placeholders::_1;
+   using std::placeholders::_2;
+   
+   //Shutdown functions
+   void biasGracefulShutdownHandler(int signal);
+   void shutdown(void);
+   
+   
+   class BiasEstimateRos2
+   {
+   public:
+     BiasEstimateRos2(const rclcpp::Node::SharedPtr& node);
+     ~BiasEstimateRos2();
+     bool init(void);
+   
+     bool biasEstimateCB(adrd2121_imu::srv::BiasEstimateCmd::Request::SharedPtr req,
+       adrd2121_imu::srv::BiasEstimateCmd::Response::SharedPtr res);
+     
+     bool checkStandStillDuration(rclcpp::Time standstill_start, double &duration_secs);
+     
+     
+   private:
+     rclcpp::Node::SharedPtr node_;
+     rclcpp::Service<adrd2121_imu::srv::BiasEstimateCmd>::SharedPtr bias_estimate_service_;
+     rclcpp::Client<adrd2121_imu::srv::ImuGlobCmd>::SharedPtr trigger_imu_glob_cmd_;
+     rclcpp::CallbackGroup::SharedPtr callback_group_;
+     ImuStateCheckerRos2* p_state_checker_;
+   };
+   
+   #endif //BIAS_ESTIMATE_ROS2

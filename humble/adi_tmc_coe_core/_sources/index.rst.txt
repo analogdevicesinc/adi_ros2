@@ -1,0 +1,26 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adi_tmc_coe_core
+================
+
+Core package for Trinamic Motor Controllers (TMC) that uses CANopen-over-etherCAT(CoE) protocol.
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Links <__links>
+
+   C++ API <generated/index>
+
+
+
+   Standard Documents <__standards>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

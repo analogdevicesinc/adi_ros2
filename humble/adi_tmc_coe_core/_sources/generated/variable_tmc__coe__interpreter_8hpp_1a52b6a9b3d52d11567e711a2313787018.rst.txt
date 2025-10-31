@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018:
+
+Variable TOTAL_WORK_COUNTER_PER_SLAVE
+=====================================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TOTAL_WORK_COUNTER_PER_SLAVE
+   :project: adi_tmc_coe_core Doxygen Project

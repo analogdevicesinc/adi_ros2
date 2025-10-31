@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters" kind="struct" language="C++" prot="private">
+    <compoundname>ADI3DToFFloorDetector::DynamicReconfigureParameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1abc3a7d5a8bb384f2fe0c1ff9d07d3403" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::DynamicReconfigureParameters::ab_threshold</definition>
+        <argsstring></argsstring>
+        <name>ab_threshold</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::ab_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="452" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a331211ae2c1add3fe777ef708ea8ed17" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::DynamicReconfigureParameters::confidence_threshold</definition>
+        <argsstring></argsstring>
+        <name>confidence_threshold</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::confidence_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="453" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ae77ad508fd8d22a70f44ad13d0ea030f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::DynamicReconfigureParameters::enable_ransac_floor_detection</definition>
+        <argsstring></argsstring>
+        <name>enable_ransac_floor_detection</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::enable_ransac_floor_detection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="454" column="10" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ab2f281c0520b2115d6a1961bec6f99b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::DynamicReconfigureParameters::ransac_max_iterations</definition>
+        <argsstring></argsstring>
+        <name>ransac_max_iterations</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::ransac_max_iterations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="455" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a1d0d5eb51be7992d6a38ae78a07c2c4f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::DynamicReconfigureParameters::ransac_distance_threshold_mtr</definition>
+        <argsstring></argsstring>
+        <name>ransac_distance_threshold_mtr</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::ransac_distance_threshold_mtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="456" column="11" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a883da0cc395501f21aed386d1b9c56a6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::DynamicReconfigureParameters::enable_fallback_floor_detection</definition>
+        <argsstring></argsstring>
+        <name>enable_fallback_floor_detection</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::enable_fallback_floor_detection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="457" column="10" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a415a44be0d269ce01f0775635193f842" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::DynamicReconfigureParameters::fallback_floor_height_offset_mtr</definition>
+        <argsstring></argsstring>
+        <name>fallback_floor_height_offset_mtr</name>
+        <qualifiedname>ADI3DToFFloorDetector::DynamicReconfigureParameters::fallback_floor_height_offset_mtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="458" column="11" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_floor_detector_node.h" line="450" column="3" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="451" bodyend="459"/>
+    <listofallmembers>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1abc3a7d5a8bb384f2fe0c1ff9d07d3403" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>ab_threshold</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a331211ae2c1add3fe777ef708ea8ed17" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>confidence_threshold</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a883da0cc395501f21aed386d1b9c56a6" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>enable_fallback_floor_detection</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ae77ad508fd8d22a70f44ad13d0ea030f" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>enable_ransac_floor_detection</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a415a44be0d269ce01f0775635193f842" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>fallback_floor_height_offset_mtr</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a1d0d5eb51be7992d6a38ae78a07c2c4f" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>ransac_distance_threshold_mtr</name></member>
+      <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ab2f281c0520b2115d6a1961bec6f99b4" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector::DynamicReconfigureParameters</scope><name>ransac_max_iterations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+.. _exhale_class_classADISensorFrameInfo:
+
+Class ADISensorFrameInfo
+========================
+
+- Defined in :ref:`file_include_adi_sensor_frame_info.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADISensorFrameInfo
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

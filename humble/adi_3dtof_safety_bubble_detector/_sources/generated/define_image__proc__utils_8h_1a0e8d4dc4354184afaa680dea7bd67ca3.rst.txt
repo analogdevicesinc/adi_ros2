@@ -1,0 +1,14 @@
+.. _exhale_define_image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3:
+
+Define QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE
+===============================================
+
+- Defined in :ref:`file_include_image_proc_utils.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project

@@ -1,0 +1,97 @@
+
+.. _program_listing_file_include_adi_tmc_coe_core_tmc_coe_motor.hpp:
+
+Program Listing for File tmc_coe_motor.hpp
+==========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmc_coe_core_tmc_coe_motor.hpp>` (``include/adi_tmc_coe_core/tmc_coe_motor.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef TMC_COE_MOTOR_HPP
+   #define TMC_COE_MOTOR_HPP
+   
+   #define _USE_MATH_DEFINES
+   #include <cmath>
+   
+   #include "rclcpp/rclcpp.hpp"
+   #include "geometry_msgs/msg/twist.hpp"
+   #include "std_msgs/msg/int32.hpp"
+   #include "adi_tmc_coe_core/tmc_coe_interpreter.hpp"
+   
+   // Custom msg
+   #include "adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp"
+   
+   /* Available Modes of Operation */
+   typedef enum
+   {
+     MODE_OF_OPERATION_NONE = 0,
+     PROFILE_POSITION,
+     PROFILE_VELOCITY = 3,
+     HOMING_MODE = 6,
+     CYCLIC_SYNC_POS = 8,
+     CYCLIC_SYNC_VEL,
+     CYCLIC_SYNC_TRQ
+   } mode_of_operation_t;
+   
+   /* Conversion constants */
+   const double PI = M_PI;
+   const uint8_t SECS_TO_MIN = 60;
+   const uint16_t ANGULAR_FULL_ROTATION = 360;
+   
+   class TmcCoeMotor
+   {
+   public:
+     TmcCoeMotor(rclcpp::Node::SharedPtr p_node, TmcCoeInterpreter * p_tmc_coe_interpreter,
+       uint8_t slave_number, uint8_t motor_number, std::string device_name);
+   
+     virtual ~TmcCoeMotor();
+     virtual void init();
+   
+   protected:
+     rclcpp::Node::SharedPtr p_node_;
+     TmcCoeInterpreter * p_tmc_coe_interpreter_;
+     uint8_t slave_number_;
+     uint8_t motor_number_;
+     std::string device_name_;
+     rclcpp::Publisher<adi_tmc_coe_interfaces::msg::TmcCoeInfo>::SharedPtr tmc_coe_info_pub_;
+     rclcpp::TimerBase::SharedPtr tmc_coe_info_pub_timer_;
+     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_sub_;
+     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr cmd_abspos_sub_;
+     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr cmd_relpos_sub_;
+     rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr cmd_trq_sub_;
+     bool param_en_pub_tmc_info_;
+     bool param_pub_actual_vel_;
+     bool param_pub_actual_pos_;
+     bool param_pub_actual_trq_;
+     std::string param_tmc_info_topic_;
+     std::string param_tmc_cmd_vel_topic_;
+     std::string param_tmc_cmd_abspos_topic_;
+     std::string param_tmc_cmd_relpos_topic_;
+     std::string param_tmc_cmd_trq_topic_;
+     double param_wheel_diameter_;
+     double param_add_ratio_vel_;
+     double param_add_ratio_pos_;
+     double param_add_ratio_trq_;
+     std::string tmc_coe_info_frame_id_;
+     int param_pub_rate_tmc_coe_info_;
+     void initPublisher();
+     virtual void initSubscriber();
+     virtual void publishTmcCoeInfo();
+     virtual void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg);
+     virtual void cmdAbsPosCallback(const std_msgs::msg::Int32::SharedPtr msg);
+     virtual void cmdRelPosCallback(const std_msgs::msg::Int32::SharedPtr msg);
+     void cmdTrqCallback(const std_msgs::msg::Int32::SharedPtr msg); // Not yet supported
+   
+   private:
+     rclcpp::CallbackGroup::SharedPtr pub_callback_group_;
+     rclcpp::CallbackGroup::SharedPtr sub_callback_group_;
+     std::string logger_prefix_;
+     rclcpp::Logger logger_;
+   
+     void initMotorParams();
+   };
+   #endif //TMC_COE_MOTOR_HPP

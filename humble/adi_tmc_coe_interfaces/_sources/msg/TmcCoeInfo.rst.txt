@@ -1,0 +1,8 @@
+TmcCoeInfo
+==========
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: TmcCoeInfo.msg
+

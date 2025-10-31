@@ -1,0 +1,90 @@
+
+.. _file_include_adi_tmc_coe_core_tmc_coe_motor.hpp:
+
+File tmc_coe_motor.hpp
+======================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmc_coe_core>` (``include/adi_tmc_coe_core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmc_coe_core/tmc_coe_motor.hpp``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmc_coe_core/tmc_coe_interpreter.hpp`` (:ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`)
+
+- ``adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp``
+
+- ``cmath``
+
+- ``geometry_msgs/msg/twist.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``std_msgs/msg/int32.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp`
+
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classTmcCoeMotor`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153`
+
+- :ref:`exhale_variable_tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f`
+
+- :ref:`exhale_variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe`
+

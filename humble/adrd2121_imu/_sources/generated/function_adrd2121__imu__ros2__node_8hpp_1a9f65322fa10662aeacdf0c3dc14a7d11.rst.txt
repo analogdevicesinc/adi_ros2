@@ -1,0 +1,14 @@
+.. _exhale_function_adrd2121__imu__ros2__node_8hpp_1a9f65322fa10662aeacdf0c3dc14a7d11:
+
+Function gracefulShutdownHandler
+================================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: gracefulShutdownHandler(int)
+   :project: adrd2121_imu Doxygen Project

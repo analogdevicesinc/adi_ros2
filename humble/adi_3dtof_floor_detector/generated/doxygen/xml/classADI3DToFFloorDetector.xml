@@ -1,0 +1,1810 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classADI3DToFFloorDetector" kind="class" language="C++" prot="public">
+    <compoundname>ADI3DToFFloorDetector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+    <includes refid="adi__3dtof__floor__detector__node_8h" local="no">adi_3dtof_floor_detector_node.h</includes>
+    <innerclass refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters" prot="private">ADI3DToFFloorDetector::DynamicReconfigureParameters</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9240e9f0f19fcdb6e53b2b97c747a0d2" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr ADI3DToFFloorDetector::timer_</definition>
+        <argsstring></argsstring>
+        <name>timer_</name>
+        <qualifiedname>ADI3DToFFloorDetector::timer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="379" column="32" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ad3bb804dce8b4852b87c76439241d257" prot="private" static="no" mutable="no">
+        <type><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref> *</type>
+        <definition>IInputSensor* ADI3DToFFloorDetector::input_sensor_</definition>
+        <argsstring></argsstring>
+        <name>input_sensor_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_sensor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="380" column="17" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a1412d0435ff0ed7616072eb1fe2584d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classOOutputSensor" kindref="compound">OOutputSensor</ref> *</type>
+        <definition>OOutputSensor* ADI3DToFFloorDetector::output_sensor_</definition>
+        <argsstring></argsstring>
+        <name>output_sensor_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_sensor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="381" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a14c67e9b47ca7074d3bc4cc15878f370" prot="private" static="no" mutable="no">
+        <type><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref> *</type>
+        <definition>ImageProcUtils* ADI3DToFFloorDetector::image_proc_utils_</definition>
+        <argsstring></argsstring>
+        <name>image_proc_utils_</name>
+        <qualifiedname>ADI3DToFFloorDetector::image_proc_utils_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="382" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a79556742f2ad1759379291451438933b" prot="private" static="no" mutable="no">
+        <type>FloorPlaneDetection *</type>
+        <definition>FloorPlaneDetection* ADI3DToFFloorDetector::floor_plane_detection_</definition>
+        <argsstring></argsstring>
+        <name>floor_plane_detection_</name>
+        <qualifiedname>ADI3DToFFloorDetector::floor_plane_detection_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="383" column="24" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a4d76e70070d18841a61fde22042083bb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::image_width_</definition>
+        <argsstring></argsstring>
+        <name>image_width_</name>
+        <qualifiedname>ADI3DToFFloorDetector::image_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="384" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9fa32c13ebd7003e86a6f572df74ea0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::image_height_</definition>
+        <argsstring></argsstring>
+        <name>image_height_</name>
+        <qualifiedname>ADI3DToFFloorDetector::image_height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="385" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a084d17b30fec46633700baf945d19fc4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::frame_number_</definition>
+        <argsstring></argsstring>
+        <name>frame_number_</name>
+        <qualifiedname>ADI3DToFFloorDetector::frame_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="386" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ac2a8f4aee82e914b3a01019f51aee503" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::input_sensor_mode_</definition>
+        <argsstring></argsstring>
+        <name>input_sensor_mode_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_sensor_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="387" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a8defa18a583dc8b88b0c22eb445d4fca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::output_sensor_mode_</definition>
+        <argsstring></argsstring>
+        <name>output_sensor_mode_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_sensor_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="388" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0bc44aaa8d22b867b96260a3641abcd0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::camera_link_</definition>
+        <argsstring></argsstring>
+        <name>camera_link_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_link_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="389" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a96393b6036938452fe8b8ff4bd74a709" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::optical_camera_link_</definition>
+        <argsstring></argsstring>
+        <name>optical_camera_link_</name>
+        <qualifiedname>ADI3DToFFloorDetector::optical_camera_link_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="390" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a31f7e3b75add4a8463c5d6fc44cfee9b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::enable_compression_op_image_topics_</definition>
+        <argsstring></argsstring>
+        <name>enable_compression_op_image_topics_</name>
+        <qualifiedname>ADI3DToFFloorDetector::enable_compression_op_image_topics_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="391" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a7d2949b871cf05d010dff669bc127d55" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::enable_pointcloud_publisher_</definition>
+        <argsstring></argsstring>
+        <name>enable_pointcloud_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::enable_pointcloud_publisher_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="392" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a6b1ba8da13f4e65e4bc47f65a0e220fe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::ab_threshold_</definition>
+        <argsstring></argsstring>
+        <name>ab_threshold_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ab_threshold_</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="393" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0b9fcdca396dc45b26bb9fabeb8845f4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::confidence_threshold_</definition>
+        <argsstring></argsstring>
+        <name>confidence_threshold_</name>
+        <qualifiedname>ADI3DToFFloorDetector::confidence_threshold_</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="394" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aa14235a8de0eff0bddf5b8f57386899e" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; tf2_ros::Buffer &gt;</type>
+        <definition>std::unique_ptr&lt;tf2_ros::Buffer&gt; ADI3DToFFloorDetector::camera_map_tf_buffer_</definition>
+        <argsstring></argsstring>
+        <name>camera_map_tf_buffer_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_map_tf_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="396" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aa4a3c682a5353e104d45700f0d7f50fd" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::TransformListener &gt;</type>
+        <definition>std::shared_ptr&lt;tf2_ros::TransformListener&gt; ADI3DToFFloorDetector::camera_map_tf_listener_</definition>
+        <argsstring></argsstring>
+        <name>camera_map_tf_listener_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_map_tf_listener_</qualifiedname>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="397" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="397" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a8d441638538daff6c307002543188377" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; tf2_ros::Buffer &gt;</type>
+        <definition>std::unique_ptr&lt;tf2_ros::Buffer&gt; ADI3DToFFloorDetector::optical_map_tf_buffer_</definition>
+        <argsstring></argsstring>
+        <name>optical_map_tf_buffer_</name>
+        <qualifiedname>ADI3DToFFloorDetector::optical_map_tf_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="398" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a003b2282861928b7a9347a13840fa93b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::TransformListener &gt;</type>
+        <definition>std::shared_ptr&lt;tf2_ros::TransformListener&gt; ADI3DToFFloorDetector::optical_map_tf_listener_</definition>
+        <argsstring></argsstring>
+        <name>optical_map_tf_listener_</name>
+        <qualifiedname>ADI3DToFFloorDetector::optical_map_tf_listener_</qualifiedname>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="399" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="399" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ad91bb6e7cb56468ad5435cf4146896e5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::input_file_name_</definition>
+        <argsstring></argsstring>
+        <name>input_file_name_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="401" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1af183ddda88cccacf27416f9257dfc67a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::input_sensor_ip_</definition>
+        <argsstring></argsstring>
+        <name>input_sensor_ip_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_sensor_ip_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="402" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1acdb6e67170ca3632e4933045bc0b1240" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::encoding_type_</definition>
+        <argsstring></argsstring>
+        <name>encoding_type_</name>
+        <qualifiedname>ADI3DToFFloorDetector::encoding_type_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="403" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a31f191e9dd48fa17142efec2ade5dbde" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFFloorDetector::output_file_name_</definition>
+        <argsstring></argsstring>
+        <name>output_file_name_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="404" column="15" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a6ed1d78d7127e01aadd0635fa383187f" prot="private" static="no" mutable="no">
+        <type>sensor_msgs::msg::CameraInfo</type>
+        <definition>sensor_msgs::msg::CameraInfo ADI3DToFFloorDetector::cam_info_msg_</definition>
+        <argsstring></argsstring>
+        <name>cam_info_msg_</name>
+        <qualifiedname>ADI3DToFFloorDetector::cam_info_msg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="405" column="32" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ae0ebbd28a3a1d7336607fe6456ae64ee" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFFloorDetector::depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>depth_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="406" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a17579dfd3ffb5a3fe81e219bbf4e843a" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFFloorDetector::ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>ab_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ab_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="407" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ac5485f6c9eb91bd80f965e8d5a5a2ff0" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFFloorDetector::xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>xyz_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::xyz_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="408" column="10" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a39a027854b46cf27d94484dbf7240826" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFFloorDetector::input_xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>input_xyz_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_xyz_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="409" column="10" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a29f9f5f180dcdecccb5aff7e1d51eeb0" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFFloorDetector::output_xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>output_xyz_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_xyz_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="410" column="10" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0a58cd94b94ea632113ca28fca81c301" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::compressed_depth_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_size_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_depth_frame_size_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="411" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a2ab570b700730622c999404978616d7e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::compressed_ab_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_size_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_ab_frame_size_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="412" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a7ec01b0773040664825a35feb360a745" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFFloorDetector::compressed_depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_depth_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="413" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0cd84b58b13e4194f3245ffb5ddd6bd0" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFFloorDetector::compressed_ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_ab_frame_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="414" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aaca043ad2f1cde1807cf266487c20a8e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr ADI3DToFFloorDetector::depth_image_publisher_</definition>
+        <argsstring></argsstring>
+        <name>depth_image_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_image_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="416" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a4325141503104a2bb5aef3391f02fbe9" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr ADI3DToFFloorDetector::ab_image_publisher_</definition>
+        <argsstring></argsstring>
+        <name>ab_image_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ab_image_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="417" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aa64778eb6ea1bd4c33b2176b465e08cd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr ADI3DToFFloorDetector::floor_mask_publisher_</definition>
+        <argsstring></argsstring>
+        <name>floor_mask_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::floor_mask_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="418" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aab2b260c7b7391523ed75250d61b93c4" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::CompressedImage &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::CompressedImage&gt;::SharedPtr ADI3DToFFloorDetector::compressed_depth_image_publisher_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_image_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_depth_image_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="420" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1acd8b2a936df52a47dab6c9d913ed2d21" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::CompressedImage &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::CompressedImage&gt;::SharedPtr ADI3DToFFloorDetector::compressed_ab_image_publisher_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_image_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_ab_image_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="421" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a392817750ad9716fff64f215facf4ce8" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::CompressedImage &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::CompressedImage&gt;::SharedPtr ADI3DToFFloorDetector::compressed_floor_mask_publisher_</definition>
+        <argsstring></argsstring>
+        <name>compressed_floor_mask_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_floor_mask_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="422" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9c52a2daf199d13cc2427f275e86b952" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::PointCloud2 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::PointCloud2&gt;::SharedPtr ADI3DToFFloorDetector::xyz_image_publisher_</definition>
+        <argsstring></argsstring>
+        <name>xyz_image_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::xyz_image_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="424" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1abf96910c265f108b0818bb9d2c3b63dd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::CameraInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::CameraInfo&gt;::SharedPtr ADI3DToFFloorDetector::depth_info_publisher_</definition>
+        <argsstring></argsstring>
+        <name>depth_info_publisher_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_info_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="425" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a22edfb87411e9e416428089168cd2dec" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
+        <definition>CameraIntrinsics ADI3DToFFloorDetector::depth_intrinsics_</definition>
+        <argsstring></argsstring>
+        <name>depth_intrinsics_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_intrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="427" column="20" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aabe8fcb8594772dd95398f613debcbe1" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <definition>CameraExtrinsics ADI3DToFFloorDetector::depth_extrinsics_</definition>
+        <argsstring></argsstring>
+        <name>depth_extrinsics_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_extrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="428" column="20" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a09cd37bf8d8160c07f2ec1830abd8eec" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <definition>CameraExtrinsics ADI3DToFFloorDetector::depth_extrinsics_external_</definition>
+        <argsstring></argsstring>
+        <name>depth_extrinsics_external_</name>
+        <qualifiedname>ADI3DToFFloorDetector::depth_extrinsics_external_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="429" column="20" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a1d1ad87e428615259f50f34f42b1a068" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::process_output_thread_abort_</definition>
+        <argsstring></argsstring>
+        <name>process_output_thread_abort_</name>
+        <qualifiedname>ADI3DToFFloorDetector::process_output_thread_abort_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="431" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0c075e3f6de39793a8c3c5068b8f44fe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::read_input_thread_abort_</definition>
+        <argsstring></argsstring>
+        <name>read_input_thread_abort_</name>
+        <qualifiedname>ADI3DToFFloorDetector::read_input_thread_abort_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="432" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9a464435274689b287c2d2c67d1aaa86" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex ADI3DToFFloorDetector::output_thread_mtx_</definition>
+        <argsstring></argsstring>
+        <name>output_thread_mtx_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_thread_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="434" column="14" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ac467f4267319d6f5f7384e33c3e1e7a2" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex ADI3DToFFloorDetector::input_thread_mtx_</definition>
+        <argsstring></argsstring>
+        <name>input_thread_mtx_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_thread_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="435" column="14" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9616dd88f48a71c84b89693e59a16576" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::max_input_queue_length_</definition>
+        <argsstring></argsstring>
+        <name>max_input_queue_length_</name>
+        <qualifiedname>ADI3DToFFloorDetector::max_input_queue_length_</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="436" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1af5833ac8911b09d3a50a3d903122eb58" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> * &gt;</type>
+        <definition>std::queue&lt;ADTF31xxSensorFrameInfo *&gt; ADI3DToFFloorDetector::input_frames_queue_</definition>
+        <argsstring></argsstring>
+        <name>input_frames_queue_</name>
+        <qualifiedname>ADI3DToFFloorDetector::input_frames_queue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="437" column="14" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9d6b6e9c56bb9d9f2de37bfdae2fa271" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::max_output_queue_length_</definition>
+        <argsstring></argsstring>
+        <name>max_output_queue_length_</name>
+        <qualifiedname>ADI3DToFFloorDetector::max_output_queue_length_</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="438" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aefbe65cf00bb2315dab8f01fef503190" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classADI3DToFFloorDetectorOutputInfo" kindref="compound">ADI3DToFFloorDetectorOutputInfo</ref> * &gt;</type>
+        <definition>std::queue&lt;ADI3DToFFloorDetectorOutputInfo *&gt; ADI3DToFFloorDetector::output_node_queue_</definition>
+        <argsstring></argsstring>
+        <name>output_node_queue_</name>
+        <qualifiedname>ADI3DToFFloorDetector::output_node_queue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="439" column="14" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aa51052c9aac641d040f410af720a65b3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::error_in_frame_read_</definition>
+        <argsstring></argsstring>
+        <name>error_in_frame_read_</name>
+        <qualifiedname>ADI3DToFFloorDetector::error_in_frame_read_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="440" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ae2c59c07d496da31a4cfb1300c3cc269" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::processing_scale_</definition>
+        <argsstring></argsstring>
+        <name>processing_scale_</name>
+        <qualifiedname>ADI3DToFFloorDetector::processing_scale_</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>This is the scale factor to scale the input image. The processing will happen on the scaled down image The topics and the output coordinates will correspond to the scaled image size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="448" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ae333cd4a81f1c1e984005d3b3ac4f8da" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ADI3DToFFloorDetector::curr_frame_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>curr_frame_timestamp_</name>
+        <qualifiedname>ADI3DToFFloorDetector::curr_frame_timestamp_</qualifiedname>
+        <initializer>= rclcpp::Clock{}.now()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="449" column="16" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="449" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a4cfc7263ad6e8e1d22932fc489d3c513" prot="private" static="no" mutable="no">
+        <type>DynamicReconfigureParameters</type>
+        <definition>DynamicReconfigureParameters ADI3DToFFloorDetector::dynamic_reconf_params_</definition>
+        <argsstring></argsstring>
+        <name>dynamic_reconf_params_</name>
+        <qualifiedname>ADI3DToFFloorDetector::dynamic_reconf_params_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="461" column="32" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a36bc21db5a3fc90e2f2d7c42cb013169" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::ParameterEventHandler &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::ParameterEventHandler&gt; ADI3DToFFloorDetector::param_subscriber_</definition>
+        <argsstring></argsstring>
+        <name>param_subscriber_</name>
+        <qualifiedname>ADI3DToFFloorDetector::param_subscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="463" column="19" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a8bdc8058b63144f5ee6ee9f9c4f91514" prot="private" static="no" mutable="no">
+        <type>OnSetParametersCallbackHandle::SharedPtr</type>
+        <definition>OnSetParametersCallbackHandle::SharedPtr ADI3DToFFloorDetector::callback_handle_</definition>
+        <argsstring></argsstring>
+        <name>callback_handle_</name>
+        <qualifiedname>ADI3DToFFloorDetector::callback_handle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="464" column="44" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ad3b647800ba52d62c6b012916addf8a7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::enable_ransac_floor_detection_</definition>
+        <argsstring></argsstring>
+        <name>enable_ransac_floor_detection_</name>
+        <qualifiedname>ADI3DToFFloorDetector::enable_ransac_floor_detection_</qualifiedname>
+        <briefdescription>
+<para>Variable to choose which floor detection algorithm to run. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>RANSAC based (default)</para>
+</listitem><listitem><para>Threshold Y based </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="473" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aeedb01de822e37e8a51cdab6f885a78c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::enable_fallback_floor_detection_</definition>
+        <argsstring></argsstring>
+        <name>enable_fallback_floor_detection_</name>
+        <qualifiedname>ADI3DToFFloorDetector::enable_fallback_floor_detection_</qualifiedname>
+        <briefdescription>
+<para>Enable Fallback floor detection algorithm(Threshold Y based) if RANSAC fails. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="479" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a53081fd0defb612000197296da3d475d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::ransac_floor_detection_status_</definition>
+        <argsstring></argsstring>
+        <name>ransac_floor_detection_status_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ransac_floor_detection_status_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Result status of RANSAC floor detection If the status is true then RANSAC result can be considered, otherwise, run the Threshold Y based floor detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="486" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a069d4fe5379c84a856c057f69e394a5b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::camera_roll_rad_</definition>
+        <argsstring></argsstring>
+        <name>camera_roll_rad_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_roll_rad_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Rotation around X axis in radian. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="492" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a2de6620f823fc0db1c6e8ea630f49f14" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::camera_pitch_rad_</definition>
+        <argsstring></argsstring>
+        <name>camera_pitch_rad_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_pitch_rad_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Rotation around Y axis in radian. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="498" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a90648fd056c940bc5fd266680e534088" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::camera_yaw_rad_</definition>
+        <argsstring></argsstring>
+        <name>camera_yaw_rad_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_yaw_rad_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Rotation around Z axis in radian. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="504" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a1926e118fe61a1c2b32a2e6bd627b375" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::camera_tilted_</definition>
+        <argsstring></argsstring>
+        <name>camera_tilted_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_tilted_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Flag for camera rotation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="510" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1afe450080a108ef532d375b07cd467067" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::ransac_distance_threshold_mtr_</definition>
+        <argsstring></argsstring>
+        <name>ransac_distance_threshold_mtr_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ransac_distance_threshold_mtr_</qualifiedname>
+        <initializer>= 0.025f</initializer>
+        <briefdescription>
+<para>distance (25mm) which determines how close the point must be to the RANSAC plane in order to be selected as inlier. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="517" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a7ac05b2f37b1cdc9bda93f5cb8b769bb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::ransac_max_iterations_</definition>
+        <argsstring></argsstring>
+        <name>ransac_max_iterations_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ransac_max_iterations_</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>Maximum number of RANSAC iterations (10) which is allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="523" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a9564f69a09e81d6a5a7e1bfcf13b6e42" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::camera_height_mtr_</definition>
+        <argsstring></argsstring>
+        <name>camera_height_mtr_</name>
+        <qualifiedname>ADI3DToFFloorDetector::camera_height_mtr_</qualifiedname>
+        <initializer>= 0.1524f</initializer>
+        <briefdescription>
+<para>Camera height, default is 0.1524m (6 inches) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="529" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1ade4491964f709c50460e345dbd3130de" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::discard_distance_threshold_mtr_</definition>
+        <argsstring></argsstring>
+        <name>discard_distance_threshold_mtr_</name>
+        <qualifiedname>ADI3DToFFloorDetector::discard_distance_threshold_mtr_</qualifiedname>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+<para>Threshold to filter the point cloud based on depth (Z) Select the points with depth value lesser than 1.5m from the sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="536" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a99710fb654fc95a32a814face6355570" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::noise_count_</definition>
+        <argsstring></argsstring>
+        <name>noise_count_</name>
+        <qualifiedname>ADI3DToFFloorDetector::noise_count_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Points which are lower than floor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="542" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1aca60433b4b213dd86378f26a12d31c7f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::ransac_iterations_</definition>
+        <argsstring></argsstring>
+        <name>ransac_iterations_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ransac_iterations_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Number of iterations RANSAC has taken for floor detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="548" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a01615b0c30635a7c8f610f5d01d6a9d6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::ransac_time_ms_</definition>
+        <argsstring></argsstring>
+        <name>ransac_time_ms_</name>
+        <qualifiedname>ADI3DToFFloorDetector::ransac_time_ms_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+<para>Time (ms) RANSAC has taken for floor detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="554" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a5b880b7b656dd6dd88e754c0067c1c0b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::fallback_floor_height_offset_mtr_</definition>
+        <argsstring></argsstring>
+        <name>fallback_floor_height_offset_mtr_</name>
+        <qualifiedname>ADI3DToFFloorDetector::fallback_floor_height_offset_mtr_</qualifiedname>
+        <briefdescription>
+<para>Floor height with offset for Threshold Y based floor detection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="560" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a8bb728502a69503c358cd93c3fc699a0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFFloorDetector::floor_distance_threshold_mm_</definition>
+        <argsstring></argsstring>
+        <name>floor_distance_threshold_mm_</name>
+        <qualifiedname>ADI3DToFFloorDetector::floor_distance_threshold_mm_</qualifiedname>
+        <briefdescription>
+<para>Floor distnace threhsold wrt sensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="566" column="9" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a0d5ee37ae81b1c20b0bb19a07d2dc1ae" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFFloorDetector::floor_mask_</definition>
+        <argsstring></argsstring>
+        <name>floor_mask_</name>
+        <qualifiedname>ADI3DToFFloorDetector::floor_mask_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Floor mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="572" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a2921da2c0e33a85883cbe30b37178061" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFFloorDetector::compressed_floor_mask_</definition>
+        <argsstring></argsstring>
+        <name>compressed_floor_mask_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_floor_mask_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>Compressed floor mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="578" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFFloorDetector_1a87338f0ed4a422ba56b63d1f6b02ee5a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFFloorDetector::compressed_floor_pixels_</definition>
+        <argsstring></argsstring>
+        <name>compressed_floor_pixels_</name>
+        <qualifiedname>ADI3DToFFloorDetector::compressed_floor_pixels_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Compressed floor pixels count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="584" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="584" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a73f9c7b705072cd99bbd213c2ba01c7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFFloorDetector::ADI3DToFFloorDetector</definition>
+        <argsstring>()</argsstring>
+        <name>ADI3DToFFloorDetector</name>
+        <qualifiedname>ADI3DToFFloorDetector::ADI3DToFFloorDetector</qualifiedname>
+        <briefdescription>
+<para>Construct a new <ref refid="classADI3DToFFloorDetector" kindref="compound">ADI3DToFFloorDetector</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="60" column="3" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="60" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a57e908be7fd33a4e7a416f81c98cae01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::timerCallback</definition>
+        <argsstring>()</argsstring>
+        <name>timerCallback</name>
+        <qualifiedname>ADI3DToFFloorDetector::timerCallback</qualifiedname>
+        <briefdescription>
+<para>This function runs at a given frequency and runs the algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="327" column="8" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="327" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a5ed413a898ab2ea93f285a4d206f4f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::runFloorDetection</definition>
+        <argsstring>()</argsstring>
+        <name>runFloorDetection</name>
+        <qualifiedname>ADI3DToFFloorDetector::runFloorDetection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="337" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a122b929cd63c2b99170fc9fe6aa42e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::processOutput</definition>
+        <argsstring>()</argsstring>
+        <name>processOutput</name>
+        <qualifiedname>ADI3DToFFloorDetector::processOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="339" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1acdc05dcf3fecac436192e372202a6ad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::processOutputAbort</definition>
+        <argsstring>()</argsstring>
+        <name>processOutputAbort</name>
+        <qualifiedname>ADI3DToFFloorDetector::processOutputAbort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="341" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a70aed45858c0fcc2cde5f6ee07833681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::readInputAbort</definition>
+        <argsstring>()</argsstring>
+        <name>readInputAbort</name>
+        <qualifiedname>ADI3DToFFloorDetector::readInputAbort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="343" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a4d32995292d09303f44ae3e902d34688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::readInput</definition>
+        <argsstring>()</argsstring>
+        <name>readInput</name>
+        <qualifiedname>ADI3DToFFloorDetector::readInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="345" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a1550e73aa67abb22392d5101bd71dc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> *</type>
+        <definition>ADTF31xxSensorFrameInfo * ADI3DToFFloorDetector::floorDetectorIOThreadGetNextFrame</definition>
+        <argsstring>(void)</argsstring>
+        <name>floorDetectorIOThreadGetNextFrame</name>
+        <qualifiedname>ADI3DToFFloorDetector::floorDetectorIOThreadGetNextFrame</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="347" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1acecd1587ab0249f229327102d86445bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classADI3DToFFloorDetectorOutputInfo" kindref="compound">ADI3DToFFloorDetectorOutputInfo</ref> *</type>
+        <definition>ADI3DToFFloorDetectorOutputInfo * ADI3DToFFloorDetector::floorDetectorIOThreadGetNext</definition>
+        <argsstring>(void)</argsstring>
+        <name>floorDetectorIOThreadGetNext</name>
+        <qualifiedname>ADI3DToFFloorDetector::floorDetectorIOThreadGetNext</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="349" column="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1ae424c6092840457163c1248876be765b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::updateDynamicReconfigureVariablesInputThread</definition>
+        <argsstring>()</argsstring>
+        <name>updateDynamicReconfigureVariablesInputThread</name>
+        <qualifiedname>ADI3DToFFloorDetector::updateDynamicReconfigureVariablesInputThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="351" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1aca6e3fab0c1df214f1372912247a542b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::updateDynamicReconfigureVariablesProcessThread</definition>
+        <argsstring>()</argsstring>
+        <name>updateDynamicReconfigureVariablesProcessThread</name>
+        <qualifiedname>ADI3DToFFloorDetector::updateDynamicReconfigureVariablesProcessThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="353" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a591b7ddccb156e4f38c9af1375566e34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFFloorDetector::~ADI3DToFFloorDetector</definition>
+        <argsstring>()</argsstring>
+        <name>~ADI3DToFFloorDetector</name>
+        <qualifiedname>ADI3DToFFloorDetector::~ADI3DToFFloorDetector</qualifiedname>
+        <briefdescription>
+<para>Destroy the <ref refid="classADI3DToFFloorDetector" kindref="compound">ADI3DToFFloorDetector</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="359" column="3" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="359" bodyend="376"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a2bc7fdfd4816eb4af019d781444bdadd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::publishImageAndCameraInfo</definition>
+        <argsstring>(unsigned short *depth_frame, unsigned short *ab_frame, unsigned char *floor_mask_frame, short *xyz_frame)</argsstring>
+        <name>publishImageAndCameraInfo</name>
+        <qualifiedname>ADI3DToFFloorDetector::publishImageAndCameraInfo</qualifiedname>
+        <param>
+          <type>unsigned short *</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>ab_frame</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>floor_mask_frame</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function Declarations </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="588" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1ae72eb48f31f863c873d054043bd47c1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::publishImageAndCameraInfo</definition>
+        <argsstring>(unsigned char *compressed_depth_frame, int compressed_depth_frame_size, unsigned char *compressed_ab_frame, int compressed_ab_frame_size, unsigned char *compressed_floor_mask_frame, int compressed_floor_mask_frame_size, short *xyz_frame)</argsstring>
+        <name>publishImageAndCameraInfo</name>
+        <qualifiedname>ADI3DToFFloorDetector::publishImageAndCameraInfo</qualifiedname>
+        <param>
+          <type>unsigned char *</type>
+          <declname>compressed_depth_frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compressed_depth_frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>compressed_ab_frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compressed_ab_frame_size</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>compressed_floor_mask_frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compressed_floor_mask_frame_size</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="592" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a619a2d4eb9bfba6e7952438c5893f185" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::fillAndPublishCameraInfo</definition>
+        <argsstring>(const std::string &amp;frame_id, const rclcpp::Publisher&lt; sensor_msgs::msg::CameraInfo &gt;::SharedPtr publisher)</argsstring>
+        <name>fillAndPublishCameraInfo</name>
+        <qualifiedname>ADI3DToFFloorDetector::fillAndPublishCameraInfo</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_id</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Publisher&lt; sensor_msgs::msg::CameraInfo &gt;::SharedPtr</type>
+          <declname>publisher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="598" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1aa7f077b8a3862b8430b396beb9ff0aba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::publishImageAsRosMsg</definition>
+        <argsstring>(const cv::Mat &amp;img, const std::string &amp;encoding_type, const std::string &amp;frame_id, rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr publisher)</argsstring>
+        <name>publishImageAsRosMsg</name>
+        <qualifiedname>ADI3DToFFloorDetector::publishImageAsRosMsg</qualifiedname>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>encoding_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_id</declname>
+        </param>
+        <param>
+          <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+          <declname>publisher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="602" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1afb42ec842c4f5266c826a64a7700977a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::publishCompressedImageAsRosMsg</definition>
+        <argsstring>(unsigned char *compressed_img, int compressed_img_size, const std::string &amp;encoding_type, const std::string &amp;frame_id, const rclcpp::Publisher&lt; sensor_msgs::msg::CompressedImage &gt;::SharedPtr publisher)</argsstring>
+        <name>publishCompressedImageAsRosMsg</name>
+        <qualifiedname>ADI3DToFFloorDetector::publishCompressedImageAsRosMsg</qualifiedname>
+        <param>
+          <type>unsigned char *</type>
+          <declname>compressed_img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>compressed_img_size</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>encoding_type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>frame_id</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Publisher&lt; sensor_msgs::msg::CompressedImage &gt;::SharedPtr</type>
+          <declname>publisher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="606" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a874d95ab74251e3288b772535211decb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::publishPointCloud</definition>
+        <argsstring>(short *xyz_frame)</argsstring>
+        <name>publishPointCloud</name>
+        <qualifiedname>ADI3DToFFloorDetector::publishPointCloud</qualifiedname>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="611" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a3bcf261a35f49fff9f58c6d67ce26b27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cv::Mat</type>
+        <definition>cv::Mat ADI3DToFFloorDetector::getFloorDetectionOutput</definition>
+        <argsstring>(unsigned short *depth_frame_with_floor, unsigned short *ab_frame, unsigned char *floor_mask_8bit)</argsstring>
+        <name>getFloorDetectionOutput</name>
+        <qualifiedname>ADI3DToFFloorDetector::getFloorDetectionOutput</qualifiedname>
+        <param>
+          <type>unsigned short *</type>
+          <declname>depth_frame_with_floor</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>ab_frame</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>floor_mask_8bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="613" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a3e642e84ed828a1f6983962cc8b7d13a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::initSettingsForDynamicReconfigure</definition>
+        <argsstring>()</argsstring>
+        <name>initSettingsForDynamicReconfigure</name>
+        <qualifiedname>ADI3DToFFloorDetector::initSettingsForDynamicReconfigure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="617" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1af5baaf31642d8bde24a03097122f6778" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::getCameraLinksTF</definition>
+        <argsstring>()</argsstring>
+        <name>getCameraLinksTF</name>
+        <qualifiedname>ADI3DToFFloorDetector::getCameraLinksTF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="619" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a33749fe40ff1cd220a6bc82450242761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ADI3DToFFloorDetector::processOutputDone</definition>
+        <argsstring>()</argsstring>
+        <name>processOutputDone</name>
+        <qualifiedname>ADI3DToFFloorDetector::processOutputDone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="621" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a428119c6b53d84577413f3859bc53837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::processOutputStart</definition>
+        <argsstring>()</argsstring>
+        <name>processOutputStart</name>
+        <qualifiedname>ADI3DToFFloorDetector::processOutputStart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="623" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a507d61481883bd0780a2290414483761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::floorDetectorIOThreadPushOutputNode</definition>
+        <argsstring>(ADI3DToFFloorDetectorOutputInfo *new_output_node)</argsstring>
+        <name>floorDetectorIOThreadPushOutputNode</name>
+        <qualifiedname>ADI3DToFFloorDetector::floorDetectorIOThreadPushOutputNode</qualifiedname>
+        <param>
+          <type><ref refid="classADI3DToFFloorDetectorOutputInfo" kindref="compound">ADI3DToFFloorDetectorOutputInfo</ref> *</type>
+          <declname>new_output_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="625" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a67a002b7ab97f92dbde5ef1a024bacc3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFFloorDetector::rotatePointCloud</definition>
+        <argsstring>(short *input_point_cloud, short *rotated_point_cloud, CameraExtrinsics *camera_extrinsics, int image_width, int image_height)</argsstring>
+        <name>rotatePointCloud</name>
+        <qualifiedname>ADI3DToFFloorDetector::rotatePointCloud</qualifiedname>
+        <param>
+          <type>short *</type>
+          <declname>input_point_cloud</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>rotated_point_cloud</declname>
+        </param>
+        <param>
+          <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref> *</type>
+          <declname>camera_extrinsics</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="627" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFFloorDetector_1a18178c54ae7855801e2d3982b0e15fee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rcl_interfaces::msg::SetParametersResult</type>
+        <definition>rcl_interfaces::msg::SetParametersResult ADI3DToFFloorDetector::parametersCallback</definition>
+        <argsstring>(const std::vector&lt; rclcpp::Parameter &gt; &amp;parameters)</argsstring>
+        <name>parametersCallback</name>
+        <qualifiedname>ADI3DToFFloorDetector::parametersCallback</qualifiedname>
+        <param>
+          <type>const std::vector&lt; rclcpp::Parameter &gt; &amp;</type>
+          <declname>parameters</declname>
+        </param>
+        <briefdescription>
+<para>new values from dynamic reconfigure are copied to a struture variable here, actual update to individual parameters happens in updateDynamicReconfigureVariablesInputThread and updateDynamicReconfigureVariablesProcessThread functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_floor_detector_node.h" line="636" column="44" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="636" bodyend="710"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is main class for this package. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ADI3DToFFloorDetector</label>
+        <link refid="classADI3DToFFloorDetector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ADI3DToFFloorDetector</label>
+        <link refid="classADI3DToFFloorDetector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_3dtof_floor_detector_node.h" line="54" column="1" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="55" bodyend="711"/>
+    <listofallmembers>
+      <member refid="classADI3DToFFloorDetector_1a17579dfd3ffb5a3fe81e219bbf4e843a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ab_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a4325141503104a2bb5aef3391f02fbe9" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ab_image_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a6b1ba8da13f4e65e4bc47f65a0e220fe" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ab_threshold_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a73f9c7b705072cd99bbd213c2ba01c7b" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ADI3DToFFloorDetector</name></member>
+      <member refid="classADI3DToFFloorDetector_1a8bdc8058b63144f5ee6ee9f9c4f91514" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>callback_handle_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a6ed1d78d7127e01aadd0635fa383187f" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>cam_info_msg_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9564f69a09e81d6a5a7e1bfcf13b6e42" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_height_mtr_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0bc44aaa8d22b867b96260a3641abcd0" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_link_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aa14235a8de0eff0bddf5b8f57386899e" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_map_tf_buffer_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aa4a3c682a5353e104d45700f0d7f50fd" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_map_tf_listener_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a2de6620f823fc0db1c6e8ea630f49f14" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_pitch_rad_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a069d4fe5379c84a856c057f69e394a5b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_roll_rad_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a1926e118fe61a1c2b32a2e6bd627b375" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_tilted_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a90648fd056c940bc5fd266680e534088" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>camera_yaw_rad_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0cd84b58b13e4194f3245ffb5ddd6bd0" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_ab_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a2ab570b700730622c999404978616d7e" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_ab_frame_size_</name></member>
+      <member refid="classADI3DToFFloorDetector_1acd8b2a936df52a47dab6c9d913ed2d21" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_ab_image_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a7ec01b0773040664825a35feb360a745" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_depth_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0a58cd94b94ea632113ca28fca81c301" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_depth_frame_size_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aab2b260c7b7391523ed75250d61b93c4" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_depth_image_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a2921da2c0e33a85883cbe30b37178061" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_floor_mask_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a392817750ad9716fff64f215facf4ce8" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_floor_mask_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a87338f0ed4a422ba56b63d1f6b02ee5a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>compressed_floor_pixels_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0b9fcdca396dc45b26bb9fabeb8845f4" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>confidence_threshold_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ae333cd4a81f1c1e984005d3b3ac4f8da" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>curr_frame_timestamp_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aabe8fcb8594772dd95398f613debcbe1" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_extrinsics_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a09cd37bf8d8160c07f2ec1830abd8eec" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_extrinsics_external_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ae0ebbd28a3a1d7336607fe6456ae64ee" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aaca043ad2f1cde1807cf266487c20a8e" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_image_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1abf96910c265f108b0818bb9d2c3b63dd" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_info_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a22edfb87411e9e416428089168cd2dec" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>depth_intrinsics_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ade4491964f709c50460e345dbd3130de" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>discard_distance_threshold_mtr_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a4cfc7263ad6e8e1d22932fc489d3c513" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>dynamic_reconf_params_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a31f7e3b75add4a8463c5d6fc44cfee9b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>enable_compression_op_image_topics_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aeedb01de822e37e8a51cdab6f885a78c" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>enable_fallback_floor_detection_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a7d2949b871cf05d010dff669bc127d55" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>enable_pointcloud_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ad3b647800ba52d62c6b012916addf8a7" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>enable_ransac_floor_detection_</name></member>
+      <member refid="classADI3DToFFloorDetector_1acdb6e67170ca3632e4933045bc0b1240" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>encoding_type_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aa51052c9aac641d040f410af720a65b3" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>error_in_frame_read_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a5b880b7b656dd6dd88e754c0067c1c0b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>fallback_floor_height_offset_mtr_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a619a2d4eb9bfba6e7952438c5893f185" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>fillAndPublishCameraInfo</name></member>
+      <member refid="classADI3DToFFloorDetector_1a8bb728502a69503c358cd93c3fc699a0" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floor_distance_threshold_mm_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0d5ee37ae81b1c20b0bb19a07d2dc1ae" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floor_mask_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aa64778eb6ea1bd4c33b2176b465e08cd" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floor_mask_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a79556742f2ad1759379291451438933b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floor_plane_detection_</name></member>
+      <member refid="classADI3DToFFloorDetector_1acecd1587ab0249f229327102d86445bd" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floorDetectorIOThreadGetNext</name></member>
+      <member refid="classADI3DToFFloorDetector_1a1550e73aa67abb22392d5101bd71dc54" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floorDetectorIOThreadGetNextFrame</name></member>
+      <member refid="classADI3DToFFloorDetector_1a507d61481883bd0780a2290414483761" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>floorDetectorIOThreadPushOutputNode</name></member>
+      <member refid="classADI3DToFFloorDetector_1a084d17b30fec46633700baf945d19fc4" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>frame_number_</name></member>
+      <member refid="classADI3DToFFloorDetector_1af5baaf31642d8bde24a03097122f6778" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>getCameraLinksTF</name></member>
+      <member refid="classADI3DToFFloorDetector_1a3bcf261a35f49fff9f58c6d67ce26b27" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>getFloorDetectionOutput</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9fa32c13ebd7003e86a6f572df74ea0a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>image_height_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a14c67e9b47ca7074d3bc4cc15878f370" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>image_proc_utils_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a4d76e70070d18841a61fde22042083bb" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>image_width_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a3e642e84ed828a1f6983962cc8b7d13a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>initSettingsForDynamicReconfigure</name></member>
+      <member refid="classADI3DToFFloorDetector_1ad91bb6e7cb56468ad5435cf4146896e5" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_file_name_</name></member>
+      <member refid="classADI3DToFFloorDetector_1af5833ac8911b09d3a50a3d903122eb58" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_frames_queue_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ad3bb804dce8b4852b87c76439241d257" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_sensor_</name></member>
+      <member refid="classADI3DToFFloorDetector_1af183ddda88cccacf27416f9257dfc67a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_sensor_ip_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ac2a8f4aee82e914b3a01019f51aee503" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_sensor_mode_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ac467f4267319d6f5f7384e33c3e1e7a2" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_thread_mtx_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a39a027854b46cf27d94484dbf7240826" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>input_xyz_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9616dd88f48a71c84b89693e59a16576" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>max_input_queue_length_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9d6b6e9c56bb9d9f2de37bfdae2fa271" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>max_output_queue_length_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a99710fb654fc95a32a814face6355570" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>noise_count_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a96393b6036938452fe8b8ff4bd74a709" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>optical_camera_link_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a8d441638538daff6c307002543188377" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>optical_map_tf_buffer_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a003b2282861928b7a9347a13840fa93b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>optical_map_tf_listener_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a31f191e9dd48fa17142efec2ade5dbde" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_file_name_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aefbe65cf00bb2315dab8f01fef503190" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_node_queue_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a1412d0435ff0ed7616072eb1fe2584d5" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_sensor_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a8defa18a583dc8b88b0c22eb445d4fca" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_sensor_mode_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9a464435274689b287c2d2c67d1aaa86" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_thread_mtx_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a29f9f5f180dcdecccb5aff7e1d51eeb0" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>output_xyz_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a36bc21db5a3fc90e2f2d7c42cb013169" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>param_subscriber_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a18178c54ae7855801e2d3982b0e15fee" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>parametersCallback</name></member>
+      <member refid="classADI3DToFFloorDetector_1a1d1ad87e428615259f50f34f42b1a068" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>process_output_thread_abort_</name></member>
+      <member refid="classADI3DToFFloorDetector_1ae2c59c07d496da31a4cfb1300c3cc269" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>processing_scale_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a122b929cd63c2b99170fc9fe6aa42e80" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>processOutput</name></member>
+      <member refid="classADI3DToFFloorDetector_1acdc05dcf3fecac436192e372202a6ad8" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>processOutputAbort</name></member>
+      <member refid="classADI3DToFFloorDetector_1a33749fe40ff1cd220a6bc82450242761" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>processOutputDone</name></member>
+      <member refid="classADI3DToFFloorDetector_1a428119c6b53d84577413f3859bc53837" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>processOutputStart</name></member>
+      <member refid="classADI3DToFFloorDetector_1afb42ec842c4f5266c826a64a7700977a" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>publishCompressedImageAsRosMsg</name></member>
+      <member refid="classADI3DToFFloorDetector_1a2bc7fdfd4816eb4af019d781444bdadd" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>publishImageAndCameraInfo</name></member>
+      <member refid="classADI3DToFFloorDetector_1ae72eb48f31f863c873d054043bd47c1b" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>publishImageAndCameraInfo</name></member>
+      <member refid="classADI3DToFFloorDetector_1aa7f077b8a3862b8430b396beb9ff0aba" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>publishImageAsRosMsg</name></member>
+      <member refid="classADI3DToFFloorDetector_1a874d95ab74251e3288b772535211decb" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>publishPointCloud</name></member>
+      <member refid="classADI3DToFFloorDetector_1afe450080a108ef532d375b07cd467067" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ransac_distance_threshold_mtr_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a53081fd0defb612000197296da3d475d" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ransac_floor_detection_status_</name></member>
+      <member refid="classADI3DToFFloorDetector_1aca60433b4b213dd86378f26a12d31c7f" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ransac_iterations_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a7ac05b2f37b1cdc9bda93f5cb8b769bb" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ransac_max_iterations_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a01615b0c30635a7c8f610f5d01d6a9d6" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>ransac_time_ms_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a0c075e3f6de39793a8c3c5068b8f44fe" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>read_input_thread_abort_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a4d32995292d09303f44ae3e902d34688" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>readInput</name></member>
+      <member refid="classADI3DToFFloorDetector_1a70aed45858c0fcc2cde5f6ee07833681" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>readInputAbort</name></member>
+      <member refid="classADI3DToFFloorDetector_1a67a002b7ab97f92dbde5ef1a024bacc3" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>rotatePointCloud</name></member>
+      <member refid="classADI3DToFFloorDetector_1a5ed413a898ab2ea93f285a4d206f4f64" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>runFloorDetection</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9240e9f0f19fcdb6e53b2b97c747a0d2" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>timer_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a57e908be7fd33a4e7a416f81c98cae01" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>timerCallback</name></member>
+      <member refid="classADI3DToFFloorDetector_1ae424c6092840457163c1248876be765b" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>updateDynamicReconfigureVariablesInputThread</name></member>
+      <member refid="classADI3DToFFloorDetector_1aca6e3fab0c1df214f1372912247a542b" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>updateDynamicReconfigureVariablesProcessThread</name></member>
+      <member refid="classADI3DToFFloorDetector_1ac5485f6c9eb91bd80f965e8d5a5a2ff0" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>xyz_frame_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a9c52a2daf199d13cc2427f275e86b952" prot="private" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>xyz_image_publisher_</name></member>
+      <member refid="classADI3DToFFloorDetector_1a591b7ddccb156e4f38c9af1375566e34" prot="public" virt="non-virtual"><scope>ADI3DToFFloorDetector</scope><name>~ADI3DToFFloorDetector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

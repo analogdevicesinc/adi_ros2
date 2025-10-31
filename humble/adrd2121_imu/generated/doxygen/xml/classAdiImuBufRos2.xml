@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classAdiImuBufRos2" kind="class" language="C++" prot="public">
+    <compoundname>AdiImuBufRos2</compoundname>
+    <includes refid="adi__imu__buf__ros2_8hpp" local="no">adi_imu_buf_ros2.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAdiImuBufRos2_1af214c19e23577b0b2e75976d9e66e52d" prot="public" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adrd2121_imu::srv::ImuGlobCmd &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adrd2121_imu::srv::ImuGlobCmd&gt;::SharedPtr AdiImuBufRos2::p_imu_glob_cmd_service_</definition>
+        <argsstring></argsstring>
+        <name>p_imu_glob_cmd_service_</name>
+        <qualifiedname>AdiImuBufRos2::p_imu_glob_cmd_service_</qualifiedname>
+        <briefdescription>
+<para>ROS2 Service Server to send commands to GLOB_CMD register of ADI IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="84" column="31" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a8ee044b8d299cf893e4ec03460475583" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AdiImuBufRos2::mode_of_operation_</definition>
+        <argsstring></argsstring>
+        <name>mode_of_operation_</name>
+        <qualifiedname>AdiImuBufRos2::mode_of_operation_</qualifiedname>
+        <briefdescription>
+<para>Determine what operation mode will the node run on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>1: STREAM</para>
+<para>2: CONFIG </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="89" column="11" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a3e182b7d85ab2e210cffdce2fab52c1b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuBufRos2::b_getHWInitialized_</definition>
+        <argsstring></argsstring>
+        <name>b_getHWInitialized_</name>
+        <qualifiedname>AdiImuBufRos2::b_getHWInitialized_</qualifiedname>
+        <briefdescription>
+<para>Checks if at least the HW is initialized. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="92" column="8" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a326c7c4088f5625c8ac3d07cab196e4b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuBufRos2::b_readPubDataSuccess</definition>
+        <argsstring></argsstring>
+        <name>b_readPubDataSuccess</name>
+        <qualifiedname>AdiImuBufRos2::b_readPubDataSuccess</qualifiedname>
+        <briefdescription>
+<para>Boolean for checking if ReadPubData call is successful. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="95" column="8" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAdiImuBufRos2_1aebde034ec72553d4789df64a3b588718" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr AdiImuBufRos2::timer_</definition>
+        <argsstring></argsstring>
+        <name>timer_</name>
+        <qualifiedname>AdiImuBufRos2::timer_</qualifiedname>
+        <briefdescription>
+<para>Timer object meant to hold an instance of the wall timer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="99" column="32" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a876f17cb69f3fb260491577e221a4dff" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr AdiImuBufRos2::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>AdiImuBufRos2::node_</qualifiedname>
+        <briefdescription>
+<para>Local node meant to catch node from main function to be used for ROS2 APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="102" column="27" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1ac0eb4434a45d3031e441b15e5499b4ef" prot="private" static="no" mutable="no">
+        <type>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr</type>
+        <definition>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr AdiImuBufRos2::param_callback</definition>
+        <argsstring></argsstring>
+        <name>param_callback</name>
+        <qualifiedname>AdiImuBufRos2::param_callback</qualifiedname>
+        <briefdescription>
+<para>Parameter Callback handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="105" column="69" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1af37ae0dc98bceeb67d6400bcf8c6dbf0" prot="private" static="no" mutable="no">
+        <type><ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref> *</type>
+        <definition>AdiImuRos2* AdiImuBufRos2::p_adi_imu_ros2_obj_</definition>
+        <argsstring></argsstring>
+        <name>p_adi_imu_ros2_obj_</name>
+        <qualifiedname>AdiImuBufRos2::p_adi_imu_ros2_obj_</qualifiedname>
+        <briefdescription>
+<para>Pointer to an <ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="113" column="14" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a50a129f2d5c3232cb81724c034047ea4" prot="private" static="no" mutable="no">
+        <type><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref> *</type>
+        <definition>ImuBufRos2* AdiImuBufRos2::p_imu_buf_ros2_obj_</definition>
+        <argsstring></argsstring>
+        <name>p_imu_buf_ros2_obj_</name>
+        <qualifiedname>AdiImuBufRos2::p_imu_buf_ros2_obj_</qualifiedname>
+        <briefdescription>
+<para>Pointer to an <ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="116" column="14" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a1ba282441848ffa765c89d8ef7e8abc8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AdiImuBufRos2::ros_loop_rate_hz_</definition>
+        <argsstring></argsstring>
+        <name>ros_loop_rate_hz_</name>
+        <qualifiedname>AdiImuBufRos2::ros_loop_rate_hz_</qualifiedname>
+        <briefdescription>
+<para>ROS loop rate in Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="119" column="10" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a65829d9a0885bf480236fba4b0e7c0a7" prot="private" static="no" mutable="no">
+        <type>msg_type_e</type>
+        <definition>msg_type_e AdiImuBufRos2::msg_type_</definition>
+        <argsstring></argsstring>
+        <name>msg_type_</name>
+        <qualifiedname>AdiImuBufRos2::msg_type_</qualifiedname>
+        <briefdescription>
+<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="122" column="14" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1aae1956c1440c7088d667aa56d677f056" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string AdiImuBufRos2::frame_name_</definition>
+        <argsstring></argsstring>
+        <name>frame_name_</name>
+        <qualifiedname>AdiImuBufRos2::frame_name_</qualifiedname>
+        <briefdescription>
+<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="125" column="15" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuBufRos2_1a1118e54b953a942724faa7a0951d2e5a" prot="private" static="no" mutable="no">
+        <type>adi_imu_Device_t</type>
+        <definition>adi_imu_Device_t AdiImuBufRos2::imu_dev_</definition>
+        <argsstring></argsstring>
+        <name>imu_dev_</name>
+        <qualifiedname>AdiImuBufRos2::imu_dev_</qualifiedname>
+        <briefdescription>
+<para>Main struct for device. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="128" column="20" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdiImuBufRos2_1a23e3f4fa2a3064a1338170f23605e666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdiImuBufRos2::AdiImuBufRos2</definition>
+        <argsstring>(const rclcpp::Node::SharedPtr &amp;node)</argsstring>
+        <name>AdiImuBufRos2</name>
+        <qualifiedname>AdiImuBufRos2::AdiImuBufRos2</qualifiedname>
+        <param>
+          <type>const rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classAdiImuBufRos2" kindref="compound">AdiImuBufRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a1b160c6f012a93b191638880815abbf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdiImuBufRos2::~AdiImuBufRos2</definition>
+        <argsstring>()</argsstring>
+        <name>~AdiImuBufRos2</name>
+        <qualifiedname>AdiImuBufRos2::~AdiImuBufRos2</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="classAdiImuBufRos2" kindref="compound">AdiImuBufRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="44" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a5947f50fa4fdd1e5f565cd3e7b6c973a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdiImuBufRos2::initParams</definition>
+        <argsstring>(void)</argsstring>
+        <name>initParams</name>
+        <qualifiedname>AdiImuBufRos2::initParams</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Loads ROS-related, ADI IMU (<ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref>), and ADRD2121 (<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>) parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="48" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1aea4d317b9d929c88c6e0a288721bebac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuBufRos2::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <qualifiedname>AdiImuBufRos2::init</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the hardware Initializes the (1) communication with the board (i.e via USB), (2) ADRD2121, ADI IMU, and (4) advertises ROS Publishers and Service Servers. <linebreak/>
+ </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a06010fb047f5a3cc24d129c0140d271e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuBufRos2::config</definition>
+        <argsstring>(void)</argsstring>
+        <name>config</name>
+        <qualifiedname>AdiImuBufRos2::config</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configures the hardware based on the loaded parameters Configure the (1) ADRD2121, and (2) ADI IMU Also, sets the appropriate ROS Loop rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a660b08e8ccfdcf51781fcae291e22074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdiImuBufRos2::readPubData</definition>
+        <argsstring>(void)</argsstring>
+        <name>readPubData</name>
+        <qualifiedname>AdiImuBufRos2::readPubData</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Acquire publisher rate and advertise wall timer for looping. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a29779d91a27e07236aae6f2e4fb256d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdiImuBufRos2::dataReadAndPubCB</definition>
+        <argsstring>(void)</argsstring>
+        <name>dataReadAndPubCB</name>
+        <qualifiedname>AdiImuBufRos2::dataReadAndPubCB</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Callback being called by wall timer to read and publish IMU data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a80fe492ba31dbca0b0ef5b9008b5be30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double AdiImuBufRos2::getRosLoopRateHz</definition>
+        <argsstring>(void)</argsstring>
+        <name>getRosLoopRateHz</name>
+        <qualifiedname>AdiImuBufRos2::getRosLoopRateHz</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return ROS Loop Rate set during config. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ROS Loop Rate in Hz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuBufRos2_1a8193ba35cab25ab2c813431fdfe4a3cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuBufRos2::triggerImuGlobCmd</definition>
+        <argsstring>(adrd2121_imu::srv::ImuGlobCmd::Request::SharedPtr req, adrd2121_imu::srv::ImuGlobCmd::Response::SharedPtr res)</argsstring>
+        <name>triggerImuGlobCmd</name>
+        <qualifiedname>AdiImuBufRos2::triggerImuGlobCmd</qualifiedname>
+        <param>
+          <type>adrd2121_imu::srv::ImuGlobCmd::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adrd2121_imu::srv::ImuGlobCmd::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Service Server callback for imu_glob_cmd_service_. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request and Response to the Service</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="80" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAdiImuBufRos2_1a6eb9f86e4823749603f358d463885a0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>rcl_interfaces::msg::SetParametersResult</type>
+        <definition>rcl_interfaces::msg::SetParametersResult AdiImuBufRos2::paramCbFunction</definition>
+        <argsstring>(const std::vector&lt; rclcpp::Parameter &gt; &amp;param)</argsstring>
+        <name>paramCbFunction</name>
+        <qualifiedname>AdiImuBufRos2::paramCbFunction</qualifiedname>
+        <param>
+          <type>const std::vector&lt; rclcpp::Parameter &gt; &amp;</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+<para>Callback function that verifies if the inputted value for the parameter is. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>within range or not. <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="109" column="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for ADI IMU + ADRD2121. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp" line="37" column="1" bodyfile="include/adrd2121_imu/adi_imu_buf_ros2.hpp" bodystart="38" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classAdiImuBufRos2_1a23e3f4fa2a3064a1338170f23605e666" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>AdiImuBufRos2</name></member>
+      <member refid="classAdiImuBufRos2_1a3e182b7d85ab2e210cffdce2fab52c1b" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>b_getHWInitialized_</name></member>
+      <member refid="classAdiImuBufRos2_1a326c7c4088f5625c8ac3d07cab196e4b" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>b_readPubDataSuccess</name></member>
+      <member refid="classAdiImuBufRos2_1a06010fb047f5a3cc24d129c0140d271e" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>config</name></member>
+      <member refid="classAdiImuBufRos2_1a29779d91a27e07236aae6f2e4fb256d0" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>dataReadAndPubCB</name></member>
+      <member refid="classAdiImuBufRos2_1aae1956c1440c7088d667aa56d677f056" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>frame_name_</name></member>
+      <member refid="classAdiImuBufRos2_1a80fe492ba31dbca0b0ef5b9008b5be30" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>getRosLoopRateHz</name></member>
+      <member refid="classAdiImuBufRos2_1a1118e54b953a942724faa7a0951d2e5a" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>imu_dev_</name></member>
+      <member refid="classAdiImuBufRos2_1aea4d317b9d929c88c6e0a288721bebac" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>init</name></member>
+      <member refid="classAdiImuBufRos2_1a5947f50fa4fdd1e5f565cd3e7b6c973a" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>initParams</name></member>
+      <member refid="classAdiImuBufRos2_1a8ee044b8d299cf893e4ec03460475583" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>mode_of_operation_</name></member>
+      <member refid="classAdiImuBufRos2_1a65829d9a0885bf480236fba4b0e7c0a7" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>msg_type_</name></member>
+      <member refid="classAdiImuBufRos2_1a876f17cb69f3fb260491577e221a4dff" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>node_</name></member>
+      <member refid="classAdiImuBufRos2_1af37ae0dc98bceeb67d6400bcf8c6dbf0" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>p_adi_imu_ros2_obj_</name></member>
+      <member refid="classAdiImuBufRos2_1a50a129f2d5c3232cb81724c034047ea4" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>p_imu_buf_ros2_obj_</name></member>
+      <member refid="classAdiImuBufRos2_1af214c19e23577b0b2e75976d9e66e52d" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>p_imu_glob_cmd_service_</name></member>
+      <member refid="classAdiImuBufRos2_1ac0eb4434a45d3031e441b15e5499b4ef" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>param_callback</name></member>
+      <member refid="classAdiImuBufRos2_1a6eb9f86e4823749603f358d463885a0d" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>paramCbFunction</name></member>
+      <member refid="classAdiImuBufRos2_1a660b08e8ccfdcf51781fcae291e22074" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>readPubData</name></member>
+      <member refid="classAdiImuBufRos2_1a1ba282441848ffa765c89d8ef7e8abc8" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>ros_loop_rate_hz_</name></member>
+      <member refid="classAdiImuBufRos2_1aebde034ec72553d4789df64a3b588718" prot="private" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>timer_</name></member>
+      <member refid="classAdiImuBufRos2_1a8193ba35cab25ab2c813431fdfe4a3cd" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>triggerImuGlobCmd</name></member>
+      <member refid="classAdiImuBufRos2_1a1b160c6f012a93b191638880815abbf4" prot="public" virt="non-virtual"><scope>AdiImuBufRos2</scope><name>~AdiImuBufRos2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

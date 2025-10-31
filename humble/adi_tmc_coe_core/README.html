@@ -1,0 +1,773 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background &mdash; adi_tmc_coe_core 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            adi_tmc_coe_core
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="__links.html">Links</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmc_coe_core">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/structPACKED.html">Struct PACKED</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeBldcMotor.html">Class TmcCoeBldcMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeInterpreter.html">Class TmcCoeInterpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeMotor.html">Class TmcCoeMotor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeROS2.html">Class TmcCoeROS2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeStepperMotor.html">Class TmcCoeStepperMotor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__bldc__motor_8hpp_1a1816d86b864c1905cff927194c63785d.html">Enum bldc_comm_mode_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595.html">Enum control_word_val_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec.html">Enum controlword_pos_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb.html">Enum fsa_state_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3.html">Enum mode_of_operation_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15.html">Enum nmt_state_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a.html">Enum status_word_val_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385.html">Enum statusword_pos_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad.html">Enum stepper_comm_mode_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e.html">Variable cap_string_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de.html">Variable CONTROL_WORD_FAIL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840.html">Variable CONTROL_WORD_SUCCESS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72.html">Variable CONTROL_WORD_TIMEOUT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17.html">Variable CW_NEW_POSITION_ABSOLUTE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a.html">Variable CW_NEW_POSITION_RELATIVE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html">Variable CW_NEW_SET_POINT_START</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc.html">Variable CW_NEW_SET_POINT_STOP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html">Variable ERROR_CHECK_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a41d43d48bf3eefa06ba41d1496dc135d.html">Variable executable_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7.html">Variable INTERPOLATION_TIME_INDEX_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6.html">Variable INTERPOLATION_TIME_INDEX_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31.html">Variable IOMAP_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52.html">Variable MOTOR_TYPE_BLDC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93.html">Variable MOTOR_TYPE_STEPPER_MAX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846.html">Variable MOTOR_TYPE_STEPPER_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f.html">Variable PI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1.html">Variable PROCESS_DATA_DELAY</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe.html">Variable SECS_TO_MIN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2.html">Variable state_coding_val_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682.html">Variable status_state_mask_</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018.html">Variable TOTAL_WORK_COUNTER_PER_SLAVE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#defines">Defines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e.html">Define _USE_MATH_DEFINES</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536.html">Typedef input_pdo_t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460.html">Typedef output_pdo_t</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_adi_tmc_coe_core.html">Directory adi_tmc_coe_core</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.html">File adi_ethercat_grant.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp.html">File tmc_coe_bldc_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html">File tmc_coe_interpreter.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.html">File tmc_coe_motor.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.html">File tmc_coe_ros2.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.html">File tmc_coe_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#hardware">Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#software">Software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#software-architecture">Software Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#clone">Clone</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#build">Build</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#bldc-motors">BLDC Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#stepper-motors">Stepper Motors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#pre-launch-one-time">Pre-Launch (One-time)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#config-launch-file">Config/Launch File</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#launch">Launch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#nodes">Nodes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#tmc-coe-ros2-node">tmc_coe_ros2_node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#ethercat-grant">ethercat_grant</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#quick-tests">Quick Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#test-velocity-mode">Test Velocity Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="__README.html#test-position-mode">Test Position Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="__README.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="__CHANGELOG.html#changelog-for-package-adi-tmc-coe-core">Changelog for package adi_tmc_coe_core</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id1">1.0.0 (2025-03-06)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">adi_tmc_coe_core</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Background</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>adi_tmc_coe_core</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Core package for Trinamic Motor Controllers (TMC) that uses CANopen-over-etherCAT(CoE) protocol.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="background">
+<h1>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Supported TMC boards: <a class="reference external" href="https://www.analog.com/en/products/pd-1461.html">TMCM-1461-CoE</a></p></li>
+<li><p>Supported communication interface and interface driver: CANopen-over-etherCAT (<a class="reference external" href="https://github.com/OpenEtherCATsociety/SOEM">SOEM</a>)</p></li>
+<li><p>Supported ROS and OS distro: Humble (Ubuntu 22.04)</p></li>
+<li><p>Supported platform: Intel x86 64-bit (amd64)</p></li>
+<li><p>Supported setup: Single/Multiple TMC in Single ECAT interface (namespace-managed)</p></li>
+</ul>
+<blockquote>
+<div><p>:memo: <em>Note: Although officially supported TMC boards are only the abovementioned, all market-ready TMCs with YAMLs in this repository are also expected to work and can be tried and tested by the users.</em>
+<em>Contact the Developers for any  issues encountered.</em></p>
+</div></blockquote>
+</section>
+<section id="hardware">
+<h1>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h1>
+<p>For the tested TMCM-1461-CoE setup, the following are used:</p>
+<ul class="simple">
+<li><p>1 x <a class="reference external" href="https://www.analog.com/en/products/pd-1461.html">TMCM-1461-CoE</a></p></li>
+<li><p>1 x External 24V power supply</p></li>
+<li><p>1 x USB to LAN ethernet adapter</p></li>
+</ul>
+<p>Also the following:</p>
+<ul class="simple">
+<li><p>1 x 4pin female M8-RJ45 etherCAT cable</p></li>
+<li><p>1 x 4 pin male M8 power supply cable</p></li>
+</ul>
+<p>The image below shows the connection diagram of the setup (with labels):
+<img alt="TMCM-1461 Connections" src="docs/images/tmcm_1461_coe_setup.png" /></p>
+<p>The image below shows the actual setup used (for reference):
+<img alt="TMCM-1461 Actual Setup" src="docs/images/tmcm_1461_coe_actual_setup.jpg" /></p>
+</section>
+<section id="software">
+<h1>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h1>
+<section id="software-architecture">
+<h2>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading"></a></h2>
+<p><img alt="Software Architecture Diagram" src="docs/images/adi_tmc_coe_core_Software_Architecture_Diagram.png" /></p>
+</section>
+<section id="software-dependencies">
+<h2>Software Dependencies<a class="headerlink" href="#software-dependencies" title="Link to this heading"></a></h2>
+<p>Assumptions before building this package:</p>
+<ul class="simple">
+<li><p>Installed ROS Humble. If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Installation.html">steps</a>.</p></li>
+<li><p>Setup workspace (with workspace folder named as “ros2_ws”). If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html">steps</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="clone">
+<h1>Clone<a class="headerlink" href="#clone" title="Link to this heading"></a></h1>
+<p>In the website:</p>
+<ol class="arabic simple">
+<li><p>Make sure that the branch dropdown is set to “humble”.</p></li>
+<li><p>Click the “Clone” or “Code” button, then copy the SSH or HTTPS link (eg, “*.git”).</p></li>
+</ol>
+<p>In a terminal, do the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span>&lt;copied<span class="w"> </span>SSH<span class="w"> </span>o<span class="w"> </span>HTTPS<span class="w"> </span>link<span class="w"> </span>here&gt;<span class="w"> </span>adi_tmc_coe<span class="w"> </span><span class="c1">#clones repo to &quot;adi_tmc_coe&quot; directory name</span>
+</pre></div>
+</div>
+</section>
+<section id="build">
+<h1>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h1>
+<p>Do proper exports first:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># $ source /opt/ros/&lt;ROS version&gt;/setup.bash</span>
+$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>“ROS version” is the user’s actual ROS version</p></li>
+</ul>
+<p>Then, install all required dependencies (See <a class="reference internal" href="#software-dependencies"><span class="xref myst">SoftwareDependencies</span></a>) using rosdep:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span>rosdep<span class="w"> </span>init
+$<span class="w"> </span>rosdep<span class="w"> </span>update
+$<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>--from-paths<span class="w"> </span>src<span class="w"> </span>-y<span class="w"> </span>--ignore-src
+</pre></div>
+</div>
+<p>Then:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+$<span class="w"> </span>colcon<span class="w"> </span>build
+<span class="c1">## To clean first before building, you may run the following instead:</span>
+<span class="c1">## $ colcon build --cmake-clean-first</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>:memo: <em>Note: It is recommended that 1 terminal is dedicated to building the package/workspace to avoid complex issues as mentioned in <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a></em></p>
+</div></blockquote>
+</section>
+<section id="pre-launch-one-time-per-setup">
+<h1>Pre-Launch (One-time per setup)<a class="headerlink" href="#pre-launch-one-time-per-setup" title="Link to this heading"></a></h1>
+<p>Not all Trinamic modules are on TMCL_IDE specially CoE due to different interface used. Check module first for other communication protocol than CoE (UART, USB or CAN). Proceed to next steps if module is available in TMCL_IDE.</p>
+<blockquote>
+<div><p>:memo: <em>Note: Different communication protocol might need different cable to communicate with TMCL_IDE (e.g. UART - USB to TTL adapter, USB - TypeC/TypeB/Micro, CAN - PCAN-USB adapter).</em></p>
+</div></blockquote>
+<p>If it’s the first time to use the set of motors for the TMC, it is required to calibrate and tune the PID settings of the motors first.</p>
+<p>Do the calibrations/tuning by downloading and using <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/motor-motion-control-software/tmcl-ide.html">TMCL-IDE</a>.</p>
+<section id="bldc-motors">
+<h2>BLDC Motors<a class="headerlink" href="#bldc-motors" title="Link to this heading"></a></h2>
+<section id="calibrate-the-motors">
+<h3>Calibrate the motors<a class="headerlink" href="#calibrate-the-motors" title="Link to this heading"></a></h3>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=MASVD_2tNuo">link</a>.</p>
+</section>
+<section id="tune-the-pi-settings-of-the-motors">
+<h3>Tune the PI settings of the motors<a class="headerlink" href="#tune-the-pi-settings-of-the-motors" title="Link to this heading"></a></h3>
+<p>For a run-through/tutorial of how the PI tuning is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">Tuning</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=rfZAs-QdYlQ">link</a>.</p>
+<blockquote>
+<div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by doing any of the following:</em></p>
+<ul class="simple">
+<li><p><em>Clicking the “Store Parameter” under Settings of each axis</em></p></li>
+<li><p><em>Using STAP (Store Axis Parameters) command from Direct Mode</em></p></li>
+<li><p><em>Creating and uploading a TMCL Program, and enabling the “auto start mode” under SGP (Set Global Parameter) command from Direct Mode</em></p></li>
+<li><ul>
+<li><p>:memo: <em>Note: Some boards don’t have “auto start mode”, so in such a case, use the other options to store the parameters.</em></p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="stepper-motors">
+<h2>Stepper Motors<a class="headerlink" href="#stepper-motors" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>Calibrate the motors<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=l6r63Q7Yr58o">link</a>.</p>
+<p>For more information about Trinamic features on stepper motors, visit this <a class="reference external" href="https://www.analog.com/en/product-category/stepper-motor-driver.html">link</a>.</p>
+<blockquote>
+<div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by:</em></p>
+<ul class="simple">
+<li><p><em>Creating and uploading a TMCL Program, and enabling the “auto start mode” under SGP (Set Global Parameter) command from Direct Mode</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="pre-launch-one-time">
+<h2>Pre-Launch (One-time)<a class="headerlink" href="#pre-launch-one-time" title="Link to this heading"></a></h2>
+<p>The <a class="reference internal" href="#ethercat_grant"><span class="xref myst">ethercat_grant</span></a> node/utility is needed to run the <a class="reference internal" href="#tmc_coe_ros2_node"><span class="xref myst">tmc_coe_ros2_node</span></a> without root privileges.</p>
+<p>If built from source, you will need to go through <a class="reference internal" href="#installation"><span class="xref myst">ethercat_grant/Installation</span></a>.</p>
+</section>
+<section id="config-launch-file">
+<h2>Config/Launch File<a class="headerlink" href="#config-launch-file" title="Link to this heading"></a></h2>
+<p>Before launching the package, make sure that the <em>interface_name</em> on the yaml file is correct. Modify the corresponding yaml file depending on your setup:</p>
+<ul class="simple">
+<li><p>If using 1 slave with 1 axis, modify 1slave_1axis.yaml,</p></li>
+<li><p>If using 2 slaves with 1 axis per slave, modify 2slaves_1axis_per_slave.yaml,</p></li>
+<li><p>If using 2 slaves with 2 axes per slave, modify 2slaves_2axes_per_slave.yaml,</p></li>
+</ul>
+<p>Modify <em>interface_name</em> (check <a class="reference internal" href="#parameters"><span class="xref myst">Parameter</span></a>) and set the interface name of your adapter.</p>
+<p>To check the interface name, run this command in terminal:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ifconfig
+</pre></div>
+</div>
+<p>Interface name is usually starts with enx / eth. Copy and paste the interface name on the <em>interface_name</em> in yaml file.</p>
+<p>Also, check the launch file if correct trinamic board autogenerated yaml and config yaml is loaded. TMCM-1461 setup is the default namespace for 1slave_1axis and 2slaves_1axis_per_slave launch files, provide the correct namespace if other device is used.</p>
+</section>
+</section>
+<section id="launch">
+<h1>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h1>
+<p>This package has 3 sample launch files for:</p>
+<p>single slave with single axis (used module is TMCM-1461-CoE)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmc_coe_core<span class="w"> </span>1slave_1axis.launch
+</pre></div>
+</div>
+<p>2 slaves with single axis on both slaves (used module is 2x TMCM-1461-CoE)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmc_coe_core<span class="w"> </span>2slaves_1axis_per_slave.launch
+</pre></div>
+</div>
+<p>2 slaves with 2 axes on both slaves</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmc_coe_core<span class="w"> </span>2slaves_2axes_per_slave.launch
+</pre></div>
+</div>
+</section>
+<section id="nodes">
+<h1>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h1>
+<section id="tmc-coe-ros2-node">
+<h2>tmc_coe_ros2_node<a class="headerlink" href="#tmc-coe-ros2-node" title="Link to this heading"></a></h2>
+<blockquote>
+<div><p>:memo: <em>Note: For those with &lt;slave_number&gt; and &lt;motor_number&gt; in the topic names, these are the slave number and motor number respectively. For example, if there are 2 slaves/devices both with single motor used, there should be two published topics for tmc_coe_info, specifically /tmc_coe_info_1_0 for device 1 motor 0 and /tmc_coe_info_2_0 for device 2 motor 0.</em></p>
+</div></blockquote>
+<section id="published-topics">
+<h3>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h3>
+<p>These are the default topic names, topic names can be modified as a ROS parameter.</p>
+<ul class="simple">
+<li><p><strong>/tmc_info_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (adi_tmc_coe_interfaces/msg/TmcCoeInfo)</p>
+<ul>
+<li><p>Publish information</p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacesmsgtmccoeinfo"><span class="xref myst">adi_tmc_coe_interfaces/msg/TmcCoeInfo</span></a> for more info</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="subscribed-topics">
+<h3>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>/cmd_vel_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (geometry_msgs/msg/Twist)</p>
+<ul>
+<li><p>Velocity command (rpm or m/s)</p></li>
+</ul>
+</li>
+<li><p><strong>/cmd_abspos_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (std_msgs/msg/Int32)</p>
+<ul>
+<li><p>Absolute position command (steps or degree angle)</p></li>
+</ul>
+</li>
+<li><p><strong>/cmd_relpos_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (std_msgs/msg/Int32)</p>
+<ul>
+<li><p>Relative position command (steps or degree angle)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="advertised-services">
+<h3>Advertised services<a class="headerlink" href="#advertised-services" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>/read_SDO</strong> (adi_tmc_coe_interfaces/srv/ReadWriteSDO)</p>
+<ul>
+<li><p>Executes a read command using SDO protocol</p></li>
+<li><p>The output contains raw data (velocity = rpm, position = steps) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvreadwritesdo"><span class="xref myst">adi_tmc_coe_interfaces/srv/ReadWriteSDO</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/write_SDO</strong> (adi_tmc_coe_interfaces/srv/ReadWriteSDO)</p>
+<ul>
+<li><p>Executes a write command using SDO protocol</p></li>
+<li><p>The input value should be the default unit (velocity = rpm, position = steps) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvreadwritesdo"><span class="xref myst">adi_tmc_coe_interfaces/srv/ReadWriteSDO</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/read_PDO</strong> (adi_tmc_coe_interfaces/srv/ReadWritePDO)</p>
+<ul>
+<li><p>Executes a read command using PDO protocol.</p></li>
+<li><p>The output contains raw data (velocity = rpm, position = steps) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvreadwritepdo"><span class="xref myst">adi_tmc_coe_interfaces/srv/ReadWritePDO</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/write_PDO</strong> (adi_tmc_coe_interfaces/srv/ReadWritePDO)</p>
+<ul>
+<li><p>Executes a write command using PDO protocol</p></li>
+<li><p>The input value should be the default unit (velocity = rpm, position = steps) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvreadwritepdo"><span class="xref myst">adi_tmc_coe_interfaces/srv/ReadWritePDO</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/change_nmt_state</strong> (adi_tmc_coe_interfaces/srv/ChangeNMTState)</p>
+<ul>
+<li><p>Changes the NMT state of the specified device/slave</p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvchangenmtstate"><span class="xref myst">adi_tmc_coe_interfaces/srv/ChangeNMTState</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/change_cia402_state</strong> (adi_tmc_coe_interfaces/srv/ChangeCia402State)</p>
+<ul>
+<li><p>Changes the CiA402 or DS402 state of the specified device/slave</p></li>
+<li><p><em>Current Limitation</em>: Can only change DS402 of Motor 0/Axis 0</p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvchangecia402state"><span class="xref myst">adi_tmc_coe_interfaces/srv/ChangeCia402State</span></a> for more info</p></li>
+</ul>
+</li>
+<li><p><strong>/cyclic_sync_mode</strong> (adi_tmc_coe_interfaces/srv/CyclicSyncMode)</p>
+<ul>
+<li><p>Controls the motor’s velocity, position or torque in cyclic synchronous mode.</p></li>
+<li><p>The input value should be the default unit (velocity = rpm, position = steps) from the board. <em>Do not expect same unit from the publisher.</em></p></li>
+<li><p>Refer to <a class="reference internal" href="#../adi_tmc_coe_interfaces/README.md#adi_tmc_coe_interfacessrvcyclicsyncmode"><span class="xref myst">adi_tmc_coe_interfaces/srv/CyclicSyncMode</span></a> for more info</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h3>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Communication Interface Parameter is essential in initializing etherCAT.</em></p></li>
+<li><p><em>If any of these paramameters are not set/declared, default values will be used.</em></p></li>
+<li><p><em>To know more details about each parameter, you can execute <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">param</span> <span class="pre">describe</span> <span class="pre">&lt;node&gt;</span> <span class="pre">&lt;parameter&gt;</span></code></em></p></li>
+</ul>
+</div></blockquote>
+<section id="communication-interface-parameter">
+<h4><em>Communication Interface Parameter</em><a class="headerlink" href="#communication-interface-parameter" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>interface_name</strong> (string, default: “”)</p>
+<ul>
+<li><p>Name of the NIC (Network Interface Card) detected by the PC. Use command <code class="docutils literal notranslate"><span class="pre">$ifconfig</span></code> to check the interface name, it usually starts with ethxxx or enxxxx.</p></li>
+</ul>
+</li>
+<li><p><strong>SDO_PDO_retries</strong> (int, default: 1)</p>
+<ul>
+<li><p>Indicates how many times the SDO and PDO will retry in sending before logging an error if SDO or PDO fails.</p></li>
+</ul>
+</li>
+<li><p><strong>interface_timeout</strong> (double, default: 3.0)</p>
+<ul>
+<li><p>Indicates how long should the node will wait for the slave to be responsive.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="tmc-coe-ros-node-parameters">
+<h4><em>TMC COE ROS Node Parameters</em><a class="headerlink" href="#tmc-coe-ros-node-parameters" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>en_slave</strong> (int[], default: [0])</p>
+<ul>
+<li><p>Enables/disables device/slave connected. If disabled, settings for those motors will be ignored or not set.</p></li>
+</ul>
+</li>
+<li><p><strong>adhoc_mode</strong> (int[], default: [0])</p>
+<ul>
+<li><p>This mode expects that the used module is not known. The velocity, position and torque relies on the additional_ratio_* values.</p></li>
+</ul>
+</li>
+<li><p><strong>slv&lt;slave_number&gt;/en_motors</strong> (int[], default: [0])</p>
+<ul>
+<li><p>e.g. <strong>slv1/en_motors</strong></p></li>
+<li><p>Enables/disables active motors or axes in each slave. If disabled, settings for those motors will be ignored or not set.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="motor-configuration-settings">
+<h4><em>Motor Configuration Settings</em><a class="headerlink" href="#motor-configuration-settings" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>The following parameters can be provided for each motor of each slave, otherwise, default will be used</em></p></li>
+<li><p>_Resulting parameter will be prefixed by <code class="docutils literal notranslate"><span class="pre">slv&lt;slave_number&gt;.motor&lt;motor_number&gt;</span></code>. (e.g. <code class="docutils literal notranslate"><span class="pre">slv1.motor0.pub_rate_tmc_coe_info</span></code>)</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>pub_rate_tmc_coe_info</strong> (int, default: 10)</p>
+<ul>
+<li><p>Publish rate (hertz) of TMC information</p></li>
+</ul>
+</li>
+<li><p><strong>en_pub_tmc_coe_info</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enables/disables publishing of TMC information</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_vel</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual velocity that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_pos</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual position that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>pub_actual_trq</strong> (bool, default: false)</p>
+<ul>
+<li><p>Enable/Disable actual torque that the user can optionally publish every publish rate as long as en_pub_tmc_info is true</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_coe_info_topic</strong> (string, default: /tmc_coe_info_&lt;slave_number&gt;_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>tmc_coe_info topics that will contain chosen TMC info that will be published</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_vel_topic</strong> (string, default: /cmd_vel_&lt;slave_number&gt;_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Twist topics that will be the source of target velocity to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_abspos_topic</strong> (string, default: /cmd_abspos_&lt;slave_number&gt;_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Int32 topics that will be the source of target position to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>tmc_cmd_relpos_topic</strong> (string, default: /cmd_relpos_&lt;slave_number&gt;_&lt;motor_number&gt;)</p>
+<ul>
+<li><p>Int32 topics that will be the source of target position to be set on the TMC</p></li>
+</ul>
+</li>
+<li><p><strong>wheel_diameter</strong> (float, default: 0.0)</p>
+<ul>
+<li><p>Wheel diameter that is attached on the motor shaft directly. This is to convert linear values to rpm</p></li>
+<li><p>If wheel diameter is 0, cmd_vel is equal to rpm</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_vel</strong> (float, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for velocity for general purposes (adhoc mode, added pulley or gear trains). Default value 1 means disabled</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_pos</strong> (float, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for position for general purposes (adhoc mode, added pulley or gear trains). Default value 1 means disabled</p></li>
+</ul>
+</li>
+<li><p><strong>additional_ratio_trq</strong> (float, default: 1.0)</p>
+<ul>
+<li><p>Additional Ratio for torque for general purposes (adhoc mode). Default value 1 means disabled</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="autogenerated-parameters">
+<h4>Autogenerated Parameters<a class="headerlink" href="#autogenerated-parameters" title="Link to this heading"></a></h4>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>These parameters are generated per TMCM device which contain CANOpen Object Dictionary attributes</em></p></li>
+<li><p><em>Be careful when changing these parameter values, as the behavior of the node/device may change</em></p></li>
+<li><p><em>Resulting parameter will be prefixed by <code class="docutils literal notranslate"><span class="pre">tmcm_&lt;device_number&gt;.</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">tmcm_1461.obj_name</span></code>)</em></p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>obj_name</strong> (string[], default: [])</p>
+<ul>
+<li><p>Object Name attribute of all object dictionary entries in specific device</p></li>
+</ul>
+</li>
+<li><p><strong>index</strong> (string[], default: [])</p>
+<ul>
+<li><p>16-bit base address of the object</p></li>
+</ul>
+</li>
+<li><p><strong>sub_index</strong> (string[], default: [])</p>
+<ul>
+<li><p>8-bit subindex of the object</p></li>
+</ul>
+</li>
+<li><p><strong>datatype</strong> (string[], default: [])</p>
+<ul>
+<li><p>Data type of the object (e.g. UINT16, UINT8, etc.)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="ethercat-grant">
+<h2>ethercat_grant<a class="headerlink" href="#ethercat-grant" title="Link to this heading"></a></h2>
+<p>adi_ethercat_grant_node is a ROS2 node for ethercat_grant. Theoretically, if this package is available via binary installation, there should be no further instructions required.</p>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
+<p>If this package is installed via source, before running the launch file, do the steps below:</p>
+<ol class="arabic simple">
+<li><p>Open /scripts directory</p></li>
+<li><p>Make script executable
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">ethercat_grant_installation.sh</span></code></p></li>
+<li><p>Run the script with sudo
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ethercat_grant_installation.sh</span></code></p></li>
+<li><p>Run the launch file</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="quick-tests">
+<h1>Quick Tests<a class="headerlink" href="#quick-tests" title="Link to this heading"></a></h1>
+<section id="test-velocity-mode">
+<h2>Test Velocity Mode<a class="headerlink" href="#test-velocity-mode" title="Link to this heading"></a></h2>
+<p>To do a quick test of Velocity Mode, there is a fake velocity script that the user can run.
+Idea is, this script will send Velocity commands (as a ROS topic), then the first motor should be expected to:</p>
+<ol class="arabic simple">
+<li><p>Increase velocity every 3secs, clockwise (in m/s: 3, 6, 9)</p></li>
+<li><p>Stop for 5secs</p></li>
+<li><p>Increase velocity every 3secs, counter-clockwise (in m/s: -3, -6, -9)</p></li>
+<li><p>Stop for 5secs</p></li>
+</ol>
+<p>To proceed with the test, execute these following commands on three (3) different terminals (in sequence):</p>
+<blockquote>
+<div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1.</em></p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
+<th class="head"><p>Terminal 3</p></th>
+<th class="head"><p>Terminal 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">/opt/ros/humble/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">install/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">launch</span> <span class="pre">adi_tmc_coe_core</span> <span class="pre">1slave_1axis.launch.py</span></code></p></td>
+<td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">/opt/ros/humble/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">install/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span> <span class="pre">/tmc_info_1_0</span></code></p></td>
+<td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/src/adi_tmc_coe/adi_tmc_coe_core/scripts</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">chmod</span> <span class="pre">777</span> <span class="pre">fake_cmd_vel.sh</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./fake_cmd_vel.sh</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor the velocity of the first motor (watch out for velocity value at Terminal 3).</strong></p>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Terminals 3 and 4 are best viewed side-by-side.</em></p></li>
+<li><p><em>You may Ctrl-C the command in Terminal 2 and 3 once you’re done.</em></p></li>
+<li><p><em>The command in Terminal 4 auto-stops by itself.</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="test-position-mode">
+<h2>Test Position Mode<a class="headerlink" href="#test-position-mode" title="Link to this heading"></a></h2>
+<p>To do a quick test of Position Mode, there is a fake position script that the user can run.
+Idea is, this script will send Position commands (as a ROS topic), then the first motor should be expected to:</p>
+<ol class="arabic simple">
+<li><p>Rotate 360 degrees (clockwise) every 5 secs, 3 times</p></li>
+<li><p>Stop for 5secs</p></li>
+<li><p>Rotate 360 degrees (counter-clockwise) every 5 secs, 3 times</p></li>
+<li><p>Stop for 5secs</p></li>
+</ol>
+<p>To proceed with the test, execute these following commands on three (3) different terminals (in sequence):</p>
+<blockquote>
+<div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1.</em></p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
+<th class="head"><p>Terminal 3</p></th>
+<th class="head"><p>Terminal 4</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">/opt/ros/humble/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">install/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">launch</span> <span class="pre">adi_tmc_coe_core</span> <span class="pre">1slave_1axis.launch.py</span></code></p></td>
+<td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">/opt/ros/humble/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">source</span> <span class="pre">install/setup.bash</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">ros2</span> <span class="pre">topic</span> <span class="pre">echo</span> <span class="pre">/tmc_info_1_0</span></code></p></td>
+<td><p><pre><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd</span> <span class="pre">~/ros2_ws/src/adi_tmc_coe/adi_tmc_coe_core/scripts</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">chmod</span> <span class="pre">777</span> <span class="pre">fake_cmd_pos.sh</span></code> <br><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">./fake_cmd_pos.sh</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor the position of the first motor (watch out for position value at Terminal 3).</strong></p>
+<blockquote>
+<div><p>:memo: <em>Notes:</em></p>
+<ul class="simple">
+<li><p><em>Terminals 3 and 4 are best viewed side-by-side.</em></p></li>
+<li><p><em>You may Ctrl-C the command in Terminal 2 and 3 once you’re done.</em></p></li>
+<li><p><em>The command in Terminal 4 auto-stops by itself.</em></p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="limitations">
+<h1>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h1>
+<ol class="arabic simple">
+<li><p>Current modules that are tested does not include Profile Torque Mode but still included on topic names for ease of implementation if decided to continue.</p></li>
+<li><p>Homing Mode is not implemented.</p></li>
+<li><p>Cyclic Synchronous Modes only accepts raw value (no conversions of unit) and is not the same with subscriber callbacks.</p></li>
+<li><p>Host PC specifications play a crucial role to ensure low latency when exchanging data. 4 or more cores are recommended. Threads will increase depending on the number of devices/slaves and motors.</p></li>
+<li><p>Due to having and allowing multiple threads (e.g. 1 thread for processdata cycle, 1 thread that executes SDOread/write), a ~0.01s delay was added in each SDOread/write retries to ensure proper processing.</p></li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;adi_tmc_coe_core&gt; Contributors. License: BSD-3-Clause.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

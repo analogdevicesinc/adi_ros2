@@ -1,0 +1,14 @@
+.. _exhale_typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536:
+
+Typedef input_pdo_t
+===================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: input_pdo_t
+   :project: adi_tmc_coe_core Doxygen Project

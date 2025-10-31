@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="struct____tADI2DPoint" kind="struct"><name>__tADI2DPoint</name>
+    <member refid="struct____tADI2DPoint_1ae07b5e083da4e1f30f7c73f7ce9f5f79" kind="variable"><name>x</name></member>
+    <member refid="struct____tADI2DPoint_1aa1962c234403508558567b8b38ab49f8" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="struct____tADIImage" kind="struct"><name>__tADIImage</name>
+    <member refid="struct____tADIImage_1a67bea6e75c18c4e3d3cc382af34c5eae" kind="variable"><name>data</name></member>
+    <member refid="struct____tADIImage_1a0905aa29bbc3bd3ce72a5e249ea3f75f" kind="variable"><name>width</name></member>
+    <member refid="struct____tADIImage_1afc8227df6e0fa9d91e1bd8c4081095b8" kind="variable"><name>height</name></member>
+    <member refid="struct____tADIImage_1a802186eadeb2b7fe795d8022251a63b1" kind="variable"><name>bpp</name></member>
+    <member refid="struct____tADIImage_1acfb7eba55b3959c535875dcbc4bb8c01" kind="variable"><name>roi</name></member>
+  </compound>
+  <compound refid="struct____tADIImageROI" kind="struct"><name>__tADIImageROI</name>
+    <member refid="struct____tADIImageROI_1af0725038637f4084209760fa9dad00b0" kind="variable"><name>x</name></member>
+    <member refid="struct____tADIImageROI_1ac400cc3c7170a4a8a2a31325e6eafcd1" kind="variable"><name>y</name></member>
+    <member refid="struct____tADIImageROI_1a57282be2eb405b12b242bf2ca32a87fe" kind="variable"><name>width</name></member>
+    <member refid="struct____tADIImageROI_1abe944d0bb3ee1308f0fd27c1d59e0996" kind="variable"><name>height</name></member>
+  </compound>
+  <compound refid="classADI3DToFSafetyBubbleDetector" kind="class"><name>ADI3DToFSafetyBubbleDetector</name>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa6be30b2de364cb44a5182b7d7029479" kind="variable"><name>timer_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5a91cf10fc9299a351048576f258a50f" kind="variable"><name>input_sensor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a7b9038da47c07be8a57db5fb9349d528" kind="variable"><name>output_sensor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aab89e996dd6a43f2ae49c4d13a201995" kind="variable"><name>image_proc_utils_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa53a120124e176ae08cd6f601bde011f" kind="variable"><name>floor_plane_detection_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac7a8a75ee402d173c2e77098193622b8" kind="variable"><name>camera_link_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a0e361cdbfb40d12d162fc50eca204396" kind="variable"><name>optical_camera_link_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a6bafa9a0fb2f335760ff8444d4124f22" kind="variable"><name>virtual_camera_link_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a4adaaff792757e85db380f50248d31d4" kind="variable"><name>safety_zone_radius_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1af8d2bf53d0aff0aee30d60ed08d5eb52" kind="variable"><name>safety_bubble_shape_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a074b2d714e50d8ea69c4fef8b463afe5" kind="variable"><name>safety_bubble_sensitivity_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1afed17d2b6bbc625300d720345624abb7" kind="variable"><name>safety_zone_radius_pixels_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a1ea656146002bfd209ad4f188f8f2234" kind="variable"><name>virtual_camera_height_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a2f2ffbf6fb77fb80e56245540cacdf85" kind="variable"><name>input_sensor_mode_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1af768dca4a674b1afc1a1211c58d1c3a4" kind="variable"><name>output_sensor_mode_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a297143ae201f4bfa7df10f6a11f5989a" kind="variable"><name>enable_depth_ab_compression_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ae4cd03a17cd2d70c4ccc759f80f48975" kind="variable"><name>enable_output_image_compression_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a73a844e3ee0a1d0acda8ef81e9271f6a" kind="variable"><name>compute_point_cloud_enable_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a075d66eb741faac6db976a52092d504d" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1abe713b9fd949b968d0eb616919fa84ef" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1acaf4fb134ac26e559cddf83e38cf7fb1" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a6bc7741eccdd98609bdc2bd4ec1eea6a" kind="variable"><name>ab_threshold_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a4848b879c6f957344b986299f02dd785" kind="variable"><name>confidence_threshold_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aced63d4efc18005dfdd6cbf27d0b8f57" kind="variable"><name>input_file_name_or_ros_topic_prefix_name_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac5bd815290fb982c9a75302245a2b3b4" kind="variable"><name>input_sensor_ip_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a2912607a4d331127d1ea82aef5594805" kind="variable"><name>output_file_name_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ad9d003331666b7bd24913b154097b610" kind="variable"><name>vcam_tf_buffer_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a60a4516afb353c22dfc9c635701f18d9" kind="variable"><name>vcam_tf_listener_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8cd8f1f5d2e7ffd3125bb422e4ef4173" kind="variable"><name>optical_map_tf_buffer_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8a3b4e93dd560b3d016fae216d2d902e" kind="variable"><name>optical_map_tf_listener_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac18b34715019e3527307bea92b26b10c" kind="variable"><name>camera_map_tf_buffer_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8b0cf6c756c0e854717c7df04590f7e2" kind="variable"><name>camera_map_tf_listener_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a542a082f498b938207a62855a30b28b0" kind="variable"><name>cam_info_msg_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a40a1d66f351e4ed932625ec40ea292e3" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a2fcf23d78c6bef4152278102e065c6b2" kind="variable"><name>depth_frame_with_floor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a9edcf68b48803c842013b0ffaedee7b2" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a3b89489855977bfa10f5c43e0350afe4" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aff5cc07426116c7e98a2b99fa9d11206" kind="variable"><name>rotated_xyz_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a9a4d1a80d34e907abc5c77ef198d10d7" kind="variable"><name>vcam_depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a87998d3ee8331d0b7eaa6c67c70dbb34" kind="variable"><name>vcam_depth_frame_8bpp_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aff57e9f3451a24d807e3d6a68eddb2a7" kind="variable"><name>vcam_depth_image_floor_pixels_removed_8bpp_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ae831ffbecb6e3b13c875d227358591c2" kind="variable"><name>vcam_depth_frame_with_floor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1af72aa579aeeff5d3737bdc814c2bb0cd" kind="variable"><name>object_detected_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a7ff4818995bd050d2642e517316cbaf8" kind="variable"><name>out_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1afbc47aa6eb2943e631b40207e3e41dde" kind="variable"><name>depth_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a86224065f058c053608b2e98546b2211" kind="variable"><name>ab_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ab0d49b85c9a0aac1cdce228d762cfeb2" kind="variable"><name>compressed_out_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a7070d703c053abe58c0c4d439cc31610" kind="variable"><name>compressed_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a18b348af52f8f121fa928393b653c021" kind="variable"><name>compressed_ab_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a0a04593b1dfb4afb597a82fdc53a1c9c" kind="variable"><name>xyz_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a1c045cc16a04e3e3f009690b2e19c307" kind="variable"><name>vcam_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a193674e01f098dfa2a145e5c6a6ddc50" kind="variable"><name>depth_info_publisher_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8b87494f69a099766f6a5b41c0474124" kind="variable"><name>depth_intrinsics_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aaf85fd39013390ec2cdd52bf4c1e7e22" kind="variable"><name>depth_extrinsics_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ae7640a0992c087d7f1e3a1e8010234ff" kind="variable"><name>depth_extrinsics_external_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a9b41bc1f20773305c0a3b2695ba0fee5" kind="variable"><name>vcam_intrinsics_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a99a0aba9c4634751dbcd7b6b6c1bcc22" kind="variable"><name>vcam_extrinsics_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac3e46da692ca8c13e8759954986f1118" kind="variable"><name>process_output_thread_abort_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a98b7d0a3ba98cee6862fe62322c7ab7e" kind="variable"><name>read_input_thread_abort_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1abb07c63acd6bf2f19fbdf791c62e802a" kind="variable"><name>output_thread_mtx_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a0ffd627d98d7c5b1023e84079219c156" kind="variable"><name>input_thread_mtx_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a4597f60d63ea148098c0c2ec67e8b988" kind="variable"><name>safety_bubble_zone_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5b7ed33d6ebe4eb18147729abd71e37e" kind="variable"><name>safety_bubble_zone_red_mask_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac9e5e1ac2abfc657ad24b55fb22772f5" kind="variable"><name>enable_safety_bubble_zone_visualization_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a674070c84dd8325c043a86744804ccf2" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a684fc7bf72b177ab8d28a76b35b779ff" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5f24dd1ca5058c7c43a9989dcc7bea8e" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a46da1bc4d3e8bf7f86e99816a4e7e651" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1afe248b659d5307a27a0adbd9dd0689d7" kind="variable"><name>enable_ransac_floor_detection_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a19dd5843600ca5a60916b40ef90178ad" kind="variable"><name>ransac_floor_detection_status_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1af364a3fa59fa0694fcd19e2a937ec40c" kind="variable"><name>camera_roll_rad_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac7864faefc1f020f6c9ca16b34e1688b" kind="variable"><name>camera_pitch_rad_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a90908530b728abaf9f19c6767f5940da" kind="variable"><name>camera_yaw_rad_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa344dabd866373b2a76dc7463bd1de51" kind="variable"><name>camera_tilted_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ad5f0a75de185a6910bb5b46a1404b217" kind="variable"><name>ransac_distance_threshold_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5788e8c474f342ea5df8f3f3649077a5" kind="variable"><name>ransac_max_iterations_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a06d616bd142bed157f127bbef5946074" kind="variable"><name>discard_distance_threshold_delta_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac868caa079fcafe67af202bb8e17ec01" kind="variable"><name>discard_distance_threshold_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a9feaa1f771627efd05fc772e130a3304" kind="variable"><name>camera_height_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a09812dfd16126cdd3431b2d8fd652d74" kind="variable"><name>noise_count_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a1564e7fd55c26b0409a91fb021205469" kind="variable"><name>ransac_iterations_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a641953f372a2dddfece9ed8b06aaeadc" kind="variable"><name>ransac_time_ms_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa2eaf9479f868fdf5ad3ca5f5f33f937" kind="variable"><name>enable_floor_paint_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ae2582995451fcf354e6384c6d89af1b7" kind="variable"><name>fallback_floor_height_offset_mtr_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a342061fc6009e30b7b9c569455ac2986" kind="variable"><name>processing_scale_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a045e69153295ebe4be222e4d70e58b5e" kind="variable"><name>curr_frame_timestamp_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a6de3471e02674eeddbc33df334a4a890" kind="variable"><name>param_subscriber_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aba596ae23647cc7be4290cdfa0c9ffe0" kind="variable"><name>callback_handle_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a39f1b01cbfba3c3ca9a7f50d3d27c960" kind="variable"><name>tunable_params_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1abaabcfed89c64f6b89bff4dce333195f" kind="variable"><name>max_input_queue_length_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a296ec8a272a6a4c285332324a2c76477" kind="variable"><name>input_frames_queue_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa952ac4752827c845b4b2b22a514c4ad" kind="variable"><name>max_output_queue_length_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a7e99d8a241bb077480959548e9f4168a" kind="variable"><name>output_node_queue_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8841199ac17872c439dd3a2070c8b014" kind="variable"><name>error_in_frame_read_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ad73eb4c8acaad9150e3984318796828a" kind="variable"><name>valid_roi_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a378e9019829cd482a06a467fd8e5d688" kind="function"><name>ADI3DToFSafetyBubbleDetector</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a531b6bfd7c908b9730a01a8b333c2e3a" kind="function"><name>runSafetyBubbleDetection</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac89c60c171cbbaf486626bb522d0c484" kind="function"><name>processOutput</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ab34489d8c6df3d9ca0ff4bf245539c88" kind="function"><name>processOutputAbort</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5514236b61d70558faaeeb504bfccc78" kind="function"><name>readInputAbort</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aeec0d240544ec05948322874e31985a3" kind="function"><name>readInput</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ac382b715cdc0f804f1c4b0c5e588f988" kind="function"><name>updateDynamicReconfigureVariablesInputThread</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a6ee43a3de5651ec2d2deb330665476d2" kind="function"><name>updateDynamicReconfigureVariablesProcessThread</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa8b545d36f761d7b4d1e1a9a30573b37" kind="function"><name>safetyBubbleDetectorIOThreadGetNextFrame</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a8b417d93dfca3264a416036b5497c865" kind="function"><name>safetyBubbleDetectorIOThreadGetNextOutputNode</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1aa85a520605bd4fd056e908d5808d950c" kind="function"><name>~ADI3DToFSafetyBubbleDetector</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a1c34033e52e56e5e1de1f614d535717c" kind="function"><name>timer_callback</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a24fefd7ac623723e7ea277eba92c3d5b" kind="function"><name>parametersCallback</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a0cab3afe62b21000c9e2aea50d2e8b63" kind="function"><name>updateTunableParameters</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ad4ac7ecd7d6b592efb9b5f4ce48e4425" kind="function"><name>getCameraLinksTF</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a3d3c97e457725b5342d9a99ae8d0aabb" kind="function"><name>convertDepthCamToVirtualCamFrame</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a17d4304543a5fc2be52b1fb714cf92c5" kind="function"><name>fillAndPublishCameraInfo</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1afc3cd6344d1bfe1cf4d9cbadc58c3574" kind="function"><name>publishImageAsRosMsg</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a848c446dc06a945ae88bf9177819e5c4" kind="function"><name>publishCompressedImageAsRosMsg</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a59c60008bee75e6a5b4dd70b8ae345fd" kind="function"><name>publishPointCloud</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ab4fb4a4977d997d3aa8ae06521e0346b" kind="function"><name>publishImageAndCameraInfo</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a3f14288b8f1494e13a19a8b5037fd016" kind="function"><name>publishImageAndCameraInfo</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a258728b36e5145a228c1988098de60b3" kind="function"><name>setZoneRadius</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a215c70471a174da74d21edb5e4c66332" kind="function"><name>safetyBubbleDetection</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a4f0389e74cd61837fc08ffd6ee1f8d41" kind="function"><name>generateVisualizationImage</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a70e843b29798a4255f096eae31cfaf34" kind="function"><name>safetyBubbleDetectorIOThreadPushOutputNode</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1a5b8c532d59b8b97cdf1275127c1a86d5" kind="function"><name>publishRVLCompressedImageAsRosMsg</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetector_1ab4d6a5415d1f9fab1a143423ce097170" kind="function"><name>populateIdealCameraIntrinsics</name></member>
+  </compound>
+  <compound refid="classADI3DToFSafetyBubbleDetectorOutputInfo" kind="class"><name>ADI3DToFSafetyBubbleDetectorOutputInfo</name>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ad5740b055ba32499ecb7dbad40ef10d4" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aa15c7f0e43bda83b63e8ba70ec15b68f" kind="variable"><name>object_detected_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a26ea3842395b74bfe30eceb2282db6ba" kind="variable"><name>ransac_floor_detection_status_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a4849c763345e6c319656e97e800ceac2" kind="variable"><name>ransac_iterations_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a1318bd1f316f8f85c8277a31362e74dd" kind="variable"><name>noise_count_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3da01cb720d29e720cea3cc8cc17e37b" kind="variable"><name>ransac_time_ms_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a9fb2004bb4240b12e4c62bc979585ddb" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3ff22d7c2357e1ea3929755e0a3b3776" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a6ed01c9dd10d403d3170b61863404e76" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a5dbcc32075a0e45828d70aab1489fd60" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ab30a67112f01783f71bcf65fce0db953" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae7ba4e113b408d61cd228a0284574fd3" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1adfd35eb1994b052e66529feaa27ad7f4" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae64aabeba40298e559698b724ece7e11" kind="variable"><name>depth_frame_with_floor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3f72ec0285b99f4fc182b20fe4344c4e" kind="variable"><name>vcam_depth_frame_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aee977a6bf39a0ea599e002dac4816a73" kind="variable"><name>vcam_depth_frame_with_floor_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1acfe0d2e2266bb1f1de90bd6ced1f81a3" kind="variable"><name>vcam_depth_image_floor_pixels_removed_8bpp_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a733b05ef2452363e8b173b0d5c5c2f16" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aadf44b7440895eefd1c6321579a0a740" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a2fa627733791e2949c10177ee9e51802" kind="function"><name>ADI3DToFSafetyBubbleDetectorOutputInfo</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a66f7077a54f539a6b94b2a4b33f05e35" kind="function"><name>~ADI3DToFSafetyBubbleDetectorOutputInfo</name></member>
+    <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a597181d05e6b50d284eae16af8a9f68d" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters" kind="struct"><name>ADI3DToFSafetyBubbleDetector::TunableParameters</name>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7336d6d6f52b25c25a6eeb8be3bb65d3" kind="variable"><name>ab_threshold</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a4465ef9f122f8c1cc3ac9da3670a2155" kind="variable"><name>confidence_threshold</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a29dfd485a86a4f04649eef4a40d57576" kind="variable"><name>safety_bubble_radius_in_mtr</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a7c198e380ac4d89dfad938af79d92899" kind="variable"><name>shape_of_safety_bubble</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1aec9ec28e18dcc7e8ff003cc6b439a3bc" kind="variable"><name>safety_bubble_detection_sensitivity</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1ad403cb51c6fc39df3fd2822b569e9f14" kind="variable"><name>enable_ransac_floor_detection</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1a93f4fc42ece9cd07df067cfc62106b0d" kind="variable"><name>enable_floor_paint</name></member>
+    <member refid="structADI3DToFSafetyBubbleDetector_1_1TunableParameters_1af881b3f4efb4d18b9c98beed358b6347" kind="variable"><name>enable_safety_bubble_zone_visualization</name></member>
+  </compound>
+  <compound refid="namespacecompressed__depth__image__transport" kind="namespace"><name>compressed_depth_image_transport</name>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f" kind="enum"><name>compressionFormat</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fabdd6eee736e40089c46baf2ade802d07" kind="enumvalue"><name>UNDEFINED</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fa8139d98ccd3698b3bfb23c35c55edae2" kind="enumvalue"><name>INV_DEPTH</name></member>
+  </compound>
+  <compound refid="namespacerclcpp" kind="namespace"><name>rclcpp</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="adi__3dtof__safety__bubble__detector__node_8h" kind="file"><name>adi_3dtof_safety_bubble_detector_node.h</name>
+  </compound>
+  <compound refid="adi__3dtof__safety__bubble__detector__output__info_8h" kind="file"><name>adi_3dtof_safety_bubble_detector_output_info.h</name>
+  </compound>
+  <compound refid="adi__camera_8h" kind="file"><name>adi_camera.h</name>
+  </compound>
+  <compound refid="adi__sensor__frame__info_8h" kind="file"><name>adi_sensor_frame_info.h</name>
+  </compound>
+  <compound refid="adtf31xx__sensor__frame__info_8h" kind="file"><name>adtf31xx_sensor_frame_info.h</name>
+  </compound>
+  <compound refid="image__proc__utils_8h" kind="file"><name>image_proc_utils.h</name>
+    <member refid="image__proc__utils_8h_1a3099edd83970d62c2832b51423462420" kind="define"><name>QFORMAT_FOR_POINTCLOUD_LUT</name></member>
+    <member refid="image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3" kind="define"><name>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE</name></member>
+    <member refid="image__proc__utils_8h_1a3bfd4f6577d0b0706a258eee46648e06" kind="typedef"><name>ADIImageROI</name></member>
+    <member refid="image__proc__utils_8h_1a18e8741da6b0575f9b2e6ae1e26f7468" kind="typedef"><name>ADIImage</name></member>
+    <member refid="image__proc__utils_8h_1a8d8aed10ffda0644464a21296b309bf5" kind="typedef"><name>ADI2DPoint</name></member>
+  </compound>
+  <compound refid="input__sensor_8h" kind="file"><name>input_sensor.h</name>
+  </compound>
+  <compound refid="input__sensor__adtf31xx_8h" kind="file"><name>input_sensor_adtf31xx.h</name>
+  </compound>
+  <compound refid="input__sensor__factory_8h" kind="file"><name>input_sensor_factory.h</name>
+  </compound>
+  <compound refid="input__sensor__file__rosbagbin_8h" kind="file"><name>input_sensor_file_rosbagbin.h</name>
+  </compound>
+  <compound refid="input__sensor__ros__topics_8h" kind="file"><name>input_sensor_ros_topics.h</name>
+  </compound>
+  <compound refid="module__profile_8h" kind="file"><name>module_profile.h</name>
+    <member refid="module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da" kind="define"><name>PROFILE_FUNCTION_START</name></member>
+    <member refid="module__profile_8h_1a429b699deab1043cbc596058f45199a4" kind="define"><name>PROFILE_FUNCTION_END</name></member>
+    <member refid="module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98" kind="define"><name>FLUSH_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416" kind="define"><name>INIT_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1" kind="define"><name>CLOSE_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16" kind="define"><name>PROFILE_ID_START</name></member>
+    <member refid="module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459" kind="define"><name>PROFILE_ID_END</name></member>
+    <member refid="module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2" kind="define"><name>PROFILE_ID</name></member>
+  </compound>
+  <compound refid="output__sensor_8h" kind="file"><name>output_sensor.h</name>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8" kind="enum"><name>OutputFlag</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8ae0eacd8b82b8cd74696c87bcd1a9665c" kind="enumvalue"><name>DisableAllOutputs</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8af1601044bd0c196db92e3cbc503e8281" kind="enumvalue"><name>EnableCSVOutputOnly</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8ae73c825bbdaedd6f3377182c83e5961f" kind="enumvalue"><name>EnableVideoOutputOnly</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8acfc977380c5be2c63b7efccab3a61cbb" kind="enumvalue"><name>EnableAllOutputs</name></member>
+  </compound>
+  <compound refid="output__sensor__factory_8h" kind="file"><name>output_sensor_factory.h</name>
+  </compound>
+  <compound refid="output__sensor__file_8h" kind="file"><name>output_sensor_file.h</name>
+  </compound>
+  <compound refid="compression__common_8h" kind="file"><name>compression_common.h</name>
+  </compound>
+  <compound refid="rvl__codec_8h" kind="file"><name>rvl_codec.h</name>
+  </compound>
+  <compound refid="dir_4eab921792b8cc23f536bb47553d5451" kind="dir"><name>include/ros-perception/image_transport_plugins/compressed_depth_image_transport</name>
+  </compound>
+  <compound refid="dir_28e83b7d8e494d47a00b0dd64292e7fe" kind="dir"><name>include/ros-perception/image_transport_plugins</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_a6c1829d60e8505026f4bed88734a08b" kind="dir"><name>include/ros-perception</name>
+  </compound>
+</doxygenindex>

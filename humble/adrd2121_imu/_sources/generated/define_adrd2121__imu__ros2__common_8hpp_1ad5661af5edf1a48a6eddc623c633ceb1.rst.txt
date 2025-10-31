@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1:
+
+Define ADIS16495
+================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS16495
+   :project: adrd2121_imu Doxygen Project

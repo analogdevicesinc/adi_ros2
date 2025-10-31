@@ -1,0 +1,73 @@
+
+.. _file_include_adrd2121_imu_adi_imu_buf_ros2.hpp:
+
+File adi_imu_buf_ros2.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/adi_imu_buf_ros2.hpp``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_adi_imu_buf_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu_driver.h``
+
+- ``adi_imu_ros2.hpp`` (:ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`)
+
+- ``adrd2121_imu/srv/imu_glob_cmd.hpp``
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``imu_buf_ros2.hpp`` (:ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`)
+
+- ``imu_spi_buffer.h``
+
+- ``iostream``
+
+- ``memory``
+
+- ``rclcpp/node.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``std_srvs/srv/trigger.hpp``
+
+- ``string``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classAdiImuBufRos2`
+

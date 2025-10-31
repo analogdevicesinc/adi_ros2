@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4:
+
+Define RADIAN_CONSTANT
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RADIAN_CONSTANT
+   :project: adrd2121_imu Doxygen Project

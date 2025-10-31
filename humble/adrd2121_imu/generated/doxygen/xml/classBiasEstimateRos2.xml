@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classBiasEstimateRos2" kind="class" language="C++" prot="public">
+    <compoundname>BiasEstimateRos2</compoundname>
+    <includes refid="bias__estimate__node__ros2_8hpp" local="no">bias_estimate_node_ros2.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBiasEstimateRos2_1ab5736dd5a87aa3b0d7fa88f37f8e6ac7" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr BiasEstimateRos2::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>BiasEstimateRos2::node_</qualifiedname>
+        <briefdescription>
+<para>Local node meant to catch node from main function to be used for ROS2 APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="71" column="27" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBiasEstimateRos2_1a246bb5c1a70fe50719df98d0e9e723d6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Service&lt; adrd2121_imu::srv::BiasEstimateCmd &gt;::SharedPtr</type>
+        <definition>rclcpp::Service&lt;adrd2121_imu::srv::BiasEstimateCmd&gt;::SharedPtr BiasEstimateRos2::bias_estimate_service_</definition>
+        <argsstring></argsstring>
+        <name>bias_estimate_service_</name>
+        <qualifiedname>BiasEstimateRos2::bias_estimate_service_</qualifiedname>
+        <briefdescription>
+<para>Service Server for /bias_estimate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="73" column="31" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBiasEstimateRos2_1a7dffdb1b8c43a435df164d17b151c456" prot="private" static="no" mutable="no">
+        <type>rclcpp::Client&lt; adrd2121_imu::srv::ImuGlobCmd &gt;::SharedPtr</type>
+        <definition>rclcpp::Client&lt;adrd2121_imu::srv::ImuGlobCmd&gt;::SharedPtr BiasEstimateRos2::trigger_imu_glob_cmd_</definition>
+        <argsstring></argsstring>
+        <name>trigger_imu_glob_cmd_</name>
+        <qualifiedname>BiasEstimateRos2::trigger_imu_glob_cmd_</qualifiedname>
+        <briefdescription>
+<para>Service client that calls /trigger_imu_glob_cmd service. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="75" column="30" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBiasEstimateRos2_1a3a5358826fa1732505afa3e29b8c3f18" prot="private" static="no" mutable="no">
+        <type>rclcpp::CallbackGroup::SharedPtr</type>
+        <definition>rclcpp::CallbackGroup::SharedPtr BiasEstimateRos2::callback_group_</definition>
+        <argsstring></argsstring>
+        <name>callback_group_</name>
+        <qualifiedname>BiasEstimateRos2::callback_group_</qualifiedname>
+        <briefdescription>
+<para>Sets the callback group for /bias_estimate and the call for /trigger_imu_glob_cmd. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="77" column="36" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBiasEstimateRos2_1af906395f44d9ba13e840cad058aa5211" prot="private" static="no" mutable="no">
+        <type><ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref> *</type>
+        <definition>ImuStateCheckerRos2* BiasEstimateRos2::p_state_checker_</definition>
+        <argsstring></argsstring>
+        <name>p_state_checker_</name>
+        <qualifiedname>BiasEstimateRos2::p_state_checker_</qualifiedname>
+        <briefdescription>
+<para>Pointer to <ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="79" column="23" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BiasEstimateRos2::BiasEstimateRos2</definition>
+        <argsstring>(const rclcpp::Node::SharedPtr &amp;node)</argsstring>
+        <name>BiasEstimateRos2</name>
+        <qualifiedname>BiasEstimateRos2::BiasEstimateRos2</qualifiedname>
+        <param>
+          <type>const rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classBiasEstimateRos2" kindref="compound">BiasEstimateRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classBiasEstimateRos2_1a87bb0226995ab1f7b70dcad190cdbb73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BiasEstimateRos2::~BiasEstimateRos2</definition>
+        <argsstring>()</argsstring>
+        <name>~BiasEstimateRos2</name>
+        <qualifiedname>BiasEstimateRos2::~BiasEstimateRos2</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="classBiasEstimateRos2" kindref="compound">BiasEstimateRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="44" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classBiasEstimateRos2_1a1cbf71cf08b76a04801be3cea4b38e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BiasEstimateRos2::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <qualifiedname>BiasEstimateRos2::init</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes pre-service call requirements Indicates if bias_estimate will run or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="49" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBiasEstimateRos2_1a4725eb593bbe5d244c432c75ee0ab749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BiasEstimateRos2::biasEstimateCB</definition>
+        <argsstring>(adrd2121_imu::srv::BiasEstimateCmd::Request::SharedPtr req, adrd2121_imu::srv::BiasEstimateCmd::Response::SharedPtr res)</argsstring>
+        <name>biasEstimateCB</name>
+        <qualifiedname>BiasEstimateRos2::biasEstimateCB</qualifiedname>
+        <param>
+          <type>adrd2121_imu::srv::BiasEstimateCmd::Request::SharedPtr</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>adrd2121_imu::srv::BiasEstimateCmd::Response::SharedPtr</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+<para>Callback when /bias_estimate is called. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Request </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Result</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="57" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBiasEstimateRos2_1a4898f17227bce92fdb3742398fca4dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BiasEstimateRos2::checkStandStillDuration</definition>
+        <argsstring>(rclcpp::Time standstill_start, double &amp;duration_secs)</argsstring>
+        <name>checkStandStillDuration</name>
+        <qualifiedname>BiasEstimateRos2::checkStandStillDuration</qualifiedname>
+        <param>
+          <type>rclcpp::Time</type>
+          <declname>standstill_start</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>duration_secs</declname>
+        </param>
+        <briefdescription>
+<para>This checks the STANDSTILL duration of the IMU Also checks if it is valid for trigger_imu_glob_cmd call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">standstill_begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The start time of standstill</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="66" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for Bias Estimate Service. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp" line="38" column="1" bodyfile="include/adrd2121_imu/bias_estimate_node_ros2.hpp" bodystart="39" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classBiasEstimateRos2_1a246bb5c1a70fe50719df98d0e9e723d6" prot="private" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>bias_estimate_service_</name></member>
+      <member refid="classBiasEstimateRos2_1a4725eb593bbe5d244c432c75ee0ab749" prot="public" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>biasEstimateCB</name></member>
+      <member refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" prot="public" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>BiasEstimateRos2</name></member>
+      <member refid="classBiasEstimateRos2_1a3a5358826fa1732505afa3e29b8c3f18" prot="private" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>callback_group_</name></member>
+      <member refid="classBiasEstimateRos2_1a4898f17227bce92fdb3742398fca4dd2" prot="public" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>checkStandStillDuration</name></member>
+      <member refid="classBiasEstimateRos2_1a1cbf71cf08b76a04801be3cea4b38e1a" prot="public" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>init</name></member>
+      <member refid="classBiasEstimateRos2_1ab5736dd5a87aa3b0d7fa88f37f8e6ac7" prot="private" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>node_</name></member>
+      <member refid="classBiasEstimateRos2_1af906395f44d9ba13e840cad058aa5211" prot="private" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>p_state_checker_</name></member>
+      <member refid="classBiasEstimateRos2_1a7dffdb1b8c43a435df164d17b151c456" prot="private" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>trigger_imu_glob_cmd_</name></member>
+      <member refid="classBiasEstimateRos2_1a87bb0226995ab1f7b70dcad190cdbb73" prot="public" virt="non-virtual"><scope>BiasEstimateRos2</scope><name>~BiasEstimateRos2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

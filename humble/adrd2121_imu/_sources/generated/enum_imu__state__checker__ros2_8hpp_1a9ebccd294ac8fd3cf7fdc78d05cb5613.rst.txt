@@ -1,0 +1,14 @@
+.. _exhale_enum_imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613:
+
+Enum e_imu_state
+================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: e_imu_state
+   :project: adrd2121_imu Doxygen Project

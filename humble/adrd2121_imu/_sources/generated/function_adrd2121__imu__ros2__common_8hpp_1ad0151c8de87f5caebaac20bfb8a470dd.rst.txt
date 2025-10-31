@@ -1,0 +1,14 @@
+.. _exhale_function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd:
+
+Function current_timestamp
+==========================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: current_timestamp()
+   :project: adrd2121_imu Doxygen Project

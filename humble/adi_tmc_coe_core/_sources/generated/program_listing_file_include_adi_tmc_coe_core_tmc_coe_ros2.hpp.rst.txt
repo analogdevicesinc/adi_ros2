@@ -1,0 +1,95 @@
+
+.. _program_listing_file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp:
+
+Program Listing for File tmc_coe_ros2.hpp
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp>` (``include/adi_tmc_coe_core/tmc_coe_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef TMC_COE_ROS2_HPP
+   #define TMC_COE_ROS2_HPP
+   
+   #include "rclcpp/rclcpp.hpp"
+   #include "adi_tmc_coe_core/tmc_coe_interpreter.hpp"
+   #include "adi_tmc_coe_core/tmc_coe_motor.hpp"
+   
+   // Custom srv
+   #include "adi_tmc_coe_interfaces/srv/read_write_sdo.hpp"
+   #include "adi_tmc_coe_interfaces/srv/read_write_pdo.hpp"
+   #include "adi_tmc_coe_interfaces/srv/change_nmt_state.hpp"
+   #include "adi_tmc_coe_interfaces/srv/change_cia402_state.hpp"
+   #include "adi_tmc_coe_interfaces/srv/cyclic_sync_mode.hpp"
+   
+   const uint8_t MOTOR_TYPE_BLDC = 6;
+   const uint8_t MOTOR_TYPE_STEPPER_MIN = 0;
+   const uint8_t MOTOR_TYPE_STEPPER_MAX = 9;
+   const int8_t INTERPOLATION_TIME_INDEX_MIN = -3;
+   const uint8_t INTERPOLATION_TIME_INDEX_MAX = 3;
+   
+   class TmcCoeROS2
+   {
+   private:
+     rclcpp::Node::SharedPtr p_node_;
+     std::vector<std::vector<TmcCoeMotor *>> p_motor_;
+     TmcCoeInterpreter * p_tmc_coe_interpreter_;
+     uint8_t total_slaves_;
+     rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr p_param_callback_handle_;
+     std::vector<int64_t> param_en_slave_;
+     std::vector<int64_t> param_adhoc_mode_;
+     std::string param_interface_name_;
+     uint8_t param_SDO_PDO_retries_;
+     double param_interface_timeout_;
+     std::vector<std::string> slave_name_str_;
+     std::vector<int> total_motor_per_slave_;
+     std::string logger_prefix_;
+     rclcpp::Logger logger_;
+   
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ReadWriteSDO>::SharedPtr read_sdo_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ReadWriteSDO>::SharedPtr write_sdo_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ReadWritePDO>::SharedPtr read_pdo_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ReadWritePDO>::SharedPtr write_pdo_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ChangeNMTState>::SharedPtr
+       change_nmt_state_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::ChangeCia402State>::SharedPtr
+       change_cia402_state_service_srv_;
+     rclcpp::Service<adi_tmc_coe_interfaces::srv::CyclicSyncMode>::SharedPtr
+       cyclic_sync_mode_service_srv_;
+     rclcpp::CallbackGroup::SharedPtr srv_callback_group_;
+   
+     bool createMotor(int slave_number);
+     void initService();
+     void initTmcParams();
+     void initInterfaceParams();
+     bool initAutogenParams();
+     rcl_interfaces::msg::SetParametersResult parametersCallback(const std::vector<rclcpp::Parameter>
+       &parameters);
+     bool readSDOCallback(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr res);
+     bool writeSDOCallback(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr res);
+     bool readPDOCallback(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr res);
+     bool writePDOCallback(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr res);
+     bool changeNMTCallback(adi_tmc_coe_interfaces::srv::ChangeNMTState::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ChangeNMTState::Response::SharedPtr res);
+     bool changeCiA402Callback(adi_tmc_coe_interfaces::srv::ChangeCia402State::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::ChangeCia402State::Response::SharedPtr res);
+     bool cyclicSyncModeCallback(adi_tmc_coe_interfaces::srv::CyclicSyncMode::Request::SharedPtr req,
+       adi_tmc_coe_interfaces::srv::CyclicSyncMode::Response::SharedPtr res);
+   
+   public:
+     TmcCoeROS2(rclcpp::Node::SharedPtr p_node);
+     ~TmcCoeROS2();
+     bool initialize();
+     void deInitialize();
+     bool enableDeviceMotors();
+     bool isInterfaceUnresponsive();
+   };
+   
+   #endif //TMC_COE_ROS2_HPP

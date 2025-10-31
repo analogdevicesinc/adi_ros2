@@ -8,8 +8,8 @@
 
     <title>Analog Devices ROS2 &#8212; ROS2 0.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=8d0b0339" />
-    <script async="async" src="_static/app.umd.js?v=2f9373fc"></script>
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=31a9e0ba" />
+    <script async="async" src="_static/app.umd.js?v=3a4867e9"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Documentation" href="Documentation.html" />
@@ -40,7 +40,10 @@
     }
   }
 </style>
-  </head><body>
+  </head>
+  
+    <body>
+  
   <input type="checkbox" id="input-show-toc">
   <input type="checkbox" id="input-show-localtoc">
   <input type="checkbox" id="input-show-repotoc">
@@ -210,15 +213,15 @@ and architectures to support diverse hardware deployments:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p><strong>x86_64</strong> (<code class="docutils literal notranslate"><span class="pre">amd64</span></code>)</p></td>
-<td><p><a class="icon link reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2/general" target="_blank">astanea/adi_ros2</a></p></td>
+<td><p><a class="icon link reference external" href="https://hub.docker.com/r/astanea/adi_ros2" target="_blank">astanea/adi_ros2</a></p></td>
 <td><p>Development workstations, servers, edge computing devices, etc.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>ARM64</strong> (<code class="docutils literal notranslate"><span class="pre">arm64</span></code>)</p></td>
-<td><p><a class="icon link reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2/general" target="_blank">astanea/adi_ros2</a></p></td>
+<td><p><a class="icon link reference external" href="https://hub.docker.com/r/astanea/adi_ros2" target="_blank">astanea/adi_ros2</a></p></td>
 <td><p>ARM-based servers, development boards (Raspberry Pi 4+), etc.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Jetson</strong> (<code class="docutils literal notranslate"><span class="pre">arm64</span></code>)</p></td>
-<td><p><a class="icon link reference external" href="https://hub.docker.com/repository/docker/astanea/adi_ros2-l4t/general" target="_blank">astanea/adi_ros2-l4t</a></p></td>
+<td><p><a class="icon link reference external" href="https://hub.docker.com/r/astanea/adi_ros2-l4t" target="_blank">astanea/adi_ros2-l4t</a></p></td>
 <td><p>The image targets NVIDIA’s official L4T base image for Jetson platforms.</p></td>
 </tr>
 </tbody>
@@ -380,12 +383,26 @@ buffers, and attach topics to these attributes/buffers.</p></td>
 factory-calibrated gyroscopes and accelerometers, ensuring accurate
 motion data for robotics applications.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="../adi_tmcl/index.html#http://">tmcl_ros2</a></p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="../adrd2121_imu/index.html#http://">adrd2121_imu_ros2</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adrd2121_imu</span></code></p></td>
+<td><p><a class="reference external" href="../adrd2121_imu/generated/index.html#http://">adrd2121_imu API</a></p></td>
+<td><p>An implementation of the prior ROS1 package (adrd2121_imu_ros) adapted
+for ROS2. This is a ROS2 driver for EVAL-ADRD2121-EBZ, a hardware and
+software platform for allowing high-speed asynchronous sampling of
+iSensor IMU data such as from ADIS16470 and ADIS16500</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="../adi_tmcl/index.html#http://">tmcl_ros2</a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">adi_tmcl</span></code></p></td>
 <td><p><a class="reference external" href="../adi_tmcl/generated/index.html#http://">adi_tmcl API</a></p></td>
 <td><p>adi_tmcl (previously tmcl_ros2) is the official ROS2 Driver for ADI
 Trinamic Motor Controllers (TMC) that uses Trinamic Motion Control
 Language (TMCL) protocol.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="../adi_tmc_coe_core/index.html#http://">adi_tmc_coe_ros2</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adi_tmc_coe</span></code> <code class="docutils literal notranslate"><span class="pre">adi_tmc_coe_core</span></code> <code class="docutils literal notranslate"><span class="pre">adi_tmc_coe_interfaces</span></code></p></td>
+<td><p><a class="reference external" href="../adi_tmc_coe/index.html#http://">adi_tmc_coe</a> <a class="reference external" href="../adi_tmc_coe_core/generated/index.html#http://">adi_tmc_coe_core API</a> <a class="reference external" href="../adi_tmc_coe_interfaces/index.html#http://">adi_tmc_coe_interfaces</a></p></td>
+<td><p>Official ROS2 Metapackage driver for Trinamic Motor Controller (TMC)
+boards with CoE (CANopen-over-etherCAT) interface.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference external" href="../adi_3dtof_adtf31xx/index.html#http://">adi_3dtof_adtf31xx</a></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">adi_3dtof_adtf31xx</span></code></p></td>
@@ -393,6 +410,28 @@ Language (TMCL) protocol.</p></td>
 <td><p>The ADI 3DToF ADTF31xx is a ROS (Robot Operating System) package for working
 with ADI’s ADTF3175D ToF sensor. This node captures the Depth and AB
 frames from the sensor and publishes them as ROS topics.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="../adi_3dtof_floor_detector/index.html#http://">adi_3dtof_floor_detector</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adi_3dtof_floor_detector</span></code></p></td>
+<td><p><a class="reference external" href="../adi_3dtof_floor_detector/generated/index.html#http://">adi_3dtof_floor_detector API</a></p></td>
+<td><p>The ADI 3DToF Floor Detector is a ROS (Robot Operating System) package for
+the Floor Detection application. The term “Floor Detection” refers to
+determining where the floor is in the given image. It is an image
+segmentation problem in which a given image is divided into floor and
+non-floor pixels. Floor Detection is an essential component of real-world
+applications such as Robot Navigation, Autonomous Driving,
+Augmented reality (AR) applications, and ‘Obstacles Detection and Avoidance’
+for robots and people with inadequate vision.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="../adi_3dtof_safety_bubble_detector/index.html#http://">adi_3dtof_safety_bubble_detector</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">adi_3dtof_safety_bubble_detector</span></code></p></td>
+<td><p><a class="reference external" href="../adi_3dtof_safety_bubble_detector/generated/index.html#http://">adi_3dtof_safety_bubble_detector API</a></p></td>
+<td><p>The ADI 3DToF Safety Bubble Detector is a ROS(Robot Operating System)
+package for the Safety Bubble Detection application. The Safety Bubble
+Detectors are the basic building block of any AGV/AMR. The safety zone is
+a virtual area around an AGV/AMR. The Safety Bubble Detectors are used to
+detect the presence of any object inside this zone and prevent the
+AGV/AMR from colliding with the object.</p></td>
 </tr>
 </tbody>
 </table>

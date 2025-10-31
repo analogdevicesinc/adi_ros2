@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49:
+
+Variable GRAVITY_DEFAULT
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: GRAVITY_DEFAULT
+   :project: adrd2121_imu Doxygen Project

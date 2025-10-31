@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTmcCoeStepperMotor" kind="class" language="C++" prot="public">
+    <compoundname>TmcCoeStepperMotor</compoundname>
+    <basecompoundref refid="classTmcCoeMotor" prot="public" virt="non-virtual">TmcCoeMotor</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTmcCoeStepperMotor_1a71d9f84738b1b2e4a1b46e9f16c3788b" prot="private" static="no" mutable="no">
+        <type>stepper_comm_mode_t</type>
+        <definition>stepper_comm_mode_t TmcCoeStepperMotor::commutation_mode_</definition>
+        <argsstring></argsstring>
+        <name>commutation_mode_</name>
+        <qualifiedname>TmcCoeStepperMotor::commutation_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="28" column="23" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeStepperMotor_1ab6d52b4f5190e24b945cd03459003613" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TmcCoeStepperMotor::position_scaler_</definition>
+        <argsstring></argsstring>
+        <name>position_scaler_</name>
+        <qualifiedname>TmcCoeStepperMotor::position_scaler_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="29" column="7" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeStepperMotor_1ac38faf34bba6adc62c74f696ad1e4071" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TmcCoeStepperMotor::encoder_steps_</definition>
+        <argsstring></argsstring>
+        <name>encoder_steps_</name>
+        <qualifiedname>TmcCoeStepperMotor::encoder_steps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="30" column="7" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeStepperMotor_1aed9db6373cb5eb98e9c9bf97825accfe" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmcCoeStepperMotor::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>TmcCoeStepperMotor::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="31" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeStepperMotor_1aa92758ffda065142535b10f9b1d22e95" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger TmcCoeStepperMotor::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>TmcCoeStepperMotor::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="32" column="18" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a22f46e1f911819b51231dcc097f48fb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeStepperMotor::TmcCoeStepperMotor</definition>
+        <argsstring>(rclcpp::Node::SharedPtr p_node, TmcCoeInterpreter *p_tmc_coe_interpreter, uint8_t slave_number, uint8_t motor_number, std::string device_name)</argsstring>
+        <name>TmcCoeStepperMotor</name>
+        <qualifiedname>TmcCoeStepperMotor::TmcCoeStepperMotor</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>p_node</declname>
+        </param>
+        <param>
+          <type><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref> *</type>
+          <declname>p_tmc_coe_interpreter</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor_number</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>device_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a33509cb89ec30b98e52f47cc088eb894" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual TmcCoeStepperMotor::~TmcCoeStepperMotor</definition>
+        <argsstring>()</argsstring>
+        <name>~TmcCoeStepperMotor</name>
+        <qualifiedname>TmcCoeStepperMotor::~TmcCoeStepperMotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="24" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a8ae22ee489005bb65b64ea33d2720401" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <qualifiedname>TmcCoeStepperMotor::init</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1af1f95ce96627653b77277a1e5ba15a2b">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="25" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a0b21e927f4600734c9aab15bd39e1044" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::publishTmcCoeInfo</definition>
+        <argsstring>() override</argsstring>
+        <name>publishTmcCoeInfo</name>
+        <qualifiedname>TmcCoeStepperMotor::publishTmcCoeInfo</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a26ba0fdb1816c45d134a03511877eee4">publishTmcCoeInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a5645b97ca1a6099c4ba6071a7cc885ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::initSubscriber</definition>
+        <argsstring>() override</argsstring>
+        <name>initSubscriber</name>
+        <qualifiedname>TmcCoeStepperMotor::initSubscriber</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a5bc7ce17df792e946b1ba6b73d7585d8">initSubscriber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1affce2361af0b73af8509929fecc5219f" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::cmdVelCallback</definition>
+        <argsstring>(const geometry_msgs::msg::Twist::SharedPtr msg) override</argsstring>
+        <name>cmdVelCallback</name>
+        <qualifiedname>TmcCoeStepperMotor::cmdVelCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a4f826e9bae9e093e31fd57022547527d">cmdVelCallback</reimplements>
+        <param>
+          <type>const geometry_msgs::msg::Twist::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a608dfba0ea11c11b8700196e3520c7c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::cmdAbsPosCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdAbsPosCallback</name>
+        <qualifiedname>TmcCoeStepperMotor::cmdAbsPosCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a6a70ea16ab14f6a546548f28b17fd0f8">cmdAbsPosCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeStepperMotor_1a6e5e76c7f9bed30610b96176dfd22f71" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeStepperMotor::cmdRelPosCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdRelPosCallback</name>
+        <qualifiedname>TmcCoeStepperMotor::cmdRelPosCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1af09fc99bff69cc6dce1670e9dbe1c272">cmdRelPosCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="37" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>TmcCoeMotor</label>
+        <link refid="classTmcCoeMotor"/>
+      </node>
+      <node id="1">
+        <label>TmcCoeStepperMotor</label>
+        <link refid="classTmcCoeStepperMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>TmcCoeInterpreter</label>
+        <link refid="classTmcCoeInterpreter"/>
+      </node>
+      <node id="2">
+        <label>TmcCoeMotor</label>
+        <link refid="classTmcCoeMotor"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p_tmc_coe_interpreter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TmcCoeStepperMotor</label>
+        <link refid="classTmcCoeStepperMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" line="19" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp" bodystart="20" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classTmcCoeMotor_1a2517d51f667447baf03eed02ed60b8e0" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>cmd_abspos_sub_</name></member>
+      <member refid="classTmcCoeMotor_1a92ba36789f1dcd9d987b458a26572300" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>cmd_relpos_sub_</name></member>
+      <member refid="classTmcCoeMotor_1aa627f5073490f133c54b95c7c9119e18" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>cmd_trq_sub_</name></member>
+      <member refid="classTmcCoeMotor_1a8a0af6f4a02ef2d5acec35d5335a46d8" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>cmd_vel_sub_</name></member>
+      <member refid="classTmcCoeStepperMotor_1a608dfba0ea11c11b8700196e3520c7c1" prot="private" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>cmdAbsPosCallback</name></member>
+      <member refid="classTmcCoeStepperMotor_1a6e5e76c7f9bed30610b96176dfd22f71" prot="private" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>cmdRelPosCallback</name></member>
+      <member refid="classTmcCoeMotor_1a22583e0bc3ce48248a1a0b4a0923b2d1" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>cmdTrqCallback</name></member>
+      <member refid="classTmcCoeStepperMotor_1affce2361af0b73af8509929fecc5219f" prot="private" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>cmdVelCallback</name></member>
+      <member refid="classTmcCoeStepperMotor_1a71d9f84738b1b2e4a1b46e9f16c3788b" prot="private" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>commutation_mode_</name></member>
+      <member refid="classTmcCoeMotor_1a79f44544ca733ecd4aafd7d1e097e232" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>device_name_</name></member>
+      <member refid="classTmcCoeStepperMotor_1ac38faf34bba6adc62c74f696ad1e4071" prot="private" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>encoder_steps_</name></member>
+      <member refid="classTmcCoeStepperMotor_1a8ae22ee489005bb65b64ea33d2720401" prot="public" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>init</name></member>
+      <member refid="classTmcCoeMotor_1a1d70493fe33f692fcad668fcc6f1ba79" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>initPublisher</name></member>
+      <member refid="classTmcCoeStepperMotor_1a5645b97ca1a6099c4ba6071a7cc885ea" prot="private" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>initSubscriber</name></member>
+      <member refid="classTmcCoeStepperMotor_1aa92758ffda065142535b10f9b1d22e95" prot="private" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>logger_</name></member>
+      <member refid="classTmcCoeStepperMotor_1aed9db6373cb5eb98e9c9bf97825accfe" prot="private" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>logger_prefix_</name></member>
+      <member refid="classTmcCoeMotor_1a4a8571c3caf18eb8fe3a0f96c2981c37" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>motor_number_</name></member>
+      <member refid="classTmcCoeMotor_1a2f2cf6b3fe0f004f98b07af2586735b4" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>p_node_</name></member>
+      <member refid="classTmcCoeMotor_1a6cf56c20181bfb604f3d75f017527b67" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>p_tmc_coe_interpreter_</name></member>
+      <member refid="classTmcCoeMotor_1a435faf753ff2fa6c38eede2feee925ec" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_add_ratio_pos_</name></member>
+      <member refid="classTmcCoeMotor_1a853da30fd5c811fc3b5cfcfdbb269ce4" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_add_ratio_trq_</name></member>
+      <member refid="classTmcCoeMotor_1a9a4a8428b15bae2d8f22ce745a7c3228" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_add_ratio_vel_</name></member>
+      <member refid="classTmcCoeMotor_1a8c7f95bf1379b4d5794acae1c01b0119" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_en_pub_tmc_info_</name></member>
+      <member refid="classTmcCoeMotor_1a029b0a1454b1f8e9cb829860d1123ab2" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_pub_actual_pos_</name></member>
+      <member refid="classTmcCoeMotor_1a31058b6b436097465a0cda282cffa1f2" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_pub_actual_trq_</name></member>
+      <member refid="classTmcCoeMotor_1abdf982b7f69d4c618f0e2726303cc623" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_pub_actual_vel_</name></member>
+      <member refid="classTmcCoeMotor_1af68a31e32449aea1986fc172f5167692" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_pub_rate_tmc_coe_info_</name></member>
+      <member refid="classTmcCoeMotor_1a58d90059845eefb4e2ebe10a1e28f31b" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_tmc_cmd_abspos_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a0c0dba0002952a21fe9d7427c116699f" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_tmc_cmd_relpos_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a3653f71dbba7fe080750c20c73fe31ae" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_tmc_cmd_trq_topic_</name></member>
+      <member refid="classTmcCoeMotor_1afde0d2cda55f8dce79460dfc5c6c7c98" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_tmc_cmd_vel_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a5b91b83e219e67e5a8ad1b21d6104312" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_tmc_info_topic_</name></member>
+      <member refid="classTmcCoeMotor_1ac0db098e1657d45630e952f2694c859f" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>param_wheel_diameter_</name></member>
+      <member refid="classTmcCoeStepperMotor_1ab6d52b4f5190e24b945cd03459003613" prot="private" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>position_scaler_</name></member>
+      <member refid="classTmcCoeStepperMotor_1a0b21e927f4600734c9aab15bd39e1044" prot="private" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>publishTmcCoeInfo</name></member>
+      <member refid="classTmcCoeMotor_1a98219bdc0799e6a24ef5b4ed39d9ddfd" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>slave_number_</name></member>
+      <member refid="classTmcCoeMotor_1ad84acdb4c632d325c0d248cae7e72ee6" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>tmc_coe_info_frame_id_</name></member>
+      <member refid="classTmcCoeMotor_1ae16f456bec6469ae73dcef17ce0d7939" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>tmc_coe_info_pub_</name></member>
+      <member refid="classTmcCoeMotor_1a37101558f095a2d8ce31aaac3ba886d0" prot="protected" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>tmc_coe_info_pub_timer_</name></member>
+      <member refid="classTmcCoeMotor_1a67c83ed25de2d79ea9a5a19f27b5f95f" prot="public" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>TmcCoeMotor</name></member>
+      <member refid="classTmcCoeStepperMotor_1a22f46e1f911819b51231dcc097f48fb9" prot="public" virt="non-virtual"><scope>TmcCoeStepperMotor</scope><name>TmcCoeStepperMotor</name></member>
+      <member refid="classTmcCoeMotor_1a67c5ea6c1d12af4acb0e827802f0a9c1" prot="public" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>~TmcCoeMotor</name></member>
+      <member refid="classTmcCoeStepperMotor_1a33509cb89ec30b98e52f47cc088eb894" prot="public" virt="virtual"><scope>TmcCoeStepperMotor</scope><name>~TmcCoeStepperMotor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

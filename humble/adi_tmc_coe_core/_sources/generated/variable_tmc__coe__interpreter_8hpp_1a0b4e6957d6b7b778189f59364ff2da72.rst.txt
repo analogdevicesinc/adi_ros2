@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72:
+
+Variable CONTROL_WORD_TIMEOUT
+=============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CONTROL_WORD_TIMEOUT
+   :project: adi_tmc_coe_core Doxygen Project

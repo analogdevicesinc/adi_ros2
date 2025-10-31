@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['camera_5fmatrix_0',['camera_matrix',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html#acda10bc01bc21640010acf097e0f44be',1,'CameraIntrinsics']]],
-  ['cameraextrinsics_1',['CameraExtrinsics',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraExtrinsics.html',1,'']]],
-  ['cameraintrinsics_2',['CameraIntrinsics',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html',1,'']]],
-  ['compressed_5fdepth_5fimage_5ftransport_3',['compressed_depth_image_transport',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'']]],
-  ['computepointcloud_4',['computePointCloud',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classImageProcUtils.html#a8871d35fb9555129c55c762e560e5346',1,'ImageProcUtils']]],
-  ['configheader_5',['ConfigHeader',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'compressed_depth_image_transport']]],
-  ['createcontext_6',['createContext',['../classadi__imu_1_1IIOWrapper.html#ad1cd18a7c632c7f6f93be1d99b98222d',1,'adi_imu::IIOWrapper']]],
-  ['current_5fdata_5fselection_7',['current_data_selection',['../classadi__imu_1_1IIOWrapper.html#af8d30b2dc40951a575a610abd9b42a28',1,'adi_imu::IIOWrapper']]]
+  ['b_5fgethwinitialized_5f_0',['b_getHWInitialized_',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html#a3e182b7d85ab2e210cffdce2fab52c1b',1,'AdiImuBufRos2']]],
+  ['b_5freadpubdatasuccess_1',['b_readPubDataSuccess',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html#a326c7c4088f5625c8ac3d07cab196e4b',1,'AdiImuBufRos2']]],
+  ['basepath_2',['basePath',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classIIOPath.html#aa089783a455bca56348d522880cb3484',1,'IIOPath']]],
+  ['bias_5fcorrection_5ftime_5fbase_5fcontrol_3',['bias_correction_time_base_control',['../classadi__imu_1_1IIOWrapper.html#ac7bbff84095a3aef133c2e320216e5eb',1,'adi_imu::IIOWrapper']]],
+  ['bias_5fcorrection_5fupdate_4',['bias_correction_update',['../classadi__imu_1_1IIOWrapper.html#a8570be1bcfc6e406db889356df69d39a',1,'adi_imu::IIOWrapper']]],
+  ['biasestimatecb_5',['biasEstimateCB',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classBiasEstimateRos2.html#a4725eb593bbe5d244c432c75ee0ab749',1,'BiasEstimateRos2']]],
+  ['biasestimateros2_6',['biasestimateros2',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classBiasEstimateRos2.html',1,'BiasEstimateRos2'],['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classBiasEstimateRos2.html#a1b9a4cc77d9f7e0286cb2ffefc3ffe3e',1,'BiasEstimateRos2::BiasEstimateRos2()']]],
+  ['boolpubsub_7',['BoolPubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classBoolPubSub.html',1,'']]],
+  ['buff_5fdata_8',['buff_data',['../classadi__imu_1_1IIOWrapper.html#a42dcdfd04ce7a72a87c69734c5ffe8d8',1,'adi_imu::IIOWrapper']]],
+  ['buff_5fread_5fidx_9',['buff_read_idx',['../classadi__imu_1_1IIOWrapper.html#a14c3d692d79bb303fcf3ee78e48ad51f',1,'adi_imu::IIOWrapper']]],
+  ['buff_5fwrite_5fidx_10',['buff_write_idx',['../classadi__imu_1_1IIOWrapper.html#a29575e5e1d5af6574ba2f738bb36fa07',1,'adi_imu::IIOWrapper']]]
 ];

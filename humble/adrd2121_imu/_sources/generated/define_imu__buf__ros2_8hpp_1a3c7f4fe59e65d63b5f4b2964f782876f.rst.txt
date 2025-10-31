@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f:
+
+Define THROW_LIMIT
+==================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: THROW_LIMIT
+   :project: adrd2121_imu Doxygen Project

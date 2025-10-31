@@ -1,0 +1,14 @@
+.. _exhale_function_imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4:
+
+Function BUFDIOtoString
+=======================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: BUFDIOtoString(int)
+   :project: adrd2121_imu Doxygen Project

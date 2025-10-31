@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="image__proc__utils_8h" kind="file" language="C++">
+    <compoundname>image_proc_utils.h</compoundname>
+    <includes local="no">cv_bridge/cv_bridge.h</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="adi__camera_8h" local="yes">adi_camera.h</includes>
+    <includedby refid="adi__3dtof__safety__bubble__detector__node_8h" local="yes">include/adi_3dtof_safety_bubble_detector_node.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>cv_bridge/cv_bridge.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_3dtof_safety_bubble_detector_node.h</label>
+        <link refid="adi__3dtof__safety__bubble__detector__node_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct____tADIImageROI" prot="public">__tADIImageROI</innerclass>
+    <innerclass refid="struct____tADIImage" prot="public">__tADIImage</innerclass>
+    <innerclass refid="struct____tADI2DPoint" prot="public">__tADI2DPoint</innerclass>
+    <innerclass refid="classImageProcUtils" prot="public">ImageProcUtils</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="image__proc__utils_8h_1a3099edd83970d62c2832b51423462420" prot="public" static="no">
+        <name>QFORMAT_FOR_POINTCLOUD_LUT</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="16" column="9" bodyfile="include/image_proc_utils.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3" prot="public" static="no">
+        <name>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE</name>
+        <initializer>(1 &lt;&lt; QFORMAT_FOR_POINTCLOUD_LUT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="17" column="9" bodyfile="include/image_proc_utils.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="image__proc__utils_8h_1a3bfd4f6577d0b0706a258eee46648e06" prot="public" static="no">
+        <type>struct <ref refid="struct____tADIImageROI" kindref="compound">__tADIImageROI</ref></type>
+        <definition>typedef struct __tADIImageROI ADIImageROI</definition>
+        <argsstring></argsstring>
+        <name>ADIImageROI</name>
+        <briefdescription>
+<para>Structure to hold image ROI info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="29" column="13"/>
+      </memberdef>
+      <memberdef kind="typedef" id="image__proc__utils_8h_1a18e8741da6b0575f9b2e6ae1e26f7468" prot="public" static="no">
+        <type>struct <ref refid="struct____tADIImage" kindref="compound">__tADIImage</ref></type>
+        <definition>typedef struct __tADIImage ADIImage</definition>
+        <argsstring></argsstring>
+        <name>ADIImage</name>
+        <briefdescription>
+<para>Structure to hold image info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="42" column="10"/>
+      </memberdef>
+      <memberdef kind="typedef" id="image__proc__utils_8h_1a8d8aed10ffda0644464a21296b309bf5" prot="public" static="no">
+        <type>struct <ref refid="struct____tADI2DPoint" kindref="compound">__tADI2DPoint</ref></type>
+        <definition>typedef struct __tADI2DPoint ADI2DPoint</definition>
+        <argsstring></argsstring>
+        <name>ADI2DPoint</name>
+        <briefdescription>
+<para>Structure to hold point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="52" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_camera.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QFORMAT_FOR_POINTCLOUD_LUT<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE<sp/>(1<sp/>&lt;&lt;<sp/>QFORMAT_FOR_POINTCLOUD_LUT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct____tADIImageROI" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____tADIImageROI" kindref="compound">__tADIImageROI</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct____tADIImage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____tADIImage" kindref="compound">__tADIImage</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>data<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bpp<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bits<sp/>per<sp/>pixel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref><sp/>*<sp/>roi<sp/>=<sp/>NULL;<sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>pointer<sp/>to<sp/>null,<sp/>to<sp/>process<sp/>full<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct____tADI2DPoint" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____tADI2DPoint" kindref="compound">__tADI2DPoint</ref></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="struct____tADI2DPoint" kindref="compound">ADI2DPoint</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>constructor<sp/>with<sp/>no<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref>(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>image_width_<sp/>=<sp/>image_width;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>image_height_<sp/>=<sp/>image_height;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>range_to_xyz_lut_fixed_point_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">[image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(range_to_xyz_lut_fixed_point_,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal">)<sp/>*<sp/>image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">generateRangeTo3DLUT</ref>(camera_intrinsics);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">~ImageProcUtils</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>range_to_xyz_lut_fixed_point_;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>convertTo8BppImage(<ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>in_img,<sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>out_img,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale_factor);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transformFrame(</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>in_img,<sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>out_img,<sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>src_intrinsics,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>src_extrinsics,<sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>dst_intrinsics,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>dst_extrinsics,<sp/><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref><sp/>*<sp/>out_roi,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>compute_point_cloud_enable_,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>transformFrameWithFloorRemoval(</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>in_img,<sp/><ref refid="struct____tADIImage" kindref="compound">ADIImage</ref><sp/>*<sp/>out_img,<sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>src_intrinsics,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>src_extrinsics,<sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>dst_intrinsics,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>dst_extrinsics,<sp/><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref><sp/>*<sp/>out_roi,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>floor_height_mtr,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>virtual_camera_height_mtr,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>compute_point_cloud_enable_);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>matrixMultiplication(</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>columns1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>columns2,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>output_matrix);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>matrixMultiplication3x3And3x1(</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix1,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>input_matrix2,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>output_matrix);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotatePointCloud(</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>input_point_cloud,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>rotated_point_cloud,<sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>T<sp/>minElement(T<sp/>*<sp/>input_array,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>minimum<sp/>element</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>min<sp/>=<sp/>input_array[0];</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(input_array[i]<sp/>&lt;<sp/>min)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min<sp/>=<sp/>input_array[i];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>min;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">generateRangeTo3DLUT</ref>(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">computePointCloud</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>range_image,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width_;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height_;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>range_to_xyz_lut_fixed_point_;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/image_proc_utils.h"/>
+  </compounddef>
+</doxygen>

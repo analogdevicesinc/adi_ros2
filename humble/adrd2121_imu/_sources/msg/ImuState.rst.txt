@@ -1,0 +1,8 @@
+ImuState
+========
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: ImuState.msg
+

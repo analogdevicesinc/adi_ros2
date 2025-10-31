@@ -1,0 +1,154 @@
+
+.. _program_listing_file_include_adtf31xx_sensor_frame_info.h:
+
+Program Listing for File adtf31xx_sensor_frame_info.h
+=====================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adtf31xx_sensor_frame_info.h>` (``include/adtf31xx_sensor_frame_info.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /******************************************************************************
+   Copyright (c), 2023 - Analog Devices Inc. All Rights Reserved.
+   This software is PROPRIETARY & CONFIDENTIAL to Analog Devices, Inc.
+   and its licensors.
+   ******************************************************************************/
+   
+   #ifndef ADTF31XX_SENSOR_FRAME_INFO_H
+   #define ADTF31XX_SENSOR_FRAME_INFO_H
+   
+   #include <pcl/point_cloud.h>
+   #include <pcl/point_types.h>
+   
+   #include <cstring>
+   #include <rclcpp/rclcpp.hpp>
+   
+   class ADTF31xxSensorFrameInfo
+   {
+   public:
+     ADTF31xxSensorFrameInfo(int image_width, int image_height)
+     {
+       // Create the node.
+       depth_frame_ = nullptr;
+       ab_frame_ = nullptr;
+       xyz_frame_ = nullptr;
+       rotated_xyz_frame_ = nullptr;
+       image_width_ = image_width;
+       image_height_ = image_height;
+   
+       depth_frame_ = new unsigned short[image_width * image_height];
+       ab_frame_ = new unsigned short[image_width * image_height];
+       xyz_frame_ = new short[image_width * image_height * 3];
+       rotated_xyz_frame_ = new short[image_width * image_height * 3];
+   
+       // Worst case, RVL compression can take ~1.5x the input data.
+       compressed_depth_frame_ = new unsigned char[2 * image_width * image_height];
+       compressed_depth_frame_size_ = 0;
+       frame_timestamp_ = rclcpp::Clock{}.now();
+       modified_xyz_frame_ = new float[image_width * image_height * 3];
+       modified_xyz_frame_size_ = 0;
+       nearby_objects_found_flag_ = false;
+     }
+   
+     ~ADTF31xxSensorFrameInfo()
+     {
+       if (depth_frame_ != nullptr) {
+         delete[] depth_frame_;
+       }
+       if (ab_frame_ != nullptr) {
+         delete[] ab_frame_;
+       }
+       if (xyz_frame_ != nullptr) {
+         delete[] xyz_frame_;
+       }
+       if (rotated_xyz_frame_ != nullptr) {
+         delete[] rotated_xyz_frame_;
+       }
+       if (compressed_depth_frame_ != nullptr) {
+         delete[] compressed_depth_frame_;
+       }
+       if (modified_xyz_frame_ != nullptr) {
+         delete[] modified_xyz_frame_;
+       }
+     }
+   
+     unsigned short * getDepthFrame() const { return depth_frame_; }
+   
+     unsigned short * getIRFrame() const { return ab_frame_; }
+   
+     short * getXYZFrame() const { return xyz_frame_; }
+   
+     short * getRotatedXYZFrame() const { return rotated_xyz_frame_; }
+   
+     unsigned char * getCompressedDepthFrame() const { return compressed_depth_frame_; }
+   
+     rclcpp::Time * getFrameTimestampPtr() { return &frame_timestamp_; }
+   
+     rclcpp::Time getFrameTimestamp() const { return frame_timestamp_; }
+   
+     int getCompressedDepthFrameSize() const { return compressed_depth_frame_size_; }
+   
+     void setCompressedDepthFrameSize(int compressed_depth_frame_size)
+     {
+       compressed_depth_frame_size_ = compressed_depth_frame_size;
+     }
+   
+     void setModifiedXYZFrameSize(int frame_size) { modified_xyz_frame_size_ = frame_size; }
+   
+     int getModifiedXYZFrameSize() { return modified_xyz_frame_size_; }
+   
+     float * getModifiedXYZFrame() const { return modified_xyz_frame_; }
+   
+     bool * getNearbyObjectsFoundFlagPtr() { return &nearby_objects_found_flag_; }
+   
+     bool getNearbyObjectsFoundFlag() { return nearby_objects_found_flag_; }
+   
+     // Assignment operator
+     ADTF31xxSensorFrameInfo & operator=(const ADTF31xxSensorFrameInfo & rhs)
+     {
+       image_width_ = rhs.image_width_;
+       image_height_ = rhs.image_height_;
+       memcpy(depth_frame_, rhs.depth_frame_, sizeof(depth_frame_[0]) * image_width_ * image_height_);
+       memcpy(ab_frame_, rhs.ab_frame_, sizeof(ab_frame_[0]) * image_width_ * image_height_);
+       memcpy(xyz_frame_, rhs.xyz_frame_, sizeof(xyz_frame_[0]) * image_width_ * image_height_ * 3);
+       memcpy(
+         rotated_xyz_frame_, rhs.rotated_xyz_frame_,
+         sizeof(rotated_xyz_frame_[0]) * image_width_ * image_height_ * 3);
+       compressed_depth_frame_size_ = rhs.compressed_depth_frame_size_;
+       memcpy(
+         compressed_depth_frame_, rhs.compressed_depth_frame_,
+         sizeof(compressed_depth_frame_[0]) * compressed_depth_frame_size_);
+       frame_timestamp_ = rhs.frame_timestamp_;
+   
+       memcpy(
+         modified_xyz_frame_, rhs.modified_xyz_frame_,
+         (image_width_ * image_height_) * 3 * sizeof(float));
+       nearby_objects_found_flag_ = rhs.nearby_objects_found_flag_;
+       modified_xyz_frame_size_ = rhs.modified_xyz_frame_size_;
+       return *this;
+     }
+   
+   private:
+     int image_width_;
+   
+     int image_height_;
+   
+     unsigned short * depth_frame_;
+   
+     unsigned short * ab_frame_;
+     short * xyz_frame_;
+     short * rotated_xyz_frame_;
+     int compressed_depth_frame_size_;
+   
+     unsigned char * compressed_depth_frame_;
+   
+     rclcpp::Time frame_timestamp_;
+   
+     float * modified_xyz_frame_;
+     int modified_xyz_frame_size_;
+     bool nearby_objects_found_flag_;
+   };
+   
+   #endif

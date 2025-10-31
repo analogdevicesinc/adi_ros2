@@ -343,6 +343,10 @@
   </option>
   <option  id='SKIP_FUNCTION_MACROS' default='yes' type='bool'><value>YES</value></option>
   <option  id='TAGFILES' default='no' type='stringlist'>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_tmc_coe_core/adi_tmc_coe_core.tag=http://docs.ros.org/en/latest/p/adi_tmc_coe_core/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag=http://docs.ros.org/en/latest/p/adi_3dtof_safety_bubble_detector/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adrd2121_imu/adrd2121_imu.tag=http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_floor_detector/adi_3dtof_floor_detector.tag=http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html]]></value>
     <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag=http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html]]></value>
   </option>
   <option  id='GENERATE_TAGFILE' default='no' type='string'><value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/docs_build/adi_iio/adi_iio-public-cc-api/doxygen_output/adi_iio.tag]]></value></option>

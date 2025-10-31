@@ -1,0 +1,8 @@
+AdiImu
+======
+This is a ROS message definition.
+
+**Source**
+
+.. literalinclude:: AdiImu.msg
+

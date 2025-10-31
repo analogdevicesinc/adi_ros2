@@ -1,0 +1,17 @@
+.. _exhale_class_classADI3DToFSafetyBubbleDetectorOutputInfo:
+
+Class ADI3DToFSafetyBubbleDetectorOutputInfo
+============================================
+
+- Defined in :ref:`file_include_adi_3dtof_safety_bubble_detector_output_info.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFSafetyBubbleDetectorOutputInfo
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

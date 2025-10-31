@@ -1,0 +1,52 @@
+
+.. _file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp:
+
+File tmc_coe_stepper_motor.hpp
+==============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmc_coe_core>` (``include/adi_tmc_coe_core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp``)
+-------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmc_coe_core/tmc_coe_motor.hpp`` (:ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`)
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classTmcCoeStepperMotor`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad`
+

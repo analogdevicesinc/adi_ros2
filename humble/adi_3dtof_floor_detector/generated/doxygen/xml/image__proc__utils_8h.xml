@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="image__proc__utils_8h" kind="file" language="C++">
+    <compoundname>image_proc_utils.h</compoundname>
+    <includes local="no">cv_bridge/cv_bridge.h</includes>
+    <includes refid="adi__camera_8h" local="yes">adi_camera.h</includes>
+    <includes local="yes">floor_plane_detection.h</includes>
+    <includedby refid="adi__3dtof__floor__detector__example_8h" local="yes">include/adi_3dtof_floor_detector_example.h</includedby>
+    <includedby refid="adi__3dtof__floor__detector__node_8h" local="yes">include/adi_3dtof_floor_detector_node.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>array</label>
+      </node>
+      <node id="2">
+        <label>cv_bridge/cv_bridge.h</label>
+      </node>
+      <node id="5">
+        <label>floor_plane_detection.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_3dtof_floor_detector_example.h</label>
+        <link refid="adi__3dtof__floor__detector__example_8h_source"/>
+      </node>
+      <node id="3">
+        <label>include/adi_3dtof_floor_detector_node.h</label>
+        <link refid="adi__3dtof__floor__detector__node_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImageProcUtils" prot="public">ImageProcUtils</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="image__proc__utils_8h_1a3099edd83970d62c2832b51423462420" prot="public" static="no">
+        <name>QFORMAT_FOR_POINTCLOUD_LUT</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="15" column="9" bodyfile="include/image_proc_utils.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3" prot="public" static="no">
+        <name>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE</name>
+        <initializer>(1 &lt;&lt; QFORMAT_FOR_POINTCLOUD_LUT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="16" column="9" bodyfile="include/image_proc_utils.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_camera.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;floor_plane_detection.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QFORMAT_FOR_POINTCLOUD_LUT<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE<sp/>(1<sp/>&lt;&lt;<sp/>QFORMAT_FOR_POINTCLOUD_LUT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>constructor<sp/>with<sp/>no<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref>(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>image_width_<sp/>=<sp/>image_width;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>image_height_<sp/>=<sp/>image_height;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>range_to_xyz_lut_fixed_point_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">[image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(range_to_xyz_lut_fixed_point_,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">short</highlight><highlight class="normal">)<sp/>*<sp/>image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">generateRangeTo3DLUT</ref>(camera_intrinsics);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">~ImageProcUtils</ref>()</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>range_to_xyz_lut_fixed_point_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">generateRangeTo3DLUT</ref>(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">computePointCloud</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>range_image,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>matrixMultiplication(</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>columns1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>columns2,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>output_matrix);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>matrixMultiplication3x3And3x1(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>input_matrix1,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>input_matrix2,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>output_matrix);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotatePointCloud(</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>input_point_cloud,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>rotated_point_cloud,<sp/><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>detectFloorFromPointCloud(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>floor_distance_threshold_mm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>output_depth_frame,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>output_xyz_frame,<sp/>FilterFlag<sp/>filter_flag,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>floor_mask,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>compressed_floor_mask);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height_;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>range_to_xyz_lut_fixed_point_;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/image_proc_utils.h"/>
+  </compounddef>
+</doxygen>

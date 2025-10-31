@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1:
+
+Variable PROCESS_DATA_DELAY
+===========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: PROCESS_DATA_DELAY
+   :project: adi_tmc_coe_core Doxygen Project

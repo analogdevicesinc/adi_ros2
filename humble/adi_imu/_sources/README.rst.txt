@@ -58,6 +58,9 @@ License
 
 This project is licensed under the `Apache License, Version 2.0 LICENSE <LICENSE>`_.
 
+The product makes use of third party and open source software. The licenses and
+notices for this software are listed at: `imu_ros2 - Third Party and Open Source Software`_.
+
 
 Changelog
 ^^^^^^^^^
@@ -514,6 +517,15 @@ as product ID, serial number, firmware version, and firmware date on the
 `/imuidentificationdata` topic.
 
 Setting this parameter to false will disable identification data publishing.
+
+frame_id
+""""""""
+
+**Type:** string
+**Default:** "imu"
+
+The TF frame ID for the IMU sensor (e.g., `source_x/imu`). Useful when multiple
+IMUs are used in the same system to uniquely identify each sensor's data.
 
 
 IMU parameters
@@ -1205,3 +1217,6 @@ imu_tof_fusion.launch file with the required arguments:
     .. code-block:: bash
 
         ros2 launch adi_imu imu_tof_fusion.launch.py --show-args
+
+
+.. _imu_ros2 - Third Party and Open Source Software: https://download.analog.com/imu_ros2/versions.html

@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classAdiImuRos2" kind="class" language="C++" prot="public">
+    <compoundname>AdiImuRos2</compoundname>
+    <includes refid="adi__imu__ros2_8hpp" local="no">adi_imu_ros2.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAdiImuRos2_1acacbf8524729194cd3ee1e8ff41250b5" prot="private" static="no" mutable="no">
+        <type>adi_imu_Device_t *</type>
+        <definition>adi_imu_Device_t* AdiImuRos2::p_device_</definition>
+        <argsstring></argsstring>
+        <name>p_device_</name>
+        <qualifiedname>AdiImuRos2::p_device_</qualifiedname>
+        <briefdescription>
+<para>Pointer to adi_imu_Device_t. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="93" column="20" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1add09be2978ffde5b97720b74090458e7" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Node &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Node&gt; AdiImuRos2::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>AdiImuRos2::node_</qualifiedname>
+        <briefdescription>
+<para>Local node meant to catch node from main function to be used for ROS2 APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="96" column="19" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a2de00fb8f877b1bab8648fbdba9f89e8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_prod_id_</definition>
+        <argsstring></argsstring>
+        <name>imu_prod_id_</name>
+        <qualifiedname>AdiImuRos2::imu_prod_id_</qualifiedname>
+        <briefdescription>
+<para>IMU Product ID (e.g. 16495, 16470, 16500) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="100" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a026169630e2b3a126181d043fa5c55a9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AdiImuRos2::gravity_</definition>
+        <argsstring></argsstring>
+        <name>gravity_</name>
+        <qualifiedname>AdiImuRos2::gravity_</qualifiedname>
+        <briefdescription>
+<para>Gravity Constant; Multiplier to accelerometer data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="103" column="10" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a91c7022504672447c44e4161128f579c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_data_format_</definition>
+        <argsstring></argsstring>
+        <name>imu_data_format_</name>
+        <qualifiedname>AdiImuRos2::imu_data_format_</qualifiedname>
+        <briefdescription>
+<para>IMU Data Format (for Burst Read or non-Burst Read); 16- or 32-bit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="106" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1afe3ddfa499af2648aabfb55e98ca0376" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_data_rate_</definition>
+        <argsstring></argsstring>
+        <name>imu_data_rate_</name>
+        <qualifiedname>AdiImuRos2::imu_data_rate_</qualifiedname>
+        <briefdescription>
+<para>IMU Data Rate in Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="109" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1ab23608bb55028125dd013834a45c4832" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_imu_data_rdy_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_data_rdy_</name>
+        <qualifiedname>AdiImuRos2::b_imu_data_rdy_</qualifiedname>
+        <briefdescription>
+<para>Boolean for enabling IMU Data Ready. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="112" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1aeff6cb4bb89b958d042925062a0c84ca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_data_rdy_line_</definition>
+        <argsstring></argsstring>
+        <name>imu_data_rdy_line_</name>
+        <qualifiedname>AdiImuRos2::imu_data_rdy_line_</qualifiedname>
+        <briefdescription>
+<para>IMU Data ready line selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="115" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a71f28f40fd00aebf6be8946476f89f19" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_data_rdy_pol_</definition>
+        <argsstring></argsstring>
+        <name>imu_data_rdy_pol_</name>
+        <qualifiedname>AdiImuRos2::imu_data_rdy_pol_</qualifiedname>
+        <briefdescription>
+<para>IMU Data ready polarity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="118" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1aa5327d34c0e1164f0c7a0eb3cbc34d19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_imu_sync_clk_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_sync_clk_</name>
+        <qualifiedname>AdiImuRos2::b_imu_sync_clk_</qualifiedname>
+        <briefdescription>
+<para>Boolean for enabling configuration IMU Sync clock input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="121" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1aaab3f49a5937029f2a6dd37d426533c7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_sync_clk_mode_</definition>
+        <argsstring></argsstring>
+        <name>imu_sync_clk_mode_</name>
+        <qualifiedname>AdiImuRos2::imu_sync_clk_mode_</qualifiedname>
+        <briefdescription>
+<para>IMU Sync clock mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="124" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a193c47792fb4aff49706d5445bdbb410" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_sync_clk_line_</definition>
+        <argsstring></argsstring>
+        <name>imu_sync_clk_line_</name>
+        <qualifiedname>AdiImuRos2::imu_sync_clk_line_</qualifiedname>
+        <briefdescription>
+<para>IMU Sync clock input line selection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="127" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1ae6a75262258788c8397959c944a6b0c4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_sync_clk_pol_</definition>
+        <argsstring></argsstring>
+        <name>imu_sync_clk_pol_</name>
+        <qualifiedname>AdiImuRos2::imu_sync_clk_pol_</qualifiedname>
+        <briefdescription>
+<para>IMU Sync clock input polarity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="130" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a4d4445ceb4dc30a94ccbc9e299e9a73a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_imu_linear_g_comp_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_linear_g_comp_</name>
+        <qualifiedname>AdiImuRos2::b_imu_linear_g_comp_</qualifiedname>
+        <briefdescription>
+<para>Boolean for enabling disabling Linear g compensation for gyroscopes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="133" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a4afe97cdd789b36ca2fbb4733120b088" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_imu_pp_align_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_pp_align_</name>
+        <qualifiedname>AdiImuRos2::b_imu_pp_align_</qualifiedname>
+        <briefdescription>
+<para>Boolean for enabling disabling Point of Percussion alignment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="136" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a001c4b4d1883b9432d7d20eaae856bff" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_imu_update_bias_corr_</definition>
+        <argsstring></argsstring>
+        <name>b_imu_update_bias_corr_</name>
+        <qualifiedname>AdiImuRos2::b_imu_update_bias_corr_</qualifiedname>
+        <briefdescription>
+<para>Boolean to Trigger Bias Correction Update in IMU_GLOB_CMD Register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="139" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1ad49c3638d1b836b587860c1783090425" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_time_base_control_</definition>
+        <argsstring></argsstring>
+        <name>imu_time_base_control_</name>
+        <qualifiedname>AdiImuRos2::imu_time_base_control_</qualifiedname>
+        <briefdescription>
+<para>Time Base Control (TBC) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="142" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1aefd3238a08c7bcf8bfc144360587ca87" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_accl_z_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_accl_z_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_accl_z_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable Z-axis acceleration bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="145" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1acb45833ccdde6363a34866ba1072e030" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_accl_y_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_accl_y_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_accl_y_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable Y-axis acceleration bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="148" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a08ce981067b869e27a345106b4b31a15" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_accl_x_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_accl_x_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_accl_x_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable X-axis acceleration bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="151" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a7b27d478f5e441f7b034239052e7c36f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_gyro_z_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_gyro_z_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_gyro_z_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable Z-axis gyroscope bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="154" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a1e5f59b23cc87f6344e69696ee8c20d2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_gyro_y_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_gyro_y_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_gyro_y_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable Y-axis gyroscope bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="157" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a3a5a8b12b22a90b270913aa6c9b7fef3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AdiImuRos2::imu_gyro_x_bias_null_</definition>
+        <argsstring></argsstring>
+        <name>imu_gyro_x_bias_null_</name>
+        <qualifiedname>AdiImuRos2::imu_gyro_x_bias_null_</qualifiedname>
+        <briefdescription>
+<para>Enable/Disable X-axis gyroscope bias correction. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="160" column="7" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a867e919e7c1ddc8c666390a1af43782f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_update_imu_accl_bias_</definition>
+        <argsstring></argsstring>
+        <name>b_update_imu_accl_bias_</name>
+        <qualifiedname>AdiImuRos2::b_update_imu_accl_bias_</qualifiedname>
+        <briefdescription>
+<para>Boolean to Set Accelerometer bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="163" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a0a41133eb2cd0256a617e2f8cfbe2a56" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; AdiImuRos2::imu_accl_bias_</definition>
+        <argsstring></argsstring>
+        <name>imu_accl_bias_</name>
+        <qualifiedname>AdiImuRos2::imu_accl_bias_</qualifiedname>
+        <briefdescription>
+<para>Accelerometer bias values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="166" column="14" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a1afebc91beb84e6dd2e9707550310dc4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_update_imu_gyro_bias_</definition>
+        <argsstring></argsstring>
+        <name>b_update_imu_gyro_bias_</name>
+        <qualifiedname>AdiImuRos2::b_update_imu_gyro_bias_</qualifiedname>
+        <briefdescription>
+<para>Boolean to Set Gyroscope bias. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="169" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a39bf22092083a95913d57a6a46c4bb8e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; AdiImuRos2::imu_gyro_bias_</definition>
+        <argsstring></argsstring>
+        <name>imu_gyro_bias_</name>
+        <qualifiedname>AdiImuRos2::imu_gyro_bias_</qualifiedname>
+        <briefdescription>
+<para>Gyroscope bias values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="172" column="15" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a1f5c8ce6bab49ba4fb591a7edb8c10ab" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_update_imu_accl_scale_</definition>
+        <argsstring></argsstring>
+        <name>b_update_imu_accl_scale_</name>
+        <qualifiedname>AdiImuRos2::b_update_imu_accl_scale_</qualifiedname>
+        <briefdescription>
+<para>Boolean to Set Accelerometer scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="175" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a95f7fd79d271d72aad16f74e1b9d1c8b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; AdiImuRos2::imu_accl_scale_</definition>
+        <argsstring></argsstring>
+        <name>imu_accl_scale_</name>
+        <qualifiedname>AdiImuRos2::imu_accl_scale_</qualifiedname>
+        <briefdescription>
+<para>Accelerometer scale values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="178" column="15" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a5db42fe50289ee57e5f2e8e2177e058b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::b_update_imu_gyro_scale_</definition>
+        <argsstring></argsstring>
+        <name>b_update_imu_gyro_scale_</name>
+        <qualifiedname>AdiImuRos2::b_update_imu_gyro_scale_</qualifiedname>
+        <briefdescription>
+<para>Boolean to Set Gyroscope scale. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="181" column="8" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a28397828b36d1e43d5e34f7d6548a551" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt;long&gt; AdiImuRos2::imu_gyro_scale_</definition>
+        <argsstring></argsstring>
+        <name>imu_gyro_scale_</name>
+        <qualifiedname>AdiImuRos2::imu_gyro_scale_</qualifiedname>
+        <briefdescription>
+<para>Gyroscope scale values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="184" column="15" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAdiImuRos2_1a1c731868d882e917b850261df1622d5a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AdiImuRos2::actual_imu_data_rate_</definition>
+        <argsstring></argsstring>
+        <name>actual_imu_data_rate_</name>
+        <qualifiedname>AdiImuRos2::actual_imu_data_rate_</qualifiedname>
+        <briefdescription>
+<para>IMU Data Rate in Hz. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="187" column="10" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAdiImuRos2_1ab4202a4e35241064857ac2050d54f70c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdiImuRos2::AdiImuRos2</definition>
+        <argsstring>(const rclcpp::Node::SharedPtr &amp;node, adi_imu_Device_t *p_device)</argsstring>
+        <name>AdiImuRos2</name>
+        <qualifiedname>AdiImuRos2::AdiImuRos2</qualifiedname>
+        <param>
+          <type>const rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>adi_imu_Device_t *</type>
+          <declname>p_device</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to ROS2 node(adrd2121_imu_node)</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">p_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to adi_imu_device_t </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="62" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1aae7d0b9d01752b0dbe38e5be57d00595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AdiImuRos2::~AdiImuRos2</definition>
+        <argsstring>()</argsstring>
+        <name>~AdiImuRos2</name>
+        <qualifiedname>AdiImuRos2::~AdiImuRos2</qualifiedname>
+        <briefdescription>
+<para>Destructor for <ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="65" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1a7d0317bcd9575376025513f1b34fa5b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AdiImuRos2::loadParams</definition>
+        <argsstring>(void)</argsstring>
+        <name>loadParams</name>
+        <qualifiedname>AdiImuRos2::loadParams</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Loads Parameters for ADI IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1abd5ab3b09922a194378e87a582bf45f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <qualifiedname>AdiImuRos2::init</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the ADI IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
+ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1a07d7eedace366e89ec6b5eaa4a3eb834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::config</definition>
+        <argsstring>(void)</argsstring>
+        <name>config</name>
+        <qualifiedname>AdiImuRos2::config</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configures the ADI IMU based on parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1a5dc84a24bf27f38d9f1e664c26c7118a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double AdiImuRos2::getImuDataRateHz</definition>
+        <argsstring>(void)</argsstring>
+        <name>getImuDataRateHz</name>
+        <qualifiedname>AdiImuRos2::getImuDataRateHz</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return IMU Data Rate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>IMU Data rate in Hz </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="83" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classAdiImuRos2_1ae2194e8b107218cfc2f5ae0634609822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AdiImuRos2::triggerBiasCorrectionUpdate</definition>
+        <argsstring>(void)</argsstring>
+        <name>triggerBiasCorrectionUpdate</name>
+        <qualifiedname>AdiImuRos2::triggerBiasCorrectionUpdate</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Trigger IMU Bias Correction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="88" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class for ADI IMU. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="54" column="1" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="55" bodyend="188"/>
+    <listofallmembers>
+      <member refid="classAdiImuRos2_1a1c731868d882e917b850261df1622d5a" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>actual_imu_data_rate_</name></member>
+      <member refid="classAdiImuRos2_1ab4202a4e35241064857ac2050d54f70c" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>AdiImuRos2</name></member>
+      <member refid="classAdiImuRos2_1ab23608bb55028125dd013834a45c4832" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_imu_data_rdy_</name></member>
+      <member refid="classAdiImuRos2_1a4d4445ceb4dc30a94ccbc9e299e9a73a" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_imu_linear_g_comp_</name></member>
+      <member refid="classAdiImuRos2_1a4afe97cdd789b36ca2fbb4733120b088" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_imu_pp_align_</name></member>
+      <member refid="classAdiImuRos2_1aa5327d34c0e1164f0c7a0eb3cbc34d19" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_imu_sync_clk_</name></member>
+      <member refid="classAdiImuRos2_1a001c4b4d1883b9432d7d20eaae856bff" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_imu_update_bias_corr_</name></member>
+      <member refid="classAdiImuRos2_1a867e919e7c1ddc8c666390a1af43782f" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_update_imu_accl_bias_</name></member>
+      <member refid="classAdiImuRos2_1a1f5c8ce6bab49ba4fb591a7edb8c10ab" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_update_imu_accl_scale_</name></member>
+      <member refid="classAdiImuRos2_1a1afebc91beb84e6dd2e9707550310dc4" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_update_imu_gyro_bias_</name></member>
+      <member refid="classAdiImuRos2_1a5db42fe50289ee57e5f2e8e2177e058b" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>b_update_imu_gyro_scale_</name></member>
+      <member refid="classAdiImuRos2_1a07d7eedace366e89ec6b5eaa4a3eb834" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>config</name></member>
+      <member refid="classAdiImuRos2_1a5dc84a24bf27f38d9f1e664c26c7118a" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>getImuDataRateHz</name></member>
+      <member refid="classAdiImuRos2_1a026169630e2b3a126181d043fa5c55a9" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>gravity_</name></member>
+      <member refid="classAdiImuRos2_1a0a41133eb2cd0256a617e2f8cfbe2a56" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_accl_bias_</name></member>
+      <member refid="classAdiImuRos2_1a95f7fd79d271d72aad16f74e1b9d1c8b" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_accl_scale_</name></member>
+      <member refid="classAdiImuRos2_1a08ce981067b869e27a345106b4b31a15" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_accl_x_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1acb45833ccdde6363a34866ba1072e030" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_accl_y_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1aefd3238a08c7bcf8bfc144360587ca87" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_accl_z_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1a91c7022504672447c44e4161128f579c" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_data_format_</name></member>
+      <member refid="classAdiImuRos2_1afe3ddfa499af2648aabfb55e98ca0376" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_data_rate_</name></member>
+      <member refid="classAdiImuRos2_1aeff6cb4bb89b958d042925062a0c84ca" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_data_rdy_line_</name></member>
+      <member refid="classAdiImuRos2_1a71f28f40fd00aebf6be8946476f89f19" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_data_rdy_pol_</name></member>
+      <member refid="classAdiImuRos2_1a39bf22092083a95913d57a6a46c4bb8e" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_gyro_bias_</name></member>
+      <member refid="classAdiImuRos2_1a28397828b36d1e43d5e34f7d6548a551" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_gyro_scale_</name></member>
+      <member refid="classAdiImuRos2_1a3a5a8b12b22a90b270913aa6c9b7fef3" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_gyro_x_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1a1e5f59b23cc87f6344e69696ee8c20d2" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_gyro_y_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1a7b27d478f5e441f7b034239052e7c36f" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_gyro_z_bias_null_</name></member>
+      <member refid="classAdiImuRos2_1a2de00fb8f877b1bab8648fbdba9f89e8" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_prod_id_</name></member>
+      <member refid="classAdiImuRos2_1a193c47792fb4aff49706d5445bdbb410" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_sync_clk_line_</name></member>
+      <member refid="classAdiImuRos2_1aaab3f49a5937029f2a6dd37d426533c7" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_sync_clk_mode_</name></member>
+      <member refid="classAdiImuRos2_1ae6a75262258788c8397959c944a6b0c4" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_sync_clk_pol_</name></member>
+      <member refid="classAdiImuRos2_1ad49c3638d1b836b587860c1783090425" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>imu_time_base_control_</name></member>
+      <member refid="classAdiImuRos2_1abd5ab3b09922a194378e87a582bf45f2" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>init</name></member>
+      <member refid="classAdiImuRos2_1a7d0317bcd9575376025513f1b34fa5b6" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>loadParams</name></member>
+      <member refid="classAdiImuRos2_1add09be2978ffde5b97720b74090458e7" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>node_</name></member>
+      <member refid="classAdiImuRos2_1acacbf8524729194cd3ee1e8ff41250b5" prot="private" virt="non-virtual"><scope>AdiImuRos2</scope><name>p_device_</name></member>
+      <member refid="classAdiImuRos2_1ae2194e8b107218cfc2f5ae0634609822" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>triggerBiasCorrectionUpdate</name></member>
+      <member refid="classAdiImuRos2_1aae7d0b9d01752b0dbe38e5be57d00595" prot="public" virt="non-virtual"><scope>AdiImuRos2</scope><name>~AdiImuRos2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+
+.. _file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp:
+
+File adi_ethercat_grant.hpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmc_coe_core>` (``include/adi_tmc_coe_core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmc_coe_core/adi_ethercat_grant.hpp``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``cstdlib``
+
+- ``stdio.h``
+
+- ``string``
+
+- ``sys/capability.h``
+
+- ``sys/prctl.h``
+
+- ``unistd.h``
+
+
+
+
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e`
+
+- :ref:`exhale_variable_adi__ethercat__grant_8hpp_1a41d43d48bf3eefa06ba41d1496dc135d`
+

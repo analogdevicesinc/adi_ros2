@@ -1,0 +1,70 @@
+
+.. _file_include_output_sensor.h:
+
+File output_sensor.h
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/output_sensor.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_output_sensor.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``fstream``
+
+- ``iostream``
+
+- ``opencv2/core/core.hpp``
+
+- ``opencv2/highgui/highgui.hpp``
+
+- ``opencv2/imgproc.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_3dtof_floor_detector_node.h`
+
+- :ref:`file_include_output_sensor_factory.h`
+
+- :ref:`file_include_output_sensor_file.h`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classOOutputSensor`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_output__sensor_8h_1a46f7c277684d20859bec33db540acbc8`
+

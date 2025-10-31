@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf:
+
+Variable IMU_ACCL_BIAS_SIZE
+===========================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IMU_ACCL_BIAS_SIZE
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="adi__imu__buf__ros2_8hpp" kind="file" language="C++">
+    <compoundname>adi_imu_buf_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">rclcpp/node.hpp</includes>
+    <includes local="yes">std_srvs/srv/trigger.hpp</includes>
+    <includes refid="adi__imu__ros2_8hpp" local="yes">adi_imu_ros2.hpp</includes>
+    <includes refid="imu__buf__ros2_8hpp" local="yes">imu_buf_ros2.hpp</includes>
+    <includes refid="adrd2121__imu__ros2__common_8hpp" local="yes">adrd2121_imu_ros2_common.hpp</includes>
+    <includes local="yes">adrd2121_imu/srv/imu_glob_cmd.hpp</includes>
+    <includes local="yes">adi_imu_driver.h</includes>
+    <includes local="yes">imu_spi_buffer.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includedby refid="adrd2121__imu__ros2__node_8hpp" local="yes">include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adrd2121_imu/adi_imu_buf_ros2.hpp</label>
+        <link refid="adi__imu__buf__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>adi_imu_ros2.hpp</label>
+        <link refid="adi__imu__ros2_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>imu_buf_ros2.hpp</label>
+        <link refid="imu__buf__ros2_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>adi_imu_driver.h</label>
+      </node>
+      <node id="8">
+        <label>adi_imu_regmap.h</label>
+      </node>
+      <node id="18">
+        <label>adrd2121_imu/msg/adi_imu.hpp</label>
+      </node>
+      <node id="19">
+        <label>adrd2121_imu/srv/buf_status.hpp</label>
+      </node>
+      <node id="20">
+        <label>adrd2121_imu/srv/imu_glob_cmd.hpp</label>
+      </node>
+      <node id="21">
+        <label>chrono</label>
+      </node>
+      <node id="7">
+        <label>imu_spi_buffer.h</label>
+      </node>
+      <node id="9">
+        <label>imu_spi_buffer_regmap.h</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>rclcpp/node.hpp</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="17">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+      <node id="4">
+        <label>std_srvs/srv/trigger.hpp</label>
+      </node>
+      <node id="22">
+        <label>stdint.h</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="23">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="12">
+        <label>sys/time.h</label>
+      </node>
+      <node id="15">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/adrd2121_imu/adi_imu_buf_ros2.hpp</label>
+        <link refid="adi__imu__buf__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</label>
+        <link refid="adrd2121__imu__ros2__node_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAdiImuBufRos2" prot="public">AdiImuBufRos2</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//ROS2<sp/>Headers<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/node.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;std_srvs/srv/trigger.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>Driver<sp/>ROS2<sp/>headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_imu_ros2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_buf_ros2.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu_ros2_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>Driver<sp/>ROS2<sp/>custom<sp/>srv<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/srv/imu_glob_cmd.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//C<sp/>IMU<sp/>Driver<sp/>headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_imu_driver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_spi_buffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//Namespace<sp/>definitions<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_2;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classAdiImuBufRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdiImuBufRos2" kindref="compound">AdiImuBufRos2</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classAdiImuBufRos2_1a23e3f4fa2a3064a1338170f23605e666" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classAdiImuBufRos2_1a23e3f4fa2a3064a1338170f23605e666" kindref="member">AdiImuBufRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classAdiImuBufRos2_1a1b160c6f012a93b191638880815abbf4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classAdiImuBufRos2_1a1b160c6f012a93b191638880815abbf4" kindref="member">~AdiImuBufRos2</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classAdiImuBufRos2_1a5947f50fa4fdd1e5f565cd3e7b6c973a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a5947f50fa4fdd1e5f565cd3e7b6c973a" kindref="member">initParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classAdiImuBufRos2_1aea4d317b9d929c88c6e0a288721bebac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1aea4d317b9d929c88c6e0a288721bebac" kindref="member">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="classAdiImuBufRos2_1a06010fb047f5a3cc24d129c0140d271e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a06010fb047f5a3cc24d129c0140d271e" kindref="member">config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classAdiImuBufRos2_1a660b08e8ccfdcf51781fcae291e22074" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a660b08e8ccfdcf51781fcae291e22074" kindref="member">readPubData</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classAdiImuBufRos2_1a29779d91a27e07236aae6f2e4fb256d0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a29779d91a27e07236aae6f2e4fb256d0" kindref="member">dataReadAndPubCB</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classAdiImuBufRos2_1a80fe492ba31dbca0b0ef5b9008b5be30" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a80fe492ba31dbca0b0ef5b9008b5be30" kindref="member">getRosLoopRateHz</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classAdiImuBufRos2_1a8193ba35cab25ab2c813431fdfe4a3cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a8193ba35cab25ab2c813431fdfe4a3cd" kindref="member">triggerImuGlobCmd</ref>(adrd2121_imu::srv::ImuGlobCmd::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>adrd2121_imu::srv::ImuGlobCmd::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classAdiImuBufRos2_1af214c19e23577b0b2e75976d9e66e52d" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adrd2121_imu::srv::ImuGlobCmd&gt;::SharedPtr<sp/><ref refid="classAdiImuBufRos2_1af214c19e23577b0b2e75976d9e66e52d" kindref="member">p_imu_glob_cmd_service_</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classAdiImuBufRos2_1a8ee044b8d299cf893e4ec03460475583" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classAdiImuBufRos2_1a8ee044b8d299cf893e4ec03460475583" kindref="member">mode_of_operation_</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classAdiImuBufRos2_1a3e182b7d85ab2e210cffdce2fab52c1b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a3e182b7d85ab2e210cffdce2fab52c1b" kindref="member">b_getHWInitialized_</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="classAdiImuBufRos2_1a326c7c4088f5625c8ac3d07cab196e4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuBufRos2_1a326c7c4088f5625c8ac3d07cab196e4b" kindref="member">b_readPubDataSuccess</ref>;<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/>timer_;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>node_;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr<sp/>param_callback;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>rcl_interfaces::msg::SetParametersResult<sp/>paramCbFunction(</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;rclcpp::Parameter&gt;<sp/>&amp;param);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref>*<sp/>p_adi_imu_ros2_obj_;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>*<sp/>p_imu_buf_ros2_obj_;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ros_loop_rate_hz_;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>msg_type_e<sp/>msg_type_;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>std::string<sp/>frame_name_;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>adi_imu_Device_t<sp/>imu_dev_;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ADI_IMU_BUF_ROS2</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/adi_imu_buf_ros2.hpp"/>
+  </compounddef>
+</doxygen>

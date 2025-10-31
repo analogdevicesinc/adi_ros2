@@ -5,8 +5,8 @@ Standard Documents
    :maxdepth: 1
 
    __LICENSE
+   __README
    __CONTRIBUTING
    __PACKAGE
-   __README
    __CHANGELOG
 

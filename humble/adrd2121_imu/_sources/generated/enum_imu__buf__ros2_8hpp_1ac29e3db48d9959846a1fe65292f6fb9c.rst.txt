@@ -1,0 +1,14 @@
+.. _exhale_enum_imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c:
+
+Enum buf_dio_pin_e
+==================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: buf_dio_pin_e
+   :project: adrd2121_imu Doxygen Project

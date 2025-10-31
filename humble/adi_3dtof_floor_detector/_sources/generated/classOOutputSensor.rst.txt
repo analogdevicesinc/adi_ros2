@@ -1,0 +1,26 @@
+.. _exhale_class_classOOutputSensor:
+
+Class OOutputSensor
+===================
+
+- Defined in :ref:`file_include_output_sensor.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public OutputSensorFile`` (:ref:`exhale_class_classOutputSensorFile`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: OOutputSensor
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

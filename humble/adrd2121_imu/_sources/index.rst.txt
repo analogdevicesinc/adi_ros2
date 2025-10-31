@@ -1,0 +1,26 @@
+.. GENERATED_CONTENT by rosdoc2.verbs.build.builders.sphinx_builder.
+
+adrd2121_imu
+============
+
+The ROS2 adrd2121_imu package
+
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Links <__links>
+
+   C++ API <generated/index>
+   Message Definitions <__message_definitions>
+   Service Definitions <__service_definitions>
+
+   Standard Documents <__standards>
+
+.. include:: __readme_include.rst
+
+.. toctree::
+   :hidden:
+
+   genindex

@@ -1,0 +1,862 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTmcCoeInterpreter" kind="class" language="C++" prot="public">
+    <compoundname>TmcCoeInterpreter</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1acf60980749785f32443391d5390b2d02" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread TmcCoeInterpreter::processdata_thread_</definition>
+        <argsstring></argsstring>
+        <name>processdata_thread_</name>
+        <qualifiedname>TmcCoeInterpreter::processdata_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="229" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1ab55699b2506a3ab7f43cc192948a6a86" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread TmcCoeInterpreter::error_check_thread_</definition>
+        <argsstring></argsstring>
+        <name>error_check_thread_</name>
+        <qualifiedname>TmcCoeInterpreter::error_check_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="230" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1af9b4c4c43251a6f4d46d380a63658707" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::b_exit_threads_</definition>
+        <argsstring></argsstring>
+        <name>b_exit_threads_</name>
+        <qualifiedname>TmcCoeInterpreter::b_exit_threads_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="231" column="8" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a5e4d5ad18e6021520f8d6580648e4572" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::b_cycle_finished_</definition>
+        <argsstring></argsstring>
+        <name>b_cycle_finished_</name>
+        <qualifiedname>TmcCoeInterpreter::b_cycle_finished_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="232" column="8" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a93a21846eaacf53bb6971f3900465b27" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::b_start_cycle_count_</definition>
+        <argsstring></argsstring>
+        <name>b_start_cycle_count_</name>
+        <qualifiedname>TmcCoeInterpreter::b_start_cycle_count_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="233" column="8" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a08754da7c8632aa4ede2d27e71c2bb8f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::b_interface_unresponsive_</definition>
+        <argsstring></argsstring>
+        <name>b_interface_unresponsive_</name>
+        <qualifiedname>TmcCoeInterpreter::b_interface_unresponsive_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="234" column="8" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1ae97deec216914f756b1c9a0444af46dc" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeInterpreter::cycle_counter_</definition>
+        <argsstring></argsstring>
+        <name>cycle_counter_</name>
+        <qualifiedname>TmcCoeInterpreter::cycle_counter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="235" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a70852ad550ae68257e5d56ad6c07ba3d" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeInterpreter::SDO_PDO_retries_</definition>
+        <argsstring></argsstring>
+        <name>SDO_PDO_retries_</name>
+        <qualifiedname>TmcCoeInterpreter::SDO_PDO_retries_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="236" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a2b9b45a3eee5c67b28718698be99f8b8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TmcCoeInterpreter::interface_timeout_</definition>
+        <argsstring></argsstring>
+        <name>interface_timeout_</name>
+        <qualifiedname>TmcCoeInterpreter::interface_timeout_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="237" column="10" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a1faa9c1349b18a65af4b06a2f6677bc6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmcCoeInterpreter::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>TmcCoeInterpreter::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="238" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a8b36b4d1176de1a39108347fee05924c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger TmcCoeInterpreter::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>TmcCoeInterpreter::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="239" column="18" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a1f85d06fab6d36250c4f56fdda419ab4" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char TmcCoeInterpreter::IOmap[IOMAP_SIZE]</definition>
+        <argsstring>[IOMAP_SIZE]</argsstring>
+        <name>IOmap</name>
+        <qualifiedname>TmcCoeInterpreter::IOmap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="240" column="8" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a25573aebfb88b1ac7dbb22cf8e985e40" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TmcCoeInterpreter::work_count_</definition>
+        <argsstring></argsstring>
+        <name>work_count_</name>
+        <qualifiedname>TmcCoeInterpreter::work_count_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="241" column="7" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a5e6924fea6b69a161c1edbaf94f3a97e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; TmcCoeInterpreter::all_obj_name_</definition>
+        <argsstring></argsstring>
+        <name>all_obj_name_</name>
+        <qualifiedname>TmcCoeInterpreter::all_obj_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="242" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1aa6c72b2a4494769491b32974d1a3f2f4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; TmcCoeInterpreter::all_index_</definition>
+        <argsstring></argsstring>
+        <name>all_index_</name>
+        <qualifiedname>TmcCoeInterpreter::all_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="243" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a2c6723656449d1a5bba0bacc874e918b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; TmcCoeInterpreter::all_sub_index_</definition>
+        <argsstring></argsstring>
+        <name>all_sub_index_</name>
+        <qualifiedname>TmcCoeInterpreter::all_sub_index_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="244" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a18c7b6dba73cce1264fc3db9b0f5f550" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;std::string&gt; &gt; TmcCoeInterpreter::all_datatype_</definition>
+        <argsstring></argsstring>
+        <name>all_datatype_</name>
+        <qualifiedname>TmcCoeInterpreter::all_datatype_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="245" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a8f88d8033c8d1f5a7d1fc95232edd0aa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structPACKED" kindref="compound">input_pdo_t</ref> * &gt;</type>
+        <definition>std::vector&lt;input_pdo_t *&gt; TmcCoeInterpreter::input_pdo_</definition>
+        <argsstring></argsstring>
+        <name>input_pdo_</name>
+        <qualifiedname>TmcCoeInterpreter::input_pdo_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="260" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeInterpreter_1a25edc1e3c56314baafa17d4a20b99f1f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structPACKED" kindref="compound">output_pdo_t</ref> * &gt;</type>
+        <definition>std::vector&lt;output_pdo_t *&gt; TmcCoeInterpreter::output_pdo_</definition>
+        <argsstring></argsstring>
+        <name>output_pdo_</name>
+        <qualifiedname>TmcCoeInterpreter::output_pdo_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="261" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="261" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTmcCoeInterpreter_1ae123eb274f01628c74f422a9564bd037" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string TmcCoeInterpreter::readSDO</definition>
+        <argsstring>(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number)</argsstring>
+        <name>readSDO</name>
+        <qualifiedname>TmcCoeInterpreter::readSDO</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>index_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subindex_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="248" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a0d6cf142438865152f1e6ff64d96b5f1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string TmcCoeInterpreter::readSDO</definition>
+        <argsstring>(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number)</argsstring>
+        <name>readSDO</name>
+        <qualifiedname>TmcCoeInterpreter::readSDO</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>index_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subindex_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="250" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a565a3f68563a4d997f0d6ebd4f69ffd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string TmcCoeInterpreter::writeSDO</definition>
+        <argsstring>(uint8_t slave_number, uint16_t index_number, uint8_t subindex_number, T value)</argsstring>
+        <name>writeSDO</name>
+        <qualifiedname>TmcCoeInterpreter::writeSDO</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>index_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subindex_number</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="253" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1aa16709d3bda1f01697a2774764f2b52c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::processData</definition>
+        <argsstring>()</argsstring>
+        <name>processData</name>
+        <qualifiedname>TmcCoeInterpreter::processData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="256" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a39eab9954ce2e4c215533eac60c0f7cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::errorCheck</definition>
+        <argsstring>()</argsstring>
+        <name>errorCheck</name>
+        <qualifiedname>TmcCoeInterpreter::errorCheck</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="257" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTmcCoeInterpreter_1afb65176a540276ec471e1dbcdc0facfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeInterpreter::TmcCoeInterpreter</definition>
+        <argsstring>(uint8_t SDO_PDO_retries, double interface_timeout, std::string logger_prefix)</argsstring>
+        <name>TmcCoeInterpreter</name>
+        <qualifiedname>TmcCoeInterpreter::TmcCoeInterpreter</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>SDO_PDO_retries</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>interface_timeout</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>logger_prefix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="263" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a7569c7110187be318c1af0a11a281de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeInterpreter::~TmcCoeInterpreter</definition>
+        <argsstring>()</argsstring>
+        <name>~TmcCoeInterpreter</name>
+        <qualifiedname>TmcCoeInterpreter::~TmcCoeInterpreter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="264" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a1d1135811953ae5845939ac6344eb7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeInterpreter::initInterface</definition>
+        <argsstring>(std::string ifname)</argsstring>
+        <name>initInterface</name>
+        <qualifiedname>TmcCoeInterpreter::initInterface</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>ifname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="265" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a347b2aec5f5c7b552a2e6cfb347bd52d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::initDictionary</definition>
+        <argsstring>(uint8_t slave_number, std::vector&lt; std::string &gt; all_obj_name, std::vector&lt; std::string &gt; all_index, std::vector&lt; std::string &gt; all_sub_index, std::vector&lt; std::string &gt; all_datatype)</argsstring>
+        <name>initDictionary</name>
+        <qualifiedname>TmcCoeInterpreter::initDictionary</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>all_obj_name</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>all_index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>all_sub_index</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>all_datatype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="266" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a59d8532fead76da07e452adaff8a151a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::safeOperationalState</definition>
+        <argsstring>(uint8_t slave_number)</argsstring>
+        <name>safeOperationalState</name>
+        <qualifiedname>TmcCoeInterpreter::safeOperationalState</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="269" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1aac5a3d9f2b63cfe20473cd8fefc530dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::operationalState</definition>
+        <argsstring>(uint8_t slave_number, bool b_init)</argsstring>
+        <name>operationalState</name>
+        <qualifiedname>TmcCoeInterpreter::operationalState</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>b_init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="270" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a6d3c415d74ab4bcb67fd5c06f854c5d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string TmcCoeInterpreter::getSlaveName</definition>
+        <argsstring>(uint8_t slave_number)</argsstring>
+        <name>getSlaveName</name>
+        <qualifiedname>TmcCoeInterpreter::getSlaveName</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="271" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a5664a3864757ad0087e418374ef55045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>nmt_state_t</type>
+        <definition>nmt_state_t TmcCoeInterpreter::changeNMTState</definition>
+        <argsstring>(uint8_t slave_number, nmt_state_t state)</argsstring>
+        <name>changeNMTState</name>
+        <qualifiedname>TmcCoeInterpreter::changeNMTState</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>nmt_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="272" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a329098550aa8bf1d6b3ec7e5da3529a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fsa_state_t</type>
+        <definition>fsa_state_t TmcCoeInterpreter::changeCiA402State</definition>
+        <argsstring>(uint8_t slave_number, fsa_state_t state)</argsstring>
+        <name>changeCiA402State</name>
+        <qualifiedname>TmcCoeInterpreter::changeCiA402State</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>fsa_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="273" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1abcf16dbaa9ebe37f39e39ed1036cbf3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::isStatusWordState</definition>
+        <argsstring>(uint8_t slave_number, fsa_state_t state)</argsstring>
+        <name>isStatusWordState</name>
+        <qualifiedname>TmcCoeInterpreter::isStatusWordState</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>fsa_state_t</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="274" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1ac8c9f9b63183b9e781b72f5d2572660f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>fsa_state_t</type>
+        <definition>fsa_state_t TmcCoeInterpreter::checkStatusWordState</definition>
+        <argsstring>(uint8_t slave_number)</argsstring>
+        <name>checkStatusWordState</name>
+        <qualifiedname>TmcCoeInterpreter::checkStatusWordState</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="275" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1ad454432a0a5ff022fec4a69ff74f0253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t TmcCoeInterpreter::setControlWord</definition>
+        <argsstring>(uint8_t slave_number, fsa_state_t response_SW, control_word_val_t requested_CW)</argsstring>
+        <name>setControlWord</name>
+        <qualifiedname>TmcCoeInterpreter::setControlWord</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>fsa_state_t</type>
+          <declname>response_SW</declname>
+        </param>
+        <param>
+          <type>control_word_val_t</type>
+          <declname>requested_CW</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="276" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a8c77c1761a6b67c8a57db073e3dd9e6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::stopInterface</definition>
+        <argsstring>()</argsstring>
+        <name>stopInterface</name>
+        <qualifiedname>TmcCoeInterpreter::stopInterface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="278" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a07c72d72581c4508a5c5b3890a3f76df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TmcCoeInterpreter::getCycleCounter</definition>
+        <argsstring>()</argsstring>
+        <name>getCycleCounter</name>
+        <qualifiedname>TmcCoeInterpreter::getCycleCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="279" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1aac1ee6d9d85c0907e6d8a9e555e44ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::startCycleCounter</definition>
+        <argsstring>()</argsstring>
+        <name>startCycleCounter</name>
+        <qualifiedname>TmcCoeInterpreter::startCycleCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="280" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1af9c5cd47bed3e2810d20284144a59507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::stopCycleCounter</definition>
+        <argsstring>()</argsstring>
+        <name>stopCycleCounter</name>
+        <qualifiedname>TmcCoeInterpreter::stopCycleCounter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="281" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a472719f41a0904d8a19edb3e1b232820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::isCycleFinished</definition>
+        <argsstring>()</argsstring>
+        <name>isCycleFinished</name>
+        <qualifiedname>TmcCoeInterpreter::isCycleFinished</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="282" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1acc38b630ce87bb4457b2497777a7314b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::createProcessDataThread</definition>
+        <argsstring>()</argsstring>
+        <name>createProcessDataThread</name>
+        <qualifiedname>TmcCoeInterpreter::createProcessDataThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="283" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a62be7f7e7cfa90186430cb0574923c7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TmcCoeInterpreter::createErrorCheckThread</definition>
+        <argsstring>()</argsstring>
+        <name>createErrorCheckThread</name>
+        <qualifiedname>TmcCoeInterpreter::createErrorCheckThread</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="284" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1aceaa431c34836b9cb4b5c1fcea0d7a8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::readSDO</definition>
+        <argsstring>(uint8_t slave_number, std::string object_name, std::string *value)</argsstring>
+        <name>readSDO</name>
+        <qualifiedname>TmcCoeInterpreter::readSDO</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>object_name</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="286" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeInterpreter_1a1058acb9761821c4e1033330bbbb74da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TmcCoeInterpreter::writeSDO</definition>
+        <argsstring>(uint8_t slave_number, std::string object_name, std::string *value)</argsstring>
+        <name>writeSDO</name>
+        <qualifiedname>TmcCoeInterpreter::writeSDO</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>object_name</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="287" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="226" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="227" bodyend="288"/>
+    <listofallmembers>
+      <member refid="classTmcCoeInterpreter_1a18c7b6dba73cce1264fc3db9b0f5f550" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>all_datatype_</name></member>
+      <member refid="classTmcCoeInterpreter_1aa6c72b2a4494769491b32974d1a3f2f4" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>all_index_</name></member>
+      <member refid="classTmcCoeInterpreter_1a5e6924fea6b69a161c1edbaf94f3a97e" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>all_obj_name_</name></member>
+      <member refid="classTmcCoeInterpreter_1a2c6723656449d1a5bba0bacc874e918b" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>all_sub_index_</name></member>
+      <member refid="classTmcCoeInterpreter_1a5e4d5ad18e6021520f8d6580648e4572" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>b_cycle_finished_</name></member>
+      <member refid="classTmcCoeInterpreter_1af9b4c4c43251a6f4d46d380a63658707" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>b_exit_threads_</name></member>
+      <member refid="classTmcCoeInterpreter_1a08754da7c8632aa4ede2d27e71c2bb8f" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>b_interface_unresponsive_</name></member>
+      <member refid="classTmcCoeInterpreter_1a93a21846eaacf53bb6971f3900465b27" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>b_start_cycle_count_</name></member>
+      <member refid="classTmcCoeInterpreter_1a329098550aa8bf1d6b3ec7e5da3529a2" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>changeCiA402State</name></member>
+      <member refid="classTmcCoeInterpreter_1a5664a3864757ad0087e418374ef55045" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>changeNMTState</name></member>
+      <member refid="classTmcCoeInterpreter_1ac8c9f9b63183b9e781b72f5d2572660f" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>checkStatusWordState</name></member>
+      <member refid="classTmcCoeInterpreter_1a62be7f7e7cfa90186430cb0574923c7a" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>createErrorCheckThread</name></member>
+      <member refid="classTmcCoeInterpreter_1acc38b630ce87bb4457b2497777a7314b" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>createProcessDataThread</name></member>
+      <member refid="classTmcCoeInterpreter_1ae97deec216914f756b1c9a0444af46dc" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>cycle_counter_</name></member>
+      <member refid="classTmcCoeInterpreter_1ab55699b2506a3ab7f43cc192948a6a86" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>error_check_thread_</name></member>
+      <member refid="classTmcCoeInterpreter_1a39eab9954ce2e4c215533eac60c0f7cd" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>errorCheck</name></member>
+      <member refid="classTmcCoeInterpreter_1a07c72d72581c4508a5c5b3890a3f76df" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>getCycleCounter</name></member>
+      <member refid="classTmcCoeInterpreter_1a6d3c415d74ab4bcb67fd5c06f854c5d1" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>getSlaveName</name></member>
+      <member refid="classTmcCoeInterpreter_1a347b2aec5f5c7b552a2e6cfb347bd52d" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>initDictionary</name></member>
+      <member refid="classTmcCoeInterpreter_1a1d1135811953ae5845939ac6344eb7e7" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>initInterface</name></member>
+      <member refid="classTmcCoeInterpreter_1a8f88d8033c8d1f5a7d1fc95232edd0aa" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>input_pdo_</name></member>
+      <member refid="classTmcCoeInterpreter_1a2b9b45a3eee5c67b28718698be99f8b8" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>interface_timeout_</name></member>
+      <member refid="classTmcCoeInterpreter_1a1f85d06fab6d36250c4f56fdda419ab4" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>IOmap</name></member>
+      <member refid="classTmcCoeInterpreter_1a472719f41a0904d8a19edb3e1b232820" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>isCycleFinished</name></member>
+      <member refid="classTmcCoeInterpreter_1abcf16dbaa9ebe37f39e39ed1036cbf3d" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>isStatusWordState</name></member>
+      <member refid="classTmcCoeInterpreter_1a8b36b4d1176de1a39108347fee05924c" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>logger_</name></member>
+      <member refid="classTmcCoeInterpreter_1a1faa9c1349b18a65af4b06a2f6677bc6" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>logger_prefix_</name></member>
+      <member refid="classTmcCoeInterpreter_1aac5a3d9f2b63cfe20473cd8fefc530dd" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>operationalState</name></member>
+      <member refid="classTmcCoeInterpreter_1a25edc1e3c56314baafa17d4a20b99f1f" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>output_pdo_</name></member>
+      <member refid="classTmcCoeInterpreter_1aa16709d3bda1f01697a2774764f2b52c" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>processData</name></member>
+      <member refid="classTmcCoeInterpreter_1acf60980749785f32443391d5390b2d02" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>processdata_thread_</name></member>
+      <member refid="classTmcCoeInterpreter_1ae123eb274f01628c74f422a9564bd037" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>readSDO</name></member>
+      <member refid="classTmcCoeInterpreter_1a0d6cf142438865152f1e6ff64d96b5f1" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>readSDO</name></member>
+      <member refid="classTmcCoeInterpreter_1aceaa431c34836b9cb4b5c1fcea0d7a8b" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>readSDO</name></member>
+      <member refid="classTmcCoeInterpreter_1a59d8532fead76da07e452adaff8a151a" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>safeOperationalState</name></member>
+      <member refid="classTmcCoeInterpreter_1a70852ad550ae68257e5d56ad6c07ba3d" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>SDO_PDO_retries_</name></member>
+      <member refid="classTmcCoeInterpreter_1ad454432a0a5ff022fec4a69ff74f0253" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>setControlWord</name></member>
+      <member refid="classTmcCoeInterpreter_1aac1ee6d9d85c0907e6d8a9e555e44ebe" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>startCycleCounter</name></member>
+      <member refid="classTmcCoeInterpreter_1af9c5cd47bed3e2810d20284144a59507" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>stopCycleCounter</name></member>
+      <member refid="classTmcCoeInterpreter_1a8c77c1761a6b67c8a57db073e3dd9e6a" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>stopInterface</name></member>
+      <member refid="classTmcCoeInterpreter_1afb65176a540276ec471e1dbcdc0facfa" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>TmcCoeInterpreter</name></member>
+      <member refid="classTmcCoeInterpreter_1a25573aebfb88b1ac7dbb22cf8e985e40" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>work_count_</name></member>
+      <member refid="classTmcCoeInterpreter_1a565a3f68563a4d997f0d6ebd4f69ffd6" prot="private" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>writeSDO</name></member>
+      <member refid="classTmcCoeInterpreter_1a1058acb9761821c4e1033330bbbb74da" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>writeSDO</name></member>
+      <member refid="classTmcCoeInterpreter_1a7569c7110187be318c1af0a11a281de7" prot="public" virt="non-virtual"><scope>TmcCoeInterpreter</scope><name>~TmcCoeInterpreter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

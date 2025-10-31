@@ -1,0 +1,144 @@
+
+.. _program_listing_file_include_adrd2121_imu_adi_imu_ros2.hpp:
+
+Program Listing for File adi_imu_ros2.hpp
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_adi_imu_ros2.hpp>` (``include/adrd2121_imu/adi_imu_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef ADI_IMU_ROS2
+   #define ADI_IMU_ROS2
+   
+   //ROS2 Headers
+   #include "rclcpp/rclcpp.hpp"
+   
+   //C IMU Driver Headers
+   #include "adi_imu_driver.h"
+   #include "imu_spi_buffer.h"
+   #include "adi_imu_regmap.h"
+   #include "imu_spi_buffer_regmap.h"
+   
+   //IMU Driver ROS2 Headers
+   #include "adrd2121_imu_ros2_common.hpp"
+   
+   //CPP Headers
+   #include <memory>
+   #include <unistd.h>
+   
+   //CONSTANTS
+   #define DATA_RATE_DEFAULT 100
+   #define PROD_ID_DEFAULT 16470
+   #define TIME_BASE_CTRL_DEFAULT 10
+   #define MODE_DEFAULT 0
+   #define DEC_RATE_CONST 1
+   
+   
+   const int TIME_BASE_MIN =  0;
+   const int TIME_BASE_MAX = 13;
+   
+   const int IMU_ACCL_BIAS_SIZE = 3;
+   
+   const int IMU_GYRO_BIAS_SIZE = 3;
+   
+   const int IMU_ACCL_SCALE_SIZE = 3;
+   
+   const int IMU_GYRO_SCALE_SIZE = 3;
+   
+   const double GRAVITY_DEFAULT = 1.0;
+   const double GRAVITY_MAX = 9.81;
+   
+   class AdiImuRos2
+   {
+   public:
+     AdiImuRos2(const rclcpp::Node::SharedPtr& node, adi_imu_Device_t* p_device);
+     
+     ~AdiImuRos2();
+   
+     void loadParams(void);
+     
+     bool init(void);
+   
+     bool config(void);
+   
+     double getImuDataRateHz(void);
+   
+     bool triggerBiasCorrectionUpdate(void);
+   
+   
+   private:
+     adi_imu_Device_t* p_device_;
+   
+     std::shared_ptr<rclcpp::Node> node_;
+   
+     /********PARAMETERS********/
+     int imu_prod_id_;
+   
+     double gravity_;
+   
+     int imu_data_format_;
+   
+     int imu_data_rate_;
+   
+     bool b_imu_data_rdy_;
+   
+     int imu_data_rdy_line_;
+   
+     int imu_data_rdy_pol_;
+     
+     bool b_imu_sync_clk_;
+   
+     int imu_sync_clk_mode_;
+   
+     int imu_sync_clk_line_;
+   
+     int imu_sync_clk_pol_;
+   
+     bool b_imu_linear_g_comp_;
+   
+     bool b_imu_pp_align_;
+   
+     bool b_imu_update_bias_corr_;
+   
+     int imu_time_base_control_;
+   
+     int imu_accl_z_bias_null_;
+     
+     int imu_accl_y_bias_null_;
+   
+     int imu_accl_x_bias_null_;
+   
+     int imu_gyro_z_bias_null_;
+   
+     int imu_gyro_y_bias_null_;
+   
+     int imu_gyro_x_bias_null_;
+   
+     bool b_update_imu_accl_bias_;
+   
+     std::vector<long>imu_accl_bias_;
+   
+     bool b_update_imu_gyro_bias_;
+   
+     std::vector<long> imu_gyro_bias_;
+     
+     bool b_update_imu_accl_scale_;
+   
+     std::vector<long> imu_accl_scale_;
+   
+     bool b_update_imu_gyro_scale_;
+   
+     std::vector<long> imu_gyro_scale_;
+   
+     double actual_imu_data_rate_;       
+   };
+   
+   #endif //ADI_IMU_ROS2

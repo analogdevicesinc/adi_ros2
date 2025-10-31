@@ -1,0 +1,14 @@
+.. _exhale_define_adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963:
+
+Define DATA_RATE_DEFAULT
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DATA_RATE_DEFAULT
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20:
+
+Define MIN_CLEAR_TIMEOUT
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MIN_CLEAR_TIMEOUT
+   :project: adrd2121_imu Doxygen Project

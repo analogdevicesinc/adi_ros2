@@ -1,0 +1,14 @@
+.. _exhale_function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f:
+
+Function biasGracefulShutdownHandler
+====================================
+
+- Defined in :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: biasGracefulShutdownHandler(int)
+   :project: adrd2121_imu Doxygen Project

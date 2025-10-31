@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_3ca2801ac697cd49d75efae16e3f45f8" kind="dir">
+    <compoundname>include/adrd2121_imu</compoundname>
+    <innerfile refid="adi__imu__buf__ros2_8hpp">adi_imu_buf_ros2.hpp</innerfile>
+    <innerfile refid="adi__imu__ros2_8hpp">adi_imu_ros2.hpp</innerfile>
+    <innerfile refid="adrd2121__imu__ros2__common_8hpp">adrd2121_imu_ros2_common.hpp</innerfile>
+    <innerfile refid="adrd2121__imu__ros2__node_8hpp">adrd2121_imu_ros2_node.hpp</innerfile>
+    <innerfile refid="bias__estimate__node__ros2_8hpp">bias_estimate_node_ros2.hpp</innerfile>
+    <innerfile refid="imu__buf__ros2_8hpp">imu_buf_ros2.hpp</innerfile>
+    <innerfile refid="imu__state__checker__ros2_8hpp">imu_state_checker_ros2.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/"/>
+  </compounddef>
+</doxygen>

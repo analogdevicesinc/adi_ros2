@@ -1,0 +1,17 @@
+.. _exhale_class_classADI3DToFFloorDetectorOutputInfo:
+
+Class ADI3DToFFloorDetectorOutputInfo
+=====================================
+
+- Defined in :ref:`file_include_adi_3dtof_floor_detector_output_info.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFFloorDetectorOutputInfo
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

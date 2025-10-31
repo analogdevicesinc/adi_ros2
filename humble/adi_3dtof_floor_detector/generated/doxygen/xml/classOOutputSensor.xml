@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classOOutputSensor" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>OOutputSensor</compoundname>
+    <derivedcompoundref refid="classOutputSensorFile" prot="public" virt="non-virtual">OutputSensorFile</derivedcompoundref>
+    <includes refid="output__sensor_8h" local="no">output_sensor.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classOOutputSensor_1a7147da44b9883ddab35177147370a814" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OOutputSensor::open</definition>
+        <argsstring>(std::string input_file_name, int image_width, int image_height, OutputFlag output_flag)=0</argsstring>
+        <name>open</name>
+        <qualifiedname>OOutputSensor::open</qualifiedname>
+        <reimplementedby refid="classOutputSensorFile_1aa7ccae7a12679d7bb46df6e7500327be">open</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>input_file_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <param>
+          <type>OutputFlag</type>
+          <declname>output_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor.h" line="36" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOOutputSensor_1a66a9dd7cbe5f53c1b4ccbe4d4e266c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OOutputSensor::write</definition>
+        <argsstring>(int frame_number, const cv::Mat &amp;m_out_visualization_image, bool floor_detection_status, int ransac_iterations, int noise_count, float ransac_time_out)=0</argsstring>
+        <name>write</name>
+        <qualifiedname>OOutputSensor::write</qualifiedname>
+        <reimplementedby refid="classOutputSensorFile_1abaced217cdb659524fd297c0bc4a2024">write</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>frame_number</declname>
+        </param>
+        <param>
+          <type>const cv::Mat &amp;</type>
+          <declname>m_out_visualization_image</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>floor_detection_status</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ransac_iterations</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>noise_count</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ransac_time_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor.h" line="38" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classOOutputSensor_1ad9403fbf58e60445cba30c9ae2782ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void OOutputSensor::close</definition>
+        <argsstring>()=0</argsstring>
+        <name>close</name>
+        <qualifiedname>OOutputSensor::close</qualifiedname>
+        <reimplementedby refid="classOutputSensorFile_1aee6a2f09c050a443822329044fd8809f">close</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/output_sensor.h" line="42" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is base class for output. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>OOutputSensor</label>
+        <link refid="classOOutputSensor"/>
+      </node>
+      <node id="2">
+        <label>OutputSensorFile</label>
+        <link refid="classOutputSensorFile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/output_sensor.h" line="33" column="1" bodyfile="include/output_sensor.h" bodystart="34" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classOOutputSensor_1ad9403fbf58e60445cba30c9ae2782ee9" prot="public" virt="pure-virtual"><scope>OOutputSensor</scope><name>close</name></member>
+      <member refid="classOOutputSensor_1a7147da44b9883ddab35177147370a814" prot="public" virt="pure-virtual"><scope>OOutputSensor</scope><name>open</name></member>
+      <member refid="classOOutputSensor_1a66a9dd7cbe5f53c1b4ccbe4d4e266c3c" prot="public" virt="pure-virtual"><scope>OOutputSensor</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

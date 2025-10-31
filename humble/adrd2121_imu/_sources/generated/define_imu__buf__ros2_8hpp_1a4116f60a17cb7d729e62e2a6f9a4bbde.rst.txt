@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde:
+
+Define MAX_CLEAR_TIMEOUT
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_CLEAR_TIMEOUT
+   :project: adrd2121_imu Doxygen Project

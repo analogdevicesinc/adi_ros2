@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classADI3DToFFloorDetector" kind="class"><name>ADI3DToFFloorDetector</name>
+    <member refid="classADI3DToFFloorDetector_1a9240e9f0f19fcdb6e53b2b97c747a0d2" kind="variable"><name>timer_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ad3bb804dce8b4852b87c76439241d257" kind="variable"><name>input_sensor_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a1412d0435ff0ed7616072eb1fe2584d5" kind="variable"><name>output_sensor_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a14c67e9b47ca7074d3bc4cc15878f370" kind="variable"><name>image_proc_utils_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a79556742f2ad1759379291451438933b" kind="variable"><name>floor_plane_detection_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a4d76e70070d18841a61fde22042083bb" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9fa32c13ebd7003e86a6f572df74ea0a" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a084d17b30fec46633700baf945d19fc4" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ac2a8f4aee82e914b3a01019f51aee503" kind="variable"><name>input_sensor_mode_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a8defa18a583dc8b88b0c22eb445d4fca" kind="variable"><name>output_sensor_mode_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0bc44aaa8d22b867b96260a3641abcd0" kind="variable"><name>camera_link_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a96393b6036938452fe8b8ff4bd74a709" kind="variable"><name>optical_camera_link_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a31f7e3b75add4a8463c5d6fc44cfee9b" kind="variable"><name>enable_compression_op_image_topics_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a7d2949b871cf05d010dff669bc127d55" kind="variable"><name>enable_pointcloud_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a6b1ba8da13f4e65e4bc47f65a0e220fe" kind="variable"><name>ab_threshold_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0b9fcdca396dc45b26bb9fabeb8845f4" kind="variable"><name>confidence_threshold_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aa14235a8de0eff0bddf5b8f57386899e" kind="variable"><name>camera_map_tf_buffer_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aa4a3c682a5353e104d45700f0d7f50fd" kind="variable"><name>camera_map_tf_listener_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a8d441638538daff6c307002543188377" kind="variable"><name>optical_map_tf_buffer_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a003b2282861928b7a9347a13840fa93b" kind="variable"><name>optical_map_tf_listener_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ad91bb6e7cb56468ad5435cf4146896e5" kind="variable"><name>input_file_name_</name></member>
+    <member refid="classADI3DToFFloorDetector_1af183ddda88cccacf27416f9257dfc67a" kind="variable"><name>input_sensor_ip_</name></member>
+    <member refid="classADI3DToFFloorDetector_1acdb6e67170ca3632e4933045bc0b1240" kind="variable"><name>encoding_type_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a31f191e9dd48fa17142efec2ade5dbde" kind="variable"><name>output_file_name_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a6ed1d78d7127e01aadd0635fa383187f" kind="variable"><name>cam_info_msg_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ae0ebbd28a3a1d7336607fe6456ae64ee" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a17579dfd3ffb5a3fe81e219bbf4e843a" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ac5485f6c9eb91bd80f965e8d5a5a2ff0" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a39a027854b46cf27d94484dbf7240826" kind="variable"><name>input_xyz_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a29f9f5f180dcdecccb5aff7e1d51eeb0" kind="variable"><name>output_xyz_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0a58cd94b94ea632113ca28fca81c301" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a2ab570b700730622c999404978616d7e" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a7ec01b0773040664825a35feb360a745" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0cd84b58b13e4194f3245ffb5ddd6bd0" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aaca043ad2f1cde1807cf266487c20a8e" kind="variable"><name>depth_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a4325141503104a2bb5aef3391f02fbe9" kind="variable"><name>ab_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aa64778eb6ea1bd4c33b2176b465e08cd" kind="variable"><name>floor_mask_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aab2b260c7b7391523ed75250d61b93c4" kind="variable"><name>compressed_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1acd8b2a936df52a47dab6c9d913ed2d21" kind="variable"><name>compressed_ab_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a392817750ad9716fff64f215facf4ce8" kind="variable"><name>compressed_floor_mask_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9c52a2daf199d13cc2427f275e86b952" kind="variable"><name>xyz_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1abf96910c265f108b0818bb9d2c3b63dd" kind="variable"><name>depth_info_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a22edfb87411e9e416428089168cd2dec" kind="variable"><name>depth_intrinsics_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aabe8fcb8594772dd95398f613debcbe1" kind="variable"><name>depth_extrinsics_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a09cd37bf8d8160c07f2ec1830abd8eec" kind="variable"><name>depth_extrinsics_external_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a1d1ad87e428615259f50f34f42b1a068" kind="variable"><name>process_output_thread_abort_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0c075e3f6de39793a8c3c5068b8f44fe" kind="variable"><name>read_input_thread_abort_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9a464435274689b287c2d2c67d1aaa86" kind="variable"><name>output_thread_mtx_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ac467f4267319d6f5f7384e33c3e1e7a2" kind="variable"><name>input_thread_mtx_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9616dd88f48a71c84b89693e59a16576" kind="variable"><name>max_input_queue_length_</name></member>
+    <member refid="classADI3DToFFloorDetector_1af5833ac8911b09d3a50a3d903122eb58" kind="variable"><name>input_frames_queue_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9d6b6e9c56bb9d9f2de37bfdae2fa271" kind="variable"><name>max_output_queue_length_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aefbe65cf00bb2315dab8f01fef503190" kind="variable"><name>output_node_queue_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aa51052c9aac641d040f410af720a65b3" kind="variable"><name>error_in_frame_read_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ae2c59c07d496da31a4cfb1300c3cc269" kind="variable"><name>processing_scale_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ae333cd4a81f1c1e984005d3b3ac4f8da" kind="variable"><name>curr_frame_timestamp_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a4cfc7263ad6e8e1d22932fc489d3c513" kind="variable"><name>dynamic_reconf_params_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a36bc21db5a3fc90e2f2d7c42cb013169" kind="variable"><name>param_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a8bdc8058b63144f5ee6ee9f9c4f91514" kind="variable"><name>callback_handle_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ad3b647800ba52d62c6b012916addf8a7" kind="variable"><name>enable_ransac_floor_detection_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aeedb01de822e37e8a51cdab6f885a78c" kind="variable"><name>enable_fallback_floor_detection_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a53081fd0defb612000197296da3d475d" kind="variable"><name>ransac_floor_detection_status_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a069d4fe5379c84a856c057f69e394a5b" kind="variable"><name>camera_roll_rad_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a2de6620f823fc0db1c6e8ea630f49f14" kind="variable"><name>camera_pitch_rad_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a90648fd056c940bc5fd266680e534088" kind="variable"><name>camera_yaw_rad_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a1926e118fe61a1c2b32a2e6bd627b375" kind="variable"><name>camera_tilted_</name></member>
+    <member refid="classADI3DToFFloorDetector_1afe450080a108ef532d375b07cd467067" kind="variable"><name>ransac_distance_threshold_mtr_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a7ac05b2f37b1cdc9bda93f5cb8b769bb" kind="variable"><name>ransac_max_iterations_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a9564f69a09e81d6a5a7e1bfcf13b6e42" kind="variable"><name>camera_height_mtr_</name></member>
+    <member refid="classADI3DToFFloorDetector_1ade4491964f709c50460e345dbd3130de" kind="variable"><name>discard_distance_threshold_mtr_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a99710fb654fc95a32a814face6355570" kind="variable"><name>noise_count_</name></member>
+    <member refid="classADI3DToFFloorDetector_1aca60433b4b213dd86378f26a12d31c7f" kind="variable"><name>ransac_iterations_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a01615b0c30635a7c8f610f5d01d6a9d6" kind="variable"><name>ransac_time_ms_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a5b880b7b656dd6dd88e754c0067c1c0b" kind="variable"><name>fallback_floor_height_offset_mtr_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a8bb728502a69503c358cd93c3fc699a0" kind="variable"><name>floor_distance_threshold_mm_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a0d5ee37ae81b1c20b0bb19a07d2dc1ae" kind="variable"><name>floor_mask_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a2921da2c0e33a85883cbe30b37178061" kind="variable"><name>compressed_floor_mask_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a87338f0ed4a422ba56b63d1f6b02ee5a" kind="variable"><name>compressed_floor_pixels_</name></member>
+    <member refid="classADI3DToFFloorDetector_1a73f9c7b705072cd99bbd213c2ba01c7b" kind="function"><name>ADI3DToFFloorDetector</name></member>
+    <member refid="classADI3DToFFloorDetector_1a57e908be7fd33a4e7a416f81c98cae01" kind="function"><name>timerCallback</name></member>
+    <member refid="classADI3DToFFloorDetector_1a5ed413a898ab2ea93f285a4d206f4f64" kind="function"><name>runFloorDetection</name></member>
+    <member refid="classADI3DToFFloorDetector_1a122b929cd63c2b99170fc9fe6aa42e80" kind="function"><name>processOutput</name></member>
+    <member refid="classADI3DToFFloorDetector_1acdc05dcf3fecac436192e372202a6ad8" kind="function"><name>processOutputAbort</name></member>
+    <member refid="classADI3DToFFloorDetector_1a70aed45858c0fcc2cde5f6ee07833681" kind="function"><name>readInputAbort</name></member>
+    <member refid="classADI3DToFFloorDetector_1a4d32995292d09303f44ae3e902d34688" kind="function"><name>readInput</name></member>
+    <member refid="classADI3DToFFloorDetector_1a1550e73aa67abb22392d5101bd71dc54" kind="function"><name>floorDetectorIOThreadGetNextFrame</name></member>
+    <member refid="classADI3DToFFloorDetector_1acecd1587ab0249f229327102d86445bd" kind="function"><name>floorDetectorIOThreadGetNext</name></member>
+    <member refid="classADI3DToFFloorDetector_1ae424c6092840457163c1248876be765b" kind="function"><name>updateDynamicReconfigureVariablesInputThread</name></member>
+    <member refid="classADI3DToFFloorDetector_1aca6e3fab0c1df214f1372912247a542b" kind="function"><name>updateDynamicReconfigureVariablesProcessThread</name></member>
+    <member refid="classADI3DToFFloorDetector_1a591b7ddccb156e4f38c9af1375566e34" kind="function"><name>~ADI3DToFFloorDetector</name></member>
+    <member refid="classADI3DToFFloorDetector_1a2bc7fdfd4816eb4af019d781444bdadd" kind="function"><name>publishImageAndCameraInfo</name></member>
+    <member refid="classADI3DToFFloorDetector_1ae72eb48f31f863c873d054043bd47c1b" kind="function"><name>publishImageAndCameraInfo</name></member>
+    <member refid="classADI3DToFFloorDetector_1a619a2d4eb9bfba6e7952438c5893f185" kind="function"><name>fillAndPublishCameraInfo</name></member>
+    <member refid="classADI3DToFFloorDetector_1aa7f077b8a3862b8430b396beb9ff0aba" kind="function"><name>publishImageAsRosMsg</name></member>
+    <member refid="classADI3DToFFloorDetector_1afb42ec842c4f5266c826a64a7700977a" kind="function"><name>publishCompressedImageAsRosMsg</name></member>
+    <member refid="classADI3DToFFloorDetector_1a874d95ab74251e3288b772535211decb" kind="function"><name>publishPointCloud</name></member>
+    <member refid="classADI3DToFFloorDetector_1a3bcf261a35f49fff9f58c6d67ce26b27" kind="function"><name>getFloorDetectionOutput</name></member>
+    <member refid="classADI3DToFFloorDetector_1a3e642e84ed828a1f6983962cc8b7d13a" kind="function"><name>initSettingsForDynamicReconfigure</name></member>
+    <member refid="classADI3DToFFloorDetector_1af5baaf31642d8bde24a03097122f6778" kind="function"><name>getCameraLinksTF</name></member>
+    <member refid="classADI3DToFFloorDetector_1a33749fe40ff1cd220a6bc82450242761" kind="function"><name>processOutputDone</name></member>
+    <member refid="classADI3DToFFloorDetector_1a428119c6b53d84577413f3859bc53837" kind="function"><name>processOutputStart</name></member>
+    <member refid="classADI3DToFFloorDetector_1a507d61481883bd0780a2290414483761" kind="function"><name>floorDetectorIOThreadPushOutputNode</name></member>
+    <member refid="classADI3DToFFloorDetector_1a67a002b7ab97f92dbde5ef1a024bacc3" kind="function"><name>rotatePointCloud</name></member>
+    <member refid="classADI3DToFFloorDetector_1a18178c54ae7855801e2d3982b0e15fee" kind="function"><name>parametersCallback</name></member>
+  </compound>
+  <compound refid="classADI3DToFFloorDetectorExample" kind="class"><name>ADI3DToFFloorDetectorExample</name>
+    <member refid="classADI3DToFFloorDetectorExample_1a186be5d571d50d6a1a36ceeaa60d54f3" kind="typedef"><name>sync_policy_depth_floor_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a8da4957d49642c1e19b445cedaa115b6" kind="typedef"><name>sync_policy_compressed_depth_floor_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ad136b921447da6a188ec056c8d274127" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a3f33c96a4805f10c4287e8eb5d7d6c82" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a0d60ce579f3558c6475687a41ec1f158" kind="variable"><name>cam_prefix_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a9d6d818fcf1d801273569873ec2f8607" kind="variable"><name>frame_counter_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a36371f6b57c6309ee4b1d8688068e5be" kind="variable"><name>enable_pointcloud_output_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aac8dae27af3a86ba3706ce68a4b606e1" kind="variable"><name>camera_parameters_updated_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a6644cb2141aac90a44056ef3911fc003" kind="variable"><name>camera_intrinsics_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a471873ede53e227300791563451800fc" kind="variable"><name>image_proc_utils_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a1782c1ffaa6901a1d518bf8d3853b55a" kind="variable"><name>tf_buffer_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a719af459f0535ab663b6b234744f012a" kind="variable"><name>tf_listener_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a1a2144403c69f48aa30b6d2b71bc02bf" kind="variable"><name>transformed_pc_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aaeceb01db295f0fb962dbcbebe396b41" kind="variable"><name>camera_info_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a75fb542e71e96c57d9d057b953e649d8" kind="variable"><name>depth_image_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a586e133e1200358523d2be65327479a5" kind="variable"><name>ab_image_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a8fb5a25169ad1a731298aae79854fb71" kind="variable"><name>floor_mask_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1af4063e989eab00b28d055ed27bfce5c4" kind="variable"><name>compressed_depth_image_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a0a6e0b0366195dc3d2066cc5187e2478" kind="variable"><name>compressed_ab_image_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ad438615d5478aa4b9211fc41f615083c" kind="variable"><name>compressed_floor_mask_topic_name_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1acfe13f93b79e16e7e7be8a1719a979ec" kind="variable"><name>timer_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aff66c244466da48ccb0bf5111627304d" kind="variable"><name>camera_info_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ab2f0e8fe289268ad546dab8c56584548" kind="variable"><name>depth_image_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a886ce06aabd45ec9e12304793611635f" kind="variable"><name>ab_image_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ab6c21a06f7820287322aa0bd65df2f19" kind="variable"><name>floor_mask_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a26bc928fee1f307374bcf902c37130de" kind="variable"><name>compressed_depth_image_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a395cdf6df949c3e578f88b4317b9e363" kind="variable"><name>compressed_ab_image_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a361d8f5f581ff8dce437fd4421df167f" kind="variable"><name>compressed_floor_mask_subscriber_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ae53d12d3b9fec7c25f4ab5cdc1f6edf5" kind="variable"><name>sync_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a89b97d9be97f0e76c4a52ec8a05e4172" kind="variable"><name>sync_compressed_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ad97edb2177b2645d3fe4eb8b2d2f5861" kind="variable"><name>depth_image_recvd_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aca4768c4e682a4c94827d9c42ce6948e" kind="variable"><name>ab_image_recvd_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a561013c3792b6f5cdcd460112ad65866" kind="variable"><name>floor_mask_image_recvd_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ae9185da338752219c64a2a112c502027" kind="variable"><name>depth_image_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a27feddb698a01a4a07e3d1ecd031c3f3" kind="variable"><name>ab_image_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a5ce004498d4efe825c77a995812c26d4" kind="variable"><name>floor_mask_image_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a49212e87fb3f2ae7d593fe93f68cd9a8" kind="variable"><name>xyz_image_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a51f2b4dab48c2060192aa2246a910d06" kind="variable"><name>stamp_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a289b5143081535f68e7f223602e9b675" kind="variable"><name>frame_id_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a4b2f3a36350290105124c0fd07d15b81" kind="variable"><name>floor_removed_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aecec0350a0709cec4e347cec7e21d6ef" kind="variable"><name>floor_marked_depth_image_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1afcf6d6d58d61f4b5fca93e50dc51ff40" kind="variable"><name>floor_removed_pointcloud_publisher_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aae793847ccf27f71317e407f6b2b52e7" kind="variable"><name>curr_frame_timestamp_</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a9f14e2b2604044b674dd683ba873961e" kind="function"><name>ADI3DToFFloorDetectorExample</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a64cb25a71e1ab77e7ffa2a31fbb4a30d" kind="function"><name>~ADI3DToFFloorDetectorExample</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a5701f021276780b8e4d6c81d3c1c6e06" kind="function"><name>generateOutput</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aeabdef9f9737a9059fcdf8b61cdea4bf" kind="function"><name>camInfoCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a55708d12b562210b6cdbcb5933dd7b3a" kind="function"><name>depthImageCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a12ee1323c9ca32900a69e0ccd9f592c6" kind="function"><name>irImageCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a904457b46be42716337a4bdd0edae735" kind="function"><name>floorMaskImageCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1af4c64dc8b35a141e2af4b011183c48d8" kind="function"><name>syncCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a3d82402f6971aec2bc15e213f822bbdd" kind="function"><name>compressedDepthImageCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aa4f344169323a72441b718855c0ba159" kind="function"><name>compressedIrImageCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a74fbda03a120fe6286a504a5b9d5836e" kind="function"><name>compressedFloorMaskCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a02ed69f34bffffa0e7e87010abebfc2c" kind="function"><name>syncCompressedCallback</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a0c7b1e257a99a00ae2456f6998b0ca54" kind="function"><name>generateFloorRemovedPointCloud</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1aade488e22f52110f64aba22c31e7b6b4" kind="function"><name>convert2ROSPointCloudMsg</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1a30be3c8061bce6817d72f6160088587e" kind="function"><name>getFloorDetectionOutput</name></member>
+    <member refid="classADI3DToFFloorDetectorExample_1ae6cea0f40ceaccd680486a849d11544c" kind="function"><name>publishImageAsRosMsg</name></member>
+  </compound>
+  <compound refid="classADI3DToFFloorDetectorOutputInfo" kind="class"><name>ADI3DToFFloorDetectorOutputInfo</name>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a2ef544b1a67de7f876d23b113ee263d1" kind="variable"><name>image_width_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1afbe65775892056169b8d3419fe3b1f7a" kind="variable"><name>image_height_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1ad21d847bb5df67952d529bbf240d97b1" kind="variable"><name>frame_number_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a71261b5c67b124813a14d53006428e3a" kind="variable"><name>ransac_floor_detection_status_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a98f842743684ba46eaa9b545a4a781bb" kind="variable"><name>ransac_iterations_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1aca4b767d87ad4c7745250035b6c53d7e" kind="variable"><name>noise_count_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a529aab2b2588a125b95320fa8a260d62" kind="variable"><name>ransac_time_ms_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a60e6a4afb07a926516be5d5acb9bc4e0" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1acb38487b39a4d5739990df71080b96d1" kind="variable"><name>compressed_ab_frame_size_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a4020835093c3ba0a7aba8a494d7a31f4" kind="variable"><name>compressed_floor_mask_size_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a9352688dc566e712daa6e4f2c56df3c1" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a73113fa160b7528b62ee772fd16bea53" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a2eaed00e5b14d0034caf022d8a49e628" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a2cad8d02560a28c16f61ec2bd970a6db" kind="variable"><name>floor_mask_8bit_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a0c034ebac6b931c7fdeb51de0eb1da0b" kind="variable"><name>compressed_floor_mask_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1ae72ee63fe487984e044e8891ea32308d" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1aa2f0ab03405249cb96e470b281c2b7c6" kind="variable"><name>compressed_ab_frame_</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1aadf8f32c9facc3b6ccb7cbb6d6de443d" kind="function"><name>ADI3DToFFloorDetectorOutputInfo</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1a3ce07f2996e966e7d37d9af735201f82" kind="function"><name>~ADI3DToFFloorDetectorOutputInfo</name></member>
+    <member refid="classADI3DToFFloorDetectorOutputInfo_1adeefef6e54a3c6fb10d3785b79c903bc" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="classADISensorFrameInfo" kind="class"><name>ADISensorFrameInfo</name>
+    <member refid="classADISensorFrameInfo_1a420907da74e5b17bf6b7f9ecbdc0cc06" kind="variable"><name>depth_image_</name></member>
+    <member refid="classADISensorFrameInfo_1a2f6c3d2cfa9e6d86883a00c9ede9420b" kind="variable"><name>ab_image_</name></member>
+    <member refid="classADISensorFrameInfo_1af1effb1c74f213a29e26d9da26b1086a" kind="variable"><name>frame_timestamp_</name></member>
+    <member refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" kind="function"><name>ADISensorFrameInfo</name></member>
+    <member refid="classADISensorFrameInfo_1ad93b88f3ecfce25856baf6dcea1df841" kind="function"><name>~ADISensorFrameInfo</name></member>
+  </compound>
+  <compound refid="classADTF31xxSensorFrameInfo" kind="class"><name>ADTF31xxSensorFrameInfo</name>
+    <member refid="classADTF31xxSensorFrameInfo_1a16ccb5b22e0cd47a427797a73f712972" kind="variable"><name>image_width_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a26d9bce4751ecaaa3ff46a7554be9d2e" kind="variable"><name>image_height_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a787f73ded74c3a1383ce33b5ed1c7d65" kind="variable"><name>depth_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a478b9945e7f45ff8ca176bedcc459175" kind="variable"><name>ab_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a2900b3a5e6609318d4747b2720947130" kind="variable"><name>xyz_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1ac83b57cf7dcbacab15ba252948a29304" kind="variable"><name>rotated_xyz_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a60c3d7bd2844d9c9f23d51bcf90de967" kind="variable"><name>compressed_depth_frame_size_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1ab030b462166d0eae56c1fb8871226e7c" kind="variable"><name>compressed_depth_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1aee0a26f31430f36022195ad7a6871d47" kind="variable"><name>frame_timestamp_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a458c8d328371b381ca7883a69738902b" kind="variable"><name>modified_xyz_frame_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1ab32b6a152ac462ca5010f41935ff0dc7" kind="variable"><name>modified_xyz_frame_size_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1afc3141d4c7bfa6fd499f7c5f89c58c9d" kind="variable"><name>nearby_objects_found_flag_</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1afae0c0b2743410daedecf223f741521d" kind="function"><name>ADTF31xxSensorFrameInfo</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a6817e4132bb8e263d1a49ad2d340adb3" kind="function"><name>~ADTF31xxSensorFrameInfo</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a4ae5e3b48239e5c43b31ddb3360f4072" kind="function"><name>getDepthFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1ae5f51fb4e46cd93c0d45f01bc4bb5130" kind="function"><name>getIRFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a9271647c3cdf54d936edeea1a2568ffe" kind="function"><name>getXYZFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a8bf71fc15c7e42110c43cb1e9ddfeb8c" kind="function"><name>getRotatedXYZFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a16f4dfbad9c5df744f25cac9aba26b72" kind="function"><name>getCompressedDepthFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a0580cccfca341b7990367d73838c50b6" kind="function"><name>getFrameTimestampPtr</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a5f479d2ad8b5981831d7a454dc972c0d" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a31b6ab731eeb78542e9ab601ffe74c4a" kind="function"><name>getCompressedDepthFrameSize</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1aa2b371705acdaa9fdffc18164fcf8542" kind="function"><name>setCompressedDepthFrameSize</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a65f8083349a9319c367344b572d59765" kind="function"><name>setModifiedXYZFrameSize</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a27f74f9125dcff7207dec08db0f1e9f4" kind="function"><name>getModifiedXYZFrameSize</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a83af2cddf44a79357e4b0c3fb382d1d7" kind="function"><name>getModifiedXYZFrame</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a0abe26615b9d2b663facc2be343cce0e" kind="function"><name>getNearbyObjectsFoundFlagPtr</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1ac30bd8c2982bf295c00cabf39ac2626b" kind="function"><name>getNearbyObjectsFoundFlag</name></member>
+    <member refid="classADTF31xxSensorFrameInfo_1a89df1810d0ac1bdffade369411e9a2cc" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters" kind="struct"><name>ADI3DToFFloorDetector::DynamicReconfigureParameters</name>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1abc3a7d5a8bb384f2fe0c1ff9d07d3403" kind="variable"><name>ab_threshold</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a331211ae2c1add3fe777ef708ea8ed17" kind="variable"><name>confidence_threshold</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ae77ad508fd8d22a70f44ad13d0ea030f" kind="variable"><name>enable_ransac_floor_detection</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1ab2f281c0520b2115d6a1961bec6f99b4" kind="variable"><name>ransac_max_iterations</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a1d0d5eb51be7992d6a38ae78a07c2c4f" kind="variable"><name>ransac_distance_threshold_mtr</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a883da0cc395501f21aed386d1b9c56a6" kind="variable"><name>enable_fallback_floor_detection</name></member>
+    <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a415a44be0d269ce01f0775635193f842" kind="variable"><name>fallback_floor_height_offset_mtr</name></member>
+  </compound>
+  <compound refid="classInputSensorRosTopic" kind="class"><name>InputSensorRosTopic</name>
+    <member refid="classInputSensorRosTopic_1a8ff87563ab12f519027281f8a9608847" kind="typedef"><name>sync_policy_depth_ab_image</name></member>
+    <member refid="classInputSensorRosTopic_1a19080aec70bac5b4ecf61ec2782e60f7" kind="typedef"><name>depth_ab_image_synchronizer</name></member>
+    <member refid="classInputSensorRosTopic_1a635098210dea21873a315986b3321ee4" kind="variable"><name>in_file_name_</name></member>
+    <member refid="classInputSensorRosTopic_1a37ee8be70a61ddbae14e0736dfa7131b" kind="variable"><name>total_frames_</name></member>
+    <member refid="classInputSensorRosTopic_1a562b3e59530723b00bf9a148b660b4ee" kind="variable"><name>ros_topics_input_frames_queue_</name></member>
+    <member refid="classInputSensorRosTopic_1a5ce64557debd4b483665a8778ab78692" kind="variable"><name>camera_info_topic_name</name></member>
+    <member refid="classInputSensorRosTopic_1a54da44398e62a95692a0686ae35e3b19" kind="variable"><name>depth_image_topic_name</name></member>
+    <member refid="classInputSensorRosTopic_1abe403dd7e3f464a3a49e60eabd7bbca4" kind="variable"><name>ab_image_topic_name</name></member>
+    <member refid="classInputSensorRosTopic_1a6f077262bd6a91d23b8eb9baa9ccd8fc" kind="variable"><name>ros_topics_input_thread_mtx_</name></member>
+    <member refid="classInputSensorRosTopic_1a63ca2e6c23e033f057e2f3ad04d057ee" kind="variable"><name>camera_parameters_updated_</name></member>
+    <member refid="classInputSensorRosTopic_1a7769cab32352ff9370fe6ec9fdd44b09" kind="variable"><name>camera_intrinsics_</name></member>
+    <member refid="classInputSensorRosTopic_1a0697a072c34ae62eb91f832cad10e9b5" kind="variable"><name>frame_timestamp_</name></member>
+    <member refid="classInputSensorRosTopic_1a16372319fb03234d762b61a508606e91" kind="variable"><name>camera_info_subscriber_</name></member>
+    <member refid="classInputSensorRosTopic_1a11978f6f67d938fb3e2dfb63fc7604bc" kind="variable"><name>depth_image_subscriber_</name></member>
+    <member refid="classInputSensorRosTopic_1a20aa00c23cf839557c16abac2632fa64" kind="variable"><name>ab_image_subscriber_</name></member>
+    <member refid="classInputSensorRosTopic_1ae8e6c91406bf4bba844ee07ebac7da97" kind="variable"><name>depth_ab_image_sync_ptr_</name></member>
+    <member refid="classInputSensorRosTopic_1ace1c02de2cd7818607dec9f496fdaf34" kind="variable"><name>private_node_handle_</name></member>
+    <member refid="classInputSensorRosTopic_1afbf1e04c0074fc1838c22d53ed06ebb8" kind="function"><name>openSensor</name></member>
+    <member refid="classInputSensorRosTopic_1a748722a65cd556527e2cfe7186607a50" kind="function"><name>configureSensor</name></member>
+    <member refid="classInputSensorRosTopic_1aeee54c8e77673f59d873cd67ba50793f" kind="function"><name>getIntrinsics</name></member>
+    <member refid="classInputSensorRosTopic_1a1e8b02a295072098e64a7a3d49d4f727" kind="function"><name>getExtrinsics</name></member>
+    <member refid="classInputSensorRosTopic_1a758a978ca19e65526ee3a97c3eae60e9" kind="function"><name>readNextFrame</name></member>
+    <member refid="classInputSensorRosTopic_1a53201f4fc3c4e5cd6b243b6961731bfc" kind="function"><name>getFrameTimestamp</name></member>
+    <member refid="classInputSensorRosTopic_1aec18509d35ab824e013d913acd92a6c6" kind="function"><name>closeSensor</name></member>
+    <member refid="classInputSensorRosTopic_1aef5e1053c7473c33168b9199e58f5f72" kind="function"><name>syncDepthandIr</name></member>
+    <member refid="classInputSensorRosTopic_1ae2afb29cb0195dae6f61b4742c5cc37b" kind="function"><name>camInfoCallback</name></member>
+    <member refid="classInputSensorRosTopic_1ae8e1dae39d4acda6868c71d8e2e1713f" kind="function"><name>IrCallback</name></member>
+    <member refid="classInputSensorRosTopic_1a2b583037c7e64539b87a7359e8e1c7c0" kind="function"><name>DepthCallback</name></member>
+    <member refid="classInputSensorRosTopic_1a223b0cf1d23c55f91aae0850df15fcb5" kind="function"><name>setABinvalidationThreshold</name></member>
+    <member refid="classInputSensorRosTopic_1ae9657ce49afe88d78307de3c5424e933" kind="function"><name>setConfidenceThreshold</name></member>
+  </compound>
+  <compound refid="classOOutputSensor" kind="class"><name>OOutputSensor</name>
+    <member refid="classOOutputSensor_1a7147da44b9883ddab35177147370a814" kind="function"><name>open</name></member>
+    <member refid="classOOutputSensor_1a66a9dd7cbe5f53c1b4ccbe4d4e266c3c" kind="function"><name>write</name></member>
+    <member refid="classOOutputSensor_1ad9403fbf58e60445cba30c9ae2782ee9" kind="function"><name>close</name></member>
+  </compound>
+  <compound refid="classOutputSensorFactory" kind="class"><name>OutputSensorFactory</name>
+    <member refid="classOutputSensorFactory_1a545d16636c78d75cb9b049079c85b4b1" kind="function"><name>getOutputSensor</name></member>
+  </compound>
+  <compound refid="classOutputSensorFile" kind="class"><name>OutputSensorFile</name>
+    <member refid="classOutputSensorFile_1aa4f6c06505b82ebfe1dd5a17a322b6ab" kind="variable"><name>csv_enabled_</name></member>
+    <member refid="classOutputSensorFile_1aa4cd4e07a725ab1b2e39a916ca32dd23" kind="variable"><name>video_enabled_</name></member>
+    <member refid="classOutputSensorFile_1a2e74346a3d07c6ecc6aa488544224758" kind="variable"><name>output_csv_file_</name></member>
+    <member refid="classOutputSensorFile_1a47ec81ed3ed2fa1f46a14896c35099ce" kind="variable"><name>output_csv_file_name_</name></member>
+    <member refid="classOutputSensorFile_1afa7df88c88479e41323eb000cbf1ac4f" kind="variable"><name>output_video_writer_</name></member>
+    <member refid="classOutputSensorFile_1ac42ba228361139027418123f3c76bfcd" kind="variable"><name>output_video_file_name_</name></member>
+    <member refid="classOutputSensorFile_1aa7ccae7a12679d7bb46df6e7500327be" kind="function"><name>open</name></member>
+    <member refid="classOutputSensorFile_1abaced217cdb659524fd297c0bc4a2024" kind="function"><name>write</name></member>
+    <member refid="classOutputSensorFile_1aee6a2f09c050a443822329044fd8809f" kind="function"><name>close</name></member>
+    <member refid="classOutputSensorFile_1a108ab8f53a798801dfd2a55ab49c7eac" kind="function"><name>openOutputCsvFile</name></member>
+    <member refid="classOutputSensorFile_1a524d09b9d97e1df1435a645298db6d51" kind="function"><name>openOutputVideoFile</name></member>
+    <member refid="classOutputSensorFile_1ae9945e39a6fcbd091bcf091a93748f04" kind="function"><name>writeOutputCsvFile</name></member>
+    <member refid="classOutputSensorFile_1ac2ab2e483aac2118844ed7f6d7f8836e" kind="function"><name>writeOutputVideoFile</name></member>
+    <member refid="classOutputSensorFile_1aaa7f0121521658e85459954d0769772e" kind="function"><name>closeOutputCsvFile</name></member>
+    <member refid="classOutputSensorFile_1a5e881d94edc3b96185778065427da6c1" kind="function"><name>closeOutputVideoFile</name></member>
+  </compound>
+  <compound refid="namespacecompressed__depth__image__transport" kind="namespace"><name>compressed_depth_image_transport</name>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f" kind="enum"><name>compressionFormat</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fabdd6eee736e40089c46baf2ade802d07" kind="enumvalue"><name>UNDEFINED</name></member>
+    <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3fa8139d98ccd3698b3bfb23c35c55edae2" kind="enumvalue"><name>INV_DEPTH</name></member>
+  </compound>
+  <compound refid="namespacerclcpp" kind="namespace"><name>rclcpp</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono__literals" kind="namespace"><name>std::chrono_literals</name>
+  </compound>
+  <compound refid="adi__3dtof__floor__detector__example_8h" kind="file"><name>adi_3dtof_floor_detector_example.h</name>
+    <member refid="adi__3dtof__floor__detector__example_8h_1ad1816b3b4b0d9ebdf432a17f8ca5c825" kind="define"><name>MAX_QUEUE_SIZE_FOR_TIME_SYNC</name></member>
+  </compound>
+  <compound refid="adi__3dtof__floor__detector__node_8h" kind="file"><name>adi_3dtof_floor_detector_node.h</name>
+  </compound>
+  <compound refid="adi__3dtof__floor__detector__output__info_8h" kind="file"><name>adi_3dtof_floor_detector_output_info.h</name>
+  </compound>
+  <compound refid="adi__camera_8h" kind="file"><name>adi_camera.h</name>
+  </compound>
+  <compound refid="adi__sensor__frame__info_8h" kind="file"><name>adi_sensor_frame_info.h</name>
+  </compound>
+  <compound refid="adtf31xx__sensor__frame__info_8h" kind="file"><name>adtf31xx_sensor_frame_info.h</name>
+  </compound>
+  <compound refid="image__proc__utils_8h" kind="file"><name>image_proc_utils.h</name>
+    <member refid="image__proc__utils_8h_1a3099edd83970d62c2832b51423462420" kind="define"><name>QFORMAT_FOR_POINTCLOUD_LUT</name></member>
+    <member refid="image__proc__utils_8h_1a0e8d4dc4354184afaa680dea7bd67ca3" kind="define"><name>QFORMAT_FOR_POINTCLOUD_LUT_SHIFTED_VALUE</name></member>
+  </compound>
+  <compound refid="input__sensor_8h" kind="file"><name>input_sensor.h</name>
+  </compound>
+  <compound refid="input__sensor__adtf31xx_8h" kind="file"><name>input_sensor_adtf31xx.h</name>
+  </compound>
+  <compound refid="input__sensor__factory_8h" kind="file"><name>input_sensor_factory.h</name>
+  </compound>
+  <compound refid="input__sensor__file__rosbagbin_8h" kind="file"><name>input_sensor_file_rosbagbin.h</name>
+  </compound>
+  <compound refid="input__sensor__ros__topics_8h" kind="file"><name>input_sensor_ros_topics.h</name>
+  </compound>
+  <compound refid="module__profile_8h" kind="file"><name>module_profile.h</name>
+    <member refid="module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da" kind="define"><name>PROFILE_FUNCTION_START</name></member>
+    <member refid="module__profile_8h_1a429b699deab1043cbc596058f45199a4" kind="define"><name>PROFILE_FUNCTION_END</name></member>
+    <member refid="module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98" kind="define"><name>FLUSH_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416" kind="define"><name>INIT_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1" kind="define"><name>CLOSE_FUNCTION_PROFILE</name></member>
+    <member refid="module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16" kind="define"><name>PROFILE_ID_START</name></member>
+    <member refid="module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459" kind="define"><name>PROFILE_ID_END</name></member>
+    <member refid="module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2" kind="define"><name>PROFILE_ID</name></member>
+  </compound>
+  <compound refid="output__sensor_8h" kind="file"><name>output_sensor.h</name>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8" kind="enum"><name>OutputFlag</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8ae0eacd8b82b8cd74696c87bcd1a9665c" kind="enumvalue"><name>DisableAllOutputs</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8af1601044bd0c196db92e3cbc503e8281" kind="enumvalue"><name>EnableCSVOutputOnly</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8ae73c825bbdaedd6f3377182c83e5961f" kind="enumvalue"><name>EnableVideoOutputOnly</name></member>
+    <member refid="output__sensor_8h_1a46f7c277684d20859bec33db540acbc8acfc977380c5be2c63b7efccab3a61cbb" kind="enumvalue"><name>EnableAllOutputs</name></member>
+  </compound>
+  <compound refid="output__sensor__factory_8h" kind="file"><name>output_sensor_factory.h</name>
+  </compound>
+  <compound refid="output__sensor__file_8h" kind="file"><name>output_sensor_file.h</name>
+  </compound>
+  <compound refid="compression__common_8h" kind="file"><name>compression_common.h</name>
+  </compound>
+  <compound refid="rvl__codec_8h" kind="file"><name>rvl_codec.h</name>
+  </compound>
+  <compound refid="dir_4eab921792b8cc23f536bb47553d5451" kind="dir"><name>include/ros-perception/image_transport_plugins/compressed_depth_image_transport</name>
+  </compound>
+  <compound refid="dir_28e83b7d8e494d47a00b0dd64292e7fe" kind="dir"><name>include/ros-perception/image_transport_plugins</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_a6c1829d60e8505026f4bed88734a08b" kind="dir"><name>include/ros-perception</name>
+  </compound>
+</doxygenindex>

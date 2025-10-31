@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe:
+
+Variable SECS_TO_MIN
+====================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: SECS_TO_MIN
+   :project: adi_tmc_coe_core Doxygen Project

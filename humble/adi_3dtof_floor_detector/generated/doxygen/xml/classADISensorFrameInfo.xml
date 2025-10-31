@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classADISensorFrameInfo" kind="class" language="C++" prot="public">
+    <compoundname>ADISensorFrameInfo</compoundname>
+    <includes refid="adi__sensor__frame__info_8h" local="no">adi_sensor_frame_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classADISensorFrameInfo_1a420907da74e5b17bf6b7f9ecbdc0cc06" prot="public" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADISensorFrameInfo::depth_image_</definition>
+        <argsstring></argsstring>
+        <name>depth_image_</name>
+        <qualifiedname>ADISensorFrameInfo::depth_image_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_sensor_frame_info.h" line="43" column="10" bodyfile="include/adi_sensor_frame_info.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADISensorFrameInfo_1a2f6c3d2cfa9e6d86883a00c9ede9420b" prot="public" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADISensorFrameInfo::ab_image_</definition>
+        <argsstring></argsstring>
+        <name>ab_image_</name>
+        <qualifiedname>ADISensorFrameInfo::ab_image_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_sensor_frame_info.h" line="44" column="10" bodyfile="include/adi_sensor_frame_info.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADISensorFrameInfo_1af1effb1c74f213a29e26d9da26b1086a" prot="public" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ADISensorFrameInfo::frame_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>frame_timestamp_</name>
+        <qualifiedname>ADISensorFrameInfo::frame_timestamp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_sensor_frame_info.h" line="45" column="16" bodyfile="include/adi_sensor_frame_info.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADISensorFrameInfo::ADISensorFrameInfo</definition>
+        <argsstring>(int image_width, int image_height)</argsstring>
+        <name>ADISensorFrameInfo</name>
+        <qualifiedname>ADISensorFrameInfo::ADISensorFrameInfo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classADISensorFrameInfo" kindref="compound">ADISensorFrameInfo</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_sensor_frame_info.h" line="27" column="3" bodyfile="include/adi_sensor_frame_info.h" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classADISensorFrameInfo_1ad93b88f3ecfce25856baf6dcea1df841" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADISensorFrameInfo::~ADISensorFrameInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~ADISensorFrameInfo</name>
+        <qualifiedname>ADISensorFrameInfo::~ADISensorFrameInfo</qualifiedname>
+        <briefdescription>
+<para>Destroy the <ref refid="classADISensorFrameInfo" kindref="compound">ADISensorFrameInfo</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_sensor_frame_info.h" line="38" column="3" bodyfile="include/adi_sensor_frame_info.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is input class for sensor as camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_sensor_frame_info.h" line="18" column="1" bodyfile="include/adi_sensor_frame_info.h" bodystart="19" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classADISensorFrameInfo_1a2f6c3d2cfa9e6d86883a00c9ede9420b" prot="public" virt="non-virtual"><scope>ADISensorFrameInfo</scope><name>ab_image_</name></member>
+      <member refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" prot="public" virt="non-virtual"><scope>ADISensorFrameInfo</scope><name>ADISensorFrameInfo</name></member>
+      <member refid="classADISensorFrameInfo_1a420907da74e5b17bf6b7f9ecbdc0cc06" prot="public" virt="non-virtual"><scope>ADISensorFrameInfo</scope><name>depth_image_</name></member>
+      <member refid="classADISensorFrameInfo_1af1effb1c74f213a29e26d9da26b1086a" prot="public" virt="non-virtual"><scope>ADISensorFrameInfo</scope><name>frame_timestamp_</name></member>
+      <member refid="classADISensorFrameInfo_1ad93b88f3ecfce25856baf6dcea1df841" prot="public" virt="non-virtual"><scope>ADISensorFrameInfo</scope><name>~ADISensorFrameInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

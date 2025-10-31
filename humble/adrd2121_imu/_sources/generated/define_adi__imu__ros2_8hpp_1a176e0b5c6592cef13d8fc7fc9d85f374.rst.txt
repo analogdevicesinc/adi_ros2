@@ -1,0 +1,14 @@
+.. _exhale_define_adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374:
+
+Define TIME_BASE_CTRL_DEFAULT
+=============================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TIME_BASE_CTRL_DEFAULT
+   :project: adrd2121_imu Doxygen Project

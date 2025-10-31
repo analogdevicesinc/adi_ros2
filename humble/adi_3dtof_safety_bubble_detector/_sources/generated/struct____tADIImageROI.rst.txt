@@ -1,0 +1,17 @@
+.. _exhale_struct_struct____tADIImageROI:
+
+Struct __tADIImageROI
+=====================
+
+- Defined in :ref:`file_include_image_proc_utils.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: __tADIImageROI
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

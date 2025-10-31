@@ -1,0 +1,66 @@
+
+.. _file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp:
+
+File adrd2121_imu_ros2_node.hpp
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/adrd2121_imu_ros2_node.hpp``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu_buf_ros2.hpp`` (:ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`)
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``iostream``
+
+- ``memory``
+
+- ``rclcpp/node.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``unistd.h``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_adrd2121__imu__ros2__node_8hpp_1a9f65322fa10662aeacdf0c3dc14a7d11`
+
+- :ref:`exhale_function_adrd2121__imu__ros2__node_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9`
+

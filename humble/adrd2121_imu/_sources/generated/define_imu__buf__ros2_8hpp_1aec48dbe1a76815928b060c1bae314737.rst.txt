@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737:
+
+Define BURST_COUNT_MAX
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BURST_COUNT_MAX
+   :project: adrd2121_imu Doxygen Project

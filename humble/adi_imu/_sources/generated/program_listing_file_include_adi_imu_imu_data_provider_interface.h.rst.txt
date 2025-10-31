@@ -33,6 +33,7 @@ Program Listing for File imu_data_provider_interface.h
    #define ADI_IMU__IMU_DATA_PROVIDER_INTERFACE_H_
    
    #include <sensor_msgs/msg/imu.hpp>
+   #include <string>
    
    namespace adi_imu
    {
@@ -43,6 +44,8 @@ Program Listing for File imu_data_provider_interface.h
      ImuDataProviderInterface() {}
    
      virtual ~ImuDataProviderInterface() {}
+   
+     virtual void setFrameId(const std::string & frame_id) = 0;
    
      virtual bool getData(sensor_msgs::msg::Imu & message) = 0;
    };

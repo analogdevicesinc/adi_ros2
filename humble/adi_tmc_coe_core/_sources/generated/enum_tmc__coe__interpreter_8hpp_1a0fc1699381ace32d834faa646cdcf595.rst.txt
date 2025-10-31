@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595:
+
+Enum control_word_val_t
+=======================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: control_word_val_t
+   :project: adi_tmc_coe_core Doxygen Project
