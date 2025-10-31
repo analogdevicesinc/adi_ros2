@@ -8,6 +8,20 @@ export EXECUTOR
 OVERLAY ?= /opt/ros/adi_ros2
 export OVERLAY
 
+CMAKE_ARGS ?= -DCMAKE_BUILD_TYPE=Release
+export CMAKE_ARGS
+
+# Packages to skip during build (space-separated list)
+SKIP_PACKAGES ?=
+export SKIP_PACKAGES
+
+# Internal variable to handle skip packages argument
+ifneq ($(strip $(SKIP_PACKAGES)),)
+SKIP_PACKAGES_ARG = --packages-skip $(SKIP_PACKAGES)
+else
+SKIP_PACKAGES_ARG =
+endif
+
 all: help
 
 help:
@@ -19,6 +33,13 @@ help:
 	@echo "   3. make build-system     - build all ADI ROS2 package and install under /opt/ros/adi_ros2"
 	@echo "   4. make build-local      - build all ADI ROS2 packages locally in the current workspace"
 	@echo "   5. make clean            - clean all build artifacts"
+	@echo ""
+	@echo "   Variables:"
+	@echo "   	DEVICE_ID: ID of the target device (default: adis16505-2) - deprecated, use runtime parameter instead"
+	@echo "   	EXECUTOR: colcon executor to use (default: sequential)"
+	@echo "   	OVERLAY: installation directory for build-system (default: /opt/ros/adi_ros2)"
+	@echo "   	CMAKE_ARGS: additional cmake arguments (default: -DCMAKE_BUILD_TYPE=Release)"
+	@echo "   	SKIP_PACKAGES: space-separated list of packages to skip during build (default: none)"
 	@echo ""
 
 clone:
@@ -48,7 +69,8 @@ build-system:
 	 	--executor ${EXECUTOR} \
 		--install-base ${OVERLAY} \
 		--merge-install \
-		--cmake-args -DCMAKE_BUILD_TYPE=Release
+		--cmake-args ${CMAKE_ARGS} \
+		$(SKIP_PACKAGES_ARG)
 	@echo "Build artifacts location: ${OVERLAY}/"
 
 build-local:
@@ -57,7 +79,8 @@ build-local:
 		--event-handlers console_cohesion+ \
 	 	--executor ${EXECUTOR} \
 		--symlink-install \
-		--cmake-args -DCMAKE_BUILD_TYPE=Release
+		--cmake-args ${CMAKE_ARGS} \
+		$(SKIP_PACKAGES_ARG)
 	@echo "Build artifacts location: ${WORKSPACE}/"
 
 clean-build:

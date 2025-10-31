@@ -15,6 +15,22 @@ repositories:
     type: git
     url: https://github.com/analogdevicesinc/adi_3dtof_adtf31xx.git
     version: v2.1.0
+  adi_tmc_coe_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/adi_tmc_coe_ros2.git
+    version: humble
+  adrd2121_imu_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/adrd2121_imu_ros2.git
+    version: humble
+  algorithms/adi_3dtof_safety_bubble_detector:
+    type: git
+    url: https://github.com/analogdevicesinc/adi_3dtof_safety_bubble_detector.git
+    version: v2.1.0
+  algorithms/adi_3dtof_floor_detector:
+    type: git
+    url: https://github.com/analogdevicesinc/adi_3dtof_floor_detector.git
+    version: v2.1.0
   dependencies/libaditof:
     type: git
     url: https://github.com/analogdevicesinc/libaditof.git
