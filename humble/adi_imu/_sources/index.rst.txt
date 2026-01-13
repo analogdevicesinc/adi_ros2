@@ -6,17 +6,22 @@ adi_imu
 Publisher for ADI IMUs
 
 
-
 .. toctree::
    :maxdepth: 2
 
    Links <__links>
 
    C++ API <generated/index>
+
+
+.. toctree::
+   :maxdepth: 2
+
    Message Definitions <__message_definitions>
 
 
    Standard Documents <__standards>
+
 
 .. include:: __readme_include.rst
 

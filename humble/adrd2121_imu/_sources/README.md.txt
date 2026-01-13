@@ -11,7 +11,7 @@
 - Supported ROS2 Distro: Humble
 
 ## Software Architecture
-![Software Architecture Diagram](./docs/images/adrd2121_imu_ros2_Software_Architecture_Diagram.jpg)
+![Software Architecture Diagram](./doc/images/adrd2121_imu_ros2_Software_Architecture_Diagram.jpg)
 
 # Software Setup
 

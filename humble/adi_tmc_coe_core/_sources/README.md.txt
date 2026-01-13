@@ -24,15 +24,15 @@ Also the following:
 - 1 x 4 pin male M8 power supply cable
 
 The image below shows the connection diagram of the setup (with labels):
-![TMCM-1461 Connections](./docs/images/tmcm_1461_coe_setup.png)
+![TMCM-1461 Connections](./doc/images/tmcm_1461_coe_setup.png)
 
 The image below shows the actual setup used (for reference):
-![TMCM-1461 Actual Setup](./docs/images/tmcm_1461_coe_actual_setup.jpg)
+![TMCM-1461 Actual Setup](./doc/images/tmcm_1461_coe_actual_setup.jpg)
 
 # Software
 
 ## Software Architecture
-![Software Architecture Diagram](./docs/images/adi_tmc_coe_core_Software_Architecture_Diagram.png)
+![Software Architecture Diagram](./doc/images/adi_tmc_coe_core_Software_Architecture_Diagram.png)
 
 ## Software Dependencies
 Assumptions before building this package:

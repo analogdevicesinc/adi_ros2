@@ -6,7 +6,6 @@ adi_3dtof_safety_bubble_detector
 The Package to create safety bubble around the camera setup
 
 
-
 .. toctree::
    :maxdepth: 2
 
@@ -15,8 +14,14 @@ The Package to create safety bubble around the camera setup
    C++ API <generated/index>
 
 
+.. toctree::
+   :maxdepth: 2
+
+
+
 
    Standard Documents <__standards>
+
 
 .. toctree::
    :titlesonly:

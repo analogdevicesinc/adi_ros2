@@ -1,204 +1,283 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>README &mdash; adi_tmc_coe_core 1.0.0 documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
-      <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="adi_tmc_coe_core" name="description" />
+
+    <title>README &#8212; adi_tmc_coe_core 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=5d595293" />
+    <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script async="async" src="_static/app.umd.js?v=46a18818"></script>
+    <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
 
   
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=8d563738"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
-      <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
-</head>
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
 
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        
+        <a id="logo" href="index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
 
-          
-          
-          <a href="index.html" class="icon icon-home">
-            adi_tmc_coe_core
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">README</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#hardware">Hardware</a></li>
+<li><a class="reference internal" href="#software">Software</a><ul>
+<li><a class="reference internal" href="#software-architecture">Software Architecture</a></li>
+<li><a class="reference internal" href="#software-dependencies">Software Dependencies</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clone">Clone</a></li>
+<li><a class="reference internal" href="#build">Build</a></li>
+<li><a class="reference internal" href="#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
+<li><a class="reference internal" href="#bldc-motors">BLDC Motors</a><ul>
+<li><a class="reference internal" href="#calibrate-the-motors">Calibrate the motors</a></li>
+<li><a class="reference internal" href="#tune-the-pi-settings-of-the-motors">Tune the PI settings of the motors</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stepper-motors">Stepper Motors</a><ul>
+<li><a class="reference internal" href="#id1">Calibrate the motors</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pre-launch-one-time">Pre-Launch (One-time)</a></li>
+<li><a class="reference internal" href="#config-launch-file">Config/Launch File</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#launch">Launch</a></li>
+<li><a class="reference internal" href="#nodes">Nodes</a><ul>
+<li><a class="reference internal" href="#tmc-coe-ros2-node">tmc_coe_ros2_node</a><ul>
+<li><a class="reference internal" href="#published-topics">Published topics</a></li>
+<li><a class="reference internal" href="#subscribed-topics">Subscribed topics</a></li>
+<li><a class="reference internal" href="#advertised-services">Advertised services</a></li>
+<li><a class="reference internal" href="#parameters">Parameters</a><ul>
+<li><a class="reference internal" href="#communication-interface-parameter"><em>Communication Interface Parameter</em></a></li>
+<li><a class="reference internal" href="#tmc-coe-ros-node-parameters"><em>TMC COE ROS Node Parameters</em></a></li>
+<li><a class="reference internal" href="#motor-configuration-settings"><em>Motor Configuration Settings</em></a></li>
+<li><a class="reference internal" href="#autogenerated-parameters">Autogenerated Parameters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ethercat-grant">ethercat_grant</a><ul>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quick-tests">Quick Tests</a><ul>
+<li><a class="reference internal" href="#test-velocity-mode">Test Velocity Mode</a></li>
+<li><a class="reference internal" href="#test-position-mode">Test Position Mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#limitations">Limitations</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="index.html">
+      adi_tmc_coe_core
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="__links.html">Links</a><ul>
+<div class="toc-tree">
+  <html>
+  <body><ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmc_coe_core">Rosindex</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="generated/index.html">C++ API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#class-hierarchy">Class Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#file-hierarchy">File Hierarchy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="generated/index.html#full-c-api">Full C++ API</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#classes-and-structs">Classes and Structs</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/structPACKED.html">Struct PACKED</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeBldcMotor.html">Class TmcCoeBldcMotor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeInterpreter.html">Class TmcCoeInterpreter</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeMotor.html">Class TmcCoeMotor</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeROS2.html">Class TmcCoeROS2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/classTmcCoeStepperMotor.html">Class TmcCoeStepperMotor</a></li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="generated/index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/structPACKED.html">Struct PACKED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classTmcCoeBldcMotor.html">Class TmcCoeBldcMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classTmcCoeInterpreter.html">Class TmcCoeInterpreter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classTmcCoeMotor.html">Class TmcCoeMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classTmcCoeROS2.html">Class TmcCoeROS2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/classTmcCoeStepperMotor.html">Class TmcCoeStepperMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__bldc__motor_8hpp_1a1816d86b864c1905cff927194c63785d.html">Enum bldc_comm_mode_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595.html">Enum control_word_val_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec.html">Enum controlword_pos_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb.html">Enum fsa_state_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3.html">Enum mode_of_operation_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15.html">Enum nmt_state_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a.html">Enum status_word_val_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385.html">Enum statusword_pos_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad.html">Enum stepper_comm_mode_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e.html">Variable cap_string_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de.html">Variable CONTROL_WORD_FAIL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840.html">Variable CONTROL_WORD_SUCCESS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72.html">Variable CONTROL_WORD_TIMEOUT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17.html">Variable CW_NEW_POSITION_ABSOLUTE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a.html">Variable CW_NEW_POSITION_RELATIVE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html">Variable CW_NEW_SET_POINT_START</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc.html">Variable CW_NEW_SET_POINT_STOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html">Variable ERROR_CHECK_DELAY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a41d43d48bf3eefa06ba41d1496dc135d.html">Variable executable_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7.html">Variable INTERPOLATION_TIME_INDEX_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6.html">Variable INTERPOLATION_TIME_INDEX_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31.html">Variable IOMAP_SIZE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52.html">Variable MOTOR_TYPE_BLDC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93.html">Variable MOTOR_TYPE_STEPPER_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846.html">Variable MOTOR_TYPE_STEPPER_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f.html">Variable PI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1.html">Variable PROCESS_DATA_DELAY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe.html">Variable SECS_TO_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2.html">Variable state_coding_val_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682.html">Variable status_state_mask_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018.html">Variable TOTAL_WORK_COUNTER_PER_SLAVE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e.html">Define _USE_MATH_DEFINES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536.html">Typedef input_pdo_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460.html">Typedef output_pdo_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generated/dir_include_adi_tmc_coe_core.html">Directory adi_tmc_coe_core</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.html">File adi_ethercat_grant.hpp</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.html">Program Listing for File adi_ethercat_grant.hpp</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#enums">Enums</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__bldc__motor_8hpp_1a1816d86b864c1905cff927194c63785d.html">Enum bldc_comm_mode_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595.html">Enum control_word_val_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec.html">Enum controlword_pos_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb.html">Enum fsa_state_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__motor_8hpp_1af4700688ea7e689dfc046933e9c1dbb3.html">Enum mode_of_operation_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15.html">Enum nmt_state_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a.html">Enum status_word_val_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385.html">Enum statusword_pos_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad.html">Enum stepper_comm_mode_t</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp.html">File tmc_coe_bldc_motor.hpp</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp.html">Program Listing for File tmc_coe_bldc_motor.hpp</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#variables">Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e.html">Variable cap_string_</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de.html">Variable CONTROL_WORD_FAIL</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840.html">Variable CONTROL_WORD_SUCCESS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72.html">Variable CONTROL_WORD_TIMEOUT</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17.html">Variable CW_NEW_POSITION_ABSOLUTE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a.html">Variable CW_NEW_POSITION_RELATIVE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f.html">Variable CW_NEW_SET_POINT_START</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc.html">Variable CW_NEW_SET_POINT_STOP</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb.html">Variable ERROR_CHECK_DELAY</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_adi__ethercat__grant_8hpp_1a41d43d48bf3eefa06ba41d1496dc135d.html">Variable executable_</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7.html">Variable INTERPOLATION_TIME_INDEX_MAX</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6.html">Variable INTERPOLATION_TIME_INDEX_MIN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31.html">Variable IOMAP_SIZE</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52.html">Variable MOTOR_TYPE_BLDC</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93.html">Variable MOTOR_TYPE_STEPPER_MAX</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846.html">Variable MOTOR_TYPE_STEPPER_MIN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a952eac791b596a61bba0a133a3bb439f.html">Variable PI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1.html">Variable PROCESS_DATA_DELAY</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__motor_8hpp_1a8383ae6f2dccc1f0628db5f80e4bf7fe.html">Variable SECS_TO_MIN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2.html">Variable state_coding_val_</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682.html">Variable status_state_mask_</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018.html">Variable TOTAL_WORK_COUNTER_PER_SLAVE</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html">File tmc_coe_interpreter.hpp</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html">Program Listing for File tmc_coe_interpreter.hpp</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#defines">Defines</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e.html">Define _USE_MATH_DEFINES</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.html">File tmc_coe_motor.hpp</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.html">Program Listing for File tmc_coe_motor.hpp</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#typedefs">Typedefs</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536.html">Typedef input_pdo_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/typedef_tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460.html">Typedef output_pdo_t</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.html">File tmc_coe_ros2.hpp</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.html">Program Listing for File tmc_coe_ros2.hpp</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#directories">Directories</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include.html">Directory include</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/dir_include_adi_tmc_coe_core.html">Directory adi_tmc_coe_core</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="generated/index.html#files">Files</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp.html">File adi_ethercat_grant.hpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp.html">File tmc_coe_bldc_motor.hpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.html">File tmc_coe_interpreter.hpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_motor.hpp.html">File tmc_coe_motor.hpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.html">File tmc_coe_ros2.hpp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.html">File tmc_coe_stepper_motor.hpp</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#background">Background</a></li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#hardware">Hardware</a></li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#software">Software</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#software-architecture">Software Architecture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#software-dependencies">Software Dependencies</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#clone">Clone</a></li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#build">Build</a></li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#pre-launch-one-time-per-setup">Pre-Launch (One-time per setup)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#bldc-motors">BLDC Motors</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#stepper-motors">Stepper Motors</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#pre-launch-one-time">Pre-Launch (One-time)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#config-launch-file">Config/Launch File</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#launch">Launch</a></li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#nodes">Nodes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#tmc-coe-ros2-node">tmc_coe_ros2_node</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#ethercat-grant">ethercat_grant</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#quick-tests">Quick Tests</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#test-velocity-mode">Test Velocity Mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="__README.html#test-position-mode">Test Position Mode</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="__README.html#limitations">Limitations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="__CHANGELOG.html#changelog-for-package-adi-tmc-coe-core">Changelog for package adi_tmc_coe_core</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="__CHANGELOG.html#id1">1.0.0 (2025-03-06)</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6"/><div class="collapse"><a class="reference internal" href="generated/file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.html">File tmc_coe_stepper_motor.hpp</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/program_listing_file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp.html">Program Listing for File tmc_coe_stepper_motor.hpp</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
+</ul>
+</li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
+</body>
+</html>
 
+</div>
         </div>
       </div>
-    </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">adi_tmc_coe_core</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">README</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/__readme_include.rst.txt" rel="nofollow"> View page source</a>
-      </li>
-  </ul>
-  <hr/>
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb empty"><ol></ol></nav>
 </div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
+          <div class="body" role="main">
+            
   <section id="readme">
-<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>adi_tmc_coe_core</p></th>
@@ -209,11 +288,12 @@
 </tr>
 </tbody>
 </table>
+</div>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
 <ul class="simple">
-<li><p>Supported TMC boards: <a class="reference external" href="https://www.analog.com/en/products/pd-1461.html">TMCM-1461-CoE</a></p></li>
-<li><p>Supported communication interface and interface driver: CANopen-over-etherCAT (<a class="reference external" href="https://github.com/OpenEtherCATsociety/SOEM">SOEM</a>)</p></li>
+<li><p>Supported TMC boards: <a class="icon link reference external" href="https://www.analog.com/en/products/pd-1461.html" target="_blank">TMCM-1461-CoE</a></p></li>
+<li><p>Supported communication interface and interface driver: CANopen-over-etherCAT (<a class="icon link reference external" href="https://github.com/OpenEtherCATsociety/SOEM" target="_blank">SOEM</a>)</p></li>
 <li><p>Supported ROS and OS distro: Humble (Ubuntu 22.04)</p></li>
 <li><p>Supported platform: Intel x86 64-bit (amd64)</p></li>
 <li><p>Supported setup: Single/Multiple TMC in Single ECAT interface (namespace-managed)</p></li>
@@ -224,10 +304,10 @@
 </div></blockquote>
 </section>
 <section id="hardware">
-<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h2>
+<h2>Hardware<a class="headerlink" href="#hardware" title="Link to this heading"></a></h2>
 <p>For the tested TMCM-1461-CoE setup, the following are used:</p>
 <ul class="simple">
-<li><p>1 x <a class="reference external" href="https://www.analog.com/en/products/pd-1461.html">TMCM-1461-CoE</a></p></li>
+<li><p>1 x <a class="icon link reference external" href="https://www.analog.com/en/products/pd-1461.html" target="_blank">TMCM-1461-CoE</a></p></li>
 <li><p>1 x External 24V power supply</p></li>
 <li><p>1 x USB to LAN ethernet adapter</p></li>
 </ul>
@@ -237,27 +317,27 @@
 <li><p>1 x 4 pin male M8 power supply cable</p></li>
 </ul>
 <p>The image below shows the connection diagram of the setup (with labels):
-<img alt="TMCM-1461 Connections" src="docs/images/tmcm_1461_coe_setup.png" /></p>
+<img alt="TMCM-1461 Connections" src="_images/tmcm_1461_coe_setup.png" /></p>
 <p>The image below shows the actual setup used (for reference):
-<img alt="TMCM-1461 Actual Setup" src="docs/images/tmcm_1461_coe_actual_setup.jpg" /></p>
+<img alt="TMCM-1461 Actual Setup" src="_images/tmcm_1461_coe_actual_setup.jpg" /></p>
 </section>
 <section id="software">
-<h2>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h2>
+<h2>Software<a class="headerlink" href="#software" title="Link to this heading"></a></h2>
 <section id="software-architecture">
-<h3>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading"></a></h3>
-<p><img alt="Software Architecture Diagram" src="docs/images/adi_tmc_coe_core_Software_Architecture_Diagram.png" /></p>
+<h3>Software Architecture<a class="headerlink" href="#software-architecture" title="Link to this heading"></a></h3>
+<p><img alt="Software Architecture Diagram" src="_images/adi_tmc_coe_core_Software_Architecture_Diagram.png" /></p>
 </section>
 <section id="software-dependencies">
-<h3>Software Dependencies<a class="headerlink" href="#software-dependencies" title="Link to this heading"></a></h3>
+<h3>Software Dependencies<a class="headerlink" href="#software-dependencies" title="Link to this heading"></a></h3>
 <p>Assumptions before building this package:</p>
 <ul class="simple">
-<li><p>Installed ROS Humble. If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Installation.html">steps</a>.</p></li>
-<li><p>Setup workspace (with workspace folder named as “ros2_ws”). If not, follow these <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html">steps</a>.</p></li>
+<li><p>Installed ROS Humble. If not, follow these <a class="icon link reference external" href="https://docs.ros.org/en/humble/Installation.html" target="_blank">steps</a>.</p></li>
+<li><p>Setup workspace (with workspace folder named as “ros2_ws”). If not, follow these <a class="icon link reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html" target="_blank">steps</a>.</p></li>
 </ul>
 </section>
 </section>
 <section id="clone">
-<h2>Clone<a class="headerlink" href="#clone" title="Link to this heading"></a></h2>
+<h2>Clone<a class="headerlink" href="#clone" title="Link to this heading"></a></h2>
 <p>In the website:</p>
 <ol class="arabic simple">
 <li><p>Make sure that the branch dropdown is set to “humble”.</p></li>
@@ -270,7 +350,7 @@ $<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span
 </div>
 </section>
 <section id="build">
-<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
+<h2>Build<a class="headerlink" href="#build" title="Link to this heading"></a></h2>
 <p>Do proper exports first:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># $ source /opt/ros/&lt;ROS version&gt;/setup.bash</span>
 $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
@@ -295,26 +375,26 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </pre></div>
 </div>
 <blockquote>
-<div><p>:memo: <em>Note: It is recommended that 1 terminal is dedicated to building the package/workspace to avoid complex issues as mentioned in <a class="reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay">ROS2 Source the overlay</a></em></p>
+<div><p>:memo: <em>Note: It is recommended that 1 terminal is dedicated to building the package/workspace to avoid complex issues as mentioned in <a class="icon link reference external" href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay" target="_blank">ROS2 Source the overlay</a></em></p>
 </div></blockquote>
 </section>
 <section id="pre-launch-one-time-per-setup">
-<h2>Pre-Launch (One-time per setup)<a class="headerlink" href="#pre-launch-one-time-per-setup" title="Link to this heading"></a></h2>
+<h2>Pre-Launch (One-time per setup)<a class="headerlink" href="#pre-launch-one-time-per-setup" title="Link to this heading"></a></h2>
 <p>Not all Trinamic modules are on TMCL_IDE specially CoE due to different interface used. Check module first for other communication protocol than CoE (UART, USB or CAN). Proceed to next steps if module is available in TMCL_IDE.</p>
 <blockquote>
 <div><p>:memo: <em>Note: Different communication protocol might need different cable to communicate with TMCL_IDE (e.g. UART - USB to TTL adapter, USB - TypeC/TypeB/Micro, CAN - PCAN-USB adapter).</em></p>
 </div></blockquote>
 <p>If it’s the first time to use the set of motors for the TMC, it is required to calibrate and tune the PID settings of the motors first.</p>
-<p>Do the calibrations/tuning by downloading and using <a class="reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/motor-motion-control-software/tmcl-ide.html">TMCL-IDE</a>.</p>
+<p>Do the calibrations/tuning by downloading and using <a class="icon link reference external" href="https://www.analog.com/en/resources/evaluation-hardware-and-software/motor-motion-control-software/tmcl-ide.html" target="_blank">TMCL-IDE</a>.</p>
 <section id="bldc-motors">
-<h3>BLDC Motors<a class="headerlink" href="#bldc-motors" title="Link to this heading"></a></h3>
+<h3>BLDC Motors<a class="headerlink" href="#bldc-motors" title="Link to this heading"></a></h3>
 <section id="calibrate-the-motors">
-<h4>Calibrate the motors<a class="headerlink" href="#calibrate-the-motors" title="Link to this heading"></a></h4>
-<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=MASVD_2tNuo">link</a>.</p>
+<h4>Calibrate the motors<a class="headerlink" href="#calibrate-the-motors" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="icon link reference external" href="https://www.youtube.com/watch?v=MASVD_2tNuo" target="_blank">link</a>.</p>
 </section>
 <section id="tune-the-pi-settings-of-the-motors">
-<h4>Tune the PI settings of the motors<a class="headerlink" href="#tune-the-pi-settings-of-the-motors" title="Link to this heading"></a></h4>
-<p>For a run-through/tutorial of how the PI tuning is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">Tuning</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=rfZAs-QdYlQ">link</a>.</p>
+<h4>Tune the PI settings of the motors<a class="headerlink" href="#tune-the-pi-settings-of-the-motors" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the PI tuning is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">PI</span> <span class="pre">Tuning</span></code> feature, check this <a class="icon link reference external" href="https://www.youtube.com/watch?v=rfZAs-QdYlQ" target="_blank">link</a>.</p>
 <blockquote>
 <div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by doing any of the following:</em></p>
 <ul class="simple">
@@ -330,11 +410,11 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 </section>
 <section id="stepper-motors">
-<h3>Stepper Motors<a class="headerlink" href="#stepper-motors" title="Link to this heading"></a></h3>
+<h3>Stepper Motors<a class="headerlink" href="#stepper-motors" title="Link to this heading"></a></h3>
 <section id="id1">
-<h4>Calibrate the motors<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
-<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="reference external" href="https://www.youtube.com/watch?v=l6r63Q7Yr58o">link</a>.</p>
-<p>For more information about Trinamic features on stepper motors, visit this <a class="reference external" href="https://www.analog.com/en/product-category/stepper-motor-driver.html">link</a>.</p>
+<h4>Calibrate the motors<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="icon link reference external" href="https://www.youtube.com/watch?v=l6r63Q7Yr58o" target="_blank">link</a>.</p>
+<p>For more information about Trinamic features on stepper motors, visit this <a class="icon link reference external" href="https://www.analog.com/en/product-category/stepper-motor-driver.html" target="_blank">link</a>.</p>
 <blockquote>
 <div><p>:memo: <em>Note: For all the calibration and tuning done, store all the parameters set from TMCL_IDE on the board’s EEPROM. Do this by:</em></p>
 <ul class="simple">
@@ -344,12 +424,12 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 </section>
 <section id="pre-launch-one-time">
-<h3>Pre-Launch (One-time)<a class="headerlink" href="#pre-launch-one-time" title="Link to this heading"></a></h3>
+<h3>Pre-Launch (One-time)<a class="headerlink" href="#pre-launch-one-time" title="Link to this heading"></a></h3>
 <p>The <a class="reference internal" href="#ethercat_grant"><span class="xref myst">ethercat_grant</span></a> node/utility is needed to run the <a class="reference internal" href="#tmc_coe_ros2_node"><span class="xref myst">tmc_coe_ros2_node</span></a> without root privileges.</p>
 <p>If built from source, you will need to go through <a class="reference internal" href="#installation"><span class="xref myst">ethercat_grant/Installation</span></a>.</p>
 </section>
 <section id="config-launch-file">
-<h3>Config/Launch File<a class="headerlink" href="#config-launch-file" title="Link to this heading"></a></h3>
+<h3>Config/Launch File<a class="headerlink" href="#config-launch-file" title="Link to this heading"></a></h3>
 <p>Before launching the package, make sure that the <em>interface_name</em> on the yaml file is correct. Modify the corresponding yaml file depending on your setup:</p>
 <ul class="simple">
 <li><p>If using 1 slave with 1 axis, modify 1slave_1axis.yaml,</p></li>
@@ -366,7 +446,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 </section>
 <section id="launch">
-<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h2>
+<h2>Launch<a class="headerlink" href="#launch" title="Link to this heading"></a></h2>
 <p>This package has 3 sample launch files for:</p>
 <p>single slave with single axis (used module is TMCM-1461-CoE)</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adi_tmc_coe_core<span class="w"> </span>1slave_1axis.launch
@@ -382,14 +462,14 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </div>
 </section>
 <section id="nodes">
-<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h2>
+<h2>Nodes<a class="headerlink" href="#nodes" title="Link to this heading"></a></h2>
 <section id="tmc-coe-ros2-node">
-<h3>tmc_coe_ros2_node<a class="headerlink" href="#tmc-coe-ros2-node" title="Link to this heading"></a></h3>
+<h3>tmc_coe_ros2_node<a class="headerlink" href="#tmc-coe-ros2-node" title="Link to this heading"></a></h3>
 <blockquote>
 <div><p>:memo: <em>Note: For those with &lt;slave_number&gt; and &lt;motor_number&gt; in the topic names, these are the slave number and motor number respectively. For example, if there are 2 slaves/devices both with single motor used, there should be two published topics for tmc_coe_info, specifically /tmc_coe_info_1_0 for device 1 motor 0 and /tmc_coe_info_2_0 for device 2 motor 0.</em></p>
 </div></blockquote>
 <section id="published-topics">
-<h4>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h4>
+<h4>Published topics<a class="headerlink" href="#published-topics" title="Link to this heading"></a></h4>
 <p>These are the default topic names, topic names can be modified as a ROS parameter.</p>
 <ul class="simple">
 <li><p><strong>/tmc_info_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (adi_tmc_coe_interfaces/msg/TmcCoeInfo)</p>
@@ -401,7 +481,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="subscribed-topics">
-<h4>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h4>
+<h4>Subscribed topics<a class="headerlink" href="#subscribed-topics" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p><strong>/cmd_vel_&lt;slave_number&gt;_&lt;motor_number&gt;</strong> (geometry_msgs/msg/Twist)</p>
 <ul>
@@ -421,7 +501,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="advertised-services">
-<h4>Advertised services<a class="headerlink" href="#advertised-services" title="Link to this heading"></a></h4>
+<h4>Advertised services<a class="headerlink" href="#advertised-services" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p><strong>/read_SDO</strong> (adi_tmc_coe_interfaces/srv/ReadWriteSDO)</p>
 <ul>
@@ -474,7 +554,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="parameters">
-<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h4>
+<h4>Parameters<a class="headerlink" href="#parameters" title="Link to this heading"></a></h4>
 <blockquote>
 <div><p>:memo: <em>Notes:</em></p>
 <ul class="simple">
@@ -484,7 +564,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </div></blockquote>
 <section id="communication-interface-parameter">
-<h5><em>Communication Interface Parameter</em><a class="headerlink" href="#communication-interface-parameter" title="Link to this heading"></a></h5>
+<h5><em>Communication Interface Parameter</em><a class="headerlink" href="#communication-interface-parameter" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p><strong>interface_name</strong> (string, default: “”)</p>
 <ul>
@@ -504,7 +584,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="tmc-coe-ros-node-parameters">
-<h5><em>TMC COE ROS Node Parameters</em><a class="headerlink" href="#tmc-coe-ros-node-parameters" title="Link to this heading"></a></h5>
+<h5><em>TMC COE ROS Node Parameters</em><a class="headerlink" href="#tmc-coe-ros-node-parameters" title="Link to this heading"></a></h5>
 <ul class="simple">
 <li><p><strong>en_slave</strong> (int[], default: [0])</p>
 <ul>
@@ -525,7 +605,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="motor-configuration-settings">
-<h5><em>Motor Configuration Settings</em><a class="headerlink" href="#motor-configuration-settings" title="Link to this heading"></a></h5>
+<h5><em>Motor Configuration Settings</em><a class="headerlink" href="#motor-configuration-settings" title="Link to this heading"></a></h5>
 <blockquote>
 <div><p>:memo: <em>Notes:</em></p>
 <ul class="simple">
@@ -603,7 +683,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </ul>
 </section>
 <section id="autogenerated-parameters">
-<h5>Autogenerated Parameters<a class="headerlink" href="#autogenerated-parameters" title="Link to this heading"></a></h5>
+<h5>Autogenerated Parameters<a class="headerlink" href="#autogenerated-parameters" title="Link to this heading"></a></h5>
 <blockquote>
 <div><p>:memo: <em>Notes:</em></p>
 <ul class="simple">
@@ -638,10 +718,10 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 </section>
 <section id="ethercat-grant">
-<h3>ethercat_grant<a class="headerlink" href="#ethercat-grant" title="Link to this heading"></a></h3>
+<h3>ethercat_grant<a class="headerlink" href="#ethercat-grant" title="Link to this heading"></a></h3>
 <p>adi_ethercat_grant_node is a ROS2 node for ethercat_grant. Theoretically, if this package is available via binary installation, there should be no further instructions required.</p>
 <section id="installation">
-<h4>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h4>
+<h4>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h4>
 <p>If this package is installed via source, before running the launch file, do the steps below:</p>
 <ol class="arabic simple">
 <li><p>Open /scripts directory</p></li>
@@ -655,9 +735,9 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 </section>
 <section id="quick-tests">
-<h2>Quick Tests<a class="headerlink" href="#quick-tests" title="Link to this heading"></a></h2>
+<h2>Quick Tests<a class="headerlink" href="#quick-tests" title="Link to this heading"></a></h2>
 <section id="test-velocity-mode">
-<h3>Test Velocity Mode<a class="headerlink" href="#test-velocity-mode" title="Link to this heading"></a></h3>
+<h3>Test Velocity Mode<a class="headerlink" href="#test-velocity-mode" title="Link to this heading"></a></h3>
 <p>To do a quick test of Velocity Mode, there is a fake velocity script that the user can run.
 Idea is, this script will send Velocity commands (as a ROS topic), then the first motor should be expected to:</p>
 <ol class="arabic simple">
@@ -670,6 +750,7 @@ Idea is, this script will send Velocity commands (as a ROS topic), then the firs
 <blockquote>
 <div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1.</em></p>
 </div></blockquote>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
@@ -684,6 +765,7 @@ Idea is, this script will send Velocity commands (as a ROS topic), then the firs
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Monitor the velocity of the first motor (watch out for velocity value at Terminal 3).</strong></p>
 <blockquote>
 <div><p>:memo: <em>Notes:</em></p>
@@ -695,7 +777,7 @@ Idea is, this script will send Velocity commands (as a ROS topic), then the firs
 </div></blockquote>
 </section>
 <section id="test-position-mode">
-<h3>Test Position Mode<a class="headerlink" href="#test-position-mode" title="Link to this heading"></a></h3>
+<h3>Test Position Mode<a class="headerlink" href="#test-position-mode" title="Link to this heading"></a></h3>
 <p>To do a quick test of Position Mode, there is a fake position script that the user can run.
 Idea is, this script will send Position commands (as a ROS topic), then the first motor should be expected to:</p>
 <ol class="arabic simple">
@@ -708,6 +790,7 @@ Idea is, this script will send Position commands (as a ROS topic), then the firs
 <blockquote>
 <div><p>:memo: <em>Note: Assuming that the package was <a class="reference internal" href="#build"><span class="xref myst">built</span></a> in Terminal 1.</em></p>
 </div></blockquote>
+<div class="table-wrapper colwidths-auto docutils container">
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>Terminal 2</p></th>
@@ -722,6 +805,7 @@ Idea is, this script will send Position commands (as a ROS topic), then the firs
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Monitor the position of the first motor (watch out for position value at Terminal 3).</strong></p>
 <blockquote>
 <div><p>:memo: <em>Notes:</em></p>
@@ -734,7 +818,7 @@ Idea is, this script will send Position commands (as a ROS topic), then the firs
 </section>
 </section>
 <section id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
+<h2>Limitations<a class="headerlink" href="#limitations" title="Link to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Current modules that are tested does not include Profile Torque Mode but still included on topic names for ease of implementation if decided to continue.</p></li>
 <li><p>Homing Mode is not implemented.</p></li>
@@ -746,31 +830,26 @@ Idea is, this script will send Position commands (as a ROS topic), then the firs
 </section>
 
 
-           </div>
           </div>
-          <footer>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Copyright The &lt;adi_tmc_coe_core&gt; Contributors. License: BSD-3-Clause.</p>
-  </div>
-
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
+              <div class="related">
+                &nbsp;
+    <div></div>
+    <div></div>
+              </div>
+          
         </div>
       </div>
-    </section>
   </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
 
-</body>
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2026, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
 </html>

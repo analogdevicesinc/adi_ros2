@@ -6,7 +6,6 @@ adi_iio
 ROS package to interface with IIO devices
 
 
-
 .. toctree::
    :maxdepth: 2
 
@@ -14,9 +13,15 @@ ROS package to interface with IIO devices
 
    C++ API <generated/index>
 
+
+.. toctree::
+   :maxdepth: 2
+
+
    Service Definitions <__service_definitions>
 
    Standard Documents <__standards>
+
 
 .. toctree::
    :titlesonly:
