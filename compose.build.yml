@@ -1,0 +1,85 @@
+# compose.build.yml — Build ADI ROS2 Docker images
+services:
+
+  # Standard Images (amd64/arm64):
+  core:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: core
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        TARGETARCH: ${TARGETARCH:-}
+    image: adi_ros2:${ROS_DISTRO}-core
+
+  base:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: base
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        TARGETARCH: ${TARGETARCH:-}
+    image: adi_ros2:${ROS_DISTRO}-base
+
+  full:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: full
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        TARGETARCH: ${TARGETARCH:-}
+    image: adi_ros2:${ROS_DISTRO}-full
+
+  desktop:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: desktop
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        TARGETARCH: ${TARGETARCH:-}
+    image: adi_ros2:${ROS_DISTRO}-desktop
+
+# Jetson/L4T Images (arm64 L4T):
+
+  l4t-core:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.l4t
+      target: core
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        L4T_VERSION: ${L4T_VERSION}
+    image: adi_ros2-l4t:${ROS_DISTRO}-core
+
+  l4t-base:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.l4t
+      target: base
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        L4T_VERSION: ${L4T_VERSION}
+    image: adi_ros2-l4t:${ROS_DISTRO}-base
+
+  l4t-full:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.l4t
+      target: full
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        L4T_VERSION: ${L4T_VERSION}
+    image: adi_ros2-l4t:${ROS_DISTRO}-full
+
+  l4t-desktop:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.l4t
+      target: desktop
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+        L4T_VERSION: ${L4T_VERSION}
+    image: adi_ros2-l4t:${ROS_DISTRO}-desktop

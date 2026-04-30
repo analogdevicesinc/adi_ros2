@@ -15,10 +15,8 @@ on ADI solutions.
 
 ## Getting Started
 
-- For a quick start guide on pulling and running the Docker Images, naming conventions
-  and stage descriptions, please refer to the [Docker Hub Repository](https://hub.docker.com/r/astanea/adi_ros2).
-
-- For detailed instructions, please refer to our
+- For a quick start guide on building and running the Docker Images, naming conventions
+  and stage descriptions, please refer to our
   [Official Documentation](https://analogdevicesinc.github.io/adi_ros2/humble/adi_meta/index.html#).
 
 ## Getting help

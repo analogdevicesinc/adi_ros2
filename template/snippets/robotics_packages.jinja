@@ -1,7 +1,0 @@
-# 3rd party ROS2 packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ros-{{ ros_distro }}-navigation2 \
-    ros-{{ ros_distro }}-nav2-bringup \
-    ros-{{ ros_distro }}-slam-toolbox \
-    ros-{{ ros_distro }}-canopen \
-  && rm -rf /var/lib/apt/lists/*

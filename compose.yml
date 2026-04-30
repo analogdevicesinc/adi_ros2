@@ -1,0 +1,17 @@
+services:
+  adi_iio:
+    image: adi_ros2:${ROS_DISTRO:-humble}-core
+    container_name: adi-iio
+    privileged: true
+    network_mode: host
+    ipc: host
+    command: ros2 run adi_iio adi_iio_node --ros-args -p uri:="ip:192.168.2.1"
+
+  shell:
+    image: adi_ros2:${ROS_DISTRO:-humble}-base
+    privileged: true
+    network_mode: host
+    ipc: host
+    stdin_open: true
+    tty: true
+    command: bash
