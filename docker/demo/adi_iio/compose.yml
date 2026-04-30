@@ -1,0 +1,23 @@
+services:
+  adi_iio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: adi_iio:minimal
+    container_name: adi-iio
+    privileged: true
+    network_mode: host
+    ipc: host
+    command: ros2 run adi_iio adi_iio_node --ros-args -p uri:="ip:192.168.2.1"
+
+  shell:
+    image: adi_iio:minimal
+    container_name: adi-iio-shell
+    privileged: true
+    network_mode: host
+    ipc: host
+    stdin_open: true
+    tty: true
+    command: bash
+    profiles:
+      - debug

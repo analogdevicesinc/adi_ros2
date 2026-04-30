@@ -1,0 +1,8 @@
+
+# ADI Robotics SDK — source overlay and show welcome banner in interactive shells
+[ -t 1 ] && [ -f "${OVERLAY}/setup.bash" ] && source "${OVERLAY}/setup.bash" --
+[ -t 1 ] && cat /etc/adi_ros2_welcome
+
+# Enable bash completion for ros2 and colcon
+command -v register-python-argcomplete3 > /dev/null 2>&1 && eval "$(register-python-argcomplete3 ros2)"
+command -v register-python-argcomplete3 > /dev/null 2>&1 && eval "$(register-python-argcomplete3 colcon)"

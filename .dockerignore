@@ -1,0 +1,32 @@
+# Source workspace — cloned inside Docker by vcs import
+src/
+
+# Git history
+.git/
+
+# Python virtual environments
+.venv/
+venv/
+
+# Documentation build output
+docs/
+_build/
+docs_build/
+docs_output/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Template system (being removed)
+scripts/
+template/
+
+# Editor / IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store

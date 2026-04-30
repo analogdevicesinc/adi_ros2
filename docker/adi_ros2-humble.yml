@@ -21,8 +21,8 @@ repositories:
     version: humble
   adrd2121_imu_ros2:
     type: git
-    url: https://github.com/analogdevicesinc/adrd2121_imu_ros2.git
-    version: humble
+    url: https://github.com/Adrian-Stanea/adrd2121_imu_ros2.git
+    version: humble-fix
   algorithms/adi_3dtof_safety_bubble_detector:
     type: git
     url: https://github.com/analogdevicesinc/adi_3dtof_safety_bubble_detector.git

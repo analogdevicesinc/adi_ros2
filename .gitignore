@@ -8,3 +8,13 @@ build
 install
 log
 .vscode
+
+# Python bytecode
+__pycache__/
+*.pyc
+.venv-doc/
+
+# Documentation images — always track regardless of global gitignore
+!src/adi_ros2/doc/img/*.png
+!src/adi_ros2/doc/img/*.jpg
+!src/adi_ros2/doc/img/*.svg
