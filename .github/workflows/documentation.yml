@@ -1,4 +1,4 @@
-name: Generate documentation
+name: Documentation
 on:
     push:
       branches:
@@ -107,7 +107,7 @@ jobs:
             path = $2 "/" $3
 
             if ($3 == "adi_meta") {
-                name = $2
+                name = $3
                 label = "core"
             } else {
                 name = $2 " > " $3
