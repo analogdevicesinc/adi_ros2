@@ -1,0 +1,36 @@
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: dev
+      args:
+        ROS_DISTRO: ${ROS_DISTRO:-humble}
+    image: adi_ros2:${ROS_DISTRO:-humble}-dev
+
+    volumes:
+      - ..:/adi_ros2_ws:cached
+      # X11 socket for GUI forwarding
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # X authority for X11 authentication
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/tmp/.Xauthority:ro
+
+    # Network & IPC
+    network_mode: host
+    ipc: host
+
+    # Hardware access (Narrow this down to specific devices if your security policy requires it)
+    privileged: true
+
+    # Interactivity
+    stdin_open: true
+    tty: true
+
+    # Environment
+    environment:
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/tmp/.Xauthority
+      - ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-0}
+      - ROS_DISTRO=${ROS_DISTRO:-humble}
+      - DISPLAY=${DISPLAY:-:0}
+

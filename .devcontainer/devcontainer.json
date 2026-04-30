@@ -1,0 +1,27 @@
+{
+  "name": "ADI ROS2 (Dev)",
+  "dockerComposeFile": [
+    "./compose.devcontainer.yml",
+  ],
+  "service": "dev",
+  "workspaceFolder": "/adi_ros2_ws",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "ms-python.python",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "ros.distro": "humble",
+        "cmake.configureOnOpen": false
+      }
+    }
+  },
+  "remoteUser": "root",
+  "shutdownAction": "stopCompose"
+}
