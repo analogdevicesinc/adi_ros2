@@ -118,19 +118,16 @@ rosdoc2_settings = {
     ## This setting, if True, will ensure autodoc is part of the 'extensions'.
     # 'enable_autodoc': True,
 
-    ## This setting, if True, will ensure intersphinx is part of the 'extensions'.
-    # 'enable_intersphinx': True,
-
     ## This setting, if True, will have the 'html_theme' overridden to provide
     ## a consistent style across all of the ROS documentation.
     # IMPORTANT: this allows rosdoc2 to use the ADI theme
     'override_theme': False,
 
+    ## This setting, if True, will ensure intersphinx is part of the 'extensions'.
+    'enable_intersphinx': True,
+
     ## This setting, if True, will automatically extend the intersphinx mapping
     ## using inventory files found in the cross-reference directory.
-    ## If false, the `found_intersphinx_mappings` variable will be in the global
-    ## scope when run with rosdoc2, and could be conditionally used in your own
-    ## Sphinx conf.py file.
     'automatically_extend_intersphinx_mapping': True,
 
     ## Support markdown
