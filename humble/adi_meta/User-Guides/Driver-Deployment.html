@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Prerequisites" name="description" />
+
+    <title>Driver Deployment &#8212; ROS2 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=ac863bf0" />
+    <script async="async" src="../_static/app.umd.js?v=09b0c6bc"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Building Documentation" href="../Developer-Guides/Building-Documentation.html" />
+    <link rel="prev" title="First Demo" href="../Getting-Started/First-Demo.html" />
+   
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
+        
+        <a id="logo" href="../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Driver Deployment</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li><a class="reference internal" href="#how-it-works">How It Works</a></li>
+<li><a class="reference internal" href="#build-and-run">Build and Run</a></li>
+<li><a class="reference internal" href="#debug-shell">Debug Shell</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../index.html">
+      ROS2
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <p class="caption" role="heading">
+  <span class="caption-text">Overview</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Packages.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Supported-Platforms.html">Supported Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Supported-Hardware.html">Supported Hardware</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Getting Started</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/Prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/Quick-Start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/First-Demo.html">First Demo</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">User Guides</span>
+</p>
+
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Driver Deployment</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Developer Guides</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guides/Building-Documentation.html">Building Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guides/CI-Infrastructure.html">CI Infrastructure</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Reference Applications</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Reference-Applications.html">Reference Applications</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Releases</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Releases.html">Release Notes</a></li>
+</ul>
+
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb empty"><ol></ol></nav>
+</div>
+          <div class="body" role="main">
+            
+  <section id="driver-deployment">
+<span id="id1"></span><h1>Driver Deployment<a class="headerlink" href="#driver-deployment" title="Link to this heading"></a></h1>
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On This Page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#prerequisites" id="id2">Prerequisites</a></p></li>
+<li><p><a class="reference internal" href="#how-it-works" id="id3">How It Works</a></p></li>
+<li><p><a class="reference internal" href="#build-and-run" id="id4">Build and Run</a></p></li>
+<li><p><a class="reference internal" href="#debug-shell" id="id5">Debug Shell</a></p></li>
+</ul>
+</nav>
+<p>The ADI Robotics SDK images contain all drivers. For production, you typically
+need only one. This guide shows how to extract a single driver into a minimal
+image, using <code class="docutils literal notranslate"><span class="pre">adi_iio</span></code> as the example. The same pattern should work for any package.</p>
+<p>The demo files live in <code class="docutils literal notranslate"><span class="pre">docker/demo/adi_iio/</span></code>.</p>
+<section id="prerequisites">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Prerequisites</a><a class="headerlink" href="#prerequisites" title="Link to this heading"></a></h2>
+<p>Build the <code class="docutils literal notranslate"><span class="pre">core</span></code> image first — it provides the compiled packages and their
+dependency manifests:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># From the repository root</span>
+docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>compose.build.yml<span class="w"> </span>build<span class="w"> </span>core
+</pre></div>
+</div>
+</section>
+<section id="how-it-works">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">How It Works</a><a class="headerlink" href="#how-it-works" title="Link to this heading"></a></h2>
+<p>The SDK builds each package into its own directory under
+<code class="docutils literal notranslate"><span class="pre">/opt/ros/adi_ros2/&lt;package&gt;/</span></code>. Each package carries an <code class="docutils literal notranslate"><span class="pre">exec_debs.txt</span></code> file
+listing its runtime <code class="docutils literal notranslate"><span class="pre">apt</span></code> dependencies. The minimal Dockerfile copies one
+package out of <code class="docutils literal notranslate"><span class="pre">core</span></code> and installs only its dependencies:</p>
+<div class="highlight-dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span><span class="w"> </span><span class="s">adi_ros2:${ROS_DISTRO}-core</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="s">sdk</span>
+
+<span class="k">FROM</span><span class="w"> </span><span class="s">ros:${ROS_DISTRO}-ros-core</span>
+
+<span class="c"># Copy one package from the SDK image</span>
+<span class="k">COPY</span><span class="w"> </span>--from<span class="o">=</span>sdk<span class="w"> </span><span class="si">${</span><span class="nv">OVERLAY</span><span class="si">}</span>/adi_iio<span class="w"> </span><span class="si">${</span><span class="nv">OVERLAY</span><span class="si">}</span>/adi_iio
+
+<span class="c"># Install only this package&#39;s runtime dependencies</span>
+<span class="k">RUN</span><span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>xargs<span class="w"> </span>-r<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>&lt;<span class="w"> </span><span class="si">${</span><span class="nv">OVERLAY</span><span class="si">}</span>/adi_iio/share/adi_iio/exec_debs.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/apt/lists/*
+</pre></div>
+</div>
+</section>
+<section id="build-and-run">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Build and Run</a><a class="headerlink" href="#build-and-run" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># From docker/demo/adi_iio/</span>
+docker<span class="w"> </span>compose<span class="w"> </span>build
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>adi_iio
+
+<span class="c1"># Ctrl+C to stop the node</span>
+
+<span class="c1"># Stop and remove the container</span>
+docker<span class="w"> </span>compose<span class="w"> </span>down
+</pre></div>
+</div>
+<p>The compose file defines two services:</p>
+<div class="table-wrapper colwidths-given docutils container">
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 15.0%" />
+<col style="width: 60.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Service</p></th>
+<th class="head"><p>Profile</p></th>
+<th class="head"><p>Purpose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">adi_iio_node</span></code></p></td>
+<td><p>default</p></td>
+<td><p>Builds the minimal image and runs the driver node</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">shell</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">debug</span></code></p></td>
+<td><p>Interactive bash shell for inspection</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="debug-shell">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Debug Shell</a><a class="headerlink" href="#debug-shell" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>compose<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>shell
+</pre></div>
+</div>
+<p>Inside the container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>adi_iio<span class="w"> </span>adi_iio_node
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="../Getting-Started/First-Demo.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">First Demo</a>
+    <a href="../Developer-Guides/Building-Documentation.html" title="Next document (Alt+Shift+RightArrow)" class="next">Building Documentation</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2026, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

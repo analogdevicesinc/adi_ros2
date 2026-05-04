@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Setup" name="description" />
+
+    <title>Building Documentation &#8212; ROS2 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=ac863bf0" />
+    <script async="async" src="../_static/app.umd.js?v=09b0c6bc"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CI Infrastructure" href="CI-Infrastructure.html" />
+    <link rel="prev" title="Driver Deployment" href="../User-Guides/Driver-Deployment.html" />
+   
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="humble">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
+        
+        <a id="logo" href="../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Building Documentation</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#full-build">Full Build</a></li>
+<li><a class="reference internal" href="#single-package-build">Single Package Build</a></li>
+<li><a class="reference internal" href="#where-to-edit">Where to Edit</a></li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../index.html">
+      ROS2
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <p class="caption" role="heading">
+  <span class="caption-text">Overview</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Packages.html">Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Supported-Platforms.html">Supported Platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Overview/Supported-Hardware.html">Supported Hardware</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Getting Started</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/Prerequisites.html">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/Quick-Start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Getting-Started/First-Demo.html">First Demo</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">User Guides</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guides/Driver-Deployment.html">Driver Deployment</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Developer Guides</span>
+</p>
+
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Building Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CI-Infrastructure.html">CI Infrastructure</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Reference Applications</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Reference-Applications.html">Reference Applications</a></li>
+</ul>
+
+<p class="caption" role="heading">
+  <span class="caption-text">Releases</span>
+</p>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Releases.html">Release Notes</a></li>
+</ul>
+
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb empty"><ol></ol></nav>
+</div>
+          <div class="body" role="main">
+            
+  <section id="building-documentation">
+<span id="id1"></span><h1>Building Documentation<a class="headerlink" href="#building-documentation" title="Link to this heading"></a></h1>
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On This Page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#setup" id="id2">Setup</a></p></li>
+<li><p><a class="reference internal" href="#full-build" id="id3">Full Build</a></p></li>
+<li><p><a class="reference internal" href="#single-package-build" id="id4">Single Package Build</a></p></li>
+<li><p><a class="reference internal" href="#where-to-edit" id="id5">Where to Edit</a></p></li>
+</ul>
+</nav>
+<p>Documentation is built with <a class="icon link reference external" href="https://github.com/ros-infrastructure/rosdoc2" target="_blank">rosdoc2</a>
+and <a class="icon link reference external" href="https://www.sphinx-doc.org/" target="_blank">Sphinx</a>, using the
+<a class="icon link reference external" href="https://github.com/analogdevicesinc/doctools" target="_blank">ADI Doctools</a> theme. CI builds
+and deploys automatically on merge to <code class="docutils literal notranslate"><span class="pre">humble</span></code>.</p>
+<section id="setup">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Setup</a><a class="headerlink" href="#setup" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
+
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>src/adi_ros2/doc/requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="full-build">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Full Build</a><a class="headerlink" href="#full-build" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ci/build_doc.sh
+</pre></div>
+</div>
+<p>Output is written to <code class="docutils literal notranslate"><span class="pre">_build/docs_output/</span></code>. Open locally with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>xdg-open<span class="w"> </span>_build/docs_output/adi_meta/index.html
+</pre></div>
+</div>
+</section>
+<section id="single-package-build">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Single Package Build</a><a class="headerlink" href="#single-package-build" title="Link to this heading"></a></h2>
+<p>For faster iteration on one package:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosdoc2<span class="w"> </span>build<span class="w"> </span>--package-path<span class="w"> </span>src/imu_ros2<span class="w"> </span>--debug
+</pre></div>
+</div>
+</section>
+<section id="where-to-edit">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Where to Edit</a><a class="headerlink" href="#where-to-edit" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Meta-repository docs</strong> (<code class="docutils literal notranslate"><span class="pre">src/adi_ros2/doc/</span></code>): commit here. Add new
+<code class="docutils literal notranslate"><span class="pre">.rst</span></code> files to the relevant <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive.</p></li>
+<li><p><strong>Package docs</strong> (<code class="docutils literal notranslate"><span class="pre">src/&lt;package&gt;/doc/</span></code>): edit in the submodule repo, merge
+to <code class="docutils literal notranslate"><span class="pre">humble</span></code>, then update the submodule reference here.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="../User-Guides/Driver-Deployment.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Driver Deployment</a>
+    <a href="CI-Infrastructure.html" title="Next document (Alt+Shift+RightArrow)" class="next">CI Infrastructure</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2026, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

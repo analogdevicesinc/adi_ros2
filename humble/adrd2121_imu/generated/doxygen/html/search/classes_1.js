@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['biasestimateros2_0',['BiasEstimateRos2',['../classBiasEstimateRos2.html',1,'']]]
+  ['biasestimateros2_0',['BiasEstimateRos2',['../classBiasEstimateRos2.html',1,'']]],
+  ['boolpubsub_1',['BoolPubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classBoolPubSub.html',1,'']]]
 ];

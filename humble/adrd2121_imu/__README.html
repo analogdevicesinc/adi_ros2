@@ -8,15 +8,15 @@
 
     <title>README &#8212; adrd2121_imu 1.0.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=5d595293" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=ac863bf0" />
     <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
-    <script async="async" src="_static/app.umd.js?v=46a18818"></script>
+    <script async="async" src="_static/app.umd.js?v=09b0c6bc"></script>
     <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
     <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PACKAGE" href="__PACKAGE.html" />
-    <link rel="prev" title="LICENSE" href="__LICENSE.html" />
+    <link rel="next" title="LICENSE" href="__LICENSE.html" />
+    <link rel="prev" title="Standard Documents" href="__standards.html" />
    
   
   
@@ -70,7 +70,7 @@
         <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         
-        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
         
         <a id="logo" href="index.html">
           <div>ROS2</div>
@@ -173,8 +173,7 @@ Content on this topic
 
 </div>
 <div class="toc-tree">
-  <html>
-  <body><ul>
+  <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adrd2121_imu">Rosindex</a></li>
 </ul>
@@ -269,6 +268,7 @@ Content on this topic
 </ul>
 </li>
 </ul>
+
 <ul class="current">
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__message_definitions.html">Message Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="msg/AdiImu.html">AdiImu</a></li>
@@ -282,17 +282,17 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5" checked=""/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 </ul>
 </li>
 </ul>
+
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
-</body>
-</html>
+
 
 </div>
         </div>
@@ -362,7 +362,7 @@ $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>/
 <span class="nv">$cd</span><span class="w"> </span>~/ros2_ws
 $<span class="w"> </span>rosdep<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>--from-path<span class="w"> </span>src<span class="w"> </span>--rosdistro<span class="w"> </span>humble<span class="w"> </span>-y
 
-<span class="c1"># Build</span>
+<span class="c1"># Build </span>
 $<span class="w"> </span>colcon<span class="w"> </span>build
 
 <span class="c1">## To clean first before building, you may run the following instead:</span>
@@ -393,7 +393,7 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 <ul class="simple">
 <li><p>When the device is connected to the Host PC, it will be listed like <code class="docutils literal notranslate"><span class="pre">/dev/ttyACM0</span></code> where number can change depending on how many ACM devices are connected.</p></li>
 <li><p>To access the device, listed below are two ways to so.
-<strong>IMPORTANT</strong>: This is required before <a class="reference internal" href="#launch"><span class="xref myst">Launch</span></a>, else launch will fail.</p></li>
+<strong>IMPORTANT</strong>: This is required before <a class="icon link reference external" href="http://docs.ros.org/en/latest/p/adi_iio/index.html#launch" target="_blank" title="adi_iio humble"><span class="xref myst">Launch</span></a>, else launch will fail.</p></li>
 </ul>
 <section id="temporary-access">
 <h4>Temporary Access<a class="headerlink" href="#temporary-access" title="Link to this heading"></a></h4>
@@ -512,7 +512,7 @@ lrwxrwxrwx<span class="w"> </span><span class="m">1</span><span class="w"> </spa
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
 $<span class="w"> </span><span class="nb">source</span><span class="w"> </span>install/setup.bash
 
-<span class="c1"># Launch</span>
+<span class="c1"># Launch </span>
 <span class="c1">## $ ros2 launch adrd2121_imu &lt;imu_product&gt;.launch.py</span>
 <span class="c1">## Example for launching ADIS16470</span>
 $<span class="w"> </span>ros2<span class="w"> </span>launch<span class="w"> </span>adrd2121_imu<span class="w"> </span>adis16470.launch.py
@@ -1177,8 +1177,8 @@ the IMU data would gain offset. See /bias_estimate service instead.</p></li>
           </div>
               <div class="related">
                 &nbsp;
-    <a href="__LICENSE.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">LICENSE</a>
-    <a href="__PACKAGE.html" title="Next document (Alt+Shift+RightArrow)" class="next">PACKAGE</a>
+    <a href="__standards.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">Standard Documents</a>
+    <a href="__LICENSE.html" title="Next document (Alt+Shift+RightArrow)" class="next">LICENSE</a>
               </div>
           
         </div>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['p_5fimu_5fglob_5fcmd_5fservice_5f_0',['p_imu_glob_cmd_service_',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html#af214c19e23577b0b2e75976d9e66e52d',1,'AdiImuBufRos2']]],
-  ['packed_1',['PACKED',['http://docs.ros.org/en/latest/p/adi_tmc_coe_core/generated/doxygen/html/structPACKED.html',1,'']]]
+  ['no_5fof_5fsamp_0',['no_of_samp',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1IIOWrapper.html#af9f2991ff449ed6d9a202a549431311d',1,'adi_imu::IIOWrapper']]]
 ];

@@ -21,7 +21,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="513" column="32" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="513" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a5a91cf10fc9299a351048576f258a50f" prot="private" static="no" mutable="no">
-        <type><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref> *</type>
+        <type><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref> *</type>
         <definition>IInputSensor* ADI3DToFSafetyBubbleDetector::input_sensor_</definition>
         <argsstring></argsstring>
         <name>input_sensor_</name>
@@ -35,7 +35,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="514" column="17" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="514" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a7b9038da47c07be8a57db5fb9349d528" prot="private" static="no" mutable="no">
-        <type><ref refid="classOOutputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_floor_detector/adi_3dtof_floor_detector.tag">OOutputSensor</ref> *</type>
+        <type><ref refid="classOOutputSensor" kindref="compound">OOutputSensor</ref> *</type>
         <definition>OOutputSensor* ADI3DToFSafetyBubbleDetector::output_sensor_</definition>
         <argsstring></argsstring>
         <name>output_sensor_</name>
@@ -49,7 +49,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="515" column="18" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="515" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1aab89e996dd6a43f2ae49c4d13a201995" prot="private" static="no" mutable="no">
-        <type><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref> *</type>
+        <type><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref> *</type>
         <definition>ImageProcUtils* ADI3DToFSafetyBubbleDetector::image_proc_utils_</definition>
         <argsstring></argsstring>
         <name>image_proc_utils_</name>
@@ -750,7 +750,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="566" column="33" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="566" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a8b87494f69a099766f6a5b41c0474124" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
+        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
         <definition>CameraIntrinsics ADI3DToFSafetyBubbleDetector::depth_intrinsics_</definition>
         <argsstring></argsstring>
         <name>depth_intrinsics_</name>
@@ -764,7 +764,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="568" column="20" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="568" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1aaf85fd39013390ec2cdd52bf4c1e7e22" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
         <definition>CameraExtrinsics ADI3DToFSafetyBubbleDetector::depth_extrinsics_</definition>
         <argsstring></argsstring>
         <name>depth_extrinsics_</name>
@@ -778,7 +778,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="569" column="20" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="569" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1ae7640a0992c087d7f1e3a1e8010234ff" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
         <definition>CameraExtrinsics ADI3DToFSafetyBubbleDetector::depth_extrinsics_external_</definition>
         <argsstring></argsstring>
         <name>depth_extrinsics_external_</name>
@@ -792,7 +792,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="570" column="20" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="570" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a9b41bc1f20773305c0a3b2695ba0fee5" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
+        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
         <definition>CameraIntrinsics ADI3DToFSafetyBubbleDetector::vcam_intrinsics_</definition>
         <argsstring></argsstring>
         <name>vcam_intrinsics_</name>
@@ -806,7 +806,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="571" column="20" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="571" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a99a0aba9c4634751dbcd7b6b6c1bcc22" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
         <definition>CameraExtrinsics ADI3DToFSafetyBubbleDetector::vcam_extrinsics_</definition>
         <argsstring></argsstring>
         <name>vcam_extrinsics_</name>
@@ -1329,7 +1329,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="875" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="875" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1a296ec8a272a6a4c285332324a2c76477" prot="private" static="no" mutable="no">
-        <type>std::queue&lt; <ref refid="classADTF31xxSensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_floor_detector/adi_3dtof_floor_detector.tag">ADTF31xxSensorFrameInfo</ref> * &gt;</type>
+        <type>std::queue&lt; <ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> * &gt;</type>
         <definition>std::queue&lt;ADTF31xxSensorFrameInfo *&gt; ADI3DToFSafetyBubbleDetector::input_frames_queue_</definition>
         <argsstring></argsstring>
         <name>input_frames_queue_</name>
@@ -1517,7 +1517,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="476" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classADI3DToFSafetyBubbleDetector_1aa8b545d36f761d7b4d1e1a9a30573b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classADTF31xxSensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_floor_detector/adi_3dtof_floor_detector.tag">ADTF31xxSensorFrameInfo</ref> *</type>
+        <type><ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> *</type>
         <definition>ADTF31xxSensorFrameInfo * ADI3DToFSafetyBubbleDetector::safetyBubbleDetectorIOThreadGetNextFrame</definition>
         <argsstring>(void)</argsstring>
         <name>safetyBubbleDetectorIOThreadGetNextFrame</name>
@@ -1934,7 +1934,7 @@
         <name>populateIdealCameraIntrinsics</name>
         <qualifiedname>ADI3DToFSafetyBubbleDetector::populateIdealCameraIntrinsics</qualifiedname>
         <param>
-          <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref> *</type>
+          <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref> *</type>
           <declname>camera_intrinsics</declname>
         </param>
         <briefdescription>

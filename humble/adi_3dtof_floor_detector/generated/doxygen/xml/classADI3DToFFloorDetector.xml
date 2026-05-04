@@ -21,7 +21,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="379" column="32" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="379" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1ad3bb804dce8b4852b87c76439241d257" prot="private" static="no" mutable="no">
-        <type><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref> *</type>
+        <type><ref refid="classIInputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">IInputSensor</ref> *</type>
         <definition>IInputSensor* ADI3DToFFloorDetector::input_sensor_</definition>
         <argsstring></argsstring>
         <name>input_sensor_</name>
@@ -35,7 +35,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="380" column="17" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="380" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1a1412d0435ff0ed7616072eb1fe2584d5" prot="private" static="no" mutable="no">
-        <type><ref refid="classOOutputSensor" kindref="compound">OOutputSensor</ref> *</type>
+        <type><ref refid="classOOutputSensor" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">OOutputSensor</ref> *</type>
         <definition>OOutputSensor* ADI3DToFFloorDetector::output_sensor_</definition>
         <argsstring></argsstring>
         <name>output_sensor_</name>
@@ -49,7 +49,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="381" column="18" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="381" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1a14c67e9b47ca7074d3bc4cc15878f370" prot="private" static="no" mutable="no">
-        <type><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref> *</type>
+        <type><ref refid="classImageProcUtils" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">ImageProcUtils</ref> *</type>
         <definition>ImageProcUtils* ADI3DToFFloorDetector::image_proc_utils_</definition>
         <argsstring></argsstring>
         <name>image_proc_utils_</name>
@@ -610,7 +610,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="425" column="33" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="425" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1a22edfb87411e9e416428089168cd2dec" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
+        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
         <definition>CameraIntrinsics ADI3DToFFloorDetector::depth_intrinsics_</definition>
         <argsstring></argsstring>
         <name>depth_intrinsics_</name>
@@ -624,7 +624,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="427" column="20" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="427" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1aabe8fcb8594772dd95398f613debcbe1" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
         <definition>CameraExtrinsics ADI3DToFFloorDetector::depth_extrinsics_</definition>
         <argsstring></argsstring>
         <name>depth_extrinsics_</name>
@@ -638,7 +638,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="428" column="20" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="428" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1a09cd37bf8d8160c07f2ec1830abd8eec" prot="private" static="no" mutable="no">
-        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
+        <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref></type>
         <definition>CameraExtrinsics ADI3DToFFloorDetector::depth_extrinsics_external_</definition>
         <argsstring></argsstring>
         <name>depth_extrinsics_external_</name>
@@ -725,7 +725,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="436" column="7" bodyfile="include/adi_3dtof_floor_detector_node.h" bodystart="436" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFFloorDetector_1af5833ac8911b09d3a50a3d903122eb58" prot="private" static="no" mutable="no">
-        <type>std::queue&lt; <ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> * &gt;</type>
+        <type>std::queue&lt; <ref refid="classADTF31xxSensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">ADTF31xxSensorFrameInfo</ref> * &gt;</type>
         <definition>std::queue&lt;ADTF31xxSensorFrameInfo *&gt; ADI3DToFFloorDetector::input_frames_queue_</definition>
         <argsstring></argsstring>
         <name>input_frames_queue_</name>
@@ -1263,7 +1263,7 @@
         <location file="include/adi_3dtof_floor_detector_node.h" line="345" column="8"/>
       </memberdef>
       <memberdef kind="function" id="classADI3DToFFloorDetector_1a1550e73aa67abb22392d5101bd71dc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classADTF31xxSensorFrameInfo" kindref="compound">ADTF31xxSensorFrameInfo</ref> *</type>
+        <type><ref refid="classADTF31xxSensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">ADTF31xxSensorFrameInfo</ref> *</type>
         <definition>ADTF31xxSensorFrameInfo * ADI3DToFFloorDetector::floorDetectorIOThreadGetNextFrame</definition>
         <argsstring>(void)</argsstring>
         <name>floorDetectorIOThreadGetNextFrame</name>
@@ -1633,7 +1633,7 @@
           <declname>rotated_point_cloud</declname>
         </param>
         <param>
-          <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_reference/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref> *</type>
+          <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref> *</type>
           <declname>camera_extrinsics</declname>
         </param>
         <param>

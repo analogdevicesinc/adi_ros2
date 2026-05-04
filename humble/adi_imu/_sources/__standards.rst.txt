@@ -6,7 +6,7 @@ Standard Documents
 
    __LICENSE
    __README
-   __CONTRIBUTING
-   __PACKAGE
    __CHANGELOG
+   __PACKAGE
+   __CONTRIBUTING
 

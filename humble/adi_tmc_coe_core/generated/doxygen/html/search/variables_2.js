@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rotation_5fmatrix_0',['rotation_matrix',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraExtrinsics.html#ad42d7e4e4b95e76c65142e6994a0c3aa',1,'CameraExtrinsics']]]
+  ['distortion_5fcoeffs_0',['distortion_coeffs',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html#addb98003691f1c0d46fac95fbe2fba31',1,'CameraIntrinsics']]]
 ];

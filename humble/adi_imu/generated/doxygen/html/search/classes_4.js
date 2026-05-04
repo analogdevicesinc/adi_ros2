@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['float32pubsub_0',['Float32PubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classFloat32PubSub.html',1,'']]]
+  ['rospublishergroup_0',['RosPublisherGroup',['../classadi__imu_1_1RosPublisherGroup.html',1,'adi_imu']]],
+  ['rospublishergroupinterface_1',['RosPublisherGroupInterface',['../classadi__imu_1_1RosPublisherGroupInterface.html',1,'adi_imu']]],
+  ['rostask_2',['RosTask',['../classadi__imu_1_1RosTask.html',1,'adi_imu']]]
 ];

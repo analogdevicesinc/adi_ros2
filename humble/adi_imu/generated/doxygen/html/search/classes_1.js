@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['accelgyrotempdataprovider_0',['AccelGyroTempDataProvider',['../classadi__imu_1_1AccelGyroTempDataProvider.html',1,'adi_imu']]],
-  ['accelgyrotempdataproviderinterface_1',['AccelGyroTempDataProviderInterface',['../classadi__imu_1_1AccelGyroTempDataProviderInterface.html',1,'adi_imu']]],
-  ['accelgyrotemprospublisher_2',['AccelGyroTempRosPublisher',['../classadi__imu_1_1AccelGyroTempRosPublisher.html',1,'adi_imu']]],
-  ['accelgyrotemprospublisherinterface_3',['AccelGyroTempRosPublisherInterface',['../classadi__imu_1_1AccelGyroTempRosPublisherInterface.html',1,'adi_imu']]],
-  ['accelgyrotempsubscribertest_4',['AccelGyroTempSubscriberTest',['../classAccelGyroTempSubscriberTest.html',1,'']]],
-  ['adi3dtofadtf31xx_5',['ADI3DToFADTF31xx',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classADI3DToFADTF31xx.html',1,'']]],
-  ['adi3dtofadtf31xxframeinfo_6',['ADI3DToFADTF31xxFrameInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classADI3DToFADTF31xxFrameInfo.html',1,'']]],
-  ['adi3dtofadtf31xxoutputinfo_7',['ADI3DToFADTF31xxOutputInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classADI3DToFADTF31xxOutputInfo.html',1,'']]],
-  ['adi3dtoffloordetector_8',['ADI3DToFFloorDetector',['http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html/classADI3DToFFloorDetector.html',1,'']]],
-  ['adi3dtoffloordetectorexample_9',['ADI3DToFFloorDetectorExample',['http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html/classADI3DToFFloorDetectorExample.html',1,'']]],
-  ['adi3dtoffloordetectoroutputinfo_10',['ADI3DToFFloorDetectorOutputInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html/classADI3DToFFloorDetectorOutputInfo.html',1,'']]],
-  ['adi3dtofsafetybubbledetector_11',['ADI3DToFSafetyBubbleDetector',['http://docs.ros.org/en/latest/p/adi_3dtof_safety_bubble_detector/generated/doxygen/html/classADI3DToFSafetyBubbleDetector.html',1,'']]],
-  ['adi3dtofsafetybubbledetectoroutputinfo_12',['ADI3DToFSafetyBubbleDetectorOutputInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_safety_bubble_detector/generated/doxygen/html/classADI3DToFSafetyBubbleDetectorOutputInfo.html',1,'']]],
-  ['adiimubufros2_13',['AdiImuBufRos2',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html',1,'']]],
-  ['adiimuros2_14',['AdiImuRos2',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuRos2.html',1,'']]],
-  ['adis1646xregistermap_15',['Adis1646xRegisterMap',['../classadi__imu_1_1Adis1646xRegisterMap.html',1,'adi_imu']]],
-  ['adis1647xregistermap_16',['Adis1647xRegisterMap',['../classadi__imu_1_1Adis1647xRegisterMap.html',1,'adi_imu']]],
-  ['adis1650xregistermap_17',['Adis1650xRegisterMap',['../classadi__imu_1_1Adis1650xRegisterMap.html',1,'adi_imu']]],
-  ['adis1654xregistermap_18',['Adis1654xRegisterMap',['../classadi__imu_1_1Adis1654xRegisterMap.html',1,'adi_imu']]],
-  ['adis1655xregistermap_19',['Adis1655xRegisterMap',['../classadi__imu_1_1Adis1655xRegisterMap.html',1,'adi_imu']]],
-  ['adis1657xregistermap_20',['Adis1657xRegisterMap',['../classadi__imu_1_1Adis1657xRegisterMap.html',1,'adi_imu']]],
-  ['adisdevicefactory_21',['ADISDeviceFactory',['../classadi__imu_1_1ADISDeviceFactory.html',1,'adi_imu']]],
-  ['adisdeviceregistry_22',['ADISDeviceRegistry',['../classadi__imu_1_1ADISDeviceRegistry.html',1,'adi_imu']]],
-  ['adisensorframeinfo_23',['ADISensorFrameInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html/classADISensorFrameInfo.html',1,'']]],
-  ['adisregistermap_24',['ADISRegisterMap',['../classadi__imu_1_1ADISRegisterMap.html',1,'adi_imu']]],
-  ['adtf31xxsensorframeinfo_25',['ADTF31xxSensorFrameInfo',['http://docs.ros.org/en/latest/p/adi_3dtof_floor_detector/generated/doxygen/html/classADTF31xxSensorFrameInfo.html',1,'']]],
-  ['attrpubsub_26',['AttrPubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classAttrPubSub.html',1,'']]]
+  ['boolpubsub_0',['BoolPubSub',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classBoolPubSub.html',1,'']]]
 ];

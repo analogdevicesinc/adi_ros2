@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['camera_5fmatrix_0',['camera_matrix',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html#acda10bc01bc21640010acf097e0f44be',1,'CameraIntrinsics']]],
-  ['cameraextrinsics_1',['CameraExtrinsics',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraExtrinsics.html',1,'']]],
-  ['cameraintrinsics_2',['CameraIntrinsics',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structCameraIntrinsics.html',1,'']]],
-  ['checkstandstillduration_3',['checkStandStillDuration',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classBiasEstimateRos2.html#a4898f17227bce92fdb3742398fca4dd2',1,'BiasEstimateRos2']]],
-  ['clearfault_4',['clearFault',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classImuBufRos2.html#a7c9f04cc3bee0bc8f4c11473a8e2deff',1,'ImuBufRos2']]],
-  ['clearfaultcb_5',['clearFaultCB',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classImuBufRos2.html#abb5bc1d1235daeaa24a7e3e5b0b4cf58',1,'ImuBufRos2']]],
-  ['compressed_5fdepth_5fimage_5ftransport_6',['compressed_depth_image_transport',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'']]],
-  ['computepointcloud_7',['computePointCloud',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classImageProcUtils.html#a8871d35fb9555129c55c762e560e5346',1,'ImageProcUtils']]],
-  ['config_8',['config',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html#a06010fb047f5a3cc24d129c0140d271e',1,'AdiImuBufRos2::config()'],['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuRos2.html#a07d7eedace366e89ec6b5eaa4a3eb834',1,'AdiImuRos2::config()'],['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classImuBufRos2.html#ad442c78a2377295fe195b942160dd3ee',1,'ImuBufRos2::config()']]],
-  ['configheader_9',['ConfigHeader',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/structcompressed__depth__image__transport_1_1ConfigHeader.html',1,'compressed_depth_image_transport']]]
+  ['getchannelattrsegment_0',['getChannelAttrSegment',['../classIIOPath.html#a0930e5c4ec67786816e86d20cf5630ae',1,'IIOPath']]],
+  ['getchannelsegment_1',['getChannelSegment',['../classIIOPath.html#a68ca6f2b86b988adee46b4a519c1d38d',1,'IIOPath']]],
+  ['getcontextattrsegment_2',['getContextAttrSegment',['../classIIOPath.html#a135e59c460f8b33cc03f4e75b7dfe1d9',1,'IIOPath']]],
+  ['getdeviceattrsegment_3',['getDeviceAttrSegment',['../classIIOPath.html#a5c6da9bcf16b0a46c5b2bb8123185098',1,'IIOPath']]],
+  ['getdevicesegment_4',['getDeviceSegment',['../classIIOPath.html#a628013ed289d637eb19ec39718e1fb02',1,'IIOPath']]],
+  ['getextendedchannelsegment_5',['getExtendedChannelSegment',['../classIIOPath.html#a09da667d213f45666b9274e59d2cb223',1,'IIOPath']]]
 ];

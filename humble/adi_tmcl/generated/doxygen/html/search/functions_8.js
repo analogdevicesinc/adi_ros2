@@ -26,6 +26,5 @@ var searchData=
   ['initparams_23',['initParams',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classAdiImuBufRos2.html#a5947f50fa4fdd1e5f565cd3e7b6c973a',1,'AdiImuBufRos2']]],
   ['initserviceservers_24',['initServiceServers',['http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html/classImuBufRos2.html#a20e624b5984a9ed9929f04a8dae472b3',1,'ImuBufRos2']]],
   ['internal_5fsensor_5fbandwidth_25',['internal_sensor_bandwidth',['http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html/classadi__imu_1_1IIOWrapper.html#a1bb53bfa102423d7f9797534212ecfe9',1,'adi_imu::IIOWrapper']]],
-  ['isopened_26',['isOpened',['http://docs.ros.org/en/latest/p/adi_3dtof_adtf31xx/generated/doxygen/html/classIInputSensor.html#a0811292ecb18e8928d06993a7dbd2507',1,'IInputSensor']]],
-  ['isvalid_27',['isValid',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classIIOPath.html#a83cbc5d8608ef1a58e117fad3bb29670',1,'IIOPath']]]
+  ['isvalid_26',['isValid',['http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html/classIIOPath.html#a83cbc5d8608ef1a58e117fad3bb29670',1,'IIOPath']]]
 ];

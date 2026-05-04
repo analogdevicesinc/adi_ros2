@@ -301,7 +301,11 @@
   <option  id='EXPAND_AS_DEFINED' default='yes' type='stringlist'>
   </option>
   <option  id='SKIP_FUNCTION_MACROS' default='yes' type='bool'><value>YES</value></option>
-  <option  id='TAGFILES' default='yes' type='stringlist'>
+  <option  id='TAGFILES' default='no' type='stringlist'>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adrd2121_imu/adrd2121_imu.tag=http://docs.ros.org/en/latest/p/adrd2121_imu/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_imu/adi_imu.tag=http://docs.ros.org/en/latest/p/adi_imu/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_tmcl/adi_tmcl.tag=http://docs.ros.org/en/latest/p/adi_tmcl/generated/doxygen/html]]></value>
+    <value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_iio/adi_iio.tag=http://docs.ros.org/en/latest/p/adi_iio/generated/doxygen/html]]></value>
   </option>
   <option  id='GENERATE_TAGFILE' default='no' type='string'><value><![CDATA[/home/runner/work/adi_ros2/adi_ros2/_build/docs_build/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx-public-cc-api/doxygen_output/adi_3dtof_adtf31xx.tag]]></value></option>
   <option  id='ALLEXTERNALS' default='yes' type='bool'><value>NO</value></option>

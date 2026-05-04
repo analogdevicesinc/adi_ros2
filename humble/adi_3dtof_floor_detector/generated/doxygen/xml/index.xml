@@ -189,44 +189,6 @@
     <member refid="classADI3DToFFloorDetectorOutputInfo_1a3ce07f2996e966e7d37d9af735201f82" kind="function"><name>~ADI3DToFFloorDetectorOutputInfo</name></member>
     <member refid="classADI3DToFFloorDetectorOutputInfo_1adeefef6e54a3c6fb10d3785b79c903bc" kind="function"><name>operator=</name></member>
   </compound>
-  <compound refid="classADISensorFrameInfo" kind="class"><name>ADISensorFrameInfo</name>
-    <member refid="classADISensorFrameInfo_1a420907da74e5b17bf6b7f9ecbdc0cc06" kind="variable"><name>depth_image_</name></member>
-    <member refid="classADISensorFrameInfo_1a2f6c3d2cfa9e6d86883a00c9ede9420b" kind="variable"><name>ab_image_</name></member>
-    <member refid="classADISensorFrameInfo_1af1effb1c74f213a29e26d9da26b1086a" kind="variable"><name>frame_timestamp_</name></member>
-    <member refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" kind="function"><name>ADISensorFrameInfo</name></member>
-    <member refid="classADISensorFrameInfo_1ad93b88f3ecfce25856baf6dcea1df841" kind="function"><name>~ADISensorFrameInfo</name></member>
-  </compound>
-  <compound refid="classADTF31xxSensorFrameInfo" kind="class"><name>ADTF31xxSensorFrameInfo</name>
-    <member refid="classADTF31xxSensorFrameInfo_1a16ccb5b22e0cd47a427797a73f712972" kind="variable"><name>image_width_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a26d9bce4751ecaaa3ff46a7554be9d2e" kind="variable"><name>image_height_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a787f73ded74c3a1383ce33b5ed1c7d65" kind="variable"><name>depth_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a478b9945e7f45ff8ca176bedcc459175" kind="variable"><name>ab_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a2900b3a5e6609318d4747b2720947130" kind="variable"><name>xyz_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1ac83b57cf7dcbacab15ba252948a29304" kind="variable"><name>rotated_xyz_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a60c3d7bd2844d9c9f23d51bcf90de967" kind="variable"><name>compressed_depth_frame_size_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1ab030b462166d0eae56c1fb8871226e7c" kind="variable"><name>compressed_depth_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1aee0a26f31430f36022195ad7a6871d47" kind="variable"><name>frame_timestamp_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a458c8d328371b381ca7883a69738902b" kind="variable"><name>modified_xyz_frame_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1ab32b6a152ac462ca5010f41935ff0dc7" kind="variable"><name>modified_xyz_frame_size_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1afc3141d4c7bfa6fd499f7c5f89c58c9d" kind="variable"><name>nearby_objects_found_flag_</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1afae0c0b2743410daedecf223f741521d" kind="function"><name>ADTF31xxSensorFrameInfo</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a6817e4132bb8e263d1a49ad2d340adb3" kind="function"><name>~ADTF31xxSensorFrameInfo</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a4ae5e3b48239e5c43b31ddb3360f4072" kind="function"><name>getDepthFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1ae5f51fb4e46cd93c0d45f01bc4bb5130" kind="function"><name>getIRFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a9271647c3cdf54d936edeea1a2568ffe" kind="function"><name>getXYZFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a8bf71fc15c7e42110c43cb1e9ddfeb8c" kind="function"><name>getRotatedXYZFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a16f4dfbad9c5df744f25cac9aba26b72" kind="function"><name>getCompressedDepthFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a0580cccfca341b7990367d73838c50b6" kind="function"><name>getFrameTimestampPtr</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a5f479d2ad8b5981831d7a454dc972c0d" kind="function"><name>getFrameTimestamp</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a31b6ab731eeb78542e9ab601ffe74c4a" kind="function"><name>getCompressedDepthFrameSize</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1aa2b371705acdaa9fdffc18164fcf8542" kind="function"><name>setCompressedDepthFrameSize</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a65f8083349a9319c367344b572d59765" kind="function"><name>setModifiedXYZFrameSize</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a27f74f9125dcff7207dec08db0f1e9f4" kind="function"><name>getModifiedXYZFrameSize</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a83af2cddf44a79357e4b0c3fb382d1d7" kind="function"><name>getModifiedXYZFrame</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a0abe26615b9d2b663facc2be343cce0e" kind="function"><name>getNearbyObjectsFoundFlagPtr</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1ac30bd8c2982bf295c00cabf39ac2626b" kind="function"><name>getNearbyObjectsFoundFlag</name></member>
-    <member refid="classADTF31xxSensorFrameInfo_1a89df1810d0ac1bdffade369411e9a2cc" kind="function"><name>operator=</name></member>
-  </compound>
   <compound refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters" kind="struct"><name>ADI3DToFFloorDetector::DynamicReconfigureParameters</name>
     <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1abc3a7d5a8bb384f2fe0c1ff9d07d3403" kind="variable"><name>ab_threshold</name></member>
     <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a331211ae2c1add3fe777ef708ea8ed17" kind="variable"><name>confidence_threshold</name></member>
@@ -235,63 +197,6 @@
     <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a1d0d5eb51be7992d6a38ae78a07c2c4f" kind="variable"><name>ransac_distance_threshold_mtr</name></member>
     <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a883da0cc395501f21aed386d1b9c56a6" kind="variable"><name>enable_fallback_floor_detection</name></member>
     <member refid="structADI3DToFFloorDetector_1_1DynamicReconfigureParameters_1a415a44be0d269ce01f0775635193f842" kind="variable"><name>fallback_floor_height_offset_mtr</name></member>
-  </compound>
-  <compound refid="classInputSensorRosTopic" kind="class"><name>InputSensorRosTopic</name>
-    <member refid="classInputSensorRosTopic_1a8ff87563ab12f519027281f8a9608847" kind="typedef"><name>sync_policy_depth_ab_image</name></member>
-    <member refid="classInputSensorRosTopic_1a19080aec70bac5b4ecf61ec2782e60f7" kind="typedef"><name>depth_ab_image_synchronizer</name></member>
-    <member refid="classInputSensorRosTopic_1a635098210dea21873a315986b3321ee4" kind="variable"><name>in_file_name_</name></member>
-    <member refid="classInputSensorRosTopic_1a37ee8be70a61ddbae14e0736dfa7131b" kind="variable"><name>total_frames_</name></member>
-    <member refid="classInputSensorRosTopic_1a562b3e59530723b00bf9a148b660b4ee" kind="variable"><name>ros_topics_input_frames_queue_</name></member>
-    <member refid="classInputSensorRosTopic_1a5ce64557debd4b483665a8778ab78692" kind="variable"><name>camera_info_topic_name</name></member>
-    <member refid="classInputSensorRosTopic_1a54da44398e62a95692a0686ae35e3b19" kind="variable"><name>depth_image_topic_name</name></member>
-    <member refid="classInputSensorRosTopic_1abe403dd7e3f464a3a49e60eabd7bbca4" kind="variable"><name>ab_image_topic_name</name></member>
-    <member refid="classInputSensorRosTopic_1a6f077262bd6a91d23b8eb9baa9ccd8fc" kind="variable"><name>ros_topics_input_thread_mtx_</name></member>
-    <member refid="classInputSensorRosTopic_1a63ca2e6c23e033f057e2f3ad04d057ee" kind="variable"><name>camera_parameters_updated_</name></member>
-    <member refid="classInputSensorRosTopic_1a7769cab32352ff9370fe6ec9fdd44b09" kind="variable"><name>camera_intrinsics_</name></member>
-    <member refid="classInputSensorRosTopic_1a0697a072c34ae62eb91f832cad10e9b5" kind="variable"><name>frame_timestamp_</name></member>
-    <member refid="classInputSensorRosTopic_1a16372319fb03234d762b61a508606e91" kind="variable"><name>camera_info_subscriber_</name></member>
-    <member refid="classInputSensorRosTopic_1a11978f6f67d938fb3e2dfb63fc7604bc" kind="variable"><name>depth_image_subscriber_</name></member>
-    <member refid="classInputSensorRosTopic_1a20aa00c23cf839557c16abac2632fa64" kind="variable"><name>ab_image_subscriber_</name></member>
-    <member refid="classInputSensorRosTopic_1ae8e6c91406bf4bba844ee07ebac7da97" kind="variable"><name>depth_ab_image_sync_ptr_</name></member>
-    <member refid="classInputSensorRosTopic_1ace1c02de2cd7818607dec9f496fdaf34" kind="variable"><name>private_node_handle_</name></member>
-    <member refid="classInputSensorRosTopic_1afbf1e04c0074fc1838c22d53ed06ebb8" kind="function"><name>openSensor</name></member>
-    <member refid="classInputSensorRosTopic_1a748722a65cd556527e2cfe7186607a50" kind="function"><name>configureSensor</name></member>
-    <member refid="classInputSensorRosTopic_1aeee54c8e77673f59d873cd67ba50793f" kind="function"><name>getIntrinsics</name></member>
-    <member refid="classInputSensorRosTopic_1a1e8b02a295072098e64a7a3d49d4f727" kind="function"><name>getExtrinsics</name></member>
-    <member refid="classInputSensorRosTopic_1a758a978ca19e65526ee3a97c3eae60e9" kind="function"><name>readNextFrame</name></member>
-    <member refid="classInputSensorRosTopic_1a53201f4fc3c4e5cd6b243b6961731bfc" kind="function"><name>getFrameTimestamp</name></member>
-    <member refid="classInputSensorRosTopic_1aec18509d35ab824e013d913acd92a6c6" kind="function"><name>closeSensor</name></member>
-    <member refid="classInputSensorRosTopic_1aef5e1053c7473c33168b9199e58f5f72" kind="function"><name>syncDepthandIr</name></member>
-    <member refid="classInputSensorRosTopic_1ae2afb29cb0195dae6f61b4742c5cc37b" kind="function"><name>camInfoCallback</name></member>
-    <member refid="classInputSensorRosTopic_1ae8e1dae39d4acda6868c71d8e2e1713f" kind="function"><name>IrCallback</name></member>
-    <member refid="classInputSensorRosTopic_1a2b583037c7e64539b87a7359e8e1c7c0" kind="function"><name>DepthCallback</name></member>
-    <member refid="classInputSensorRosTopic_1a223b0cf1d23c55f91aae0850df15fcb5" kind="function"><name>setABinvalidationThreshold</name></member>
-    <member refid="classInputSensorRosTopic_1ae9657ce49afe88d78307de3c5424e933" kind="function"><name>setConfidenceThreshold</name></member>
-  </compound>
-  <compound refid="classOOutputSensor" kind="class"><name>OOutputSensor</name>
-    <member refid="classOOutputSensor_1a7147da44b9883ddab35177147370a814" kind="function"><name>open</name></member>
-    <member refid="classOOutputSensor_1a66a9dd7cbe5f53c1b4ccbe4d4e266c3c" kind="function"><name>write</name></member>
-    <member refid="classOOutputSensor_1ad9403fbf58e60445cba30c9ae2782ee9" kind="function"><name>close</name></member>
-  </compound>
-  <compound refid="classOutputSensorFactory" kind="class"><name>OutputSensorFactory</name>
-    <member refid="classOutputSensorFactory_1a545d16636c78d75cb9b049079c85b4b1" kind="function"><name>getOutputSensor</name></member>
-  </compound>
-  <compound refid="classOutputSensorFile" kind="class"><name>OutputSensorFile</name>
-    <member refid="classOutputSensorFile_1aa4f6c06505b82ebfe1dd5a17a322b6ab" kind="variable"><name>csv_enabled_</name></member>
-    <member refid="classOutputSensorFile_1aa4cd4e07a725ab1b2e39a916ca32dd23" kind="variable"><name>video_enabled_</name></member>
-    <member refid="classOutputSensorFile_1a2e74346a3d07c6ecc6aa488544224758" kind="variable"><name>output_csv_file_</name></member>
-    <member refid="classOutputSensorFile_1a47ec81ed3ed2fa1f46a14896c35099ce" kind="variable"><name>output_csv_file_name_</name></member>
-    <member refid="classOutputSensorFile_1afa7df88c88479e41323eb000cbf1ac4f" kind="variable"><name>output_video_writer_</name></member>
-    <member refid="classOutputSensorFile_1ac42ba228361139027418123f3c76bfcd" kind="variable"><name>output_video_file_name_</name></member>
-    <member refid="classOutputSensorFile_1aa7ccae7a12679d7bb46df6e7500327be" kind="function"><name>open</name></member>
-    <member refid="classOutputSensorFile_1abaced217cdb659524fd297c0bc4a2024" kind="function"><name>write</name></member>
-    <member refid="classOutputSensorFile_1aee6a2f09c050a443822329044fd8809f" kind="function"><name>close</name></member>
-    <member refid="classOutputSensorFile_1a108ab8f53a798801dfd2a55ab49c7eac" kind="function"><name>openOutputCsvFile</name></member>
-    <member refid="classOutputSensorFile_1a524d09b9d97e1df1435a645298db6d51" kind="function"><name>openOutputVideoFile</name></member>
-    <member refid="classOutputSensorFile_1ae9945e39a6fcbd091bcf091a93748f04" kind="function"><name>writeOutputCsvFile</name></member>
-    <member refid="classOutputSensorFile_1ac2ab2e483aac2118844ed7f6d7f8836e" kind="function"><name>writeOutputVideoFile</name></member>
-    <member refid="classOutputSensorFile_1aaa7f0121521658e85459954d0769772e" kind="function"><name>closeOutputCsvFile</name></member>
-    <member refid="classOutputSensorFile_1a5e881d94edc3b96185778065427da6c1" kind="function"><name>closeOutputVideoFile</name></member>
   </compound>
   <compound refid="namespacecompressed__depth__image__transport" kind="namespace"><name>compressed_depth_image_transport</name>
     <member refid="compression__common_8h_1abf0e52bf009aab3e2dd271e9b817ef3f" kind="enum"><name>compressionFormat</name></member>

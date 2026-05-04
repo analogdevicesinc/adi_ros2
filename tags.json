@@ -1,6 +1,6 @@
 {
   "humble/adi_meta": [
-    "humble",
+    "adi_meta",
     "core"
   ],
   "humble/adi_3dtof_adtf31xx": [

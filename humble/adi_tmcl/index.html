@@ -8,9 +8,9 @@
 
     <title>adi_tmcl &#8212; adi_tmcl 2.1.0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=5d595293" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=ac863bf0" />
     <link rel="stylesheet" type="text/css" href="_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
-    <script async="async" src="_static/app.umd.js?v=46a18818"></script>
+    <script async="async" src="_static/app.umd.js?v=09b0c6bc"></script>
     <script src="_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
     <script src="_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -69,7 +69,7 @@
         <a id="logo-org" href="https://analog.com" aria-label="Analog Devices Inc. landing page"></a>
         <div class="vertical-divider"></div>
         
-        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs" tabindex="0">Docs</label>
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Docs</label>
         
         <a id="logo" href="#">
           <div>ROS2</div>
@@ -99,7 +99,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#readme">README</a><ul>
-<li><a class="reference internal" href="#adi-tmcl">adi_tmcl</a></li>
+<li><a class="reference internal" href="#id1">adi_tmcl</a></li>
 <li><a class="reference internal" href="#background">Background</a></li>
 <li><a class="reference internal" href="#hardware">Hardware</a></li>
 <li><a class="reference internal" href="#software">Software</a><ul>
@@ -116,7 +116,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#stepper-motors">Stepper Motors</a><ul>
-<li><a class="reference internal" href="#id1">Calibrate the motors</a></li>
+<li><a class="reference internal" href="#id2">Calibrate the motors</a></li>
 </ul>
 </li>
 </ul>
@@ -177,8 +177,7 @@ Content on this topic
 
 </div>
 <div class="toc-tree">
-  <html>
-  <body><ul>
+  <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmcl">Rosindex</a></li>
 </ul>
@@ -264,6 +263,7 @@ Content on this topic
 </ul>
 </li>
 </ul>
+
 <ul>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__message_definitions.html">Message Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
 <li class="toctree-l2"><a class="reference internal" href="msg/TmcInfo.html">TmcInfo</a></li>
@@ -277,18 +277,18 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
-<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 </ul>
 </li>
 </ul>
+
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
 </ul>
-</body>
-</html>
+
 
 </div>
         </div>
@@ -333,10 +333,10 @@ Content on this topic
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="__standards.html">Standard Documents</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__README.html">README</a></li>
-<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__LICENSE.html">LICENSE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
 </ul>
 </li>
 </ul>
@@ -344,8 +344,8 @@ Content on this topic
 </section>
 <section id="readme">
 <h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
-<section id="adi-tmcl">
-<h2>adi_tmcl<a class="headerlink" href="#adi-tmcl" title="Link to this heading"></a></h2>
+<section id="id1">
+<h2>adi_tmcl<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p><strong>adi_tmcl</strong> (previously <em>tmcl_ros2</em>) is the official ROS2 Driver for ADI Trinamic Motor Controllers (TMC) that uses Trinamic Motion Control Language (TMCL) protocol.</p>
 </section>
 <section id="background">
@@ -500,8 +500,8 @@ $<span class="w"> </span>colcon<span class="w"> </span>build
 </section>
 <section id="stepper-motors">
 <h3>Stepper Motors<a class="headerlink" href="#stepper-motors" title="Link to this heading"></a></h3>
-<section id="id1">
-<h4>Calibrate the motors<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<section id="id2">
+<h4>Calibrate the motors<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
 <p>For a run-through/tutorial of how the calibration is done in the TMCL-IDE via its <code class="docutils literal notranslate"><span class="pre">Wizard</span> <span class="pre">Pool</span></code> feature, check this <a class="icon link reference external" href="https://www.youtube.com/watch?v=l6r63Q7Yr58o" target="_blank">link</a>.</p>
 <p>For more information about Trinamic features on stepper motors, visit this <a class="icon link reference external" href="https://www.analog.com/en/product-category/motor-and-motion-control.html" target="_blank">link</a>.</p>
 <blockquote>
