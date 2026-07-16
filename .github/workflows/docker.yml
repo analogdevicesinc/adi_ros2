@@ -2,15 +2,11 @@ name: Dockerfiles
 on:
   push:
     branches:
-      - "**humble**"
-      # - "**jazzy**"
-      # - "**rolling**"
-      - "**ci**"
+      - main
+      - develop-*
+      - ci-*
   pull_request:
   workflow_dispatch:
-
-env:
-  ROS_DISTRO: humble
 
 permissions:
   contents: read
@@ -41,32 +37,39 @@ jobs:
   build:
     runs-on: ${{ matrix.runner }}
     needs: lint
+    env:
+      ROS_DISTRO: ${{ matrix.ros_distro }}
     strategy:
       fail-fast: false
       matrix:
+        ros_distro: [humble, jazzy, lyrical]
+        track: [amd64, arm64, l4t]
         include:
-          - arch: amd64
+          - track: amd64
             runner: ubuntu-latest
-            targets: core,base,full,desktop
+            targets: core,base
             image-prefix: adi_ros2
-            artifact: images-amd64
-          - arch: arm64
-            runner: ubuntu-24.04-arm
-            targets: core,base,full,desktop
+          - track: arm64
+            runner: ubuntu-26.04-arm
+            targets: core,base
             image-prefix: adi_ros2
-            artifact: images-arm64
-          - arch: arm64
-            runner: ubuntu-24.04-arm
-            targets: l4t-core,l4t-base,l4t-full,l4t-desktop
+          - track: l4t
+            runner: ubuntu-26.04-arm
+            targets: l4t-core,l4t-base
             image-prefix: adi_ros2-l4t
-            artifact: images-l4t
+        exclude:
+          # The L4T base image (nvcr.io/nvidia/l4t-base, JetPack 6) is Ubuntu
+          # 22.04, so only ros-humble-* apt packages exist for it.
+          # jazzy/lyrical require Ubuntu 24.04/26.04 and cannot be built on this base.
+          - { track: l4t, ros_distro: jazzy }
+          - { track: l4t, ros_distro: lyrical }
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Build all stages (${{ matrix.arch }})
+      - name: Build all stages (${{ matrix.ros_distro }} / ${{ matrix.track }})
         uses: docker/bake-action@v7
         with:
           source: .
@@ -79,15 +82,13 @@ jobs:
           docker save \
             ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-core \
             ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-base \
-            ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-full \
-            ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-desktop \
-          | zstd -T0 -3 > "${{ runner.temp }}/${{ matrix.artifact }}.tar.zst"
+          | zstd -T0 -3 > "${{ runner.temp }}/images-${{ matrix.ros_distro }}-${{ matrix.track }}.tar.zst"
 
       - name: Upload images
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact }}
-          path: ${{ runner.temp }}/${{ matrix.artifact }}.tar.zst
+          name: images-${{ matrix.ros_distro }}-${{ matrix.track }}
+          path: ${{ runner.temp }}/images-${{ matrix.ros_distro }}-${{ matrix.track }}.tar.zst
           retention-days: 1
 
   scan:
@@ -96,32 +97,33 @@ jobs:
     permissions:
       contents: read
       security-events: write
+    env:
+      ROS_DISTRO: ${{ matrix.ros_distro }}
     strategy:
       fail-fast: false
       matrix:
+        ros_distro: [humble, jazzy, lyrical]
         arch: [amd64, arm64, l4t]
-        stage: [core, base, full, desktop]
+        stage: [core, base]
         include:
-          - arch: amd64
-            artifact: images-amd64
-            image-prefix: adi_ros2
-          - arch: arm64
-            artifact: images-arm64
-            image-prefix: adi_ros2
-          - arch: l4t
-            artifact: images-l4t
-            image-prefix: adi_ros2-l4t
+          - { arch: amd64, image-prefix: adi_ros2 }
+          - { arch: arm64, image-prefix: adi_ros2 }
+          - { arch: l4t,   image-prefix: adi_ros2-l4t }
+        exclude:
+          # No L4T images are built for jazzy/lyrical (see build job).
+          - { arch: l4t, ros_distro: jazzy }
+          - { arch: l4t, ros_distro: lyrical }
     steps:
       - uses: actions/checkout@v4
 
       - name: Download images
         uses: actions/download-artifact@v4
         with:
-          name: ${{ matrix.artifact }}
+          name: images-${{ matrix.ros_distro }}-${{ matrix.arch }}
           path: ${{ runner.temp }}
 
       - name: Load images
-        run: zstd -d "${{ runner.temp }}/${{ matrix.artifact }}.tar.zst" --stdout | docker load
+        run: zstd -d "${{ runner.temp }}/images-${{ matrix.ros_distro }}-${{ matrix.arch }}.tar.zst" --stdout | docker load
 
       - name: Login to Docker Hub
         uses: docker/login-action@v3
@@ -129,7 +131,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Scan CVEs — ${{ matrix.stage }} (${{ matrix.arch }})
+      - name: Scan CVEs — ${{ matrix.ros_distro }} ${{ matrix.stage }} (${{ matrix.arch }})
         id: cve-scan
         uses: docker/scout-action@v1
         continue-on-error: true
@@ -138,7 +140,7 @@ jobs:
           image: ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-${{ matrix.stage }}
           only-severities: critical,high
           only-fixed: true
-          sarif-file: ${{ runner.temp }}/scout-${{ matrix.arch }}-${{ matrix.stage }}.sarif
+          sarif-file: ${{ runner.temp }}/scout-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}.sarif
           summary: true
           write-comment: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -147,30 +149,30 @@ jobs:
         uses: github/codeql-action/upload-sarif@v4
         if: steps.cve-scan.outcome == 'success'
         with:
-          sarif_file: ${{ runner.temp }}/scout-${{ matrix.arch }}-${{ matrix.stage }}.sarif
+          sarif_file: ${{ runner.temp }}/scout-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}.sarif
           category: ${{ matrix.image-prefix }}-${{ env.ROS_DISTRO }}-${{ matrix.arch }}-${{ matrix.stage }}
 
       - name: Upload SARIF artifact
         uses: actions/upload-artifact@v4
         if: steps.cve-scan.outcome == 'success'
         with:
-          name: sarif-${{ matrix.arch }}-${{ matrix.stage }}
-          path: ${{ runner.temp }}/scout-${{ matrix.arch }}-${{ matrix.stage }}.sarif
+          name: sarif-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}
+          path: ${{ runner.temp }}/scout-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}.sarif
           retention-days: 30
 
-      - name: Generate SBOM — ${{ matrix.stage }} (${{ matrix.arch }})
+      - name: Generate SBOM — ${{ matrix.ros_distro }} ${{ matrix.stage }} (${{ matrix.arch }})
         uses: docker/scout-action@v1
         with:
           command: sbom
           image: ${{ matrix.image-prefix }}:${{ env.ROS_DISTRO }}-${{ matrix.stage }}
           format: spdx
-          output: ${{ runner.temp }}/sbom-${{ matrix.arch }}-${{ matrix.stage }}.spdx.json
+          output: ${{ runner.temp }}/sbom-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}.spdx.json
           summary: false
 
       - name: Upload SBOM artifact
         uses: actions/upload-artifact@v4
         with:
-          name: sbom-${{ matrix.arch }}-${{ matrix.stage }}
-          path: ${{ runner.temp }}/sbom-${{ matrix.arch }}-${{ matrix.stage }}.spdx.json
+          name: sbom-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}
+          path: ${{ runner.temp }}/sbom-${{ matrix.ros_distro }}-${{ matrix.arch }}-${{ matrix.stage }}.spdx.json
           retention-days: 30
 

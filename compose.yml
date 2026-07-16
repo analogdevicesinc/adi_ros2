@@ -1,14 +1,29 @@
 services:
   adi_iio:
-    image: adi_ros2:${ROS_DISTRO:-humble}-core
+    image: adi_ros2:${ROS_DISTRO}-core
     container_name: adi-iio
     privileged: true
     network_mode: host
     ipc: host
-    command: ros2 run adi_iio adi_iio_node --ros-args -p uri:="ip:192.168.2.1"
+    command: >
+      ros2 run adi_iio adi_iio_node --ros-args
+        -p uri:="${ADI_IIO_URI:-ip:192.168.2.1}"
+
+  adi_imu:
+    image: adi_ros2:${ROS_DISTRO}-core
+    container_name: adi-imu
+    privileged: true
+    network_mode: host
+    ipc: host
+    command: >
+      ros2 run adi_imu adi_imu_node --ros-args
+        -p iio_context_string:="${ADI_IMU_URI:-ip:10.87.54.122}"
+        -p imu_device_name:="${ADI_IMU_DEVICE_NAME:-adis16545-3}"
+        -p measured_data_topic_selection:='2'
+        --log-level debug
 
   shell:
-    image: adi_ros2:${ROS_DISTRO:-humble}-base
+    image: adi_ros2:${ROS_DISTRO}-base
     privileged: true
     network_mode: host
     ipc: host

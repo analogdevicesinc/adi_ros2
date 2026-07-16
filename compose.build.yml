@@ -9,7 +9,6 @@ services:
       target: core
       args:
         ROS_DISTRO: ${ROS_DISTRO}
-        TARGETARCH: ${TARGETARCH:-}
     image: adi_ros2:${ROS_DISTRO}-core
 
   base:
@@ -19,7 +18,6 @@ services:
       target: base
       args:
         ROS_DISTRO: ${ROS_DISTRO}
-        TARGETARCH: ${TARGETARCH:-}
     image: adi_ros2:${ROS_DISTRO}-base
 
   full:
@@ -29,7 +27,6 @@ services:
       target: full
       args:
         ROS_DISTRO: ${ROS_DISTRO}
-        TARGETARCH: ${TARGETARCH:-}
     image: adi_ros2:${ROS_DISTRO}-full
 
   desktop:
@@ -39,7 +36,6 @@ services:
       target: desktop
       args:
         ROS_DISTRO: ${ROS_DISTRO}
-        TARGETARCH: ${TARGETARCH:-}
     image: adi_ros2:${ROS_DISTRO}-desktop
 
 # Jetson/L4T Images (arm64 L4T):

@@ -12,6 +12,13 @@ Supported ROS2 Distributions
 --------------------------------------------------------------------------------
 
 * `ROS2 Humble Hawksbill`_ (Ubuntu 22.04 LTS)
+* `ROS2 Jazzy Jalisco`_ (Ubuntu 24.04 LTS)
+* `ROS2 Lyrical`_ (Ubuntu 26.04 LTS)
+
+The distribution is selected at build time with the ``ROS_DISTRO`` environment
+variable, which chooses both the ROS2 base image and the set of ADI packages
+compiled into the image. See :ref:`select-distro` for how to select a
+distribution and :ref:`packages` for per-distribution package coverage.
 
 
 Host Platforms
@@ -87,3 +94,5 @@ Each platform provides four image variants built as Docker multi-stage targets:
 
 
 .. _ROS2 Humble Hawksbill: https://docs.ros.org/en/humble/Releases/Release-Humble-Hawksbill.html
+.. _ROS2 Jazzy Jalisco: https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html
+.. _ROS2 Lyrical: https://docs.ros.org/en/lyrical/Releases/Release-Lyrical-Luth.html

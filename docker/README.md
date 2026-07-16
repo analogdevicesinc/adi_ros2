@@ -21,6 +21,25 @@ docker run -it --rm --net=host --ipc=host --privileged adi_ros2:humble-base
 | `full`    | base + Nav2, SLAM, CANopen         |
 | `desktop` | full + RViz2, rqt                  |
 
+## Selecting a ROS2 Distribution
+
+The `ROS_DISTRO` variable (default in `.env`) selects both the ROS2 base image
+and the ADI packages compiled in, via the matching `docker/adi_ros2-<distro>.yml`
+source manifest. Override it per command or edit `.env`:
+
+```bash
+ROS_DISTRO=jazzy docker compose -f compose.build.yml build base
+```
+
+| `ROS_DISTRO` | Manifest                      |
+| ------------ | ----------------------------- |
+| `humble`     | `docker/adi_ros2-humble.yml`  |
+| `jazzy`      | `docker/adi_ros2-jazzy.yml`   |
+| `lyrical`    | `docker/adi_ros2-lyrical.yml` |
+
+A distro can only be built if its `docker/adi_ros2-<distro>.yml` manifest exists.
+To add one, create that file listing the repos and branches for the distro.
+
 ## Build Examples
 
 ```bash

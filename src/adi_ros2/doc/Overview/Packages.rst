@@ -7,8 +7,15 @@ The ADI Robotics SDK includes the following ROS2 packages. Each package lives
 in its own repository and is linked here for its documentation and API reference.
 
 .. note::
-   The package manifest used during Docker builds is `docker/adi_ros2-humble.yml`.
-   This file follows the `vcstool <https://github.com/dirk-thomas/vcstool>`_
+   Docker builds use a **per-distribution** source manifest,
+   ``docker/adi_ros2-<distro>.yml`` (e.g. ``adi_ros2-humble.yml``,
+   ``adi_ros2-jazzy.yml``, ``adi_ros2-lyrical.yml``). The ``ROS_DISTRO`` build
+   variable selects which manifest is used, which is why the set of available
+   packages differs per distribution — see the **ROS2 Distros** column below.
+   Each manifest also pins every repository to a distribution-matching branch
+   or tag.
+
+   These files follow the `vcstool <https://github.com/dirk-thomas/vcstool>`_
    format and can be imported into any ROS2 workspace:
 
    .. code-block:: bash
@@ -16,8 +23,10 @@ in its own repository and is linked here for its documentation and API reference
       cd ~/ros2_ws/src
       vcs import --recursive < adi_ros2-humble.yml
 
-   You can also extend it by adding your own repositories or pinning specific
-   versions before importing.
+   You can also extend a manifest by adding your own repositories or pinning
+   specific versions before importing. To add support for a new ROS2
+   distribution, create a matching ``docker/adi_ros2-<distro>.yml`` listing the
+   repositories and branches that support it.
 
 
 Motor Controllers
@@ -70,7 +79,7 @@ IIO Sensors
      - ROS2 interface for `LibIIO`_-compatible ADI devices. Provides services to
        read and write IIO attributes, manage IIO buffers, and attach ROS2 topics
        to device channels. Compatible with any IIO-based ADI sensor.
-     - Humble |check|
+     - Humble |check| Jazzy |check| Lyrical |check|
 
 
 IMU
@@ -92,7 +101,7 @@ IMU
      - Precision MEMS IMU driver for the ADIS16xxx family. Publishes
        ``sensor_msgs/Imu`` topics from factory-calibrated gyroscopes and
        accelerometers. Supports SPI and UART interfaces.
-     - Humble |check|
+     - Humble |check| Jazzy |check| Lyrical |check|
 
    * - `adrd2121_imu_ros2`_
      - ``adrd2121_imu``

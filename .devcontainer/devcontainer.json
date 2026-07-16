@@ -1,27 +1,38 @@
 {
-  "name": "ADI ROS2 (Dev)",
+  "name": "ADI ROS2 (dev)",
   "dockerComposeFile": [
+    // Keep compose.yml first to force build context to be the root of the repo
+    "../compose.yml",
     "./compose.devcontainer.yml",
+    "./compose.devcontainer.wsl2.yml"
+    // "./docker-compose.override.yml"
   ],
   "service": "dev",
+  "runServices": [
+    "dev"
+  ],
   "workspaceFolder": "/adi_ros2_ws",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-iot.vscode-ros",
-        "ms-vscode.cpptools",
+        "Ranch-Hand-Robotics.rde-ros-2",
+        "Ranch-Hand-Robotics.urdf-editor",
         "ms-vscode.cpptools-extension-pack",
-        "ms-vscode.cmake-tools",
-        "twxs.cmake",
         "ms-python.python",
-        "streetsidesoftware.code-spell-checker"
-      ],
-      "settings": {
-        "ros.distro": "humble",
-        "cmake.configureOnOpen": false
-      }
+        "ms-python.vscode-pylance",
+        "mhutchie.git-graph",
+        "ms-vscode.cmake-tools",
+        "docker.docker",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.cpptools",
+        "ms-python.isort",
+        "Ranch-Hand-Robotics.rde-pack",
+        "ms-python.black-formatter",
+        "KylinIdeTeam.cmake-intellisence"
+      ]
     }
   },
   "remoteUser": "root",
-  "shutdownAction": "stopCompose"
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "bash /adi_ros2_ws/.devcontainer/postCreateCommand.sh"
 }

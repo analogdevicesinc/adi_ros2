@@ -43,7 +43,56 @@ The available stages are ``core``, ``base``, ``full``, and ``desktop``.
    includes, and image sizes.
 
 
-3. Build Your First Image
+.. _select-distro:
+
+3. Select the ROS2 Distribution
+--------------------------------------------------------------------------------
+
+Every build and run command is parameterized by the ``ROS_DISTRO`` environment
+variable. It selects **two** things at once: the ROS2 base image the image is
+built ``FROM``, and the set of ADI packages compiled into it (via the matching
+``docker/adi_ros2-<distro>.yml`` source manifest).
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 32 48
+
+   * - ``ROS_DISTRO``
+     - Source manifest
+     - Packages included
+   * - ``humble``
+     - ``docker/adi_ros2-humble.yml``
+     - Full SDK — IIO, IMU, TMC motor control, 3D ToF, and dependencies
+   * - ``jazzy``
+     - ``docker/adi_ros2-jazzy.yml``
+     - ``adi_iio`` + ``adi_imu``
+   * - ``lyrical``
+     - ``docker/adi_ros2-lyrical.yml``
+     - ``adi_iio`` + ``adi_imu``
+
+The default value is defined in the repository ``.env`` file. Override it for a
+single command:
+
+.. code-block:: bash
+
+    ROS_DISTRO=jazzy docker compose -f compose.build.yml build base
+
+Or edit ``.env`` to change the default for every command:
+
+.. code-block:: bash
+
+    ROS_DISTRO=jazzy
+
+.. note::
+
+   A distribution can only be selected if a matching
+   ``docker/adi_ros2-<distro>.yml`` manifest exists — the build copies this file
+   by name. The package set differs per distribution because not every ADI
+   package has been ported to every ROS2 release. See :ref:`packages` for the
+   per-distribution package coverage and how to add a new distribution.
+
+
+4. Build Your First Image
 --------------------------------------------------------------------------------
 
 The ``docker compose`` commands use ``compose.build.yml``, which declares the
@@ -67,12 +116,13 @@ Verify the image was created:
 
     docker images | grep adi_ros2
 
-You should see ``adi_ros2`` with tag ``humble-base``.
+You should see ``adi_ros2`` tagged ``<distro>-base`` — for example
+``adi_ros2:humble-base``, or ``adi_ros2:jazzy-base`` if you selected ``jazzy``.
 
 
 .. _build-all-targets:
 
-4. Build All Targets
+5. Build All Targets
 --------------------------------------------------------------------------------
 
 From the repository root, use ``compose.build.yml`` for standard and L4T
@@ -144,7 +194,7 @@ Replace ``--target base`` with ``core``, ``full``, or ``desktop`` as needed.
    - `Build drivers and builders <https://docs.docker.com/build/builders/>`_
 
 
-5. Run a Container
+6. Run a Container
 --------------------------------------------------------------------------------
 
 Interactive Shell
@@ -152,7 +202,8 @@ Interactive Shell
 
 Start an interactive container from the ``base`` image:
 
-This command can be run from any directory after the image is built.
+This command can be run from any directory after the image is built. Use the
+tag matching the distribution you built (``humble-base`` shown here):
 
 .. code-block:: bash
 
@@ -164,7 +215,7 @@ Verify the environment is loaded:
 
     ros2 pkg list | grep adi
 
-6. Verify the Container Environment
+7. Verify the Container Environment
 --------------------------------------------------------------------------------
 
 Once inside the container shell, run the following checks:
