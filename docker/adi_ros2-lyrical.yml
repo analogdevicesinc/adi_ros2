@@ -1,0 +1,9 @@
+repositories:
+  iio_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/iio_ros2.git
+    version: lyrical
+  imu_ros2:
+    type: git
+    url: https://github.com/analogdevicesinc/imu_ros2.git
+    version: lyrical

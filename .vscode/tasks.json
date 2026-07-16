@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "inputs": [
+        {
+            "id": "package",
+            "type": "pickString",
+            "description": "Single ROS2 package name to build",
+            "default": "adi_imu",
+            "options": [
+                "adi_iio",
+                "adi_imu"
+            ]
+        }
+    ],
+    "tasks": [
+        {
+            "label": "colcon: build package",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "${workspaceFolder}/scripts/build.sh",
+                "${input:package}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "colcon: clean artifacts",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "${workspaceFolder}/scripts/clean.sh"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

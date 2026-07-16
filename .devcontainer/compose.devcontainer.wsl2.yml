@@ -1,0 +1,18 @@
+services:
+  dev:
+    volumes:
+      # X11 socket for GUI forwarding
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # X authority for X11 authentication
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/tmp/.Xauthority:ro
+      # WSL2 GUI support
+      - /mnt/wslg:/mnt/wslg:ro
+
+    environment:
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=/tmp/.Xauthority
+      - DISPLAY=${DISPLAY:-:0}
+      - LIBGL_ALWAYS_SOFTWARE=1
+      - WAYLAND_DISPLAY=${WAYLAND_DISPLAY:-wayland-0}
+      # - XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/run/user/1000}
+      - PULSE_SERVER=${PULSE_SERVER:-/mnt/wslg/PulseServer}

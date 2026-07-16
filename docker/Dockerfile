@@ -35,6 +35,11 @@ mkdir -p /tmp/pkg_debs
 
 while IFS= read -r -d '' pkg_xml; do
     pkg_dir="$(dirname "${pkg_xml}")"
+    # Skip iio_ros2 example manifests
+    if [[ "${pkg_xml}" == */examples/*/package.xml ]]; then
+        continue
+    fi
+
     pkg_name="$(grep -m1 '<name>' "${pkg_xml}" \
         | sed 's|.*<name>\(.*\)</name>.*|\1|')"
     [ -z "${pkg_name}" ] && continue
@@ -138,10 +143,13 @@ FROM ros:${ROS_DISTRO}-ros-core AS core
 
 ARG ROS_DISTRO
 ARG OVERLAY
+ARG WORKSPACE
 ARG VERSION
 
 ENV OVERLAY=${OVERLAY}
 ENV DEBIAN_FRONTEND=noninteractive
+
+WORKDIR ${WORKSPACE}
 
 # Install exec runtime dependencies
 COPY --from=cacher /tmp/pkg_debs/ALL.txt /tmp/exec_debs.txt
@@ -153,6 +161,9 @@ RUN --mount=type=cache,target=/etc/apt/apt.conf.d,from=cacher,source=/etc/apt/ap
 
 # Install Robotics SDK packages
 COPY --from=builder ${OVERLAY} ${OVERLAY}
+
+# Keep cloned workspace sources for debugging and inspection
+COPY --from=cacher ${WORKSPACE}/src ${WORKSPACE}/src
 
 # Store source VCS manifest for reference
 COPY docker/adi_ros2-${ROS_DISTRO}.yml ${OVERLAY}/adi_ros2-${ROS_DISTRO}.yml
@@ -196,10 +207,13 @@ FROM ros:${ROS_DISTRO}-ros-base AS base
 
 ARG ROS_DISTRO
 ARG OVERLAY
+ARG WORKSPACE
 ARG VERSION
 
 ENV OVERLAY=${OVERLAY}
 ENV DEBIAN_FRONTEND=noninteractive
+
+WORKDIR ${WORKSPACE}
 
 # Install exec runtime dependencies
 COPY --from=cacher /tmp/pkg_debs/ALL.txt /tmp/exec_debs.txt
@@ -211,6 +225,9 @@ RUN --mount=type=cache,target=/etc/apt/apt.conf.d,from=cacher,source=/etc/apt/ap
 
 # Install Robotics SDK packages
 COPY --from=builder ${OVERLAY} ${OVERLAY}
+
+# Keep cloned workspace sources for debugging and inspection
+COPY --from=cacher ${WORKSPACE}/src ${WORKSPACE}/src
 
 # Runtime utilities
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
@@ -324,10 +341,17 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
     --mount=type=cache,target=/var/lib/apt,sharing=locked \
     apt-get update && apt-get install -y --no-install-recommends \
+      # Tools
+      tmux \
+      vim \
+      gh \
+      iputils-ping \
+      libiio-utils \
       # Build toolchain
       build-essential \
       ccache \
       cmake \
+      ninja-build \
       git \
       python3-colcon-common-extensions \
       python3-colcon-mixin \
@@ -346,7 +370,10 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
       python3-pip \
       # ROS ament linting
       ros-${ROS_DISTRO}-ament-clang-format \
-      ros-${ROS_DISTRO}-ament-cmake-clang-format
+      ros-${ROS_DISTRO}-ament-cmake-clang-format \
+      # ROS2 release package upstream
+      python3-bloom \
+      python3-catkin-pkg
 
 # Source the base ROS2 distro in interactive shells opened by devcontainer
 # (docker exec does not invoke the ENTRYPOINT, so /ros_entrypoint.sh is never run)
