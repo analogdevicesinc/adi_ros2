@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classAttrPubSub" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>AttrPubSub</compoundname>
+    <derivedcompoundref refid="classBoolPubSub" prot="public" virt="non-virtual">BoolPubSub</derivedcompoundref>
+    <derivedcompoundref refid="classFloat32PubSub" prot="public" virt="non-virtual">Float32PubSub</derivedcompoundref>
+    <derivedcompoundref refid="classInt32PubSub" prot="public" virt="non-virtual">Int32PubSub</derivedcompoundref>
+    <derivedcompoundref refid="classStringPubSub" prot="public" virt="non-virtual">StringPubSub</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual AttrPubSub::~AttrPubSub</definition>
+        <argsstring>()</argsstring>
+        <name>~AttrPubSub</name>
+        <qualifiedname>AttrPubSub::~AttrPubSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="36" column="11" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void AttrPubSub::publish</definition>
+        <argsstring>(std::string msg)=0</argsstring>
+        <name>publish</name>
+        <qualifiedname>AttrPubSub::publish</qualifiedname>
+        <reimplementedby refid="classStringPubSub_1ac133478da704fe769d96a07a1cf1fe81">publish</reimplementedby>
+        <reimplementedby refid="classInt32PubSub_1a9318076a1ada7379298e50a80476de24">publish</reimplementedby>
+        <reimplementedby refid="classBoolPubSub_1a6b9188b8f4250368b51bb732b17dd637">publish</reimplementedby>
+        <reimplementedby refid="classFloat32PubSub_1a29b2863b86024b4fc5d8eb73b34e9864">publish</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="37" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
+      </node>
+      <node id="2">
+        <label>BoolPubSub</label>
+        <link refid="classBoolPubSub"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Float32PubSub</label>
+        <link refid="classFloat32PubSub"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Int32PubSub</label>
+        <link refid="classInt32PubSub"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>StringPubSub</label>
+        <link refid="classStringPubSub"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/adi_iio/attr_publisher.hpp" line="33" column="1" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="34" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517" prot="public" virt="pure-virtual"><scope>AttrPubSub</scope><name>publish</name></member>
+      <member refid="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" prot="public" virt="virtual"><scope>AttrPubSub</scope><name>~AttrPubSub</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

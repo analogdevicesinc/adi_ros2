@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="↰ Return to documentation for file (include/adi_tmcl/tmcl_ros2.hpp)" name="description" />
+
+    <title>Program Listing for File tmcl_ros2.hpp &#8212; adi_tmcl 2.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="../_static/app.min.css?v=fb8972a4" />
+    <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+    <script async="async" src="../_static/app.umd.js?v=26d0298f"></script>
+    <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+    <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="File tmcl_stepper_motor.hpp" href="file_include_adi_tmcl_tmcl_stepper_motor.hpp.html" />
+    <link rel="prev" title="File tmcl_ros2.hpp" href="file_include_adi_tmcl_tmcl_ros2.hpp.html" />
+   
+  
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="main">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://developer.analog.com/" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Documentation</label>
+        
+        <a id="logo" href="../index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">Program Listing for File tmcl_ros2.hpp</a></li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="../index.html">
+      adi_tmcl
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="../index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <ul class="current">
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="../__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmcl">Rosindex</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2" checked=""/><div class="collapse"><a class="reference internal" href="index.html">C++ API</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="structtmcl__cfg__t.html">Struct tmcl_cfg_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structtmcl__msg__t.html">Struct tmcl_msg_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classBldcMotor.html">Class BldcMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classMotor.html">Class Motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classSocketCAN.html">Class SocketCAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classStepperMotor.html">Class StepperMotor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classTmclInterpreter.html">Class TmclInterpreter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classTmclRos2.html">Class TmclRos2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae.html">Enum tmcl_additional_ratio_params_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc.html">Enum tmcl_bldc_comm_mode_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1affdc98518d0da04cea6cf4e9e8cfc48e.html">Enum tmcl_cmd_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1af8646f378d9e9d4173c88d1d9b23b76a.html">Enum tmcl_custom_cmd_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__ros2_8hpp_1add94f22709449570a53172c6e0c7d9a9.html">Enum tmcl_general_params_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2.html">Enum tmcl_hardware_params_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c.html">Enum tmcl_interface_params_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e.html">Enum tmcl_interface_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c.html">Enum tmcl_ros_topic_params_lut_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__stepper__motor_8hpp_1aa0f126c89402b24ec6ed22dff8154fbb.html">Enum tmcl_stepper_mode_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40.html">Enum tmcl_sts_t</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2.html">Variable additional_ratio_params_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153.html">Variable ANGULAR_FULL_ROTATION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a3d194dc0efac5e2e67974eea26ac4e4f.html">Variable AUTO_START_ADDITIONAL_DELAY_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a0bde5610997e40c2d5975a64cc167cd3.html">Variable AUTO_START_ADDITIONAL_DELAY_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73.html">Variable comm_interface_params_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a842cf777e97091c4ce5055cadbb1e4c0.html">Variable DEFAULT_BIT_WIDTH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218.html">Variable EXEC_CMD_RETRIES_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ab104707addc56840883c694ee32ac0bd.html">Variable EXEC_CMD_RETRIES_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af2f692e95694cfedbf186a0b2ab82f15.html">Variable general_params_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54.html">Variable hardware_params_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1abb05ed9acd64ebfe299c38f3e01c7822.html">Variable MAX_BIT_WIDTH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673.html">Variable PI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3.html">Variable PUB_RATE_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981.html">Variable PUB_RATE_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6.html">Variable PUB_RATE_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be.html">Variable ros_topic_params_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a757b9189f6bb4d41d49e6a16dfb8e2c1.html">Variable RX_ID_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624.html">Variable SEC_TO_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886.html">Variable TIMEOUT_MS_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4.html">Variable TIMEOUT_MS_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a79e8db813f2bd82d7014267e0c968459.html">Variable TIMEOUT_MS_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3.html">Variable tmcl_custom_cmd_</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a34af2ab557c7c6b474a095252f1f4b76.html">Variable TMCL_MSG_SZ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231.html">Variable TMCL_MSG_VALUE_SZ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1ae7e2e97f8efb58bfb903f2991cd1989d.html">Variable TMCM_BLDC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1aa7dd907dc14732380976b5fdbea42235.html">Variable TX_ID_DEFAULT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1af8aed7ed0aa86c3fbb0d3b4f30a2bc36.html">Variable TXRX_ID_MAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variable_tmcl__ros2_8hpp_1a979095c4148f3b1dae9119b7a9b09bad.html">Variable TXRX_ID_MIN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dir_include_adi_tmcl.html">Directory adi_tmcl</a></li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-1" id="toctree-collapse-2-1"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_socket_can_wrapper.hpp.html">File socket_can_wrapper.hpp</a><label for="toctree-collapse-2-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_socket_can_wrapper.hpp.html">Program Listing for File socket_can_wrapper.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-2" id="toctree-collapse-2-2"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_bldc_motor.hpp.html">File tmcl_bldc_motor.hpp</a><label for="toctree-collapse-2-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_tmcl_bldc_motor.hpp.html">Program Listing for File tmcl_bldc_motor.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-3" id="toctree-collapse-2-3"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_common.hpp.html">File tmcl_common.hpp</a><label for="toctree-collapse-2-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_tmcl_common.hpp.html">Program Listing for File tmcl_common.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-4" id="toctree-collapse-2-4"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_interpreter.hpp.html">File tmcl_interpreter.hpp</a><label for="toctree-collapse-2-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_tmcl_interpreter.hpp.html">Program Listing for File tmcl_interpreter.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-5" id="toctree-collapse-2-5"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_motor.hpp.html">File tmcl_motor.hpp</a><label for="toctree-collapse-2-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_tmcl_motor.hpp.html">Program Listing for File tmcl_motor.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-6" id="toctree-collapse-2-6" checked=""/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_ros2.hpp.html">File tmcl_ros2.hpp</a><label for="toctree-collapse-2-6"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Program Listing for File tmcl_ros2.hpp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2-7" id="toctree-collapse-2-7"/><div class="collapse"><a class="reference internal" href="file_include_adi_tmcl_tmcl_stepper_motor.hpp.html">File tmcl_stepper_motor.hpp</a><label for="toctree-collapse-2-7"><div class="icon"></div></label></div><ul>
+<li class="toctree-l3"><a class="reference internal" href="program_listing_file_include_adi_tmcl_tmcl_stepper_motor.hpp.html">Program Listing for File tmcl_stepper_motor.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="../__message_definitions.html">Message Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../msg/TmcInfo.html">TmcInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../msg/TmcParam.html">TmcParam</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4"/><div class="collapse"><a class="reference internal" href="../__service_definitions.html">Service Definitions</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../srv/TmcCustomCmd.html">TmcCustomCmd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/TmcGapAll.html">TmcGapAll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../srv/TmcGgpAll.html">TmcGgpAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-5" id="toctree-collapse-5"/><div class="collapse"><a class="reference internal" href="../__standards.html">Standard Documents</a><label for="toctree-collapse-5"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="../__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__README.html">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__LICENSE.html">LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../__CHANGELOG.html">CHANGELOG</a></li>
+</ul>
+</li>
+</ul>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb"><ol><li><a href="index.html">C++ API</a></li><li><a href="file_include_adi_tmcl_tmcl_ros2.hpp.html">File tmcl_ros2.hpp</a></li></ol></nav>
+</div>
+          <div class="body" role="main">
+            
+  <section id="program-listing-for-file-tmcl-ros2-hpp">
+<span id="program-listing-file-include-adi-tmcl-tmcl-ros2-hpp"></span><h1>Program Listing for File tmcl_ros2.hpp<a class="headerlink" href="#program-listing-for-file-tmcl-ros2-hpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_include_adi_tmcl_tmcl_ros2.hpp.html#file-include-adi-tmcl-tmcl-ros2-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/adi_tmcl/tmcl_ros2.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef TMCL_ROS2_HPP</span>
+<span class="cp">#define TMCL_ROS2_HPP</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"adi_tmcl/tmcl_bldc_motor.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"adi_tmcl/tmcl_stepper_motor.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"adi_tmcl/srv/tmc_custom_cmd.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"adi_tmcl/srv/tmc_gap_all.hpp"</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">"adi_tmcl/srv/tmc_ggp_all.hpp"</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">TmclRos2</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">TmclRos2</span><span class="p">(</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">node</span><span class="p">);</span>
+<span class="w">  </span><span class="o">~</span><span class="n">TmclRos2</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">init</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">deInit</span><span class="p">();</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">getRetriesExceededStatus</span><span class="p">();</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">p_node_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Motor</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">p_motor_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TmclInterpreter</span><span class="o">*</span><span class="w"> </span><span class="n">p_tmcl_interpreter_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">param_adhoc_mode_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">param_en_motors_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">param_auto_start_additional_delay_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">bit_width_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">param_ap_type_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">param_ap_name_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int64_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">param_gp_type_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">param_gp_name_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Service</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcCustomCmd</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">tmcl_custom_cmd_service_server_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Service</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGapAll</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">tmcl_gap_service_server_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Service</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGgpAll</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">tmcl_ggp_service_server_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">node_interfaces</span><span class="o">::</span><span class="n">OnSetParametersCallbackHandle</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">p_param_callback_handle_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">module_number_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">fw_major_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">fw_minor_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="n">b_allow_en_motors_change_</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">compare_val_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initCommInterfaceParams</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initGeneralParams</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">initAxisAndGlobalParameters</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">createMotor</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">initServiceServer</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">tmclCustomCmdCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcCustomCmd</span><span class="o">::</span><span class="n">Request</span><span class="o">&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcCustomCmd</span><span class="o">::</span><span class="n">Response</span><span class="o">&gt;</span><span class="w"> </span><span class="n">res</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">tmclGapAllCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGapAll</span><span class="o">::</span><span class="n">Request</span><span class="o">&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGapAll</span><span class="o">::</span><span class="n">Response</span><span class="o">&gt;</span><span class="w"> </span><span class="n">res</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">tmclGgpAllCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGgpAll</span><span class="o">::</span><span class="n">Request</span><span class="o">&gt;</span><span class="w"> </span><span class="n">req</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">adi_tmcl</span><span class="o">::</span><span class="n">srv</span><span class="o">::</span><span class="n">TmcGgpAll</span><span class="o">::</span><span class="n">Response</span><span class="o">&gt;</span><span class="w"> </span><span class="n">res</span><span class="p">);</span>
+<span class="w">  </span><span class="n">rcl_interfaces</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">SetParametersResult</span><span class="w"> </span><span class="nf">parametersCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Parameter</span><span class="o">&gt;</span><span class="w"> </span>\
+<span class="w">    </span><span class="o">&amp;</span><span class="n">parameters</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="nf">checkApTypeMax</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">motorValParser</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">motor</span><span class="p">,</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">req_instruct_type</span><span class="p">);</span>
+
+
+
+<span class="p">};</span>
+
+<span class="cm">/*******************************************************************************/</span>
+<span class="cm">/*                      Constants and Enumerations                             */</span>
+<span class="cm">/*******************************************************************************/</span>
+
+<span class="cm">/* Possible values for &lt;Module Type&gt; */</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">TMCM_BLDC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span>
+
+<span class="cm">/* Parameter limits and default values */</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">TXRX_ID_MIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">TXRX_ID_MAX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">TX_ID_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">RX_ID_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">TIMEOUT_MS_MIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">TIMEOUT_MS_MAX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5000</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">TIMEOUT_MS_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">EXEC_CMD_RETRIES_MAX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">EXEC_CMD_RETRIES_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">AUTO_START_ADDITIONAL_DELAY_MAX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">AUTO_START_ADDITIONAL_DELAY_DEFAULT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Limits for AP Index Bit Width value</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">DEFAULT_BIT_WIDTH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">MAX_BIT_WIDTH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span>
+
+<span class="cm">/* LUT row indeces of get-able/set-able General Parameters */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">IDX_ADHOC_MODE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_EN_MOTORS</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_AUTO_START_ADDITIONAL_DELAY</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_AXIS_PARAMETERS_TYPE</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_AXIS_PARAMETERS_NAME</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_GLOBAL_PARAMETERS_TYPE</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_GLOBAL_PARAMETERS_NAME</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_AP_INDEX_BIT_WIDTH</span><span class="p">,</span>
+<span class="w">  </span><span class="n">TMCL_GENERAL_PARAMS_LUT_MAX</span><span class="w">          </span><span class="cm">/* This should not be used */</span>
+<span class="p">}</span><span class="n">tmcl_general_params_lut_t</span><span class="p">;</span>
+
+<span class="cm">/* Parameter Names of get-able/set-able General Parameters */</span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">general_params_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s">"adhoc_mode"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"en_motors"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"auto_start_additional_delay"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"AP_type"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"AP_name"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"GP_type"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"GP_name"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"ap_index_bit_width"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"MAX"</span><span class="w">         </span><span class="cm">/* This should not be used */</span>
+
+<span class="p">};</span>
+
+<span class="cm">/* LUT row indeces of Custom Service Server Commands */</span>
+<span class="k">typedef</span><span class="w"> </span><span class="k">enum</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">IDX_SAP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_GAP</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_SGP</span><span class="p">,</span>
+<span class="w">  </span><span class="n">IDX_GGP</span>
+<span class="p">}</span><span class="n">tmcl_custom_cmd_lut_t</span><span class="p">;</span>
+
+<span class="cm">/* Custom Service Server Commands */</span>
+<span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">tmcl_custom_cmd_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="s">"SAP"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"GAP"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"SGP"</span><span class="p">,</span>
+<span class="w">  </span><span class="s">"GGP"</span>
+<span class="p">};</span>
+
+
+<span class="cp">#endif </span><span class="c1">// TMCL_ROS2_HPP</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="file_include_adi_tmcl_tmcl_ros2.hpp.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">File tmcl_ros2.hpp</a>
+    <a href="file_include_adi_tmcl_tmcl_stepper_motor.hpp.html" title="Next document (Alt+Shift+RightArrow)" class="next">File tmcl_stepper_motor.hpp</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2026, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f:
+
+Define TWICE
+============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: TWICE
+   :project: adrd2121_imu Doxygen Project

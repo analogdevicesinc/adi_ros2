@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15:
+
+Enum nmt_state_t
+================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: nmt_state_t
+   :project: adi_tmc_coe_core Doxygen Project

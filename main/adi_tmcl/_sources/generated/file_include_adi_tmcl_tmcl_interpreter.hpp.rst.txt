@@ -1,0 +1,81 @@
+
+.. _file_include_adi_tmcl_tmcl_interpreter.hpp:
+
+File tmcl_interpreter.hpp
+=========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmcl>` (``include/adi_tmcl``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmcl/tmcl_interpreter.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmcl_tmcl_interpreter.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmcl/socket_can_wrapper.hpp`` (:ref:`file_include_adi_tmcl_socket_can_wrapper.hpp`)
+
+- ``chrono``
+
+- ``future``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structtmcl__cfg__t`
+
+- :ref:`exhale_struct_structtmcl__msg__t`
+
+- :ref:`exhale_class_classTmclInterpreter`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmcl__interpreter_8hpp_1affdc98518d0da04cea6cf4e9e8cfc48e`
+
+- :ref:`exhale_enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e`
+
+- :ref:`exhale_enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmcl__interpreter_8hpp_1a34af2ab557c7c6b474a095252f1f4b76`
+
+- :ref:`exhale_variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231`
+

@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15:
+
+Variable IMU_GYRO_SCALE_SIZE
+============================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IMU_GYRO_SCALE_SIZE
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classBldcMotor" kind="class" language="C++" prot="public">
+    <compoundname>BldcMotor</compoundname>
+    <basecompoundref refid="classMotor" prot="public" virt="non-virtual">Motor</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBldcMotor_1a2c58f92e43ebb7d7c2988ec8534531b9" prot="private" static="no" mutable="no">
+        <type>tmcl_bldc_comm_mode_t</type>
+        <definition>tmcl_bldc_comm_mode_t BldcMotor::comm_mode_</definition>
+        <argsstring></argsstring>
+        <name>comm_mode_</name>
+        <qualifiedname>BldcMotor::comm_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="34" column="25" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBldcMotor_1a6411e60b9793f3df108449e6eaeffd86" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t BldcMotor::position_scaler_m_</definition>
+        <argsstring></argsstring>
+        <name>position_scaler_m_</name>
+        <qualifiedname>BldcMotor::position_scaler_m_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="35" column="11" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBldcMotor_1a318b25ccdfdfb1437549bb7b9bb1218d" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t BldcMotor::encoder_steps_</definition>
+        <argsstring></argsstring>
+        <name>encoder_steps_</name>
+        <qualifiedname>BldcMotor::encoder_steps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="36" column="11" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBldcMotor_1a37a397b00cddaa944f6f24ff0b7bffd6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; BldcMotor::param_statusflags_regname_</definition>
+        <argsstring></argsstring>
+        <name>param_statusflags_regname_</name>
+        <qualifiedname>BldcMotor::param_statusflags_regname_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="37" column="15" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBldcMotor_1a86d5d1b034d3529c8c7ec41b1f17ecfc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; BldcMotor::param_statusflags_regshift_</definition>
+        <argsstring></argsstring>
+        <name>param_statusflags_regshift_</name>
+        <qualifiedname>BldcMotor::param_statusflags_regshift_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="38" column="15" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBldcMotor_1a830cb8820d6566698306f24c93720f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BldcMotor::BldcMotor</definition>
+        <argsstring>(rclcpp::Node::SharedPtr p_node, TmclInterpreter *p_tmcl_interpreter, uint8_t motor_number, uint32_t module_number)</argsstring>
+        <name>BldcMotor</name>
+        <qualifiedname>BldcMotor::BldcMotor</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>p_node</declname>
+        </param>
+        <param>
+          <type><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref> *</type>
+          <declname>p_tmcl_interpreter</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor_number</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>module_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="27" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a7c49cd75542c8501e6235a7f2bc40bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual BldcMotor::~BldcMotor</definition>
+        <argsstring>()</argsstring>
+        <name>~BldcMotor</name>
+        <qualifiedname>BldcMotor::~BldcMotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="29" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a4180133a53c1e62ed616c4172bce80fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <qualifiedname>BldcMotor::init</qualifiedname>
+        <reimplements refid="classMotor_1aeb1972b2fa590646832b707c54c1b74b">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="31" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBldcMotor_1a2ecc7c9b168f4aaa444cd9cb32cb9f85" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::initPublisher</definition>
+        <argsstring>() override</argsstring>
+        <name>initPublisher</name>
+        <qualifiedname>BldcMotor::initPublisher</qualifiedname>
+        <reimplements refid="classMotor_1a370400c8e7a5ff28023128e53e959083">initPublisher</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="40" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a87406fbd81137cb26fd22e66bd4c7289" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::pubTimerCallback</definition>
+        <argsstring>() override</argsstring>
+        <name>pubTimerCallback</name>
+        <qualifiedname>BldcMotor::pubTimerCallback</qualifiedname>
+        <reimplements refid="classMotor_1a4e4253b5d0ec7d0bc00fbaae69668edf">pubTimerCallback</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a1245f8a5164561273ffea4704d5fd12b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::initSubscriberParams</definition>
+        <argsstring>() override</argsstring>
+        <name>initSubscriberParams</name>
+        <qualifiedname>BldcMotor::initSubscriberParams</qualifiedname>
+        <reimplements refid="classMotor_1a183fef21de808774103954aa38806ae0">initSubscriberParams</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="42" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1adc4736eb311379b54def58ed235f6974" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::initSubscribers</definition>
+        <argsstring>() override</argsstring>
+        <name>initSubscribers</name>
+        <qualifiedname>BldcMotor::initSubscribers</qualifiedname>
+        <reimplements refid="classMotor_1a52d54f0d1858988238feeb950b87bd42">initSubscribers</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a2b2cb197549cfa34e8634eee80e0e6ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::cmdVelSubscriberCallback</definition>
+        <argsstring>(const geometry_msgs::msg::Twist::SharedPtr msg) override</argsstring>
+        <name>cmdVelSubscriberCallback</name>
+        <qualifiedname>BldcMotor::cmdVelSubscriberCallback</qualifiedname>
+        <reimplements refid="classMotor_1ade4539aa440a67ca80fe685df166b1c1">cmdVelSubscriberCallback</reimplements>
+        <param>
+          <type>const geometry_msgs::msg::Twist::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1a58752d3103b4c3aa78fb0a863bdb64a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::cmdAbsposSubscriberCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdAbsposSubscriberCallback</name>
+        <qualifiedname>BldcMotor::cmdAbsposSubscriberCallback</qualifiedname>
+        <reimplements refid="classMotor_1ab5af6e90ba6ee25caeda38fe3a8c6cd6">cmdAbsposSubscriberCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="45" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1ad2ca04f005e4aa3e1a2a60a86a56e560" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BldcMotor::cmdRelposSubscriberCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdRelposSubscriberCallback</name>
+        <qualifiedname>BldcMotor::cmdRelposSubscriberCallback</qualifiedname>
+        <reimplements refid="classMotor_1a128803cec6bcc177186b8df8060f5af2">cmdRelposSubscriberCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="46" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classBldcMotor_1af830acc5586cca27190b791937e5e69b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tmcl_bldc_comm_mode_t</type>
+        <definition>tmcl_bldc_comm_mode_t BldcMotor::getCommutationMode</definition>
+        <argsstring>()</argsstring>
+        <name>getCommutationMode</name>
+        <qualifiedname>BldcMotor::getCommutationMode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="47" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BldcMotor</label>
+        <link refid="classBldcMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Motor</label>
+        <link refid="classMotor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BldcMotor</label>
+        <link refid="classBldcMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Motor</label>
+        <link refid="classMotor"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p_tmcl_interpreter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TmclInterpreter</label>
+        <link refid="classTmclInterpreter"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="24" column="1" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="25" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classBldcMotor_1a830cb8820d6566698306f24c93720f5f" prot="public" virt="non-virtual"><scope>BldcMotor</scope><name>BldcMotor</name></member>
+      <member refid="classBldcMotor_1a58752d3103b4c3aa78fb0a863bdb64a3" prot="private" virt="virtual"><scope>BldcMotor</scope><name>cmdAbsposSubscriberCallback</name></member>
+      <member refid="classBldcMotor_1ad2ca04f005e4aa3e1a2a60a86a56e560" prot="private" virt="virtual"><scope>BldcMotor</scope><name>cmdRelposSubscriberCallback</name></member>
+      <member refid="classMotor_1a7e3c8f9ce9af7b7c3f251973f31b8100" prot="protected" virt="virtual"><scope>BldcMotor</scope><name>cmdTrqSubscriberCallback</name></member>
+      <member refid="classBldcMotor_1a2b2cb197549cfa34e8634eee80e0e6ce" prot="private" virt="virtual"><scope>BldcMotor</scope><name>cmdVelSubscriberCallback</name></member>
+      <member refid="classBldcMotor_1a2c58f92e43ebb7d7c2988ec8534531b9" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>comm_mode_</name></member>
+      <member refid="classBldcMotor_1a318b25ccdfdfb1437549bb7b9bb1218d" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>encoder_steps_</name></member>
+      <member refid="classBldcMotor_1af830acc5586cca27190b791937e5e69b" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>getCommutationMode</name></member>
+      <member refid="classMotor_1a41a7c3c5d7b2be16844c4f8d631afd64" prot="public" virt="non-virtual"><scope>BldcMotor</scope><name>getMotorName</name></member>
+      <member refid="classMotor_1afd73d5e08cfb3c20d06d8b0b6c14b1b8" prot="public" virt="non-virtual"><scope>BldcMotor</scope><name>getMotorNumber</name></member>
+      <member refid="classBldcMotor_1a4180133a53c1e62ed616c4172bce80fe" prot="public" virt="virtual"><scope>BldcMotor</scope><name>init</name></member>
+      <member refid="classMotor_1af8b4b9f6f385ffae242f2e2c89d67856" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>initMotorParams</name></member>
+      <member refid="classBldcMotor_1a2ecc7c9b168f4aaa444cd9cb32cb9f85" prot="private" virt="virtual"><scope>BldcMotor</scope><name>initPublisher</name></member>
+      <member refid="classMotor_1a62b5cf264e5c6c52da28bf8b25713542" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>initPublisherParams</name></member>
+      <member refid="classBldcMotor_1a1245f8a5164561273ffea4704d5fd12b" prot="private" virt="virtual"><scope>BldcMotor</scope><name>initSubscriberParams</name></member>
+      <member refid="classBldcMotor_1adc4736eb311379b54def58ed235f6974" prot="private" virt="virtual"><scope>BldcMotor</scope><name>initSubscribers</name></member>
+      <member refid="classMotor_1aa7644fc1d41803d10feef45bfdefc64b" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>module_number_</name></member>
+      <member refid="classMotor_1ac0063b6a7afa72db5b69214566ba6abf" prot="public" virt="non-virtual"><scope>BldcMotor</scope><name>Motor</name></member>
+      <member refid="classMotor_1a247765055b71babddd51db4bd5b7a00d" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>p_node_</name></member>
+      <member refid="classMotor_1a2df3f5a06e67456713b6298f77f230e5" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>p_tmcl_interpreter_</name></member>
+      <member refid="classMotor_1a89ec4ae4d259070eb2f081ad1b36ce2e" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_additional_ratio_pos_</name></member>
+      <member refid="classMotor_1ad1307bc16c27bafbe6b8583c6cd5143a" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_additional_ratio_trq_</name></member>
+      <member refid="classMotor_1a7d67554c95fb5997623e7eb28f3f44e7" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_additional_ratio_vel_</name></member>
+      <member refid="classMotor_1ad11504b9597f5eb0e025a21bd8243d5d" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_comm_interface_name_</name></member>
+      <member refid="classMotor_1af8ed1941758d843438c532e9474a8a1d" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_en_pub_tmc_info_</name></member>
+      <member refid="classMotor_1a70561c4351d75cc796b5f386fb10fba4" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_pub_actual_pos_</name></member>
+      <member refid="classMotor_1adc816675935b7c2444204b7035d70fef" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_pub_actual_trq_</name></member>
+      <member refid="classMotor_1af2612411712a18e3df1a421f990d484d" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_pub_actual_vel_</name></member>
+      <member refid="classMotor_1aed9818772c6714484435ae534e181748" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_pub_rate_tmc_info_</name></member>
+      <member refid="classBldcMotor_1a37a397b00cddaa944f6f24ff0b7bffd6" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>param_statusflags_regname_</name></member>
+      <member refid="classBldcMotor_1a86d5d1b034d3529c8c7ec41b1f17ecfc" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>param_statusflags_regshift_</name></member>
+      <member refid="classMotor_1a5397740875dfbde68dc143e8d0dd426b" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_tmc_cmd_abspos_topic_</name></member>
+      <member refid="classMotor_1a3b7a1b7e84955e7792067564372f3d3c" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_tmc_cmd_relpos_topic_</name></member>
+      <member refid="classMotor_1aa4067f12ba5061882bb7a100d881fa94" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_tmc_cmd_trq_topic_</name></member>
+      <member refid="classMotor_1acb256e3e11e2b4a9d076208d51bc49ef" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_tmc_cmd_vel_topic_</name></member>
+      <member refid="classMotor_1ab2dfc8c357db9c4235a2e9721bcb1880" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_tmc_info_topic_</name></member>
+      <member refid="classMotor_1a2a6ad6b0f1621c4a579bf4435a54fa85" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>param_wheel_diameter_</name></member>
+      <member refid="classBldcMotor_1a6411e60b9793f3df108449e6eaeffd86" prot="private" virt="non-virtual"><scope>BldcMotor</scope><name>position_scaler_m_</name></member>
+      <member refid="classMotor_1a21bddea0d90efab775230f1d5468af42" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>publisher_</name></member>
+      <member refid="classMotor_1a8e0edfb3e6f87007560c3f91aa74e302" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>publisher_timer_</name></member>
+      <member refid="classBldcMotor_1a87406fbd81137cb26fd22e66bd4c7289" prot="private" virt="virtual"><scope>BldcMotor</scope><name>pubTimerCallback</name></member>
+      <member refid="classMotor_1ab137c183cf2b4ba4baa9584592ea8768" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>subscription_cmd_abspos_</name></member>
+      <member refid="classMotor_1a9285082f0368cf3ca6262c95425bb0f1" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>subscription_cmd_relpos_</name></member>
+      <member refid="classMotor_1ad6b0491053300b50bd6d911b56ebe1bc" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>subscription_cmd_trq_</name></member>
+      <member refid="classMotor_1a9baa731ce44622d216d29be66b0bd78f" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>subscription_cmd_vel_</name></member>
+      <member refid="classMotor_1a2090de6607d634225ecdc56e3f1c0433" prot="protected" virt="non-virtual"><scope>BldcMotor</scope><name>tmc_info_frame_id_</name></member>
+      <member refid="classBldcMotor_1a7c49cd75542c8501e6235a7f2bc40bf3" prot="public" virt="virtual"><scope>BldcMotor</scope><name>~BldcMotor</name></member>
+      <member refid="classMotor_1a3135cf1bc9a3c68e1db0214c00a2b50f" prot="public" virt="virtual"><scope>BldcMotor</scope><name>~Motor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

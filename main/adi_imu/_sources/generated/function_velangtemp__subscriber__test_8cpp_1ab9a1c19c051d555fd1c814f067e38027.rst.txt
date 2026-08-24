@@ -1,0 +1,14 @@
+.. _exhale_function_velangtemp__subscriber__test_8cpp_1ab9a1c19c051d555fd1c814f067e38027:
+
+Function TEST(VelAngTempSubscriberTest, test_velangtemp_publisher)
+==================================================================
+
+- Defined in :ref:`file_test_src_velangtemp_subscriber_test.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: TEST(VelAngTempSubscriberTest, test_velangtemp_publisher)
+   :project: adi_imu Doxygen Project

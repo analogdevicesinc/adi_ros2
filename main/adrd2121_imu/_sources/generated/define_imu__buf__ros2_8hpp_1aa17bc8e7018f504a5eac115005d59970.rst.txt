@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970:
+
+Define API_CALL_DELAY
+=====================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: API_CALL_DELAY
+   :project: adrd2121_imu Doxygen Project

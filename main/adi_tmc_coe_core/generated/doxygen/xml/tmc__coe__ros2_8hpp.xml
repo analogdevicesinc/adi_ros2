@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmc__coe__ros2_8hpp" kind="file" language="C++">
+    <compoundname>tmc_coe_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes refid="tmc__coe__interpreter_8hpp" local="yes">adi_tmc_coe_core/tmc_coe_interpreter.hpp</includes>
+    <includes refid="tmc__coe__motor_8hpp" local="yes">adi_tmc_coe_core/tmc_coe_motor.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/srv/read_write_sdo.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/srv/read_write_pdo.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/srv/change_nmt_state.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/srv/change_cia402_state.hpp</includes>
+    <includes local="yes">adi_tmc_coe_interfaces/srv/cyclic_sync_mode.hpp</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>adi_tmc_coe_core/tmc_coe_interpreter.hpp</label>
+        <link refid="tmc__coe__interpreter_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>adi_tmc_coe_core/tmc_coe_motor.hpp</label>
+        <link refid="tmc__coe__motor_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adi_tmc_coe_core/tmc_coe_ros2.hpp</label>
+        <link refid="tmc__coe__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>adi_tmc_coe_interfaces/msg/tmc_coe_info.hpp</label>
+      </node>
+      <node id="17">
+        <label>adi_tmc_coe_interfaces/srv/change_cia402_state.hpp</label>
+      </node>
+      <node id="16">
+        <label>adi_tmc_coe_interfaces/srv/change_nmt_state.hpp</label>
+      </node>
+      <node id="18">
+        <label>adi_tmc_coe_interfaces/srv/cyclic_sync_mode.hpp</label>
+      </node>
+      <node id="15">
+        <label>adi_tmc_coe_interfaces/srv/read_write_pdo.hpp</label>
+      </node>
+      <node id="14">
+        <label>adi_tmc_coe_interfaces/srv/read_write_sdo.hpp</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="8">
+        <label>osal.h</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="12">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>thread</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classTmcCoeROS2" prot="public">TmcCoeROS2</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MOTOR_TYPE_BLDC</definition>
+        <argsstring></argsstring>
+        <name>MOTOR_TYPE_BLDC</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2024-2025 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="20" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MOTOR_TYPE_STEPPER_MIN</definition>
+        <argsstring></argsstring>
+        <name>MOTOR_TYPE_STEPPER_MIN</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="21" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MOTOR_TYPE_STEPPER_MAX</definition>
+        <argsstring></argsstring>
+        <name>MOTOR_TYPE_STEPPER_MAX</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="22" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6" prot="public" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t INTERPOLATION_TIME_INDEX_MIN</definition>
+        <argsstring></argsstring>
+        <name>INTERPOLATION_TIME_INDEX_MIN</name>
+        <initializer>= -3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="23" column="14" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t INTERPOLATION_TIME_INDEX_MAX</definition>
+        <argsstring></argsstring>
+        <name>INTERPOLATION_TIME_INDEX_MAX</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" line="24" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_ros2.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMC_COE_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMC_COE_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_core/tmc_coe_interpreter.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_core/tmc_coe_motor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Custom<sp/>srv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/srv/read_write_sdo.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/srv/read_write_pdo.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/srv/change_nmt_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/srv/change_cia402_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmc_coe_interfaces/srv/cyclic_sync_mode.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>MOTOR_TYPE_BLDC<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>MOTOR_TYPE_STEPPER_MIN<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>MOTOR_TYPE_STEPPER_MAX<sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int8_t<sp/>INTERPOLATION_TIME_INDEX_MIN<sp/>=<sp/>-3;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>INTERPOLATION_TIME_INDEX_MAX<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classTmcCoeROS2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmcCoeROS2" kindref="compound">TmcCoeROS2</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>p_node_;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;TmcCoeMotor<sp/>*&gt;&gt;<sp/>p_motor_;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref><sp/>*<sp/>p_tmc_coe_interpreter_;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>uint8_t<sp/>total_slaves_;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr<sp/>p_param_callback_handle_;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_en_slave_;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_adhoc_mode_;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::string<sp/>param_interface_name_;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>uint8_t<sp/>param_SDO_PDO_retries_;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>param_interface_timeout_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>slave_name_str_;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>std::vector&lt;int&gt;<sp/>total_motor_per_slave_;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>std::string<sp/>logger_prefix_;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>rclcpp::Logger<sp/>logger_;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWriteSDO&gt;::SharedPtr<sp/>read_sdo_service_srv_;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWriteSDO&gt;::SharedPtr<sp/>write_sdo_service_srv_;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWritePDO&gt;::SharedPtr<sp/>read_pdo_service_srv_;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ReadWritePDO&gt;::SharedPtr<sp/>write_pdo_service_srv_;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ChangeNMTState&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>change_nmt_state_service_srv_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::ChangeCia402State&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>change_cia402_state_service_srv_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>rclcpp::Service&lt;adi_tmc_coe_interfaces::srv::CyclicSyncMode&gt;::SharedPtr</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>cyclic_sync_mode_service_srv_;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>rclcpp::CallbackGroup::SharedPtr<sp/>srv_callback_group_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>createMotor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>slave_number);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initService();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initTmcParams();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initInterfaceParams();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initAutogenParams();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>rcl_interfaces::msg::SetParametersResult<sp/>parametersCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;rclcpp::Parameter&gt;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>&amp;parameters);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readSDOCallback(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSDOCallback(adi_tmc_coe_interfaces::srv::ReadWriteSDO::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ReadWriteSDO::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readPDOCallback(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writePDOCallback(adi_tmc_coe_interfaces::srv::ReadWritePDO::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ReadWritePDO::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>changeNMTCallback(adi_tmc_coe_interfaces::srv::ChangeNMTState::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ChangeNMTState::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>changeCiA402Callback(adi_tmc_coe_interfaces::srv::ChangeCia402State::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::ChangeCia402State::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cyclicSyncModeCallback(adi_tmc_coe_interfaces::srv::CyclicSyncMode::Request::SharedPtr<sp/>req,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>adi_tmc_coe_interfaces::srv::CyclicSyncMode::Response::SharedPtr<sp/>res);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeROS2" kindref="compound">TmcCoeROS2</ref>(rclcpp::Node::SharedPtr<sp/>p_node);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeROS2" kindref="compound">~TmcCoeROS2</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initialize();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deInitialize();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enableDeviceMotors();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInterfaceUnresponsive();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//TMC_COE_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmc_coe_core/tmc_coe_ros2.hpp"/>
+  </compounddef>
+</doxygen>

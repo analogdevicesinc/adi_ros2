@@ -1,0 +1,52 @@
+
+.. _file_include_adi_tmcl_tmcl_common.hpp:
+
+File tmcl_common.hpp
+====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmcl>` (``include/adi_tmcl``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmcl/tmcl_common.hpp``)
+-------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmcl_tmcl_common.hpp.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73`
+

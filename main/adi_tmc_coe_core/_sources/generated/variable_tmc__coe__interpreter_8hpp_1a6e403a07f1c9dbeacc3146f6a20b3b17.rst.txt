@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17:
+
+Variable CW_NEW_POSITION_ABSOLUTE
+=================================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CW_NEW_POSITION_ABSOLUTE
+   :project: adi_tmc_coe_core Doxygen Project

@@ -1,0 +1,26 @@
+.. _exhale_class_classImuFullMeasuredDataSubscriberTest:
+
+Class ImuFullMeasuredDataSubscriberTest
+=======================================
+
+- Defined in :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public testing::Test``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuFullMeasuredDataSubscriberTest
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_define_imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57:
+
+Define DATA_LIMIT
+=================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DATA_LIMIT
+   :project: adrd2121_imu Doxygen Project

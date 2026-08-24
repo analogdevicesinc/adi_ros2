@@ -1,0 +1,17 @@
+.. _exhale_struct_structPACKED:
+
+Struct PACKED
+=============
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: PACKED
+   :project: adi_tmc_coe_core Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7:
+
+Variable INTERPOLATION_TIME_INDEX_MAX
+=====================================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: INTERPOLATION_TIME_INDEX_MAX
+   :project: adi_tmc_coe_core Doxygen Project

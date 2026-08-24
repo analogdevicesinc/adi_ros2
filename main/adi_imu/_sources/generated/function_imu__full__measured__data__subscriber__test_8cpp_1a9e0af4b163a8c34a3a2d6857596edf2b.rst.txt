@@ -1,0 +1,14 @@
+.. _exhale_function_imu__full__measured__data__subscriber__test_8cpp_1a9e0af4b163a8c34a3a2d6857596edf2b:
+
+Function TEST(ImuFullMeasuredDataSubscriberTest, test_imu_full_measured_data_publisher)
+=======================================================================================
+
+- Defined in :ref:`file_test_src_imu_full_measured_data_subscriber_test.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: TEST(ImuFullMeasuredDataSubscriberTest, test_imu_full_measured_data_publisher)
+   :project: adi_imu Doxygen Project

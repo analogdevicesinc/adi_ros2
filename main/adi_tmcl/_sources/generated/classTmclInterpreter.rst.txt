@@ -1,0 +1,17 @@
+.. _exhale_class_classTmclInterpreter:
+
+Class TmclInterpreter
+=====================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TmclInterpreter
+   :project: adi_tmcl Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

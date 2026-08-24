@@ -1,0 +1,17 @@
+.. _exhale_class_classSocketCAN:
+
+Class SocketCAN
+===============
+
+- Defined in :ref:`file_include_adi_tmcl_socket_can_wrapper.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: SocketCAN
+   :project: adi_tmcl Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

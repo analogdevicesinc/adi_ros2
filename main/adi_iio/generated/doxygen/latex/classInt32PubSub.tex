@@ -1,0 +1,70 @@
+\doxysection{Int32\+Pub\+Sub Class Reference}
+\hypertarget{classInt32PubSub}{}\label{classInt32PubSub}\index{Int32PubSub@{Int32PubSub}}
+
+
+Inheritance diagram for Int32\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classInt32PubSub__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Int32\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classInt32PubSub__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classInt32PubSub_a24ba9f8516fdb33082a4be4385918703}\label{classInt32PubSub_a24ba9f8516fdb33082a4be4385918703} 
+{\bfseries Int32\+Pub\+Sub} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ nh, \mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*}up, std\+::string topic)
+\item 
+void \mbox{\hyperlink{classInt32PubSub_a9318076a1ada7379298e50a80476de24}{publish}} (std\+::string msg) override
+\item 
+\Hypertarget{classInt32PubSub_a4b179c28e9a6bfa83ed96bc60f0233f5}\label{classInt32PubSub_a4b179c28e9a6bfa83ed96bc60f0233f5} 
+void {\bfseries update} (const std\+\_\+msgs\+::msg\+::\+Int32 \&msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classInt32PubSub_af363350c43ca2f97ce82bdcfefb12f54}\label{classInt32PubSub_af363350c43ca2f97ce82bdcfefb12f54} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ {\bfseries m\+\_\+nh}
+\item 
+\Hypertarget{classInt32PubSub_a22eefc1007bf0ea0c516247ad1a9a883}\label{classInt32PubSub_a22eefc1007bf0ea0c516247ad1a9a883} 
+\mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*} {\bfseries m\+\_\+update\+Callback}
+\item 
+\Hypertarget{classInt32PubSub_ab79334b6f7e9fee622304d86aaf24c54}\label{classInt32PubSub_ab79334b6f7e9fee622304d86aaf24c54} 
+std\+::string {\bfseries m\+\_\+topic}
+\item 
+\Hypertarget{classInt32PubSub_aad7de8d7efdf79d95ea640fb7638b277}\label{classInt32PubSub_aad7de8d7efdf79d95ea640fb7638b277} 
+rclcpp\+::\+Publisher$<$ std\+\_\+msgs\+::msg\+::\+Int32 $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+pub}
+\item 
+\Hypertarget{classInt32PubSub_ac963b9a44b9159b8eabcab27e610f81a}\label{classInt32PubSub_ac963b9a44b9159b8eabcab27e610f81a} 
+rclcpp\+::\+Subscription$<$ std\+\_\+msgs\+::msg\+::\+Int32 $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+sub}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classInt32PubSub_a9318076a1ada7379298e50a80476de24}\label{classInt32PubSub_a9318076a1ada7379298e50a80476de24} 
+\index{Int32PubSub@{Int32PubSub}!publish@{publish}}
+\index{publish@{publish}!Int32PubSub@{Int32PubSub}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void Int32\+Pub\+Sub\+::publish (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAttrPubSub}{Attr\+Pub\+Sub}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/attr\+\_\+publisher.\+hpp\item 
+src/attr\+\_\+publisher.\+cpp\end{DoxyCompactItemize}

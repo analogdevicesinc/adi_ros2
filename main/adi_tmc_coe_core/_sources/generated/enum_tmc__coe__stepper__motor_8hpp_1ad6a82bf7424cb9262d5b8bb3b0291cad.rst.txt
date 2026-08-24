@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__stepper__motor_8hpp_1ad6a82bf7424cb9262d5b8bb3b0291cad:
+
+Enum stepper_comm_mode_t
+========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: stepper_comm_mode_t
+   :project: adi_tmc_coe_core Doxygen Project

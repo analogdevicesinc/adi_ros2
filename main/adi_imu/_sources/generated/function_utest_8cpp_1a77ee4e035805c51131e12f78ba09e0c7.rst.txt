@@ -1,0 +1,14 @@
+.. _exhale_function_utest_8cpp_1a77ee4e035805c51131e12f78ba09e0c7:
+
+Function TEST(TestSuite, myworkcell_core_framework)
+===================================================
+
+- Defined in :ref:`file_test_src_utest.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: TEST(TestSuite, myworkcell_core_framework)
+   :project: adi_imu Doxygen Project

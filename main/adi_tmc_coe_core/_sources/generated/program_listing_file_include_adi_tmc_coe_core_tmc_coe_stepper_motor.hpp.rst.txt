@@ -1,0 +1,48 @@
+
+.. _program_listing_file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp:
+
+Program Listing for File tmc_coe_stepper_motor.hpp
+==================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmc_coe_core_tmc_coe_stepper_motor.hpp>` (``include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef TMC_COE_STEPPER_MOTOR_HPP
+   #define TMC_COE_STEPPER_MOTOR_HPP
+   
+   #include "adi_tmc_coe_core/tmc_coe_motor.hpp"
+   
+   /* Commutation Modes available for Stepper Motors */
+   typedef enum
+   {
+     STEPPER_DISABLED_MOTOR = 0,
+     STEPPER_OPENLOOP_MOTOR,
+     STEPPER_CLOSEDLOOP_MOTOR
+   } stepper_comm_mode_t;
+   
+   class TmcCoeStepperMotor : public TmcCoeMotor
+   {
+   public:
+     TmcCoeStepperMotor(rclcpp::Node::SharedPtr p_node, TmcCoeInterpreter * p_tmc_coe_interpreter,
+       uint8_t slave_number, uint8_t motor_number, std::string device_name);
+     virtual ~TmcCoeStepperMotor();
+     void init() override;
+   
+   private:
+     stepper_comm_mode_t commutation_mode_;
+     int position_scaler_;
+     int encoder_steps_;
+     std::string logger_prefix_;
+     rclcpp::Logger logger_;
+     void publishTmcCoeInfo() override;
+     void initSubscriber() override;
+     void cmdVelCallback(const geometry_msgs::msg::Twist::SharedPtr msg) override;
+     void cmdAbsPosCallback(const std_msgs::msg::Int32::SharedPtr msg) override;
+     void cmdRelPosCallback(const std_msgs::msg::Int32::SharedPtr msg) override;
+   };
+   
+   #endif //TMC_COE_STEPPER_MOTOR_HPP

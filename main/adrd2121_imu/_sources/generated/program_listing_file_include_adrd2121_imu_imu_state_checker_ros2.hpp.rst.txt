@@ -1,0 +1,107 @@
+
+.. _program_listing_file_include_adrd2121_imu_imu_state_checker_ros2.hpp:
+
+Program Listing for File imu_state_checker_ros2.hpp
+===================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_imu_state_checker_ros2.hpp>` (``include/adrd2121_imu/imu_state_checker_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef IMU_STATE_CHECKER_ROS2
+   #define IMU_STATE_CHECKER_ROS2
+   
+   //ROS2 Header
+   #include "rclcpp/rclcpp.hpp"
+   
+   //IMU Driver ROS2 Header
+   #include "adrd2121_imu_ros2_common.hpp"
+   
+   //Msgs for subscribers
+   #include "sensor_msgs/msg/imu.hpp"
+   #include "adrd2121_imu/msg/adi_imu.hpp"
+   
+   //Msg for publisher
+   #include "adrd2121_imu/msg/imu_state.hpp"
+   
+   //CPP Headers
+   #include <deque>
+   #include <cmath>
+   #include <unistd.h>
+   
+   //NAMESPACE DEFINITIONS
+   using std::placeholders::_1;
+   using std::placeholders::_2;
+   
+   //CONSTANTS
+   #define DATA_LIMIT 1000
+   #define BUFFER_LIMIT 9
+   #define WAIT_LIMIT 3
+   
+   typedef enum e_imu_state
+   {
+     STANDSTILL = 0,
+     MOVING = 1
+   }e_imu_state;
+   
+   class ImuStateCheckerRos2
+   {
+   public:
+     ImuStateCheckerRos2(const rclcpp::Node::SharedPtr& node);
+     
+     ~ImuStateCheckerRos2();
+   
+     e_imu_state evaluateState(const sensor_msgs::msg::Imu::SharedPtr imu_msg);
+   
+     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
+   
+     void imuCallback(const adrd2121_imu::msg::AdiImu::SharedPtr msg);
+   
+     float getStandardDev(std::deque<float> data);
+   
+     void evaluateStandstillBegin(void);
+     
+     rclcpp::Time getStandstillBegin(void);
+   
+     e_imu_state getState(void);
+   
+     bool loadParams(void);
+   
+     bool init(void);
+   
+   
+   private:
+     rclcpp::Node::SharedPtr node_;
+   
+     rclcpp::Publisher<adrd2121_imu::msg::ImuState>::SharedPtr publish_imu_state_;
+     
+     rclcpp::Subscription<adrd2121_imu::msg::AdiImu>::SharedPtr adi_imu_sub_;
+     
+     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sensor_imu_sub_;
+     
+     e_imu_state state_;
+     
+     e_imu_state prev_state_;
+   
+     rclcpp::Time standstill_begin_;
+     
+     std::deque<float> gyro_mag_q_;
+   
+     std::deque<float> accl_mag_q_;
+   
+     double gyro_std_thresh_;
+   
+     double accl_std_thresh_;
+   
+     int imu_msg_type_;
+   
+     std::string imu_topic_name_;
+   };
+   #endif //IMU_STATE_CHECKER_ROS2

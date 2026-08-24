@@ -1,0 +1,14 @@
+.. _exhale_function_accelgyrotemp__subscriber__test_8cpp_1aed21fd35654fb44d147ad6e67c01c282:
+
+Function TEST(AccelGyroTempSubscriberTest, test_accelgyrotemp_publisher)
+========================================================================
+
+- Defined in :ref:`file_test_src_accelgyrotemp_subscriber_test.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: TEST(AccelGyroTempSubscriberTest, test_accelgyrotemp_publisher)
+   :project: adi_imu Doxygen Project

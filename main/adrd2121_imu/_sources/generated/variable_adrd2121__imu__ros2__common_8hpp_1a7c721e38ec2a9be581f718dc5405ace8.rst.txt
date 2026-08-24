@@ -1,0 +1,14 @@
+.. _exhale_variable_adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8:
+
+Variable crc32_tab
+==================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: crc32_tab
+   :project: adrd2121_imu Doxygen Project

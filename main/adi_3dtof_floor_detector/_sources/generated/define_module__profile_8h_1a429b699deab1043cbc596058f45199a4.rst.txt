@@ -1,0 +1,14 @@
+.. _exhale_define_module__profile_8h_1a429b699deab1043cbc596058f45199a4:
+
+Define PROFILE_FUNCTION_END
+===========================
+
+- Defined in :ref:`file_include_module_profile.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: PROFILE_FUNCTION_END
+   :project: adi_3dtof_floor_detector Doxygen Project

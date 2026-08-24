@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structCameraIntrinsics" kind="struct" language="C++" prot="public">
+    <compoundname>CameraIntrinsics</compoundname>
+    <includes refid="adi__camera_8h" local="no">adi_camera.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraIntrinsics::camera_matrix[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>camera_matrix</name>
+        <qualifiedname>CameraIntrinsics::camera_matrix</qualifiedname>
+        <briefdescription>
+<para>Camera matrix = [fx, 0, cx, 0, fy, cy, 0, 0, 1] fx, fy : Camera focal lengths (pixels) cx, cy : Camera principal points or optical centers (pixels) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_camera.h" line="23" column="9" bodyfile="include/adi_camera.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraIntrinsics::distortion_coeffs[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>distortion_coeffs</name>
+        <qualifiedname>CameraIntrinsics::distortion_coeffs</qualifiedname>
+        <briefdescription>
+<para>Distortion vector = [k1, k2, p1, p2, k3, k4, k5, k6] k1, k2, k3, k4, k5, k6 : Camera radial distortion cofficients p1, p2 : Camera tangential distortion coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_camera.h" line="31" column="9" bodyfile="include/adi_camera.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Intrinsic parameters of the camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_camera.h" line="15" column="1" bodyfile="include/adi_camera.h" bodystart="16" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" prot="public" virt="non-virtual"><scope>CameraIntrinsics</scope><name>camera_matrix</name></member>
+      <member refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" prot="public" virt="non-virtual"><scope>CameraIntrinsics</scope><name>distortion_coeffs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

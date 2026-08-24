@@ -1,0 +1,46 @@
+
+.. _program_listing_file_include_adi_sensor_frame_info.h:
+
+Program Listing for File adi_sensor_frame_info.h
+================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_sensor_frame_info.h>` (``include/adi_sensor_frame_info.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /******************************************************************************
+   Copyright (c), 2023 - Analog Devices Inc. All Rights Reserved.
+   This software is PROPRIETARY & CONFIDENTIAL to Analog Devices, Inc.
+   and its licensors.
+   ******************************************************************************/
+   
+   #ifndef ADI_SENSOR_FRAME_INFO_H
+   #define ADI_SENSOR_FRAME_INFO_H
+   
+   #include <stdint.h>
+   
+   #include <rclcpp/rclcpp.hpp>
+   
+   class ADISensorFrameInfo
+   {
+   public:
+     ADISensorFrameInfo(int image_width, int image_height)
+     {
+       depth_image_ = new short[image_width * image_height];
+       ab_image_ = new short[image_width * image_height];
+       frame_timestamp_ = rclcpp::Clock{}.now();
+     }
+   
+     ~ADISensorFrameInfo()
+     {
+       delete[] depth_image_;
+       delete[] ab_image_;
+     }
+     short * depth_image_;
+     short * ab_image_;
+     rclcpp::Time frame_timestamp_;
+   };
+   
+   #endif

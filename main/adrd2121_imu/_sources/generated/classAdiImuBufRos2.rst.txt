@@ -1,0 +1,17 @@
+.. _exhale_class_classAdiImuBufRos2:
+
+Class AdiImuBufRos2
+===================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: AdiImuBufRos2
+   :project: adrd2121_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

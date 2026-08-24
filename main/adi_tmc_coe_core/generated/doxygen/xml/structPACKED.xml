@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structPACKED" kind="struct" language="C++" prot="public">
+    <compoundname>PACKED</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structPACKED_1a620eaf334a9d2dce00ddbf60394e8f92" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t PACKED::modes_of_operation</definition>
+        <argsstring></argsstring>
+        <name>modes_of_operation</name>
+        <qualifiedname>PACKED::modes_of_operation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="206" column="10" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a6b02716e07b0b5e51e4ca70a8c21925f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t PACKED::control_word</definition>
+        <argsstring></argsstring>
+        <name>control_word</name>
+        <qualifiedname>PACKED::control_word</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="207" column="12" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a76c8b1a7e485d136ea5a687d01a10122" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::target_position</definition>
+        <argsstring></argsstring>
+        <name>target_position</name>
+        <qualifiedname>PACKED::target_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="208" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1afcb677620a4b565e3ba066a680fa1789" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::target_velocity</definition>
+        <argsstring></argsstring>
+        <name>target_velocity</name>
+        <qualifiedname>PACKED::target_velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="209" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a1263ce89ddbd4e28c35625c4ba3e228e" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t PACKED::target_torque</definition>
+        <argsstring></argsstring>
+        <name>target_torque</name>
+        <qualifiedname>PACKED::target_torque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="210" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a8b82ee55adbc10c9130be5465f4849b2" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t PACKED::modes_of_operation_display</definition>
+        <argsstring></argsstring>
+        <name>modes_of_operation_display</name>
+        <qualifiedname>PACKED::modes_of_operation_display</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="216" column="10" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a50e0d3a333d7e3a9168e50e86d8096da" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t PACKED::status_word</definition>
+        <argsstring></argsstring>
+        <name>status_word</name>
+        <qualifiedname>PACKED::status_word</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="217" column="12" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1ad11c173967616a57ef9ba2773a1c318e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::position_demand_value</definition>
+        <argsstring></argsstring>
+        <name>position_demand_value</name>
+        <qualifiedname>PACKED::position_demand_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="218" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a41e1c970ab03fe6f05e94f509972de5e" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::position_actual_value</definition>
+        <argsstring></argsstring>
+        <name>position_actual_value</name>
+        <qualifiedname>PACKED::position_actual_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="219" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a845412bf9275642df2eb88e7304e6ebb" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::velocity_demand_value</definition>
+        <argsstring></argsstring>
+        <name>velocity_demand_value</name>
+        <qualifiedname>PACKED::velocity_demand_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="220" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1a4cb60f641dc5eec051b2d7ab358d9109" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t PACKED::velocity_actual_value</definition>
+        <argsstring></argsstring>
+        <name>velocity_actual_value</name>
+        <qualifiedname>PACKED::velocity_actual_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="221" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1af3911221dd902a76348a3208a3ceb5e6" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t PACKED::torque_demand_value</definition>
+        <argsstring></argsstring>
+        <name>torque_demand_value</name>
+        <qualifiedname>PACKED::torque_demand_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="222" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structPACKED_1abd32e6392fb20f57a435154ff69603a5" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t PACKED::torque_actual_value</definition>
+        <argsstring></argsstring>
+        <name>torque_actual_value</name>
+        <qualifiedname>PACKED::torque_actual_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="223" column="11" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="223" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="204" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="205" bodyend="211"/>
+    <listofallmembers>
+      <member refid="structPACKED_1a6b02716e07b0b5e51e4ca70a8c21925f" prot="public" virt="non-virtual"><scope>PACKED</scope><name>control_word</name></member>
+      <member refid="structPACKED_1a620eaf334a9d2dce00ddbf60394e8f92" prot="public" virt="non-virtual"><scope>PACKED</scope><name>modes_of_operation</name></member>
+      <member refid="structPACKED_1a8b82ee55adbc10c9130be5465f4849b2" prot="public" virt="non-virtual"><scope>PACKED</scope><name>modes_of_operation_display</name></member>
+      <member refid="structPACKED_1a41e1c970ab03fe6f05e94f509972de5e" prot="public" virt="non-virtual"><scope>PACKED</scope><name>position_actual_value</name></member>
+      <member refid="structPACKED_1ad11c173967616a57ef9ba2773a1c318e" prot="public" virt="non-virtual"><scope>PACKED</scope><name>position_demand_value</name></member>
+      <member refid="structPACKED_1a50e0d3a333d7e3a9168e50e86d8096da" prot="public" virt="non-virtual"><scope>PACKED</scope><name>status_word</name></member>
+      <member refid="structPACKED_1a76c8b1a7e485d136ea5a687d01a10122" prot="public" virt="non-virtual"><scope>PACKED</scope><name>target_position</name></member>
+      <member refid="structPACKED_1a1263ce89ddbd4e28c35625c4ba3e228e" prot="public" virt="non-virtual"><scope>PACKED</scope><name>target_torque</name></member>
+      <member refid="structPACKED_1afcb677620a4b565e3ba066a680fa1789" prot="public" virt="non-virtual"><scope>PACKED</scope><name>target_velocity</name></member>
+      <member refid="structPACKED_1abd32e6392fb20f57a435154ff69603a5" prot="public" virt="non-virtual"><scope>PACKED</scope><name>torque_actual_value</name></member>
+      <member refid="structPACKED_1af3911221dd902a76348a3208a3ceb5e6" prot="public" virt="non-virtual"><scope>PACKED</scope><name>torque_demand_value</name></member>
+      <member refid="structPACKED_1a4cb60f641dc5eec051b2d7ab358d9109" prot="public" virt="non-virtual"><scope>PACKED</scope><name>velocity_actual_value</name></member>
+      <member refid="structPACKED_1a845412bf9275642df2eb88e7304e6ebb" prot="public" virt="non-virtual"><scope>PACKED</scope><name>velocity_demand_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

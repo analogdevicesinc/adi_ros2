@@ -1,0 +1,494 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classImuStateCheckerRos2" kind="class" language="C++" prot="public">
+    <compoundname>ImuStateCheckerRos2</compoundname>
+    <includes refid="imu__state__checker__ros2_8hpp" local="no">imu_state_checker_ros2.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1aba6d37ac6640e6817809951c6c86a2ee" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr ImuStateCheckerRos2::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>ImuStateCheckerRos2::node_</qualifiedname>
+        <briefdescription>
+<para>Local node meant to catch node from main function to be used for ROS2 APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="105" column="27" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a83f7680ced9baa152dcd17d79af1c401" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; adrd2121_imu::msg::ImuState &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;adrd2121_imu::msg::ImuState&gt;::SharedPtr ImuStateCheckerRos2::publish_imu_state_</definition>
+        <argsstring></argsstring>
+        <name>publish_imu_state_</name>
+        <qualifiedname>ImuStateCheckerRos2::publish_imu_state_</qualifiedname>
+        <briefdescription>
+<para>Publisher of IMU state topic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="108" column="33" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a2f7c270fe1a7c66e80a0790db78783d8" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; adrd2121_imu::msg::AdiImu &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;adrd2121_imu::msg::AdiImu&gt;::SharedPtr ImuStateCheckerRos2::adi_imu_sub_</definition>
+        <argsstring></argsstring>
+        <name>adi_imu_sub_</name>
+        <qualifiedname>ImuStateCheckerRos2::adi_imu_sub_</qualifiedname>
+        <briefdescription>
+<para>Subscriber to IMU topic(AdiImu) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="111" column="36" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a9f17504164fb929ceef3797f6448955d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; sensor_msgs::msg::Imu &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;sensor_msgs::msg::Imu&gt;::SharedPtr ImuStateCheckerRos2::sensor_imu_sub_</definition>
+        <argsstring></argsstring>
+        <name>sensor_imu_sub_</name>
+        <qualifiedname>ImuStateCheckerRos2::sensor_imu_sub_</qualifiedname>
+        <briefdescription>
+<para>Subscriber to IMU topic(sensor_msgs) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="114" column="36" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a17e88dfc5885c2b12b6cd6a35d47a104" prot="private" static="no" mutable="no">
+        <type>e_imu_state</type>
+        <definition>e_imu_state ImuStateCheckerRos2::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>ImuStateCheckerRos2::state_</qualifiedname>
+        <briefdescription>
+<para>Current state of IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="117" column="15" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a64ab53780cb0d330ffe3c5466aa731fe" prot="private" static="no" mutable="no">
+        <type>e_imu_state</type>
+        <definition>e_imu_state ImuStateCheckerRos2::prev_state_</definition>
+        <argsstring></argsstring>
+        <name>prev_state_</name>
+        <qualifiedname>ImuStateCheckerRos2::prev_state_</qualifiedname>
+        <briefdescription>
+<para>Previous state of IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="120" column="15" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a91b8e350a426080fba8594d7bab762dd" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ImuStateCheckerRos2::standstill_begin_</definition>
+        <argsstring></argsstring>
+        <name>standstill_begin_</name>
+        <qualifiedname>ImuStateCheckerRos2::standstill_begin_</qualifiedname>
+        <briefdescription>
+<para>Time start when IMU is STANDSTILL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="123" column="16" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1aceb7ca8ab799c0bced339af3fbd7e52f" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; float &gt;</type>
+        <definition>std::deque&lt;float&gt; ImuStateCheckerRos2::gyro_mag_q_</definition>
+        <argsstring></argsstring>
+        <name>gyro_mag_q_</name>
+        <qualifiedname>ImuStateCheckerRos2::gyro_mag_q_</qualifiedname>
+        <briefdescription>
+<para>Contains the recent 10 magnitude of Gyroscope data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="126" column="14" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a0df406eb57ab8950a63fe74b58f444b8" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; float &gt;</type>
+        <definition>std::deque&lt;float&gt; ImuStateCheckerRos2::accl_mag_q_</definition>
+        <argsstring></argsstring>
+        <name>accl_mag_q_</name>
+        <qualifiedname>ImuStateCheckerRos2::accl_mag_q_</qualifiedname>
+        <briefdescription>
+<para>Contains the recent 10 magnitude of Accelerometer data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="129" column="14" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a70e79fb939171e8f816ab495af3f1efc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ImuStateCheckerRos2::gyro_std_thresh_</definition>
+        <argsstring></argsstring>
+        <name>gyro_std_thresh_</name>
+        <qualifiedname>ImuStateCheckerRos2::gyro_std_thresh_</qualifiedname>
+        <briefdescription>
+<para>Gyroscope Standard deviation threshold. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="132" column="10" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a123d4a13180f0725ed20df36e8414da7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ImuStateCheckerRos2::accl_std_thresh_</definition>
+        <argsstring></argsstring>
+        <name>accl_std_thresh_</name>
+        <qualifiedname>ImuStateCheckerRos2::accl_std_thresh_</qualifiedname>
+        <briefdescription>
+<para>Accelerometer Standard Deviation threshold. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="135" column="10" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a96fd98be11a26d24e671be5ff8bc5f54" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImuStateCheckerRos2::imu_msg_type_</definition>
+        <argsstring></argsstring>
+        <name>imu_msg_type_</name>
+        <qualifiedname>ImuStateCheckerRos2::imu_msg_type_</qualifiedname>
+        <briefdescription>
+<para>IMU message type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="138" column="7" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImuStateCheckerRos2_1a472a8ecb4e6bee38cbeb053dfdbc51e5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ImuStateCheckerRos2::imu_topic_name_</definition>
+        <argsstring></argsstring>
+        <name>imu_topic_name_</name>
+        <qualifiedname>ImuStateCheckerRos2::imu_topic_name_</qualifiedname>
+        <briefdescription>
+<para>IMU topic name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="141" column="15" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImuStateCheckerRos2::ImuStateCheckerRos2</definition>
+        <argsstring>(const rclcpp::Node::SharedPtr &amp;node)</argsstring>
+        <name>ImuStateCheckerRos2</name>
+        <qualifiedname>ImuStateCheckerRos2::ImuStateCheckerRos2</qualifiedname>
+        <param>
+          <type>const rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for StateChecker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="50" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1ab4c9c9556af171770684130791b29b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImuStateCheckerRos2::~ImuStateCheckerRos2</definition>
+        <argsstring>()</argsstring>
+        <name>~ImuStateCheckerRos2</name>
+        <qualifiedname>ImuStateCheckerRos2::~ImuStateCheckerRos2</qualifiedname>
+        <briefdescription>
+<para>Destructor for StateChecker. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="53" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a1cac4769f2afdad3971099d9df008e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>e_imu_state</type>
+        <definition>e_imu_state ImuStateCheckerRos2::evaluateState</definition>
+        <argsstring>(const sensor_msgs::msg::Imu::SharedPtr imu_msg)</argsstring>
+        <name>evaluateState</name>
+        <qualifiedname>ImuStateCheckerRos2::evaluateState</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Imu::SharedPtr</type>
+          <declname>imu_msg</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates that state of the IMU based on the standard deviation of the magnitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">im_msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IMU data that will be evaluated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>state of the IMU </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="60" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1ae8e280af8fd54a7c1927e408a7de9890" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuStateCheckerRos2::imuCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Imu::SharedPtr msg)</argsstring>
+        <name>imuCallback</name>
+        <qualifiedname>ImuStateCheckerRos2::imuCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Imu::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback when IMU topic is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IMU data (sensor_msgs) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="65" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a0a70b2c07dd50bc6f6872df90932a531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuStateCheckerRos2::imuCallback</definition>
+        <argsstring>(const adrd2121_imu::msg::AdiImu::SharedPtr msg)</argsstring>
+        <name>imuCallback</name>
+        <qualifiedname>ImuStateCheckerRos2::imuCallback</qualifiedname>
+        <param>
+          <type>const adrd2121_imu::msg::AdiImu::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Callback when IMU topic is received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IMU data (AdiImu) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="70" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a5765b4d4eb0caa2472347efe8f9cff52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ImuStateCheckerRos2::getStandardDev</definition>
+        <argsstring>(std::deque&lt; float &gt; data)</argsstring>
+        <name>getStandardDev</name>
+        <qualifiedname>ImuStateCheckerRos2::getStandardDev</qualifiedname>
+        <param>
+          <type>std::deque&lt; float &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the standard deviation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The deque of data</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The computed standard deviation </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="77" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a8236f2016b202ade49e7aef2d2592800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImuStateCheckerRos2::evaluateStandstillBegin</definition>
+        <argsstring>(void)</argsstring>
+        <name>evaluateStandstillBegin</name>
+        <qualifiedname>ImuStateCheckerRos2::evaluateStandstillBegin</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the Time Start when IMU is STANDSTILL. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="80" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a9c5c22e34df8d545fb30cbbb74df640c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ImuStateCheckerRos2::getStandstillBegin</definition>
+        <argsstring>(void)</argsstring>
+        <name>getStandstillBegin</name>
+        <qualifiedname>ImuStateCheckerRos2::getStandstillBegin</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the Time Start when IMU is STANDSTILL. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>value of standstill_begin_ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="85" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a40d57c569e0fe1eb354051728a9504db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>e_imu_state</type>
+        <definition>e_imu_state ImuStateCheckerRos2::getState</definition>
+        <argsstring>(void)</argsstring>
+        <name>getState</name>
+        <qualifiedname>ImuStateCheckerRos2::getState</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>value of state_ </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="90" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1aba405ca2f81127b9267d4f070517e2f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuStateCheckerRos2::loadParams</definition>
+        <argsstring>(void)</argsstring>
+        <name>loadParams</name>
+        <qualifiedname>ImuStateCheckerRos2::loadParams</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Loads parameters for the IMU state checker. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="95" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classImuStateCheckerRos2_1a848f8e76ac5fbaf604e2e435640e700e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ImuStateCheckerRos2::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <qualifiedname>ImuStateCheckerRos2::init</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize imu/data_raw subscription and publisher of imu_state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="100" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Checks state of IMU (STANDSTILL or MOVING) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="46" column="1" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="47" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classImuStateCheckerRos2_1a0df406eb57ab8950a63fe74b58f444b8" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>accl_mag_q_</name></member>
+      <member refid="classImuStateCheckerRos2_1a123d4a13180f0725ed20df36e8414da7" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>accl_std_thresh_</name></member>
+      <member refid="classImuStateCheckerRos2_1a2f7c270fe1a7c66e80a0790db78783d8" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>adi_imu_sub_</name></member>
+      <member refid="classImuStateCheckerRos2_1a8236f2016b202ade49e7aef2d2592800" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>evaluateStandstillBegin</name></member>
+      <member refid="classImuStateCheckerRos2_1a1cac4769f2afdad3971099d9df008e2f" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>evaluateState</name></member>
+      <member refid="classImuStateCheckerRos2_1a5765b4d4eb0caa2472347efe8f9cff52" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>getStandardDev</name></member>
+      <member refid="classImuStateCheckerRos2_1a9c5c22e34df8d545fb30cbbb74df640c" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>getStandstillBegin</name></member>
+      <member refid="classImuStateCheckerRos2_1a40d57c569e0fe1eb354051728a9504db" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>getState</name></member>
+      <member refid="classImuStateCheckerRos2_1aceb7ca8ab799c0bced339af3fbd7e52f" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>gyro_mag_q_</name></member>
+      <member refid="classImuStateCheckerRos2_1a70e79fb939171e8f816ab495af3f1efc" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>gyro_std_thresh_</name></member>
+      <member refid="classImuStateCheckerRos2_1a96fd98be11a26d24e671be5ff8bc5f54" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>imu_msg_type_</name></member>
+      <member refid="classImuStateCheckerRos2_1a472a8ecb4e6bee38cbeb053dfdbc51e5" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>imu_topic_name_</name></member>
+      <member refid="classImuStateCheckerRos2_1ae8e280af8fd54a7c1927e408a7de9890" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>imuCallback</name></member>
+      <member refid="classImuStateCheckerRos2_1a0a70b2c07dd50bc6f6872df90932a531" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>imuCallback</name></member>
+      <member refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>ImuStateCheckerRos2</name></member>
+      <member refid="classImuStateCheckerRos2_1a848f8e76ac5fbaf604e2e435640e700e" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>init</name></member>
+      <member refid="classImuStateCheckerRos2_1aba405ca2f81127b9267d4f070517e2f2" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>loadParams</name></member>
+      <member refid="classImuStateCheckerRos2_1aba6d37ac6640e6817809951c6c86a2ee" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>node_</name></member>
+      <member refid="classImuStateCheckerRos2_1a64ab53780cb0d330ffe3c5466aa731fe" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>prev_state_</name></member>
+      <member refid="classImuStateCheckerRos2_1a83f7680ced9baa152dcd17d79af1c401" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>publish_imu_state_</name></member>
+      <member refid="classImuStateCheckerRos2_1a9f17504164fb929ceef3797f6448955d" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>sensor_imu_sub_</name></member>
+      <member refid="classImuStateCheckerRos2_1a91b8e350a426080fba8594d7bab762dd" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>standstill_begin_</name></member>
+      <member refid="classImuStateCheckerRos2_1a17e88dfc5885c2b12b6cd6a35d47a104" prot="private" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>state_</name></member>
+      <member refid="classImuStateCheckerRos2_1ab4c9c9556af171770684130791b29b7b" prot="public" virt="non-virtual"><scope>ImuStateCheckerRos2</scope><name>~ImuStateCheckerRos2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

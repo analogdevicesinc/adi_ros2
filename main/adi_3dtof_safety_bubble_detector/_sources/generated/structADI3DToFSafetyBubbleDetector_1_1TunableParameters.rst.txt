@@ -1,0 +1,23 @@
+.. _exhale_struct_structADI3DToFSafetyBubbleDetector_1_1TunableParameters:
+
+Struct ADI3DToFSafetyBubbleDetector::TunableParameters
+======================================================
+
+- Defined in :ref:`file_include_adi_3dtof_safety_bubble_detector_node.h`
+
+
+Nested Relationships
+--------------------
+
+This struct is a nested type of :ref:`exhale_class_classADI3DToFSafetyBubbleDetector`.
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: ADI3DToFSafetyBubbleDetector::TunableParameters
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

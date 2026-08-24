@@ -1,0 +1,90 @@
+
+.. _file_include_adrd2121_imu_imu_state_checker_ros2.hpp:
+
+File imu_state_checker_ros2.hpp
+===============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/imu_state_checker_ros2.hpp``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_imu_state_checker_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adrd2121_imu/msg/adi_imu.hpp``
+
+- ``adrd2121_imu/msg/imu_state.hpp``
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``cmath``
+
+- ``deque``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/imu.hpp``
+
+- ``unistd.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classImuStateCheckerRos2`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a`
+
+- :ref:`exhale_define_imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57`
+
+- :ref:`exhale_define_imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_imu__state__checker__ros2_8hpp_1ad94c26128974472337480354af787839`
+

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="image__proc__utils_8h" kind="file" language="C++">
+    <compoundname>image_proc_utils.h</compoundname>
+    <includes local="no">cv_bridge/cv_bridge.hpp</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">opencv2/calib3d.hpp</includes>
+    <includes refid="adi__camera_8h" local="yes">adi_camera.h</includes>
+    <includedby refid="adi__3dtof__adtf31xx_8h" local="yes">include/adi_3dtof_adtf31xx.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>cv_bridge/cv_bridge.hpp</label>
+      </node>
+      <node id="4">
+        <label>opencv2/calib3d.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_3dtof_adtf31xx.h</label>
+        <link refid="adi__3dtof__adtf31xx_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/image_proc_utils.h</label>
+        <link refid="image__proc__utils_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImageProcUtils" prot="public">ImageProcUtils</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMAGE_PROC_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ROS_HUMBLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cv_bridge/cv_bridge.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/calib3d.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_camera.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classImageProcUtils" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImageProcUtils" kindref="compound">ImageProcUtils</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>constructor<sp/>with<sp/>no<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound">ImageProcUtils</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound">ImageProcUtils</ref>(<ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>image_width_<sp/>=<sp/>image_width;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>image_height_<sp/>=<sp/>image_height;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>range_to_3d_lut_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(range_to_3d_lut_,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>*<sp/>image_width_<sp/>*<sp/>image_height_<sp/>*<sp/>3);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member">generateRangeTo3DLUT</ref>(camera_intrinsics);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound">~ImageProcUtils</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generate<sp/>LUT<sp/>for<sp/>range<sp/>to<sp/>depth<sp/>correction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>range_to_3d_lut_;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" kindref="member">generateRangeTo3DLUT</ref>(<ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Generate<sp/>Camera<sp/>Intrinsics<sp/>calibration<sp/>arrays.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>k_raw_array[9]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[0],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[1],</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[2],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[3],</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[4],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[5],</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[6],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[7],</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[8]};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d_raw_array[8]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[0],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[1],</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[2],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[3],</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[4],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[5],</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[6],<sp/>camera_intrinsics-&gt;<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[7]};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>k_raw<sp/>=<sp/>cv::Mat(3,<sp/>3,<sp/>CV_64F,<sp/>k_raw_array);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>d_raw<sp/>=<sp/>cv::Mat(1,<sp/>8,<sp/>CV_64F,<sp/>d_raw_array);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Size<sp/>img_size(image_width_,<sp/>image_height_);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>k_rect<sp/>=<sp/>cv::getOptimalNewCameraMatrix(k_raw,<sp/>d_raw,<sp/>img_size,<sp/>0,<sp/>img_size,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Prepare<sp/>the<sp/>rectification<sp/>maps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>r<sp/>=<sp/>cv::Mat::eye(3,<sp/>3,<sp/>CV_32F);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>range_to_3d_lut<sp/>=<sp/>range_to_3d_lut_;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/>image_height_;<sp/>y++)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/>image_width_;<sp/>x++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::Mat<sp/>distorted_pt(1,<sp/>1,<sp/>CV_32FC2,<sp/>cv::Scalar(x,<sp/>y));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::Mat<sp/>undistorted_pt(1,<sp/>1,<sp/>CV_32FC2);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cv::undistortPoints(distorted_pt,<sp/>undistorted_pt,<sp/>k_raw,<sp/>d_raw);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ux<sp/>=<sp/>undistorted_pt.at&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(0);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>uy<sp/>=<sp/>undistorted_pt.at&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(1);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale_factor<sp/>=<sp/>1.0f<sp/>/<sp/>sqrtf(1.0f<sp/>+<sp/>ux<sp/>*<sp/>ux<sp/>+<sp/>uy<sp/>*<sp/>uy);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*range_to_3d_lut++<sp/>=<sp/>(ux<sp/>*<sp/>scale_factor);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*range_to_3d_lut++<sp/>=<sp/>(uy<sp/>*<sp/>scale_factor);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*range_to_3d_lut++<sp/>=<sp/>(scale_factor);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" kindref="member">computePointCloud</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>range_image,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>xyz_frame)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>range_to_3d_lut<sp/>=<sp/>range_to_3d_lut_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>image_height_;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>image_width_;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*xyz_frame++<sp/>=<sp/>(*range_to_3d_lut++)<sp/>*<sp/>(*range_image);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*xyz_frame++<sp/>=<sp/>(*range_to_3d_lut++)<sp/>*<sp/>(*range_image);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*xyz_frame++<sp/>=<sp/>(*range_to_3d_lut++)<sp/>*<sp/>(*range_image);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>range_image++;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width_;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height_;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<sp/>range_to_3d_lut_;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/image_proc_utils.h"/>
+  </compounddef>
+</doxygen>

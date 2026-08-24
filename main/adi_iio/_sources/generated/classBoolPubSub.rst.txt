@@ -1,0 +1,26 @@
+.. _exhale_class_classBoolPubSub:
+
+Class BoolPubSub
+================
+
+- Defined in :ref:`file_include_adi_iio_attr_publisher.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public AttrPubSub`` (:ref:`exhale_class_classAttrPubSub`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: BoolPubSub
+   :project: adi_iio Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

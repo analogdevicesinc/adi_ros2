@@ -1,0 +1,59 @@
+\doxysection{velangtemp\+\_\+ros\+\_\+publisher.\+h}
+\hypertarget{velangtemp__ros__publisher_8h_source}{}\label{velangtemp__ros__publisher_8h_source}\index{include/adi\_imu/velangtemp\_ros\_publisher.h@{include/adi\_imu/velangtemp\_ros\_publisher.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*******************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ \ @file\ \ \ velangtemp\_ros\_publisher.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ \ \ @brief\ \ Header\ temperature,\ delta\ velocity\ and\ delta\ angle\ publisher.}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ \ @author\ Vasile\ Holonec\ (Vasile.Holonec@analog.com)}}
+\DoxyCodeLine{00005\ \textcolor{comment}{*******************************************************************************/}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Copyright\ 2023\ Analog\ Devices,\ Inc.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ \ \ \ \ http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//}}
+\DoxyCodeLine{00014\ \textcolor{comment}{//\ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#ifndef\ ADI\_IMU\_\_VELANGTEMP\_ROS\_PUBLISHER\_H\_}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ ADI\_IMU\_\_VELANGTEMP\_ROS\_PUBLISHER\_H\_}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <rclcpp/rclcpp.hpp>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}adi\_imu/velangtemp\_data\_provider\_interface.h"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}adi\_imu/velangtemp\_ros\_publisher\_interface.h"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{namespace\ }adi\_imu}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher}{VelAngTempRosPublisher}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisherInterface}{VelAngTempRosPublisherInterface}}}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher}{VelAngTempRosPublisher}}(std::shared\_ptr<rclcpp::Node>\ \&\ node);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_a3d8e8ec99a942f4a342cd5e4fca8117c}{\string~VelAngTempRosPublisher}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_aa95e8ba1150f64b0a2d44a519dafca25}{setMessageProvider}}(\mbox{\hyperlink{classadi__imu_1_1VelAngTempDataProviderInterface}{VelAngTempDataProviderInterface}}\ *\ dataProvider)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_a53b7c1cc3cbc062a7b5a0a32febf3546}{publish}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{classadi__imu_1_1VelAngTempDataProviderInterface}{VelAngTempDataProviderInterface}}\ *\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_a746d90da062a25dac74924ab00152e63}{m\_data\_provider}};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00065\ \ \ rclcpp::Publisher<adi\_imu::msg::VelAngTempData>::SharedPtr\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_a77467118945b751b61c38e0004109a17}{m\_publisher}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ adi\_imu::msg::VelAngTempData\ \mbox{\hyperlink{classadi__imu_1_1VelAngTempRosPublisher_afc9cf345d166f641bc6927711cafa081}{m\_message}};}
+\DoxyCodeLine{00069\ \};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \}\ \ \textcolor{comment}{//\ namespace\ adi\_imu}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IMU\_\_VELANGTEMP\_ROS\_PUBLISHER\_H\_}}
+
+\end{DoxyCode}

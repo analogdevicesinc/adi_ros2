@@ -1,0 +1,75 @@
+
+.. _file_include_adrd2121_imu_bias_estimate_node_ros2.hpp:
+
+File bias_estimate_node_ros2.hpp
+================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/bias_estimate_node_ros2.hpp``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_bias_estimate_node_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adrd2121_imu/srv/bias_estimate_cmd.hpp``
+
+- ``adrd2121_imu/srv/imu_glob_cmd.hpp``
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``chrono``
+
+- ``imu_state_checker_ros2.hpp`` (:ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`)
+
+- ``iostream``
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classBiasEstimateRos2`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_bias__estimate__node__ros2_8hpp_1acb496a8c6ccbe9acd3f506e3019f011f`
+
+- :ref:`exhale_function_bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_bias__estimate__node__ros2_8hpp_1a615881e33252c91b9d8ce98c2abf2167`
+
+- :ref:`exhale_define_bias__estimate__node__ros2_8hpp_1a7c7f143662b13c2f05cb7b3f3f8afee6`
+

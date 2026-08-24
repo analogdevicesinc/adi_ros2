@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93:
+
+Variable MOTOR_TYPE_STEPPER_MAX
+===============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: MOTOR_TYPE_STEPPER_MAX
+   :project: adi_tmc_coe_core Doxygen Project

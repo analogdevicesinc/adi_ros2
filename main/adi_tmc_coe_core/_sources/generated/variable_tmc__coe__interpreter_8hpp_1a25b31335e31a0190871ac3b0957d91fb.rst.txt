@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb:
+
+Variable ERROR_CHECK_DELAY
+==========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ERROR_CHECK_DELAY
+   :project: adi_tmc_coe_core Doxygen Project

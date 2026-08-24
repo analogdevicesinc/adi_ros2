@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="imu__state__checker__ros2_8hpp" kind="file" language="C++">
+    <compoundname>imu_state_checker_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes refid="adrd2121__imu__ros2__common_8hpp" local="yes">adrd2121_imu_ros2_common.hpp</includes>
+    <includes local="yes">sensor_msgs/msg/imu.hpp</includes>
+    <includes local="yes">adrd2121_imu/msg/adi_imu.hpp</includes>
+    <includes local="yes">adrd2121_imu/msg/imu_state.hpp</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="bias__estimate__node__ros2_8hpp" local="yes">include/adrd2121_imu/bias_estimate_node_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/imu_state_checker_ros2.hpp</label>
+        <link refid="imu__state__checker__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>adrd2121_imu/msg/adi_imu.hpp</label>
+      </node>
+      <node id="9">
+        <label>adrd2121_imu/msg/imu_state.hpp</label>
+      </node>
+      <node id="11">
+        <label>cmath</label>
+      </node>
+      <node id="10">
+        <label>deque</label>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="7">
+        <label>sensor_msgs/msg/imu.hpp</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>sys/time.h</label>
+      </node>
+      <node id="12">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adrd2121_imu/bias_estimate_node_ros2.hpp</label>
+        <link refid="bias__estimate__node__ros2_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/imu_state_checker_ros2.hpp</label>
+        <link refid="imu__state__checker__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classImuStateCheckerRos2" prot="public">ImuStateCheckerRos2</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="imu__state__checker__ros2_8hpp_1af7f0040405be9c6d9c1f8f2188fd2b57" prot="public" static="no">
+        <name>DATA_LIMIT</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="32" column="9" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a" prot="public" static="no">
+        <name>BUFFER_LIMIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="33" column="9" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3" prot="public" static="no">
+        <name>WAIT_LIMIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="34" column="9" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613" prot="public" static="no" strong="no">
+        <type></type>
+        <name>e_imu_state</name>
+        <enumvalue id="imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613a46cb126ce4793a19c941df7821924d5f" prot="public">
+          <name>STANDSTILL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="imu__state__checker__ros2_8hpp_1a9ebccd294ac8fd3cf7fdc78d05cb5613a16ebdcb23eb5337fd5bc598fa8d6035d" prot="public">
+          <name>MOVING</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of IMU </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="38" column="1" bodyfile="include/adrd2121_imu/imu_state_checker_ros2.hpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="imu__state__checker__ros2_8hpp_1ad94c26128974472337480354af787839" prot="public" static="no">
+        <type>enum e_imu_state</type>
+        <definition>typedef enum e_imu_state e_imu_state</definition>
+        <argsstring></argsstring>
+        <name>e_imu_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp" line="42" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IMU_STATE_CHECKER_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IMU_STATE_CHECKER_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//ROS2<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>Driver<sp/>ROS2<sp/>Header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu_ros2_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//Msgs<sp/>for<sp/>subscribers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sensor_msgs/msg/imu.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/msg/adi_imu.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//Msg<sp/>for<sp/>publisher</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu/msg/imu_state.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//NAMESPACE<sp/>DEFINITIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::placeholders::_2;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//CONSTANTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_LIMIT<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_LIMIT<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WAIT_LIMIT<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>e_imu_state</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>STANDSTILL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>MOVING<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}e_imu_state;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classImuStateCheckerRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50" refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" kindref="member">ImuStateCheckerRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="classImuStateCheckerRos2_1ab4c9c9556af171770684130791b29b7b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuStateCheckerRos2_1ab4c9c9556af171770684130791b29b7b" kindref="member">~ImuStateCheckerRos2</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classImuStateCheckerRos2_1a1cac4769f2afdad3971099d9df008e2f" refkind="member"><highlight class="normal"><sp/><sp/>e_imu_state<sp/><ref refid="classImuStateCheckerRos2_1a1cac4769f2afdad3971099d9df008e2f" kindref="member">evaluateState</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sensor_msgs::msg::Imu::SharedPtr<sp/>imu_msg);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classImuStateCheckerRos2_1ae8e280af8fd54a7c1927e408a7de9890" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1ae8e280af8fd54a7c1927e408a7de9890" kindref="member">imuCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sensor_msgs::msg::Imu::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classImuStateCheckerRos2_1a0a70b2c07dd50bc6f6872df90932a531" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1a0a70b2c07dd50bc6f6872df90932a531" kindref="member">imuCallback</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>adrd2121_imu::msg::AdiImu::SharedPtr<sp/>msg);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="classImuStateCheckerRos2_1a5765b4d4eb0caa2472347efe8f9cff52" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1a5765b4d4eb0caa2472347efe8f9cff52" kindref="member">getStandardDev</ref>(std::deque&lt;float&gt;<sp/>data);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classImuStateCheckerRos2_1a8236f2016b202ade49e7aef2d2592800" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1a8236f2016b202ade49e7aef2d2592800" kindref="member">evaluateStandstillBegin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="classImuStateCheckerRos2_1a9c5c22e34df8d545fb30cbbb74df640c" refkind="member"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/><ref refid="classImuStateCheckerRos2_1a9c5c22e34df8d545fb30cbbb74df640c" kindref="member">getStandstillBegin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classImuStateCheckerRos2_1a40d57c569e0fe1eb354051728a9504db" refkind="member"><highlight class="normal"><sp/><sp/>e_imu_state<sp/><ref refid="classImuStateCheckerRos2_1a40d57c569e0fe1eb354051728a9504db" kindref="member">getState</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classImuStateCheckerRos2_1aba405ca2f81127b9267d4f070517e2f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1aba405ca2f81127b9267d4f070517e2f2" kindref="member">loadParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classImuStateCheckerRos2_1a848f8e76ac5fbaf604e2e435640e700e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImuStateCheckerRos2_1a848f8e76ac5fbaf604e2e435640e700e" kindref="member">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>node_;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;adrd2121_imu::msg::ImuState&gt;::SharedPtr<sp/>publish_imu_state_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;adrd2121_imu::msg::AdiImu&gt;::SharedPtr<sp/>adi_imu_sub_;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;sensor_msgs::msg::Imu&gt;::SharedPtr<sp/>sensor_imu_sub_;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>e_imu_state<sp/>state_;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>e_imu_state<sp/>prev_state_;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>standstill_begin_;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>std::deque&lt;float&gt;<sp/>gyro_mag_q_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>std::deque&lt;float&gt;<sp/>accl_mag_q_;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gyro_std_thresh_;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>accl_std_thresh_;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_msg_type_;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>std::string<sp/>imu_topic_name_;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//IMU_STATE_CHECKER_ROS2</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/imu_state_checker_ros2.hpp"/>
+  </compounddef>
+</doxygen>

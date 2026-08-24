@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__bldc__motor_8hpp_1a1816d86b864c1905cff927194c63785d:
+
+Enum bldc_comm_mode_t
+=====================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_bldc_motor.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: bldc_comm_mode_t
+   :project: adi_tmc_coe_core Doxygen Project

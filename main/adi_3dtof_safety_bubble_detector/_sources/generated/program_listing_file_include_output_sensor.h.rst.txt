@@ -1,0 +1,50 @@
+
+.. _program_listing_file_include_output_sensor.h:
+
+Program Listing for File output_sensor.h
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_output_sensor.h>` (``include/output_sensor.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /******************************************************************************
+   Copyright (c), 2023 - Analog Devices Inc. All Rights Reserved.
+   This software is PROPRIETARY & CONFIDENTIAL to Analog Devices, Inc.
+   and its licensors.
+   ******************************************************************************/
+   
+   #ifndef OUTPUT_SENSOR_H
+   #define OUTPUT_SENSOR_H
+   
+   #include <fstream>
+   #include <iostream>
+   
+   /*Video Write*/
+   #include <opencv2/core/core.hpp>
+   #include <opencv2/highgui/highgui.hpp>
+   #include <opencv2/imgproc.hpp>
+   
+   enum OutputFlag {
+     DisableAllOutputs,
+     EnableCSVOutputOnly,
+     EnableVideoOutputOnly,
+     EnableAllOutputs
+   };
+   
+   class OOutputSensor
+   {
+   public:
+     virtual void open(
+       std::string input_file_name, int image_width, int image_height, OutputFlag output_flag) = 0;
+     virtual void write(
+       int frame_number, bool object_detected, unsigned short * depth_frame_16bpp,
+       const cv::Mat & out_visualization_image, int image_width, int image_height,
+       bool floor_detection_status, int ransac_iterations, int noise_count,
+       float ransac_time_ms_out) = 0;
+     virtual void close() = 0;
+   };
+   
+   #endif

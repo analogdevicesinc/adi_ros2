@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmcl__common_8hpp" kind="file" language="C++">
+    <compoundname>tmcl_common.hpp</compoundname>
+    <includedby refid="tmcl__motor_8hpp" local="yes">include/adi_tmcl/tmcl_motor.hpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/adi_tmcl/tmcl_bldc_motor.hpp</label>
+        <link refid="tmcl__bldc__motor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adi_tmcl/tmcl_common.hpp</label>
+        <link refid="tmcl__common_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/adi_tmcl/tmcl_motor.hpp</label>
+        <link refid="tmcl__motor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/adi_tmcl/tmcl_ros2.hpp</label>
+        <link refid="tmcl__ros2_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>include/adi_tmcl/tmcl_stepper_motor.hpp</label>
+        <link refid="tmcl__stepper__motor_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tmcl_interface_params_lut_t</name>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05caad4890e41f87d667ce90438ffc725385" prot="public">
+          <name>IDX_COMM_INTERFACE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05ca3e32f7d832997e4968e0729172c8494d" prot="public">
+          <name>IDX_COMM_INTERFACE_NAME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05ca62a0b3d01910be8f6084397d7d5cda08" prot="public">
+          <name>IDX_COMM_TX_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05ca264e31aeb470594606edc60a0617527c" prot="public">
+          <name>IDX_COMM_RX_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05caf5d2ca4ce90d080ab70fa7a2575e044f" prot="public">
+          <name>IDX_COMM_TIMEOUT_MS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05ca60beba325c6cf6c691fc0b918f787320" prot="public">
+          <name>IDX_COMM_EXEC_CMD_RETRIES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__common_8hpp_1a2a3de5f2b349711c441315c1ea93c05cacc88af30c063f4e1a5b5a511a88e8c8d" prot="public">
+          <name>TMCL_INTERFACE_PARAMS_LUT_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_common.hpp" line="15" column="1" bodyfile="include/adi_tmcl/tmcl_common.hpp" bodystart="16" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73" prot="public" static="yes" mutable="no">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt;std::string&gt; comm_interface_params_</definition>
+        <argsstring></argsstring>
+        <name>comm_interface_params_</name>
+        <initializer>= {
+  &quot;comm_interface&quot;,
+  &quot;comm_interface_name&quot;,
+  &quot;comm_tx_id&quot;,
+  &quot;comm_rx_id&quot;,
+  &quot;comm_timeout_ms&quot;,
+  &quot;comm_exec_cmd_retries&quot;,
+  &quot;MAX&quot;         
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_common.hpp" line="27" column="27" bodyfile="include/adi_tmcl/tmcl_common.hpp" bodystart="27" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMCL_COMMON_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMCL_COMMON_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants<sp/>and<sp/>Enumerations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LUT<sp/>row<sp/>indeces<sp/>of<sp/>get-able/set-able<sp/>Communication<sp/>Interface<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>IDX_COMM_INTERFACE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>IDX_COMM_INTERFACE_NAME,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>IDX_COMM_TX_ID,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>IDX_COMM_RX_ID,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>IDX_COMM_TIMEOUT_MS,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>IDX_COMM_EXEC_CMD_RETRIES,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>TMCL_INTERFACE_PARAMS_LUT_MAX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}tmcl_interface_params_lut_t;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parameter<sp/>Names<sp/>of<sp/>get-able/set-able<sp/>Communication<sp/>Interface<sp/>Parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><sp/>comm_interface_params_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_interface&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_interface_name&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_tx_id&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_rx_id&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_timeout_ms&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;comm_exec_cmd_retries&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;MAX&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>should<sp/>not<sp/>be<sp/>used<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//TMCL_COMMON_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmcl/tmcl_common.hpp"/>
+  </compounddef>
+</doxygen>

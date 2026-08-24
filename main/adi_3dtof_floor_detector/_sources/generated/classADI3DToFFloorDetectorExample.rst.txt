@@ -1,0 +1,26 @@
+.. _exhale_class_classADI3DToFFloorDetectorExample:
+
+Class ADI3DToFFloorDetectorExample
+==================================
+
+- Defined in :ref:`file_include_adi_3dtof_floor_detector_example.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFFloorDetectorExample
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

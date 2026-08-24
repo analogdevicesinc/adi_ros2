@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de:
+
+Variable CONTROL_WORD_FAIL
+==========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CONTROL_WORD_FAIL
+   :project: adi_tmc_coe_core Doxygen Project

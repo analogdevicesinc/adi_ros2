@@ -1,0 +1,14 @@
+.. _exhale_define_imu__state__checker__ros2_8hpp_1af54831edceb88f332cc0b4e6bb990ca3:
+
+Define WAIT_LIMIT
+=================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: WAIT_LIMIT
+   :project: adrd2121_imu Doxygen Project

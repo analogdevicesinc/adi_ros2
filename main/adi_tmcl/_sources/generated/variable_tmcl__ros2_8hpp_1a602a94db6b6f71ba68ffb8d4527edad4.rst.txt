@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1a602a94db6b6f71ba68ffb8d4527edad4:
+
+Variable TIMEOUT_MS_MAX
+=======================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TIMEOUT_MS_MAX
+   :project: adi_tmcl Doxygen Project

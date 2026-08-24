@@ -1,0 +1,14 @@
+.. _exhale_define_attr__publisher_8hpp_1ad325bc9cd075a5679a4e1895dc52a5c8:
+
+Define ATTR_READ_SUFFIX
+=======================
+
+- Defined in :ref:`file_include_adi_iio_attr_publisher.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ATTR_READ_SUFFIX
+   :project: adi_iio Doxygen Project

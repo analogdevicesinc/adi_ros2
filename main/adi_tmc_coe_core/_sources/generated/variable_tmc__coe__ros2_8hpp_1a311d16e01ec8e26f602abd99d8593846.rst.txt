@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846:
+
+Variable MOTOR_TYPE_STEPPER_MIN
+===============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: MOTOR_TYPE_STEPPER_MIN
+   :project: adi_tmc_coe_core Doxygen Project

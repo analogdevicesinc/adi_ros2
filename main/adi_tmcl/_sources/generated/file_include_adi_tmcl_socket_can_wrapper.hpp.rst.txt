@@ -1,0 +1,45 @@
+
+.. _file_include_adi_tmcl_socket_can_wrapper.hpp:
+
+File socket_can_wrapper.hpp
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmcl>` (``include/adi_tmcl``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmcl/socket_can_wrapper.hpp``)
+--------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmcl_socket_can_wrapper.hpp.rst
+
+
+
+
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classSocketCAN`
+

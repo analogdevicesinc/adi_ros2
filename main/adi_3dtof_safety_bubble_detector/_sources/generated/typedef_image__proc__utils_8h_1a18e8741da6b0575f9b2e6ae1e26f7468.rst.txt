@@ -1,0 +1,14 @@
+.. _exhale_typedef_image__proc__utils_8h_1a18e8741da6b0575f9b2e6ae1e26f7468:
+
+Typedef ADIImage
+================
+
+- Defined in :ref:`file_include_image_proc_utils.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: ADIImage
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project

@@ -1,0 +1,17 @@
+.. _exhale_struct_structtmcl__cfg__t:
+
+Struct tmcl_cfg_t
+=================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: tmcl_cfg_t
+   :project: adi_tmcl Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

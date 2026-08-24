@@ -1,0 +1,101 @@
+
+.. _file_include_adrd2121_imu_adi_imu_ros2.hpp:
+
+File adi_imu_ros2.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/adi_imu_ros2.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_adi_imu_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu_driver.h``
+
+- ``adi_imu_regmap.h``
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``imu_spi_buffer.h``
+
+- ``imu_spi_buffer_regmap.h``
+
+- ``memory``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``unistd.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classAdiImuRos2`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963`
+
+- :ref:`exhale_define_adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c`
+
+- :ref:`exhale_define_adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8`
+
+- :ref:`exhale_define_adi__imu__ros2_8hpp_1a8df6275beb940e0f6fb78021240a6582`
+
+- :ref:`exhale_define_adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626`
+
+- :ref:`exhale_variable_adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1`
+

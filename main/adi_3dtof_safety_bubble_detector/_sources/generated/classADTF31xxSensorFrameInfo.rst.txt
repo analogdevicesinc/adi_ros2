@@ -1,0 +1,17 @@
+.. _exhale_class_classADTF31xxSensorFrameInfo:
+
+Class ADTF31xxSensorFrameInfo
+=============================
+
+- Defined in :ref:`file_include_adtf31xx_sensor_frame_info.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADTF31xxSensorFrameInfo
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

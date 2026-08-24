@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be:
+
+Variable ros_topic_params_
+==========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ros_topic_params_
+   :project: adi_tmcl Doxygen Project

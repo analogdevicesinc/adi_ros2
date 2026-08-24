@@ -1,0 +1,26 @@
+.. _exhale_class_classadi__imu_1_1AccelGyroTempDataProviderInterface:
+
+Class AccelGyroTempDataProviderInterface
+========================================
+
+- Defined in :ref:`file_include_adi_imu_accelgyrotemp_data_provider_interface.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Type
+************
+
+- ``public adi_imu::AccelGyroTempDataProvider`` (:ref:`exhale_class_classadi__imu_1_1AccelGyroTempDataProvider`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::AccelGyroTempDataProviderInterface
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

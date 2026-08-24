@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__interpreter_8hpp_1a1d34441d6858780b48d30e6a471ddf40:
+
+Enum tmcl_sts_t
+===============
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_sts_t
+   :project: adi_tmcl Doxygen Project

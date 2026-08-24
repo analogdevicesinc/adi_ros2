@@ -1,0 +1,114 @@
+\doxysection{attr\+\_\+publisher.\+hpp}
+\hypertarget{attr__publisher_8hpp_source}{}\label{attr__publisher_8hpp_source}\index{include/adi\_iio/attr\_publisher.hpp@{include/adi\_iio/attr\_publisher.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ 2025\ Analog\ Devices,\ Inc.}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Licensed\ under\ the\ Apache\ License,\ Version\ 2.0\ (the\ "{}License"{});}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//\ you\ may\ not\ use\ this\ file\ except\ in\ compliance\ with\ the\ License.}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ You\ may\ obtain\ a\ copy\ of\ the\ License\ at}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ \ \ \ \ http://www.apache.org/licenses/LICENSE-\/2.0}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//}}
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Unless\ required\ by\ applicable\ law\ or\ agreed\ to\ in\ writing,\ software}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ distributed\ under\ the\ License\ is\ distributed\ on\ an\ "{}AS\ IS"{}\ BASIS,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ WITHOUT\ WARRANTIES\ OR\ CONDITIONS\ OF\ ANY\ KIND,\ either\ express\ or\ implied.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ See\ the\ License\ for\ the\ specific\ language\ governing\ permissions\ and}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ limitations\ under\ the\ License.}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ ADI\_IIO\_\_ATTR\_PUBLISHER\_HPP\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ADI\_IIO\_\_ATTR\_PUBLISHER\_HPP\_}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <rclcpp/rclcpp.hpp>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <std\_msgs/msg/string.hpp>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <std\_msgs/msg/int32.hpp>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <std\_msgs/msg/bool.hpp>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <std\_msgs/msg/float32.hpp>}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}adi\_iio/iio\_node.hpp"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ ATTR\_QOS\_QUEUE\_SIZE\ 10}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ ATTR\_READ\_SUFFIX\ "{}/read"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ATTR\_WRITE\_SUFFIX\ "{}/write"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classAttrPubSub}{\string~AttrPubSub}}()\ \{\}}
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ =\ 0;}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//\ these\ could\ be\ templates\ ?}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStringPubSub}{StringPubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{classStringPubSub}{StringPubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classStringPubSub}{\string~StringPubSub}}();}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::String\ \&\ msg);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00052\ \ \ std::shared\_ptr<IIONode>\ m\_nh;}
+\DoxyCodeLine{00053\ \ \ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ m\_updateCallback;}
+\DoxyCodeLine{00054\ \ \ std::string\ m\_topic;}
+\DoxyCodeLine{00055\ \ \ rclcpp::Publisher<std\_msgs::msg::String>::SharedPtr\ m\_pub;}
+\DoxyCodeLine{00056\ \ \ rclcpp::Subscription<std\_msgs::msg::String>::SharedPtr\ m\_sub;}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInt32PubSub}{Int32PubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00060\ \{}
+\DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{classInt32PubSub}{Int32PubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classInt32PubSub}{\string~Int32PubSub}}();}
+\DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Int32\ \&\ msg);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00068\ \ \ std::shared\_ptr<IIONode>\ m\_nh;}
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ m\_updateCallback;}
+\DoxyCodeLine{00070\ \ \ std::string\ m\_topic;}
+\DoxyCodeLine{00071\ \ \ rclcpp::Publisher<std\_msgs::msg::Int32>::SharedPtr\ m\_pub;}
+\DoxyCodeLine{00072\ \ \ rclcpp::Subscription<std\_msgs::msg::Int32>::SharedPtr\ m\_sub;}
+\DoxyCodeLine{00073\ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoolPubSub}{BoolPubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00076\ \{}
+\DoxyCodeLine{00077\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00078\ \ \ \mbox{\hyperlink{classBoolPubSub}{BoolPubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBoolPubSub}{\string~BoolPubSub}}();}
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Bool\ \&\ msg);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ std::shared\_ptr<IIONode>\ m\_nh;}
+\DoxyCodeLine{00085\ \ \ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ m\_updateCallback;}
+\DoxyCodeLine{00086\ \ \ std::string\ m\_topic;}
+\DoxyCodeLine{00087\ \ \ rclcpp::Publisher<std\_msgs::msg::Bool>::SharedPtr\ m\_pub;}
+\DoxyCodeLine{00088\ \ \ rclcpp::Subscription<std\_msgs::msg::Bool>::SharedPtr\ m\_sub;}
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFloat32PubSub}{Float32PubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00093\ \{}
+\DoxyCodeLine{00094\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00095\ \ \ \mbox{\hyperlink{classFloat32PubSub}{Float32PubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00096\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classFloat32PubSub}{\string~Float32PubSub}}();}
+\DoxyCodeLine{00097\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00098\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Float32\ \&\ msg);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00101\ \ \ std::shared\_ptr<IIONode>\ m\_nh;}
+\DoxyCodeLine{00102\ \ \ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ m\_updateCallback;}
+\DoxyCodeLine{00103\ \ \ std::string\ m\_topic;}
+\DoxyCodeLine{00104\ \ \ rclcpp::Publisher<std\_msgs::msg::Float32>::SharedPtr\ m\_pub;}
+\DoxyCodeLine{00105\ \ \ rclcpp::Subscription<std\_msgs::msg::Float32>::SharedPtr\ m\_sub;}
+\DoxyCodeLine{00106\ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ADI\_IIO\_\_ATTR\_PUBLISHER\_HPP\_}}
+
+\end{DoxyCode}

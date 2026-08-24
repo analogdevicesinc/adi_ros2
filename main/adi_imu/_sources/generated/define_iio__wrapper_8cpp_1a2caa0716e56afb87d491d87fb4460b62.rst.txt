@@ -1,0 +1,14 @@
+.. _exhale_define_iio__wrapper_8cpp_1a2caa0716e56afb87d491d87fb4460b62:
+
+Define MAX_NO_OF_SAMPLES
+========================
+
+- Defined in :ref:`file_src_iio_wrapper.cpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_NO_OF_SAMPLES
+   :project: adi_imu Doxygen Project

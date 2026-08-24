@@ -1,0 +1,4 @@
+int16 bit
+---
+bool success
+string message

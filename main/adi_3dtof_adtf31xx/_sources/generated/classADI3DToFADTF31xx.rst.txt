@@ -1,0 +1,36 @@
+.. _exhale_class_classADI3DToFADTF31xx:
+
+Class ADI3DToFADTF31xx
+======================
+
+- Defined in :ref:`file_include_adi_3dtof_adtf31xx.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structADI3DToFADTF31xx_1_1TunableParameters`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFADTF31xx
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

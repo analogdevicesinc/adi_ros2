@@ -1,0 +1,17 @@
+.. _exhale_class_classadi__imu_1_1ImuDiagPublisherFactory:
+
+Class ImuDiagPublisherFactory
+=============================
+
+- Defined in :ref:`file_include_adi_imu_imu_diag_ros_publisher_factory.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::ImuDiagPublisherFactory
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

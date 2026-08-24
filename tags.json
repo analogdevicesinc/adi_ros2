@@ -3,6 +3,10 @@
     "adi_meta",
     "core"
   ],
+  "main/adi_meta": [
+    "adi_meta",
+    "core"
+  ],
   "humble/adi_3dtof_adtf31xx": [
     "humble > adi_3dtof_adtf31xx",
     ""
@@ -41,6 +45,46 @@
   ],
   "humble/adrd2121_imu": [
     "humble > adrd2121_imu",
+    ""
+  ],
+  "main/adi_3dtof_adtf31xx": [
+    "main > adi_3dtof_adtf31xx",
+    ""
+  ],
+  "main/adi_3dtof_floor_detector": [
+    "main > adi_3dtof_floor_detector",
+    ""
+  ],
+  "main/adi_3dtof_safety_bubble_detector": [
+    "main > adi_3dtof_safety_bubble_detector",
+    ""
+  ],
+  "main/adi_iio": [
+    "main > adi_iio",
+    ""
+  ],
+  "main/adi_imu": [
+    "main > adi_imu",
+    ""
+  ],
+  "main/adi_tmc_coe": [
+    "main > adi_tmc_coe",
+    ""
+  ],
+  "main/adi_tmc_coe_core": [
+    "main > adi_tmc_coe_core",
+    ""
+  ],
+  "main/adi_tmc_coe_interfaces": [
+    "main > adi_tmc_coe_interfaces",
+    ""
+  ],
+  "main/adi_tmcl": [
+    "main > adi_tmcl",
+    ""
+  ],
+  "main/adrd2121_imu": [
+    "main > adrd2121_imu",
     ""
   ]
 }

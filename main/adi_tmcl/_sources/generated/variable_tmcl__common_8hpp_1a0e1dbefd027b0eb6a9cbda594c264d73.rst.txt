@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__common_8hpp_1a0e1dbefd027b0eb6a9cbda594c264d73:
+
+Variable comm_interface_params_
+===============================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_common.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: comm_interface_params_
+   :project: adi_tmcl Doxygen Project

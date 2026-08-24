@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a:
+
+Variable CW_NEW_POSITION_RELATIVE
+=================================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CW_NEW_POSITION_RELATIVE
+   :project: adi_tmc_coe_core Doxygen Project

@@ -1,0 +1,70 @@
+\doxysection{Bool\+Pub\+Sub Class Reference}
+\hypertarget{classBoolPubSub}{}\label{classBoolPubSub}\index{BoolPubSub@{BoolPubSub}}
+
+
+Inheritance diagram for Bool\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classBoolPubSub__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bool\+Pub\+Sub\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classBoolPubSub__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBoolPubSub_a3729ba790f192f8be35efb8affdf41f3}\label{classBoolPubSub_a3729ba790f192f8be35efb8affdf41f3} 
+{\bfseries Bool\+Pub\+Sub} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ nh, \mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*}up, std\+::string topic)
+\item 
+void \mbox{\hyperlink{classBoolPubSub_a6b9188b8f4250368b51bb732b17dd637}{publish}} (std\+::string msg) override
+\item 
+\Hypertarget{classBoolPubSub_a27615dab21a347ce5c4224e2284b55cd}\label{classBoolPubSub_a27615dab21a347ce5c4224e2284b55cd} 
+void {\bfseries update} (const std\+\_\+msgs\+::msg\+::\+Bool \&msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBoolPubSub_ac7f9d8334d68cfa2ce2308ae05451ee7}\label{classBoolPubSub_ac7f9d8334d68cfa2ce2308ae05451ee7} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classIIONode}{IIONode}} $>$ {\bfseries m\+\_\+nh}
+\item 
+\Hypertarget{classBoolPubSub_aef7be490343d0dc55c34e2489eef5e3e}\label{classBoolPubSub_aef7be490343d0dc55c34e2489eef5e3e} 
+\mbox{\hyperlink{classUpdateCallback}{Update\+Callback}} \texorpdfstring{$\ast$}{*} {\bfseries m\+\_\+update\+Callback}
+\item 
+\Hypertarget{classBoolPubSub_a624ef1c308009b2f31767ed507e7890e}\label{classBoolPubSub_a624ef1c308009b2f31767ed507e7890e} 
+std\+::string {\bfseries m\+\_\+topic}
+\item 
+\Hypertarget{classBoolPubSub_ab8888cf7049c104be0d58f46bdc6eb42}\label{classBoolPubSub_ab8888cf7049c104be0d58f46bdc6eb42} 
+rclcpp\+::\+Publisher$<$ std\+\_\+msgs\+::msg\+::\+Bool $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+pub}
+\item 
+\Hypertarget{classBoolPubSub_a639050241eba42e8c2865c8dba513b56}\label{classBoolPubSub_a639050241eba42e8c2865c8dba513b56} 
+rclcpp\+::\+Subscription$<$ std\+\_\+msgs\+::msg\+::\+Bool $>$\+::\+Shared\+Ptr {\bfseries m\+\_\+sub}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBoolPubSub_a6b9188b8f4250368b51bb732b17dd637}\label{classBoolPubSub_a6b9188b8f4250368b51bb732b17dd637} 
+\index{BoolPubSub@{BoolPubSub}!publish@{publish}}
+\index{publish@{publish}!BoolPubSub@{BoolPubSub}}
+\doxysubsubsection{\texorpdfstring{publish()}{publish()}}
+{\footnotesize\ttfamily void Bool\+Pub\+Sub\+::publish (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classAttrPubSub}{Attr\+Pub\+Sub}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/attr\+\_\+publisher.\+hpp\item 
+src/attr\+\_\+publisher.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_23298a5e901afe75ed61f6773598db27" kind="dir">
+    <compoundname>include/adi_tmcl</compoundname>
+    <innerfile refid="socket__can__wrapper_8hpp">socket_can_wrapper.hpp</innerfile>
+    <innerfile refid="tmcl__bldc__motor_8hpp">tmcl_bldc_motor.hpp</innerfile>
+    <innerfile refid="tmcl__common_8hpp">tmcl_common.hpp</innerfile>
+    <innerfile refid="tmcl__interpreter_8hpp">tmcl_interpreter.hpp</innerfile>
+    <innerfile refid="tmcl__motor_8hpp">tmcl_motor.hpp</innerfile>
+    <innerfile refid="tmcl__ros2_8hpp">tmcl_ros2.hpp</innerfile>
+    <innerfile refid="tmcl__stepper__motor_8hpp">tmcl_stepper_motor.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_tmcl/"/>
+  </compounddef>
+</doxygen>

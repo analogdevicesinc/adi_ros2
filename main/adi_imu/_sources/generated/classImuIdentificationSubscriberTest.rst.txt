@@ -1,0 +1,26 @@
+.. _exhale_class_classImuIdentificationSubscriberTest:
+
+Class ImuIdentificationSubscriberTest
+=====================================
+
+- Defined in :ref:`file_test_src_imu_identification_subscriber_test.cpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public testing::Test``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImuIdentificationSubscriberTest
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

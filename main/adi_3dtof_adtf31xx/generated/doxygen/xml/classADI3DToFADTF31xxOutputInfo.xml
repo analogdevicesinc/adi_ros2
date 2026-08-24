@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classADI3DToFADTF31xxOutputInfo" kind="class" language="C++" prot="public">
+    <compoundname>ADI3DToFADTF31xxOutputInfo</compoundname>
+    <includes refid="adi__3dtof__adtf31xx__output__info_8h" local="no">adi_3dtof_adtf31xx_output_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1abba3deb20ca30157a09a7549b95b5c18" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::frame_number_</definition>
+        <argsstring></argsstring>
+        <name>frame_number_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::frame_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="105" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1ab6770598393b0f329219f04a890e8662" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxOutputInfo::depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>depth_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::depth_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="106" column="19" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a8c617669b6749243e441818c48c0d272" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxOutputInfo::ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>ab_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::ab_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="107" column="19" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1af14c0b4eb1e215df609205bcf63732bd" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxOutputInfo::conf_frame_</definition>
+        <argsstring></argsstring>
+        <name>conf_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::conf_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="108" column="19" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1aa60cfcebc82a82178bc2cb9b2789fc41" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxOutputInfo::compressed_depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_depth_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="109" column="18" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a57ad398308f3e9bb83c7387f6efc0f4e" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxOutputInfo::compressed_ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_ab_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="110" column="18" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a9f978c915a2990b2110f09d93bb955c3" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxOutputInfo::compressed_conf_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_conf_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_conf_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="111" column="18" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a3b65daf750503fd9977df067a75f6b6e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::compressed_depth_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_depth_frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="112" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a8d3ce90b5131114fb71981f25992d12a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::compressed_ab_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_ab_frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="113" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a650a832aeac192727caca6dca0a2d4a8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::compressed_conf_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_conf_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::compressed_conf_frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="114" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a8bdcb3e90171bfc80c0cfc5178605f41" prot="public" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFADTF31xxOutputInfo::xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>xyz_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::xyz_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="115" column="10" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1abe52af0177f704e138a0c7e792dfa340" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::image_width_</definition>
+        <argsstring></argsstring>
+        <name>image_width_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::image_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="116" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxOutputInfo_1a66426d62d214701c0190bff25957024c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxOutputInfo::image_height_</definition>
+        <argsstring></argsstring>
+        <name>image_height_</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::image_height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="117" column="7" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFADTF31xxOutputInfo::ADI3DToFADTF31xxOutputInfo</definition>
+        <argsstring>(int image_width, int image_height)</argsstring>
+        <name>ADI3DToFADTF31xxOutputInfo</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::ADI3DToFADTF31xxOutputInfo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="23" column="3" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="23" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxOutputInfo_1ac4dd3bfb084e7c61820808b9ce164274" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFADTF31xxOutputInfo::~ADI3DToFADTF31xxOutputInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~ADI3DToFADTF31xxOutputInfo</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::~ADI3DToFADTF31xxOutputInfo</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="53" column="3" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="53" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxOutputInfo_1a0bb78c6d29e8bd81f34f4ee8dfb1a306" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classADI3DToFADTF31xxOutputInfo" kindref="compound">ADI3DToFADTF31xxOutputInfo</ref> &amp;</type>
+        <definition>ADI3DToFADTF31xxOutputInfo &amp; ADI3DToFADTF31xxOutputInfo::operator=</definition>
+        <argsstring>(const ADI3DToFADTF31xxOutputInfo &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ADI3DToFADTF31xxOutputInfo::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classADI3DToFADTF31xxOutputInfo" kindref="compound">ADI3DToFADTF31xxOutputInfo</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_output_info.h" line="79" column="31" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="79" bodyend="103"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is the class for adtf31xx sensor node output information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_adtf31xx_output_info.h" line="14" column="1" bodyfile="include/adi_3dtof_adtf31xx_output_info.h" bodystart="15" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a8c617669b6749243e441818c48c0d272" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>ab_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>ADI3DToFADTF31xxOutputInfo</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a57ad398308f3e9bb83c7387f6efc0f4e" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_ab_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a8d3ce90b5131114fb71981f25992d12a" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_ab_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a9f978c915a2990b2110f09d93bb955c3" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_conf_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a650a832aeac192727caca6dca0a2d4a8" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_conf_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1aa60cfcebc82a82178bc2cb9b2789fc41" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_depth_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a3b65daf750503fd9977df067a75f6b6e" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>compressed_depth_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1af14c0b4eb1e215df609205bcf63732bd" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>conf_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1ab6770598393b0f329219f04a890e8662" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>depth_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1abba3deb20ca30157a09a7549b95b5c18" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>frame_number_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a66426d62d214701c0190bff25957024c" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>image_height_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1abe52af0177f704e138a0c7e792dfa340" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>image_width_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a0bb78c6d29e8bd81f34f4ee8dfb1a306" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>operator=</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1a8bdcb3e90171bfc80c0cfc5178605f41" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>xyz_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxOutputInfo_1ac4dd3bfb084e7c61820808b9ce164274" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxOutputInfo</scope><name>~ADI3DToFADTF31xxOutputInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

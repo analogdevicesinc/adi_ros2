@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmcl__bldc__motor_8hpp" kind="file" language="C++">
+    <compoundname>tmcl_bldc_motor.hpp</compoundname>
+    <includes refid="tmcl__motor_8hpp" local="yes">adi_tmcl/tmcl_motor.hpp</includes>
+    <includedby refid="tmcl__ros2_8hpp" local="yes">include/adi_tmcl/tmcl_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>adi_tmcl/socket_can_wrapper.hpp</label>
+        <link refid="socket__can__wrapper_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/adi_tmcl/tmcl_bldc_motor.hpp</label>
+        <link refid="tmcl__bldc__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>adi_tmcl/tmcl_common.hpp</label>
+        <link refid="tmcl__common_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>adi_tmcl/tmcl_interpreter.hpp</label>
+        <link refid="tmcl__interpreter_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>adi_tmcl/tmcl_motor.hpp</label>
+        <link refid="tmcl__motor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>adi_tmcl/msg/tmc_info.hpp</label>
+      </node>
+      <node id="5">
+        <label>chrono</label>
+      </node>
+      <node id="4">
+        <label>future</label>
+      </node>
+      <node id="10">
+        <label>geometry_msgs/msg/twist.hpp</label>
+      </node>
+      <node id="9">
+        <label>std_msgs/msg/int32.hpp</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/adi_tmcl/tmcl_bldc_motor.hpp</label>
+        <link refid="tmcl__bldc__motor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/adi_tmcl/tmcl_ros2.hpp</label>
+        <link refid="tmcl__ros2_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classBldcMotor" prot="public">BldcMotor</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dc" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tmcl_bldc_comm_mode_t</name>
+        <enumvalue id="tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dcae3d909e448542955e4b538ffe7e450cb" prot="public">
+          <name>BLDC_MODE_DISABLED</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dcaee210a446a28c9468265e0b99ba6e99a" prot="public">
+          <name>BLDC_MODE_OPENLOOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmcl__bldc__motor_8hpp_1abc8c4782e7ed42111e8ca389e138b2dcae5afd18883da09a8e0e15d9b087161ef" prot="public">
+          <name>BLDC_MODE_CLOSEDLOOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_bldc_motor.hpp" line="16" column="1" bodyfile="include/adi_tmcl/tmcl_bldc_motor.hpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMCL_BLDC_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMCL_BLDC_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/tmcl_motor.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constants<sp/>and<sp/>Enumerations<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Possible<sp/>values<sp/>for<sp/>&lt;Bldc<sp/>Commutation<sp/>Mode&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>BLDC_MODE_DISABLED<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>BLDC_MODE_OPENLOOP,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>BLDC_MODE_CLOSEDLOOP</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/>tmcl_bldc_comm_mode_t;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classBldcMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBldcMotor" kindref="compound">BldcMotor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classMotor" kindref="compound">Motor</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classBldcMotor" kindref="compound">BldcMotor</ref>(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref>*<sp/>p_tmcl_interpreter,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>motor_number,<sp/>uint32_t<sp/>module_number);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classBldcMotor" kindref="compound">~BldcMotor</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>tmcl_bldc_comm_mode_t<sp/>comm_mode_;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>int32_t<sp/>position_scaler_m_;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>int32_t<sp/>encoder_steps_;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>param_statusflags_regname_;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>std::vector&lt;int64_t&gt;<sp/>param_statusflags_regshift_;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initPublisher()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pubTimerCallback()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSubscriberParams()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initSubscribers()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdVelSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>geometry_msgs::msg::Twist::SharedPtr<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdAbsposSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cmdRelposSubscriberCallback(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std_msgs::msg::Int32::SharedPtr<sp/>msg)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>tmcl_bldc_comm_mode_t<sp/>getCommutationMode();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//TMCL_BLDC_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmcl/tmcl_bldc_motor.hpp"/>
+  </compounddef>
+</doxygen>

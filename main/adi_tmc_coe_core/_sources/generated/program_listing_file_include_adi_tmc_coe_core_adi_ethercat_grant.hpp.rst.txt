@@ -1,0 +1,28 @@
+
+.. _program_listing_file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp:
+
+Program Listing for File adi_ethercat_grant.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp>` (``include/adi_tmc_coe_core/adi_ethercat_grant.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef ADI_ETHERCAT_GRANT_HPP
+   #define ADI_ETHERCAT_GRANT_HPP
+   
+   #include <stdio.h>
+   #include <unistd.h>
+   #include <string>
+   #include <cstdlib>
+   
+   #include <sys/capability.h>
+   #include <sys/prctl.h>
+   
+   const std::string executable_ = "/var/tmp/granted";
+   const char * cap_string_ = "cap_ipc_lock=ep cap_net_raw=ep cap_sys_nice=ep cap_net_admin=ep";
+   
+   #endif //ADI_ETHERCAT_GRANT_HPP

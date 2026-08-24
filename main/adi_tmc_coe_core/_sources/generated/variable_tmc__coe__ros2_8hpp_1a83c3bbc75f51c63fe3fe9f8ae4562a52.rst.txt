@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52:
+
+Variable MOTOR_TYPE_BLDC
+========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: MOTOR_TYPE_BLDC
+   :project: adi_tmc_coe_core Doxygen Project

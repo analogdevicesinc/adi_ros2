@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8:
+
+Define ADIS16470
+================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: ADIS16470
+   :project: adrd2121_imu Doxygen Project

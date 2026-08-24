@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__interpreter_8hpp_1a990878d0f6979654a8c5908aa26ed231:
+
+Variable TMCL_MSG_VALUE_SZ
+==========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TMCL_MSG_VALUE_SZ
+   :project: adi_tmcl Doxygen Project

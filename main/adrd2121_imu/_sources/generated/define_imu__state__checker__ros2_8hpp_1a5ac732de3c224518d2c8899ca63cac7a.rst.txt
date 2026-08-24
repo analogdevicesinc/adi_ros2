@@ -1,0 +1,14 @@
+.. _exhale_define_imu__state__checker__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a:
+
+Define BUFFER_LIMIT
+===================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BUFFER_LIMIT
+   :project: adrd2121_imu Doxygen Project

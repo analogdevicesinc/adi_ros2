@@ -1,0 +1,14 @@
+.. _exhale_define_adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8:
+
+Define MODE_DEFAULT
+===================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MODE_DEFAULT
+   :project: adrd2121_imu Doxygen Project

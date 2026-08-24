@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec:
+
+Enum controlword_pos_t
+======================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: controlword_pos_t
+   :project: adi_tmc_coe_core Doxygen Project

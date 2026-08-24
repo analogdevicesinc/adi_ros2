@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="module__profile_8h" kind="file" language="C++">
+    <compoundname>module_profile.h</compoundname>
+    <includedby refid="adi__3dtof__adtf31xx_8h" local="yes">include/adi_3dtof_adtf31xx.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adi_3dtof_adtf31xx.h</label>
+        <link refid="adi__3dtof__adtf31xx_8h_source"/>
+      </node>
+      <node id="1">
+        <label>include/module_profile.h</label>
+        <link refid="module__profile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="module__profile_8h_1abbaf9260e2f08a572822692a7dcb60da" prot="public" static="no">
+        <name>PROFILE_FUNCTION_START</name>
+        <param><defname>ID</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="24" column="9" bodyfile="include/module_profile.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a429b699deab1043cbc596058f45199a4" prot="public" static="no">
+        <name>PROFILE_FUNCTION_END</name>
+        <param><defname>ID</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="25" column="9" bodyfile="include/module_profile.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a8c99aba0aafd6b09dfe192ca2f5e5e98" prot="public" static="no">
+        <name>FLUSH_FUNCTION_PROFILE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="27" column="9" bodyfile="include/module_profile.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a6910e662af15cf76d6f7bbfaa5aae416" prot="public" static="no">
+        <name>INIT_FUNCTION_PROFILE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="28" column="9" bodyfile="include/module_profile.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1ae9754691ecbda8a1f4e1fa719594ead1" prot="public" static="no">
+        <name>CLOSE_FUNCTION_PROFILE</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="29" column="9" bodyfile="include/module_profile.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a583d1cc3e71bed3ae9de020423e7df16" prot="public" static="no">
+        <name>PROFILE_ID_START</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="39" column="10" bodyfile="include/module_profile.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a8abb00ce4360da17c2f4075aeec3a459" prot="public" static="no">
+        <name>PROFILE_ID_END</name>
+        <param></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="40" column="9" bodyfile="include/module_profile.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="module__profile_8h_1a3b57e0ea2df2becbd1a6ba9e52e02da2" prot="public" static="no">
+        <name>PROFILE_ID</name>
+        <param><defname>id_name</defname></param>
+        <param><defname>id_num</defname></param>
+        <initializer>static const int id_name = id_num;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/module_profile.h" line="41" column="9" bodyfile="include/module_profile.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MODULE_PROFILE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODULE_PROFILE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENABLE_FUNCTION_PROFILING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<sp/>pprof_buff;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpFunctionParams(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initProfile(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeProfile(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flushProfile(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_FUNCTION_START(ID)<sp/>dumpFunctionParams(ID);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_FUNCTION_END(ID)<sp/>PROFILE_FUNCTION_START(ID)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLUSH_FUNCTION_PROFILE()<sp/>flushProfile()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_FUNCTION_PROFILE()<sp/>initProfile()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOSE_FUNCTION_PROFILE()<sp/>closeProfile()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>!ENABLE_FUNCTION_PROFILING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_FUNCTION_START(ID)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_FUNCTION_END(ID)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLUSH_FUNCTION_PROFILE()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_FUNCTION_PROFILE()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOSE_FUNCTION_PROFILE()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!ENABLE_FUNCTION_PROFILING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARSE_FUNCTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID_START()<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/>void<sp/>profile_id_init(void)<sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID_END()<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID(id_name,<sp/>id_num)<sp/>profiles[id_num].func_name<sp/>=<sp/>#id_name;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID_START()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID_END()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROFILE_ID(id_name,<sp/>id_num)<sp/>static<sp/>const<sp/>int<sp/>id_name<sp/>=<sp/>id_num;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PARSE_FUNCTION<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ID<sp/>list<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">PROFILE_ID_START()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">PROFILE_ID(adtf31xx_readNextFrame,<sp/>0)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">PROFILE_ID(publish_PointCloud,<sp/>1)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">PROFILE_ID(adtf31xx_computePointCloud,<sp/>2)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">PROFILE_ID(adtf31xx_abFrameCompression,<sp/>3)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">PROFILE_ID(adtf31xx_depthFrameCompression,<sp/>4)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">PROFILE_ID(Publish_CompressImg,<sp/>5)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">PROFILE_ID(readInput_Thread,<sp/>6)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">PROFILE_ID(processOutput_Thread,<sp/>7)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">PROFILE_ID_END()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MODULE_PROFILE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/module_profile.h"/>
+  </compounddef>
+</doxygen>

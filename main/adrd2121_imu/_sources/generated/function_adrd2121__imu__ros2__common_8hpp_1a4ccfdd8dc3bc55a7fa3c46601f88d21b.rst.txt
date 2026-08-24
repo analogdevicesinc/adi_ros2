@@ -1,0 +1,14 @@
+.. _exhale_function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b:
+
+Function print_time
+===================
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: print_time(std::string)
+   :project: adrd2121_imu Doxygen Project

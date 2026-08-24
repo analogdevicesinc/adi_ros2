@@ -1,0 +1,26 @@
+.. _exhale_class_classStepperMotor:
+
+Class StepperMotor
+==================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_stepper_motor.hpp`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Motor`` (:ref:`exhale_class_classMotor`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: StepperMotor
+   :project: adi_tmcl Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

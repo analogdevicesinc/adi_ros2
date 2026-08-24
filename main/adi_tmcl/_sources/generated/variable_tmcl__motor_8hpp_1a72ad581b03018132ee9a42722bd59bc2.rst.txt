@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2:
+
+Variable additional_ratio_params_
+=================================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: additional_ratio_params_
+   :project: adi_tmcl Doxygen Project

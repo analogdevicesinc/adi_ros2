@@ -1,0 +1,14 @@
+.. _exhale_enum_adis__register__definitions_8h_1a8d28c4144db6f93d2f3d16279eef451d:
+
+Enum ADISRegister
+=================
+
+- Defined in :ref:`file_include_adi_imu_utils_adis_register_definitions.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: adi_imu::ADISRegister
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="adi_tmc_coe_interfaces" name="description" />
+
+    <title>README &#8212; adi_tmc_coe_interfaces 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/app.min.css?v=fb8972a4" />
+    <script async="async" src="_static/app.umd.js?v=26d0298f"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CHANGELOG" href="__CHANGELOG.html" />
+    <link rel="prev" title="PACKAGE" href="__PACKAGE.html" />
+   
+  
+  
+  
+  <meta name="repository" content="adi_ros2">
+  <meta name="version" content="main">
+  
+    <meta name="page_source_suffix" content=".rst">
+  
+  
+  
+
+
+<style>
+  body {
+    
+  }
+
+  body.dark {
+    
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body:not(.light) {
+      
+    }
+  }
+</style>
+  </head>
+  
+    <body>
+  
+  <input type="checkbox" id="input-show-toc">
+  <input type="checkbox" id="input-show-localtoc">
+  <input type="checkbox" id="input-show-repotoc">
+
+  
+  <div class="search-area">
+    <form action="" method="get">
+      <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="search" placeholder="Search"/>
+      <button class="icon"></button>
+    </form>
+  </div>
+  
+
+  <header>
+    <div id="left">
+      <label id="show-sidebar" class="icon" for="input-show-toc" title="Show/hide index"></label>
+    </div>
+    <div id="right">
+      <span>
+        <a id="logo-org" href="https://developer.analog.com/" aria-label="Analog Devices Inc. landing page"></a>
+        <div class="vertical-divider"></div>
+        
+        <label id="show-repotoc" for="input-show-repotoc" title="Show/hide docs">Documentation</label>
+        
+        <a id="logo" href="index.html">
+          <div>ROS2</div>
+        </a>
+      </span>
+      <span class="reverse">
+        <label id="show-localtoc" class="icon" for="input-show-localtoc" title="Show/hide contents"></label>
+      </span>
+    </div>
+  </header>
+
+
+  <div class="repotoc-tree overlay">
+    <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+  </div>
+    <div class="localtoc">
+      <div class="tocwrapper">
+        <div class="header localtoc-header">
+          <a id="scroll-up" href="#top-anchor" title="Back to top"></a>
+        </div>
+        <nav>
+          <ul>
+<li><a class="reference internal" href="#">README</a><ul>
+<li><a class="reference internal" href="#custom-msg">Custom msg</a><ul>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-msg-tmccoeinfo">adi_tmc_coe_interfaces/msg/TmcCoeInfo</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-srv">Custom srv</a><ul>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-srv-readwritesdo">adi_tmc_coe_interfaces/srv/ReadWriteSDO</a></li>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-srv-readwritepdo">adi_tmc_coe_interfaces/srv/ReadWritePDO</a><ul>
+<li><a class="reference internal" href="#request">Request</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-srv-changenmtstate">adi_tmc_coe_interfaces/srv/ChangeNMTState</a></li>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-srv-changecia402state">adi_tmc_coe_interfaces/srv/ChangeCia402State</a></li>
+<li><a class="reference internal" href="#adi-tmc-coe-interfaces-srv-cyclicsyncmode">adi_tmc_coe_interfaces/srv/CyclicSyncMode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+      </div>
+    </div>
+
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+    <a id="no-logo" href="index.html">
+      adi_tmc_coe_interfaces
+    </a><input id="input-switch-toc" type="checkbox">
+<label id="show-repotoc" for="input-switch-toc">
+All content
+</label>
+<label id="show-toc" for="input-switch-toc">
+Content on this topic
+</label>
+<div class="repotoc-tree">
+  <root>
+  <a href="./index.html" class="current">ROS2</a>
+</root>
+
+</div>
+<div class="toc-tree">
+  <ul>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-1" id="toctree-collapse-1"/><div class="collapse"><a class="reference internal" href="__links.html">Links</a><label for="toctree-collapse-1"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference external" href="https://index.ros.org/p/adi_tmc_coe_interfaces">Rosindex</a></li>
+</ul>
+</li>
+</ul>
+
+<ul class="current">
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-2" id="toctree-collapse-2"/><div class="collapse"><a class="reference internal" href="__message_definitions.html">Message Definitions</a><label for="toctree-collapse-2"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="msg/TmcCoeInfo.html">TmcCoeInfo</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-3" id="toctree-collapse-3"/><div class="collapse"><a class="reference internal" href="__service_definitions.html">Service Definitions</a><label for="toctree-collapse-3"><div class="icon"></div></label></div><ul>
+<li class="toctree-l2"><a class="reference internal" href="srv/ChangeCia402State.html">ChangeCia402State</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/ChangeNMTState.html">ChangeNMTState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/CyclicSyncMode.html">CyclicSyncMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/ReadWritePDO.html">ReadWritePDO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="srv/ReadWriteSDO.html">ReadWriteSDO</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><input class="toctree-collapse" type="checkbox" name="toctree-collapse-4" id="toctree-collapse-4" checked=""/><div class="collapse"><a class="reference internal" href="__standards.html">Standard Documents</a><label for="toctree-collapse-4"><div class="icon"></div></label></div><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="__PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">README</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__CHANGELOG.html">CHANGELOG</a></li>
+</ul>
+</li>
+</ul>
+
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+
+</div>
+        </div>
+      </div>
+
+  <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper" id="top-anchor">
+          <div class="body-header">
+  <nav class="breadcrumb"><ol><li><a href="__standards.html">Standard Documents</a></li></ol></nav>
+</div>
+          <div class="body" role="main">
+            
+  <section id="readme">
+<h1>README<a class="headerlink" href="#readme" title="Link to this heading"></a></h1>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>adi_tmc_coe_interfaces</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Custom interfaces for ROS Driver for Trinamic Motor Controllers (TMC) that uses CANopen-over-etherCAT(CoE) protocol.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="custom-msg">
+<h2>Custom msg<a class="headerlink" href="#custom-msg" title="Link to this heading"></a></h2>
+<section id="adi-tmc-coe-interfaces-msg-tmccoeinfo">
+<h3>adi_tmc_coe_interfaces/msg/TmcCoeInfo<a class="headerlink" href="#adi-tmc-coe-interfaces-msg-tmccoeinfo" title="Link to this heading"></a></h3>
+<table>
+  <thead>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>interface_name</td>
+      <td>string</td>
+      <td>Interface name, commonly starting in "en" or "eth"</td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number starting with 1 up to 255</td>
+    </tr>
+    <tr>
+      <td>motor_number</td>
+      <td>uint8</td>
+      <td>Motor number starting with 0 (for motor 0 or axis 0)</td>
+    </tr>
+    <tr>
+      <td>mode_of_operation</td>
+      <td>string</td>
+      <td>"None",<br> "Profile Position", <br> "Profile Velocity", <br> "Homing Mode", <br>"Cyclic Synchronous Position Mode", <br>"Cyclic Synchronous Velocity Mode", <br> "Cyclic Synchronous Torque Mode"</td>
+    </tr>
+    <tr>
+      <td>status_word</td>
+      <td>int32</td>
+      <td>Reflects status of the CiA402 state machine</td>
+    </tr>
+    <tr>
+      <td>velocity</td>
+      <td>float32</td>
+      <td>If <b>wheel_diameter</b> parameter is set to 0, the unit for published velocity is <b>rpm</b>, else <b>m/s</b> </td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>int32</td>
+      <td>If Position Scaler and Encoder steps are not available as device parameter, the unit for published position is <b>steps</b>, else <b>degree angle</b> </td>
+    </tr>
+    <tr>
+      <td>torque</td>
+      <td>int32</td>
+      <td>Units in <b>mA</b> </td>
+    </tr>
+  </tbody>
+</table>
+</section>
+</section>
+<section id="custom-srv">
+<h2>Custom srv<a class="headerlink" href="#custom-srv" title="Link to this heading"></a></h2>
+<section id="adi-tmc-coe-interfaces-srv-readwritesdo">
+<h3>adi_tmc_coe_interfaces/srv/ReadWriteSDO<a class="headerlink" href="#adi-tmc-coe-interfaces-srv-readwritesdo" title="Link to this heading"></a></h3>
+<table>
+  <thead>
+    <th></th>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Input</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=5> <b>Request</b> </td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number of the selected device. <br> The count should start with "1"</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td>object_name</td>
+      <td>string</td>
+      <td>Object Name of the Parameter</td>
+      <td>Check the autogenerated yaml of the used module and use the obj_name</td>
+    </tr>
+    <tr>
+      <td rowspan=2>value</td>
+      <td rowspan=2>string</td>
+      <td>When <b>reading</b>, not required</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>When <b>writing</b>, should be input value</td>
+      <td>When <b>writing</b>, this is integer in string form. Check the object limits on device's firmware manual. e.g. <a href="https://www.analog.com/media/en/dsp-documentation/software-manuals/PD60-4H-1461_CoE_firmware_manual_Fw1.00_Rev1.00.pdf">TMCM-1461</a> </td>
+    </tr>
+    <tr>
+      <td rowspan=3> <b>Response</b> </td>
+    </tr>
+    <tr>
+      <td>output</td>
+      <td>int32</td>
+      <td>Returns the actual value of the SDO</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>bool</td>
+      <td>Returns true if successful, false if an error occurs (wrong input/s, data not received correctly)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="adi-tmc-coe-interfaces-srv-readwritepdo">
+<h3>adi_tmc_coe_interfaces/srv/ReadWritePDO<a class="headerlink" href="#adi-tmc-coe-interfaces-srv-readwritepdo" title="Link to this heading"></a></h3>
+<section id="request">
+<h4>Request<a class="headerlink" href="#request" title="Link to this heading"></a></h4>
+<table>
+  <thead>
+    <th></th>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Input</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=6> <b>Request</b> </td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number of the selected device. <br> The count should start with "1"</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td rowspan=2>cmd</td>
+      <td rowspan=2>string</td>
+      <td>Commands available in PDO to <b>read</b></td>
+      <td>When <b>reading</b>, <br>"modes of operation display", <br>"statusword", <br>"actual velocity", <br>"demand velocity", <br>"actual position", <br>"demand position", <br>"actual torque", <br>"demand torque"</td>
+    </tr>
+    <tr>
+      <td>Commands available in PDO to <b>write</b> to</td>
+      <td>When <b>writing</b>, <br>"modes of operation", <br>"controlword", <br>"target velocity", <br>"target position", <br>"target torque" </td>
+    </tr>
+    <tr>
+      <td rowspan=2>value</td>
+      <td rowspan=2>int32</td>
+      <td>When <b>reading</b>, not required</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>When <b>writing</b>, should be input value</td>
+      <td>When <b>writing</b>, this is integer in string form. Check the object limits on device's firmware manual. e.g. <a href="https://www.analog.com/media/en/dsp-documentation/software-manuals/PD60-4H-1461_CoE_firmware_manual_Fw1.00_Rev1.00.pdf">TMCM-1461</a> </td>
+    </tr>
+    <tr>
+      <td rowspan=3> <b>Response</b> </td>
+    </tr>
+    <tr>
+      <td>actual_value</td>
+      <td>int32</td>
+      <td>Returns the actual value of the PDO</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>bool</td>
+      <td>Returns true if successful, false if an error occurs (wrong input/s, data not received correctly)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+</section>
+<hr class="docutils" />
+<section id="adi-tmc-coe-interfaces-srv-changenmtstate">
+<h3>adi_tmc_coe_interfaces/srv/ChangeNMTState<a class="headerlink" href="#adi-tmc-coe-interfaces-srv-changenmtstate" title="Link to this heading"></a></h3>
+<table>
+  <thead>
+    <th></th>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Input</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=3> <b>Request</b> </td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number of the selected device. <br> The count should start with "1"</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td>request_state</td>
+      <td>string</td>
+      <td>Requested state of the device;<br>Check the <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/el32xx/1036980875.html&id=">NMT state diagram</a> for correct sequence.</td>
+      <td>"init", <br>"preop", <br>"safeop", <br>"operational" </td>
+    </tr>
+    <tr>
+      <td rowspan=3> <b>Response</b> </td>
+    </tr>
+    <tr>
+      <td>current_state</td>
+      <td>string</td>
+      <td>Returns the current state of the device</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>bool</td>
+      <td>Returns true if successful, false if an error occurs (wrong input/s, wrong sequence)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<hr class="docutils" />
+<section id="adi-tmc-coe-interfaces-srv-changecia402state">
+<h3>adi_tmc_coe_interfaces/srv/ChangeCia402State<a class="headerlink" href="#adi-tmc-coe-interfaces-srv-changecia402state" title="Link to this heading"></a></h3>
+<table>
+  <thead>
+    <th></th>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Input</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=3> <b>Request</b> </td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number of the selected device. <br> The count should start with "1"</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td>request_state</td>
+      <td>string</td>
+      <td>Requested CiA402 or DS402 state of the device;<br>Check the <a href="https://infosys.beckhoff.com/english.php?content=../content/1033/asi8100_ba/17311528203.html&id=">DS402 State Diagram</a> for correct sequence.</td>
+      <td>"switch on disable", <br>"ready to switch on", <br>"swithed on", <br>"operation enabled", <br>"quick stop active" </td>
+    </tr>
+    <tr>
+      <td rowspan=3> <b>Response</b> </td>
+    </tr>
+    <tr>
+      <td>current_state</td>
+      <td>string</td>
+      <td>Returns the current state of the device</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>bool</td>
+      <td>Returns true if successful, false if an error occurs (wrong input/s, wrong sequence)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<section id="adi-tmc-coe-interfaces-srv-cyclicsyncmode">
+<h3>adi_tmc_coe_interfaces/srv/CyclicSyncMode<a class="headerlink" href="#adi-tmc-coe-interfaces-srv-cyclicsyncmode" title="Link to this heading"></a></h3>
+<table>
+  <thead>
+    <th></th>
+    <th>Data</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Input</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan=6> <b>Request</b> </td>
+    </tr>
+    <tr>
+      <td>slave_number</td>
+      <td>uint8</td>
+      <td>Slave number of the selected device. <br> The count should start with "1"</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td>CS_cmd</td>
+      <td>string</td>
+      <td>Cyclic Synchronous Modes</td>
+      <td>"csp" - Cyclic Synchronous Position, <br>"csv" - Cyclic Synchronous Velocity, <br>"cst" - Cyclic Synchronous Torque</td>
+    </tr>
+    <tr>
+      <td>interpolation_time_period</td>
+      <td>uint8</td>
+      <td>Sets the delay for every cycle of data sent</td>
+      <td>1-255</td>
+    </tr>
+    <tr>
+      <td>interpolation_time_index</td>
+      <td>int8</td>
+      <td>Index for interpolation time period where the value increases by the factor of 10</td>
+      <td>-3 to 3</td>
+    </tr>
+    <tr>
+      <td>value</td>
+      <td>int32[]</td>
+      <td>Set of values to be sent to the device</td>
+      <td>array/vector of int32</td>
+    </tr>
+    <tr>
+      <td rowspan=2> <b>Response</b> </td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>result</td>
+      <td>Returns true if successful, false if an error occurs (wrong input/s)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+
+
+          </div>
+              <div class="related">
+                &nbsp;
+    <a href="__PACKAGE.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">PACKAGE</a>
+    <a href="__CHANGELOG.html" title="Next document (Alt+Shift+RightArrow)" class="next">CHANGELOG</a>
+              </div>
+          
+        </div>
+      </div>
+  </div>
+
+  <label id="cancel-area-show-toc" for="input-show-toc"></label>
+  <label id="cancel-area-show-localtoc" for="input-show-localtoc"></label>
+    <footer>
+      &#169;2026, Analog Devices, Inc.
+      
+      |
+      Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>
+      &amp; <a href="https://github.com/analogdevicesinc/doctools">Doctools</a>
+      
+    </footer>
+  </body>
+</html>

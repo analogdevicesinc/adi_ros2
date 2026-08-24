@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152:
+
+Define BIT_LOW
+==============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BIT_LOW
+   :project: adrd2121_imu Doxygen Project

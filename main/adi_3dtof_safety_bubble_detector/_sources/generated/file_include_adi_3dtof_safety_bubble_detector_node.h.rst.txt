@@ -1,0 +1,116 @@
+
+.. _file_include_adi_3dtof_safety_bubble_detector_node.h:
+
+File adi_3dtof_safety_bubble_detector_node.h
+============================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_3dtof_safety_bubble_detector_node.h``)
+----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_3dtof_safety_bubble_detector_node.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Eigen/Geometry``
+
+- ``adi_3dtof_safety_bubble_detector_output_info.h`` (:ref:`file_include_adi_3dtof_safety_bubble_detector_output_info.h`)
+
+- ``adtf31xx_sensor_frame_info.h`` (:ref:`file_include_adtf31xx_sensor_frame_info.h`)
+
+- ``chrono``
+
+- ``cv_bridge/cv_bridge.h``
+
+- ``floor_plane_detection.h``
+
+- ``geometry_msgs/msg/transform_stamped.h``
+
+- ``image_geometry/pinhole_camera_model.h``
+
+- ``image_proc_utils.h`` (:ref:`file_include_image_proc_utils.h`)
+
+- ``input_sensor.h`` (:ref:`file_include_input_sensor.h`)
+
+- ``input_sensor_factory.h`` (:ref:`file_include_input_sensor_factory.h`)
+
+- ``mutex``
+
+- ``opencv2/core.hpp``
+
+- ``opencv2/highgui.hpp``
+
+- ``opencv2/imgcodecs.hpp``
+
+- ``output_sensor.h`` (:ref:`file_include_output_sensor.h`)
+
+- ``output_sensor_factory.h`` (:ref:`file_include_output_sensor_factory.h`)
+
+- ``pcl/point_types.h``
+
+- ``pcl_conversions/pcl_conversions.h``
+
+- ``queue``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``ros-perception/image_transport_plugins/compressed_depth_image_transport/compression_common.h`` (:ref:`file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h`)
+
+- ``sensor_msgs/distortion_models.hpp``
+
+- ``sensor_msgs/msg/image.h``
+
+- ``sensor_msgs/msg/point_cloud2.hpp``
+
+- ``sensor_msgs/point_cloud2_iterator.hpp``
+
+- ``std_msgs/msg/bool.hpp``
+
+- ``tf2/LinearMath/Quaternion.h``
+
+- ``tf2_geometry_msgs/tf2_geometry_msgs.hpp``
+
+- ``tf2_ros/buffer.h``
+
+- ``tf2_ros/transform_listener.h``
+
+- ``utility``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono_literals`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structADI3DToFSafetyBubbleDetector_1_1TunableParameters`
+
+- :ref:`exhale_class_classADI3DToFSafetyBubbleDetector`
+

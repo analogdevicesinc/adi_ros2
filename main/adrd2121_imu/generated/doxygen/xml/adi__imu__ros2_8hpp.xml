@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="adi__imu__ros2_8hpp" kind="file" language="C++">
+    <compoundname>adi_imu_ros2.hpp</compoundname>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">adi_imu_driver.h</includes>
+    <includes local="yes">imu_spi_buffer.h</includes>
+    <includes local="yes">adi_imu_regmap.h</includes>
+    <includes local="yes">imu_spi_buffer_regmap.h</includes>
+    <includes refid="adrd2121__imu__ros2__common_8hpp" local="yes">adrd2121_imu_ros2_common.hpp</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">unistd.h</includes>
+    <includedby refid="adi__imu__buf__ros2_8hpp" local="yes">include/adrd2121_imu/adi_imu_buf_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adrd2121_imu/adi_imu_ros2.hpp</label>
+        <link refid="adi__imu__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>adi_imu_driver.h</label>
+      </node>
+      <node id="5">
+        <label>adi_imu_regmap.h</label>
+      </node>
+      <node id="4">
+        <label>imu_spi_buffer.h</label>
+      </node>
+      <node id="6">
+        <label>imu_spi_buffer_regmap.h</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="2">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>sys/time.h</label>
+      </node>
+      <node id="12">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adrd2121_imu/adi_imu_buf_ros2.hpp</label>
+        <link refid="adi__imu__buf__ros2_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/adi_imu_ros2.hpp</label>
+        <link refid="adi__imu__ros2_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</label>
+        <link refid="adrd2121__imu__ros2__node_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAdiImuRos2" prot="public">AdiImuRos2</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="adi__imu__ros2_8hpp_1aabb08791e8ac41f5539087868f615963" prot="public" static="no">
+        <name>DATA_RATE_DEFAULT</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="26" column="9" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adi__imu__ros2_8hpp_1a8df6275beb940e0f6fb78021240a6582" prot="public" static="no">
+        <name>PROD_ID_DEFAULT</name>
+        <initializer>16470</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="27" column="9" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adi__imu__ros2_8hpp_1a176e0b5c6592cef13d8fc7fc9d85f374" prot="public" static="no">
+        <name>TIME_BASE_CTRL_DEFAULT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="28" column="9" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adi__imu__ros2_8hpp_1aa2ac0f45d353352c766262721c40e3b8" prot="public" static="no">
+        <name>MODE_DEFAULT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="29" column="9" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c" prot="public" static="no">
+        <name>DEC_RATE_CONST</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="30" column="9" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int TIME_BASE_MIN</definition>
+        <argsstring></argsstring>
+        <name>TIME_BASE_MIN</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="33" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int TIME_BASE_MAX</definition>
+        <argsstring></argsstring>
+        <name>TIME_BASE_MAX</name>
+        <initializer>= 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="34" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1a0e39b5a0cdf5b0953780a170fbe0cfdf" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int IMU_ACCL_BIAS_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IMU_ACCL_BIAS_SIZE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Constant for imu_accl_bias_ vector size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="37" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int IMU_GYRO_BIAS_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IMU_GYRO_BIAS_SIZE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Constant for imu_gyro_bias_ vector size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="40" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int IMU_ACCL_SCALE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IMU_ACCL_SCALE_SIZE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Constant for imu_accl_scale_ vector size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="43" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1ada468037ac7ff7bc3a91834b1ab7fc15" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int IMU_GYRO_SCALE_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IMU_GYRO_SCALE_SIZE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Constant for imu_gyro_scale_ vector size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="46" column="11" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1ab3ed92bd5a714ad9a6509d5bbeac8b49" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double GRAVITY_DEFAULT</definition>
+        <argsstring></argsstring>
+        <name>GRAVITY_DEFAULT</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+<para>Constants for range of gravity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="49" column="14" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adi__imu__ros2_8hpp_1adc477273c512b9c4f4c04e87501c813b" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double GRAVITY_MAX</definition>
+        <argsstring></argsstring>
+        <name>GRAVITY_MAX</name>
+        <initializer>= 9.81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adi_imu_ros2.hpp" line="50" column="14" bodyfile="include/adrd2121_imu/adi_imu_ros2.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_IMU_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_IMU_ROS2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//ROS2<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//C<sp/>IMU<sp/>Driver<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_imu_driver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_spi_buffer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_imu_regmap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imu_spi_buffer_regmap.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//IMU<sp/>Driver<sp/>ROS2<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adrd2121_imu_ros2_common.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//CONSTANTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_RATE_DEFAULT<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROD_ID_DEFAULT<sp/>16470</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIME_BASE_CTRL_DEFAULT<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODE_DEFAULT<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEC_RATE_CONST<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TIME_BASE_MIN<sp/>=<sp/><sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TIME_BASE_MAX<sp/>=<sp/>13;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IMU_ACCL_BIAS_SIZE<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IMU_GYRO_BIAS_SIZE<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IMU_ACCL_SCALE_SIZE<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>IMU_GYRO_SCALE_SIZE<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GRAVITY_DEFAULT<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GRAVITY_MAX<sp/>=<sp/>9.81;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classAdiImuRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdiImuRos2" kindref="compound">AdiImuRos2</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="classAdiImuRos2_1ab4202a4e35241064857ac2050d54f70c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classAdiImuRos2_1ab4202a4e35241064857ac2050d54f70c" kindref="member">AdiImuRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node,<sp/>adi_imu_Device_t*<sp/>p_device);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="classAdiImuRos2_1aae7d0b9d01752b0dbe38e5be57d00595" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classAdiImuRos2_1aae7d0b9d01752b0dbe38e5be57d00595" kindref="member">~AdiImuRos2</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classAdiImuRos2_1a7d0317bcd9575376025513f1b34fa5b6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAdiImuRos2_1a7d0317bcd9575376025513f1b34fa5b6" kindref="member">loadParams</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="classAdiImuRos2_1abd5ab3b09922a194378e87a582bf45f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuRos2_1abd5ab3b09922a194378e87a582bf45f2" kindref="member">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="classAdiImuRos2_1a07d7eedace366e89ec6b5eaa4a3eb834" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuRos2_1a07d7eedace366e89ec6b5eaa4a3eb834" kindref="member">config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classAdiImuRos2_1a5dc84a24bf27f38d9f1e664c26c7118a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAdiImuRos2_1a5dc84a24bf27f38d9f1e664c26c7118a" kindref="member">getImuDataRateHz</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classAdiImuRos2_1ae2194e8b107218cfc2f5ae0634609822" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAdiImuRos2_1ae2194e8b107218cfc2f5ae0634609822" kindref="member">triggerBiasCorrectionUpdate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>adi_imu_Device_t*<sp/>p_device_;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::Node&gt;<sp/>node_;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/>/********PARAMETERS********/</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_prod_id_;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gravity_;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_data_format_;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_data_rate_;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_data_rdy_;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_data_rdy_line_;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_data_rdy_pol_;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_sync_clk_;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_sync_clk_mode_;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_sync_clk_line_;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_sync_clk_pol_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_linear_g_comp_;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_pp_align_;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_imu_update_bias_corr_;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_time_base_control_;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_accl_z_bias_null_;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_accl_y_bias_null_;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_accl_x_bias_null_;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_gyro_z_bias_null_;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_gyro_y_bias_null_;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imu_gyro_x_bias_null_;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_update_imu_accl_bias_;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>std::vector&lt;long&gt;imu_accl_bias_;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_update_imu_gyro_bias_;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>std::vector&lt;long&gt;<sp/>imu_gyro_bias_;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_update_imu_accl_scale_;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>std::vector&lt;long&gt;<sp/>imu_accl_scale_;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_update_imu_gyro_scale_;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>std::vector&lt;long&gt;<sp/>imu_gyro_scale_;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>actual_imu_data_rate_;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ADI_IMU_ROS2</highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/adi_imu_ros2.hpp"/>
+  </compounddef>
+</doxygen>

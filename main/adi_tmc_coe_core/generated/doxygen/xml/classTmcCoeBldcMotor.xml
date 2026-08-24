@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classTmcCoeBldcMotor" kind="class" language="C++" prot="public">
+    <compoundname>TmcCoeBldcMotor</compoundname>
+    <basecompoundref refid="classTmcCoeMotor" prot="public" virt="non-virtual">TmcCoeMotor</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTmcCoeBldcMotor_1ac441ff5bfb7fef671b0b9a19a7b9d6e2" prot="private" static="no" mutable="no">
+        <type>bldc_comm_mode_t</type>
+        <definition>bldc_comm_mode_t TmcCoeBldcMotor::commutation_mode_</definition>
+        <argsstring></argsstring>
+        <name>commutation_mode_</name>
+        <qualifiedname>TmcCoeBldcMotor::commutation_mode_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="28" column="20" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeBldcMotor_1a2eaefa05db7534f879014fe9f997b74c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TmcCoeBldcMotor::position_scaler_</definition>
+        <argsstring></argsstring>
+        <name>position_scaler_</name>
+        <qualifiedname>TmcCoeBldcMotor::position_scaler_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="29" column="7" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeBldcMotor_1a713f1f818f91feb7e739d68aefe2af81" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TmcCoeBldcMotor::encoder_steps_</definition>
+        <argsstring></argsstring>
+        <name>encoder_steps_</name>
+        <qualifiedname>TmcCoeBldcMotor::encoder_steps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="30" column="7" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeBldcMotor_1a4ca11374370765b72eca2d475aafc9e4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string TmcCoeBldcMotor::logger_prefix_</definition>
+        <argsstring></argsstring>
+        <name>logger_prefix_</name>
+        <qualifiedname>TmcCoeBldcMotor::logger_prefix_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="31" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTmcCoeBldcMotor_1a660c03fd72899f521a276d45ef584dde" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger TmcCoeBldcMotor::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>TmcCoeBldcMotor::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="32" column="18" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1a8294997f1077bf25e3adce4ef8e6294a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TmcCoeBldcMotor::TmcCoeBldcMotor</definition>
+        <argsstring>(rclcpp::Node::SharedPtr p_node, TmcCoeInterpreter *p_tmc_coe_interpreter, uint8_t slave_number, uint8_t motor_number, std::string device_name)</argsstring>
+        <name>TmcCoeBldcMotor</name>
+        <qualifiedname>TmcCoeBldcMotor::TmcCoeBldcMotor</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>p_node</declname>
+        </param>
+        <param>
+          <type><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref> *</type>
+          <declname>p_tmc_coe_interpreter</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>slave_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor_number</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>device_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1a2646ba7bce198769db67648d62dc4913" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual TmcCoeBldcMotor::~TmcCoeBldcMotor</definition>
+        <argsstring>()</argsstring>
+        <name>~TmcCoeBldcMotor</name>
+        <qualifiedname>TmcCoeBldcMotor::~TmcCoeBldcMotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="24" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1af996083998dc4bec2db74da8c2c1a910" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::init</definition>
+        <argsstring>() override</argsstring>
+        <name>init</name>
+        <qualifiedname>TmcCoeBldcMotor::init</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1af1f95ce96627653b77277a1e5ba15a2b">init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="25" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1a57378afd2963e0a6cf6c6202d3c54b25" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::publishTmcCoeInfo</definition>
+        <argsstring>() override</argsstring>
+        <name>publishTmcCoeInfo</name>
+        <qualifiedname>TmcCoeBldcMotor::publishTmcCoeInfo</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a26ba0fdb1816c45d134a03511877eee4">publishTmcCoeInfo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1ae5f80807186611c228b93ddcb0b4a9ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::initSubscriber</definition>
+        <argsstring>() override</argsstring>
+        <name>initSubscriber</name>
+        <qualifiedname>TmcCoeBldcMotor::initSubscriber</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a5bc7ce17df792e946b1ba6b73d7585d8">initSubscriber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1ac2dc4d96e5220dd87b93024e186275ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::cmdVelCallback</definition>
+        <argsstring>(const geometry_msgs::msg::Twist::SharedPtr msg) override</argsstring>
+        <name>cmdVelCallback</name>
+        <qualifiedname>TmcCoeBldcMotor::cmdVelCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a4f826e9bae9e093e31fd57022547527d">cmdVelCallback</reimplements>
+        <param>
+          <type>const geometry_msgs::msg::Twist::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1a45fdce45fae385bed90b3c3de284d026" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::cmdAbsPosCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdAbsPosCallback</name>
+        <qualifiedname>TmcCoeBldcMotor::cmdAbsPosCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1a6a70ea16ab14f6a546548f28b17fd0f8">cmdAbsPosCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classTmcCoeBldcMotor_1aa422d7a0b73ca76429d5eead80e1c756" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void TmcCoeBldcMotor::cmdRelPosCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg) override</argsstring>
+        <name>cmdRelPosCallback</name>
+        <qualifiedname>TmcCoeBldcMotor::cmdRelPosCallback</qualifiedname>
+        <reimplements refid="classTmcCoeMotor_1af09fc99bff69cc6dce1670e9dbe1c272">cmdRelPosCallback</reimplements>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="37" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>TmcCoeBldcMotor</label>
+        <link refid="classTmcCoeBldcMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TmcCoeMotor</label>
+        <link refid="classTmcCoeMotor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TmcCoeBldcMotor</label>
+        <link refid="classTmcCoeBldcMotor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TmcCoeInterpreter</label>
+        <link refid="classTmcCoeInterpreter"/>
+      </node>
+      <node id="2">
+        <label>TmcCoeMotor</label>
+        <link refid="classTmcCoeMotor"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>p_tmc_coe_interpreter_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" line="19" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp" bodystart="20" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classTmcCoeMotor_1a2517d51f667447baf03eed02ed60b8e0" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>cmd_abspos_sub_</name></member>
+      <member refid="classTmcCoeMotor_1a92ba36789f1dcd9d987b458a26572300" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>cmd_relpos_sub_</name></member>
+      <member refid="classTmcCoeMotor_1aa627f5073490f133c54b95c7c9119e18" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>cmd_trq_sub_</name></member>
+      <member refid="classTmcCoeMotor_1a8a0af6f4a02ef2d5acec35d5335a46d8" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>cmd_vel_sub_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a45fdce45fae385bed90b3c3de284d026" prot="private" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>cmdAbsPosCallback</name></member>
+      <member refid="classTmcCoeBldcMotor_1aa422d7a0b73ca76429d5eead80e1c756" prot="private" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>cmdRelPosCallback</name></member>
+      <member refid="classTmcCoeMotor_1a22583e0bc3ce48248a1a0b4a0923b2d1" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>cmdTrqCallback</name></member>
+      <member refid="classTmcCoeBldcMotor_1ac2dc4d96e5220dd87b93024e186275ed" prot="private" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>cmdVelCallback</name></member>
+      <member refid="classTmcCoeBldcMotor_1ac441ff5bfb7fef671b0b9a19a7b9d6e2" prot="private" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>commutation_mode_</name></member>
+      <member refid="classTmcCoeMotor_1a79f44544ca733ecd4aafd7d1e097e232" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>device_name_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a713f1f818f91feb7e739d68aefe2af81" prot="private" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>encoder_steps_</name></member>
+      <member refid="classTmcCoeBldcMotor_1af996083998dc4bec2db74da8c2c1a910" prot="public" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>init</name></member>
+      <member refid="classTmcCoeMotor_1a1d70493fe33f692fcad668fcc6f1ba79" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>initPublisher</name></member>
+      <member refid="classTmcCoeBldcMotor_1ae5f80807186611c228b93ddcb0b4a9ae" prot="private" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>initSubscriber</name></member>
+      <member refid="classTmcCoeBldcMotor_1a660c03fd72899f521a276d45ef584dde" prot="private" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>logger_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a4ca11374370765b72eca2d475aafc9e4" prot="private" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>logger_prefix_</name></member>
+      <member refid="classTmcCoeMotor_1a4a8571c3caf18eb8fe3a0f96c2981c37" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>motor_number_</name></member>
+      <member refid="classTmcCoeMotor_1a2f2cf6b3fe0f004f98b07af2586735b4" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>p_node_</name></member>
+      <member refid="classTmcCoeMotor_1a6cf56c20181bfb604f3d75f017527b67" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>p_tmc_coe_interpreter_</name></member>
+      <member refid="classTmcCoeMotor_1a435faf753ff2fa6c38eede2feee925ec" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_add_ratio_pos_</name></member>
+      <member refid="classTmcCoeMotor_1a853da30fd5c811fc3b5cfcfdbb269ce4" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_add_ratio_trq_</name></member>
+      <member refid="classTmcCoeMotor_1a9a4a8428b15bae2d8f22ce745a7c3228" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_add_ratio_vel_</name></member>
+      <member refid="classTmcCoeMotor_1a8c7f95bf1379b4d5794acae1c01b0119" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_en_pub_tmc_info_</name></member>
+      <member refid="classTmcCoeMotor_1a029b0a1454b1f8e9cb829860d1123ab2" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_pub_actual_pos_</name></member>
+      <member refid="classTmcCoeMotor_1a31058b6b436097465a0cda282cffa1f2" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_pub_actual_trq_</name></member>
+      <member refid="classTmcCoeMotor_1abdf982b7f69d4c618f0e2726303cc623" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_pub_actual_vel_</name></member>
+      <member refid="classTmcCoeMotor_1af68a31e32449aea1986fc172f5167692" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_pub_rate_tmc_coe_info_</name></member>
+      <member refid="classTmcCoeMotor_1a58d90059845eefb4e2ebe10a1e28f31b" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_tmc_cmd_abspos_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a0c0dba0002952a21fe9d7427c116699f" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_tmc_cmd_relpos_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a3653f71dbba7fe080750c20c73fe31ae" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_tmc_cmd_trq_topic_</name></member>
+      <member refid="classTmcCoeMotor_1afde0d2cda55f8dce79460dfc5c6c7c98" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_tmc_cmd_vel_topic_</name></member>
+      <member refid="classTmcCoeMotor_1a5b91b83e219e67e5a8ad1b21d6104312" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_tmc_info_topic_</name></member>
+      <member refid="classTmcCoeMotor_1ac0db098e1657d45630e952f2694c859f" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>param_wheel_diameter_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a2eaefa05db7534f879014fe9f997b74c" prot="private" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>position_scaler_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a57378afd2963e0a6cf6c6202d3c54b25" prot="private" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>publishTmcCoeInfo</name></member>
+      <member refid="classTmcCoeMotor_1a98219bdc0799e6a24ef5b4ed39d9ddfd" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>slave_number_</name></member>
+      <member refid="classTmcCoeMotor_1ad84acdb4c632d325c0d248cae7e72ee6" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>tmc_coe_info_frame_id_</name></member>
+      <member refid="classTmcCoeMotor_1ae16f456bec6469ae73dcef17ce0d7939" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>tmc_coe_info_pub_</name></member>
+      <member refid="classTmcCoeMotor_1a37101558f095a2d8ce31aaac3ba886d0" prot="protected" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>tmc_coe_info_pub_timer_</name></member>
+      <member refid="classTmcCoeBldcMotor_1a8294997f1077bf25e3adce4ef8e6294a" prot="public" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>TmcCoeBldcMotor</name></member>
+      <member refid="classTmcCoeMotor_1a67c83ed25de2d79ea9a5a19f27b5f95f" prot="public" virt="non-virtual"><scope>TmcCoeBldcMotor</scope><name>TmcCoeMotor</name></member>
+      <member refid="classTmcCoeBldcMotor_1a2646ba7bce198769db67648d62dc4913" prot="public" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>~TmcCoeBldcMotor</name></member>
+      <member refid="classTmcCoeMotor_1a67c5ea6c1d12af4acb0e827802f0a9c1" prot="public" virt="virtual"><scope>TmcCoeBldcMotor</scope><name>~TmcCoeMotor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_enum_output__sensor_8h_1a46f7c277684d20859bec33db540acbc8:
+
+Enum OutputFlag
+===============
+
+- Defined in :ref:`file_include_output_sensor.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: OutputFlag
+   :project: adi_3dtof_safety_bubble_detector Doxygen Project

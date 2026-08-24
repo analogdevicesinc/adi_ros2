@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classMotor" kind="class" language="C++" prot="public">
+    <compoundname>Motor</compoundname>
+    <derivedcompoundref refid="classBldcMotor" prot="public" virt="non-virtual">BldcMotor</derivedcompoundref>
+    <derivedcompoundref refid="classStepperMotor" prot="public" virt="non-virtual">StepperMotor</derivedcompoundref>
+    <includes refid="tmcl__motor_8hpp" local="no">tmcl_motor.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMotor_1a247765055b71babddd51db4bd5b7a00d" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr Motor::p_node_</definition>
+        <argsstring></argsstring>
+        <name>p_node_</name>
+        <qualifiedname>Motor::p_node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="27" column="27" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a2df3f5a06e67456713b6298f77f230e5" prot="protected" static="no" mutable="no">
+        <type><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref> *</type>
+        <definition>TmclInterpreter* Motor::p_tmcl_interpreter_</definition>
+        <argsstring></argsstring>
+        <name>p_tmcl_interpreter_</name>
+        <qualifiedname>Motor::p_tmcl_interpreter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="28" column="19" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a21bddea0d90efab775230f1d5468af42" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; adi_tmcl::msg::TmcInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;adi_tmcl::msg::TmcInfo&gt;::SharedPtr Motor::publisher_</definition>
+        <argsstring></argsstring>
+        <name>publisher_</name>
+        <qualifiedname>Motor::publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="29" column="33" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a8e0edfb3e6f87007560c3f91aa74e302" prot="protected" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr Motor::publisher_timer_</definition>
+        <argsstring></argsstring>
+        <name>publisher_timer_</name>
+        <qualifiedname>Motor::publisher_timer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="30" column="32" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a9baa731ce44622d216d29be66b0bd78f" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; geometry_msgs::msg::Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;geometry_msgs::msg::Twist&gt;::SharedPtr Motor::subscription_cmd_vel_</definition>
+        <argsstring></argsstring>
+        <name>subscription_cmd_vel_</name>
+        <qualifiedname>Motor::subscription_cmd_vel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="31" column="36" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1ab137c183cf2b4ba4baa9584592ea8768" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr Motor::subscription_cmd_abspos_</definition>
+        <argsstring></argsstring>
+        <name>subscription_cmd_abspos_</name>
+        <qualifiedname>Motor::subscription_cmd_abspos_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="32" column="36" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a9285082f0368cf3ca6262c95425bb0f1" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr Motor::subscription_cmd_relpos_</definition>
+        <argsstring></argsstring>
+        <name>subscription_cmd_relpos_</name>
+        <qualifiedname>Motor::subscription_cmd_relpos_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="33" column="36" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1ad6b0491053300b50bd6d911b56ebe1bc" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Int32 &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Int32&gt;::SharedPtr Motor::subscription_cmd_trq_</definition>
+        <argsstring></argsstring>
+        <name>subscription_cmd_trq_</name>
+        <qualifiedname>Motor::subscription_cmd_trq_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="34" column="36" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1af8ed1941758d843438c532e9474a8a1d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Motor::param_en_pub_tmc_info_</definition>
+        <argsstring></argsstring>
+        <name>param_en_pub_tmc_info_</name>
+        <qualifiedname>Motor::param_en_pub_tmc_info_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="35" column="8" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1ab2dfc8c357db9c4235a2e9721bcb1880" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_tmc_info_topic_</definition>
+        <argsstring></argsstring>
+        <name>param_tmc_info_topic_</name>
+        <qualifiedname>Motor::param_tmc_info_topic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="36" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1aed9818772c6714484435ae534e181748" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Motor::param_pub_rate_tmc_info_</definition>
+        <argsstring></argsstring>
+        <name>param_pub_rate_tmc_info_</name>
+        <qualifiedname>Motor::param_pub_rate_tmc_info_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="37" column="11" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1af2612411712a18e3df1a421f990d484d" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Motor::param_pub_actual_vel_</definition>
+        <argsstring></argsstring>
+        <name>param_pub_actual_vel_</name>
+        <qualifiedname>Motor::param_pub_actual_vel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="38" column="8" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a70561c4351d75cc796b5f386fb10fba4" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Motor::param_pub_actual_pos_</definition>
+        <argsstring></argsstring>
+        <name>param_pub_actual_pos_</name>
+        <qualifiedname>Motor::param_pub_actual_pos_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="39" column="8" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1adc816675935b7c2444204b7035d70fef" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Motor::param_pub_actual_trq_</definition>
+        <argsstring></argsstring>
+        <name>param_pub_actual_trq_</name>
+        <qualifiedname>Motor::param_pub_actual_trq_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="40" column="8" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1acb256e3e11e2b4a9d076208d51bc49ef" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_tmc_cmd_vel_topic_</definition>
+        <argsstring></argsstring>
+        <name>param_tmc_cmd_vel_topic_</name>
+        <qualifiedname>Motor::param_tmc_cmd_vel_topic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="41" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a5397740875dfbde68dc143e8d0dd426b" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_tmc_cmd_abspos_topic_</definition>
+        <argsstring></argsstring>
+        <name>param_tmc_cmd_abspos_topic_</name>
+        <qualifiedname>Motor::param_tmc_cmd_abspos_topic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="42" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a3b7a1b7e84955e7792067564372f3d3c" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_tmc_cmd_relpos_topic_</definition>
+        <argsstring></argsstring>
+        <name>param_tmc_cmd_relpos_topic_</name>
+        <qualifiedname>Motor::param_tmc_cmd_relpos_topic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="43" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1aa4067f12ba5061882bb7a100d881fa94" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_tmc_cmd_trq_topic_</definition>
+        <argsstring></argsstring>
+        <name>param_tmc_cmd_trq_topic_</name>
+        <qualifiedname>Motor::param_tmc_cmd_trq_topic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="44" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a2a6ad6b0f1621c4a579bf4435a54fa85" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Motor::param_wheel_diameter_</definition>
+        <argsstring></argsstring>
+        <name>param_wheel_diameter_</name>
+        <qualifiedname>Motor::param_wheel_diameter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="45" column="10" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a7d67554c95fb5997623e7eb28f3f44e7" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Motor::param_additional_ratio_vel_</definition>
+        <argsstring></argsstring>
+        <name>param_additional_ratio_vel_</name>
+        <qualifiedname>Motor::param_additional_ratio_vel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="46" column="10" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a89ec4ae4d259070eb2f081ad1b36ce2e" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Motor::param_additional_ratio_pos_</definition>
+        <argsstring></argsstring>
+        <name>param_additional_ratio_pos_</name>
+        <qualifiedname>Motor::param_additional_ratio_pos_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="47" column="10" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1ad1307bc16c27bafbe6b8583c6cd5143a" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Motor::param_additional_ratio_trq_</definition>
+        <argsstring></argsstring>
+        <name>param_additional_ratio_trq_</name>
+        <qualifiedname>Motor::param_additional_ratio_trq_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="48" column="10" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1ad11504b9597f5eb0e025a21bd8243d5d" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::param_comm_interface_name_</definition>
+        <argsstring></argsstring>
+        <name>param_comm_interface_name_</name>
+        <qualifiedname>Motor::param_comm_interface_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="49" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1aa7644fc1d41803d10feef45bfdefc64b" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Motor::module_number_</definition>
+        <argsstring></argsstring>
+        <name>module_number_</name>
+        <qualifiedname>Motor::module_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="50" column="12" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMotor_1a2090de6607d634225ecdc56e3f1c0433" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Motor::tmc_info_frame_id_</definition>
+        <argsstring></argsstring>
+        <name>tmc_info_frame_id_</name>
+        <qualifiedname>Motor::tmc_info_frame_id_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="51" column="15" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMotor_1adbf056983d186e391a102c4b76284b34" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Motor::motor_number_</definition>
+        <argsstring></argsstring>
+        <name>motor_number_</name>
+        <qualifiedname>Motor::motor_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="57" column="11" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMotor_1ac0063b6a7afa72db5b69214566ba6abf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motor::Motor</definition>
+        <argsstring>(rclcpp::Node::SharedPtr p_node, TmclInterpreter *p_tmcl_interpreter, uint8_t motor_number, uint32_t module_number)</argsstring>
+        <name>Motor</name>
+        <qualifiedname>Motor::Motor</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr</type>
+          <declname>p_node</declname>
+        </param>
+        <param>
+          <type><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref> *</type>
+          <declname>p_tmcl_interpreter</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>motor_number</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>module_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="18" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a3135cf1bc9a3c68e1db0214c00a2b50f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Motor::~Motor</definition>
+        <argsstring>()</argsstring>
+        <name>~Motor</name>
+        <qualifiedname>Motor::~Motor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="20" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1afd73d5e08cfb3c20d06d8b0b6c14b1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Motor::getMotorNumber</definition>
+        <argsstring>()</argsstring>
+        <name>getMotorNumber</name>
+        <qualifiedname>Motor::getMotorNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="22" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a41a7c3c5d7b2be16844c4f8d631afd64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Motor::getMotorName</definition>
+        <argsstring>()</argsstring>
+        <name>getMotorName</name>
+        <qualifiedname>Motor::getMotorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="23" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1aeb1972b2fa590646832b707c54c1b74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>Motor::init</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a4180133a53c1e62ed616c4172bce80fe">init</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a34720ecb5b1b5b2bddc8f3364c45d1f8">init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="24" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classMotor_1af8b4b9f6f385ffae242f2e2c89d67856" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::initMotorParams</definition>
+        <argsstring>()</argsstring>
+        <name>initMotorParams</name>
+        <qualifiedname>Motor::initMotorParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="53" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a62b5cf264e5c6c52da28bf8b25713542" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::initPublisherParams</definition>
+        <argsstring>()</argsstring>
+        <name>initPublisherParams</name>
+        <qualifiedname>Motor::initPublisherParams</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="54" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a7e3c8f9ce9af7b7c3f251973f31b8100" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::cmdTrqSubscriberCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg)</argsstring>
+        <name>cmdTrqSubscriberCallback</name>
+        <qualifiedname>Motor::cmdTrqSubscriberCallback</qualifiedname>
+        <reimplementedby refid="classStepperMotor_1a307fa5c71d7264ea95e7be797ced5636">cmdTrqSubscriberCallback</reimplementedby>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="55" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMotor_1a370400c8e7a5ff28023128e53e959083" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::initPublisher</definition>
+        <argsstring>()</argsstring>
+        <name>initPublisher</name>
+        <qualifiedname>Motor::initPublisher</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a2ecc7c9b168f4aaa444cd9cb32cb9f85">initPublisher</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a5f1ac02191def2015b6c98f653713f09">initPublisher</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="59" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a4e4253b5d0ec7d0bc00fbaae69668edf" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::pubTimerCallback</definition>
+        <argsstring>()</argsstring>
+        <name>pubTimerCallback</name>
+        <qualifiedname>Motor::pubTimerCallback</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a87406fbd81137cb26fd22e66bd4c7289">pubTimerCallback</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a748ae02547d41d68e37869bfe1fc6482">pubTimerCallback</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="60" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a183fef21de808774103954aa38806ae0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::initSubscriberParams</definition>
+        <argsstring>()</argsstring>
+        <name>initSubscriberParams</name>
+        <qualifiedname>Motor::initSubscriberParams</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a1245f8a5164561273ffea4704d5fd12b">initSubscriberParams</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a36651092e6fafedf6800a84a1e1553cc">initSubscriberParams</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="61" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a52d54f0d1858988238feeb950b87bd42" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::initSubscribers</definition>
+        <argsstring>()</argsstring>
+        <name>initSubscribers</name>
+        <qualifiedname>Motor::initSubscribers</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1adc4736eb311379b54def58ed235f6974">initSubscribers</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a89a4254157bc8b04fb29b53e8ef2e073">initSubscribers</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="62" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1ade4539aa440a67ca80fe685df166b1c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::cmdVelSubscriberCallback</definition>
+        <argsstring>(const geometry_msgs::msg::Twist::SharedPtr msg)</argsstring>
+        <name>cmdVelSubscriberCallback</name>
+        <qualifiedname>Motor::cmdVelSubscriberCallback</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a2b2cb197549cfa34e8634eee80e0e6ce">cmdVelSubscriberCallback</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a0c7a06056bd7ced94d5c958d92ae6cf8">cmdVelSubscriberCallback</reimplementedby>
+        <param>
+          <type>const geometry_msgs::msg::Twist::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="63" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1ab5af6e90ba6ee25caeda38fe3a8c6cd6" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::cmdAbsposSubscriberCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg)</argsstring>
+        <name>cmdAbsposSubscriberCallback</name>
+        <qualifiedname>Motor::cmdAbsposSubscriberCallback</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1a58752d3103b4c3aa78fb0a863bdb64a3">cmdAbsposSubscriberCallback</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a3e89ffd149a11763cf5bf49706906d39">cmdAbsposSubscriberCallback</reimplementedby>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="64" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classMotor_1a128803cec6bcc177186b8df8060f5af2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Motor::cmdRelposSubscriberCallback</definition>
+        <argsstring>(const std_msgs::msg::Int32::SharedPtr msg)</argsstring>
+        <name>cmdRelposSubscriberCallback</name>
+        <qualifiedname>Motor::cmdRelposSubscriberCallback</qualifiedname>
+        <reimplementedby refid="classBldcMotor_1ad2ca04f005e4aa3e1a2a60a86a56e560">cmdRelposSubscriberCallback</reimplementedby>
+        <reimplementedby refid="classStepperMotor_1a9449585ec7d906a0b3f72236259a9a9a">cmdRelposSubscriberCallback</reimplementedby>
+        <param>
+          <type>const std_msgs::msg::Int32::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmcl/tmcl_motor.hpp" line="65" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BldcMotor</label>
+        <link refid="classBldcMotor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Motor</label>
+        <link refid="classMotor"/>
+      </node>
+      <node id="3">
+        <label>StepperMotor</label>
+        <link refid="classStepperMotor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Motor</label>
+        <link refid="classMotor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p_tmcl_interpreter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TmclInterpreter</label>
+        <link refid="classTmclInterpreter"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_tmcl/tmcl_motor.hpp" line="15" column="1" bodyfile="include/adi_tmcl/tmcl_motor.hpp" bodystart="16" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classMotor_1ab5af6e90ba6ee25caeda38fe3a8c6cd6" prot="private" virt="virtual"><scope>Motor</scope><name>cmdAbsposSubscriberCallback</name></member>
+      <member refid="classMotor_1a128803cec6bcc177186b8df8060f5af2" prot="private" virt="virtual"><scope>Motor</scope><name>cmdRelposSubscriberCallback</name></member>
+      <member refid="classMotor_1a7e3c8f9ce9af7b7c3f251973f31b8100" prot="protected" virt="virtual"><scope>Motor</scope><name>cmdTrqSubscriberCallback</name></member>
+      <member refid="classMotor_1ade4539aa440a67ca80fe685df166b1c1" prot="private" virt="virtual"><scope>Motor</scope><name>cmdVelSubscriberCallback</name></member>
+      <member refid="classMotor_1a41a7c3c5d7b2be16844c4f8d631afd64" prot="public" virt="non-virtual"><scope>Motor</scope><name>getMotorName</name></member>
+      <member refid="classMotor_1afd73d5e08cfb3c20d06d8b0b6c14b1b8" prot="public" virt="non-virtual"><scope>Motor</scope><name>getMotorNumber</name></member>
+      <member refid="classMotor_1aeb1972b2fa590646832b707c54c1b74b" prot="public" virt="virtual"><scope>Motor</scope><name>init</name></member>
+      <member refid="classMotor_1af8b4b9f6f385ffae242f2e2c89d67856" prot="protected" virt="non-virtual"><scope>Motor</scope><name>initMotorParams</name></member>
+      <member refid="classMotor_1a370400c8e7a5ff28023128e53e959083" prot="private" virt="virtual"><scope>Motor</scope><name>initPublisher</name></member>
+      <member refid="classMotor_1a62b5cf264e5c6c52da28bf8b25713542" prot="protected" virt="non-virtual"><scope>Motor</scope><name>initPublisherParams</name></member>
+      <member refid="classMotor_1a183fef21de808774103954aa38806ae0" prot="private" virt="virtual"><scope>Motor</scope><name>initSubscriberParams</name></member>
+      <member refid="classMotor_1a52d54f0d1858988238feeb950b87bd42" prot="private" virt="virtual"><scope>Motor</scope><name>initSubscribers</name></member>
+      <member refid="classMotor_1aa7644fc1d41803d10feef45bfdefc64b" prot="protected" virt="non-virtual"><scope>Motor</scope><name>module_number_</name></member>
+      <member refid="classMotor_1ac0063b6a7afa72db5b69214566ba6abf" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor</name></member>
+      <member refid="classMotor_1adbf056983d186e391a102c4b76284b34" prot="private" virt="non-virtual"><scope>Motor</scope><name>motor_number_</name></member>
+      <member refid="classMotor_1a247765055b71babddd51db4bd5b7a00d" prot="protected" virt="non-virtual"><scope>Motor</scope><name>p_node_</name></member>
+      <member refid="classMotor_1a2df3f5a06e67456713b6298f77f230e5" prot="protected" virt="non-virtual"><scope>Motor</scope><name>p_tmcl_interpreter_</name></member>
+      <member refid="classMotor_1a89ec4ae4d259070eb2f081ad1b36ce2e" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_additional_ratio_pos_</name></member>
+      <member refid="classMotor_1ad1307bc16c27bafbe6b8583c6cd5143a" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_additional_ratio_trq_</name></member>
+      <member refid="classMotor_1a7d67554c95fb5997623e7eb28f3f44e7" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_additional_ratio_vel_</name></member>
+      <member refid="classMotor_1ad11504b9597f5eb0e025a21bd8243d5d" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_comm_interface_name_</name></member>
+      <member refid="classMotor_1af8ed1941758d843438c532e9474a8a1d" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_en_pub_tmc_info_</name></member>
+      <member refid="classMotor_1a70561c4351d75cc796b5f386fb10fba4" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_pub_actual_pos_</name></member>
+      <member refid="classMotor_1adc816675935b7c2444204b7035d70fef" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_pub_actual_trq_</name></member>
+      <member refid="classMotor_1af2612411712a18e3df1a421f990d484d" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_pub_actual_vel_</name></member>
+      <member refid="classMotor_1aed9818772c6714484435ae534e181748" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_pub_rate_tmc_info_</name></member>
+      <member refid="classMotor_1a5397740875dfbde68dc143e8d0dd426b" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_tmc_cmd_abspos_topic_</name></member>
+      <member refid="classMotor_1a3b7a1b7e84955e7792067564372f3d3c" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_tmc_cmd_relpos_topic_</name></member>
+      <member refid="classMotor_1aa4067f12ba5061882bb7a100d881fa94" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_tmc_cmd_trq_topic_</name></member>
+      <member refid="classMotor_1acb256e3e11e2b4a9d076208d51bc49ef" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_tmc_cmd_vel_topic_</name></member>
+      <member refid="classMotor_1ab2dfc8c357db9c4235a2e9721bcb1880" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_tmc_info_topic_</name></member>
+      <member refid="classMotor_1a2a6ad6b0f1621c4a579bf4435a54fa85" prot="protected" virt="non-virtual"><scope>Motor</scope><name>param_wheel_diameter_</name></member>
+      <member refid="classMotor_1a21bddea0d90efab775230f1d5468af42" prot="protected" virt="non-virtual"><scope>Motor</scope><name>publisher_</name></member>
+      <member refid="classMotor_1a8e0edfb3e6f87007560c3f91aa74e302" prot="protected" virt="non-virtual"><scope>Motor</scope><name>publisher_timer_</name></member>
+      <member refid="classMotor_1a4e4253b5d0ec7d0bc00fbaae69668edf" prot="private" virt="virtual"><scope>Motor</scope><name>pubTimerCallback</name></member>
+      <member refid="classMotor_1ab137c183cf2b4ba4baa9584592ea8768" prot="protected" virt="non-virtual"><scope>Motor</scope><name>subscription_cmd_abspos_</name></member>
+      <member refid="classMotor_1a9285082f0368cf3ca6262c95425bb0f1" prot="protected" virt="non-virtual"><scope>Motor</scope><name>subscription_cmd_relpos_</name></member>
+      <member refid="classMotor_1ad6b0491053300b50bd6d911b56ebe1bc" prot="protected" virt="non-virtual"><scope>Motor</scope><name>subscription_cmd_trq_</name></member>
+      <member refid="classMotor_1a9baa731ce44622d216d29be66b0bd78f" prot="protected" virt="non-virtual"><scope>Motor</scope><name>subscription_cmd_vel_</name></member>
+      <member refid="classMotor_1a2090de6607d634225ecdc56e3f1c0433" prot="protected" virt="non-virtual"><scope>Motor</scope><name>tmc_info_frame_id_</name></member>
+      <member refid="classMotor_1a3135cf1bc9a3c68e1db0214c00a2b50f" prot="public" virt="virtual"><scope>Motor</scope><name>~Motor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

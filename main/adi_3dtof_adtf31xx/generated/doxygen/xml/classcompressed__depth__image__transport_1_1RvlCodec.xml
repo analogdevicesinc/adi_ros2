@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classcompressed__depth__image__transport_1_1RvlCodec" kind="class" language="C++" prot="public">
+    <compoundname>compressed_depth_image_transport::RvlCodec</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcompressed__depth__image__transport_1_1RvlCodec_1aa2e8ef112a71193b43bd3702e33b5bd6" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* compressed_depth_image_transport::RvlCodec::buffer_</definition>
+        <argsstring></argsstring>
+        <name>buffer_</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="25" column="7" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcompressed__depth__image__transport_1_1RvlCodec_1afe3e7285351838d9bbd7d43942100de6" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* compressed_depth_image_transport::RvlCodec::pBuffer_</definition>
+        <argsstring></argsstring>
+        <name>pBuffer_</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::pBuffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="26" column="7" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcompressed__depth__image__transport_1_1RvlCodec_1a756288f00fc8870587476fda38f80da8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int compressed_depth_image_transport::RvlCodec::word_</definition>
+        <argsstring></argsstring>
+        <name>word_</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::word_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="27" column="7" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcompressed__depth__image__transport_1_1RvlCodec_1a069cf29d85ffbf491231f69cf087e925" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int compressed_depth_image_transport::RvlCodec::nibblesWritten_</definition>
+        <argsstring></argsstring>
+        <name>nibblesWritten_</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::nibblesWritten_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="28" column="7" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1aafa0d4078b291e166b43761398c2c946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compressed_depth_image_transport::RvlCodec::RvlCodec</definition>
+        <argsstring>()</argsstring>
+        <name>RvlCodec</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::RvlCodec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="8" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1a7f7a682525935399a656f4444f701510" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int compressed_depth_image_transport::RvlCodec::CompressRVL</definition>
+        <argsstring>(const unsigned short *input, unsigned char *output, int numPixels)</argsstring>
+        <name>CompressRVL</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::CompressRVL</qualifiedname>
+        <param>
+          <type>const unsigned short *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="11" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1aa2bad4e6d8d2b192fcfeb9060b3a15a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void compressed_depth_image_transport::RvlCodec::DecompressRVL</definition>
+        <argsstring>(const unsigned char *input, unsigned short *output, int numPixels)</argsstring>
+        <name>DecompressRVL</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::DecompressRVL</qualifiedname>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPixels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="15" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1ae7b565ca3a8edf490d47630f20f5769d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>compressed_depth_image_transport::RvlCodec::RvlCodec</definition>
+        <argsstring>(const RvlCodec &amp;)</argsstring>
+        <name>RvlCodec</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::RvlCodec</qualifiedname>
+        <param>
+          <type>const <ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="19" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1a0760212750e5d1e12751fdf5555db837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+        <definition>RvlCodec &amp; compressed_depth_image_transport::RvlCodec::operator=</definition>
+        <argsstring>(const RvlCodec &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="20" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1ac3f2e6a39595a937943216b84233ab54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void compressed_depth_image_transport::RvlCodec::EncodeVLE</definition>
+        <argsstring>(int value)</argsstring>
+        <name>EncodeVLE</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::EncodeVLE</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="22" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1a68fb572f33a1c55d085ab35ba7b6937b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int compressed_depth_image_transport::RvlCodec::DecodeVLE</definition>
+        <argsstring>()</argsstring>
+        <name>DecodeVLE</name>
+        <qualifiedname>compressed_depth_image_transport::RvlCodec::DecodeVLE</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="23" column="7"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="6" column="1" bodyfile="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" bodystart="6" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aa2e8ef112a71193b43bd3702e33b5bd6" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>buffer_</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a7f7a682525935399a656f4444f701510" prot="public" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>CompressRVL</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a68fb572f33a1c55d085ab35ba7b6937b" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>DecodeVLE</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aa2bad4e6d8d2b192fcfeb9060b3a15a5" prot="public" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>DecompressRVL</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1ac3f2e6a39595a937943216b84233ab54" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>EncodeVLE</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a069cf29d85ffbf491231f69cf087e925" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>nibblesWritten_</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a0760212750e5d1e12751fdf5555db837" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>operator=</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1afe3e7285351838d9bbd7d43942100de6" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>pBuffer_</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1aafa0d4078b291e166b43761398c2c946" prot="public" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>RvlCodec</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1ae7b565ca3a8edf490d47630f20f5769d" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>RvlCodec</name></member>
+      <member refid="classcompressed__depth__image__transport_1_1RvlCodec_1a756288f00fc8870587476fda38f80da8" prot="private" virt="non-virtual"><scope>compressed_depth_image_transport::RvlCodec</scope><name>word_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

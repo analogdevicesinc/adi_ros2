@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9:
+
+Define STREAM
+=============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: STREAM
+   :project: adrd2121_imu Doxygen Project

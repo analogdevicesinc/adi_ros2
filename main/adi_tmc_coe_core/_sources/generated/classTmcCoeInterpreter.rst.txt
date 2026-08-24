@@ -1,0 +1,17 @@
+.. _exhale_class_classTmcCoeInterpreter:
+
+Class TmcCoeInterpreter
+=======================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TmcCoeInterpreter
+   :project: adi_tmc_coe_core Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1af3bb35d37ad52fe832eb23035bbd0626:
+
+Variable TIME_BASE_MAX
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TIME_BASE_MAX
+   :project: adrd2121_imu Doxygen Project

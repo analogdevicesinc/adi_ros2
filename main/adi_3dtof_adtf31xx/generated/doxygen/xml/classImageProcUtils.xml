@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classImageProcUtils" kind="class" language="C++" prot="public">
+    <compoundname>ImageProcUtils</compoundname>
+    <includes refid="image__proc__utils_8h" local="no">image_proc_utils.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classImageProcUtils_1af45b43d26587ab2144de6faaca0bd9a6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImageProcUtils::image_width_</definition>
+        <argsstring></argsstring>
+        <name>image_width_</name>
+        <qualifiedname>ImageProcUtils::image_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="121" column="7" bodyfile="include/image_proc_utils.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImageProcUtils_1ae2513e53361d31e5d82027f8b5a9bd80" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ImageProcUtils::image_height_</definition>
+        <argsstring></argsstring>
+        <name>image_height_</name>
+        <qualifiedname>ImageProcUtils::image_height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="122" column="7" bodyfile="include/image_proc_utils.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImageProcUtils_1a9cd85e47290b58d6acb2e60899c0557b" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* ImageProcUtils::range_to_3d_lut_</definition>
+        <argsstring></argsstring>
+        <name>range_to_3d_lut_</name>
+        <qualifiedname>ImageProcUtils::range_to_3d_lut_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="123" column="10" bodyfile="include/image_proc_utils.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImageProcUtils_1a909f8152fa0a6cfe7bdcc9875e4f6699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImageProcUtils::ImageProcUtils</definition>
+        <argsstring>()=default</argsstring>
+        <name>ImageProcUtils</name>
+        <qualifiedname>ImageProcUtils::ImageProcUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="29" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageProcUtils_1ac1518ea5ae92d66ac7f20fe398f7f45f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImageProcUtils::ImageProcUtils</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics, int image_width, int image_height)</argsstring>
+        <name>ImageProcUtils</name>
+        <qualifiedname>ImageProcUtils::ImageProcUtils</qualifiedname>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="31" column="3" bodyfile="include/image_proc_utils.h" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageProcUtils_1a8cfdf91565b8a25293e952e5b1ec7433" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImageProcUtils::~ImageProcUtils</definition>
+        <argsstring>()</argsstring>
+        <name>~ImageProcUtils</name>
+        <qualifiedname>ImageProcUtils::~ImageProcUtils</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="43" column="3" bodyfile="include/image_proc_utils.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageProcUtils::generateRangeTo3DLUT</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics)</argsstring>
+        <name>generateRangeTo3DLUT</name>
+        <qualifiedname>ImageProcUtils::generateRangeTo3DLUT</qualifiedname>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics</declname>
+        </param>
+        <briefdescription>
+<para>Generates a Range to 3D projection Look up table, which can be used to compute point-cloud from the depth image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera_intrinsics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>camera intrinsics </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="55" column="8" bodyfile="include/image_proc_utils.h" bodystart="55" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ImageProcUtils::computePointCloud</definition>
+        <argsstring>(unsigned short *range_image, short *xyz_frame)</argsstring>
+        <name>computePointCloud</name>
+        <qualifiedname>ImageProcUtils::computePointCloud</qualifiedname>
+        <param>
+          <type>unsigned short *</type>
+          <declname>range_image</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>xyz_frame</declname>
+        </param>
+        <briefdescription>
+<para>Computes point cloud using range_to_3d_lut look up table and range image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>range_image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>range image </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xyz_frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>output frame for point cloud </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="106" column="8" bodyfile="include/image_proc_utils.h" bodystart="106" bodyend="118"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class has image processing utilities. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/image_proc_utils.h" line="25" column="1" bodyfile="include/image_proc_utils.h" bodystart="26" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classImageProcUtils_1a8871d35fb9555129c55c762e560e5346" prot="public" virt="non-virtual"><scope>ImageProcUtils</scope><name>computePointCloud</name></member>
+      <member refid="classImageProcUtils_1a04320da773cd37ef3369381e61a54c1f" prot="public" virt="non-virtual"><scope>ImageProcUtils</scope><name>generateRangeTo3DLUT</name></member>
+      <member refid="classImageProcUtils_1ae2513e53361d31e5d82027f8b5a9bd80" prot="private" virt="non-virtual"><scope>ImageProcUtils</scope><name>image_height_</name></member>
+      <member refid="classImageProcUtils_1af45b43d26587ab2144de6faaca0bd9a6" prot="private" virt="non-virtual"><scope>ImageProcUtils</scope><name>image_width_</name></member>
+      <member refid="classImageProcUtils_1a909f8152fa0a6cfe7bdcc9875e4f6699" prot="public" virt="non-virtual"><scope>ImageProcUtils</scope><name>ImageProcUtils</name></member>
+      <member refid="classImageProcUtils_1ac1518ea5ae92d66ac7f20fe398f7f45f" prot="public" virt="non-virtual"><scope>ImageProcUtils</scope><name>ImageProcUtils</name></member>
+      <member refid="classImageProcUtils_1a9cd85e47290b58d6acb2e60899c0557b" prot="private" virt="non-virtual"><scope>ImageProcUtils</scope><name>range_to_3d_lut_</name></member>
+      <member refid="classImageProcUtils_1a8cfdf91565b8a25293e952e5b1ec7433" prot="public" virt="non-virtual"><scope>ImageProcUtils</scope><name>~ImageProcUtils</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

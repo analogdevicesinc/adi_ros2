@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classADI3DToFSafetyBubbleDetectorOutputInfo" kind="class" language="C++" prot="public">
+    <compoundname>ADI3DToFSafetyBubbleDetectorOutputInfo</compoundname>
+    <includes refid="adi__3dtof__safety__bubble__detector__output__info_8h" local="no">adi_3dtof_safety_bubble_detector_output_info.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1ad5740b055ba32499ecb7dbad40ef10d4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::frame_number_</definition>
+        <argsstring></argsstring>
+        <name>frame_number_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::frame_number_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="130" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1aa15c7f0e43bda83b63e8ba70ec15b68f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFSafetyBubbleDetectorOutputInfo::object_detected_</definition>
+        <argsstring></argsstring>
+        <name>object_detected_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::object_detected_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="131" column="8" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a26ea3842395b74bfe30eceb2282db6ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_floor_detection_status_</definition>
+        <argsstring></argsstring>
+        <name>ransac_floor_detection_status_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_floor_detection_status_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="132" column="8" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a4849c763345e6c319656e97e800ceac2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_iterations_</definition>
+        <argsstring></argsstring>
+        <name>ransac_iterations_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_iterations_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="133" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a1318bd1f316f8f85c8277a31362e74dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::noise_count_</definition>
+        <argsstring></argsstring>
+        <name>noise_count_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::noise_count_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="134" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3da01cb720d29e720cea3cc8cc17e37b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_time_ms_</definition>
+        <argsstring></argsstring>
+        <name>ransac_time_ms_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::ransac_time_ms_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="135" column="9" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a9fb2004bb4240b12e4c62bc979585ddb" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFSafetyBubbleDetectorOutputInfo::depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>depth_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::depth_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="136" column="19" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3ff22d7c2357e1ea3929755e0a3b3776" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFSafetyBubbleDetectorOutputInfo::ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>ab_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::ab_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="137" column="19" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a6ed01c9dd10d403d3170b61863404e76" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_depth_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_size_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_depth_frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="138" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a5dbcc32075a0e45828d70aab1489fd60" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_ab_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_size_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_ab_frame_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="139" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1ab30a67112f01783f71bcf65fce0db953" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_depth_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="140" column="18" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae7ba4e113b408d61cd228a0284574fd3" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::compressed_ab_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="141" column="18" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1adfd35eb1994b052e66529feaa27ad7f4" prot="public" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFSafetyBubbleDetectorOutputInfo::xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>xyz_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::xyz_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="142" column="10" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae64aabeba40298e559698b724ece7e11" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFSafetyBubbleDetectorOutputInfo::depth_frame_with_floor_</definition>
+        <argsstring></argsstring>
+        <name>depth_frame_with_floor_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::depth_frame_with_floor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="143" column="19" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3f72ec0285b99f4fc182b20fe4344c4e" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>vcam_depth_frame_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_frame_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="144" column="19" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1aee977a6bf39a0ea599e002dac4816a73" prot="public" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_frame_with_floor_</definition>
+        <argsstring></argsstring>
+        <name>vcam_depth_frame_with_floor_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_frame_with_floor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="145" column="19" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1acfe0d2e2266bb1f1de90bd6ced1f81a3" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_image_floor_pixels_removed_8bpp_</definition>
+        <argsstring></argsstring>
+        <name>vcam_depth_image_floor_pixels_removed_8bpp_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::vcam_depth_image_floor_pixels_removed_8bpp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="146" column="18" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a733b05ef2452363e8b173b0d5c5c2f16" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::image_width_</definition>
+        <argsstring></argsstring>
+        <name>image_width_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::image_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="147" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1aadf44b7440895eefd1c6321579a0a740" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFSafetyBubbleDetectorOutputInfo::image_height_</definition>
+        <argsstring></argsstring>
+        <name>image_height_</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::image_height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="148" column="7" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a2fa627733791e2949c10177ee9e51802" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFSafetyBubbleDetectorOutputInfo::ADI3DToFSafetyBubbleDetectorOutputInfo</definition>
+        <argsstring>(int image_width, int image_height)</argsstring>
+        <name>ADI3DToFSafetyBubbleDetectorOutputInfo</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::ADI3DToFSafetyBubbleDetectorOutputInfo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="23" column="3" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="23" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a66f7077a54f539a6b94b2a4b33f05e35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFSafetyBubbleDetectorOutputInfo::~ADI3DToFSafetyBubbleDetectorOutputInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~ADI3DToFSafetyBubbleDetectorOutputInfo</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::~ADI3DToFSafetyBubbleDetectorOutputInfo</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="60" column="3" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="60" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFSafetyBubbleDetectorOutputInfo_1a597181d05e6b50d284eae16af8a9f68d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classADI3DToFSafetyBubbleDetectorOutputInfo" kindref="compound">ADI3DToFSafetyBubbleDetectorOutputInfo</ref> &amp;</type>
+        <definition>ADI3DToFSafetyBubbleDetectorOutputInfo &amp; ADI3DToFSafetyBubbleDetectorOutputInfo::operator=</definition>
+        <argsstring>(const ADI3DToFSafetyBubbleDetectorOutputInfo &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ADI3DToFSafetyBubbleDetectorOutputInfo::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classADI3DToFSafetyBubbleDetectorOutputInfo" kindref="compound">ADI3DToFSafetyBubbleDetectorOutputInfo</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="92" column="43" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="92" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is the class for Safety bubble detector output info. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_safety_bubble_detector_output_info.h" line="14" column="1" bodyfile="include/adi_3dtof_safety_bubble_detector_output_info.h" bodystart="15" bodyend="149"/>
+    <listofallmembers>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3ff22d7c2357e1ea3929755e0a3b3776" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>ab_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a2fa627733791e2949c10177ee9e51802" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>ADI3DToFSafetyBubbleDetectorOutputInfo</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae7ba4e113b408d61cd228a0284574fd3" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>compressed_ab_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a5dbcc32075a0e45828d70aab1489fd60" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>compressed_ab_frame_size_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ab30a67112f01783f71bcf65fce0db953" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>compressed_depth_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a6ed01c9dd10d403d3170b61863404e76" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>compressed_depth_frame_size_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a9fb2004bb4240b12e4c62bc979585ddb" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>depth_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ae64aabeba40298e559698b724ece7e11" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>depth_frame_with_floor_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1ad5740b055ba32499ecb7dbad40ef10d4" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>frame_number_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aadf44b7440895eefd1c6321579a0a740" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>image_height_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a733b05ef2452363e8b173b0d5c5c2f16" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>image_width_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a1318bd1f316f8f85c8277a31362e74dd" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>noise_count_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aa15c7f0e43bda83b63e8ba70ec15b68f" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>object_detected_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a597181d05e6b50d284eae16af8a9f68d" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>operator=</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a26ea3842395b74bfe30eceb2282db6ba" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>ransac_floor_detection_status_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a4849c763345e6c319656e97e800ceac2" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>ransac_iterations_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3da01cb720d29e720cea3cc8cc17e37b" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>ransac_time_ms_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a3f72ec0285b99f4fc182b20fe4344c4e" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>vcam_depth_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1aee977a6bf39a0ea599e002dac4816a73" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>vcam_depth_frame_with_floor_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1acfe0d2e2266bb1f1de90bd6ced1f81a3" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>vcam_depth_image_floor_pixels_removed_8bpp_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1adfd35eb1994b052e66529feaa27ad7f4" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>xyz_frame_</name></member>
+      <member refid="classADI3DToFSafetyBubbleDetectorOutputInfo_1a66f7077a54f539a6b94b2a4b33f05e35" prot="public" virt="non-virtual"><scope>ADI3DToFSafetyBubbleDetectorOutputInfo</scope><name>~ADI3DToFSafetyBubbleDetectorOutputInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

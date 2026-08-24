@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624:
+
+Variable SEC_TO_MIN
+===================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: SEC_TO_MIN
+   :project: adi_tmcl Doxygen Project

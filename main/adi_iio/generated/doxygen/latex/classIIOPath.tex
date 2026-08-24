@@ -1,0 +1,299 @@
+\doxysection{IIOPath Class Reference}
+\hypertarget{classIIOPath}{}\label{classIIOPath}\index{IIOPath@{IIOPath}}
+
+
+Represents and manipulates Industrial I/O (IIO) paths that are used to uniquely identify IIO devices, attributes, and channels from a context.  
+
+
+
+
+{\ttfamily \#include $<$iio\+\_\+path.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3}{IIOPath}} (std\+::string path, char delimiter=\textquotesingle{}/\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classIIOPath}{IIOPath} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_aa089783a455bca56348d522880cb3484}{base\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the original path used to create this object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9}{get\+Context\+Attr\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the context attribute segment from the path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a628013ed289d637eb19ec39718e1fb02}{get\+Device\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the device name segment from the path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098}{get\+Device\+Attr\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the device attribute segment from the path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d}{get\+Channel\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the channel name segment from the path. \end{DoxyCompactList}\item 
+std\+::pair$<$ bool, std\+::string $>$ \mbox{\hyperlink{classIIOPath_a09da667d213f45666b9274e59d2cb223}{get\+Extended\+Channel\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the channel information segment from the path. \end{DoxyCompactList}\item 
+\Hypertarget{classIIOPath_adaaa6afd58114d2a2fdfc588c271ec9d}\label{classIIOPath_adaaa6afd58114d2a2fdfc588c271ec9d} 
+bool {\bfseries has\+Extended\+Channel\+Format} () const
+\begin{DoxyCompactList}\small\item\em Whether the channel segment has the extended syntax format. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae}{get\+Channel\+Attr\+Segment}} () const
+\begin{DoxyCompactList}\small\item\em Extracts the channel attribute segment from the path. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classIIOPath_a5267692c774185c148b6047d32b64879}{append}} (const std\+::string \&suffix)
+\begin{DoxyCompactList}\small\item\em Appends a suffix to the current IIO path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670}{is\+Valid}} (const IIOPath\+Type type)
+\begin{DoxyCompactList}\small\item\em Validates the current IIO path based on the specified type. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIIOPath_a13168489d39273e5aeac4c2071b44c34}{split}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Splits a string into segments based on the delimiter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOPath_a415285674b5a90000c23ffa342469670}\label{classIIOPath_a415285674b5a90000c23ffa342469670} 
+static std\+::pair$<$ bool, std\+::string $>$ {\bfseries get\+Extended\+Channel\+Segment} (std\+::string chn\+\_\+segment)
+\item 
+\Hypertarget{classIIOPath_ac9efeccfd805685966c79e03653c7f14}\label{classIIOPath_ac9efeccfd805685966c79e03653c7f14} 
+static bool {\bfseries has\+Extended\+Channel\+Format} (std\+::string chn\+\_\+segment)
+\item 
+static std\+::string \mbox{\hyperlink{classIIOPath_a995b880525f2c98fef7048f04f054d3f}{to\+Extended\+Channel\+Segment}} (bool output, std\+::string chn\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructs the channel segment of the path. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{classIIOPath_a0f86b783a1d79228e0601499db6d1577}{to\+Topic\+Name}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Converts a path to a ROS2 topic name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classIIOPath_aa17e8d0cf955590586cc2ea4ba8a4551}\label{classIIOPath_aa17e8d0cf955590586cc2ea4ba8a4551} 
+std\+::string {\bfseries m\+\_\+base\+\_\+path}
+\item 
+\Hypertarget{classIIOPath_a38bb25432ddbe150fec5573ecea94443}\label{classIIOPath_a38bb25432ddbe150fec5573ecea94443} 
+char {\bfseries m\+\_\+delimiter}
+\item 
+\Hypertarget{classIIOPath_ac3d89de78352cfc0a19a3c78be0748f7}\label{classIIOPath_ac3d89de78352cfc0a19a3c78be0748f7} 
+std\+::vector$<$ std\+::string $>$ {\bfseries m\+\_\+segments}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents and manipulates Industrial I/O (IIO) paths that are used to uniquely identify IIO devices, attributes, and channels from a context. 
+
+Examples of valid paths types\+:
+\begin{DoxyItemize}
+\item CONTEXT\+: "{}"{}
+\item CONTEXT\+\_\+\+ATTR\+: "{}context-\/attribute"{}
+\item DEVICE\+: "{}device-\/name"{}
+\item DEVICE\+\_\+\+ATTR\+: "{}device-\/name/attribute-\/name"{}
+\item CHANNEL\+: "{}device-\/name/chn-\/prefix\+\_\+channel-\/name"{}
+\item CHANNEL\+\_\+\+ATTR\+: "{}device-\/name/chn-\/prefix\+\_\+channel-\/name/attribute-\/name"{} 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3}\label{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3} 
+\index{IIOPath@{IIOPath}!IIOPath@{IIOPath}}
+\index{IIOPath@{IIOPath}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{IIOPath()}{IIOPath()}}
+{\footnotesize\ttfamily IIOPath\+::\+IIOPath (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{char}]{delimiter = {\ttfamily \textquotesingle{}/\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs an \doxylink{classIIOPath}{IIOPath} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The base path for the IIO object. \\
+\hline
+{\em delimiter} & The character used to separate path segments (default is \textquotesingle{}/\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIIOPath_a5267692c774185c148b6047d32b64879}\label{classIIOPath_a5267692c774185c148b6047d32b64879} 
+\index{IIOPath@{IIOPath}!append@{append}}
+\index{append@{append}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::append (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{suffix }\end{DoxyParamCaption})}
+
+
+
+Appends a suffix to the current IIO path. 
+
+The suffix is used to create a new path pointing to a specific attribute or nested element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em suffix} & The string to append to the base path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated path as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_aa089783a455bca56348d522880cb3484}\label{classIIOPath_aa089783a455bca56348d522880cb3484} 
+\index{IIOPath@{IIOPath}!basePath@{basePath}}
+\index{basePath@{basePath}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{basePath()}{basePath()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the original path used to create this object. 
+
+\begin{DoxyReturn}{Returns}
+The base path as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae}\label{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae} 
+\index{IIOPath@{IIOPath}!getChannelAttrSegment@{getChannelAttrSegment}}
+\index{getChannelAttrSegment@{getChannelAttrSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getChannelAttrSegment()}{getChannelAttrSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Channel\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the channel attribute segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+The channel attribute as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d}\label{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d} 
+\index{IIOPath@{IIOPath}!getChannelSegment@{getChannelSegment}}
+\index{getChannelSegment@{getChannelSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getChannelSegment()}{getChannelSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Channel\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the channel name segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+The channel name as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9}\label{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9} 
+\index{IIOPath@{IIOPath}!getContextAttrSegment@{getContextAttrSegment}}
+\index{getContextAttrSegment@{getContextAttrSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getContextAttrSegment()}{getContextAttrSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Context\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the context attribute segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+The context attribute as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098}\label{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098} 
+\index{IIOPath@{IIOPath}!getDeviceAttrSegment@{getDeviceAttrSegment}}
+\index{getDeviceAttrSegment@{getDeviceAttrSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getDeviceAttrSegment()}{getDeviceAttrSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Device\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the device attribute segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+The device attribute as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a628013ed289d637eb19ec39718e1fb02}\label{classIIOPath_a628013ed289d637eb19ec39718e1fb02} 
+\index{IIOPath@{IIOPath}!getDeviceSegment@{getDeviceSegment}}
+\index{getDeviceSegment@{getDeviceSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getDeviceSegment()}{getDeviceSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Device\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the device name segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+The device name as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a09da667d213f45666b9274e59d2cb223}\label{classIIOPath_a09da667d213f45666b9274e59d2cb223} 
+\index{IIOPath@{IIOPath}!getExtendedChannelSegment@{getExtendedChannelSegment}}
+\index{getExtendedChannelSegment@{getExtendedChannelSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{getExtendedChannelSegment()}{getExtendedChannelSegment()}}
+{\footnotesize\ttfamily std\+::pair$<$ bool, std\+::string $>$ IIOPath\+::get\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Extracts the channel information segment from the path. 
+
+\begin{DoxyReturn}{Returns}
+A pair containing a boolean indicating if the channel is of output type and the channel name as a string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The boolean variable helps to uniquely identify channels with the same name but different types (input/output). 
+\end{DoxyNote}
+\Hypertarget{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670}\label{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670} 
+\index{IIOPath@{IIOPath}!isValid@{isValid}}
+\index{isValid@{isValid}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool IIOPath\+::is\+Valid (\begin{DoxyParamCaption}\item[{const IIOPath\+Type}]{type }\end{DoxyParamCaption})}
+
+
+
+Validates the current IIO path based on the specified type. 
+
+This function checks if the current path conforms to the expected structure for the given IIOPath\+Type. It ensures that the path contains the necessary segments and follows the correct format for the specified type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of IIO path to validate (e.\+g., {\ttfamily CONTEXT}, {\ttfamily DEVICE}, {\ttfamily CHANNEL}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the path is valid for the specified type, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a13168489d39273e5aeac4c2071b44c34}\label{classIIOPath_a13168489d39273e5aeac4c2071b44c34} 
+\index{IIOPath@{IIOPath}!split@{split}}
+\index{split@{split}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ IIOPath\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Splits a string into segments based on the delimiter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The input string to be split. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of substrings obtained by splitting the input string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a995b880525f2c98fef7048f04f054d3f}\label{classIIOPath_a995b880525f2c98fef7048f04f054d3f} 
+\index{IIOPath@{IIOPath}!toExtendedChannelSegment@{toExtendedChannelSegment}}
+\index{toExtendedChannelSegment@{toExtendedChannelSegment}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{toExtendedChannelSegment()}{toExtendedChannelSegment()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::to\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}\item[{bool}]{output,  }\item[{std\+::string}]{chn\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Constructs the channel segment of the path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & A boolean indicating if the channel is an output channel. \\
+\hline
+{\em chn\+\_\+name} & The name of the channel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed channel segment as a string. 
+\end{DoxyReturn}
+\Hypertarget{classIIOPath_a0f86b783a1d79228e0601499db6d1577}\label{classIIOPath_a0f86b783a1d79228e0601499db6d1577} 
+\index{IIOPath@{IIOPath}!toTopicName@{toTopicName}}
+\index{toTopicName@{toTopicName}!IIOPath@{IIOPath}}
+\doxysubsubsection{\texorpdfstring{toTopicName()}{toTopicName()}}
+{\footnotesize\ttfamily std\+::string IIOPath\+::to\+Topic\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a path to a ROS2 topic name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The input path to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The converted topic name as a string.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+ROS2 topic names cannot contain \textquotesingle{}-\/\textquotesingle{} characters. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/adi\+\_\+iio/iio\+\_\+path.\+hpp\item 
+src/iio\+\_\+path.\+cpp\end{DoxyCompactItemize}

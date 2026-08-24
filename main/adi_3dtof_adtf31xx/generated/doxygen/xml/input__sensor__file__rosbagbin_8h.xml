@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="input__sensor__file__rosbagbin_8h" kind="file" language="C++">
+    <compoundname>input_sensor_file_rosbagbin.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="input__sensor_8h" local="yes">input_sensor.h</includes>
+    <includedby refid="input__sensor__factory_8h" local="yes">include/input_sensor_factory.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>adi_camera.h</label>
+        <link refid="adi__camera_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>input_sensor.h</label>
+        <link refid="input__sensor_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/input_sensor_file_rosbagbin.h</label>
+        <link refid="input__sensor__file__rosbagbin_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>array</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="5">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/adi_3dtof_adtf31xx.h</label>
+        <link refid="adi__3dtof__adtf31xx_8h_source"/>
+      </node>
+      <node id="2">
+        <label>include/input_sensor_factory.h</label>
+        <link refid="input__sensor__factory_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/input_sensor_file_rosbagbin.h</label>
+        <link refid="input__sensor__file__rosbagbin_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classInputSensorFileRosbagBin" prot="public">InputSensorFileRosbagBin</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c),<sp/>2023<sp/>-<sp/>Analog<sp/>Devices<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">This<sp/>software<sp/>is<sp/>PROPRIETARY<sp/>&amp;<sp/>CONFIDENTIAL<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INPUT_SENSOR_FILE_ROSBAGBIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_SENSOR_FILE_ROSBAGBIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_sensor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classInputSensorFileRosbagBin" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInputSensorFileRosbagBin" kindref="compound">InputSensorFileRosbagBin</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classIInputSensor" kindref="compound">IInputSensor</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classInputSensorFileRosbagBin" kindref="compound">InputSensorFileRosbagBin</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>input_frame_width_<sp/>=<sp/>1024;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>input_frame_height_<sp/>=<sp/>1024;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>processing_scale_<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[0]<sp/>=<sp/>781.291565f;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[1]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[2]<sp/>=<sp/>520.714905f;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[3]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[4]<sp/>=<sp/>781.87738f;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[5]<sp/>=<sp/>513.001709f;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[6]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[7]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[8]<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[0]<sp/>=<sp/>-0.0693829656f;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[1]<sp/>=<sp/>0.115561306f;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[2]<sp/>=<sp/>0.000196631983f;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[3]<sp/>=<sp/>-0.00011414945f;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[4]<sp/>=<sp/>0.0944529548f;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[5]<sp/>=<sp/>0.269195855f;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[6]<sp/>=<sp/>-0.00811018609f;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_intrinsics_.<ref refid="structCameraIntrinsics_1addb98003691f1c0d46fac95fbe2fba31" kindref="member">distortion_coeffs</ref>[7]<sp/>=<sp/>0.190516844f;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initializing<sp/>extrinsics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[0]<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[1]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[2]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[3]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[4]<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[5]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[6]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[7]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[8]<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[0]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[1]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>camera_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[2]<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openSensor(</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>sensor_name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_height,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>config_file_name,<sp/>std::string<sp/>input_sensor_ip)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>configureSensor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_mode)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getIntrinsics(<ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics_data)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getExtrinsics(<ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics_data)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNextFrame(</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>out_depth_frame,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>out_ab_frame,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>out_conf_frame,<sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>out_xyz_frame)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getFrameTimestamp(rclcpp::Time<sp/>*<sp/>timestamp)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeSensor()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474" kindref="member">setABinvalidationThreshold</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*threshold*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="81"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6" kindref="member">setConfidenceThreshold</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*threshold*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="92"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here,<sp/>should<sp/>be<sp/>overridden<sp/>in<sp/>derived<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8" kindref="member">setJBLFFilterState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*enable_jblf_filter*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="103"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here,<sp/>should<sp/>be<sp/>overridden<sp/>in<sp/>derived<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c" kindref="member">setJBLFFilterSize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*jbfl_filter_size*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="114"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here,<sp/>should<sp/>be<sp/>overridden<sp/>in<sp/>derived<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734" kindref="member">setRadialFilterMinThreshold</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*radial_min_threshold*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="125"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here,<sp/>should<sp/>be<sp/>overridden<sp/>in<sp/>derived<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e" kindref="member">setRadialFilterMaxThreshold</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*radial_max_threshold*/</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>override</highlight></codeline>
+<codeline lineno="136"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Does<sp/>nothing<sp/>here,<sp/>should<sp/>be<sp/>overridden<sp/>in<sp/>derived<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>std::string<sp/>in_file_name_;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>std::ifstream<sp/>in_file_;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>uint32_t<sp/>input_frame_width_;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>uint32_t<sp/>input_frame_height_;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>processing_scale_;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>uint32_t<sp/>header_version_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>uint32_t<sp/>frame_pitch_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>uint64_t<sp/>device_timestamp_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>uint64_t<sp/>frame_timestamp_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>uint32_t<sp/>bytes_per_pixel_<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>uint32_t<sp/>total_frames_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>uint8_t<sp/>header_buffer_[36];</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>uint8_t<sp/>cam_info_buffer_[400];</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>camera_intrinsics_;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref><sp/>camera_extrinsics_;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/input_sensor_file_rosbagbin.h"/>
+  </compounddef>
+</doxygen>

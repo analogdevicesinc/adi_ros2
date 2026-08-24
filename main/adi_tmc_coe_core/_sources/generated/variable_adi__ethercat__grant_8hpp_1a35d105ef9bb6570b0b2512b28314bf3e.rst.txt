@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__ethercat__grant_8hpp_1a35d105ef9bb6570b0b2512b28314bf3e:
+
+Variable cap_string_
+====================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_adi_ethercat_grant.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: cap_string_
+   :project: adi_tmc_coe_core Doxygen Project

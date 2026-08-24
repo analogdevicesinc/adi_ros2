@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1ab2db2a92f0aa23fe6854df1feb8b7218:
+
+Variable EXEC_CMD_RETRIES_DEFAULT
+=================================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: EXEC_CMD_RETRIES_DEFAULT
+   :project: adi_tmcl Doxygen Project

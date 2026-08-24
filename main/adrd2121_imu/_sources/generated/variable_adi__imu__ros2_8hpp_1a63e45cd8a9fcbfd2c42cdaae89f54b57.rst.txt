@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1a63e45cd8a9fcbfd2c42cdaae89f54b57:
+
+Variable IMU_ACCL_SCALE_SIZE
+============================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IMU_ACCL_SCALE_SIZE
+   :project: adrd2121_imu Doxygen Project

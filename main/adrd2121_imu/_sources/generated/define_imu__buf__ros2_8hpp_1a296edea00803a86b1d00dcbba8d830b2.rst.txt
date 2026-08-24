@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2:
+
+Define MAX_CLEAR_RETRY
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: MAX_CLEAR_RETRY
+   :project: adrd2121_imu Doxygen Project

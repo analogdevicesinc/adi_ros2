@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInputSensorFactory" kind="class" language="C++" prot="public">
+    <compoundname>InputSensorFactory</compoundname>
+    <includes refid="input__sensor__factory_8h" local="no">input_sensor_factory.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classInputSensorFactory_1a8c27b0e5e5d46855ab37420486c1c092" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classIInputSensor" kindref="compound">IInputSensor</ref> *</type>
+        <definition>static IInputSensor * InputSensorFactory::getInputSensor</definition>
+        <argsstring>(int input_sensor_type)</argsstring>
+        <name>getInputSensor</name>
+        <qualifiedname>InputSensorFactory::getInputSensor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>input_sensor_type</declname>
+        </param>
+        <briefdescription>
+<para>Get the Input Sensor object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input_sensor_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IInputSensor* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_factory.h" line="29" column="24" bodyfile="include/input_sensor_factory.h" bodystart="29" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This class is input sensor factory. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/input_sensor_factory.h" line="20" column="1" bodyfile="include/input_sensor_factory.h" bodystart="21" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classInputSensorFactory_1a8c27b0e5e5d46855ab37420486c1c092" prot="public" virt="non-virtual"><scope>InputSensorFactory</scope><name>getInputSensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

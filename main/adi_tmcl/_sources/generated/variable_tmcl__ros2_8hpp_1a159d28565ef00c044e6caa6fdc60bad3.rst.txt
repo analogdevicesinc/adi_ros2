@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1a159d28565ef00c044e6caa6fdc60bad3:
+
+Variable tmcl_custom_cmd_
+=========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: tmcl_custom_cmd_
+   :project: adi_tmcl Doxygen Project

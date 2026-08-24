@@ -1,0 +1,72 @@
+
+.. _file_include_adi_imu_utils_adis_device_registry.h:
+
+File adis_device_registry.h
+===========================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_imu_utils>` (``include/adi_imu/utils``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_imu/utils/adis_device_registry.h``)
+-------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_imu_utils_adis_device_registry.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu/utils/adis_register_definitions.h`` (:ref:`file_include_adi_imu_utils_adis_register_definitions.h`)
+
+- ``stdexcept``
+
+- ``string``
+
+- ``unordered_map``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_src_adis_device_factory.cpp`
+
+- :ref:`file_src_adis_register_map.cpp`
+
+- :ref:`file_src_iio_wrapper.cpp`
+
+- :ref:`file_src_utils_adis_device_registry.cpp`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_adi_imu`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classadi__imu_1_1ADISDeviceRegistry`
+

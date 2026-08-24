@@ -1,0 +1,14 @@
+.. _exhale_variable_adis__register__definitions_8h_1a7dfad2cb7a05467d966f48540258aba7:
+
+Variable adi_imu::registerNames
+===============================
+
+- Defined in :ref:`file_include_adi_imu_utils_adis_register_definitions.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: adi_imu::registerNames
+   :project: adi_imu Doxygen Project

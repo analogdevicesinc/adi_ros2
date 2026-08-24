@@ -1,0 +1,122 @@
+
+.. _file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp:
+
+File tmc_coe_interpreter.hpp
+============================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmc_coe_core>` (``include/adi_tmc_coe_core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmc_coe_core/tmc_coe_interpreter.hpp``)
+-----------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``osal.h``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``stdio.h``
+
+- ``string``
+
+- ``thread``
+
+- ``vector``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+
+- :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structPACKED`
+
+- :ref:`exhale_class_classTmcCoeInterpreter`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595`
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec`
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb`
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15`
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a`
+
+- :ref:`exhale_enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536`
+
+- :ref:`exhale_typedef_tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682`
+
+- :ref:`exhale_variable_tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018`
+

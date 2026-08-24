@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__motor_8hpp_1a8e38822bfb002baacfb0232828d25153:
+
+Variable ANGULAR_FULL_ROTATION
+==============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: ANGULAR_FULL_ROTATION
+   :project: adi_tmc_coe_core Doxygen Project

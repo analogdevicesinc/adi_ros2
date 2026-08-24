@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classADI3DToFADTF31xxFrameInfo" kind="class" language="C++" prot="public">
+    <compoundname>ADI3DToFADTF31xxFrameInfo</compoundname>
+    <includes refid="adi__3dtof__adtf31xx__frame__info_8h" local="no">adi_3dtof_adtf31xx_frame_info.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a8eb175bc78769a1702bf1670eeacef90" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxFrameInfo::depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>depth_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::depth_frame_</qualifiedname>
+        <briefdescription>
+<para>Depth image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="223" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a5c6530c8cab99072cb01a705c7d6cec6" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxFrameInfo::ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>ab_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::ab_frame_</qualifiedname>
+        <briefdescription>
+<para>AB image. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="228" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a434b0c3ed0bc8506ac2f262e7f458d20" prot="private" static="no" mutable="no">
+        <type>short *</type>
+        <definition>short* ADI3DToFADTF31xxFrameInfo::xyz_frame_</definition>
+        <argsstring></argsstring>
+        <name>xyz_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::xyz_frame_</qualifiedname>
+        <briefdescription>
+<para>xyz frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="233" column="10" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a230ca42bede5f4ae382fcfab85ba5728" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ADI3DToFADTF31xxFrameInfo::conf_frame_</definition>
+        <argsstring></argsstring>
+        <name>conf_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::conf_frame_</qualifiedname>
+        <briefdescription>
+<para>conf frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="238" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a0d193b3bb0469bce303a3038222007d8" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxFrameInfo::compressed_depth_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_depth_frame_</qualifiedname>
+        <briefdescription>
+<para>compressed depth frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="243" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1afbd08b5a3310f4c0c234993152c1aecd" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxFrameInfo::compressed_ab_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_ab_frame_</qualifiedname>
+        <briefdescription>
+<para>compressed ab frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="248" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a16159bde29e12e7e093774c00b66a39e" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ADI3DToFADTF31xxFrameInfo::compressed_conf_frame_</definition>
+        <argsstring></argsstring>
+        <name>compressed_conf_frame_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_conf_frame_</qualifiedname>
+        <briefdescription>
+<para>compressed conf frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="253" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a3e34f65399a48785eb7840ce964ab7f1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::compressed_depth_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_depth_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_depth_frame_size_</qualifiedname>
+        <briefdescription>
+<para>compressed depth frame size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="258" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a903caede5e5466d795206e2bb9416f29" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::compressed_ab_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_ab_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_ab_frame_size_</qualifiedname>
+        <briefdescription>
+<para>compressed ab frame size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="263" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1aca7b9b704231eb733afee67fe5fae2b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::compressed_conf_frame_size_</definition>
+        <argsstring></argsstring>
+        <name>compressed_conf_frame_size_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::compressed_conf_frame_size_</qualifiedname>
+        <briefdescription>
+<para>compressed conf frame size </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="268" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1afd416a2bd424beccbf65d08704e5e4e2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::image_width_</definition>
+        <argsstring></argsstring>
+        <name>image_width_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::image_width_</qualifiedname>
+        <briefdescription>
+<para>Image width. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="272" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a81bad7c8f4a3e990ae3b33bd2f22bf89" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::image_height_</definition>
+        <argsstring></argsstring>
+        <name>image_height_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::image_height_</qualifiedname>
+        <briefdescription>
+<para>Image height. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="276" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classADI3DToFADTF31xxFrameInfo_1a17f3aa3c9c96dda387c8bab7c734352c" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ADI3DToFADTF31xxFrameInfo::frame_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>frame_timestamp_</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::frame_timestamp_</qualifiedname>
+        <briefdescription>
+<para>Frame Timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="280" column="16" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1ae8279c5be82e30dc96a0ee9841dc550c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFADTF31xxFrameInfo::ADI3DToFADTF31xxFrameInfo</definition>
+        <argsstring>(int image_width, int image_height)</argsstring>
+        <name>ADI3DToFADTF31xxFrameInfo</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::ADI3DToFADTF31xxFrameInfo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>image_height</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>image_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image_height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- Image Height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="24" column="3" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="24" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a6b1988ae3f4f9d503428081d7377d06f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ADI3DToFADTF31xxFrameInfo::~ADI3DToFADTF31xxFrameInfo</definition>
+        <argsstring>()</argsstring>
+        <name>~ADI3DToFADTF31xxFrameInfo</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::~ADI3DToFADTF31xxFrameInfo</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="56" column="3" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="56" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1adb147e66d9df45bf3ff9172fdee683bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned short *</type>
+        <definition>unsigned short * ADI3DToFADTF31xxFrameInfo::getDepthFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getDepthFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getDepthFrame</qualifiedname>
+        <briefdescription>
+<para>Get the depth image frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned short* depth image pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="86" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1aa9247d1538507270c84626d5c8517fcf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned short *</type>
+        <definition>unsigned short * ADI3DToFADTF31xxFrameInfo::getABFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getABFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getABFrame</qualifiedname>
+        <briefdescription>
+<para>Get the AB image frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned short* AB image pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="93" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a8cd085423e0f024c760291566b10d6e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * ADI3DToFADTF31xxFrameInfo::getXYZFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getXYZFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getXYZFrame</qualifiedname>
+        <briefdescription>
+<para>Get point cloud frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>short* point cloud pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="100" column="10" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a66f49bdd3461bcc36893f7b20fdf0664" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned short *</type>
+        <definition>unsigned short * ADI3DToFADTF31xxFrameInfo::getConfFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getConfFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getConfFrame</qualifiedname>
+        <briefdescription>
+<para>Get Confidence frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned short* Confidence pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="107" column="19" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1ae0b2804ead7a30537063fd5eba77809e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * ADI3DToFADTF31xxFrameInfo::getCompressedDepthFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedDepthFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedDepthFrame</qualifiedname>
+        <briefdescription>
+<para>Get Compressed depth image frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned char* compressed depth image pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="114" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a4fc4ea0e0451f456301d5ac3242c009f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * ADI3DToFADTF31xxFrameInfo::getCompressedABFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedABFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedABFrame</qualifiedname>
+        <briefdescription>
+<para>Get Compressed AB image frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned char* compressed AB image pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="121" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1aa81b98918aff4ca2cde13ecec7dc0f2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * ADI3DToFADTF31xxFrameInfo::getCompressedConfFrame</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedConfFrame</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedConfFrame</qualifiedname>
+        <briefdescription>
+<para>Get Compressed Confidence image frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned char* compressed AB image pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="128" column="18" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a7fc32e322d9c55b6a3b375c6806ff4d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>rclcpp::Time *</type>
+        <definition>rclcpp::Time * ADI3DToFADTF31xxFrameInfo::getFrameTimestampPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameTimestampPtr</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getFrameTimestampPtr</qualifiedname>
+        <briefdescription>
+<para>Get Frame Timestamp Pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>rclcpp::Time* Frame Timnestamp pointer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="135" column="17" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a4415dad34be15abae881107efc6e08bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time ADI3DToFADTF31xxFrameInfo::getFrameTimestamp</definition>
+        <argsstring>() const</argsstring>
+        <name>getFrameTimestamp</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getFrameTimestamp</qualifiedname>
+        <briefdescription>
+<para>Get Frame Timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>rclcpp::Time Frame Timestamp </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="142" column="16" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="142" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1ad6a41f39eb4cf4d485a98c10943af81a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::getCompressedDepthFrameSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedDepthFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedDepthFrameSize</qualifiedname>
+        <briefdescription>
+<para>Gives compressed depth image size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int size of compressed depth image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="149" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1ad8369bc1735d8a6a936b74c2981f3082" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::getCompressedABFrameSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedABFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedABFrameSize</qualifiedname>
+        <briefdescription>
+<para>Gives compressed AB image size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int size of compressed AB image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="156" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1aa1e75ec47b9bf54883eeb4c2af3f4b96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xxFrameInfo::getCompressedConfFrameSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getCompressedConfFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::getCompressedConfFrameSize</qualifiedname>
+        <briefdescription>
+<para>Gives compressed confidence image size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int size of compressed confidence image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="163" column="7" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1ab46a8e5b4a9deaa8ac5f14514b591134" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFADTF31xxFrameInfo::setCompressedDepthFrameSize</definition>
+        <argsstring>(int compressed_depth_frame_size)</argsstring>
+        <name>setCompressedDepthFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::setCompressedDepthFrameSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>compressed_depth_frame_size</declname>
+        </param>
+        <briefdescription>
+<para>Set the Compressed depth image size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compressed_depth_frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of compressed depth image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="170" column="8" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a391a3d70f1773f8ba77da00d6a56c9e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFADTF31xxFrameInfo::setCompressedABFrameSize</definition>
+        <argsstring>(int compressed_ab_frame_size)</argsstring>
+        <name>setCompressedABFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::setCompressedABFrameSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>compressed_ab_frame_size</declname>
+        </param>
+        <briefdescription>
+<para>Set the Compressed AB Image Size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compressed_ab_frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of compressed AB image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="180" column="8" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a9bf79d0b36e38298b92d01f5953fff84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADI3DToFADTF31xxFrameInfo::setCompressedConfFrameSize</definition>
+        <argsstring>(int compressed_conf_frame_size)</argsstring>
+        <name>setCompressedConfFrameSize</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::setCompressedConfFrameSize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>compressed_conf_frame_size</declname>
+        </param>
+        <briefdescription>
+<para>Set the Compressed confidence Image Size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>compressed_conf_frame_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of compressed confidence image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="190" column="8" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="190" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classADI3DToFADTF31xxFrameInfo_1a56ec3a20bb4d71e973b2e65938427e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classADI3DToFADTF31xxFrameInfo" kindref="compound">ADI3DToFADTF31xxFrameInfo</ref> &amp;</type>
+        <definition>ADI3DToFADTF31xxFrameInfo &amp; ADI3DToFADTF31xxFrameInfo::operator=</definition>
+        <argsstring>(const ADI3DToFADTF31xxFrameInfo &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ADI3DToFADTF31xxFrameInfo::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classADI3DToFADTF31xxFrameInfo" kindref="compound">ADI3DToFADTF31xxFrameInfo</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="196" column="30" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="196" bodyend="217"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is the class for adtf31xx sensor frame. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_adtf31xx_frame_info.h" line="15" column="1" bodyfile="include/adi_3dtof_adtf31xx_frame_info.h" bodystart="16" bodyend="281"/>
+    <listofallmembers>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a5c6530c8cab99072cb01a705c7d6cec6" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>ab_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1ae8279c5be82e30dc96a0ee9841dc550c" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>ADI3DToFADTF31xxFrameInfo</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1afbd08b5a3310f4c0c234993152c1aecd" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_ab_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a903caede5e5466d795206e2bb9416f29" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_ab_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a16159bde29e12e7e093774c00b66a39e" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_conf_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1aca7b9b704231eb733afee67fe5fae2b1" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_conf_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a0d193b3bb0469bce303a3038222007d8" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_depth_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a3e34f65399a48785eb7840ce964ab7f1" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>compressed_depth_frame_size_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a230ca42bede5f4ae382fcfab85ba5728" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>conf_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a8eb175bc78769a1702bf1670eeacef90" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>depth_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a17f3aa3c9c96dda387c8bab7c734352c" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>frame_timestamp_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1aa9247d1538507270c84626d5c8517fcf" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getABFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a4fc4ea0e0451f456301d5ac3242c009f" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedABFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1ad8369bc1735d8a6a936b74c2981f3082" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedABFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1aa81b98918aff4ca2cde13ecec7dc0f2f" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedConfFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1aa1e75ec47b9bf54883eeb4c2af3f4b96" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedConfFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1ae0b2804ead7a30537063fd5eba77809e" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedDepthFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1ad6a41f39eb4cf4d485a98c10943af81a" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getCompressedDepthFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a66f49bdd3461bcc36893f7b20fdf0664" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getConfFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1adb147e66d9df45bf3ff9172fdee683bb" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getDepthFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a4415dad34be15abae881107efc6e08bd" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getFrameTimestamp</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a7fc32e322d9c55b6a3b375c6806ff4d6" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getFrameTimestampPtr</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a8cd085423e0f024c760291566b10d6e7" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>getXYZFrame</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a81bad7c8f4a3e990ae3b33bd2f22bf89" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>image_height_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1afd416a2bd424beccbf65d08704e5e4e2" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>image_width_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a56ec3a20bb4d71e973b2e65938427e30" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>operator=</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a391a3d70f1773f8ba77da00d6a56c9e1" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>setCompressedABFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a9bf79d0b36e38298b92d01f5953fff84" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>setCompressedConfFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1ab46a8e5b4a9deaa8ac5f14514b591134" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>setCompressedDepthFrameSize</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a434b0c3ed0bc8506ac2f262e7f458d20" prot="private" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>xyz_frame_</name></member>
+      <member refid="classADI3DToFADTF31xxFrameInfo_1a6b1988ae3f4f9d503428081d7377d06f" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xxFrameInfo</scope><name>~ADI3DToFADTF31xxFrameInfo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

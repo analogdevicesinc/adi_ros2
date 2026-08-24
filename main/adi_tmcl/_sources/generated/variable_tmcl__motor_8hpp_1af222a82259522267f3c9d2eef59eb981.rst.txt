@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981:
+
+Variable PUB_RATE_MAX
+=====================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_motor.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: PUB_RATE_MAX
+   :project: adi_tmcl Doxygen Project

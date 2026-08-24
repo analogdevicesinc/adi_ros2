@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct____tADI2DPoint" kind="struct" language="C++" prot="public">
+    <compoundname>__tADI2DPoint</compoundname>
+    <includes refid="image__proc__utils_8h" local="no">image_proc_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____tADI2DPoint_1ae07b5e083da4e1f30f7c73f7ce9f5f79" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short __tADI2DPoint::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>__tADI2DPoint::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="50" column="9" bodyfile="include/image_proc_utils.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADI2DPoint_1aa1962c234403508558567b8b38ab49f8" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short __tADI2DPoint::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>__tADI2DPoint::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="51" column="9" bodyfile="include/image_proc_utils.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure to hold point. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/image_proc_utils.h" line="48" column="1" bodyfile="include/image_proc_utils.h" bodystart="49" bodyend="52"/>
+    <listofallmembers>
+      <member refid="struct____tADI2DPoint_1ae07b5e083da4e1f30f7c73f7ce9f5f79" prot="public" virt="non-virtual"><scope>__tADI2DPoint</scope><name>x</name></member>
+      <member refid="struct____tADI2DPoint_1aa1962c234403508558567b8b38ab49f8" prot="public" virt="non-virtual"><scope>__tADI2DPoint</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_define_adi__imu__ros2_8hpp_1a9cbe04926e6fe11f1d69a60b27ac369c:
+
+Define DEC_RATE_CONST
+=====================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DEC_RATE_CONST
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,95 @@
+
+.. _file_include_adi_tmcl_tmcl_motor.hpp:
+
+File tmcl_motor.hpp
+===================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmcl>` (``include/adi_tmcl``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmcl/tmcl_motor.hpp``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmcl_tmcl_motor.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmcl/msg/tmc_info.hpp``
+
+- ``adi_tmcl/tmcl_common.hpp`` (:ref:`file_include_adi_tmcl_tmcl_common.hpp`)
+
+- ``adi_tmcl/tmcl_interpreter.hpp`` (:ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`)
+
+- ``geometry_msgs/msg/twist.hpp``
+
+- ``std_msgs/msg/int32.hpp``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adi_tmcl_tmcl_bldc_motor.hpp`
+
+- :ref:`file_include_adi_tmcl_tmcl_stepper_motor.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classMotor`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_tmcl__motor_8hpp_1aa612edeaf02eccda7a6bea7677b0a8ae`
+
+- :ref:`exhale_enum_tmcl__motor_8hpp_1ae44377f79aeece7b10379f98e81218c2`
+
+- :ref:`exhale_enum_tmcl__motor_8hpp_1aa943247d5ffb123900e85b02d883d65c`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a72ad581b03018132ee9a42722bd59bc2`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a8e38822bfb002baacfb0232828d25153`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a807cdb00d333425fb21bdeba07c7be54`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1aa08a577393243b86dfd2a97e61443673`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a33af3246dde749fd66c157cc6e6a3be3`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1af222a82259522267f3c9d2eef59eb981`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a32acc7c1c5958277785c01a5978632f6`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a3f221b731c9831a00c2bede678fe27be`
+
+- :ref:`exhale_variable_tmcl__motor_8hpp_1a594c69c3fc1b4dd8b585f7a3da714624`
+

@@ -1,0 +1,14 @@
+.. _exhale_enum_tmcl__interpreter_8hpp_1a0fb8597208914ecd3398bc38c486aa0e:
+
+Enum tmcl_interface_t
+=====================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: tmcl_interface_t
+   :project: adi_tmcl Doxygen Project

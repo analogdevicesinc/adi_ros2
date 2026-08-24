@@ -1,0 +1,14 @@
+.. _exhale_define_imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726:
+
+Define DEFAULT_BAUD_RATE
+========================
+
+- Defined in :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DEFAULT_BAUD_RATE
+   :project: adrd2121_imu Doxygen Project

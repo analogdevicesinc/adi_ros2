@@ -1,0 +1,116 @@
+
+.. _file_include_adrd2121_imu_imu_buf_ros2.hpp:
+
+File imu_buf_ros2.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/imu_buf_ros2.hpp``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_imu_buf_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_imu_driver.h``
+
+- ``adrd2121_imu/msg/adi_imu.hpp``
+
+- ``adrd2121_imu/srv/buf_status.hpp``
+
+- ``adrd2121_imu/srv/imu_glob_cmd.hpp``
+
+- ``adrd2121_imu_ros2_common.hpp`` (:ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`)
+
+- ``chrono``
+
+- ``imu_spi_buffer.h``
+
+- ``memory``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``sensor_msgs/msg/imu.hpp``
+
+- ``std_srvs/srv/trigger.hpp``
+
+- ``stdint.h``
+
+- ``string``
+
+- ``sys/ioctl.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classImuBufRos2`
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_imu__buf__ros2_8hpp_1ac29e3db48d9959846a1fe65292f6fb9c`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_imu__buf__ros2_8hpp_1a5410155f3e0de8650fc06ec12f7b08e4`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1aa17bc8e7018f504a5eac115005d59970`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a5ac732de3c224518d2c8899ca63cac7a`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1aec48dbe1a76815928b060c1bae314737`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a4e2a954616e66ac3579f146544db0386`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a68654b05f39a5e88db0453de6f7fd726`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a296edea00803a86b1d00dcbba8d830b2`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a4116f60a17cb7d729e62e2a6f9a4bbde`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a39f75920a5c345ed47b80b16002ddb20`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a0dd4961968dec6a15a7c22670e184bf4`
+
+- :ref:`exhale_define_imu__buf__ros2_8hpp_1a3c7f4fe59e65d63b5f4b2964f782876f`
+

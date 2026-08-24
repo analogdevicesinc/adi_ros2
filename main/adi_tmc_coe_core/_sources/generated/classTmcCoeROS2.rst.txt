@@ -1,0 +1,17 @@
+.. _exhale_class_classTmcCoeROS2:
+
+Class TmcCoeROS2
+================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: TmcCoeROS2
+   :project: adi_tmc_coe_core Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,213 @@
+
+.. _program_listing_file_include_adrd2121_imu_imu_buf_ros2.hpp:
+
+Program Listing for File imu_buf_ros2.hpp
+=========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_imu_buf_ros2.hpp>` (``include/adrd2121_imu/imu_buf_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef IMU_BUF_ROS2
+   #define IMU_BUF_ROS2
+   
+   //ROS2 Header
+   #include "rclcpp/rclcpp.hpp"
+   #include "std_srvs/srv/trigger.hpp"
+   
+   //IMU C Driver Headers
+   #include "adi_imu_driver.h"
+   #include "imu_spi_buffer.h"
+   #include "adrd2121_imu_ros2_common.hpp"
+   
+   //Msg types for Publisher
+   #include "sensor_msgs/msg/imu.hpp"
+   #include "adrd2121_imu/msg/adi_imu.hpp"
+   
+   //Srv types for Services
+   #include "adrd2121_imu/srv/buf_status.hpp"
+   #include "adrd2121_imu/srv/imu_glob_cmd.hpp"
+   
+   
+   //CPP Headers
+   #include <memory>
+   #include <chrono>
+   #include <string>
+   #include <stdint.h>
+   #include <sys/ioctl.h>
+   
+   using namespace std;
+   using std::placeholders::_1;
+   using std::placeholders::_2;
+   
+   const char * BUFDIOtoString(int dio);
+   
+   //CONSTANTS
+   #define DEFAULT_BAUD_RATE 921600
+   #define THROW_LIMIT 1000
+   #define BUFFER_LIMIT 65536
+   #define RADIAN_CONSTANT 180
+   #define MAX_CLEAR_RETRY 3
+   #define API_CALL_DELAY 2000000
+   #define MAX_CLEAR_TIMEOUT 3001
+   #define MIN_CLEAR_TIMEOUT 500
+   #define BURST_COUNT_MIN 1
+   #define BURST_COUNT_MAX 4
+   
+   
+   enum buf_dio_pin_e
+   {
+     BUF_NONE=0,
+     BUF_DIO1=1,
+     BUF_DIO2=2,
+     BUF_DIO3=4,
+     BUF_DIO4=8,
+   };
+   
+   
+   class ImuBufRos2
+   {
+   public:
+     ImuBufRos2(const rclcpp::Node::SharedPtr& node, adi_imu_Device_t* p_device);
+   
+     ~ImuBufRos2();
+   
+     void loadParams(void);
+   
+     bool init(void);
+     
+     bool config(msg_type_e msg_type);
+   
+     bool dataReadAndPub(std::string frame_name, msg_type_e msg_type);
+   
+     bool validateData(void);
+   
+     bool startBufferRead(void);
+   
+     bool stopBufferRead(void);
+   
+     int getBufferStatus(uint16_t * status);
+   
+     bool factoryReset(void);
+   
+     bool clearFault(void);
+   
+     bool flashUpdate(void);
+   
+     bool recoverBoard(void);
+   
+     void initServiceServers(uint8_t mode_of_operation);
+   
+     std::string getStatusDescription(uint16_t status);
+   
+     bool factoryResetCB(std_srvs::srv::Trigger::Request::SharedPtr req, 
+       std_srvs::srv::Trigger::Response::SharedPtr res);
+   
+     bool clearFaultCB(std_srvs::srv::Trigger::Request::SharedPtr req, 
+       std_srvs::srv::Trigger::Response::SharedPtr res);
+   
+     bool flashUpdateCB(std_srvs::srv::Trigger::Request::SharedPtr req, 
+       std_srvs::srv::Trigger::Response::SharedPtr res);
+     
+     bool getBufferStatusCB(adrd2121_imu::srv::BufStatus::Request::SharedPtr req, 
+       adrd2121_imu::srv::BufStatus::Response::SharedPtr res);
+   
+     void setModeofOperation(uint8_t mode_of_operation);
+   
+     bool detect(void);
+   
+   private:
+     
+     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_pub_std_;
+   
+     rclcpp::Publisher<adrd2121_imu::msg::AdiImu>::SharedPtr imu_pub_adi_;
+   
+     std::string topic_name_;
+   
+     rclcpp::Node::SharedPtr node_;
+   
+     std::string usb_dev_;
+     
+     int usb_baud_;
+     
+     bool b_imu_burst_;
+   
+     int buf_overflow_;
+   
+     bool b_buf_pps_;
+   
+     int buf_data_rdy_sel_;
+   
+     int buf_data_rdy_pol_;
+   
+     int buf_pps_pol_;
+   
+     int buf_pps_sel_;
+   
+     int buf_pps_freq_;
+   
+     int buf_pin_pass_;
+   
+     int buf_watermark_int_;
+   
+     int buf_overflow_int_;
+   
+     int buf_error_int_;
+   
+     uint32_t prev_data_count_;
+   
+     uint32_t imu_data_count_;
+   
+     uint64_t start_data_count_;
+   
+     uint64_t driver_data_count_;
+     
+     uint32_t rollover_count_;
+   
+     uint32_t drop_count_;
+   
+     //Initialize Data Array and Counters for Buffer Burst
+     uint16_t buf_len_;
+   
+     uint16_t burst_raw_[MAX_BUF_LEN_BYTES*10];
+   
+     imubuf_BurstOutput_t buf_burst_out_;
+   
+     uint32_t utc_time_;
+     uint32_t utc_time_us_;
+   
+     adi_imu_BurstOutput_t burst_out_;
+   
+     uint16_t cur_buf_count_;
+   
+     bool b_first_read_;
+   
+     adi_imu_Device_t * p_device_;
+   
+     msg_type_e msg_type_;
+     
+     int buf_burst_count_;
+     
+     bool b_enable_init_recovery_;
+   
+     uint8_t mode_of_operation_;
+   
+     int clear_buffer_timeout_; 
+   
+     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr p_factoryReset;
+   
+     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr p_clearFault;
+   
+     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr p_flashUpdate;
+   
+     rclcpp::Service<adrd2121_imu::srv::BufStatus>::SharedPtr p_getBufferStatus;
+   };
+   
+   #endif //IMU_BUF_ROS2

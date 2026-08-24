@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInputSensorRosTopic" kind="class" language="C++" prot="public">
+    <compoundname>InputSensorRosTopic</compoundname>
+    <basecompoundref refid="classIInputSensor" prot="public" virt="non-virtual">IInputSensor</basecompoundref>
+    <includes refid="input__sensor__ros__topics_8h" local="no">input_sensor_ros_topics.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classInputSensorRosTopic_1a8ff87563ab12f519027281f8a9608847" prot="private" static="no">
+        <type>message_filters::sync_policies::ApproximateTime&lt; sensor_msgs::msg::Image, sensor_msgs::msg::Image &gt;</type>
+        <definition>typedef message_filters::sync_policies::ApproximateTime&lt; sensor_msgs::msg::Image, sensor_msgs::msg::Image&gt; InputSensorRosTopic::sync_policy_depth_ab_image</definition>
+        <argsstring></argsstring>
+        <name>sync_policy_depth_ab_image</name>
+        <qualifiedname>InputSensorRosTopic::sync_policy_depth_ab_image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="83" column="5" bodyfile="include/input_sensor_ros_topics.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classInputSensorRosTopic_1a19080aec70bac5b4ecf61ec2782e60f7" prot="private" static="no">
+        <type>message_filters::Synchronizer&lt; sync_policy_depth_ab_image &gt;</type>
+        <definition>typedef message_filters::Synchronizer&lt;sync_policy_depth_ab_image&gt; InputSensorRosTopic::depth_ab_image_synchronizer</definition>
+        <argsstring></argsstring>
+        <name>depth_ab_image_synchronizer</name>
+        <qualifiedname>InputSensorRosTopic::depth_ab_image_synchronizer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="84" column="41" bodyfile="include/input_sensor_ros_topics.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a635098210dea21873a315986b3321ee4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InputSensorRosTopic::in_file_name_</definition>
+        <argsstring></argsstring>
+        <name>in_file_name_</name>
+        <qualifiedname>InputSensorRosTopic::in_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="66" column="15" bodyfile="include/input_sensor_ros_topics.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a37ee8be70a61ddbae14e0736dfa7131b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InputSensorRosTopic::total_frames_</definition>
+        <argsstring></argsstring>
+        <name>total_frames_</name>
+        <qualifiedname>InputSensorRosTopic::total_frames_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="67" column="7" bodyfile="include/input_sensor_ros_topics.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a562b3e59530723b00bf9a148b660b4ee" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classADISensorFrameInfo" kindref="compound">ADISensorFrameInfo</ref> * &gt;</type>
+        <definition>std::queue&lt;ADISensorFrameInfo *&gt; InputSensorRosTopic::ros_topics_input_frames_queue_</definition>
+        <argsstring></argsstring>
+        <name>ros_topics_input_frames_queue_</name>
+        <qualifiedname>InputSensorRosTopic::ros_topics_input_frames_queue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="69" column="14" bodyfile="include/input_sensor_ros_topics.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a5ce64557debd4b483665a8778ab78692" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InputSensorRosTopic::camera_info_topic_name</definition>
+        <argsstring></argsstring>
+        <name>camera_info_topic_name</name>
+        <qualifiedname>InputSensorRosTopic::camera_info_topic_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="71" column="15" bodyfile="include/input_sensor_ros_topics.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a54da44398e62a95692a0686ae35e3b19" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InputSensorRosTopic::depth_image_topic_name</definition>
+        <argsstring></argsstring>
+        <name>depth_image_topic_name</name>
+        <qualifiedname>InputSensorRosTopic::depth_image_topic_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="72" column="15" bodyfile="include/input_sensor_ros_topics.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1abe403dd7e3f464a3a49e60eabd7bbca4" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InputSensorRosTopic::ab_image_topic_name</definition>
+        <argsstring></argsstring>
+        <name>ab_image_topic_name</name>
+        <qualifiedname>InputSensorRosTopic::ab_image_topic_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="73" column="15" bodyfile="include/input_sensor_ros_topics.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a6f077262bd6a91d23b8eb9baa9ccd8fc" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex InputSensorRosTopic::ros_topics_input_thread_mtx_</definition>
+        <argsstring></argsstring>
+        <name>ros_topics_input_thread_mtx_</name>
+        <qualifiedname>InputSensorRosTopic::ros_topics_input_thread_mtx_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="74" column="14" bodyfile="include/input_sensor_ros_topics.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a63ca2e6c23e033f057e2f3ad04d057ee" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool InputSensorRosTopic::camera_parameters_updated_</definition>
+        <argsstring></argsstring>
+        <name>camera_parameters_updated_</name>
+        <qualifiedname>InputSensorRosTopic::camera_parameters_updated_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="75" column="8" bodyfile="include/input_sensor_ros_topics.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a7769cab32352ff9370fe6ec9fdd44b09" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref></type>
+        <definition>CameraIntrinsics InputSensorRosTopic::camera_intrinsics_</definition>
+        <argsstring></argsstring>
+        <name>camera_intrinsics_</name>
+        <qualifiedname>InputSensorRosTopic::camera_intrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="76" column="20" bodyfile="include/input_sensor_ros_topics.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a0697a072c34ae62eb91f832cad10e9b5" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time InputSensorRosTopic::frame_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>frame_timestamp_</name>
+        <qualifiedname>InputSensorRosTopic::frame_timestamp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="77" column="16" bodyfile="include/input_sensor_ros_topics.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a16372319fb03234d762b61a508606e91" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; sensor_msgs::msg::CameraInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;sensor_msgs::msg::CameraInfo&gt;::SharedPtr InputSensorRosTopic::camera_info_subscriber_</definition>
+        <argsstring></argsstring>
+        <name>camera_info_subscriber_</name>
+        <qualifiedname>InputSensorRosTopic::camera_info_subscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="78" column="36" bodyfile="include/input_sensor_ros_topics.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a11978f6f67d938fb3e2dfb63fc7604bc" prot="private" static="no" mutable="no">
+        <type>message_filters::Subscriber&lt; sensor_msgs::msg::Image &gt;</type>
+        <definition>message_filters::Subscriber&lt;sensor_msgs::msg::Image&gt; InputSensorRosTopic::depth_image_subscriber_</definition>
+        <argsstring></argsstring>
+        <name>depth_image_subscriber_</name>
+        <qualifiedname>InputSensorRosTopic::depth_image_subscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="79" column="31" bodyfile="include/input_sensor_ros_topics.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1a20aa00c23cf839557c16abac2632fa64" prot="private" static="no" mutable="no">
+        <type>message_filters::Subscriber&lt; sensor_msgs::msg::Image &gt;</type>
+        <definition>message_filters::Subscriber&lt;sensor_msgs::msg::Image&gt; InputSensorRosTopic::ab_image_subscriber_</definition>
+        <argsstring></argsstring>
+        <name>ab_image_subscriber_</name>
+        <qualifiedname>InputSensorRosTopic::ab_image_subscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="80" column="31" bodyfile="include/input_sensor_ros_topics.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1ae8e6c91406bf4bba844ee07ebac7da97" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; depth_ab_image_synchronizer &gt;</type>
+        <definition>std::shared_ptr&lt;depth_ab_image_synchronizer&gt; InputSensorRosTopic::depth_ab_image_sync_ptr_</definition>
+        <argsstring></argsstring>
+        <name>depth_ab_image_sync_ptr_</name>
+        <qualifiedname>InputSensorRosTopic::depth_ab_image_sync_ptr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="85" column="19" bodyfile="include/input_sensor_ros_topics.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorRosTopic_1ace1c02de2cd7818607dec9f496fdaf34" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr InputSensorRosTopic::private_node_handle_</definition>
+        <argsstring></argsstring>
+        <name>private_node_handle_</name>
+        <qualifiedname>InputSensorRosTopic::private_node_handle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="86" column="27" bodyfile="include/input_sensor_ros_topics.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInputSensorRosTopic_1afbf1e04c0074fc1838c22d53ed06ebb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::openSensor</definition>
+        <argsstring>(std::string sensor_name, int input_image_width, int input_image_height, std::string config_file_name, std::string input_sensor_ip)</argsstring>
+        <name>openSensor</name>
+        <qualifiedname>InputSensorRosTopic::openSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1abad41c932da326bdc9ba914892080bfa">openSensor</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>sensor_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_height</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>config_file_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input_sensor_ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="29" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a748722a65cd556527e2cfe7186607a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::configureSensor</definition>
+        <argsstring>(int camera_mode)</argsstring>
+        <name>configureSensor</name>
+        <qualifiedname>InputSensorRosTopic::configureSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4">configureSensor</reimplements>
+        <param>
+          <type>int</type>
+          <declname>camera_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1aeee54c8e77673f59d873cd67ba50793f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::getIntrinsics</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics)</argsstring>
+        <name>getIntrinsics</name>
+        <qualifiedname>InputSensorRosTopic::getIntrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c">getIntrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a1e8b02a295072098e64a7a3d49d4f727" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::getExtrinsics</definition>
+        <argsstring>(CameraExtrinsics *camera_extrinsics)</argsstring>
+        <name>getExtrinsics</name>
+        <qualifiedname>InputSensorRosTopic::getExtrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33">getExtrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref> *</type>
+          <declname>camera_extrinsics</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a758a978ca19e65526ee3a97c3eae60e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorRosTopic::readNextFrame</definition>
+        <argsstring>(unsigned short *depth_frame, unsigned short *ab_frame)</argsstring>
+        <name>readNextFrame</name>
+        <qualifiedname>InputSensorRosTopic::readNextFrame</qualifiedname>
+        <reimplements refid="classIInputSensor_1abb75422c4a994ab4ce19da93788ffe4e">readNextFrame</reimplements>
+        <param>
+          <type>unsigned short *</type>
+          <declname>depth_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>ab_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a53201f4fc3c4e5cd6b243b6961731bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorRosTopic::getFrameTimestamp</definition>
+        <argsstring>(rclcpp::Time *timestamp)</argsstring>
+        <name>getFrameTimestamp</name>
+        <qualifiedname>InputSensorRosTopic::getFrameTimestamp</qualifiedname>
+        <reimplements refid="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b">getFrameTimestamp</reimplements>
+        <param>
+          <type>rclcpp::Time *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1aec18509d35ab824e013d913acd92a6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::closeSensor</definition>
+        <argsstring>()</argsstring>
+        <name>closeSensor</name>
+        <qualifiedname>InputSensorRosTopic::closeSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688">closeSensor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1aef5e1053c7473c33168b9199e58f5f72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::syncDepthandIr</definition>
+        <argsstring>(const sensor_msgs::msg::Image::ConstSharedPtr &amp;depth_image_cam, const sensor_msgs::msg::Image::ConstSharedPtr &amp;ab_image_cam)</argsstring>
+        <name>syncDepthandIr</name>
+        <qualifiedname>InputSensorRosTopic::syncDepthandIr</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Image::ConstSharedPtr &amp;</type>
+          <declname>depth_image_cam</declname>
+        </param>
+        <param>
+          <type>const sensor_msgs::msg::Image::ConstSharedPtr &amp;</type>
+          <declname>ab_image_cam</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1ae2afb29cb0195dae6f61b4742c5cc37b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::camInfoCallback</definition>
+        <argsstring>(const sensor_msgs::msg::CameraInfo::ConstSharedPtr &amp;cam_info)</argsstring>
+        <name>camInfoCallback</name>
+        <qualifiedname>InputSensorRosTopic::camInfoCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::CameraInfo::ConstSharedPtr &amp;</type>
+          <declname>cam_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="41" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1ae8e1dae39d4acda6868c71d8e2e1713f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::IrCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Image::ConstSharedPtr &amp;ab_image)</argsstring>
+        <name>IrCallback</name>
+        <qualifiedname>InputSensorRosTopic::IrCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Image::ConstSharedPtr &amp;</type>
+          <declname>ab_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a2b583037c7e64539b87a7359e8e1c7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::DepthCallback</definition>
+        <argsstring>(const sensor_msgs::msg::Image::ConstSharedPtr &amp;depth_image)</argsstring>
+        <name>DepthCallback</name>
+        <qualifiedname>InputSensorRosTopic::DepthCallback</qualifiedname>
+        <param>
+          <type>const sensor_msgs::msg::Image::ConstSharedPtr &amp;</type>
+          <declname>depth_image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="44" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1a223b0cf1d23c55f91aae0850df15fcb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::setABinvalidationThreshold</definition>
+        <argsstring>(int)</argsstring>
+        <name>setABinvalidationThreshold</name>
+        <qualifiedname>InputSensorRosTopic::setABinvalidationThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52">setABinvalidationThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Sets ABinvalidation threshold value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="50" column="8" bodyfile="include/input_sensor_ros_topics.h" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorRosTopic_1ae9657ce49afe88d78307de3c5424e933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorRosTopic::setConfidenceThreshold</definition>
+        <argsstring>(int)</argsstring>
+        <name>setConfidenceThreshold</name>
+        <qualifiedname>InputSensorRosTopic::setConfidenceThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287">setConfidenceThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Sets Confidence threshold value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_ros_topics.h" line="59" column="8" bodyfile="include/input_sensor_ros_topics.h" bodystart="59" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is input class for sensor as camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag"/>
+      </node>
+      <node id="1">
+        <label>InputSensorRosTopic</label>
+        <link refid="classInputSensorRosTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag"/>
+      </node>
+      <node id="1">
+        <label>InputSensorRosTopic</label>
+        <link refid="classInputSensorRosTopic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/input_sensor_ros_topics.h" line="26" column="1" bodyfile="include/input_sensor_ros_topics.h" bodystart="27" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classInputSensorRosTopic_1a20aa00c23cf839557c16abac2632fa64" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>ab_image_subscriber_</name></member>
+      <member refid="classInputSensorRosTopic_1abe403dd7e3f464a3a49e60eabd7bbca4" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>ab_image_topic_name</name></member>
+      <member refid="classIInputSensor_1a46f445689112cefeb388db1ddd5ff4f6" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>bytes_per_pixel_</name></member>
+      <member refid="classInputSensorRosTopic_1a16372319fb03234d762b61a508606e91" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>camera_info_subscriber_</name></member>
+      <member refid="classInputSensorRosTopic_1a5ce64557debd4b483665a8778ab78692" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>camera_info_topic_name</name></member>
+      <member refid="classInputSensorRosTopic_1a7769cab32352ff9370fe6ec9fdd44b09" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>camera_intrinsics_</name></member>
+      <member refid="classInputSensorRosTopic_1a63ca2e6c23e033f057e2f3ad04d057ee" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>camera_parameters_updated_</name></member>
+      <member refid="classInputSensorRosTopic_1ae2afb29cb0195dae6f61b4742c5cc37b" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>camInfoCallback</name></member>
+      <member refid="classInputSensorRosTopic_1aec18509d35ab824e013d913acd92a6c6" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>closeSensor</name></member>
+      <member refid="classInputSensorRosTopic_1a748722a65cd556527e2cfe7186607a50" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>configureSensor</name></member>
+      <member refid="classInputSensorRosTopic_1ae8e6c91406bf4bba844ee07ebac7da97" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>depth_ab_image_sync_ptr_</name></member>
+      <member refid="classInputSensorRosTopic_1a19080aec70bac5b4ecf61ec2782e60f7" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>depth_ab_image_synchronizer</name></member>
+      <member refid="classInputSensorRosTopic_1a11978f6f67d938fb3e2dfb63fc7604bc" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>depth_image_subscriber_</name></member>
+      <member refid="classInputSensorRosTopic_1a54da44398e62a95692a0686ae35e3b19" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>depth_image_topic_name</name></member>
+      <member refid="classInputSensorRosTopic_1a2b583037c7e64539b87a7359e8e1c7c0" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>DepthCallback</name></member>
+      <member refid="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>frame_counter_</name></member>
+      <member refid="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>frame_height_</name></member>
+      <member refid="classInputSensorRosTopic_1a0697a072c34ae62eb91f832cad10e9b5" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>frame_timestamp_</name></member>
+      <member refid="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>frame_width_</name></member>
+      <member refid="classInputSensorRosTopic_1a1e8b02a295072098e64a7a3d49d4f727" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>getExtrinsics</name></member>
+      <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameCounter</name></member>
+      <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameCounter</name></member>
+      <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameHeight</name></member>
+      <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameHeight</name></member>
+      <member refid="classInputSensorRosTopic_1a53201f4fc3c4e5cd6b243b6961731bfc" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>getFrameTimestamp</name></member>
+      <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameWidth</name></member>
+      <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>getFrameWidth</name></member>
+      <member refid="classInputSensorRosTopic_1aeee54c8e77673f59d873cd67ba50793f" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>getIntrinsics</name></member>
+      <member refid="classInputSensorRosTopic_1a635098210dea21873a315986b3321ee4" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>in_file_name_</name></member>
+      <member refid="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>input_scale_factor_</name></member>
+      <member refid="classInputSensorRosTopic_1ae8e1dae39d4acda6868c71d8e2e1713f" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>IrCallback</name></member>
+      <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>isOpened</name></member>
+      <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>isOpened</name></member>
+      <member refid="classInputSensorRosTopic_1afbf1e04c0074fc1838c22d53ed06ebb8" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>openSensor</name></member>
+      <member refid="classInputSensorRosTopic_1ace1c02de2cd7818607dec9f496fdaf34" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>private_node_handle_</name></member>
+      <member refid="classInputSensorRosTopic_1a758a978ca19e65526ee3a97c3eae60e9" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>readNextFrame</name></member>
+      <member refid="classInputSensorRosTopic_1a562b3e59530723b00bf9a148b660b4ee" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>ros_topics_input_frames_queue_</name></member>
+      <member refid="classInputSensorRosTopic_1a6f077262bd6a91d23b8eb9baa9ccd8fc" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>ros_topics_input_thread_mtx_</name></member>
+      <member refid="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" prot="protected" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>sensor_open_flag_</name></member>
+      <member refid="classInputSensorRosTopic_1a223b0cf1d23c55f91aae0850df15fcb5" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>setABinvalidationThreshold</name></member>
+      <member refid="classInputSensorRosTopic_1ae9657ce49afe88d78307de3c5424e933" prot="public" virt="virtual"><scope>InputSensorRosTopic</scope><name>setConfidenceThreshold</name></member>
+      <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setFrameHeight</name></member>
+      <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setFrameHeight</name></member>
+      <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setFrameWidth</name></member>
+      <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setFrameWidth</name></member>
+      <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setProcessingScale</name></member>
+      <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>setProcessingScale</name></member>
+      <member refid="classInputSensorRosTopic_1a8ff87563ab12f519027281f8a9608847" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>sync_policy_depth_ab_image</name></member>
+      <member refid="classInputSensorRosTopic_1aef5e1053c7473c33168b9199e58f5f72" prot="public" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>syncDepthandIr</name></member>
+      <member refid="classInputSensorRosTopic_1a37ee8be70a61ddbae14e0736dfa7131b" prot="private" virt="non-virtual"><scope>InputSensorRosTopic</scope><name>total_frames_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

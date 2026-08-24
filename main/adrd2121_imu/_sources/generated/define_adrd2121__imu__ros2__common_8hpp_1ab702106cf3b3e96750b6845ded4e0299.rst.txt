@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299:
+
+Define RESET
+============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RESET
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_define_adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba:
+
+Define BIT_HIGH
+===============
+
+- Defined in :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: BIT_HIGH
+   :project: adrd2121_imu Doxygen Project

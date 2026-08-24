@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4eab921792b8cc23f536bb47553d5451" kind="dir">
+    <compoundname>include/ros-perception/image_transport_plugins/compressed_depth_image_transport</compoundname>
+    <innerfile refid="compression__common_8h">compression_common.h</innerfile>
+    <innerfile refid="rvl__codec_8h">rvl_codec.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+.. _exhale_function_bias__estimate__node__ros2_8hpp_1a1c9d5e29ad8899afe0c34571ddee18f9:
+
+Function shutdown(void)
+=======================
+
+- Defined in :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: shutdown(void)
+   :project: adrd2121_imu Doxygen Project

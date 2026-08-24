@@ -1,0 +1,1078 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tmc__coe__interpreter_8hpp" kind="file" language="C++">
+    <compoundname>tmc_coe_interpreter.hpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">thread</includes>
+    <includes local="yes">rclcpp/rclcpp.hpp</includes>
+    <includes local="yes">osal.h</includes>
+    <includedby refid="tmc__coe__motor_8hpp" local="yes">include/adi_tmc_coe_core/tmc_coe_motor.hpp</includedby>
+    <includedby refid="tmc__coe__ros2_8hpp" local="yes">include/adi_tmc_coe_core/tmc_coe_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adi_tmc_coe_core/tmc_coe_interpreter.hpp</label>
+        <link refid="tmc__coe__interpreter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>osal.h</label>
+      </node>
+      <node id="6">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>thread</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>include/adi_tmc_coe_core/tmc_coe_bldc_motor.hpp</label>
+        <link refid="tmc__coe__bldc__motor_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>include/adi_tmc_coe_core/tmc_coe_interpreter.hpp</label>
+        <link refid="tmc__coe__interpreter_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/adi_tmc_coe_core/tmc_coe_motor.hpp</label>
+        <link refid="tmc__coe__motor_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/adi_tmc_coe_core/tmc_coe_ros2.hpp</label>
+        <link refid="tmc__coe__ros2_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>include/adi_tmc_coe_core/tmc_coe_stepper_motor.hpp</label>
+        <link refid="tmc__coe__stepper__motor_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structPACKED" prot="public">PACKED</innerclass>
+    <innerclass refid="classTmcCoeInterpreter" prot="public">TmcCoeInterpreter</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15" prot="public" static="no" strong="no">
+        <type></type>
+        <name>nmt_state_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15ac157bdf0b85a40d2619cbc8bc1ae5fe2" prot="public">
+          <name>NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15a0cb1b2c6a7db1f1084886c98909a3f36" prot="public">
+          <name>INIT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15ab9e2d40f8887184797fb41b100a236a4" prot="public">
+          <name>PRE_OP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15a92c566e79ee343a86b039a7a5083015b" prot="public">
+          <name>SAFE_OP</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15a20548867389f002d7d4338fa85e40de7" prot="public">
+          <name>OPERATIONAL</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15ad9e1226e3b2229fd93211531419e6d0d" prot="public">
+          <name>SAFE_OP_ERROR</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1ac09f3621c48a441cdf902f8abbc66f15ad952e370d953c0844fb544eb7d85c5a2" prot="public">
+          <name>SAFE_OP_ERROR_ACK</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copyright (c) 2024-2025 Analog Devices, Inc. All Rights Reserved. This software is proprietary to Analog Devices, Inc. and its licensors. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="20" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ec" prot="public" static="no" strong="no">
+        <type></type>
+        <name>controlword_pos_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca6d51e17756a428d34d3ea1e33f73e748" prot="public">
+          <name>CW_SO_BIT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca53ae3c8c2cf5291d5141acebfcdcce11" prot="public">
+          <name>CW_EV_BIT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ecafd4fd73bc7ce4b636f571687bee77689" prot="public">
+          <name>CW_QS_BIT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca25064e54ac73caa1858faad6d681cb96" prot="public">
+          <name>CW_EO_BIT</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca40e36f96e3327c6a4a1e8983313bf03c" prot="public">
+          <name>CW_OMS_NEW_SET_POINT_BIT</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ecab4e4222d192e7449dcd0c8c5abd5afa3" prot="public">
+          <name>CW_OMS_CHANGE_IMMEDIATELY_BIT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca948735c917e0b1ca7d247beaeaf765e2" prot="public">
+          <name>CW_OMS_ABSOLUTE_RELATIVE_BIT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996ecab3d5406630fadeaf9d7e9ba13a5441da" prot="public">
+          <name>CW_FR_BIT</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca4b8990f38f8b97505bc63788b97c5817" prot="public">
+          <name>CW_H_BIT</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a7f4559a19018424528fa0cb1c17996eca488b0af91a00f5243d9c8151fa7850d5" prot="public">
+          <name>CW_OMS_CHANGE_SET_POINT_BIT</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Controlword </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="44" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="45" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595" prot="public" static="no" strong="no">
+        <type></type>
+        <name>control_word_val_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595a7690b021f467450541d8d89123429d40" prot="public">
+          <name>SHUTDOWN</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595a44eaafa32143d3ddf31d2074e76a0f60" prot="public">
+          <name>SWITCH_ON</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595a429b4ee477d39fdae423acdcb6bcf24c" prot="public">
+          <name>SWITCH_ON_ENABLE_OPERATION</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595a882006c1fda01d20df39ea8ddc6f8d5b" prot="public">
+          <name>DISABLE_VOLTAGE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595ab89ff4b5de6d5762410c1588f16c6dc5" prot="public">
+          <name>QUICK_STOP</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595a0bd88243fb0443b02da0f12fbed38455" prot="public">
+          <name>DISABLE_OPERATION</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595af2b17a88e18e8e50eb89b4f0a762f509" prot="public">
+          <name>ENABLE_OPERATION</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a0fc1699381ace32d834faa646cdcf595acd1e54bbd81a17c0f6dfdc7d36d16e2b" prot="public">
+          <name>FAULT_RESET</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="81" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="82" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385" prot="public" static="no" strong="no">
+        <type></type>
+        <name>statusword_pos_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385a69ffd0fb9185117d27cc1f6aa3e2a35f" prot="public">
+          <name>RTSO_BIT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385a8225a681e649d23160b0fca7d8844295" prot="public">
+          <name>SO_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385a9ea2aa67a428df43b95cb2e6c191e20f" prot="public">
+          <name>OE_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385a0556594b773abc8b270d4fdf9ade4d3d" prot="public">
+          <name>F_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385ad67ed896af6dea643ed6faa8739c96fa" prot="public">
+          <name>VE_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385a3b8e92d524ba01e221ea38a9dcb6ba39" prot="public">
+          <name>QS_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385ad69e22ea3beb05a281616a7d373cc04a" prot="public">
+          <name>SOD_BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385ac39cf6bf0cb2c35e4e9a9b1032b1e884" prot="public">
+          <name>SPA_BIT</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Statusword </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="106" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="107" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>fsa_state_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba6ce26a62afab55d7606ad4e92428b30c" prot="public">
+          <name>UNKNOWN</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba736fb641ebd392811e94e4c16262df90" prot="public">
+          <name>NOT_READY_TO_SWITCH_ON</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bbaa8733fd1357665a848ee9cfff191e9a6" prot="public">
+          <name>SWITCH_ON_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba8b348b333aa78d8669631d22a6c0bd32" prot="public">
+          <name>READY_TO_SWITCH_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba05d8560f23624a1521eeef393cce0a64" prot="public">
+          <name>SWITCHED_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba1093d110ae7601c34e2a6807126f7834" prot="public">
+          <name>OPERATION_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba6ad33d9d476e5996cb811df11abcd606" prot="public">
+          <name>QUICK_STOP_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bbaa545b4425b5716e334ece5f4a578cd72" prot="public">
+          <name>FAULT_REACTION_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bbab7f3a434cd7c576917ad58613673c571" prot="public">
+          <name>FAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a80e0016157d564b5dfcb8199c93589bba415dc18b3a23b3e4d8f815a96f83b724" prot="public">
+          <name>SET_POINT_ACK_IN_PROCESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="136" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="137" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="enum" id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>status_word_val_t</name>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa377b94b557aa3cef9ddbb53cb69b0afb" prot="public">
+          <name>NOT_READY_TO_SWITCH_ON_VAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa2ec584d0115e87611a4174b0e6a3eac6" prot="public">
+          <name>SWITCH_ON_DISABLE_VAL</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aaf6d6d4c3d38de285f776435c3d672807" prot="public">
+          <name>READY_TO_SWITCH_ON_VAL</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aabdde7b107c0206f0bf9f6d0925e996cb" prot="public">
+          <name>SWITCHED_ON_VAL</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa3cc8f02d165dd2b2bcc8ecf805d7423d" prot="public">
+          <name>OPERATION_ENABLED_VAL</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa6cb628f9378907c9ab1015c315d0884d" prot="public">
+          <name>QUICK_STOP_ACTIVE_VAL</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aac33e0169f54e49239617e613e8a53a5d" prot="public">
+          <name>FAULT_REACTION_ACTIVE_VAL</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa47451b6c6f8ce4459ae6d2daae21cdb5" prot="public">
+          <name>FAULT_VAL</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tmc__coe__interpreter_8hpp_1a2f89fe6f3f8997ff053343ba39d73d3aa2a16c339fc995bf54ef6665acbe5fbd0" prot="public">
+          <name>SET_POINT_ACK_IN_PROCESS_VAL</name>
+          <initializer>= 4096</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="164" column="1" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="165" bodyend="175"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tmc__coe__interpreter_8hpp_1ac1d88f679845fac493f9a3fb5d784460" prot="public" static="no">
+        <type>struct <ref refid="structPACKED" kindref="compound">PACKED</ref></type>
+        <definition>typedef struct PACKED output_pdo_t</definition>
+        <argsstring></argsstring>
+        <name>output_pdo_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="211" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="tmc__coe__interpreter_8hpp_1a7fd0bd98eeba43b321dd60803683d536" prot="public" static="no">
+        <type>struct <ref refid="structPACKED" kindref="compound">PACKED</ref></type>
+        <definition>typedef struct PACKED input_pdo_t</definition>
+        <argsstring></argsstring>
+        <name>input_pdo_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="224" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a3d50796f5a7f47a6f5479cfe7f0a9f1f" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CW_NEW_SET_POINT_START</definition>
+        <argsstring></argsstring>
+        <name>CW_NEW_SET_POINT_START</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="59" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CW_NEW_SET_POINT_STOP</definition>
+        <argsstring></argsstring>
+        <name>CW_NEW_SET_POINT_STOP</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="60" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a6e403a07f1c9dbeacc3146f6a20b3b17" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CW_NEW_POSITION_ABSOLUTE</definition>
+        <argsstring></argsstring>
+        <name>CW_NEW_POSITION_ABSOLUTE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="63" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a5185686528a78c5f318422c668cb6e6a" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CW_NEW_POSITION_RELATIVE</definition>
+        <argsstring></argsstring>
+        <name>CW_NEW_POSITION_RELATIVE</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="64" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682" prot="public" static="no" mutable="no">
+        <type>const std::vector&lt; int &gt;</type>
+        <definition>const std::vector&lt;int&gt; status_state_mask_</definition>
+        <argsstring></argsstring>
+        <name>status_state_mask_</name>
+        <initializer>= {
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),                
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),                
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; QS_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; QS_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; QS_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; QS_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),                
+  (1 &lt;&lt; SOD_BIT) | (1 &lt;&lt; F_BIT) | (1 &lt;&lt; OE_BIT) | (1 &lt;&lt; SO_BIT) | (1 &lt;&lt; RTSO_BIT),                
+  (1 &lt;&lt; SPA_BIT)                                                                                  
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="151" column="19" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="151" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1ae77b0b38ea6759542ea784fbe05637f2" prot="public" static="no" mutable="no">
+        <type>const std::vector&lt; int &gt;</type>
+        <definition>const std::vector&lt;int&gt; state_coding_val_</definition>
+        <argsstring></argsstring>
+        <name>state_coding_val_</name>
+        <initializer>= {NOT_READY_TO_SWITCH_ON_VAL,
+  SWITCH_ON_DISABLE_VAL,
+  READY_TO_SWITCH_ON_VAL,
+  SWITCHED_ON_VAL,
+  OPERATION_ENABLED_VAL,
+  QUICK_STOP_ACTIVE_VAL,
+  FAULT_REACTION_ACTIVE_VAL,
+  FAULT_VAL,
+  SET_POINT_ACK_IN_PROCESS_VAL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="177" column="19" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="177" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1ad80f5c673299a4cc4f883dd8fa930f31" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t IOMAP_SIZE</definition>
+        <argsstring></argsstring>
+        <name>IOMAP_SIZE</name>
+        <initializer>= 4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="188" column="16" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1af28d059eba257197e80e4f49b4cc50a1" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t PROCESS_DATA_DELAY</definition>
+        <argsstring></argsstring>
+        <name>PROCESS_DATA_DELAY</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="191" column="16" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a25b31335e31a0190871ac3b0957d91fb" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t ERROR_CHECK_DELAY</definition>
+        <argsstring></argsstring>
+        <name>ERROR_CHECK_DELAY</name>
+        <initializer>= 10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="194" column="16" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a52b6a9b3d52d11567e711a2313787018" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t TOTAL_WORK_COUNTER_PER_SLAVE</definition>
+        <argsstring></argsstring>
+        <name>TOTAL_WORK_COUNTER_PER_SLAVE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="197" column="15" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1ac00a5382754f2433356450e92e8a46de" prot="public" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t CONTROL_WORD_FAIL</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_WORD_FAIL</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="199" column="14" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840" prot="public" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t CONTROL_WORD_SUCCESS</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_WORD_SUCCESS</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="200" column="14" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tmc__coe__interpreter_8hpp_1a0b4e6957d6b7b778189f59364ff2da72" prot="public" static="no" mutable="no">
+        <type>const int8_t</type>
+        <definition>const int8_t CONTROL_WORD_TIMEOUT</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_WORD_TIMEOUT</name>
+        <initializer>= -2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" line="201" column="14" bodyfile="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMC_COE_INTERPRETER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMC_COE_INTERPRETER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SOEM<sp/>header/s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;osal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enums<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Network<sp/>Management<sp/>States<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>INIT<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>PRE_OP<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>SAFE_OP<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>OPERATIONAL<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>SAFE_OP_ERROR<sp/>=<sp/>20,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>SAFE_OP_ERROR_ACK<sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/>nmt_state_t;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>15<sp/><sp/>14<sp/><sp/>13<sp/><sp/>12<sp/><sp/>11<sp/>|<sp/>10<sp/>|<sp/>9<sp/><sp/><sp/>|<sp/>8<sp/>|<sp/>7<sp/><sp/>|<sp/>6<sp/><sp/>5<sp/><sp/>4<sp/><sp/>|<sp/>3<sp/><sp/>|<sp/>2<sp/><sp/>|<sp/>1<sp/><sp/>|<sp/>0</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>nu<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>r<sp/><sp/>|<sp/>oms<sp/>|<sp/>h<sp/>|<sp/>fr<sp/>|<sp/>oms<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>eo<sp/>|<sp/>qs<sp/>|<sp/>ev<sp/>|<sp/>so</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/>where</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>9<sp/>-<sp/>Change<sp/>set<sp/>point</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>6<sp/>-<sp/>Absolute<sp/>(0)<sp/>/<sp/>Relative<sp/>(1)</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>4<sp/>-<sp/>New<sp/>set<sp/>point</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Controlword<sp/>Bit<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>CW_SO_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>CW_EV_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>CW_QS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>CW_EO_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>CW_OMS_NEW_SET_POINT_BIT<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>CW_OMS_CHANGE_IMMEDIATELY_BIT<sp/>=<sp/>5,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>CW_OMS_ABSOLUTE_RELATIVE_BIT<sp/><sp/>=<sp/>6,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>CW_FR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>CW_H_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>CW_OMS_CHANGE_SET_POINT_BIT<sp/><sp/><sp/>=<sp/>9<sp/><sp/></highlight><highlight class="comment">//<sp/>Bit<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/>controlword_pos_t;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>New<sp/>Set<sp/>Point<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>CW_NEW_SET_POINT_START<sp/><sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>CW_NEW_SET_POINT_STOP<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Absolute<sp/>/<sp/>Relative<sp/>Values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>CW_NEW_POSITION_ABSOLUTE<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>CW_NEW_POSITION_RELATIVE<sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Controlword<sp/>command<sp/>coding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/>Controlword<sp/>Command<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Bit<sp/>mask<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Controlword<sp/>command<sp/>val<sp/>(control_word_val_t)</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/>-------------------------------|-------------------------|------------------------------</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/>Shutdown,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>x111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>x110<sp/>=<sp/>6d</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/>Switch<sp/>on<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>0111<sp/>=<sp/>7d</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/>Switch<sp/>on<sp/>&amp;<sp/>enable<sp/>operation,<sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>1111<sp/>=<sp/>15d</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/>Disable<sp/>voltage<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>xx1x<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>xx0x<sp/>=<sp/>0d</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/>Quick<sp/>stop,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>x11x<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>x01x<sp/>=<sp/>2d</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/>Disable<sp/>operation,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>0111<sp/>=<sp/>7d</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/>Enable<sp/>operation,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>0xxx<sp/>1111<sp/>=<sp/>15d</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/>Fault<sp/>reset,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>xxxx<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>1xxx<sp/>xxxx<sp/>=<sp/>128d</highlight></codeline>
+<codeline lineno="78"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>Word<sp/>State<sp/>Commands<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>SHUTDOWN<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>SWITCH_ON<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>SWITCH_ON_ENABLE_OPERATION<sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>DISABLE_VOLTAGE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>QUICK_STOP<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>DISABLE_OPERATION<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>ENABLE_OPERATION<sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>FAULT_RESET<sp/>=<sp/>128,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/>control_word_val_t;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/>15<sp/><sp/>|<sp/>14<sp/><sp/>|<sp/>13<sp/><sp/>12<sp/>|<sp/>11<sp/><sp/>|<sp/>10<sp/>|<sp/>9<sp/><sp/>|<sp/>8<sp/><sp/>|<sp/>7<sp/>|<sp/>6<sp/><sp/><sp/>|<sp/>5<sp/><sp/>|<sp/>4<sp/><sp/>|<sp/>3<sp/>|<sp/>2<sp/><sp/>|<sp/>1<sp/><sp/>|<sp/>0</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/>dir<sp/>|<sp/>mot<sp/>|<sp/>oms<sp/><sp/><sp/><sp/>|<sp/>ila<sp/>|<sp/>tr<sp/>|<sp/>rm<sp/>|<sp/>ms<sp/>|<sp/>w<sp/>|<sp/>sod<sp/>|<sp/>qs<sp/>|<sp/>ve<sp/>|<sp/>f<sp/>|<sp/>oe<sp/>|<sp/>so<sp/>|<sp/>rtso</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"></highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/>where</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/>15<sp/>-<sp/>Direction<sp/>of<sp/>rotation</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/>14<sp/>-<sp/>Motor<sp/>Activity</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>12<sp/>-<sp/>Set<sp/>point<sp/>acknowledged<sp/>(0:<sp/>processed,<sp/>1:<sp/>in<sp/>process)</highlight></codeline>
+<codeline lineno="103"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Statusword<sp/>Bit<sp/>position<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>RTSO_BIT<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>SO_BIT,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>OE_BIT,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>F_BIT,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>VE_BIT,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>QS_BIT,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>SOD_BIT,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>SPA_BIT<sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}<sp/>statusword_pos_t;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>State<sp/>Coding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Statusword<sp/>State<sp/>Coding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/>fsa_state_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>status_state_mask_<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>status_word_val_t</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/>--------------------------|-------------------------|------------------------------</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/>Not<sp/>ready<sp/>to<sp/>switch<sp/>on,<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x1xx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x0xx<sp/>0000<sp/>=<sp/>0d</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/>Switch<sp/>on<sp/>disable,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x1xx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x1xx<sp/>0000<sp/>=<sp/>64d</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/>Ready<sp/>to<sp/>switch<sp/>on,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x11x<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x01x<sp/>0001<sp/>=<sp/>33d</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/>Switched<sp/>on,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x11x<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x01x<sp/>0011<sp/>=<sp/>35d</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/>Operation<sp/>enabled,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x11x<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x01x<sp/>0111<sp/>=<sp/>39d</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/>Quick<sp/>stop<sp/>active,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x11x<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x00x<sp/>0111<sp/>=<sp/>7d</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/>Fault<sp/>reaction<sp/>active,<sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x11x<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x0xx<sp/>1111<sp/>=<sp/>15d</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/>Fault,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x1xx<sp/>1111<sp/><sp/><sp/>|<sp/>0bxxxx<sp/>xxxx<sp/>x0xx<sp/>1000<sp/>=<sp/>8d</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/>Set<sp/>Point<sp/>Ack,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>0bxxx1<sp/>xxxx<sp/>xxxx<sp/>xxxx<sp/><sp/><sp/>|<sp/>0bxxx1<sp/>xxxx<sp/>xxxx<sp/>xxxx<sp/>=<sp/>4096d</highlight></codeline>
+<codeline lineno="133"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Finite<sp/>State<sp/>Automation<sp/>States<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>UNKNOWN<sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>NOT_READY_TO_SWITCH_ON<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>SWITCH_ON_DISABLE,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>READY_TO_SWITCH_ON,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>SWITCHED_ON,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>OPERATION_ENABLED,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>QUICK_STOP_ACTIVE,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>FAULT_REACTION_ACTIVE,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>FAULT,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>SET_POINT_ACK_IN_PROCESS,</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}<sp/>fsa_state_t;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Statusword<sp/>State<sp/>bitmask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>status_state_mask_<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//NOT_READY_TO_SWITCH_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SWITCH_ON_DISABLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>QS_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),</highlight><highlight class="comment">//READY_TO_SWITCH_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>QS_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),</highlight><highlight class="comment">//SWITCHED_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>QS_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),</highlight><highlight class="comment">//OPERATION_ENABLED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>QS_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),</highlight><highlight class="comment">//QUICK_STOP_ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FAULT_REACTION_ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SOD_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>F_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>OE_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SO_BIT)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>RTSO_BIT),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FAULT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>(1<sp/>&lt;&lt;<sp/>SPA_BIT)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SET_POINT_ACK_IN_PROCESS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>Word<sp/>Coding<sp/>Values<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>NOT_READY_TO_SWITCH_ON_VAL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>SWITCH_ON_DISABLE_VAL<sp/>=<sp/>64,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>READY_TO_SWITCH_ON_VAL<sp/>=<sp/>33,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>SWITCHED_ON_VAL<sp/>=<sp/>35,</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>OPERATION_ENABLED_VAL<sp/>=<sp/>39,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>QUICK_STOP_ACTIVE_VAL<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>FAULT_REACTION_ACTIVE_VAL<sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>FAULT_VAL<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>SET_POINT_ACK_IN_PROCESS_VAL<sp/>=<sp/>4096,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/>status_word_val_t;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;<sp/>state_coding_val_<sp/>=<sp/>{NOT_READY_TO_SWITCH_ON_VAL,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>SWITCH_ON_DISABLE_VAL,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>READY_TO_SWITCH_ON_VAL,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>SWITCHED_ON_VAL,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>OPERATION_ENABLED_VAL,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>QUICK_STOP_ACTIVE_VAL,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>FAULT_REACTION_ACTIVE_VAL,</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>FAULT_VAL,</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>SET_POINT_ACK_IN_PROCESS_VAL};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>IOMAP_SIZE<sp/>=<sp/>4096;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Standard<sp/>PLC<sp/>cycle<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>PROCESS_DATA_DELAY<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Based<sp/>on<sp/>SOEM&apos;s<sp/>simple_test<sp/>script</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ERROR_CHECK_DELAY<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2counts<sp/>of<sp/>outputPDO<sp/>workcount<sp/>+<sp/>1count<sp/>of<sp/>inputPDO<sp/>workcount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>TOTAL_WORK_COUNTER_PER_SLAVE<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int8_t<sp/>CONTROL_WORD_FAIL<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int8_t<sp/>CONTROL_WORD_SUCCESS<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int8_t<sp/>CONTROL_WORD_TIMEOUT<sp/>=<sp/>-2;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Output<sp/>PDOs<sp/>(Sync<sp/>Manager<sp/>2)<sp/>-<sp/>Read/Write<sp/>access<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="structPACKED" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPACKED" kindref="compound">PACKED</ref></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>int8_t<sp/>modes_of_operation;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>uint16_t<sp/>control_word;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>int32_t<sp/>target_position;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>int32_t<sp/>target_velocity;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>int16_t<sp/>target_torque;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}<sp/><ref refid="structPACKED" kindref="compound">output_pdo_t</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Input<sp/>PDOs<sp/>(Sync<sp/>Manager<sp/>3)<sp/>-<sp/>Read<sp/>only<sp/>access*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPACKED" kindref="compound">PACKED</ref></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>int8_t<sp/>modes_of_operation_display;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>uint16_t<sp/>status_word;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>int32_t<sp/>position_demand_value;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>int32_t<sp/>position_actual_value;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>int32_t<sp/>velocity_demand_value;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>int32_t<sp/>velocity_actual_value;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>int16_t<sp/>torque_demand_value;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>int16_t<sp/>torque_actual_value;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}<sp/><ref refid="structPACKED" kindref="compound">input_pdo_t</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="classTmcCoeInterpreter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref></highlight></codeline>
+<codeline lineno="227"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>std::thread<sp/>processdata_thread_;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>std::thread<sp/>error_check_thread_;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_exit_threads_;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_cycle_finished_;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_start_cycle_count_;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_interface_unresponsive_;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>uint8_t<sp/>cycle_counter_;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>uint8_t<sp/>SDO_PDO_retries_;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>interface_timeout_;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>std::string<sp/>logger_prefix_;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>rclcpp::Logger<sp/>logger_;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>IOmap[IOMAP_SIZE];</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>work_count_;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;std::string&gt;&gt;<sp/>all_obj_name_;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;std::string&gt;&gt;<sp/>all_index_;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;std::string&gt;&gt;<sp/>all_sub_index_;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>std::vector&lt;std::vector&lt;std::string&gt;&gt;<sp/>all_datatype_;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>std::string<sp/>readSDO(uint8_t<sp/>slave_number,<sp/>uint16_t<sp/>index_number,<sp/>uint8_t<sp/>subindex_number);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>std::string<sp/>readSDO(uint8_t<sp/>slave_number,<sp/>uint16_t<sp/>index_number,<sp/>uint8_t<sp/>subindex_number);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>std::string<sp/>writeSDO(uint8_t<sp/>slave_number,<sp/>uint16_t<sp/>index_number,<sp/>uint8_t<sp/>subindex_number,</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>value);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processData();</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>errorCheck();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>std::vector&lt;input_pdo_t<sp/>*&gt;<sp/>input_pdo_;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>std::vector&lt;output_pdo_t<sp/>*&gt;<sp/>output_pdo_;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref>(uint8_t<sp/>SDO_PDO_retries,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>interface_timeout,<sp/>std::string<sp/>logger_prefix);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">~TmcCoeInterpreter</ref>();</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>uint8_t<sp/>initInterface(std::string<sp/>ifname);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initDictionary(uint8_t<sp/>slave_number,<sp/>std::vector&lt;std::string&gt;<sp/>all_obj_name,</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>all_index,<sp/>std::vector&lt;std::string&gt;<sp/>all_sub_index,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>all_datatype);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>safeOperationalState(uint8_t<sp/>slave_number);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operationalState(uint8_t<sp/>slave_number,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b_init);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>std::string<sp/>getSlaveName(uint8_t<sp/>slave_number);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>nmt_state_t<sp/>changeNMTState(uint8_t<sp/>slave_number,<sp/>nmt_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/>fsa_state_t<sp/>changeCiA402State(uint8_t<sp/>slave_number,<sp/>fsa_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isStatusWordState(uint8_t<sp/>slave_number,<sp/>fsa_state_t<sp/>state);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/>fsa_state_t<sp/>checkStatusWordState(uint8_t<sp/>slave_number);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>int8_t<sp/>setControlWord(uint8_t<sp/>slave_number,<sp/>fsa_state_t<sp/>response_SW,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>control_word_val_t<sp/>requested_CW);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stopInterface();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/>uint8_t<sp/>getCycleCounter();</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>startCycleCounter();</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stopCycleCounter();</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isCycleFinished();</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createProcessDataThread();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createErrorCheckThread();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readSDO(uint8_t<sp/>slave_number,<sp/>std::string<sp/>object_name,<sp/>std::string<sp/>*<sp/>value);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>writeSDO(uint8_t<sp/>slave_number,<sp/>std::string<sp/>object_name,<sp/>std::string<sp/>*<sp/>value);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>TMC_COE_INTERPRETER_HPP</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adi_tmc_coe_core/tmc_coe_interpreter.hpp"/>
+  </compounddef>
+</doxygen>

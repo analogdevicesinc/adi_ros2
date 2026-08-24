@@ -1,0 +1,14 @@
+.. _exhale_enum_tmc__coe__interpreter_8hpp_1a32673e1603dbea7f3a2b80849e9c4385:
+
+Enum statusword_pos_t
+=====================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: statusword_pos_t
+   :project: adi_tmc_coe_core Doxygen Project

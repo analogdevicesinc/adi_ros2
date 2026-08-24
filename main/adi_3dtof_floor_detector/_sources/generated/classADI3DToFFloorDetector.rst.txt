@@ -1,0 +1,36 @@
+.. _exhale_class_classADI3DToFFloorDetector:
+
+Class ADI3DToFFloorDetector
+===========================
+
+- Defined in :ref:`file_include_adi_3dtof_floor_detector_node.h`
+
+
+Nested Relationships
+--------------------
+
+
+Nested Types
+************
+
+- :ref:`exhale_struct_structADI3DToFFloorDetector_1_1DynamicReconfigureParameters`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public rclcpp::Node``
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ADI3DToFFloorDetector
+   :project: adi_3dtof_floor_detector Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,14 @@
+.. _exhale_enum_iio__path_8hpp_1a36bc4adc60811fcc33489bbb803ddf58:
+
+Enum IIOPathType
+================
+
+- Defined in :ref:`file_include_adi_iio_iio_path.hpp`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: IIOPathType
+   :project: adi_iio Doxygen Project

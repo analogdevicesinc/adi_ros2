@@ -1,0 +1,5 @@
+---
+bool success
+string message
+string state
+float64 stand_still_secs

@@ -1,0 +1,100 @@
+
+.. _program_listing_file_include_adrd2121_imu_adi_imu_buf_ros2.hpp:
+
+Program Listing for File adi_imu_buf_ros2.hpp
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_adi_imu_buf_ros2.hpp>` (``include/adrd2121_imu/adi_imu_buf_ros2.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef ADI_IMU_BUF_ROS2
+   #define ADI_IMU_BUF_ROS2
+   
+   //ROS2 Headers 
+   #include "rclcpp/rclcpp.hpp"
+   #include "rclcpp/node.hpp"
+   #include "std_srvs/srv/trigger.hpp"
+   
+   //IMU Driver ROS2 headers
+   #include "adi_imu_ros2.hpp"
+   #include "imu_buf_ros2.hpp"
+   #include "adrd2121_imu_ros2_common.hpp"
+   
+   //IMU Driver ROS2 custom srv header
+   #include "adrd2121_imu/srv/imu_glob_cmd.hpp"
+   
+   //C IMU Driver headers
+   #include "adi_imu_driver.h"
+   #include "imu_spi_buffer.h"
+   
+   //CPP headers
+   #include <memory>
+   #include <iostream>
+   #include <string>
+   
+   //Namespace definitions 
+   using std::placeholders::_1;
+   using std::placeholders::_2;
+   
+   class AdiImuBufRos2
+   {
+   public:
+     AdiImuBufRos2(const rclcpp::Node::SharedPtr& node);
+   
+     ~AdiImuBufRos2();
+   
+     void initParams(void);
+   
+     bool init(void);
+     
+     bool config(void);
+   
+     void readPubData(void);
+   
+     void dataReadAndPubCB(void);
+   
+     double getRosLoopRateHz(void);
+   
+     bool triggerImuGlobCmd(adrd2121_imu::srv::ImuGlobCmd::Request::SharedPtr req,
+       adrd2121_imu::srv::ImuGlobCmd::Response::SharedPtr res);
+   
+     rclcpp::Service<adrd2121_imu::srv::ImuGlobCmd>::SharedPtr p_imu_glob_cmd_service_;
+   
+     uint8_t mode_of_operation_;
+   
+     bool b_getHWInitialized_;
+     
+     bool b_readPubDataSuccess; 
+   
+   private:
+     rclcpp::TimerBase::SharedPtr timer_;
+   
+     rclcpp::Node::SharedPtr node_;
+     
+     rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_callback;
+     
+     rcl_interfaces::msg::SetParametersResult paramCbFunction(
+       const std::vector<rclcpp::Parameter> &param);
+     
+     AdiImuRos2* p_adi_imu_ros2_obj_;
+   
+     ImuBufRos2* p_imu_buf_ros2_obj_;
+   
+     double ros_loop_rate_hz_;
+   
+     msg_type_e msg_type_;
+   
+     std::string frame_name_;
+   
+     adi_imu_Device_t imu_dev_;
+   };
+   
+   #endif //ADI_IMU_BUF_ROS2

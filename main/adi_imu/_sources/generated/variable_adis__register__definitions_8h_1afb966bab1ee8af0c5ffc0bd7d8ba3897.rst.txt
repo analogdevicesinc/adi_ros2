@@ -1,0 +1,14 @@
+.. _exhale_variable_adis__register__definitions_8h_1afb966bab1ee8af0c5ffc0bd7d8ba3897:
+
+Variable FULL_MEASURED_DATA
+===========================
+
+- Defined in :ref:`file_include_adi_imu_utils_adis_register_definitions.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: FULL_MEASURED_DATA
+   :project: adi_imu Doxygen Project

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct____tADIImageROI" kind="struct" language="C++" prot="public">
+    <compoundname>__tADIImageROI</compoundname>
+    <includes refid="image__proc__utils_8h" local="no">image_proc_utils.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____tADIImageROI_1af0725038637f4084209760fa9dad00b0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImageROI::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>__tADIImageROI::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="25" column="7" bodyfile="include/image_proc_utils.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImageROI_1ac400cc3c7170a4a8a2a31325e6eafcd1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImageROI::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>__tADIImageROI::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="26" column="7" bodyfile="include/image_proc_utils.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImageROI_1a57282be2eb405b12b242bf2ca32a87fe" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImageROI::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>__tADIImageROI::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="27" column="7" bodyfile="include/image_proc_utils.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____tADIImageROI_1abe944d0bb3ee1308f0fd27c1d59e0996" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __tADIImageROI::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>__tADIImageROI::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/image_proc_utils.h" line="28" column="7" bodyfile="include/image_proc_utils.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure to hold image ROI info. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/image_proc_utils.h" line="23" column="1" bodyfile="include/image_proc_utils.h" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="struct____tADIImageROI_1abe944d0bb3ee1308f0fd27c1d59e0996" prot="public" virt="non-virtual"><scope>__tADIImageROI</scope><name>height</name></member>
+      <member refid="struct____tADIImageROI_1a57282be2eb405b12b242bf2ca32a87fe" prot="public" virt="non-virtual"><scope>__tADIImageROI</scope><name>width</name></member>
+      <member refid="struct____tADIImageROI_1af0725038637f4084209760fa9dad00b0" prot="public" virt="non-virtual"><scope>__tADIImageROI</scope><name>x</name></member>
+      <member refid="struct____tADIImageROI_1ac400cc3c7170a4a8a2a31325e6eafcd1" prot="public" virt="non-virtual"><scope>__tADIImageROI</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

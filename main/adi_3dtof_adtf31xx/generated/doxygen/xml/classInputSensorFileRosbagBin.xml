@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classInputSensorFileRosbagBin" kind="class" language="C++" prot="public">
+    <compoundname>InputSensorFileRosbagBin</compoundname>
+    <basecompoundref refid="classIInputSensor" prot="public" virt="non-virtual">IInputSensor</basecompoundref>
+    <includes refid="input__sensor__file__rosbagbin_8h" local="no">input_sensor_file_rosbagbin.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1ae4dba8e96ef77331f3fdbc3f5b23281f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string InputSensorFileRosbagBin::in_file_name_</definition>
+        <argsstring></argsstring>
+        <name>in_file_name_</name>
+        <qualifiedname>InputSensorFileRosbagBin::in_file_name_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="142" column="15" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1aab98a5b8d49aedc4eb72f9f395a15411" prot="private" static="no" mutable="no">
+        <type>std::ifstream</type>
+        <definition>std::ifstream InputSensorFileRosbagBin::in_file_</definition>
+        <argsstring></argsstring>
+        <name>in_file_</name>
+        <qualifiedname>InputSensorFileRosbagBin::in_file_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="143" column="17" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a32ecfa23f3a4c3c2864720f1e3f4d0c5" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::input_frame_width_</definition>
+        <argsstring></argsstring>
+        <name>input_frame_width_</name>
+        <qualifiedname>InputSensorFileRosbagBin::input_frame_width_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="144" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a02ece3b59d1ea568575bf48942afd5bf" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::input_frame_height_</definition>
+        <argsstring></argsstring>
+        <name>input_frame_height_</name>
+        <qualifiedname>InputSensorFileRosbagBin::input_frame_height_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="145" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1ae2a8cf633b269803d0e53c5847b9cc30" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InputSensorFileRosbagBin::processing_scale_</definition>
+        <argsstring></argsstring>
+        <name>processing_scale_</name>
+        <qualifiedname>InputSensorFileRosbagBin::processing_scale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="146" column="7" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a6b7e743a99159e8c14bd5d220390df15" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::header_version_</definition>
+        <argsstring></argsstring>
+        <name>header_version_</name>
+        <qualifiedname>InputSensorFileRosbagBin::header_version_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="147" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1ab58c89ac360d8517506eb6786547bd80" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::frame_pitch_</definition>
+        <argsstring></argsstring>
+        <name>frame_pitch_</name>
+        <qualifiedname>InputSensorFileRosbagBin::frame_pitch_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="148" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a127fa24728aeb7b5e44f21f37c402f4b" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t InputSensorFileRosbagBin::device_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>device_timestamp_</name>
+        <qualifiedname>InputSensorFileRosbagBin::device_timestamp_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="149" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a8c34f431ec404d25a51d2272b91c68ac" prot="private" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t InputSensorFileRosbagBin::frame_timestamp_</definition>
+        <argsstring></argsstring>
+        <name>frame_timestamp_</name>
+        <qualifiedname>InputSensorFileRosbagBin::frame_timestamp_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="150" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a92319fe673763575e3bd0a4dac58dd40" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::bytes_per_pixel_</definition>
+        <argsstring></argsstring>
+        <name>bytes_per_pixel_</name>
+        <qualifiedname>InputSensorFileRosbagBin::bytes_per_pixel_</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="151" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a095de363ab0ce943a18e642f8cd80a88" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t InputSensorFileRosbagBin::total_frames_</definition>
+        <argsstring></argsstring>
+        <name>total_frames_</name>
+        <qualifiedname>InputSensorFileRosbagBin::total_frames_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="152" column="12" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a04183b98ddc6cef7cbbff0bc168ddc10" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t InputSensorFileRosbagBin::header_buffer_[36]</definition>
+        <argsstring>[36]</argsstring>
+        <name>header_buffer_</name>
+        <qualifiedname>InputSensorFileRosbagBin::header_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="153" column="11" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1a77d02d711ecf69c11521cc0dc47a16a4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t InputSensorFileRosbagBin::cam_info_buffer_[400]</definition>
+        <argsstring>[400]</argsstring>
+        <name>cam_info_buffer_</name>
+        <qualifiedname>InputSensorFileRosbagBin::cam_info_buffer_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="154" column="11" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1ab367194e6e7174db9fc66afbbdeba7e2" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref></type>
+        <definition>CameraIntrinsics InputSensorFileRosbagBin::camera_intrinsics_</definition>
+        <argsstring></argsstring>
+        <name>camera_intrinsics_</name>
+        <qualifiedname>InputSensorFileRosbagBin::camera_intrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="155" column="20" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInputSensorFileRosbagBin_1afa7ae98782d708bd4163e351ee1c6acc" prot="private" static="no" mutable="no">
+        <type><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref></type>
+        <definition>CameraExtrinsics InputSensorFileRosbagBin::camera_extrinsics_</definition>
+        <argsstring></argsstring>
+        <name>camera_extrinsics_</name>
+        <qualifiedname>InputSensorFileRosbagBin::camera_extrinsics_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="156" column="20" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a66fb426653b68b55682b6e1dcc69955c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>InputSensorFileRosbagBin::InputSensorFileRosbagBin</definition>
+        <argsstring>()</argsstring>
+        <name>InputSensorFileRosbagBin</name>
+        <qualifiedname>InputSensorFileRosbagBin::InputSensorFileRosbagBin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="23" column="3" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="23" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ab4d33cb6b47a0d5d835bc818cd2d98ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::openSensor</definition>
+        <argsstring>(std::string sensor_name, int input_image_width, int input_image_height, std::string config_file_name, std::string input_sensor_ip) override</argsstring>
+        <name>openSensor</name>
+        <qualifiedname>InputSensorFileRosbagBin::openSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1abad41c932da326bdc9ba914892080bfa">openSensor</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>sensor_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>input_image_height</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>config_file_name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>input_sensor_ip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ab9814707e0bb4d632fa365be5cb51a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::configureSensor</definition>
+        <argsstring>(int camera_mode) override</argsstring>
+        <name>configureSensor</name>
+        <qualifiedname>InputSensorFileRosbagBin::configureSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a106e951df67b2c759012cb32f8e3eef4">configureSensor</reimplements>
+        <param>
+          <type>int</type>
+          <declname>camera_mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="66" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ad9f421d774b9e9c3b1977d83cb96ba95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::getIntrinsics</definition>
+        <argsstring>(CameraIntrinsics *camera_intrinsics_data) override</argsstring>
+        <name>getIntrinsics</name>
+        <qualifiedname>InputSensorFileRosbagBin::getIntrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a3fd8dfd18a17c88c494d8373b51c9f6c">getIntrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref> *</type>
+          <declname>camera_intrinsics_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a67fd4f973a146943d033c75b2802e3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::getExtrinsics</definition>
+        <argsstring>(CameraExtrinsics *camera_extrinsics_data) override</argsstring>
+        <name>getExtrinsics</name>
+        <qualifiedname>InputSensorFileRosbagBin::getExtrinsics</qualifiedname>
+        <reimplements refid="classIInputSensor_1a92fc5900456079f64c3b7c1746036e33">getExtrinsics</reimplements>
+        <param>
+          <type><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref> *</type>
+          <declname>camera_extrinsics_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="68" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ac9c86b46fa82ef7cba32cfebf5e700cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorFileRosbagBin::readNextFrame</definition>
+        <argsstring>(unsigned short *out_depth_frame, unsigned short *out_ab_frame, unsigned short *out_conf_frame, short *out_xyz_frame) override</argsstring>
+        <name>readNextFrame</name>
+        <qualifiedname>InputSensorFileRosbagBin::readNextFrame</qualifiedname>
+        <reimplements refid="classIInputSensor_1ab47562f089684adfab23405959af4b72">readNextFrame</reimplements>
+        <param>
+          <type>unsigned short *</type>
+          <declname>out_depth_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>out_ab_frame</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>out_conf_frame</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>out_xyz_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="69" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a173df469dd85d9633041084d67f62fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool InputSensorFileRosbagBin::getFrameTimestamp</definition>
+        <argsstring>(rclcpp::Time *timestamp) override</argsstring>
+        <name>getFrameTimestamp</name>
+        <qualifiedname>InputSensorFileRosbagBin::getFrameTimestamp</qualifiedname>
+        <reimplements refid="classIInputSensor_1af3ad2ffabe59015b5237852356ae221b">getFrameTimestamp</reimplements>
+        <param>
+          <type>rclcpp::Time *</type>
+          <declname>timestamp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="72" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ae96ea65bfa684328a878c0e727c56bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::closeSensor</definition>
+        <argsstring>() override</argsstring>
+        <name>closeSensor</name>
+        <qualifiedname>InputSensorFileRosbagBin::closeSensor</qualifiedname>
+        <reimplements refid="classIInputSensor_1a979afaf6fb3378f6602293e0081fa688">closeSensor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setABinvalidationThreshold</definition>
+        <argsstring>(int) override</argsstring>
+        <name>setABinvalidationThreshold</name>
+        <qualifiedname>InputSensorFileRosbagBin::setABinvalidationThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a54fbb84ed5c78f0daaf7c2864be06f52">setABinvalidationThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>set ABinvalidation threshold </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ABinvalidation threshold </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="80" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setConfidenceThreshold</definition>
+        <argsstring>(int) override</argsstring>
+        <name>setConfidenceThreshold</name>
+        <qualifiedname>InputSensorFileRosbagBin::setConfidenceThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a1d727b3d3425c45656f9d8f1438b5287">setConfidenceThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Set Confidence Threshold. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Confidence threshold </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="91" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setJBLFFilterState</definition>
+        <argsstring>(bool) override</argsstring>
+        <name>setJBLFFilterState</name>
+        <qualifiedname>InputSensorFileRosbagBin::setJBLFFilterState</qualifiedname>
+        <reimplements refid="classIInputSensor_1ad9e7cbe824a0f09a25a525ebe83237fd">setJBLFFilterState</reimplements>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+<para>sets the state of JBLF filter </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable_jblf_filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter to enable or disable JBLF filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="102" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="102" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setJBLFFilterSize</definition>
+        <argsstring>(int) override</argsstring>
+        <name>setJBLFFilterSize</name>
+        <qualifiedname>InputSensorFileRosbagBin::setJBLFFilterSize</qualifiedname>
+        <reimplements refid="classIInputSensor_1accfea7bd4ee663472dc3d7ca1fde64a1">setJBLFFilterSize</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>sets the size of JBLF filter </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jbfl_filter_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter to set JBLF filter size </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="113" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="113" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setRadialFilterMinThreshold</definition>
+        <argsstring>(int) override</argsstring>
+        <name>setRadialFilterMinThreshold</name>
+        <qualifiedname>InputSensorFileRosbagBin::setRadialFilterMinThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a98548a96009aaf901a319d49bf4ea2d4">setRadialFilterMinThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>sets the minimum threshold for radial filter </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radial_threshold_min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter to set minimum threshold for radial filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="124" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void InputSensorFileRosbagBin::setRadialFilterMaxThreshold</definition>
+        <argsstring>(int) override</argsstring>
+        <name>setRadialFilterMaxThreshold</name>
+        <qualifiedname>InputSensorFileRosbagBin::setRadialFilterMaxThreshold</qualifiedname>
+        <reimplements refid="classIInputSensor_1a662f209887915c45e1d537bcb79a3d77">setRadialFilterMaxThreshold</reimplements>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>sets the maximum threshold for radial filter </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radial_threshold_max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parameter to set maximum threshold for radial filter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/input_sensor_file_rosbagbin.h" line="135" column="8" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="135" bodyend="139"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is input class for sensor as camera. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor"/>
+      </node>
+      <node id="1">
+        <label>InputSensorFileRosbagBin</label>
+        <link refid="classInputSensorFileRosbagBin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IInputSensor</label>
+        <link refid="classIInputSensor"/>
+      </node>
+      <node id="1">
+        <label>InputSensorFileRosbagBin</label>
+        <link refid="classInputSensorFileRosbagBin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/input_sensor_file_rosbagbin.h" line="20" column="1" bodyfile="include/input_sensor_file_rosbagbin.h" bodystart="21" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classInputSensorFileRosbagBin_1a92319fe673763575e3bd0a4dac58dd40" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>bytes_per_pixel_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a77d02d711ecf69c11521cc0dc47a16a4" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>cam_info_buffer_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1afa7ae98782d708bd4163e351ee1c6acc" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>camera_extrinsics_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ab367194e6e7174db9fc66afbbdeba7e2" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>camera_intrinsics_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ae96ea65bfa684328a878c0e727c56bcc" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>closeSensor</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ab9814707e0bb4d632fa365be5cb51a98" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>configureSensor</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a127fa24728aeb7b5e44f21f37c402f4b" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>device_timestamp_</name></member>
+      <member refid="classIInputSensor_1aeab3cf023001662a96e88c1fd90d0035" prot="protected" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>frame_counter_</name></member>
+      <member refid="classIInputSensor_1a334533c2553a877004494e3f7c28b6db" prot="protected" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>frame_height_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ab58c89ac360d8517506eb6786547bd80" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>frame_pitch_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a8c34f431ec404d25a51d2272b91c68ac" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>frame_timestamp_</name></member>
+      <member refid="classIInputSensor_1af3c94797690e11ce97cd3243ca4f8660" prot="protected" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>frame_width_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a67fd4f973a146943d033c75b2802e3cb" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>getExtrinsics</name></member>
+      <member refid="classIInputSensor_1a7be10a860b0f5b3bd967b63cc191ff34" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>getFrameCounter</name></member>
+      <member refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>getFrameHeight</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a173df469dd85d9633041084d67f62fa5" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>getFrameTimestamp</name></member>
+      <member refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>getFrameWidth</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ad9f421d774b9e9c3b1977d83cb96ba95" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>getIntrinsics</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a04183b98ddc6cef7cbbff0bc168ddc10" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>header_buffer_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a6b7e743a99159e8c14bd5d220390df15" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>header_version_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1aab98a5b8d49aedc4eb72f9f395a15411" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>in_file_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ae4dba8e96ef77331f3fdbc3f5b23281f" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>in_file_name_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a02ece3b59d1ea568575bf48942afd5bf" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>input_frame_height_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a32ecfa23f3a4c3c2864720f1e3f4d0c5" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>input_frame_width_</name></member>
+      <member refid="classIInputSensor_1ae1991108189bd6b047b9461c4b7e112f" prot="protected" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>input_scale_factor_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a66fb426653b68b55682b6e1dcc69955c" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>InputSensorFileRosbagBin</name></member>
+      <member refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>isOpened</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ab4d33cb6b47a0d5d835bc818cd2d98ea" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>openSensor</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ae2a8cf633b269803d0e53c5847b9cc30" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>processing_scale_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ac9c86b46fa82ef7cba32cfebf5e700cd" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>readNextFrame</name></member>
+      <member refid="classIInputSensor_1ad2c22f7aed31c140fcf2eec9d4a164a0" prot="protected" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>sensor_open_flag_</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a3b98086fd748487132565447f9826474" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setABinvalidationThreshold</name></member>
+      <member refid="classInputSensorFileRosbagBin_1adc4c22e149141406e68254dee0dc53e6" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setConfidenceThreshold</name></member>
+      <member refid="classIInputSensor_1ad0076918a62979bda492139c82f7af87" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>setFrameHeight</name></member>
+      <member refid="classIInputSensor_1a88051e6af2423784cb24f91005f9553c" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>setFrameWidth</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a8c44b4e1ff0798bb4c5c1340f3f4257c" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setJBLFFilterSize</name></member>
+      <member refid="classInputSensorFileRosbagBin_1ad3d2b2abb4213fdc53fa6e5e63b251e8" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setJBLFFilterState</name></member>
+      <member refid="classIInputSensor_1a9a264c690e89b0a639a70bdf836a6fb3" prot="public" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>setProcessingScale</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a7f30da1dc7928b6800149338ce1a4f5e" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setRadialFilterMaxThreshold</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a7c3e96c58f89e74def295d2d07b27734" prot="public" virt="virtual"><scope>InputSensorFileRosbagBin</scope><name>setRadialFilterMinThreshold</name></member>
+      <member refid="classInputSensorFileRosbagBin_1a095de363ab0ce943a18e642f8cd80a88" prot="private" virt="non-virtual"><scope>InputSensorFileRosbagBin</scope><name>total_frames_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

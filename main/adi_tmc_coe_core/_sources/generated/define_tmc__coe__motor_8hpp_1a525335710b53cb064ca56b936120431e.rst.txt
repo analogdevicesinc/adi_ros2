@@ -1,0 +1,14 @@
+.. _exhale_define_tmc__coe__motor_8hpp_1a525335710b53cb064ca56b936120431e:
+
+Define _USE_MATH_DEFINES
+========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: _USE_MATH_DEFINES
+   :project: adi_tmc_coe_core Doxygen Project

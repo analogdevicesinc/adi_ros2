@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classBoolPubSub" kind="class" language="C++" prot="public">
+    <compoundname>BoolPubSub</compoundname>
+    <basecompoundref refid="classAttrPubSub" prot="public" virt="non-virtual">AttrPubSub</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBoolPubSub_1ac7f9d8334d68cfa2ce2308ae05451ee7" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;IIONode&gt; BoolPubSub::m_nh</definition>
+        <argsstring></argsstring>
+        <name>m_nh</name>
+        <qualifiedname>BoolPubSub::m_nh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="84" column="19" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoolPubSub_1aef7be490343d0dc55c34e2489eef5e3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref> *</type>
+        <definition>UpdateCallback* BoolPubSub::m_updateCallback</definition>
+        <argsstring></argsstring>
+        <name>m_updateCallback</name>
+        <qualifiedname>BoolPubSub::m_updateCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="85" column="19" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoolPubSub_1a624ef1c308009b2f31767ed507e7890e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BoolPubSub::m_topic</definition>
+        <argsstring></argsstring>
+        <name>m_topic</name>
+        <qualifiedname>BoolPubSub::m_topic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="86" column="15" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoolPubSub_1ab8888cf7049c104be0d58f46bdc6eb42" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;std_msgs::msg::Bool&gt;::SharedPtr BoolPubSub::m_pub</definition>
+        <argsstring></argsstring>
+        <name>m_pub</name>
+        <qualifiedname>BoolPubSub::m_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="87" column="33" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoolPubSub_1a639050241eba42e8c2865c8dba513b56" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; std_msgs::msg::Bool &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;std_msgs::msg::Bool&gt;::SharedPtr BoolPubSub::m_sub</definition>
+        <argsstring></argsstring>
+        <name>m_sub</name>
+        <qualifiedname>BoolPubSub::m_sub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="88" column="36" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBoolPubSub_1a3729ba790f192f8be35efb8affdf41f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BoolPubSub::BoolPubSub</definition>
+        <argsstring>(std::shared_ptr&lt; IIONode &gt; nh, UpdateCallback *up, std::string topic)</argsstring>
+        <name>BoolPubSub</name>
+        <qualifiedname>BoolPubSub::BoolPubSub</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classIIONode" kindref="compound">IIONode</ref> &gt;</type>
+          <declname>nh</declname>
+        </param>
+        <param>
+          <type><ref refid="classUpdateCallback" kindref="compound">UpdateCallback</ref> *</type>
+          <declname>up</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>topic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="78" column="3" bodyfile="src/attr_publisher.cpp" bodystart="91" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoolPubSub_1adcf6e2159d071eaee84fe7908b180c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>BoolPubSub::~BoolPubSub</definition>
+        <argsstring>()</argsstring>
+        <name>~BoolPubSub</name>
+        <qualifiedname>BoolPubSub::~BoolPubSub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="79" column="11" bodyfile="src/attr_publisher.cpp" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoolPubSub_1a6b9188b8f4250368b51bb732b17dd637" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BoolPubSub::publish</definition>
+        <argsstring>(std::string msg) override</argsstring>
+        <name>publish</name>
+        <qualifiedname>BoolPubSub::publish</qualifiedname>
+        <reimplements refid="classAttrPubSub_1a68d3d0f3f3b5a4abe9984f5589288517">publish</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="80" column="8" bodyfile="src/attr_publisher.cpp" bodystart="109" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoolPubSub_1a27615dab21a347ce5c4224e2284b55cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BoolPubSub::update</definition>
+        <argsstring>(const std_msgs::msg::Bool &amp;msg)</argsstring>
+        <name>update</name>
+        <qualifiedname>BoolPubSub::update</qualifiedname>
+        <param>
+          <type>const std_msgs::msg::Bool &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/attr_publisher.hpp" line="81" column="8" bodyfile="src/attr_publisher.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
+      </node>
+      <node id="1">
+        <label>BoolPubSub</label>
+        <link refid="classBoolPubSub"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AttrPubSub</label>
+        <link refid="classAttrPubSub"/>
+      </node>
+      <node id="1">
+        <label>BoolPubSub</label>
+        <link refid="classBoolPubSub"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_updateCallback</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>UpdateCallback</label>
+        <link refid="classUpdateCallback"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/adi_iio/attr_publisher.hpp" line="75" column="1" bodyfile="include/adi_iio/attr_publisher.hpp" bodystart="76" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classBoolPubSub_1a3729ba790f192f8be35efb8affdf41f3" prot="public" virt="non-virtual"><scope>BoolPubSub</scope><name>BoolPubSub</name></member>
+      <member refid="classBoolPubSub_1ac7f9d8334d68cfa2ce2308ae05451ee7" prot="private" virt="non-virtual"><scope>BoolPubSub</scope><name>m_nh</name></member>
+      <member refid="classBoolPubSub_1ab8888cf7049c104be0d58f46bdc6eb42" prot="private" virt="non-virtual"><scope>BoolPubSub</scope><name>m_pub</name></member>
+      <member refid="classBoolPubSub_1a639050241eba42e8c2865c8dba513b56" prot="private" virt="non-virtual"><scope>BoolPubSub</scope><name>m_sub</name></member>
+      <member refid="classBoolPubSub_1a624ef1c308009b2f31767ed507e7890e" prot="private" virt="non-virtual"><scope>BoolPubSub</scope><name>m_topic</name></member>
+      <member refid="classBoolPubSub_1aef7be490343d0dc55c34e2489eef5e3e" prot="private" virt="non-virtual"><scope>BoolPubSub</scope><name>m_updateCallback</name></member>
+      <member refid="classBoolPubSub_1a6b9188b8f4250368b51bb732b17dd637" prot="public" virt="virtual"><scope>BoolPubSub</scope><name>publish</name></member>
+      <member refid="classBoolPubSub_1a27615dab21a347ce5c4224e2284b55cd" prot="public" virt="non-virtual"><scope>BoolPubSub</scope><name>update</name></member>
+      <member refid="classAttrPubSub_1a0242e7f2ce8679bb408e80fb4bb66992" prot="public" virt="virtual"><scope>BoolPubSub</scope><name>~AttrPubSub</name></member>
+      <member refid="classBoolPubSub_1adcf6e2159d071eaee84fe7908b180c4e" prot="public" virt="virtual"><scope>BoolPubSub</scope><name>~BoolPubSub</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

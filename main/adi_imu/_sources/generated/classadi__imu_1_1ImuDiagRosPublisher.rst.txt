@@ -1,0 +1,26 @@
+.. _exhale_class_classadi__imu_1_1ImuDiagRosPublisher:
+
+Template Class ImuDiagRosPublisher
+==================================
+
+- Defined in :ref:`file_include_adi_imu_imu_diag_ros_publisher.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public adi_imu::ImuDiagRosPublisherInterface`` (:ref:`exhale_class_classadi__imu_1_1ImuDiagRosPublisherInterface`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: adi_imu::ImuDiagRosPublisher
+   :project: adi_imu Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structADI3DToFADTF31xx_1_1TunableParameters" kind="struct" language="C++" prot="private">
+    <compoundname>ADI3DToFADTF31xx::TunableParameters</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a28b6b093b835b63b24d958b6907498ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xx::TunableParameters::ab_threshold</definition>
+        <argsstring></argsstring>
+        <name>ab_threshold</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::ab_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="425" column="9" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a515eb2c4b5bb6f230621ab4a829ead84" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xx::TunableParameters::confidence_threshold</definition>
+        <argsstring></argsstring>
+        <name>confidence_threshold</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::confidence_threshold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="426" column="9" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a7cf825035bbc5571d3263441e1538f58" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFADTF31xx::TunableParameters::enable_depth_publish</definition>
+        <argsstring></argsstring>
+        <name>enable_depth_publish</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::enable_depth_publish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="427" column="10" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1aceb6e0718ab34712441941c4bf861328" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFADTF31xx::TunableParameters::enable_ab_publish</definition>
+        <argsstring></argsstring>
+        <name>enable_ab_publish</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::enable_ab_publish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="428" column="10" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a0e11ef969e6cb8037e8a983d5320e8b4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFADTF31xx::TunableParameters::enable_conf_publish</definition>
+        <argsstring></argsstring>
+        <name>enable_conf_publish</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::enable_conf_publish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="429" column="10" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1ac72e38d1409aa883706623ceff5a9ce4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFADTF31xx::TunableParameters::enable_xyz_publish</definition>
+        <argsstring></argsstring>
+        <name>enable_xyz_publish</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::enable_xyz_publish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="430" column="10" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a0799234c7539fb4a4146a0c169156668" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ADI3DToFADTF31xx::TunableParameters::enable_jblf_filter</definition>
+        <argsstring></argsstring>
+        <name>enable_jblf_filter</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::enable_jblf_filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="431" column="10" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a7e154b4b1c44ca5ed25c315cca36f5b1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xx::TunableParameters::jblf_filter_size</definition>
+        <argsstring></argsstring>
+        <name>jblf_filter_size</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::jblf_filter_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="432" column="9" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a5578f7a184ef0a1c78f95097c2d99393" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xx::TunableParameters::radial_threshold_min</definition>
+        <argsstring></argsstring>
+        <name>radial_threshold_min</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::radial_threshold_min</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="433" column="9" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1a5b2a21346588aab7512ae97d6097fb52" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ADI3DToFADTF31xx::TunableParameters::radial_threshold_max</definition>
+        <argsstring></argsstring>
+        <name>radial_threshold_max</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::radial_threshold_max</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="434" column="9" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structADI3DToFADTF31xx_1_1TunableParameters_1aef5ba64be3c6687bd385b71ecc1b881c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string ADI3DToFADTF31xx::TunableParameters::encoding_type</definition>
+        <argsstring></argsstring>
+        <name>encoding_type</name>
+        <qualifiedname>ADI3DToFADTF31xx::TunableParameters::encoding_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_3dtof_adtf31xx.h" line="435" column="17" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/adi_3dtof_adtf31xx.h" line="423" column="3" bodyfile="include/adi_3dtof_adtf31xx.h" bodystart="424" bodyend="436"/>
+    <listofallmembers>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a28b6b093b835b63b24d958b6907498ee" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>ab_threshold</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a515eb2c4b5bb6f230621ab4a829ead84" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>confidence_threshold</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1aceb6e0718ab34712441941c4bf861328" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>enable_ab_publish</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a0e11ef969e6cb8037e8a983d5320e8b4" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>enable_conf_publish</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a7cf825035bbc5571d3263441e1538f58" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>enable_depth_publish</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a0799234c7539fb4a4146a0c169156668" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>enable_jblf_filter</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1ac72e38d1409aa883706623ceff5a9ce4" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>enable_xyz_publish</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1aef5ba64be3c6687bd385b71ecc1b881c" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>encoding_type</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a7e154b4b1c44ca5ed25c315cca36f5b1" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>jblf_filter_size</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a5b2a21346588aab7512ae97d6097fb52" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>radial_threshold_max</name></member>
+      <member refid="structADI3DToFADTF31xx_1_1TunableParameters_1a5578f7a184ef0a1c78f95097c2d99393" prot="public" virt="non-virtual"><scope>ADI3DToFADTF31xx::TunableParameters</scope><name>radial_threshold_min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classUpdateCallback" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>UpdateCallback</compoundname>
+    <derivedcompoundref refid="classIIOAttrTopic" prot="public" virt="non-virtual">IIOAttrTopic</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUpdateCallback_1acacdc3ba60cbced34f732aa151ca0ab5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual UpdateCallback::~UpdateCallback</definition>
+        <argsstring>()</argsstring>
+        <name>~UpdateCallback</name>
+        <qualifiedname>UpdateCallback::~UpdateCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="33" column="11" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classUpdateCallback_1a327b1c1789bf652bd9c719b7889d76c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void UpdateCallback::update</definition>
+        <argsstring>(std::string msg)=0</argsstring>
+        <name>update</name>
+        <qualifiedname>UpdateCallback::update</qualifiedname>
+        <reimplementedby refid="classIIOAttrTopic_1a0c33ffe55bb3b950b52f2ddff5bb258f">update</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adi_iio/iio_attr_topic.hpp" line="34" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IIOAttrTopic</label>
+        <link refid="classIIOAttrTopic"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>UpdateCallback</label>
+        <link refid="classUpdateCallback"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/adi_iio/iio_attr_topic.hpp" line="30" column="1" bodyfile="include/adi_iio/iio_attr_topic.hpp" bodystart="31" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classUpdateCallback_1a327b1c1789bf652bd9c719b7889d76c0" prot="public" virt="pure-virtual"><scope>UpdateCallback</scope><name>update</name></member>
+      <member refid="classUpdateCallback_1acacdc3ba60cbced34f732aa151ca0ab5" prot="public" virt="virtual"><scope>UpdateCallback</scope><name>~UpdateCallback</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

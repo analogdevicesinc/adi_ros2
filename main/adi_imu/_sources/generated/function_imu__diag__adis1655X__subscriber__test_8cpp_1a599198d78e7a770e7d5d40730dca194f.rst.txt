@@ -1,0 +1,14 @@
+.. _exhale_function_imu__diag__adis1655X__subscriber__test_8cpp_1a599198d78e7a770e7d5d40730dca194f:
+
+Function TEST(ImuDiagSubscriberTest, test_imu_diag_data_publisher_adis1655x)
+============================================================================
+
+- Defined in :ref:`file_test_src_imu_diag_adis1655X_subscriber_test.cpp`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: TEST(ImuDiagSubscriberTest, test_imu_diag_data_publisher_adis1655x)
+   :project: adi_imu Doxygen Project

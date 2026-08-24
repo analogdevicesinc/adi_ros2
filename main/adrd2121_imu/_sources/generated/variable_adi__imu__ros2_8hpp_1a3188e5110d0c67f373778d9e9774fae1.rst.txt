@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1a3188e5110d0c67f373778d9e9774fae1:
+
+Variable TIME_BASE_MIN
+======================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TIME_BASE_MIN
+   :project: adrd2121_imu Doxygen Project

@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1ac52bdf27dd7f21dc7359daccbb364682:
+
+Variable status_state_mask_
+===========================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: status_state_mask_
+   :project: adi_tmc_coe_core Doxygen Project

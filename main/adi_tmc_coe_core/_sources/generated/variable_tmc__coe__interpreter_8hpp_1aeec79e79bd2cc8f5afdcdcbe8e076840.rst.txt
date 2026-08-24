@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1aeec79e79bd2cc8f5afdcdcbe8e076840:
+
+Variable CONTROL_WORD_SUCCESS
+=============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CONTROL_WORD_SUCCESS
+   :project: adi_tmc_coe_core Doxygen Project

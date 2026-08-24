@@ -1,0 +1,74 @@
+
+.. _file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp:
+
+File tmc_coe_ros2.hpp
+=====================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adi_tmc_coe_core>` (``include/adi_tmc_coe_core``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_tmc_coe_core/tmc_coe_ros2.hpp``)
+----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_tmc_coe_core_tmc_coe_ros2.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``adi_tmc_coe_core/tmc_coe_interpreter.hpp`` (:ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`)
+
+- ``adi_tmc_coe_core/tmc_coe_motor.hpp`` (:ref:`file_include_adi_tmc_coe_core_tmc_coe_motor.hpp`)
+
+- ``adi_tmc_coe_interfaces/srv/change_cia402_state.hpp``
+
+- ``adi_tmc_coe_interfaces/srv/change_nmt_state.hpp``
+
+- ``adi_tmc_coe_interfaces/srv/cyclic_sync_mode.hpp``
+
+- ``adi_tmc_coe_interfaces/srv/read_write_pdo.hpp``
+
+- ``adi_tmc_coe_interfaces/srv/read_write_sdo.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+
+
+
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classTmcCoeROS2`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_tmc__coe__ros2_8hpp_1ab9c36efc7018eee0fdacd6dfc5d25da7`
+
+- :ref:`exhale_variable_tmc__coe__ros2_8hpp_1aea5ff73471c628c9b5360c5673d221f6`
+
+- :ref:`exhale_variable_tmc__coe__ros2_8hpp_1a83c3bbc75f51c63fe3fe9f8ae4562a52`
+
+- :ref:`exhale_variable_tmc__coe__ros2_8hpp_1a899e09be4c6a54f72f677dbce9075d93`
+
+- :ref:`exhale_variable_tmc__coe__ros2_8hpp_1a311d16e01ec8e26f602abd99d8593846`
+

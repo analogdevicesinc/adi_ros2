@@ -1,0 +1,14 @@
+.. _exhale_define_iio__wrapper_8h_1ab70d8c3d394df58fe73a31949cee087d:
+
+Define IIO_CONTEXT_ERROR
+========================
+
+- Defined in :ref:`file_include_adi_imu_iio_wrapper.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: IIO_CONTEXT_ERROR
+   :project: adi_imu Doxygen Project

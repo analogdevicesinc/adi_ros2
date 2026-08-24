@@ -1,0 +1,41 @@
+
+.. _program_listing_file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp:
+
+Program Listing for File adrd2121_imu_ros2_node.hpp
+===================================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp>` (``include/adrd2121_imu/adrd2121_imu_ros2_node.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   /*
+    * Copyright (c) 2023-2024 Analog Devices, Inc. All Rights Reserved.
+    * This software is proprietary to Analog Devices, Inc. and its licensors.
+   */
+   
+   #ifndef ADRD2121_IMU_ROS2_NODE
+   #define ADRD2121_IMU_ROS2_NODE
+   
+   //ROS2 headers
+   #include "rclcpp/rclcpp.hpp"
+   #include "rclcpp/node.hpp"
+   
+   //ROS2 Driver headers
+   #include "adi_imu_buf_ros2.hpp"
+   #include "adrd2121_imu_ros2_common.hpp"
+   
+   //CPP headers
+   #include <memory>
+   #include <iostream>
+   #include <unistd.h>
+   
+   //Namespace definitions
+   using namespace std;
+   
+   //Shutdown functions
+   void gracefulShutdownHandler(int signal);
+   void shutdown(void);
+   
+   #endif //ADRD2121_IMU_ROS2_NODE

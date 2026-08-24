@@ -1,0 +1,14 @@
+.. _exhale_variable_tmc__coe__interpreter_8hpp_1a2d083d253fb924d448d4e309772c05fc:
+
+Variable CW_NEW_SET_POINT_STOP
+==============================
+
+- Defined in :ref:`file_include_adi_tmc_coe_core_tmc_coe_interpreter.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CW_NEW_SET_POINT_STOP
+   :project: adi_tmc_coe_core Doxygen Project

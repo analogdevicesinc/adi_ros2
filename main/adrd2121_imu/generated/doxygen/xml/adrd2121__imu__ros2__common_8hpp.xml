@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="adrd2121__imu__ros2__common_8hpp" kind="file" language="C++">
+    <compoundname>adrd2121_imu_ros2_common.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">sys/time.h</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="adi__imu__buf__ros2_8hpp" local="yes">include/adrd2121_imu/adi_imu_buf_ros2.hpp</includedby>
+    <includedby refid="adi__imu__ros2_8hpp" local="yes">include/adrd2121_imu/adi_imu_ros2.hpp</includedby>
+    <includedby refid="adrd2121__imu__ros2__node_8hpp" local="yes">include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</includedby>
+    <includedby refid="bias__estimate__node__ros2_8hpp" local="yes">include/adrd2121_imu/bias_estimate_node_ros2.hpp</includedby>
+    <includedby refid="imu__buf__ros2_8hpp" local="yes">include/adrd2121_imu/imu_buf_ros2.hpp</includedby>
+    <includedby refid="imu__state__checker__ros2_8hpp" local="yes">include/adrd2121_imu/imu_state_checker_ros2.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>sys/time.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/adrd2121_imu/adi_imu_buf_ros2.hpp</label>
+        <link refid="adi__imu__buf__ros2_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/adrd2121_imu/adi_imu_ros2.hpp</label>
+        <link refid="adi__imu__ros2_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_common.hpp</label>
+        <link refid="adrd2121__imu__ros2__common_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/adrd2121_imu/adrd2121_imu_ros2_node.hpp</label>
+        <link refid="adrd2121__imu__ros2__node_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>include/adrd2121_imu/bias_estimate_node_ros2.hpp</label>
+        <link refid="bias__estimate__node__ros2_8hpp_source"/>
+      </node>
+      <node id="6">
+        <label>include/adrd2121_imu/imu_buf_ros2.hpp</label>
+        <link refid="imu__buf__ros2_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>include/adrd2121_imu/imu_state_checker_ros2.hpp</label>
+        <link refid="imu__state__checker__ros2_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f" prot="public" static="no">
+        <name>TWICE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="15" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8" prot="public" static="no">
+        <name>ADIS16470</name>
+        <initializer>16470</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="16" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1" prot="public" static="no">
+        <name>ADIS16495</name>
+        <initializer>16495</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="17" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1a27a50acf70ee47d1923c803b1d0e5ade" prot="public" static="no">
+        <name>ADIS16500</name>
+        <initializer>16500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="18" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba" prot="public" static="no">
+        <name>BIT_HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="19" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152" prot="public" static="no">
+        <name>BIT_LOW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="20" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299" prot="public" static="no">
+        <name>RESET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="21" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9" prot="public" static="no">
+        <name>STREAM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="22" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580" prot="public" static="no">
+        <name>RECOVERY</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="23" column="9" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091" prot="public" static="no" strong="no">
+        <type></type>
+        <name>msg_type_e</name>
+        <enumvalue id="adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091a75ec5f8c1362b7e22e3a588006246fe3" prot="public">
+          <name>SENSOR_MSGS_IMU</name>
+          <initializer>=1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091a43176f22df8060dc00414eb0040549fe" prot="public">
+          <name>ADI_IMU_MSG</name>
+          <initializer>=2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="74" column="1" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t crc32_tab[]</definition>
+        <argsstring>[]</argsstring>
+        <name>crc32_tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>CRC-32 Polynomial used in IEEE 802.3 See ADIS16495 Data Sheet for sample computation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="27" column="16" bodyfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" bodystart="27" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long long</type>
+        <definition>current_timestamp</definition>
+        <argsstring>()</argsstring>
+        <name>current_timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>current timestamp in microseconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="83" column="11" declfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" declline="83" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_time</definition>
+        <argsstring>(std::string debug_msg)</argsstring>
+        <name>print_time</name>
+        <param>
+          <type>std::string</type>
+          <declname>debug_msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="88" column="6" declfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t crc32_block</definition>
+        <argsstring>(uint32_t crc, const uint16_t *data, int n)</argsstring>
+        <name>crc32_block</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>const uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" line="96" column="10" declfile="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp" declline="96" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2023-2024<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>This<sp/>software<sp/>is<sp/>proprietary<sp/>to<sp/>Analog<sp/>Devices,<sp/>Inc.<sp/>and<sp/>its<sp/>licensors.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADRD2121_IMU_ROS2_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADRD2121_IMU_ROS2_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//CPP<sp/>Headers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//PARAMETER<sp/>CONSTANTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TWICE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADIS16470<sp/>16470</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADIS16495<sp/>16495</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADIS16500<sp/>16500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_HIGH<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_LOW<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RESET<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STREAM<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECOVERY<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>crc32_tab[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00000000,<sp/>0x77073096,<sp/>0xee0e612c,<sp/>0x990951ba,<sp/>0x076dc419,<sp/>0x706af48f,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>0xe963a535,<sp/>0x9e6495a3,<sp/>0x0edb8832,<sp/>0x79dcb8a4,<sp/>0xe0d5e91e,<sp/>0x97d2d988,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>0x09b64c2b,<sp/>0x7eb17cbd,<sp/>0xe7b82d07,<sp/>0x90bf1d91,<sp/>0x1db71064,<sp/>0x6ab020f2,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>0xf3b97148,<sp/>0x84be41de,<sp/>0x1adad47d,<sp/>0x6ddde4eb,<sp/>0xf4d4b551,<sp/>0x83d385c7,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>0x136c9856,<sp/>0x646ba8c0,<sp/>0xfd62f97a,<sp/>0x8a65c9ec,<sp/>0x14015c4f,<sp/>0x63066cd9,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>0xfa0f3d63,<sp/>0x8d080df5,<sp/>0x3b6e20c8,<sp/>0x4c69105e,<sp/>0xd56041e4,<sp/>0xa2677172,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>0x3c03e4d1,<sp/>0x4b04d447,<sp/>0xd20d85fd,<sp/>0xa50ab56b,<sp/>0x35b5a8fa,<sp/>0x42b2986c,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>0xdbbbc9d6,<sp/>0xacbcf940,<sp/>0x32d86ce3,<sp/>0x45df5c75,<sp/>0xdcd60dcf,<sp/>0xabd13d59,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>0x26d930ac,<sp/>0x51de003a,<sp/>0xc8d75180,<sp/>0xbfd06116,<sp/>0x21b4f4b5,<sp/>0x56b3c423,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>0xcfba9599,<sp/>0xb8bda50f,<sp/>0x2802b89e,<sp/>0x5f058808,<sp/>0xc60cd9b2,<sp/>0xb10be924,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>0x2f6f7c87,<sp/>0x58684c11,<sp/>0xc1611dab,<sp/>0xb6662d3d,<sp/>0x76dc4190,<sp/>0x01db7106,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>0x98d220bc,<sp/>0xefd5102a,<sp/>0x71b18589,<sp/>0x06b6b51f,<sp/>0x9fbfe4a5,<sp/>0xe8b8d433,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>0x7807c9a2,<sp/>0x0f00f934,<sp/>0x9609a88e,<sp/>0xe10e9818,<sp/>0x7f6a0dbb,<sp/>0x086d3d2d,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>0x91646c97,<sp/>0xe6635c01,<sp/>0x6b6b51f4,<sp/>0x1c6c6162,<sp/>0x856530d8,<sp/>0xf262004e,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6c0695ed,<sp/>0x1b01a57b,<sp/>0x8208f4c1,<sp/>0xf50fc457,<sp/>0x65b0d9c6,<sp/>0x12b7e950,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>0x8bbeb8ea,<sp/>0xfcb9887c,<sp/>0x62dd1ddf,<sp/>0x15da2d49,<sp/>0x8cd37cf3,<sp/>0xfbd44c65,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>0x4db26158,<sp/>0x3ab551ce,<sp/>0xa3bc0074,<sp/>0xd4bb30e2,<sp/>0x4adfa541,<sp/>0x3dd895d7,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa4d1c46d,<sp/>0xd3d6f4fb,<sp/>0x4369e96a,<sp/>0x346ed9fc,<sp/>0xad678846,<sp/>0xda60b8d0,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>0x44042d73,<sp/>0x33031de5,<sp/>0xaa0a4c5f,<sp/>0xdd0d7cc9,<sp/>0x5005713c,<sp/>0x270241aa,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>0xbe0b1010,<sp/>0xc90c2086,<sp/>0x5768b525,<sp/>0x206f85b3,<sp/>0xb966d409,<sp/>0xce61e49f,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>0x5edef90e,<sp/>0x29d9c998,<sp/>0xb0d09822,<sp/>0xc7d7a8b4,<sp/>0x59b33d17,<sp/>0x2eb40d81,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb7bd5c3b,<sp/>0xc0ba6cad,<sp/>0xedb88320,<sp/>0x9abfb3b6,<sp/>0x03b6e20c,<sp/>0x74b1d29a,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>0xead54739,<sp/>0x9dd277af,<sp/>0x04db2615,<sp/>0x73dc1683,<sp/>0xe3630b12,<sp/>0x94643b84,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0d6d6a3e,<sp/>0x7a6a5aa8,<sp/>0xe40ecf0b,<sp/>0x9309ff9d,<sp/>0x0a00ae27,<sp/>0x7d079eb1,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>0xf00f9344,<sp/>0x8708a3d2,<sp/>0x1e01f268,<sp/>0x6906c2fe,<sp/>0xf762575d,<sp/>0x806567cb,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>0x196c3671,<sp/>0x6e6b06e7,<sp/>0xfed41b76,<sp/>0x89d32be0,<sp/>0x10da7a5a,<sp/>0x67dd4acc,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>0xf9b9df6f,<sp/>0x8ebeeff9,<sp/>0x17b7be43,<sp/>0x60b08ed5,<sp/>0xd6d6a3e8,<sp/>0xa1d1937e,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>0x38d8c2c4,<sp/>0x4fdff252,<sp/>0xd1bb67f1,<sp/>0xa6bc5767,<sp/>0x3fb506dd,<sp/>0x48b2364b,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>0xd80d2bda,<sp/>0xaf0a1b4c,<sp/>0x36034af6,<sp/>0x41047a60,<sp/>0xdf60efc3,<sp/>0xa867df55,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>0x316e8eef,<sp/>0x4669be79,<sp/>0xcb61b38c,<sp/>0xbc66831a,<sp/>0x256fd2a0,<sp/>0x5268e236,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>0xcc0c7795,<sp/>0xbb0b4703,<sp/>0x220216b9,<sp/>0x5505262f,<sp/>0xc5ba3bbe,<sp/>0xb2bd0b28,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>0x2bb45a92,<sp/>0x5cb36a04,<sp/>0xc2d7ffa7,<sp/>0xb5d0cf31,<sp/>0x2cd99e8b,<sp/>0x5bdeae1d,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>0x9b64c2b0,<sp/>0xec63f226,<sp/>0x756aa39c,<sp/>0x026d930a,<sp/>0x9c0906a9,<sp/>0xeb0e363f,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>0x72076785,<sp/>0x05005713,<sp/>0x95bf4a82,<sp/>0xe2b87a14,<sp/>0x7bb12bae,<sp/>0x0cb61b38,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>0x92d28e9b,<sp/>0xe5d5be0d,<sp/>0x7cdcefb7,<sp/>0x0bdbdf21,<sp/>0x86d3d2d4,<sp/>0xf1d4e242,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>0x68ddb3f8,<sp/>0x1fda836e,<sp/>0x81be16cd,<sp/>0xf6b9265b,<sp/>0x6fb077e1,<sp/>0x18b74777,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>0x88085ae6,<sp/>0xff0f6a70,<sp/>0x66063bca,<sp/>0x11010b5c,<sp/>0x8f659eff,<sp/>0xf862ae69,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>0x616bffd3,<sp/>0x166ccf45,<sp/>0xa00ae278,<sp/>0xd70dd2ee,<sp/>0x4e048354,<sp/>0x3903b3c2,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa7672661,<sp/>0xd06016f7,<sp/>0x4969474d,<sp/>0x3e6e77db,<sp/>0xaed16a4a,<sp/>0xd9d65adc,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>0x40df0b66,<sp/>0x37d83bf0,<sp/>0xa9bcae53,<sp/>0xdebb9ec5,<sp/>0x47b2cf7f,<sp/>0x30b5ffe9,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>0xbdbdf21c,<sp/>0xcabac28a,<sp/>0x53b39330,<sp/>0x24b4a3a6,<sp/>0xbad03605,<sp/>0xcdd70693,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>0x54de5729,<sp/>0x23d967bf,<sp/>0xb3667a2e,<sp/>0xc4614ab8,<sp/>0x5d681b02,<sp/>0x2a6f2b94,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb40bbe37,<sp/>0xc30c8ea1,<sp/>0x5a05df1b,<sp/>0x2d02ef8d</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>msg_type_e</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>SENSOR_MSGS_IMU=1,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>ADI_IMU_MSG=2</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>current_timestamp();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_time(std::string<sp/>debug_msg);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">uint32_t<sp/>crc32_block(uint32_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ADRD2121_IMU_ROS2_COMMON_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/adrd2121_imu/adrd2121_imu_ros2_common.hpp"/>
+  </compounddef>
+</doxygen>

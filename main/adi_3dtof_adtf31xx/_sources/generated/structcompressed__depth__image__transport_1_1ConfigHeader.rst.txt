@@ -1,0 +1,17 @@
+.. _exhale_struct_structcompressed__depth__image__transport_1_1ConfigHeader:
+
+Struct ConfigHeader
+===================
+
+- Defined in :ref:`file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: compressed_depth_image_transport::ConfigHeader
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

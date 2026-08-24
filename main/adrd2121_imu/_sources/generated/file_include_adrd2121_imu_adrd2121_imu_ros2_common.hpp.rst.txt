@@ -1,0 +1,106 @@
+
+.. _file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp:
+
+File adrd2121_imu_ros2_common.hpp
+=================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include_adrd2121_imu>` (``include/adrd2121_imu``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adrd2121_imu/adrd2121_imu_ros2_common.hpp``)
+------------------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adrd2121_imu_adrd2121_imu_ros2_common.hpp.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``iostream``
+
+- ``string``
+
+- ``sys/time.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_adrd2121_imu_adi_imu_buf_ros2.hpp`
+
+- :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+- :ref:`file_include_adrd2121_imu_adrd2121_imu_ros2_node.hpp`
+
+- :ref:`file_include_adrd2121_imu_bias_estimate_node_ros2.hpp`
+
+- :ref:`file_include_adrd2121_imu_imu_buf_ros2.hpp`
+
+- :ref:`file_include_adrd2121_imu_imu_state_checker_ros2.hpp`
+
+
+
+
+Enums
+-----
+
+
+- :ref:`exhale_enum_adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5`
+
+- :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd`
+
+- :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1a5c4024e530509ada4154685c628951d8`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1ad5661af5edf1a48a6eddc623c633ceb1`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1a27a50acf70ee47d1923c803b1d0e5ade`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1acb60c94ce7e3f7765041e4c7daae10ba`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1a580c407b0436c2fbdd0ebadfdb3af152`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1a7fbc09303e386c588e56ccb264e4d580`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1ab702106cf3b3e96750b6845ded4e0299`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1aa57974323bef0262551029d83546b8e9`
+
+- :ref:`exhale_define_adrd2121__imu__ros2__common_8hpp_1aefde6f6cde762d962933131d80b41a0f`
+
+
+Variables
+---------
+
+
+- :ref:`exhale_variable_adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8`
+

@@ -1,0 +1,48 @@
+
+.. _program_listing_file_include_adi_tmcl_socket_can_wrapper.hpp:
+
+Program Listing for File socket_can_wrapper.hpp
+===============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_adi_tmcl_socket_can_wrapper.hpp>` (``include/adi_tmcl/socket_can_wrapper.hpp``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   
+   #ifndef SOCKET_CAN_WRAPPER_HPP
+   #define SOCKET_CAN_WRAPPER_HPP
+   
+   class SocketCAN
+   {
+   public:
+     /* Constructor */
+     SocketCAN(const char *logger_prefix);
+   
+     /* Destructor */
+     ~SocketCAN();
+   
+     /* Initialize CAN with specified interface name */
+     bool initialize(const char *interface_name);
+   
+     /* De-initialize CAN */
+     void deinitialize();
+   
+     /* Check if CAN frames are available */
+     bool framesAvailable();
+   
+     /* Rx CAN frames */
+     bool readFrame(uint32_t *id, uint8_t *data, uint8_t *size);
+   
+     /* Tx CAN frames */
+     bool writeFrame(uint32_t id, uint8_t *data, uint8_t size);
+   
+   private:
+     int can_socket_;
+     std::string interface_name_;
+     std::string logger_prefix_;
+     rclcpp::Logger logger_;
+   };
+   
+   #endif // SOCKET_CAN_WRAPPER_HPP

@@ -1,0 +1,14 @@
+.. _exhale_variable_adi__imu__ros2_8hpp_1a87b9734a0e1c4e2b19f48fa69430ca33:
+
+Variable IMU_GYRO_BIAS_SIZE
+===========================
+
+- Defined in :ref:`file_include_adrd2121_imu_adi_imu_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: IMU_GYRO_BIAS_SIZE
+   :project: adrd2121_imu Doxygen Project

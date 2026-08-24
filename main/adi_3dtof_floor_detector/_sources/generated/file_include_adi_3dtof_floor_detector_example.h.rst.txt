@@ -1,0 +1,99 @@
+
+.. _file_include_adi_3dtof_floor_detector_example.h:
+
+File adi_3dtof_floor_detector_example.h
+=======================================
+
+|exhale_lsh| :ref:`Parent directory <dir_include>` (``include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/adi_3dtof_floor_detector_example.h``)
+-----------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_adi_3dtof_floor_detector_example.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``chrono``
+
+- ``cv_bridge/cv_bridge.h``
+
+- ``image_proc_utils.h`` (:ref:`file_include_image_proc_utils.h`)
+
+- ``image_transport/image_transport.hpp``
+
+- ``message_filters/subscriber.h``
+
+- ``message_filters/sync_policies/approximate_time.h``
+
+- ``message_filters/synchronizer.h``
+
+- ``opencv2/highgui/highgui.hpp``
+
+- ``opencv2/imgproc/imgproc.hpp``
+
+- ``pcl/point_cloud.h``
+
+- ``pcl/point_types.h``
+
+- ``pcl_conversions/pcl_conversions.h``
+
+- ``pcl_ros/transforms.hpp``
+
+- ``rclcpp/rclcpp.hpp``
+
+- ``ros-perception/image_transport_plugins/compressed_depth_image_transport/compression_common.h`` (:ref:`file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_compression_common.h`)
+
+- ``ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h`` (:ref:`file_include_ros-perception_image_transport_plugins_compressed_depth_image_transport_rvl_codec.h`)
+
+- ``sensor_msgs/distortion_models.hpp``
+
+- ``sensor_msgs/msg/image.h``
+
+- ``sensor_msgs/msg/point_cloud2.h``
+
+- ``sensor_msgs/point_cloud2_iterator.hpp``
+
+- ``tf2_geometry_msgs/tf2_geometry_msgs.hpp``
+
+
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_std__chrono_literals`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classADI3DToFFloorDetectorExample`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_adi__3dtof__floor__detector__example_8h_1ad1816b3b4b0d9ebdf432a17f8ca5c825`
+

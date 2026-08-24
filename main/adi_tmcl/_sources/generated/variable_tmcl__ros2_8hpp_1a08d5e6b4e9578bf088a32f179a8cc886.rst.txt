@@ -1,0 +1,14 @@
+.. _exhale_variable_tmcl__ros2_8hpp_1a08d5e6b4e9578bf088a32f179a8cc886:
+
+Variable TIMEOUT_MS_DEFAULT
+===========================
+
+- Defined in :ref:`file_include_adi_tmcl_tmcl_ros2.hpp`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: TIMEOUT_MS_DEFAULT
+   :project: adi_tmcl Doxygen Project

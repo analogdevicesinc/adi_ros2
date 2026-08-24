@@ -1,0 +1,17 @@
+.. _exhale_class_classInputSensorFactory:
+
+Class InputSensorFactory
+========================
+
+- Defined in :ref:`file_include_input_sensor_factory.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: InputSensorFactory
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:

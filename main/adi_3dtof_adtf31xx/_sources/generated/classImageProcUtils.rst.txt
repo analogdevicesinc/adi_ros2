@@ -1,0 +1,17 @@
+.. _exhale_class_classImageProcUtils:
+
+Class ImageProcUtils
+====================
+
+- Defined in :ref:`file_include_image_proc_utils.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: ImageProcUtils
+   :project: adi_3dtof_adtf31xx Doxygen Project
+   :members:
+   :protected-members:
+   :undoc-members:
