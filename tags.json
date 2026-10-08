@@ -1,10 +1,10 @@
 {
   "humble/adi_meta": [
-    "adi_meta",
+    "humble > adi_meta",
     "core"
   ],
   "main/adi_meta": [
-    "adi_meta",
+    "main > adi_meta",
     "core"
   ],
   "humble/adi_3dtof_adtf31xx": [
