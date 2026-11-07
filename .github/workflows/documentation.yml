@@ -92,38 +92,24 @@ jobs:
 
     - name: Generate tags for the versioned directories
       run: |
-        echo "{" > tags_unsorted.json
-        find . -type d -mindepth 2 -maxdepth 2 ! -name ".*" ! -path "*/.git*" ! -path . | sort | \
-        awk -F/ '
-        BEGIN {first=1}
-        {
-            # Only second level directories
-            path = $2 "/" $3
-
-            if ($3 == "adi_meta") {
-                name = $3
-                label = "core"
-            } else {
-                name = $2 " > " $3
-                label = ""
-            }
-
-            # Skip empty entries
-            if (path != "") {
-                if (!first) printf ",\n"
-                printf "  \"%s\": [\"%s\", \"%s\"]", path, name, label
-                first=0
-            }
-        }' >> tags_unsorted.json
-        echo -e "\n}" >> tags_unsorted.json
-
-        # Sort using the name field in the tags.json as the key
-        jq '
-          to_entries |
-          sort_by(.value[0]) |
-          from_entries
-        ' tags_unsorted.json > tags.json
-        rm tags_unsorted.json
+        find . -mindepth 3 -maxdepth 3 -name index.html -printf '%P\n' | \
+        jq --raw-input --null-input '
+          [inputs | split("/") | .[:2]
+           | select(all(.[]; test("^[^._]")))]
+          | group_by(.[0])
+          | map({
+              key: .[0][0],
+              value: {
+                label: "",
+                packages: (map(.[1])
+                  | sort_by(if . == "adi_meta" then "" else . end)
+                  | map({key: ., value: (if . == "adi_meta" then "core" else "" end)})
+                  | from_entries)
+              }
+            })
+          | from_entries
+        ' > tags.json
+        cat tags.json
 
 
     - name: Generate auxiliary files
