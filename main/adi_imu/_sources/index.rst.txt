@@ -14,6 +14,7 @@ Publisher for ADI IMUs
    C++ API <generated/index>
 
 
+
 .. toctree::
    :maxdepth: 2
 

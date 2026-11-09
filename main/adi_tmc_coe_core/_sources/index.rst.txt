@@ -14,6 +14,7 @@ Core package for Trinamic Motor Controllers (TMC) that uses CANopen-over-etherCA
    C++ API <generated/index>
 
 
+
 .. toctree::
    :maxdepth: 2
 
