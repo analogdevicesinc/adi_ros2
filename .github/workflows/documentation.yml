@@ -119,8 +119,8 @@ jobs:
         # Link the index of the versioned directory to the adi_meta/index.html
         printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=adi_meta/index.html"></head><body></body></html>' > ${branch_name}/index.html
 
-        # Create a redirecting index.html at the root of the gh-pages branch to the latest branch
-        printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=%s/index.html"></head><body></body></html>' "${branch_name}" > index.html
+        # Create a redirecting index.html at the root of the gh-pages branch to the latest branch adi_meta/index.html
+        printf '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=%s/adi_meta/index.html"></head><body></body></html>' "${branch_name}" > index.html
 
     - name: Commit gh-pages
       run: |
