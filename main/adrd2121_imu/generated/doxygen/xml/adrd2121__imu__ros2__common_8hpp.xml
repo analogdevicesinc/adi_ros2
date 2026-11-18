@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adrd2121__imu__ros2__common_8hpp" kind="file" language="C++">
     <compoundname>adrd2121_imu_ros2_common.hpp</compoundname>
     <includes local="no">string</includes>
@@ -229,9 +229,9 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
-      <memberdef kind="function" id="adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="adrd2121__imu__ros2__common_8hpp_1af11fc61c409e650d9a2d1a2a80e68691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>long long</type>
-        <definition>current_timestamp</definition>
+        <definition>long long current_timestamp</definition>
         <argsstring>()</argsstring>
         <name>current_timestamp</name>
         <briefdescription>
@@ -317,7 +317,7 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STREAM<sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECOVERY<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>crc32_tab[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>crc32_tab[]<sp/>=<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>0x00000000,<sp/>0x77073096,<sp/>0xee0e612c,<sp/>0x990951ba,<sp/>0x076dc419,<sp/>0x706af48f,</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>0xe963a535,<sp/>0x9e6495a3,<sp/>0x0edb8832,<sp/>0x79dcb8a4,<sp/>0xe0d5e91e,<sp/>0x97d2d988,</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>0x09b64c2b,<sp/>0x7eb17cbd,<sp/>0xe7b82d07,<sp/>0x90bf1d91,<sp/>0x1db71064,<sp/>0x6ab020f2,</highlight></codeline>
@@ -363,15 +363,15 @@
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb40bbe37,<sp/>0xc30c8ea1,<sp/>0x5a05df1b,<sp/>0x2d02ef8d</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>msg_type_e</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>msg_type_e</highlight></codeline>
 <codeline lineno="75"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/>SENSOR_MSGS_IMU=1,</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/>ADI_IMU_MSG=2</highlight></codeline>
 <codeline lineno="78"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>current_timestamp();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>current_timestamp();</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_time(std::string<sp/>debug_msg);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_time(std::string<sp/>debug_msg);</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal">uint32_t<sp/>crc32_block(uint32_t<sp/>crc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ADRD2121_IMU_ROS2_COMMON_H</highlight><highlight class="normal"></highlight></codeline>

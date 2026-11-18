@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__buf__ros2_8hpp" kind="file" language="C++">
     <compoundname>imu_buf_ros2.hpp</compoundname>
     <includes local="yes">rclcpp/rclcpp.hpp</includes>
@@ -366,7 +366,7 @@
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BURST_COUNT_MAX<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>buf_dio_pin_e</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>buf_dio_pin_e</highlight></codeline>
 <codeline lineno="55"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/>BUF_NONE=0,</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/>BUF_DIO1=1,</highlight></codeline>
@@ -376,7 +376,7 @@
 <codeline lineno="61"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="classImuBufRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref></highlight></codeline>
+<codeline lineno="66" refid="classImuBufRos2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" kindref="member">ImuBufRos2</ref></highlight></codeline>
 <codeline lineno="67"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="73" refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuBufRos2_1a73bf779d657ac4a34b57358ab5fd8ee1" kindref="member">ImuBufRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node,<sp/>adi_imu_Device_t*<sp/>p_device);</highlight></codeline>
@@ -477,7 +477,7 @@
 <codeline lineno="272"><highlight class="normal"></highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/>uint32_t<sp/>drop_count_;</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>Data<sp/>Array<sp/>and<sp/>Counters<sp/>for<sp/>Buffer<sp/>Burst</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>Data<sp/>Array<sp/>and<sp/>Counters<sp/>for<sp/>Buffer<sp/>Burst</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="278"><highlight class="normal"><sp/><sp/>uint16_t<sp/>buf_len_;</highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight></codeline>
 <codeline lineno="281"><highlight class="normal"><sp/><sp/>uint16_t<sp/>burst_raw_[MAX_BUF_LEN_BYTES*10];</highlight></codeline>

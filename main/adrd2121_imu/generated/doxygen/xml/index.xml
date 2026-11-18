@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="classAdiImuBufRos2" kind="class"><name>AdiImuBufRos2</name>
     <member refid="classAdiImuBufRos2_1af214c19e23577b0b2e75976d9e66e52d" kind="variable"><name>p_imu_glob_cmd_service_</name></member>
     <member refid="classAdiImuBufRos2_1a8ee044b8d299cf893e4ec03460475583" kind="variable"><name>mode_of_operation_</name></member>
@@ -203,7 +203,7 @@
     <member refid="adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091a75ec5f8c1362b7e22e3a588006246fe3" kind="enumvalue"><name>SENSOR_MSGS_IMU</name></member>
     <member refid="adrd2121__imu__ros2__common_8hpp_1aaa0f26826fda2d00f0456131c8c2c091a43176f22df8060dc00414eb0040549fe" kind="enumvalue"><name>ADI_IMU_MSG</name></member>
     <member refid="adrd2121__imu__ros2__common_8hpp_1a7c721e38ec2a9be581f718dc5405ace8" kind="variable"><name>crc32_tab</name></member>
-    <member refid="adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd" kind="function"><name>current_timestamp</name></member>
+    <member refid="adrd2121__imu__ros2__common_8hpp_1af11fc61c409e650d9a2d1a2a80e68691" kind="function"><name>current_timestamp</name></member>
     <member refid="adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b" kind="function"><name>print_time</name></member>
     <member refid="adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5" kind="function"><name>crc32_block</name></member>
   </compound>

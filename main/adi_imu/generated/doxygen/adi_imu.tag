@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.8">
+<tagfile doxygen_version="1.15.0">
   <compound kind="class">
     <name>adi_imu::AccelGyroTempDataProvider</name>
     <filename>classadi__imu_1_1AccelGyroTempDataProvider.html</filename>

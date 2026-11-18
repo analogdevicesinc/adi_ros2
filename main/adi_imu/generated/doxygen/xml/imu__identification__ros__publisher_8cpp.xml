@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__identification__ros__publisher_8cpp" kind="file" language="C++">
     <compoundname>imu_identification_ros_publisher.cpp</compoundname>
     <includes refid="imu__identification__ros__publisher_8h" local="yes">adi_imu/imu_identification_ros_publisher.h</includes>
@@ -100,7 +100,7 @@
 <codeline lineno="34"><highlight class="normal"><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1aff693db096cba26fbaab58c39275754b" kindref="member">ImuIdentificationRosPublisher::~ImuIdentificationRosPublisher</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1ae50c3e80633330a289b79ca89f98487f" kindref="member">m_data_provider</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1ac19b157c0dbeda4ff01054076d1e06da" kindref="member">ImuIdentificationRosPublisher::setMessageProvider</ref>(</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/>ImuIdentificationDataProviderInterface<sp/>*<sp/>dataProvider)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuIdentificationDataProviderInterface" kindref="compound">ImuIdentificationDataProviderInterface</ref><sp/>*<sp/>dataProvider)</highlight></codeline>
 <codeline lineno="38"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1ae50c3e80633330a289b79ca89f98487f" kindref="member">m_data_provider</ref><sp/>=<sp/>dataProvider;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
@@ -114,7 +114,7 @@
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;startThread:<sp/>ImuIdentificationRosPublisher&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>data<sp/>only<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1ae50c3e80633330a289b79ca89f98487f" kindref="member">m_data_provider</ref>-&gt;<ref refid="classadi__imu_1_1ImuIdentificationDataProviderInterface_1acdac3e097ea00aa1fdab03f016f58f83" kindref="member">getData</ref>(<ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1a8299508a3610b625987a75c7ef654c0c" kindref="member">m_message</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1ae50c3e80633330a289b79ca89f98487f" kindref="member">m_data_provider</ref>-&gt;getData(<ref refid="classadi__imu_1_1ImuIdentificationRosPublisher_1a8299508a3610b625987a75c7ef654c0c" kindref="member">m_message</ref>);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(rclcpp::ok())<sp/>{</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>rclcpp::Time<sp/>now<sp/>=<sp/><ref refid="classadi__imu_1_1ImuIdentificationRosPublisherInterface_1a578ed20564a05adc96f2a6bfbfd6fcf2" kindref="member">m_node</ref>-&gt;get_clock()-&gt;now();</highlight></codeline>

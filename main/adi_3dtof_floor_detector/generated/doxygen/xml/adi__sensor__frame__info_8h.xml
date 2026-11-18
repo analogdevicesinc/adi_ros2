@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__sensor__frame__info_8h" kind="file" language="C++">
     <compoundname>adi_sensor_frame_info.h</compoundname>
     <includes local="no">stdint.h</includes>
@@ -67,7 +67,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADISensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">ADISensorFrameInfo</ref></highlight></codeline>
 <codeline lineno="19"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classADISensorFrameInfo" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">ADISensorFrameInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" kindref="member" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_safety_bubble_detector/adi_3dtof_safety_bubble_detector.tag">ADISensorFrameInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>depth_image_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">[image_width<sp/>*<sp/>image_height];</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>ab_image_<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">[image_width<sp/>*<sp/>image_height];</highlight></codeline>

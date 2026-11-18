@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="iio__path_8hpp" kind="file" language="C++">
     <compoundname>iio_path.hpp</compoundname>
     <includes local="no">vector</includes>
@@ -128,10 +128,10 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/>CHANNEL_ATTR,</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classIIOPath" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIIOPath" kindref="compound">IIOPath</ref></highlight></codeline>
+<codeline lineno="46" refid="classIIOPath" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIIOPath_1ad83ab64c410b2df2fee394ea78f28cb3" kindref="member">IIOPath</ref></highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref>(std::string<sp/>path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter<sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classIIOPath_1ad83ab64c410b2df2fee394ea78f28cb3" kindref="member">IIOPath</ref>(std::string<sp/>path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>delimiter<sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classIIOPath_1aa089783a455bca56348d522880cb3484" kindref="member">basePath</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>

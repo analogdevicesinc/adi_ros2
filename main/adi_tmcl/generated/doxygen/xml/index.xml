@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="classBldcMotor" kind="class"><name>BldcMotor</name>
     <member refid="classBldcMotor_1a2c58f92e43ebb7d7c2988ec8534531b9" kind="variable"><name>comm_mode_</name></member>
     <member refid="classBldcMotor_1a6411e60b9793f3df108449e6eaeffd86" kind="variable"><name>position_scaler_m_</name></member>

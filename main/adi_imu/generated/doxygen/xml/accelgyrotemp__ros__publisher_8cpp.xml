@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="accelgyrotemp__ros__publisher_8cpp" kind="file" language="C++">
     <compoundname>accelgyrotemp_ros_publisher.cpp</compoundname>
     <includes refid="accelgyrotemp__ros__publisher_8h" local="yes">adi_imu/accelgyrotemp_ros_publisher.h</includes>
@@ -101,14 +101,14 @@
 <codeline lineno="35"><highlight class="normal"><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1ae757fad91cbf739270084bfe7f0c68ae" kindref="member">AccelGyroTempRosPublisher::~AccelGyroTempRosPublisher</ref>()<sp/>{<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a53e26314b69d2ecb0a0a5b3bf403dcb1" kindref="member">m_data_provider</ref>;<sp/>}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1ac2ae64fe792cb88a5921abe068f395af" kindref="member">AccelGyroTempRosPublisher::setMessageProvider</ref>(</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/>AccelGyroTempDataProviderInterface<sp/>*<sp/>dataProvider)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1AccelGyroTempDataProviderInterface" kindref="compound">AccelGyroTempDataProviderInterface</ref><sp/>*<sp/>dataProvider)</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a53e26314b69d2ecb0a0a5b3bf403dcb1" kindref="member">m_data_provider</ref><sp/>=<sp/>dataProvider;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1ab6cea9e16cf5842894db9f389302fd94" kindref="member">AccelGyroTempRosPublisher::publish</ref>()</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a53e26314b69d2ecb0a0a5b3bf403dcb1" kindref="member">m_data_provider</ref>-&gt;<ref refid="classadi__imu_1_1AccelGyroTempDataProviderInterface_1a6c81453d162fcb32a7c9ab37364c195b" kindref="member">getData</ref>(<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a8c4c9f1919aa59aea9a2e216a1ba1e39" kindref="member">m_message</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a53e26314b69d2ecb0a0a5b3bf403dcb1" kindref="member">m_data_provider</ref>-&gt;getData(<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a8c4c9f1919aa59aea9a2e216a1ba1e39" kindref="member">m_message</ref>))<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a8c4c9f1919aa59aea9a2e216a1ba1e39" kindref="member">m_message</ref>.header.stamp.sec<sp/>&amp;&amp;<sp/>!<ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a8c4c9f1919aa59aea9a2e216a1ba1e39" kindref="member">m_message</ref>.header.stamp.nanosec)<sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::Time<sp/>now<sp/>=<sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisherInterface_1a3980b78df28495efa342af1defe7eb0e" kindref="member">m_node</ref>-&gt;get_clock()-&gt;now();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1a8c4c9f1919aa59aea9a2e216a1ba1e39" kindref="member">m_message</ref>.header.stamp<sp/>=<sp/>now;</highlight></codeline>

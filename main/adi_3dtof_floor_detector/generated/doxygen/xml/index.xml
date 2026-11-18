@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="classADI3DToFFloorDetector" kind="class"><name>ADI3DToFFloorDetector</name>
     <member refid="classADI3DToFFloorDetector_1a9240e9f0f19fcdb6e53b2b97c747a0d2" kind="variable"><name>timer_</name></member>
     <member refid="classADI3DToFFloorDetector_1ad3bb804dce8b4852b87c76439241d257" kind="variable"><name>input_sensor_</name></member>

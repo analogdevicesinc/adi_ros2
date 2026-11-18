@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classImuBufRos2" kind="class" language="C++" prot="public">
     <compoundname>ImuBufRos2</compoundname>
     <includes refid="imu__buf__ros2_8hpp" local="no">imu_buf_ros2.hpp</includes>
@@ -206,7 +206,7 @@
         <name>buf_pps_freq_</name>
         <qualifiedname>ImuBufRos2::buf_pps_freq_</qualifiedname>
         <briefdescription>
-<para>PPS Input Frequency is (10 ^ (buf_pps_freq) Hz) </para>
+<para>PPS Input Frequency is (10 ^ (buf_pps_freq) Hz). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -341,7 +341,7 @@
         <name>rollover_count_</name>
         <qualifiedname>ImuBufRos2::rollover_count_</qualifiedname>
         <briefdescription>
-<para>Rollover Counter (in excess of 65536) </para>
+<para>Rollover Counter (in excess of 65536). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -667,8 +667,7 @@
 <parametername direction="in">p_device</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to adi_imu_device_t <linebreak/>
- </para>
+<para>Pointer to adi_imu_device_t </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -724,8 +723,7 @@
 <para>Initializes the ADRD2121. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
- </para>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -756,8 +754,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
- </para>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -800,8 +797,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
- </para>
+<simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -822,8 +818,7 @@
 <para>Validate data. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
- </para>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1051,8 +1046,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>String of current status of Buffer Board. <linebreak/>
- </para>
+<simplesect kind="return"><para>String of current status of Buffer Board. </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1276,8 +1270,7 @@
 <para>Checks if ADRD2121 device can be detected. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Return bool if device is found <linebreak/>
- </para>
+<para><simplesect kind="return"><para>Return bool if device is found </para>
 </simplesect>
 </para>
         </detaileddescription>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="classADI3DToFADTF31xx" kind="class"><name>ADI3DToFADTF31xx</name>
     <member refid="classADI3DToFADTF31xx_1a96edc35302c0479f5d3d5e29828f25a7" kind="variable"><name>timer_</name></member>
     <member refid="classADI3DToFADTF31xx_1aa724dbccafed3ec1c04cd593bdec40e6" kind="variable"><name>input_sensor_</name></member>

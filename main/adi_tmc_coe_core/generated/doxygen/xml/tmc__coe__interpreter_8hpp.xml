@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="tmc__coe__interpreter_8hpp" kind="file" language="C++">
     <compoundname>tmc_coe_interpreter.hpp</compoundname>
     <includes local="no">stdio.h</includes>
@@ -789,6 +789,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMC_COE_INTERPRETER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMC_COE_INTERPRETER_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -992,7 +993,7 @@
 <codeline lineno="208"><highlight class="normal"><sp/><sp/>int32_t<sp/>target_position;</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/>int32_t<sp/>target_velocity;</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/>int16_t<sp/>target_torque;</highlight></codeline>
-<codeline lineno="211"><highlight class="normal">}<sp/><ref refid="structPACKED" kindref="compound">output_pdo_t</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}<sp/>output_pdo_t;</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Input<sp/>PDOs<sp/>(Sync<sp/>Manager<sp/>3)<sp/>-<sp/>Read<sp/>only<sp/>access*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPACKED" kindref="compound">PACKED</ref></highlight></codeline>
@@ -1005,9 +1006,9 @@
 <codeline lineno="221"><highlight class="normal"><sp/><sp/>int32_t<sp/>velocity_actual_value;</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/>int16_t<sp/>torque_demand_value;</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/>int16_t<sp/>torque_actual_value;</highlight></codeline>
-<codeline lineno="224"><highlight class="normal">}<sp/><ref refid="structPACKED" kindref="compound">input_pdo_t</ref>;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}<sp/>input_pdo_t;</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226" refid="classTmcCoeInterpreter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref></highlight></codeline>
+<codeline lineno="226" refid="classTmcCoeInterpreter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TmcCoeInterpreter</highlight></codeline>
 <codeline lineno="227"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/>std::thread<sp/>processdata_thread_;</highlight></codeline>
@@ -1044,8 +1045,8 @@
 <codeline lineno="260"><highlight class="normal"><sp/><sp/>std::vector&lt;input_pdo_t<sp/>*&gt;<sp/>input_pdo_;</highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/>std::vector&lt;output_pdo_t<sp/>*&gt;<sp/>output_pdo_;</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref>(uint8_t<sp/>SDO_PDO_retries,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>interface_timeout,<sp/>std::string<sp/>logger_prefix);</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeInterpreter" kindref="compound">~TmcCoeInterpreter</ref>();</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>TmcCoeInterpreter(uint8_t<sp/>SDO_PDO_retries,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>interface_timeout,<sp/>std::string<sp/>logger_prefix);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>~TmcCoeInterpreter();</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/>uint8_t<sp/>initInterface(std::string<sp/>ifname);</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initDictionary(uint8_t<sp/>slave_number,<sp/>std::vector&lt;std::string&gt;<sp/>all_obj_name,</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>all_index,<sp/>std::vector&lt;std::string&gt;<sp/>all_sub_index,</highlight></codeline>

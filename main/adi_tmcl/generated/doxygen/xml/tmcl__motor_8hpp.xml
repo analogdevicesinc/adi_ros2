@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="tmcl__motor_8hpp" kind="file" language="C++">
     <compoundname>tmcl_motor.hpp</compoundname>
     <includes refid="tmcl__interpreter_8hpp" local="yes">adi_tmcl/tmcl_interpreter.hpp</includes>
@@ -401,6 +401,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMCL_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMCL_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -410,12 +411,12 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry_msgs/msg/twist.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/msg/tmc_info.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="classMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMotor" kindref="compound">Motor</ref></highlight></codeline>
+<codeline lineno="15" refid="classMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Motor</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classMotor" kindref="compound">Motor</ref>(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref>*<sp/>p_tmcl_interpreter,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>Motor(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmclInterpreter" kindref="compound">TmclInterpreter</ref>*<sp/>p_tmcl_interpreter,</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>motor_number,<sp/>uint32_t<sp/>module_number);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMotor" kindref="compound">~Motor</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~Motor();</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/>uint8_t<sp/>getMotorNumber();</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/>std::string<sp/>getMotorName();</highlight></codeline>

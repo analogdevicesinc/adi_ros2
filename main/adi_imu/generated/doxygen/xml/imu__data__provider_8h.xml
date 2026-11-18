@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__data__provider_8h" kind="file" language="C++">
     <compoundname>imu_data_provider.h</compoundname>
     <includes local="no">string</includes>
@@ -135,7 +135,7 @@
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="classadi__imu_1_1ImuDataProvider" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuDataProvider" kindref="compound">ImuDataProvider</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuDataProviderInterface" kindref="compound">ImuDataProviderInterface</ref></highlight></codeline>
+<codeline lineno="34" refid="classadi__imu_1_1ImuDataProvider" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuDataProvider_1ab59782fa5f2c5ac4abd22b1942310d6f" kindref="member">ImuDataProvider</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuDataProviderInterface_1a6ff58f5752a6f6bcf3d2f5272e0daa7c" kindref="member">ImuDataProviderInterface</ref></highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuDataProvider_1ab59782fa5f2c5ac4abd22b1942310d6f" kindref="member">ImuDataProvider</ref>();</highlight></codeline>

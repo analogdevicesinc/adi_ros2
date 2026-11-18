@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="structCameraIntrinsics" kind="struct" language="C++" prot="public">
     <compoundname>CameraIntrinsics</compoundname>
     <includes refid="adi__camera_8h" local="no">adi_camera.h</includes>
@@ -11,7 +11,7 @@
         <name>camera_matrix</name>
         <qualifiedname>CameraIntrinsics::camera_matrix</qualifiedname>
         <briefdescription>
-<para>Camera matrix = [fx, 0, cx, 0, fy, cy, 0, 0, 1] fx, fy : Camera focal lengths (pixels) cx, cy : Camera principal points or optical centers (pixels) </para>
+<para>Camera matrix = [fx, 0, cx, 0, fy, cy, 0, 0, 1] fx, fy : Camera focal lengths (pixels) cx, cy : Camera principal points or optical centers (pixels). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

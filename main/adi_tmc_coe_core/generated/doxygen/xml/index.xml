@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="structPACKED" kind="struct"><name>PACKED</name>
     <member refid="structPACKED_1a620eaf334a9d2dce00ddbf60394e8f92" kind="variable"><name>modes_of_operation</name></member>
     <member refid="structPACKED_1a6b02716e07b0b5e51e4ca70a8c21925f" kind="variable"><name>control_word</name></member>

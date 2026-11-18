@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classADI3DToFSafetyBubbleDetector" kind="class" language="C++" prot="public">
     <compoundname>ADI3DToFSafetyBubbleDetector</compoundname>
     <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
@@ -1120,7 +1120,7 @@
         <qualifiedname>ADI3DToFSafetyBubbleDetector::discard_distance_threshold_delta_mtr_</qualifiedname>
         <initializer>= 0.5f</initializer>
         <briefdescription>
-<para>Small offset value used in filtering point cloud based on depth (Z) </para>
+<para>Small offset value used in filtering point cloud based on depth (Z). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1136,7 +1136,7 @@
         <qualifiedname>ADI3DToFSafetyBubbleDetector::discard_distance_threshold_mtr_</qualifiedname>
         <initializer>= 1.5f</initializer>
         <briefdescription>
-<para>Threshold to filter the point cloud based on depth (Z) Select the points with depth value lesser than 1500mm from the sensor (safety bubble radius 1.0m + delta 0.5m) </para>
+<para>Threshold to filter the point cloud based on depth (Z) Select the points with depth value lesser than 1500mm from the sensor (safety bubble radius 1.0m + delta 0.5m). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1152,7 +1152,7 @@
         <qualifiedname>ADI3DToFSafetyBubbleDetector::camera_height_mtr_</qualifiedname>
         <initializer>= 0.1524f</initializer>
         <briefdescription>
-<para>Camera height, default is 0.1524m (6 inches) </para>
+<para>Camera height, default is 0.1524m (6 inches). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1387,7 +1387,7 @@
         <location file="include/adi_3dtof_safety_bubble_detector_node.h" line="883" column="8" bodyfile="include/adi_3dtof_safety_bubble_detector_node.h" bodystart="883" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classADI3DToFSafetyBubbleDetector_1ad73eb4c8acaad9150e3984318796828a" prot="private" static="no" mutable="no">
-        <type><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref></type>
+        <type>ADIImageROI</type>
         <definition>ADIImageROI ADI3DToFSafetyBubbleDetector::valid_roi_</definition>
         <argsstring></argsstring>
         <name>valid_roi_</name>

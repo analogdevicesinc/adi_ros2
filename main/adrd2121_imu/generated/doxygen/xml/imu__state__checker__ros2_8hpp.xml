@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__state__checker__ros2_8hpp" kind="file" language="C++">
     <compoundname>imu_state_checker_ros2.hpp</compoundname>
     <includes local="yes">rclcpp/rclcpp.hpp</includes>
@@ -206,13 +206,13 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_LIMIT<sp/>9</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WAIT_LIMIT<sp/>3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>e_imu_state</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>e_imu_state</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/>STANDSTILL<sp/>=<sp/>0,</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/>MOVING<sp/>=<sp/>1</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">}e_imu_state;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="classImuStateCheckerRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref></highlight></codeline>
+<codeline lineno="46" refid="classImuStateCheckerRos2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" kindref="member">ImuStateCheckerRos2</ref></highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="50" refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classImuStateCheckerRos2_1ae4a0f5da95b152d8169096f4b65d3b5b" kindref="member">ImuStateCheckerRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node);</highlight></codeline>

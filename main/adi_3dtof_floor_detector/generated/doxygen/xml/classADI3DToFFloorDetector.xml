@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classADI3DToFFloorDetector" kind="class" language="C++" prot="public">
     <compoundname>ADI3DToFFloorDetector</compoundname>
     <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
@@ -1010,7 +1010,7 @@
         <qualifiedname>ADI3DToFFloorDetector::camera_height_mtr_</qualifiedname>
         <initializer>= 0.1524f</initializer>
         <briefdescription>
-<para>Camera height, default is 0.1524m (6 inches) </para>
+<para>Camera height, default is 0.1524m (6 inches). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>

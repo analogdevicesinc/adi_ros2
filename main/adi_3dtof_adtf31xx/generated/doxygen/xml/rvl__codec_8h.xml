@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="rvl__codec_8h" kind="file" language="C++">
     <compoundname>rvl_codec.h</compoundname>
     <includedby refid="adi__3dtof__adtf31xx_8h" local="yes">include/adi_3dtof_adtf31xx.h</includedby>
@@ -27,9 +27,9 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">compressed_depth_image_transport<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6" refid="classcompressed__depth__image__transport_1_1RvlCodec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="classcompressed__depth__image__transport_1_1RvlCodec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RvlCodec<sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/>RvlCodec();</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compress<sp/>input<sp/>data<sp/>into<sp/>output.<sp/>The<sp/>size<sp/>of<sp/>output<sp/>can<sp/>be<sp/>equal<sp/>to</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>(1.5<sp/>*<sp/>numPixels<sp/>+<sp/>4)<sp/>in<sp/>the<sp/>worst<sp/>case.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CompressRVL(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal">*<sp/>input,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>output,</highlight></codeline>
@@ -40,8 +40,8 @@
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPixels);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref>&amp;);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref>&amp;);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>RvlCodec(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RvlCodec&amp;);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>RvlCodec&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>RvlCodec&amp;);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EncodeVLE(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>DecodeVLE();</highlight></codeline>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="tmcl__ros2_8hpp" kind="file" language="C++">
     <compoundname>tmcl_ros2.hpp</compoundname>
     <includes refid="tmcl__bldc__motor_8hpp" local="yes">adi_tmcl/tmcl_bldc_motor.hpp</includes>
@@ -462,6 +462,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMCL_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMCL_ROS2_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -471,11 +472,11 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/srv/tmc_gap_all.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;adi_tmcl/srv/tmc_ggp_all.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="classTmclRos2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmclRos2" kindref="compound">TmclRos2</ref></highlight></codeline>
+<codeline lineno="15" refid="classTmclRos2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TmclRos2</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classTmclRos2" kindref="compound">TmclRos2</ref>(rclcpp::Node::SharedPtr<sp/>node);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classTmclRos2" kindref="compound">~TmclRos2</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>TmclRos2(rclcpp::Node::SharedPtr<sp/>node);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>~TmclRos2();</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>

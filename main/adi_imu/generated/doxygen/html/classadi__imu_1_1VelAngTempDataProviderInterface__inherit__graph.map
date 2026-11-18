@@ -1,5 +1,5 @@
 <map id="adi_imu::VelAngTempDataProviderInterface" name="adi_imu::VelAngTempDataProviderInterface">
-<area shape="rect" id="Node000001" title="Interface for delta angle, delta velocity and temperature buffered data provider." alt="" coords="5,5,252,45"/>
-<area shape="rect" id="Node000002" href="$classadi__imu_1_1VelAngTempDataProvider.html" title="Class for delta angle, delta velocity and temperature buffered data provider." alt="" coords="5,93,252,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,59,131,93,126,93,126,59"/>
+<area shape="rect" id="Node000001" title="Interface for delta angle, delta velocity and temperature buffered data provider." alt="" coords="5,5,252,50"/>
+<area shape="rect" id="Node000002" href="$classadi__imu_1_1VelAngTempDataProvider.html" title="Class for delta angle, delta velocity and temperature buffered data provider." alt="" coords="5,98,252,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,64,131,99,126,96,127,68"/>
 </map>

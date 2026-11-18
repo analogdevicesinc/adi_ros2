@@ -1,0 +1,26 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"classBldcMotor.html":[0,0,0],
+"classMotor.html":[0,0,1],
+"classSocketCAN.html":[0,0,2],
+"classStepperMotor.html":[0,0,3],
+"classTmclInterpreter.html":[0,0,6],
+"classTmclRos2.html":[0,0,7],
+"classes.html":[0,1],
+"dir_23298a5e901afe75ed61f6773598db27.html":[1,0,0,0],
+"dir_d44c64559bbebec7f509842c48db8b23.html":[1,0,0],
+"files.html":[1,0],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[],
+"socket__can__wrapper_8hpp_source.html":[1,0,0,0,0],
+"structtmcl__cfg__t.html":[0,0,4],
+"structtmcl__msg__t.html":[0,0,5],
+"tmcl__bldc__motor_8hpp_source.html":[1,0,0,0,1],
+"tmcl__common_8hpp_source.html":[1,0,0,0,2],
+"tmcl__interpreter_8hpp_source.html":[1,0,0,0,3],
+"tmcl__motor_8hpp_source.html":[1,0,0,0,4],
+"tmcl__ros2_8hpp_source.html":[1,0,0,0,5],
+"tmcl__stepper__motor_8hpp_source.html":[1,0,0,0,6]
+};

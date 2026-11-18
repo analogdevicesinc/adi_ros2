@@ -35,7 +35,7 @@
 \DoxyCodeLine{00031\ \{}
 \DoxyCodeLine{00032\ }
 \DoxyCodeLine{00036\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ DiagMsgType>}
-\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher}{ImuDiagRosPublisher}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisherInterface}{ImuDiagRosPublisherInterface}}}
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_adcc4cff1a692c803570f45eeee603bb2}{ImuDiagRosPublisher}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisherInterface_a04b193e20a1b33f37ea0eed12353010e}{ImuDiagRosPublisherInterface}}}
 \DoxyCodeLine{00038\ \{}
 \DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00044\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_adcc4cff1a692c803570f45eeee603bb2}{ImuDiagRosPublisher}}(std::shared\_ptr<rclcpp::Node>\ \&\ node)}
@@ -64,7 +64,7 @@
 \DoxyCodeLine{00081\ \ \ \ \ RCLCPP\_INFO(rclcpp::get\_logger(\textcolor{stringliteral}{"{}imu\_diag\_ros\_publisher"{}}),\ \textcolor{stringliteral}{"{}startThread:\ ImuDiagRosPublisher"{}});}
 \DoxyCodeLine{00082\ }
 \DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{while}\ (rclcpp::ok())\ \{}
-\DoxyCodeLine{00084\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_acb58091aa9533ae6ae709e952d898c5f}{m\_publisher}}\ \&\&\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a39d6e60a057bed0f0f91fcc8ac0a5f92}{m\_data\_provider}}\ \&\&\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a39d6e60a057bed0f0f91fcc8ac0a5f92}{m\_data\_provider}}-\/>\mbox{\hyperlink{classadi__imu_1_1ImuDiagDataProviderInterface_ab0cbc77a9139a3ba30364927d3b3995d}{getData}}(\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a912ce1f1442866b99be10b72891a0641}{m\_message}}))\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_acb58091aa9533ae6ae709e952d898c5f}{m\_publisher}}\ \&\&\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a39d6e60a057bed0f0f91fcc8ac0a5f92}{m\_data\_provider}}\ \&\&\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a39d6e60a057bed0f0f91fcc8ac0a5f92}{m\_data\_provider}}-\/>getData(\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a912ce1f1442866b99be10b72891a0641}{m\_message}}))\ \{}
 \DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ rclcpp::Time\ now\ =\ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisherInterface_a9e6cd4f4bfa7cb1f54b94d79e7ca2901}{m\_node}}-\/>get\_clock()-\/>now();}
 \DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a912ce1f1442866b99be10b72891a0641}{m\_message}}.header.stamp\ =\ now;}
 \DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_acb58091aa9533ae6ae709e952d898c5f}{m\_publisher}}-\/>publish(\mbox{\hyperlink{classadi__imu_1_1ImuDiagRosPublisher_a912ce1f1442866b99be10b72891a0641}{m\_message}});}

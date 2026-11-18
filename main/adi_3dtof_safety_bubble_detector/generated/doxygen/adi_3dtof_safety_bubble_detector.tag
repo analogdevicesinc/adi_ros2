@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.8">
+<tagfile doxygen_version="1.15.0">
   <compound kind="struct">
     <name>__tADI2DPoint</name>
     <filename>struct____tADI2DPoint.html</filename>

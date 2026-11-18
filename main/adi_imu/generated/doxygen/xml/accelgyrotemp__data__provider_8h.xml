@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="accelgyrotemp__data__provider_8h" kind="file" language="C++">
     <compoundname>accelgyrotemp_data_provider.h</compoundname>
     <includes refid="accelgyrotemp__data__provider__interface_8h" local="yes">adi_imu/accelgyrotemp_data_provider_interface.h</includes>
@@ -128,7 +128,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="28"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="33" refid="classadi__imu_1_1AccelGyroTempDataProvider" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1AccelGyroTempDataProvider" kindref="compound">AccelGyroTempDataProvider</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempDataProviderInterface" kindref="compound">AccelGyroTempDataProviderInterface</ref></highlight></codeline>
+<codeline lineno="33" refid="classadi__imu_1_1AccelGyroTempDataProvider" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1AccelGyroTempDataProvider_1afa8bd0ede63f8b148e9d5d4c155f4374" kindref="member">AccelGyroTempDataProvider</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempDataProviderInterface_1a350640588bfa7a2ca3fbc669be115ed1" kindref="member">AccelGyroTempDataProviderInterface</ref></highlight></codeline>
 <codeline lineno="34"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1AccelGyroTempDataProvider_1afa8bd0ede63f8b148e9d5d4c155f4374" kindref="member">AccelGyroTempDataProvider</ref>();</highlight></codeline>

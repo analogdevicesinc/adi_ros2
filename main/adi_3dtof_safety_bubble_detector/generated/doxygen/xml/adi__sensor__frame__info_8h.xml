@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__sensor__frame__info_8h" kind="file" language="C++">
     <compoundname>adi_sensor_frame_info.h</compoundname>
     <includes local="no">stdint.h</includes>
@@ -64,7 +64,7 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rclcpp/rclcpp.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18" refid="classADISensorFrameInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADISensorFrameInfo" kindref="compound">ADISensorFrameInfo</ref></highlight></codeline>
+<codeline lineno="18" refid="classADISensorFrameInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" kindref="member">ADISensorFrameInfo</ref></highlight></codeline>
 <codeline lineno="19"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="27" refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classADISensorFrameInfo_1a8a6e20c04d8f7ef289727a7183db8dc3" kindref="member">ADISensorFrameInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>

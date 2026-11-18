@@ -70,7 +70,7 @@ Functions
 
 - :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1a66f87630871cd77f84ac075e22c6bbc5`
 
-- :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1ad0151c8de87f5caebaac20bfb8a470dd`
+- :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1af11fc61c409e650d9a2d1a2a80e68691`
 
 - :ref:`exhale_function_adrd2121__imu__ros2__common_8hpp_1a4ccfdd8dc3bc55a7fa3c46601f88d21b`
 

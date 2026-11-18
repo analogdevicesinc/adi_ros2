@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classcompressed__depth__image__transport_1_1RvlCodec" kind="class" language="C++" prot="public">
     <compoundname>compressed_depth_image_transport::RvlCodec</compoundname>
     <sectiondef kind="private-attrib">
@@ -136,7 +136,7 @@
         <name>RvlCodec</name>
         <qualifiedname>compressed_depth_image_transport::RvlCodec::RvlCodec</qualifiedname>
         <param>
-          <type>const <ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+          <type>const RvlCodec &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -147,13 +147,13 @@
         <location file="include/ros-perception/image_transport_plugins/compressed_depth_image_transport/rvl_codec.h" line="19" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classcompressed__depth__image__transport_1_1RvlCodec_1a0760212750e5d1e12751fdf5555db837" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+        <type>RvlCodec &amp;</type>
         <definition>RvlCodec &amp; compressed_depth_image_transport::RvlCodec::operator=</definition>
         <argsstring>(const RvlCodec &amp;)</argsstring>
         <name>operator=</name>
         <qualifiedname>compressed_depth_image_transport::RvlCodec::operator=</qualifiedname>
         <param>
-          <type>const <ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound">RvlCodec</ref> &amp;</type>
+          <type>const RvlCodec &amp;</type>
         </param>
         <briefdescription>
         </briefdescription>

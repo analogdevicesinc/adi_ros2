@@ -403,7 +403,7 @@ Program Listing for File adi_3dtof_adtf31xx.h
      int jblf_filter_size_ = 7;
      int radial_threshold_min_ = 100;
      int radial_threshold_max_ = 10000;
-   
+     
      rclcpp::Time curr_frame_timestamp_ = rclcpp::Clock{}.now();
    
      std::shared_ptr<rclcpp::ParameterEventHandler> param_subscriber_;

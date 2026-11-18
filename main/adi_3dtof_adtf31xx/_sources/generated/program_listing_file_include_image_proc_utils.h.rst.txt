@@ -98,6 +98,7 @@ Program Listing for File image_proc_utils.h
        }
      }
    
+   
      void computePointCloud(unsigned short * range_image, short * xyz_frame)
      {
        float * range_to_3d_lut = range_to_3d_lut_;

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="dir_3ca2801ac697cd49d75efae16e3f45f8" kind="dir">
     <compoundname>include/adrd2121_imu</compoundname>
     <innerfile refid="adi__imu__buf__ros2_8hpp">adi_imu_buf_ros2.hpp</innerfile>

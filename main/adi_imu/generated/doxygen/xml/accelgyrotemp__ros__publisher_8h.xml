@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="accelgyrotemp__ros__publisher_8h" kind="file" language="C++">
     <compoundname>accelgyrotemp_ros_publisher.h</compoundname>
     <includes local="no">memory</includes>
@@ -82,10 +82,10 @@
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="34" refid="classadi__imu_1_1AccelGyroTempRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher" kindref="compound">AccelGyroTempRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisherInterface" kindref="compound">AccelGyroTempRosPublisherInterface</ref></highlight></codeline>
+<codeline lineno="34" refid="classadi__imu_1_1AccelGyroTempRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1aff9ccd12afc92de9a41463edebfc7594" kindref="member">AccelGyroTempRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisherInterface_1a989dd5be98341d897804b260ad204302" kindref="member">AccelGyroTempRosPublisherInterface</ref></highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher" kindref="compound">AccelGyroTempRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1aff9ccd12afc92de9a41463edebfc7594" kindref="member">AccelGyroTempRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1AccelGyroTempRosPublisher_1ae757fad91cbf739270084bfe7f0c68ae" kindref="member">~AccelGyroTempRosPublisher</ref>();</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>

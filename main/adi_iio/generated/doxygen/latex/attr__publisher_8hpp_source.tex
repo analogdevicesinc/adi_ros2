@@ -44,11 +44,11 @@
 \DoxyCodeLine{00040\ }
 \DoxyCodeLine{00041\ \textcolor{comment}{//\ these\ could\ be\ templates\ ?}}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStringPubSub}{StringPubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }StringPubSub\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
 \DoxyCodeLine{00044\ \{}
 \DoxyCodeLine{00045\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{classStringPubSub}{StringPubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
-\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classStringPubSub}{\string~StringPubSub}}();}
+\DoxyCodeLine{00046\ \ \ StringPubSub(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \string~StringPubSub();}
 \DoxyCodeLine{00048\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::String\ \&\ msg);}
 \DoxyCodeLine{00050\ }
@@ -60,11 +60,11 @@
 \DoxyCodeLine{00056\ \ \ rclcpp::Subscription<std\_msgs::msg::String>::SharedPtr\ m\_sub;}
 \DoxyCodeLine{00057\ \};}
 \DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInt32PubSub}{Int32PubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{class\ }Int32PubSub\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
 \DoxyCodeLine{00060\ \{}
 \DoxyCodeLine{00061\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00062\ \ \ \mbox{\hyperlink{classInt32PubSub}{Int32PubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
-\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classInt32PubSub}{\string~Int32PubSub}}();}
+\DoxyCodeLine{00062\ \ \ Int32PubSub(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{virtual}\ \string~Int32PubSub();}
 \DoxyCodeLine{00064\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Int32\ \&\ msg);}
 \DoxyCodeLine{00066\ }
@@ -76,11 +76,11 @@
 \DoxyCodeLine{00072\ \ \ rclcpp::Subscription<std\_msgs::msg::Int32>::SharedPtr\ m\_sub;}
 \DoxyCodeLine{00073\ \};}
 \DoxyCodeLine{00074\ }
-\DoxyCodeLine{00075\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBoolPubSub}{BoolPubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00075\ \textcolor{keyword}{class\ }BoolPubSub\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
 \DoxyCodeLine{00076\ \{}
 \DoxyCodeLine{00077\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00078\ \ \ \mbox{\hyperlink{classBoolPubSub}{BoolPubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
-\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classBoolPubSub}{\string~BoolPubSub}}();}
+\DoxyCodeLine{00078\ \ \ BoolPubSub(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{virtual}\ \string~BoolPubSub();}
 \DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00081\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Bool\ \&\ msg);}
 \DoxyCodeLine{00082\ }
@@ -93,11 +93,11 @@
 \DoxyCodeLine{00089\ \};}
 \DoxyCodeLine{00090\ }
 \DoxyCodeLine{00091\ }
-\DoxyCodeLine{00092\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classFloat32PubSub}{Float32PubSub}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
+\DoxyCodeLine{00092\ \textcolor{keyword}{class\ }Float32PubSub\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classAttrPubSub}{AttrPubSub}}}
 \DoxyCodeLine{00093\ \{}
 \DoxyCodeLine{00094\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00095\ \ \ \mbox{\hyperlink{classFloat32PubSub}{Float32PubSub}}(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
-\DoxyCodeLine{00096\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classFloat32PubSub}{\string~Float32PubSub}}();}
+\DoxyCodeLine{00095\ \ \ Float32PubSub(std::shared\_ptr<IIONode>\ nh,\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}\ *\ up,\ std::string\ topic);}
+\DoxyCodeLine{00096\ \ \ \textcolor{keyword}{virtual}\ \string~Float32PubSub();}
 \DoxyCodeLine{00097\ \ \ \textcolor{keywordtype}{void}\ publish(std::string\ msg)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00098\ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keyword}{const}\ std\_msgs::msg::Float32\ \&\ msg);}
 \DoxyCodeLine{00099\ }

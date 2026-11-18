@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="rvl__codec_8h" kind="file" language="C++">
     <compoundname>rvl_codec.h</compoundname>
     <includedby refid="adi__3dtof__floor__detector__example_8h" local="yes">include/adi_3dtof_floor_detector_example.h</includedby>
@@ -27,7 +27,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">compressed_depth_image_transport<sp/>{</highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">RvlCodec<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcompressed__depth__image__transport_1_1RvlCodec" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">RvlCodec</ref><sp/>{</highlight></codeline>
 <codeline lineno="7"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/>RvlCodec();</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Compress<sp/>input<sp/>data<sp/>into<sp/>output.<sp/>The<sp/>size<sp/>of<sp/>output<sp/>can<sp/>be<sp/>equal<sp/>to</highlight><highlight class="normal"></highlight></codeline>

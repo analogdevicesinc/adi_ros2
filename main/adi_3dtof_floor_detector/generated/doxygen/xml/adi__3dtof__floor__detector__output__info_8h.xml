@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__3dtof__floor__detector__output__info_8h" kind="file" language="C++">
     <compoundname>adi_3dtof_floor_detector_output_info.h</compoundname>
     <includes local="no">cstring</includes>
@@ -42,8 +42,8 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_3DTOF_FLOOR_DETECTOR_OUTPUT_INFO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_3DTOF_FLOOR_DETECTOR_OUTPUT_INFO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight></codeline>
-<codeline lineno="15" refid="classADI3DToFFloorDetectorOutputInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFFloorDetectorOutputInfo" kindref="compound">ADI3DToFFloorDetectorOutputInfo</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classADI3DToFFloorDetectorOutputInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFFloorDetectorOutputInfo_1aadf8f32c9facc3b6ccb7cbb6d6de443d" kindref="member">ADI3DToFFloorDetectorOutputInfo</ref></highlight></codeline>
 <codeline lineno="16"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="24" refid="classADI3DToFFloorDetectorOutputInfo_1aadf8f32c9facc3b6ccb7cbb6d6de443d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classADI3DToFFloorDetectorOutputInfo_1aadf8f32c9facc3b6ccb7cbb6d6de443d" kindref="member">ADI3DToFFloorDetectorOutputInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>

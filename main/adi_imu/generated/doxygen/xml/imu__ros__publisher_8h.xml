@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__ros__publisher_8h" kind="file" language="C++">
     <compoundname>imu_ros_publisher.h</compoundname>
     <includes local="no">memory</includes>
@@ -88,10 +88,10 @@
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classadi__imu_1_1ImuRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuRosPublisher" kindref="compound">ImuRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuRosPublisherInterface" kindref="compound">ImuRosPublisherInterface</ref></highlight></codeline>
+<codeline lineno="35" refid="classadi__imu_1_1ImuRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuRosPublisher_1a85c7d89db9a57fe00cdcf32670994246" kindref="member">ImuRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuRosPublisherInterface_1a20d877a91d58a0573247891ade1f8b4d" kindref="member">ImuRosPublisherInterface</ref></highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuRosPublisher" kindref="compound">ImuRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1ImuRosPublisher_1a85c7d89db9a57fe00cdcf32670994246" kindref="member">ImuRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuRosPublisher_1a56c48afa8b31989d8b02512bd527e1f8" kindref="member">~ImuRosPublisher</ref>();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>

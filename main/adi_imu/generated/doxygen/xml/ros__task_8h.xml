@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="ros__task_8h" kind="file" language="C++">
     <compoundname>ros_task.h</compoundname>
     <includedby refid="imu__diag__ros__publisher__interface_8h" local="yes">include/adi_imu/imu_diag_ros_publisher_interface.h</includedby>
@@ -92,7 +92,7 @@
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="classadi__imu_1_1RosTask" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1RosTask" kindref="compound">RosTask</ref></highlight></codeline>
+<codeline lineno="29" refid="classadi__imu_1_1RosTask" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1RosTask_1aabef10d9a1f8ec699ee8b4fdeec8f7fa" kindref="member">RosTask</ref></highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="39" refid="classadi__imu_1_1RosTask_1aabef10d9a1f8ec699ee8b4fdeec8f7fa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1RosTask_1aabef10d9a1f8ec699ee8b4fdeec8f7fa" kindref="member">RosTask</ref>()<sp/>{}</highlight></codeline>

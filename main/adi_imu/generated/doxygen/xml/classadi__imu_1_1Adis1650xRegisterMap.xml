@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classadi__imu_1_1Adis1650xRegisterMap" kind="class" language="C++" prot="public">
     <compoundname>adi_imu::Adis1650xRegisterMap</compoundname>
     <basecompoundref refid="classadi__imu_1_1ADISRegisterMap" prot="public" virt="non-virtual">adi_imu::ADISRegisterMap</basecompoundref>

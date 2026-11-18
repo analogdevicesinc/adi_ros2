@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__3dtof__adtf31xx__output__info_8h" kind="file" language="C++">
     <compoundname>adi_3dtof_adtf31xx_output_info.h</compoundname>
     <includes local="no">cstring</includes>
@@ -41,8 +41,8 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADI_3DTOF_ADTF31XX_OUTPUT_INFO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADI_3DTOF_ADTF31XX_OUTPUT_INFO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight></codeline>
-<codeline lineno="14" refid="classADI3DToFADTF31xxOutputInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFADTF31xxOutputInfo" kindref="compound">ADI3DToFADTF31xxOutputInfo</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classADI3DToFADTF31xxOutputInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" kindref="member">ADI3DToFADTF31xxOutputInfo</ref></highlight></codeline>
 <codeline lineno="15"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="23" refid="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classADI3DToFADTF31xxOutputInfo_1aaabda70eb7f0be5ad731fb615b964ba9" kindref="member">ADI3DToFADTF31xxOutputInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_height)</highlight></codeline>

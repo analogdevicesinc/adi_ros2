@@ -490,6 +490,7 @@ Program Listing for File adi_3dtof_floor_detector_node.h
    
      int compressed_floor_pixels_ = 0;
    
+   
      void publishImageAndCameraInfo(
        unsigned short * depth_frame, unsigned short * ab_frame, unsigned char * floor_mask_frame,
        short * xyz_frame);

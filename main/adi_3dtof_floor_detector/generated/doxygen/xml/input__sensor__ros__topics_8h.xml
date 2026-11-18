@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="input__sensor__ros__topics_8h" kind="file" language="C++">
     <compoundname>input_sensor_ros_topics.h</compoundname>
     <includes local="no">cv_bridge/cv_bridge.h</includes>
@@ -142,8 +142,8 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>sensor_name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_image_height,</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>config_file_name,<sp/>std::string<sp/>input_sensor_ip);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>configureSensor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>camera_mode);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getIntrinsics(<ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>*<sp/>camera_intrinsics);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getExtrinsics(<ref refid="structCameraExtrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraExtrinsics</ref><sp/>*<sp/>camera_extrinsics);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getIntrinsics(CameraIntrinsics<sp/>*<sp/>camera_intrinsics);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getExtrinsics(CameraExtrinsics<sp/>*<sp/>camera_extrinsics);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNextFrame(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>depth_frame,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>*<sp/>ab_frame);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getFrameTimestamp(rclcpp::Time<sp/>*<sp/>timestamp);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>closeSensor();</highlight></codeline>
@@ -177,7 +177,7 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/>std::string<sp/>ab_image_topic_name;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/>std::mutex<sp/>ros_topics_input_thread_mtx_;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>camera_parameters_updated_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="structCameraIntrinsics" kindref="compound" external="/home/runner/work/adi_ros2/adi_ros2/_build/cross_refs/adi_3dtof_adtf31xx/adi_3dtof_adtf31xx.tag">CameraIntrinsics</ref><sp/>camera_intrinsics_;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>CameraIntrinsics<sp/>camera_intrinsics_;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>frame_timestamp_;</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/>rclcpp::Subscription&lt;sensor_msgs::msg::CameraInfo&gt;::SharedPtr<sp/>camera_info_subscriber_;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/>message_filters::Subscriber&lt;sensor_msgs::msg::Image&gt;<sp/>depth_image_subscriber_;</highlight></codeline>

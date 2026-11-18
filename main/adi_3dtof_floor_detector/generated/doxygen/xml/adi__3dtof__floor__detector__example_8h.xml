@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__3dtof__floor__detector__example_8h" kind="file" language="C++">
     <compoundname>adi_3dtof_floor_detector_example.h</compoundname>
     <includes local="no">cv_bridge/cv_bridge.h</includes>
@@ -213,7 +213,7 @@
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_QUEUE_SIZE_FOR_TIME_SYNC<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="classADI3DToFFloorDetectorExample" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFFloorDetectorExample" kindref="compound">ADI3DToFFloorDetectorExample</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
+<codeline lineno="44" refid="classADI3DToFFloorDetectorExample" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFFloorDetectorExample_1a9f14e2b2604044b674dd683ba873961e" kindref="member">ADI3DToFFloorDetectorExample</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="53" refid="classADI3DToFFloorDetectorExample_1a9f14e2b2604044b674dd683ba873961e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classADI3DToFFloorDetectorExample_1a9f14e2b2604044b674dd683ba873961e" kindref="member">ADI3DToFFloorDetectorExample</ref>()</highlight></codeline>

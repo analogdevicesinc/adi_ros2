@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="struct____tADIImage" kind="struct" language="C++" prot="public">
     <compoundname>__tADIImage</compoundname>
     <includes refid="image__proc__utils_8h" local="no">image_proc_utils.h</includes>
@@ -65,7 +65,7 @@
         <location file="include/image_proc_utils.h" line="40" column="7" bodyfile="include/image_proc_utils.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct____tADIImage_1acfb7eba55b3959c535875dcbc4bb8c01" prot="public" static="no" mutable="no">
-        <type><ref refid="struct____tADIImageROI" kindref="compound">ADIImageROI</ref> *</type>
+        <type>ADIImageROI *</type>
         <definition>ADIImageROI* __tADIImage::roi</definition>
         <argsstring></argsstring>
         <name>roi</name>

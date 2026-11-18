@@ -77,12 +77,14 @@ Examples of valid paths types\+:
 \item CHANNEL\+\_\+\+ATTR\+: "{}device-\/name/chn-\/prefix\+\_\+channel-\/name/attribute-\/name"{} 
 \end{DoxyItemize}
 
+\label{doc-constructors}
+\Hypertarget{classIIOPath_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3}\label{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3} 
-\index{IIOPath@{IIOPath}!IIOPath@{IIOPath}}
+\Hypertarget{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3}\index{IIOPath@{IIOPath}!IIOPath@{IIOPath}}
 \index{IIOPath@{IIOPath}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{IIOPath()}{IIOPath()}}
-{\footnotesize\ttfamily IIOPath\+::\+IIOPath (\begin{DoxyParamCaption}\item[{std\+::string}]{path,  }\item[{char}]{delimiter = {\ttfamily \textquotesingle{}/\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily \label{classIIOPath_ad83ab64c410b2df2fee394ea78f28cb3} 
+IIOPath\+::\+IIOPath (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{, }\item[{char}]{delimiter}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -97,12 +99,14 @@ Constructs an \doxylink{classIIOPath}{IIOPath} object.
 \end{DoxyParams}
 
 
+\label{doc-func-members}
+\Hypertarget{classIIOPath_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classIIOPath_a5267692c774185c148b6047d32b64879}\label{classIIOPath_a5267692c774185c148b6047d32b64879} 
-\index{IIOPath@{IIOPath}!append@{append}}
+\Hypertarget{classIIOPath_a5267692c774185c148b6047d32b64879}\index{IIOPath@{IIOPath}!append@{append}}
 \index{append@{append}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{append()}{append()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::append (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{suffix }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classIIOPath_a5267692c774185c148b6047d32b64879} 
+std\+::string IIOPath\+::append (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{suffix}{}\end{DoxyParamCaption})}
 
 
 
@@ -118,11 +122,11 @@ The suffix is used to create a new path pointing to a specific attribute or nest
 \begin{DoxyReturn}{Returns}
 The updated path as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_aa089783a455bca56348d522880cb3484}\label{classIIOPath_aa089783a455bca56348d522880cb3484} 
-\index{IIOPath@{IIOPath}!basePath@{basePath}}
+\Hypertarget{classIIOPath_aa089783a455bca56348d522880cb3484}\index{IIOPath@{IIOPath}!basePath@{basePath}}
 \index{basePath@{basePath}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{basePath()}{basePath()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::base\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_aa089783a455bca56348d522880cb3484} 
+std\+::string IIOPath\+::base\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -131,11 +135,11 @@ Retrieves the original path used to create this object.
 \begin{DoxyReturn}{Returns}
 The base path as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae}\label{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae} 
-\index{IIOPath@{IIOPath}!getChannelAttrSegment@{getChannelAttrSegment}}
+\Hypertarget{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae}\index{IIOPath@{IIOPath}!getChannelAttrSegment@{getChannelAttrSegment}}
 \index{getChannelAttrSegment@{getChannelAttrSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getChannelAttrSegment()}{getChannelAttrSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Channel\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a0930e5c4ec67786816e86d20cf5630ae} 
+std\+::string IIOPath\+::get\+Channel\+Attr\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -144,11 +148,11 @@ Extracts the channel attribute segment from the path.
 \begin{DoxyReturn}{Returns}
 The channel attribute as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d}\label{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d} 
-\index{IIOPath@{IIOPath}!getChannelSegment@{getChannelSegment}}
+\Hypertarget{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d}\index{IIOPath@{IIOPath}!getChannelSegment@{getChannelSegment}}
 \index{getChannelSegment@{getChannelSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getChannelSegment()}{getChannelSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Channel\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a68ca6f2b86b988adee46b4a519c1d38d} 
+std\+::string IIOPath\+::get\+Channel\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -157,11 +161,11 @@ Extracts the channel name segment from the path.
 \begin{DoxyReturn}{Returns}
 The channel name as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9}\label{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9} 
-\index{IIOPath@{IIOPath}!getContextAttrSegment@{getContextAttrSegment}}
+\Hypertarget{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9}\index{IIOPath@{IIOPath}!getContextAttrSegment@{getContextAttrSegment}}
 \index{getContextAttrSegment@{getContextAttrSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getContextAttrSegment()}{getContextAttrSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Context\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a135e59c460f8b33cc03f4e75b7dfe1d9} 
+std\+::string IIOPath\+::get\+Context\+Attr\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -170,11 +174,11 @@ Extracts the context attribute segment from the path.
 \begin{DoxyReturn}{Returns}
 The context attribute as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098}\label{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098} 
-\index{IIOPath@{IIOPath}!getDeviceAttrSegment@{getDeviceAttrSegment}}
+\Hypertarget{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098}\index{IIOPath@{IIOPath}!getDeviceAttrSegment@{getDeviceAttrSegment}}
 \index{getDeviceAttrSegment@{getDeviceAttrSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getDeviceAttrSegment()}{getDeviceAttrSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Device\+Attr\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a5c6da9bcf16b0a46c5b2bb8123185098} 
+std\+::string IIOPath\+::get\+Device\+Attr\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -183,11 +187,11 @@ Extracts the device attribute segment from the path.
 \begin{DoxyReturn}{Returns}
 The device attribute as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a628013ed289d637eb19ec39718e1fb02}\label{classIIOPath_a628013ed289d637eb19ec39718e1fb02} 
-\index{IIOPath@{IIOPath}!getDeviceSegment@{getDeviceSegment}}
+\Hypertarget{classIIOPath_a628013ed289d637eb19ec39718e1fb02}\index{IIOPath@{IIOPath}!getDeviceSegment@{getDeviceSegment}}
 \index{getDeviceSegment@{getDeviceSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getDeviceSegment()}{getDeviceSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::get\+Device\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a628013ed289d637eb19ec39718e1fb02} 
+std\+::string IIOPath\+::get\+Device\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -196,11 +200,11 @@ Extracts the device name segment from the path.
 \begin{DoxyReturn}{Returns}
 The device name as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a09da667d213f45666b9274e59d2cb223}\label{classIIOPath_a09da667d213f45666b9274e59d2cb223} 
-\index{IIOPath@{IIOPath}!getExtendedChannelSegment@{getExtendedChannelSegment}}
+\Hypertarget{classIIOPath_a09da667d213f45666b9274e59d2cb223}\index{IIOPath@{IIOPath}!getExtendedChannelSegment@{getExtendedChannelSegment}}
 \index{getExtendedChannelSegment@{getExtendedChannelSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{getExtendedChannelSegment()}{getExtendedChannelSegment()}}
-{\footnotesize\ttfamily std\+::pair$<$ bool, std\+::string $>$ IIOPath\+::get\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classIIOPath_a09da667d213f45666b9274e59d2cb223} 
+std\+::pair$<$ bool, std\+::string $>$ IIOPath\+::get\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -212,11 +216,11 @@ A pair containing a boolean indicating if the channel is of output type and the 
 \begin{DoxyNote}{Note}
 The boolean variable helps to uniquely identify channels with the same name but different types (input/output). 
 \end{DoxyNote}
-\Hypertarget{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670}\label{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670} 
-\index{IIOPath@{IIOPath}!isValid@{isValid}}
+\Hypertarget{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670}\index{IIOPath@{IIOPath}!isValid@{isValid}}
 \index{isValid@{isValid}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
-{\footnotesize\ttfamily bool IIOPath\+::is\+Valid (\begin{DoxyParamCaption}\item[{const IIOPath\+Type}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classIIOPath_a83cbc5d8608ef1a58e117fad3bb29670} 
+bool IIOPath\+::is\+Valid (\begin{DoxyParamCaption}\item[{const IIOPath\+Type}]{type}{}\end{DoxyParamCaption})}
 
 
 
@@ -232,11 +236,11 @@ This function checks if the current path conforms to the expected structure for 
 \begin{DoxyReturn}{Returns}
 True if the path is valid for the specified type, false otherwise. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a13168489d39273e5aeac4c2071b44c34}\label{classIIOPath_a13168489d39273e5aeac4c2071b44c34} 
-\index{IIOPath@{IIOPath}!split@{split}}
+\Hypertarget{classIIOPath_a13168489d39273e5aeac4c2071b44c34}\index{IIOPath@{IIOPath}!split@{split}}
 \index{split@{split}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{split()}{split()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ IIOPath\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classIIOPath_a13168489d39273e5aeac4c2071b44c34} 
+std\+::vector$<$ std\+::string $>$ IIOPath\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})}
 
 
 
@@ -250,11 +254,11 @@ Splits a string into segments based on the delimiter.
 \begin{DoxyReturn}{Returns}
 A vector of substrings obtained by splitting the input string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a995b880525f2c98fef7048f04f054d3f}\label{classIIOPath_a995b880525f2c98fef7048f04f054d3f} 
-\index{IIOPath@{IIOPath}!toExtendedChannelSegment@{toExtendedChannelSegment}}
+\Hypertarget{classIIOPath_a995b880525f2c98fef7048f04f054d3f}\index{IIOPath@{IIOPath}!toExtendedChannelSegment@{toExtendedChannelSegment}}
 \index{toExtendedChannelSegment@{toExtendedChannelSegment}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{toExtendedChannelSegment()}{toExtendedChannelSegment()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::to\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}\item[{bool}]{output,  }\item[{std\+::string}]{chn\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classIIOPath_a995b880525f2c98fef7048f04f054d3f} 
+std\+::string IIOPath\+::to\+Extended\+Channel\+Segment (\begin{DoxyParamCaption}\item[{bool}]{output}{, }\item[{std\+::string}]{chn\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -270,11 +274,11 @@ Constructs the channel segment of the path.
 \begin{DoxyReturn}{Returns}
 The constructed channel segment as a string. 
 \end{DoxyReturn}
-\Hypertarget{classIIOPath_a0f86b783a1d79228e0601499db6d1577}\label{classIIOPath_a0f86b783a1d79228e0601499db6d1577} 
-\index{IIOPath@{IIOPath}!toTopicName@{toTopicName}}
+\Hypertarget{classIIOPath_a0f86b783a1d79228e0601499db6d1577}\index{IIOPath@{IIOPath}!toTopicName@{toTopicName}}
 \index{toTopicName@{toTopicName}!IIOPath@{IIOPath}}
 \doxysubsubsection{\texorpdfstring{toTopicName()}{toTopicName()}}
-{\footnotesize\ttfamily std\+::string IIOPath\+::to\+Topic\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classIIOPath_a0f86b783a1d79228e0601499db6d1577} 
+std\+::string IIOPath\+::to\+Topic\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

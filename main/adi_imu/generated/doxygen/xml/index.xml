@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="classadi__imu_1_1AccelGyroTempDataProvider" kind="class"><name>adi_imu::AccelGyroTempDataProvider</name>
     <member refid="classadi__imu_1_1AccelGyroTempDataProvider_1a5c88e913d91ad3c7439a5c96a2c37afb" kind="variable"><name>m_iio_wrapper</name></member>
     <member refid="classadi__imu_1_1AccelGyroTempDataProvider_1afa8bd0ede63f8b148e9d5d4c155f4374" kind="function"><name>AccelGyroTempDataProvider</name></member>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classAdiImuBufRos2" kind="class" language="C++" prot="public">
     <compoundname>AdiImuBufRos2</compoundname>
     <includes refid="adi__imu__buf__ros2_8hpp" local="no">adi_imu_buf_ros2.hpp</includes>
@@ -165,7 +165,7 @@
         <name>msg_type_</name>
         <qualifiedname>AdiImuBufRos2::msg_type_</qualifiedname>
         <briefdescription>
-<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>) </para>
+<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -180,7 +180,7 @@
         <name>frame_name_</name>
         <qualifiedname>AdiImuBufRos2::frame_name_</qualifiedname>
         <briefdescription>
-<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>) </para>
+<para>ROS Message type for publisher imu_pub_std_/imu_pub_adi_(<ref refid="classImuBufRos2" kindref="compound">ImuBufRos2</ref>). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -267,8 +267,7 @@
           <type>void</type>
         </param>
         <briefdescription>
-<para>Initializes the hardware Initializes the (1) communication with the board (i.e via USB), (2) ADRD2121, ADI IMU, and (4) advertises ROS Publishers and Service Servers. <linebreak/>
- </para>
+<para>Initializes the hardware Initializes the (1) communication with the board (i.e via USB), (2) ADRD2121, ADI IMU, and (4) advertises ROS Publishers and Service Servers. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -406,8 +405,7 @@
 <para>Callback function that verifies if the inputted value for the parameter is. </para>
         </briefdescription>
         <detaileddescription>
-<para>within range or not. <linebreak/>
- </para>
+<para>within range or not. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

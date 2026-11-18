@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classAdiImuRos2" kind="class" language="C++" prot="public">
     <compoundname>AdiImuRos2</compoundname>
     <includes refid="adi__imu__ros2_8hpp" local="no">adi_imu_ros2.hpp</includes>
@@ -41,7 +41,7 @@
         <name>imu_prod_id_</name>
         <qualifiedname>AdiImuRos2::imu_prod_id_</qualifiedname>
         <briefdescription>
-<para>IMU Product ID (e.g. 16495, 16470, 16500) </para>
+<para>IMU Product ID (e.g. 16495, 16470, 16500). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -251,7 +251,7 @@
         <name>imu_time_base_control_</name>
         <qualifiedname>AdiImuRos2::imu_time_base_control_</qualifiedname>
         <briefdescription>
-<para>Time Base Control (TBC) </para>
+<para>Time Base Control (TBC). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -573,8 +573,7 @@
 <para>Initializes the ADI IMU. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) <linebreak/>
- </para>
+<para><simplesect kind="return"><para>Boolean if successful (true) or not (false) </para>
 </simplesect>
 </para>
         </detaileddescription>

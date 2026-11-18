@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="imu__control__parameters_8h" kind="file" language="C++">
     <compoundname>imu_control_parameters.h</compoundname>
     <includes local="no">list</includes>
@@ -156,10 +156,10 @@
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38" refid="classadi__imu_1_1ImuControlParameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuControlParameters" kindref="compound">ImuControlParameters</ref></highlight></codeline>
+<codeline lineno="38" refid="classadi__imu_1_1ImuControlParameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1ImuControlParameters_1a61a05aada69aa51ef4eef9f7d1fa0d84" kindref="member">ImuControlParameters</ref></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuControlParameters" kindref="compound">ImuControlParameters</ref>(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuControlParameters_1a61a05aada69aa51ef4eef9f7d1fa0d84" kindref="member">ImuControlParameters</ref>(</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node,<sp/>std::shared_ptr&lt;ADISRegisterMap&gt;<sp/>&amp;<sp/>device_descriptor);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuControlParameters_1ae31bb4515b8454f1166f1bda21c382d8" kindref="member">~ImuControlParameters</ref>();</highlight></codeline>
@@ -233,7 +233,7 @@
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
 <codeline lineno="207" refid="classadi__imu_1_1ImuControlParameters_1a8ef6472abdcc364fdd688a8cefc9e932" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1ImuControlParameters_1a21e60085a0660c313802edd9a5c1c924" kindref="member">UpdateDoubleParamsMapType</ref><sp/><ref refid="classadi__imu_1_1ImuControlParameters_1a8ef6472abdcc364fdd688a8cefc9e932" kindref="member">m_func_map_update_double_params</ref>;</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210" refid="classadi__imu_1_1ImuControlParameters_1ad4a5f2b09130ddab16c11e8b52c62371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(<ref refid="classadi__imu_1_1IIOWrapper" kindref="compound">IIOWrapper</ref>::*<ref refid="classadi__imu_1_1ImuControlParameters_1ad4a5f2b09130ddab16c11e8b52c62371" kindref="member">GetDoubleParams</ref>)(double<sp/>*);</highlight></codeline>
+<codeline lineno="210" refid="classadi__imu_1_1ImuControlParameters_1ad4a5f2b09130ddab16c11e8b52c62371" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(<ref refid="classadi__imu_1_1IIOWrapper" kindref="compound">IIOWrapper</ref>::*<ref refid="classadi__imu_1_1ImuControlParameters_1ad4a5f2b09130ddab16c11e8b52c62371" kindref="member">GetDoubleParams</ref>)(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="213" refid="classadi__imu_1_1ImuControlParameters_1aa3fb7b4ec118ef25dcc1a6403d2013b0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>GetDoubleParams&gt;<sp/><ref refid="classadi__imu_1_1ImuControlParameters_1aa3fb7b4ec118ef25dcc1a6403d2013b0" kindref="member">GetDoubleParamsMapType</ref>;</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>

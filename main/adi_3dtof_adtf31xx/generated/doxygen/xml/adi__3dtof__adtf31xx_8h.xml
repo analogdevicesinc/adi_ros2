@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="adi__3dtof__adtf31xx_8h" kind="file" language="C++">
     <compoundname>adi_3dtof_adtf31xx.h</compoundname>
     <includes local="no">cv_bridge/cv_bridge.hpp</includes>
@@ -248,7 +248,7 @@
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std::chrono_literals;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">enc<sp/>=<sp/>sensor_msgs::image_encodings;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="classADI3DToFADTF31xx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFADTF31xx" kindref="compound">ADI3DToFADTF31xx</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
+<codeline lineno="45" refid="classADI3DToFADTF31xx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classADI3DToFADTF31xx_1a4e06f84b67f269a266db462af1db3177" kindref="member">ADI3DToFADTF31xx</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>rclcpp::Node</highlight></codeline>
 <codeline lineno="46"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="56" refid="classADI3DToFADTF31xx_1a4e06f84b67f269a266db462af1db3177" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classADI3DToFADTF31xx_1a4e06f84b67f269a266db462af1db3177" kindref="member">ADI3DToFADTF31xx</ref>()<sp/>:<sp/>Node(</highlight><highlight class="stringliteral">&quot;adi_3dtof_adtf31xx_node&quot;</highlight><highlight class="normal">)</highlight></codeline>
@@ -466,7 +466,7 @@
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>input_sensor_-&gt;openSensor(</highlight></codeline>
 <codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>input_file_name_,<sp/>image_width_,<sp/>image_height_,<sp/>config_file_name_of_tof_sdk,<sp/>input_sensor_ip_);</highlight></codeline>
-<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!input_sensor_-&gt;<ref refid="classIInputSensor_1a0811292ecb18e8928d06993a7dbd2507" kindref="member">isOpened</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!input_sensor_-&gt;isOpened())<sp/>{</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>RCLCPP_ERROR(this-&gt;get_logger(),<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>the<sp/>sensor<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>input_file_name_.c_str());</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>rclcpp::shutdown();</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -479,8 +479,8 @@
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>input_sensor_-&gt;setJBLFFilterSize(jblf_filter_size_);</highlight></codeline>
 <codeline lineno="282"><highlight class="normal"></highlight></codeline>
 <codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Buffer<sp/>allocations.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>image_width_<sp/>=<sp/>input_sensor_-&gt;<ref refid="classIInputSensor_1a04f5e300c94ace6c0a6ce9711b8e2262" kindref="member">getFrameWidth</ref>();</highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>image_height_<sp/>=<sp/>input_sensor_-&gt;<ref refid="classIInputSensor_1a6f1d9344d355b2aaddb3444386969850" kindref="member">getFrameHeight</ref>();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>image_width_<sp/>=<sp/>input_sensor_-&gt;getFrameWidth();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>image_height_<sp/>=<sp/>input_sensor_-&gt;getFrameHeight();</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight></codeline>
 <codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>intrinsics<sp/>and<sp/>extrinsics</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>input_sensor_-&gt;getIntrinsics(&amp;depth_intrinsics_);</highlight></codeline>
@@ -545,15 +545,15 @@
 <codeline lineno="351"><highlight class="normal"></highlight></codeline>
 <codeline lineno="352"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>readNextFrame();</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processOutputAbort();</highlight></codeline>
-<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adtf31xxSensorPushOutputNode(<ref refid="classADI3DToFADTF31xxOutputInfo" kindref="compound">ADI3DToFADTF31xxOutputInfo</ref><sp/>*<sp/>new_output_node);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adtf31xxSensorPushOutputNode(ADI3DToFADTF31xxOutputInfo<sp/>*<sp/>new_output_node);</highlight></codeline>
 <codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processOutput();</highlight></codeline>
 <codeline lineno="356"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInputAbort();</highlight></codeline>
-<codeline lineno="357"><highlight class="normal"><sp/><sp/><ref refid="classADI3DToFADTF31xxFrameInfo" kindref="compound">ADI3DToFADTF31xxFrameInfo</ref><sp/>*<sp/>adtf31xxSensorGetNextFrame();</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>ADI3DToFADTF31xxFrameInfo<sp/>*<sp/>adtf31xxSensorGetNextFrame();</highlight></codeline>
 <codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInput();</highlight></codeline>
 <codeline lineno="359"><highlight class="normal"></highlight></codeline>
 <codeline lineno="360"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/>rclcpp::TimerBase::SharedPtr<sp/>timer_;</highlight></codeline>
-<codeline lineno="362"><highlight class="normal"><sp/><sp/><ref refid="classIInputSensor" kindref="compound">IInputSensor</ref><sp/>*<sp/>input_sensor_;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/>IInputSensor<sp/>*<sp/>input_sensor_;</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"><sp/><sp/>std::string<sp/>camera_link_;</highlight></codeline>
 <codeline lineno="364"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input_sensor_mode_;</highlight></codeline>
 <codeline lineno="365"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_width_<sp/>=<sp/>1024;</highlight></codeline>
@@ -578,10 +578,10 @@
 <codeline lineno="384"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;sensor_msgs::msg::CompressedImage&gt;::SharedPtr<sp/>compressed_conf_image_publisher_;</highlight></codeline>
 <codeline lineno="385"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;sensor_msgs::msg::PointCloud2&gt;::SharedPtr<sp/>xyz_image_publisher_;</highlight></codeline>
 <codeline lineno="386"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;sensor_msgs::msg::CameraInfo&gt;::SharedPtr<sp/>depth_info_publisher_;</highlight></codeline>
-<codeline lineno="387"><highlight class="normal"><sp/><sp/><ref refid="structCameraIntrinsics" kindref="compound">CameraIntrinsics</ref><sp/>depth_intrinsics_;</highlight></codeline>
-<codeline lineno="388"><highlight class="normal"><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref><sp/>depth_extrinsics_;</highlight></codeline>
-<codeline lineno="389"><highlight class="normal"><sp/><sp/><ref refid="structCameraExtrinsics" kindref="compound">CameraExtrinsics</ref><sp/>depth_extrinsics_external_;</highlight></codeline>
-<codeline lineno="390"><highlight class="normal"><sp/><sp/><ref refid="classImageProcUtils" kindref="compound">ImageProcUtils</ref><sp/>*<sp/>image_proc_utils_;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/>CameraIntrinsics<sp/>depth_intrinsics_;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/>CameraExtrinsics<sp/>depth_extrinsics_;</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/>CameraExtrinsics<sp/>depth_extrinsics_external_;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/>ImageProcUtils<sp/>*<sp/>image_proc_utils_;</highlight></codeline>
 <codeline lineno="391"><highlight class="normal"></highlight></codeline>
 <codeline lineno="392"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>process_output_thread_abort_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="393"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>read_input_thread_abort_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
@@ -601,7 +601,7 @@
 <codeline lineno="407"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>jblf_filter_size_<sp/>=<sp/>7;</highlight></codeline>
 <codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radial_threshold_min_<sp/>=<sp/>100;</highlight></codeline>
 <codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radial_threshold_max_<sp/>=<sp/>10000;</highlight></codeline>
-<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="418"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>curr_frame_timestamp_<sp/>=<sp/>rclcpp::Clock{}.now();</highlight></codeline>
 <codeline lineno="419"><highlight class="normal"></highlight></codeline>
 <codeline lineno="420"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::ParameterEventHandler&gt;<sp/>param_subscriber_;</highlight></codeline>
@@ -834,21 +834,21 @@
 <codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.distortion_model<sp/>=<sp/>sensor_msgs::distortion_models::RATIONAL_POLYNOMIAL;</highlight></codeline>
 <codeline lineno="664"><highlight class="normal"></highlight></codeline>
 <codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k.fill(0.0f);</highlight></codeline>
-<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[0]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[0];</highlight></codeline>
-<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[2]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[2];</highlight></codeline>
-<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[4]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[4];</highlight></codeline>
-<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[5]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[5];</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[0]<sp/>=<sp/>depth_intrinsics_.camera_matrix[0];</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[2]<sp/>=<sp/>depth_intrinsics_.camera_matrix[2];</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[4]<sp/>=<sp/>depth_intrinsics_.camera_matrix[4];</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[5]<sp/>=<sp/>depth_intrinsics_.camera_matrix[5];</highlight></codeline>
 <codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.k[8]<sp/>=<sp/>1.0f;</highlight></codeline>
 <codeline lineno="671"><highlight class="normal"></highlight></codeline>
 <codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p.fill(0.0);</highlight></codeline>
-<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[0]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[0];</highlight></codeline>
-<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[2]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[2];</highlight></codeline>
-<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[3]<sp/>=<sp/>depth_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[0];</highlight></codeline>
-<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[5]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[4];</highlight></codeline>
-<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[6]<sp/>=<sp/>depth_intrinsics_.<ref refid="structCameraIntrinsics_1acda10bc01bc21640010acf097e0f44be" kindref="member">camera_matrix</ref>[5];</highlight></codeline>
-<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[7]<sp/>=<sp/>depth_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[1];</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[0]<sp/>=<sp/>depth_intrinsics_.camera_matrix[0];</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[2]<sp/>=<sp/>depth_intrinsics_.camera_matrix[2];</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[3]<sp/>=<sp/>depth_extrinsics_.translation_matrix[0];</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[5]<sp/>=<sp/>depth_intrinsics_.camera_matrix[4];</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[6]<sp/>=<sp/>depth_intrinsics_.camera_matrix[5];</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[7]<sp/>=<sp/>depth_extrinsics_.translation_matrix[1];</highlight></codeline>
 <codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[10]<sp/>=<sp/>1.0f;</highlight></codeline>
-<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[11]<sp/>=<sp/>depth_extrinsics_.<ref refid="structCameraExtrinsics_1ad3517a1a3ba8ed9ceeca1d63d54d9900" kindref="member">translation_matrix</ref>[2];</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.p[11]<sp/>=<sp/>depth_extrinsics_.translation_matrix[2];</highlight></codeline>
 <codeline lineno="681"><highlight class="normal"></highlight></codeline>
 <codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.d.resize(0);</highlight></codeline>
 <codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distortion_coeff<sp/>:<sp/>depth_intrinsics_.distortion_coeffs)<sp/>{</highlight></codeline>
@@ -857,7 +857,7 @@
 <codeline lineno="686"><highlight class="normal"></highlight></codeline>
 <codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.r.fill(0.0f);</highlight></codeline>
 <codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>9;<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cam_info_msg_.r[i]<sp/>=<sp/>depth_extrinsics_.<ref refid="structCameraExtrinsics_1ad42d7e4e4b95e76c65142e6994a0c3aa" kindref="member">rotation_matrix</ref>[i];</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cam_info_msg_.r[i]<sp/>=<sp/>depth_extrinsics_.rotation_matrix[i];</highlight></codeline>
 <codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="691"><highlight class="normal"></highlight></codeline>
 <codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/>cam_info_msg_.binning_x<sp/>=<sp/>0;</highlight></codeline>
@@ -921,7 +921,7 @@
 <codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/>xyz_image_publisher_-&gt;publish(*pointcloud_msg);</highlight></codeline>
 <codeline lineno="764"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="765"><highlight class="normal"></highlight></codeline>
-<codeline lineno="771"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishImageAndCameraInfo(<ref refid="classADI3DToFADTF31xxOutputInfo" kindref="compound">ADI3DToFADTF31xxOutputInfo</ref><sp/>*<sp/>out_frame)</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publishImageAndCameraInfo(ADI3DToFADTF31xxOutputInfo<sp/>*<sp/>out_frame)</highlight></codeline>
 <codeline lineno="772"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Publish<sp/>image<sp/>as<sp/>Ros<sp/>message</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/>cv::Mat<sp/>m_disp_image_depth,<sp/>m_disp_image_ab,<sp/>m_disp_virtual_depth,<sp/>m_disp_image_conf;</highlight></codeline>
@@ -987,10 +987,10 @@
 <codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/>compressed_payload_ptr-&gt;header.stamp<sp/>=<sp/>curr_frame_timestamp_;</highlight></codeline>
 <codeline lineno="843"><highlight class="normal"><sp/><sp/><sp/><sp/>compressed_payload_ptr-&gt;header.frame_id<sp/>=<sp/>std::move(frame_id);</highlight></codeline>
 <codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/>compressed_payload_ptr-&gt;data.resize(</highlight></codeline>
-<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>compressed_img_size<sp/>+<sp/>8<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref>));</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>compressed_img_size<sp/>+<sp/>8<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(compressed_depth_image_transport::ConfigHeader));</highlight></codeline>
 <codeline lineno="846"><highlight class="normal"></highlight></codeline>
 <codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Adding<sp/>header<sp/>to<sp/>compressed<sp/>depth<sp/>data<sp/>as<sp/>image<sp/>transport<sp/>subscribers<sp/>can<sp/>decompress.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref><sp/>compression_configuration{};</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/>compressed_depth_image_transport::ConfigHeader<sp/>compression_configuration{};</highlight></codeline>
 <codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/>compression_configuration.format<sp/>=<sp/>compressed_depth_image_transport::INV_DEPTH;</highlight></codeline>
 <codeline lineno="850"><highlight class="normal"></highlight></codeline>
 <codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>depth_quantization<sp/>=<sp/>0;</highlight></codeline>
@@ -1004,15 +1004,15 @@
 <codeline lineno="859"><highlight class="normal"></highlight></codeline>
 <codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(</highlight></codeline>
 <codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[0],<sp/>&amp;compression_configuration,</highlight></codeline>
-<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref>));</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(compressed_depth_image_transport::ConfigHeader));</highlight></codeline>
 <codeline lineno="863"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(</highlight></codeline>
-<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[0]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref>),</highlight></codeline>
+<codeline lineno="864"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[0]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(compressed_depth_image_transport::ConfigHeader),</highlight></codeline>
 <codeline lineno="865"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;image_width_,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(</highlight></codeline>
-<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[4]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref>),</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[4]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(compressed_depth_image_transport::ConfigHeader),</highlight></codeline>
 <codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;image_height_,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(</highlight></codeline>
-<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[8]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structcompressed__depth__image__transport_1_1ConfigHeader" kindref="compound">compressed_depth_image_transport::ConfigHeader</ref>),</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&amp;compressed_payload_ptr-&gt;data[8]<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(compressed_depth_image_transport::ConfigHeader),</highlight></codeline>
 <codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>compressed_img,<sp/>compressed_img_size);</highlight></codeline>
 <codeline lineno="872"><highlight class="normal"></highlight></codeline>
 <codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/>publisher-&gt;publish(*compressed_payload_ptr);</highlight></codeline>

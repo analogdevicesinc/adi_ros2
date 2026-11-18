@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="namespacecompressed__depth__image__transport" kind="namespace" language="C++">
     <compoundname>compressed_depth_image_transport</compoundname>
     <innerclass refid="structcompressed__depth__image__transport_1_1ConfigHeader" prot="public">compressed_depth_image_transport::ConfigHeader</innerclass>

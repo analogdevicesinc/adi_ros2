@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="output__sensor_8h" kind="file" language="C++">
     <compoundname>output_sensor.h</compoundname>
     <includes local="no">fstream</includes>
@@ -138,6 +138,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/highgui/highgui.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;opencv2/imgproc.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>OutputFlag<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/>DisableAllOutputs,</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/>EnableCSVOutputOnly,</highlight></codeline>

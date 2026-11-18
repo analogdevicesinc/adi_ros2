@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="velangtemp__ros__publisher_8h" kind="file" language="C++">
     <compoundname>velangtemp_ros_publisher.h</compoundname>
     <includes local="no">memory</includes>
@@ -83,10 +83,10 @@
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">adi_imu</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="classadi__imu_1_1VelAngTempRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1VelAngTempRosPublisher" kindref="compound">VelAngTempRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1VelAngTempRosPublisherInterface" kindref="compound">VelAngTempRosPublisherInterface</ref></highlight></codeline>
+<codeline lineno="35" refid="classadi__imu_1_1VelAngTempRosPublisher" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classadi__imu_1_1VelAngTempRosPublisher_1a78ca8bddb7d11ffab85519e22e2687c9" kindref="member">VelAngTempRosPublisher</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1VelAngTempRosPublisherInterface_1a19131c5961639a683ed414a4f2c06224" kindref="member">VelAngTempRosPublisherInterface</ref></highlight></codeline>
 <codeline lineno="36"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1VelAngTempRosPublisher" kindref="compound">VelAngTempRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classadi__imu_1_1VelAngTempRosPublisher_1a78ca8bddb7d11ffab85519e22e2687c9" kindref="member">VelAngTempRosPublisher</ref>(std::shared_ptr&lt;rclcpp::Node&gt;<sp/>&amp;<sp/>node);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="classadi__imu_1_1VelAngTempRosPublisher_1a3d8e8ec99a942f4a342cd5e4fca8117c" kindref="member">~VelAngTempRosPublisher</ref>();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>

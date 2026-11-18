@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classImuStateCheckerRos2" kind="class" language="C++" prot="public">
     <compoundname>ImuStateCheckerRos2</compoundname>
     <includes refid="imu__state__checker__ros2_8hpp" local="no">imu_state_checker_ros2.hpp</includes>
@@ -41,7 +41,7 @@
         <name>adi_imu_sub_</name>
         <qualifiedname>ImuStateCheckerRos2::adi_imu_sub_</qualifiedname>
         <briefdescription>
-<para>Subscriber to IMU topic(AdiImu) </para>
+<para>Subscriber to IMU topic(AdiImu). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -56,7 +56,7 @@
         <name>sensor_imu_sub_</name>
         <qualifiedname>ImuStateCheckerRos2::sensor_imu_sub_</qualifiedname>
         <briefdescription>
-<para>Subscriber to IMU topic(sensor_msgs) </para>
+<para>Subscriber to IMU topic(sensor_msgs). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -459,7 +459,7 @@
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Checks state of IMU (STANDSTILL or MOVING) </para>
+<para>Checks state of IMU (STANDSTILL or MOVING). </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>

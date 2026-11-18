@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="bias__estimate__node__ros2_8hpp" kind="file" language="C++">
     <compoundname>bias_estimate_node_ros2.hpp</compoundname>
     <includes local="yes">rclcpp/rclcpp.hpp</includes>
@@ -198,7 +198,7 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shutdown(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="classBiasEstimateRos2" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBiasEstimateRos2" kindref="compound">BiasEstimateRos2</ref></highlight></codeline>
+<codeline lineno="38" refid="classBiasEstimateRos2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" kindref="member">BiasEstimateRos2</ref></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="42" refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classBiasEstimateRos2_1a1b9a4cc77d9f7e0286cb2ffefc3ffe3e" kindref="member">BiasEstimateRos2</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Node::SharedPtr&amp;<sp/>node);</highlight></codeline>
@@ -219,7 +219,7 @@
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="classImuStateCheckerRos2" kindref="compound">ImuStateCheckerRos2</ref>*<sp/>p_state_checker_;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//BIAS_ESTIMATE_ROS2</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//BIAS_ESTIMATE_ROS2</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="include/adrd2121_imu/bias_estimate_node_ros2.hpp"/>
   </compounddef>

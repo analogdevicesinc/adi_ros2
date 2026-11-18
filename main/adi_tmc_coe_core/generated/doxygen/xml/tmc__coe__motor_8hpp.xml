@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="tmc__coe__motor_8hpp" kind="file" language="C++">
     <compoundname>tmc_coe_motor.hpp</compoundname>
     <includes local="no">cmath</includes>
@@ -229,6 +229,7 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMC_COE_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMC_COE_MOTOR_HPP</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
@@ -260,13 +261,13 @@
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>SECS_TO_MIN<sp/>=<sp/>60;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>ANGULAR_FULL_ROTATION<sp/>=<sp/>360;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="classTmcCoeMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTmcCoeMotor" kindref="compound">TmcCoeMotor</ref></highlight></codeline>
+<codeline lineno="37" refid="classTmcCoeMotor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TmcCoeMotor</highlight></codeline>
 <codeline lineno="38"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classTmcCoeMotor" kindref="compound">TmcCoeMotor</ref>(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref><sp/>*<sp/>p_tmc_coe_interpreter,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>TmcCoeMotor(rclcpp::Node::SharedPtr<sp/>p_node,<sp/><ref refid="classTmcCoeInterpreter" kindref="compound">TmcCoeInterpreter</ref><sp/>*<sp/>p_tmc_coe_interpreter,</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>slave_number,<sp/>uint8_t<sp/>motor_number,<sp/>std::string<sp/>device_name);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classTmcCoeMotor" kindref="compound">~TmcCoeMotor</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~TmcCoeMotor();</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>

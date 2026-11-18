@@ -38,7 +38,7 @@
 \DoxyCodeLine{00034\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ update(std::string\ msg)\ =\ 0;}
 \DoxyCodeLine{00035\ \};}
 \DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIIOAttrTopic}{IIOAttrTopic}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}}
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }IIOAttrTopic\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUpdateCallback}{UpdateCallback}}}
 \DoxyCodeLine{00038\ \{}
 \DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00040\ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}}
@@ -49,10 +49,10 @@
 \DoxyCodeLine{00045\ \ \ \ \ TYPE\_BOOL}
 \DoxyCodeLine{00046\ \ \ \}\ topicType\_t;}
 \DoxyCodeLine{00047\ }
-\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{classIIOAttrTopic}{IIOAttrTopic}}(}
+\DoxyCodeLine{00048\ \ \ IIOAttrTopic(}
 \DoxyCodeLine{00049\ \ \ \ \ std::shared\_ptr<IIONode>\ nh,\ std::string\ topicName,\ std::string\ attrPath,}
 \DoxyCodeLine{00050\ \ \ \ \ topicType\_t\ type,\ \textcolor{keywordtype}{double}\ loopRate);}
-\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classIIOAttrTopic}{\string~IIOAttrTopic}}();}
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{virtual}\ \string~IIOAttrTopic();}
 \DoxyCodeLine{00052\ }
 \DoxyCodeLine{00053\ \ \ \textcolor{keywordtype}{void}\ publishingLoop();}
 \DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{void}\ update(std::string\ msg)\ \textcolor{keyword}{override};}

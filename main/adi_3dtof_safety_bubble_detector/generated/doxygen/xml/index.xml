@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.15.0" xml:lang="en-US">
   <compound refid="struct____tADI2DPoint" kind="struct"><name>__tADI2DPoint</name>
     <member refid="struct____tADI2DPoint_1ae07b5e083da4e1f30f7c73f7ce9f5f79" kind="variable"><name>x</name></member>
     <member refid="struct____tADI2DPoint_1aa1962c234403508558567b8b38ab49f8" kind="variable"><name>y</name></member>

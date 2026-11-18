@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="iio__buffer_8hpp" kind="file" language="C++">
     <compoundname>iio_buffer.hpp</compoundname>
     <includes local="no">iio.h</includes>
@@ -227,11 +227,11 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_READ_SUFFIX<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_WRITE_SUFFIX<sp/>&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="classIIOBuffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref></highlight></codeline>
+<codeline lineno="34" refid="classIIOBuffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IIOBuffer</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classIIOBuffer" kindref="compound">IIOBuffer</ref>(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>device_path);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classIIOBuffer" kindref="compound">~IIOBuffer</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>IIOBuffer(std::shared_ptr&lt;IIONode&gt;<sp/>nh,<sp/>std::string<sp/>device_path);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>~IIOBuffer();</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>createIIOBuffer(std::string<sp/>&amp;<sp/>message,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>output<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cyclic<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>destroyIIOBuffer();</highlight></codeline>

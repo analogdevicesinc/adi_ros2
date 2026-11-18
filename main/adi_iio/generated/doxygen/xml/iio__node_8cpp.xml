@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="iio__node_8cpp" kind="file" language="C++">
     <compoundname>iio_node.cpp</compoundname>
     <includes refid="iio__node_8hpp" local="yes">adi_iio/iio_node.hpp</includes>
@@ -318,7 +318,7 @@
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IIONode::rwAttrPath(std::string<sp/>path,<sp/>std::string<sp/>&amp;<sp/>result,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>write,<sp/>std::string<sp/>value)</highlight></codeline>
 <codeline lineno="95"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>iio_path(path);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>IIOPath<sp/>iio_path(path);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/>iio_device<sp/>*<sp/>dev<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/>iio_channel<sp/>*<sp/>ch<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -581,7 +581,7 @@
 <codeline lineno="357"><highlight class="normal"><sp/><sp/>std::string<sp/>message;</highlight></codeline>
 <codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="359"><highlight class="normal"></highlight></codeline>
-<codeline lineno="360"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="361"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>message);</highlight></codeline>
@@ -622,7 +622,7 @@
 <codeline lineno="398"><highlight class="normal"></highlight></codeline>
 <codeline lineno="399"><highlight class="normal"><sp/><sp/>std::string<sp/>message;</highlight></codeline>
 <codeline lineno="400"><highlight class="normal"></highlight></codeline>
-<codeline lineno="401"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>message);</highlight></codeline>
@@ -672,7 +672,7 @@
 <codeline lineno="448"><highlight class="normal"></highlight></codeline>
 <codeline lineno="449"><highlight class="normal"><sp/><sp/>std::string<sp/>message;</highlight></codeline>
 <codeline lineno="450"><highlight class="normal"></highlight></codeline>
-<codeline lineno="451"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="452"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>message);</highlight></codeline>
@@ -721,7 +721,7 @@
 <codeline lineno="497"><highlight class="normal"></highlight></codeline>
 <codeline lineno="498"><highlight class="normal"><sp/><sp/>std::string<sp/>message;</highlight></codeline>
 <codeline lineno="499"><highlight class="normal"></highlight></codeline>
-<codeline lineno="500"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="501"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/>message<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>message);</highlight></codeline>
@@ -760,7 +760,7 @@
 <codeline lineno="536"><highlight class="normal"></highlight></codeline>
 <codeline lineno="537"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="538"><highlight class="normal"></highlight></codeline>
-<codeline lineno="539"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="540"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>msg<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>msg);</highlight></codeline>
@@ -790,7 +790,7 @@
 <codeline lineno="566"><highlight class="normal"></highlight></codeline>
 <codeline lineno="567"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="568"><highlight class="normal"></highlight></codeline>
-<codeline lineno="569"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="570"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>msg<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>msg);</highlight></codeline>
@@ -817,7 +817,7 @@
 <codeline lineno="593"><highlight class="normal"></highlight></codeline>
 <codeline lineno="594"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="595"><highlight class="normal"></highlight></codeline>
-<codeline lineno="596"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;device_path);</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;device_path);</highlight></codeline>
 <codeline lineno="597"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>msg<sp/>=<sp/>request-&gt;device_path<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is<sp/>not<sp/>a<sp/>valid<sp/>device<sp/>path&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>setErrorResponse(response,<sp/>msg);</highlight></codeline>
@@ -842,7 +842,7 @@
 <codeline lineno="618"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;adi_iio_node&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Service<sp/>request<sp/>/ListDevices&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="619"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="620"><highlight class="normal"></highlight></codeline>
-<codeline lineno="621"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="622"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>data;</highlight></codeline>
 <codeline lineno="623"><highlight class="normal"></highlight></codeline>
 <codeline lineno="624"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>devices_ptr<sp/>=<sp/>getDevices(ctx());</highlight></codeline>
@@ -871,7 +871,7 @@
 <codeline lineno="647"><highlight class="normal"><sp/><sp/>RCLCPP_INFO(rclcpp::get_logger(</highlight><highlight class="stringliteral">&quot;adi_iio_node&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;Service<sp/>request<sp/>/ListChannels&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="648"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="649"><highlight class="normal"></highlight></codeline>
-<codeline lineno="650"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;iio_path);</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;iio_path);</highlight></codeline>
 <codeline lineno="651"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!path.isValid(IIOPathType::DEVICE))<sp/>{</highlight></codeline>
 <codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>path:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>request-&gt;iio_path;</highlight></codeline>
 <codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/>setWarningResponse(response,<sp/>msg);</highlight></codeline>
@@ -909,7 +909,7 @@
 <codeline lineno="685"><highlight class="normal"><sp/><sp/>std::string<sp/>msg;</highlight></codeline>
 <codeline lineno="686"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>data;</highlight></codeline>
 <codeline lineno="687"><highlight class="normal"></highlight></codeline>
-<codeline lineno="688"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>path(request-&gt;iio_path);</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/>IIOPath<sp/>path(request-&gt;iio_path);</highlight></codeline>
 <codeline lineno="689"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path.isValid(IIOPathType::CONTEXT))<sp/>{</highlight></codeline>
 <codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret{};</highlight></codeline>
 <codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>err_str;</highlight></codeline>
@@ -1000,7 +1000,7 @@
 <codeline lineno="776"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>channel_attrs;</highlight></codeline>
 <codeline lineno="777"><highlight class="normal"></highlight></codeline>
 <codeline lineno="778"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Handle<sp/>context<sp/>attributes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="779"><highlight class="normal"><sp/><sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref><sp/>ctx_path(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/>IIOPath<sp/>ctx_path(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="780"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret{};</highlight></codeline>
 <codeline lineno="781"><highlight class="normal"><sp/><sp/>std::string<sp/>err_str;</highlight></codeline>
 <codeline lineno="782"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_ctx_attrs<sp/>=<sp/>iio_context_get_attrs_count(ctx());</highlight></codeline>
@@ -1029,7 +1029,7 @@
 <codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dev_name<sp/>=<sp/>std::string(dev_name_cstr);</highlight></codeline>
-<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dev_path<sp/>=<sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref>(ctx_path.append(dev_name));</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>dev_path<sp/>=<sp/>IIOPath(ctx_path.append(dev_name));</highlight></codeline>
 <codeline lineno="809"><highlight class="normal"></highlight></codeline>
 <codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/>devices.push_back(dev_path.basePath());</highlight></codeline>
 <codeline lineno="811"><highlight class="normal"></highlight></codeline>
@@ -1046,7 +1046,7 @@
 <codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>chn_name<sp/>=<sp/>std::string(iio_channel_get_id(chn));</highlight></codeline>
 <codeline lineno="823"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>is_output<sp/>=<sp/>iio_channel_is_output(chn);</highlight></codeline>
 <codeline lineno="824"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>chn_segment<sp/>=<sp/><ref refid="classIIOPath_1a995b880525f2c98fef7048f04f054d3f" kindref="member">IIOPath::toExtendedChannelSegment</ref>(is_output,<sp/>chn_name);</highlight></codeline>
-<codeline lineno="825"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>chn_path<sp/>=<sp/><ref refid="classIIOPath" kindref="compound">IIOPath</ref>(dev_path.append(chn_segment));</highlight></codeline>
+<codeline lineno="825"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>chn_path<sp/>=<sp/>IIOPath(dev_path.append(chn_segment));</highlight></codeline>
 <codeline lineno="826"><highlight class="normal"></highlight></codeline>
 <codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>channels.push_back(chn_path.basePath());</highlight></codeline>
 <codeline lineno="828"><highlight class="normal"></highlight></codeline>

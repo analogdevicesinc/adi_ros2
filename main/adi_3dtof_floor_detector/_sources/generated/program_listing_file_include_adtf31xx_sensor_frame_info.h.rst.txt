@@ -76,7 +76,9 @@ Program Listing for File adtf31xx_sensor_frame_info.h
    
      unsigned short * getDepthFrame() const { return depth_frame_; }
    
+   
      unsigned short * getIRFrame() const { return ab_frame_; }
+   
    
      short * getXYZFrame() const { return xyz_frame_; }
    

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
   <compounddef id="classAttrPubSub" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>AttrPubSub</compoundname>
     <derivedcompoundref refid="classBoolPubSub" prot="public" virt="non-virtual">BoolPubSub</derivedcompoundref>
@@ -27,10 +27,10 @@
         <argsstring>(std::string msg)=0</argsstring>
         <name>publish</name>
         <qualifiedname>AttrPubSub::publish</qualifiedname>
-        <reimplementedby refid="classStringPubSub_1ac133478da704fe769d96a07a1cf1fe81">publish</reimplementedby>
-        <reimplementedby refid="classInt32PubSub_1a9318076a1ada7379298e50a80476de24">publish</reimplementedby>
         <reimplementedby refid="classBoolPubSub_1a6b9188b8f4250368b51bb732b17dd637">publish</reimplementedby>
         <reimplementedby refid="classFloat32PubSub_1a29b2863b86024b4fc5d8eb73b34e9864">publish</reimplementedby>
+        <reimplementedby refid="classInt32PubSub_1a9318076a1ada7379298e50a80476de24">publish</reimplementedby>
+        <reimplementedby refid="classStringPubSub_1ac133478da704fe769d96a07a1cf1fe81">publish</reimplementedby>
         <param>
           <type>std::string</type>
           <declname>msg</declname>
